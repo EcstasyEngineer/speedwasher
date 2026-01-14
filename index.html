@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedWashing - RSVP Hypnotic Reader</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- RSVP Display -->
+        <div id="rsvp-container">
+            <canvas id="spiral-canvas"></canvas>
+            <div id="rsvp-frame">
+                <div id="subliminal-top" class="subliminal"></div>
+                <div id="guide-top"></div>
+                <div id="word-container">
+                    <span id="word-before"></span><span id="word-orp"></span><span id="word-after"></span>
+                </div>
+                <div id="guide-bottom"></div>
+                <div id="subliminal-bottom" class="subliminal"></div>
+            </div>
+            <div id="wpm-display">300 wpm</div>
+        </div>
+
+        <!-- Controls -->
+        <div id="controls">
+            <div id="playback-controls">
+                <button id="btn-play" title="Play/Pause">
+                    <span class="play-icon">&#9658;</span>
+                    <span class="pause-icon" style="display:none;">&#10074;&#10074;</span>
+                </button>
+                <button id="btn-restart" title="Restart">&#8634;</button>
+            </div>
+
+            <div id="speed-controls">
+                <label for="wpm-slider">WPM:</label>
+                <input type="range" id="wpm-slider" min="100" max="1200" value="300" step="50">
+                <span id="wpm-value">300</span>
+            </div>
+
+            <div id="preset-buttons">
+                <button class="preset" data-wpm="300">300</button>
+                <button class="preset" data-wpm="450">450</button>
+                <button class="preset" data-wpm="600">600</button>
+                <button class="preset" data-wpm="900">900</button>
+            </div>
+
+            <div id="script-sync">
+                <label>
+                    <input type="checkbox" id="follow-script" checked>
+                    Follow script
+                </label>
+            </div>
+        </div>
+
+        <!-- Script Input -->
+        <div id="script-section">
+            <div id="tabs">
+                <button class="tab active" data-tab="default">Demo Script</button>
+                <button class="tab" data-tab="custom">Custom Script</button>
+            </div>
+
+            <div id="tab-content">
+                <div id="default-tab" class="tab-panel active">
+                    <p>Click Play to begin the demo script, or switch to Custom to enter your own text.</p>
+                    <div id="progress-container">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <p id="word-count"></p>
+                </div>
+
+                <div id="custom-tab" class="tab-panel" style="display:none;">
+                    <textarea id="custom-script" placeholder="Paste your script here...
+
+You can use @wpm commands to change speed:
+
+@wpm 300
+Start slow and relaxed...
+@wpm 600
+Then speed up for intensity...
+@wpm 300
+And slow down for important suggestions."></textarea>
+                    <button id="btn-load-script">Load Script</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info -->
+        <div id="info">
+            <details>
+                <summary>About SpeedWashing</summary>
+                <p>RSVP (Rapid Serial Visual Presentation) forces focused absorption by displaying one word at a time with an Optimal Recognition Point (ORP) highlighted in red.</p>
+                <p>At higher speeds, conscious analysis becomes difficult and content is absorbed more directly - potentially useful for hypnotic scripts.</p>
+                <p><a href="https://github.com/EcstasyEngineer/speedwashing">GitHub</a></p>
+            </details>
+        </div>
+    </div>
+
+    <!-- Audio elements -->
+    <audio id="snap-sound" preload="auto">
+        <source src="audio/snap.mp3" type="audio/mpeg">
+        <source src="audio/snap.wav" type="audio/wav">
+    </audio>
+
+    <script src="js/orp.js"></script>
+    <script src="js/spiral.js"></script>
+    <script src="js/subliminals.js"></script>
+    <script src="js/rsvp.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
