@@ -36,6 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const subliminalBottom = document.getElementById('subliminal-bottom');
     const subliminals = new SubliminalEngine(subliminalTop, subliminalBottom);
 
+    // Initialize audio engines
+    const binaural = new BinauralEngine();
+    const noise = new NoiseEngine();
+
+    // Track audio state for pause/resume
+    let audioState = {
+        binaural: { active: false, carrier: 300, beat: 10, volume: 0 },
+        noise: { active: false, volume: 0 }
+    };
+
+    // Flag to skip audio stop during snap pauses
+    let isSnapPause = false;
+
     // Default demo script - original speed reading video transcript
     const DEFAULT_SCRIPT = `@wpm 300
 Let's see if you can keep up with this speed reading exercise. We'll kick things off at 300 words per minute. The average person reads around 200 to 250 words per minute, so you're already reading faster than most people. Anyway, let's give 360 words per minute a try.
@@ -112,9 +125,32 @@ Thank you again for watching, and I will see you in the next one.`;
         },
         onComplete: () => {
             updatePlayButton(false);
+            // Auto-stop audio effects
+            binaural.stop(2);
+            noise.stop(2);
         },
         onStateChange: (playing) => {
             updatePlayButton(playing);
+            if (!playing && !isSnapPause) {
+                // Pause - fade out but keep state (skip if snap pause)
+                binaural.stop(0.5);
+                noise.stop(0.5);
+            } else if (playing) {
+                // Resume - restore audio if it was active (and not already playing)
+                // Pass explicit short fadeIn (0.5s) for quick resume
+                if (audioState.binaural.active && audioState.binaural.volume > 0 && !binaural.isPlaying) {
+                    binaural.start(
+                        audioState.binaural.carrier,
+                        audioState.binaural.beat,
+                        0.5,  // fade for freq changes
+                        0.5,  // fadeIn - quick resume
+                        audioState.binaural.volume
+                    );
+                }
+                if (audioState.noise.active && audioState.noise.volume > 0 && !noise.isPlaying) {
+                    noise.start(audioState.noise.volume, 0.5);
+                }
+            }
         },
         onSpiral: (args) => {
             const params = SpiralEffect.parseCommand(args);
@@ -156,10 +192,40 @@ Thank you again for watching, and I will see you in the next one.`;
             wordContainer.style.marginLeft = '0';
 
             // Pause playback, then resume after delay
+            // Set flag so audio doesn't stop during snap
+            isSnapPause = true;
             rsvp.pause();
             setTimeout(() => {
+                isSnapPause = false;
                 rsvp.play();
             }, pauseDuration);
+        },
+        onBinaural: (args) => {
+            const params = BinauralEngine.parseCommand(args);
+            if (params.action === 'off') {
+                binaural.stop(params.fade);
+                audioState.binaural.active = false;
+                audioState.binaural.volume = 0;
+            } else {
+                binaural.start(params.carrier, params.beat, params.fade, params.fadeIn, params.volume);
+                audioState.binaural = {
+                    active: true,
+                    carrier: params.carrier,
+                    beat: params.beat,
+                    volume: params.volume
+                };
+            }
+        },
+        onNoise: (args) => {
+            const params = NoiseEngine.parseCommand(args);
+            if (params.action === 'off') {
+                noise.stop(params.fade);
+                audioState.noise.active = false;
+                audioState.noise.volume = 0;
+            } else {
+                noise.start(params.volume, params.fade);
+                audioState.noise = { active: true, volume: params.volume };
+            }
         }
     });
 
@@ -204,6 +270,11 @@ Thank you again for watching, and I will see you in the next one.`;
         // Stop effects on restart
         spiral.stop(0.3);
         subliminals.stop(0.3);
+        binaural.stop(0.3);
+        noise.stop(0.3);
+        // Reset audio state
+        audioState.binaural = { active: false, carrier: 300, beat: 10, volume: 0 };
+        audioState.noise = { active: false, volume: 0 };
         rsvp.restart();
     });
 
@@ -253,6 +324,11 @@ Thank you again for watching, and I will see you in the next one.`;
             // Stop any running effects
             spiral.stop(0.3);
             subliminals.stop(0.3);
+            binaural.stop(0.3);
+            noise.stop(0.3);
+            // Reset audio state
+            audioState.binaural = { active: false, carrier: 300, beat: 10, volume: 0 };
+            audioState.noise = { active: false, volume: 0 };
             rsvp.load(text);
             loadedScript = scriptEditor.value;
             updateLoadButton();

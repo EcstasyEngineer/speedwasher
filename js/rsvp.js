@@ -23,6 +23,8 @@ class RSVPEngine {
         this.onSpiral = options.onSpiral || (() => {});
         this.onSubliminals = options.onSubliminals || (() => {});
         this.onSnap = options.onSnap || (() => {});
+        this.onBinaural = options.onBinaural || (() => {});
+        this.onNoise = options.onNoise || (() => {});
     }
 
     /**
@@ -74,6 +76,26 @@ class RSVPEngine {
                 pendingCommands.push({
                     type: 'snap',
                     pause: parseInt(snapMatch[1], 10) || 800  // Default 800ms pause
+                });
+                continue;
+            }
+
+            // Check for @binaural command
+            const binauralMatch = trimmed.match(/^@binaural\s+(.+)/i);
+            if (binauralMatch) {
+                pendingCommands.push({
+                    type: 'binaural',
+                    args: binauralMatch[1]
+                });
+                continue;
+            }
+
+            // Check for @noise command
+            const noiseMatch = trimmed.match(/^@noise\s+(.+)/i);
+            if (noiseMatch) {
+                pendingCommands.push({
+                    type: 'noise',
+                    args: noiseMatch[1]
                 });
                 continue;
             }
@@ -159,8 +181,8 @@ class RSVPEngine {
         const wordObj = this.words[index];
         const parts = ORP.split(wordObj.word);
 
-        // Process any commands attached to this word
-        if (wordObj.commands) {
+        // Process any commands attached to this word (only while playing)
+        if (wordObj.commands && this.isPlaying) {
             for (const cmd of wordObj.commands) {
                 if (cmd.type === 'spiral') {
                     this.onSpiral(cmd.args);
@@ -168,6 +190,10 @@ class RSVPEngine {
                     this.onSubliminals(cmd.args);
                 } else if (cmd.type === 'snap') {
                     this.onSnap(cmd.pause);
+                } else if (cmd.type === 'binaural') {
+                    this.onBinaural(cmd.args);
+                } else if (cmd.type === 'noise') {
+                    this.onNoise(cmd.args);
                 }
             }
         }
