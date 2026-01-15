@@ -12,15 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const btnPlay = document.getElementById('btn-play');
     const btnRestart = document.getElementById('btn-restart');
+    const btnFullscreen = document.getElementById('btn-fullscreen');
     const wpmSlider = document.getElementById('wpm-slider');
     const wpmValue = document.getElementById('wpm-value');
-    const presetButtons = document.querySelectorAll('.preset');
+    const btnSync = document.getElementById('btn-sync');
 
-    const followScriptCheckbox = document.getElementById('follow-script');
-
-    const tabs = document.querySelectorAll('.tab');
-    const tabPanels = document.querySelectorAll('.tab-panel');
-    const customScript = document.getElementById('custom-script');
+    const scriptEditor = document.getElementById('script-editor');
     const btnLoadScript = document.getElementById('btn-load-script');
 
     const progressBar = document.getElementById('progress-bar');
@@ -32,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Audio elements
     const snapSound = document.getElementById('snap-sound');
+    const flashOverlay = document.getElementById('flash-overlay');
 
     // Initialize subliminals
     const subliminalTop = document.getElementById('subliminal-top');
@@ -111,7 +109,6 @@ Thank you again for watching, and I will see you in the next one.`;
             wpmDisplay.textContent = `${wpm} wpm`;
             wpmSlider.value = wpm;
             wpmValue.textContent = wpm;
-            updatePresetButtons(wpm);
         },
         onComplete: () => {
             updatePlayButton(false);
@@ -141,6 +138,17 @@ Thank you again for watching, and I will see you in the next one.`;
                 snapSound.currentTime = 0;
                 snapSound.play().catch(e => console.log('Snap audio blocked:', e));
             }
+
+            // White flash
+            if (flashOverlay) {
+                flashOverlay.style.transition = 'none';
+                flashOverlay.style.opacity = '1';
+                setTimeout(() => {
+                    flashOverlay.style.transition = 'opacity 0.3s ease';
+                    flashOverlay.style.opacity = '0';
+                }, 50);
+            }
+
             // Blank the display during pause
             wordBefore.textContent = '';
             wordORP.textContent = '';
@@ -159,10 +167,14 @@ Thank you again for watching, and I will see you in the next one.`;
     fetch('scripts/demo.txt')
         .then(response => response.ok ? response.text() : Promise.reject('File not found'))
         .then(text => {
+            scriptEditor.value = text;
+            loadedScript = text;
             rsvp.load(text);
         })
         .catch(err => {
             console.log('Loading inline script:', err);
+            scriptEditor.value = DEFAULT_SCRIPT;
+            loadedScript = DEFAULT_SCRIPT;
             rsvp.load(DEFAULT_SCRIPT);
         });
 
@@ -180,14 +192,6 @@ Thank you again for watching, and I will see you in the next one.`;
         }
     }
 
-    // Update preset button highlighting
-    function updatePresetButtons(wpm) {
-        presetButtons.forEach(btn => {
-            const presetWpm = parseInt(btn.dataset.wpm, 10);
-            btn.classList.toggle('active', presetWpm === wpm);
-        });
-    }
-
     // Event Listeners
 
     // Play/Pause button
@@ -203,66 +207,62 @@ Thank you again for watching, and I will see you in the next one.`;
         rsvp.restart();
     });
 
-    // WPM slider
+    // Fullscreen button
+    btnFullscreen.addEventListener('click', () => {
+        document.body.classList.toggle('fullscreen');
+    });
+
+    // Helper to update sync button state
+    function updateSyncButton(synced) {
+        btnSync.classList.toggle('synced', synced);
+        btnSync.disabled = synced;
+    }
+
+    // WPM slider - unsyncs from script
     wpmSlider.addEventListener('input', (e) => {
         const wpm = parseInt(e.target.value, 10);
         wpmValue.textContent = wpm;
         rsvp.setWPM(wpm);
-        // If manually adjusting slider, turn off follow script
-        followScriptCheckbox.checked = false;
         rsvp.setFollowScript(false);
+        updateSyncButton(false);
         wpmDisplay.textContent = `${wpm} wpm`;
-        updatePresetButtons(wpm);
     });
 
-    // Preset buttons
-    presetButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const wpm = parseInt(btn.dataset.wpm, 10);
-            wpmSlider.value = wpm;
-            wpmValue.textContent = wpm;
-            rsvp.setWPM(wpm);
-            // If manually selecting WPM, turn off follow script
-            followScriptCheckbox.checked = false;
-            rsvp.setFollowScript(false);
-            wpmDisplay.textContent = `${wpm} wpm`;
-            updatePresetButtons(wpm);
-        });
+    // Sync button - re-enables following script
+    btnSync.addEventListener('click', () => {
+        rsvp.setFollowScript(true);
+        updateSyncButton(true);
     });
 
-    // Follow script toggle
-    followScriptCheckbox.addEventListener('change', (e) => {
-        rsvp.setFollowScript(e.target.checked);
-    });
+    // Track loaded script to detect changes
+    let loadedScript = '';
 
-    // Tab switching
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const targetTab = tab.dataset.tab;
+    function updateLoadButton() {
+        const isLoaded = scriptEditor.value === loadedScript;
+        btnLoadScript.classList.toggle('loaded', isLoaded);
+        btnLoadScript.disabled = isLoaded;
+    }
 
-            tabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
+    // Detect script editor changes
+    scriptEditor.addEventListener('input', updateLoadButton);
 
-            tabPanels.forEach(panel => {
-                panel.style.display = panel.id === `${targetTab}-tab` ? 'block' : 'none';
-            });
-        });
-    });
-
-    // Load custom script
+    // Load script from editor
     btnLoadScript.addEventListener('click', () => {
-        const text = customScript.value.trim();
+        const text = scriptEditor.value.trim();
         if (text) {
+            // Stop any running effects
+            spiral.stop(0.3);
+            subliminals.stop(0.3);
             rsvp.load(text);
-            // Switch to default tab to show progress
-            tabs[0].click();
+            loadedScript = scriptEditor.value;
+            updateLoadButton();
         }
     });
 
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
-        // Ignore if typing in textarea
-        if (e.target.tagName === 'TEXTAREA') return;
+        // Ignore if typing in script editor
+        if (e.target === scriptEditor) return;
 
         switch (e.code) {
             case 'Space':
@@ -306,6 +306,5 @@ Thank you again for watching, and I will see you in the next one.`;
     });
 
     // Initial display
-    updatePresetButtons(300);
     wpmDisplay.textContent = '300 wpm';
 });

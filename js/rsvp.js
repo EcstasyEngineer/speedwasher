@@ -124,7 +124,7 @@ class RSVPEngine {
 
     /**
      * Calculate display time for a word at given WPM
-     * Adds extra pause for punctuation
+     * Adds proportional pause for punctuation (scales with speed)
      * @param {number} wpm
      * @param {string} word - The word (to check for punctuation)
      * @returns {number} - Milliseconds
@@ -132,18 +132,18 @@ class RSVPEngine {
     getInterval(wpm, word = '') {
         const baseInterval = Math.round(60000 / wpm);
 
-        // Add pause for punctuation
+        // Proportional pause for punctuation (multipliers)
         const lastChar = word.slice(-1);
 
         if ('.!?'.includes(lastChar)) {
-            // End of sentence - longer pause
-            return baseInterval + 200;
+            // End of sentence - 2x base (natural breath)
+            return Math.round(baseInterval * 2);
         } else if (',;:'.includes(lastChar)) {
-            // Mid-sentence pause
-            return baseInterval + 100;
+            // Mid-sentence pause - 1.4x base
+            return Math.round(baseInterval * 1.4);
         } else if ('—–-'.includes(lastChar)) {
-            // Dash - slight pause
-            return baseInterval + 75;
+            // Dash - 1.25x base
+            return Math.round(baseInterval * 1.25);
         }
 
         return baseInterval;

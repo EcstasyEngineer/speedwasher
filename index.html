@@ -10,6 +10,7 @@
     <div id="app">
         <!-- RSVP Display -->
         <div id="rsvp-container">
+            <div id="flash-overlay"></div>
             <canvas id="spiral-canvas"></canvas>
             <div id="rsvp-frame">
                 <div id="subliminal-top" class="subliminal"></div>
@@ -31,6 +32,7 @@
                     <span class="pause-icon" style="display:none;">&#10074;&#10074;</span>
                 </button>
                 <button id="btn-restart" title="Restart">&#8634;</button>
+                <button id="btn-fullscreen" title="Fullscreen (F)">&#x26F6;</button>
             </div>
 
             <div id="speed-controls">
@@ -39,60 +41,29 @@
                 <span id="wpm-value">300</span>
             </div>
 
-            <div id="preset-buttons">
-                <button class="preset" data-wpm="300">300</button>
-                <button class="preset" data-wpm="450">450</button>
-                <button class="preset" data-wpm="600">600</button>
-                <button class="preset" data-wpm="900">900</button>
-            </div>
-
-            <div id="script-sync">
-                <label>
-                    <input type="checkbox" id="follow-script" checked>
-                    Follow script
-                </label>
-            </div>
+            <button id="btn-sync" class="synced" disabled>Sync</button>
         </div>
 
-        <!-- Script Input -->
+        <!-- Script Editor -->
         <div id="script-section">
-            <div id="tabs">
-                <button class="tab active" data-tab="default">Demo Script</button>
-                <button class="tab" data-tab="custom">Custom Script</button>
-            </div>
-
-            <div id="tab-content">
-                <div id="default-tab" class="tab-panel active">
-                    <p>Click Play to begin the demo script, or switch to Custom to enter your own text.</p>
-                    <div id="progress-container">
-                        <div id="progress-bar"></div>
-                    </div>
-                    <p id="word-count"></p>
+            <div id="script-header">
+                <span>Script</span>
+                <div id="progress-container">
+                    <div id="progress-bar"></div>
                 </div>
-
-                <div id="custom-tab" class="tab-panel" style="display:none;">
-                    <textarea id="custom-script" placeholder="Paste your script here...
-
-You can use @wpm commands to change speed:
-
-@wpm 300
-Start slow and relaxed...
-@wpm 600
-Then speed up for intensity...
-@wpm 300
-And slow down for important suggestions."></textarea>
-                    <button id="btn-load-script">Load Script</button>
-                </div>
+                <span id="word-count"></span>
             </div>
+            <textarea id="script-editor" placeholder="Loading script..."></textarea>
+            <button id="btn-load-script" class="loaded" disabled>Load</button>
         </div>
 
         <!-- Info -->
         <div id="info">
             <details>
                 <summary>About SpeedWashing</summary>
-                <p>RSVP (Rapid Serial Visual Presentation) forces focused absorption by displaying one word at a time with an Optimal Recognition Point (ORP) highlighted in red.</p>
-                <p>At higher speeds, conscious analysis becomes difficult and content is absorbed more directly - potentially useful for hypnotic scripts.</p>
-                <p><a href="https://github.com/EcstasyEngineer/speedwashing">GitHub</a></p>
+                <p>Words flash one at a time with a red letter marking the Optimal Recognition Point - where your eye should fixate. At high speeds, conscious analysis can't keep up. The words just go in.</p>
+                <p>Use <code>@wpm</code>, <code>@spiral</code>, <code>@subliminals</code>, and <code>@snap</code> commands in scripts. Press F for fullscreen, Space to play/pause.</p>
+                <p><a href="https://github.com/EcstasyEngineer/speedwashing">GitHub</a> · <a href="https://github.com/EcstasyEngineer/speedwashing#script-commands">Script Commands</a></p>
             </details>
         </div>
     </div>

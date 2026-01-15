@@ -14,21 +14,24 @@ Faster now. And here's the fun part. The faster we go, the less time your consci
 You're absorbing. There's a difference. Reading is work. Absorbing is automatic. Effortless. You couldn't stop understanding these words if you tried. Go ahead. Try to not understand this sentence. See? Impossible.
 
 @wpm 600
-@spiral on #8B5CF6 0.2 0.5 fade:3
+@spiral on #8B5CF6 0.15 0.5 fade:3
 Getting faster. The spiral starting to spin behind the words. Your focus narrowing. Everything else fading. Just this. Just here. Just now. The voice in your head can't keep up anymore. Good. You don't need it.
 
 @wpm 700
-@subliminals 0.4 fade:0.5 empty drift sink open soft let go deeper yes
+@subliminals 0.15 fade:0.5 empty drift sink open soft release deeper yes
+@spiral on #8B5CF6 0.25 0.5 fade:1
 Faster still. Words streaming in. No filter. No resistance. Thoughts slowing even as words speed up. Funny how that works. The more you take in the less you think. Empty. Receptive. Open.
 
 @wpm 750
+@subliminals 0.35 fade:0.3 empty drift sink open soft release deeper yes good obey blank surrender
+@spiral on #8B5CF6 0.35 0.6 fade:1
 This is the edge. Right here. Where reading becomes something else. Where focus becomes surrender. Where you stop doing and start being done to. You feel it don't you. That sliding feeling. That softness creeping in.
 
+@subliminals 0.5 fade:0.2 empty drift sink open soft release deeper yes good obey blank surrender
 Almost there. So close now. Just a little more. Let it build. Let it peak. Right at the edge and then—
 
 @snap 1200
-@spiral off fade:0.5
-@subliminals off fade:0.3
+@subliminals off fade:0.1
 @wpm 150
 Drop.
 
@@ -38,15 +41,17 @@ There you go. Just like that. So easy. You didn't even try to resist, did you? D
 This is what it feels like. This quiet. This stillness. All that speed and now everything slow. Heavy. Peaceful. You earned this. You played the game and look what you won.
 
 @wpm 200
-Settling deeper now. Each word landing soft. Sinking in. No rush. Nowhere to be. Nothing to do but float here and feel how good this feels. How right. How easy it was to just let go.
+Settling deeper now. Each word landing soft. Sinking in. No rush. Nowhere to be. Nothing to do but float here and feel how good this feels. How right. How easy it was to just release.
 
 See? I told you it was simple. Just read. That's all you had to do. And your mind did the rest. Opened right up. Let everything in. Such a good subject. You didn't even know you were one.
 
 @wpm 250
+@spiral on #8B5CF6 0.2 0.3 fade:2
 But we should probably bring you back now. Slowly. Gently. Letting the world fade back in around the edges. Thoughts starting to move again. Just a little.
 
 @wpm 300
-Coming up now. More alert. More aware. But keeping that soft feeling underneath. That openness. You can come back to it anytime. Just read a little faster and let go a little more.
+@spiral off fade:3
+Coming up now. More alert. More aware. But keeping that soft feeling underneath. That openness. You can come back to it anytime. Just read a little faster and release a little more.
 
 Almost there. Take a breath. Let it out. Eyes focusing. Mind clearing. And... back.
 
