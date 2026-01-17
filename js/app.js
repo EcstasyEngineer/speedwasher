@@ -38,13 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize audio engines
     const binaural = new BinauralEngine();
-    const binaural2 = new HybridBinauralEngine();
     const noise = new NoiseEngine();
 
     // Track audio state for pause/resume
     let audioState = {
         binaural: { active: false, carrier: 300, beat: 10, volume: 0 },
-        binaural2: { active: false, carrier1: 312.5, beat1: 5, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 },
         noise: { active: false, volume: 0 }
     };
 
@@ -129,7 +127,6 @@ Thank you again for watching, and I will see you in the next one.`;
             updatePlayButton(false);
             // Auto-stop audio effects
             binaural.stop(2);
-            binaural2.stop(2);
             noise.stop(2);
         },
         onStateChange: (playing) => {
@@ -137,7 +134,6 @@ Thank you again for watching, and I will see you in the next one.`;
             if (!playing && !isSnapPause) {
                 // Pause - fade out but keep state (skip if snap pause)
                 binaural.stop(0.5);
-                binaural2.stop(0.5);
                 noise.stop(0.5);
             } else if (playing) {
                 // Resume - restore audio if it was active (and not already playing)
@@ -149,21 +145,6 @@ Thank you again for watching, and I will see you in the next one.`;
                         0.5,  // fade for freq changes
                         0.5,  // fadeIn - quick resume
                         audioState.binaural.volume
-                    );
-                }
-                if (audioState.binaural2.active && audioState.binaural2.volume > 0 && !binaural2.isPlaying) {
-                    binaural2.start(
-                        audioState.binaural2.carrier1,
-                        audioState.binaural2.beat1,
-                        audioState.binaural2.carrier2,
-                        audioState.binaural2.beat2,
-                        {
-                            fade: 0.5,
-                            fadeIn: 0.5,
-                            volume: audioState.binaural2.volume,
-                            interleave: audioState.binaural2.interleave,
-                            band2Mix: audioState.binaural2.band2Mix
-                        }
                     );
                 }
                 if (audioState.noise.active && audioState.noise.volume > 0 && !noise.isPlaying) {
@@ -235,36 +216,6 @@ Thank you again for watching, and I will see you in the next one.`;
                 };
             }
         },
-        onBinaural2: (args) => {
-            const params = HybridBinauralEngine.parseCommand(args);
-            if (params.action === 'off') {
-                binaural2.stop(params.fade);
-                audioState.binaural2.active = false;
-                audioState.binaural2.volume = 0;
-            } else {
-                binaural2.start(
-                    params.carrier1, params.beat1,
-                    params.carrier2, params.beat2,
-                    {
-                        fade: params.fade,
-                        fadeIn: params.fadeIn,
-                        volume: params.volume,
-                        interleave: params.interleave,
-                        band2Mix: params.band2Mix
-                    }
-                );
-                audioState.binaural2 = {
-                    active: true,
-                    carrier1: params.carrier1,
-                    beat1: params.beat1,
-                    carrier2: params.carrier2,
-                    beat2: params.beat2,
-                    volume: params.volume,
-                    interleave: params.interleave,
-                    band2Mix: params.band2Mix
-                };
-            }
-        },
         onNoise: (args) => {
             const params = NoiseEngine.parseCommand(args);
             if (params.action === 'off') {
@@ -320,82 +271,17 @@ Thank you again for watching, and I will see you in the next one.`;
         spiral.stop(0.3);
         subliminals.stop(0.3);
         binaural.stop(0.3);
-        binaural2.stop(0.3);
         noise.stop(0.3);
         // Reset audio state
         audioState.binaural = { active: false, carrier: 300, beat: 10, volume: 0 };
-        audioState.binaural2 = { active: false, carrier1: 312.5, beat1: 5, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 };
         audioState.noise = { active: false, volume: 0 };
         rsvp.restart();
     });
 
-    // Fullscreen button - use native APIs when available
-    async function enterFullscreen() {
-        const container = document.getElementById('rsvp-container');
-
-        // Try native fullscreen API first
-        try {
-            if (container.requestFullscreen) {
-                await container.requestFullscreen();
-            } else if (container.webkitRequestFullscreen) {
-                await container.webkitRequestFullscreen();
-            } else if (container.msRequestFullscreen) {
-                await container.msRequestFullscreen();
-            }
-        } catch (e) {
-            console.log('Fullscreen API not available');
-        }
-
-        // Try to lock orientation to landscape (Android only, iOS ignores this)
-        try {
-            if (screen.orientation && screen.orientation.lock) {
-                await screen.orientation.lock('landscape');
-            }
-        } catch (e) {
-            console.log('Orientation lock not available');
-        }
-
-        document.body.classList.add('fullscreen');
-    }
-
-    function exitFullscreen() {
-        if (document.exitFullscreen) {
-            document.exitFullscreen().catch(() => {});
-        } else if (document.webkitExitFullscreen) {
-            document.webkitExitFullscreen();
-        }
-
-        // Unlock orientation
-        try {
-            if (screen.orientation && screen.orientation.unlock) {
-                screen.orientation.unlock();
-            }
-        } catch (e) {}
-
-        document.body.classList.remove('fullscreen');
-    }
-
-    function toggleFullscreen() {
-        if (document.body.classList.contains('fullscreen')) {
-            exitFullscreen();
-        } else {
-            enterFullscreen();
-        }
-    }
-
-    // Listen for native fullscreen changes (e.g., Escape key)
-    document.addEventListener('fullscreenchange', () => {
-        if (!document.fullscreenElement) {
-            document.body.classList.remove('fullscreen');
-        }
+    // Fullscreen button
+    btnFullscreen.addEventListener('click', () => {
+        document.body.classList.toggle('fullscreen');
     });
-    document.addEventListener('webkitfullscreenchange', () => {
-        if (!document.webkitFullscreenElement) {
-            document.body.classList.remove('fullscreen');
-        }
-    });
-
-    btnFullscreen.addEventListener('click', toggleFullscreen);
 
     // Helper to update sync button state
     function updateSyncButton(synced) {
@@ -439,11 +325,9 @@ Thank you again for watching, and I will see you in the next one.`;
             spiral.stop(0.3);
             subliminals.stop(0.3);
             binaural.stop(0.3);
-            binaural2.stop(0.3);
             noise.stop(0.3);
             // Reset audio state
             audioState.binaural = { active: false, carrier: 300, beat: 10, volume: 0 };
-            audioState.binaural2 = { active: false, carrier1: 312.5, beat1: 5, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 };
             audioState.noise = { active: false, volume: 0 };
             rsvp.load(text);
             loadedScript = scriptEditor.value;
@@ -477,19 +361,23 @@ Thank you again for watching, and I will see you in the next one.`;
                 wpmSlider.dispatchEvent(new Event('input'));
                 break;
             case 'KeyF':
-                toggleFullscreen();
+                document.body.classList.toggle('fullscreen');
                 break;
         }
     });
 
     // Double-click RSVP container for fullscreen
-    document.getElementById('rsvp-container').addEventListener('dblclick', toggleFullscreen);
+    document.getElementById('rsvp-container').addEventListener('dblclick', () => {
+        document.body.classList.toggle('fullscreen');
+    });
 
-    // Click anywhere in fullscreen to exit (but not on the container itself)
+    // Click anywhere in fullscreen to exit
     document.addEventListener('click', (e) => {
         if (document.body.classList.contains('fullscreen') &&
-            !e.target.closest('#rsvp-container')) {
-            exitFullscreen();
+            e.target.closest('#rsvp-container')) {
+            // Don't exit on container click
+        } else if (document.body.classList.contains('fullscreen')) {
+            document.body.classList.remove('fullscreen');
         }
     });
 

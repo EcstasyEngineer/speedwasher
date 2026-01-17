@@ -24,7 +24,6 @@ class RSVPEngine {
         this.onSubliminals = options.onSubliminals || (() => {});
         this.onSnap = options.onSnap || (() => {});
         this.onBinaural = options.onBinaural || (() => {});
-        this.onBinaural2 = options.onBinaural2 || (() => {});
         this.onNoise = options.onNoise || (() => {});
     }
 
@@ -87,16 +86,6 @@ class RSVPEngine {
                 pendingCommands.push({
                     type: 'binaural',
                     args: binauralMatch[1]
-                });
-                continue;
-            }
-
-            // Check for @binaural2 command (hybrid dual-band)
-            const binaural2Match = trimmed.match(/^@binaural2\s+(.+)/i);
-            if (binaural2Match) {
-                pendingCommands.push({
-                    type: 'binaural2',
-                    args: binaural2Match[1]
                 });
                 continue;
             }
@@ -203,8 +192,6 @@ class RSVPEngine {
                     this.onSnap(cmd.pause);
                 } else if (cmd.type === 'binaural') {
                     this.onBinaural(cmd.args);
-                } else if (cmd.type === 'binaural2') {
-                    this.onBinaural2(cmd.args);
                 } else if (cmd.type === 'noise') {
                     this.onNoise(cmd.args);
                 }

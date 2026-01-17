@@ -381,35 +381,6 @@ body.fullscreen #info {
     display: none;
 }
 
-/* Fullscreen uses native API, override for actual fullscreen */
-#rsvp-container:fullscreen,
-#rsvp-container:-webkit-full-screen {
-    width: 100vw;
-    height: 100vh;
-    background: #000;
-}
-
-/* Landscape hint for mobile in portrait */
-body.fullscreen #rsvp-container::after {
-    content: '↻ Rotate for best experience';
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--muted-color);
-    font-size: 0.9rem;
-    opacity: 0.7;
-    pointer-events: none;
-    white-space: nowrap;
-}
-
-/* Hide landscape hint in actual landscape or on desktop */
-@media (orientation: landscape), (min-width: 768px) {
-    body.fullscreen #rsvp-container::after {
-        display: none;
-    }
-}
-
 /* Responsive */
 @media (max-width: 600px) {
     #word-container {
