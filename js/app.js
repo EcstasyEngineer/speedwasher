@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Track audio state for pause/resume
     let audioState = {
-        binaural: { active: false, carrier: 300, beat: 10, volume: 0 },
+        binaural: { active: false, carrier1: 300, beat1: 10, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 },
         noise: { active: false, volume: 0 }
     };
 
@@ -140,11 +140,11 @@ Thank you again for watching, and I will see you in the next one.`;
                 // Pass explicit short fadeIn (0.5s) for quick resume
                 if (audioState.binaural.active && audioState.binaural.volume > 0 && !binaural.isPlaying) {
                     binaural.start(
-                        audioState.binaural.carrier,
-                        audioState.binaural.beat,
-                        0.5,  // fade for freq changes
-                        0.5,  // fadeIn - quick resume
-                        audioState.binaural.volume
+                        audioState.binaural.carrier1,
+                        audioState.binaural.beat1,
+                        audioState.binaural.carrier2,
+                        audioState.binaural.beat2,
+                        { fade: 0.5, fadeIn: 0.5, volume: audioState.binaural.volume, interleave: audioState.binaural.interleave, band2Mix: audioState.binaural.band2Mix }
                     );
                 }
                 if (audioState.noise.active && audioState.noise.volume > 0 && !noise.isPlaying) {
@@ -207,12 +207,22 @@ Thank you again for watching, and I will see you in the next one.`;
                 audioState.binaural.active = false;
                 audioState.binaural.volume = 0;
             } else {
-                binaural.start(params.carrier, params.beat, params.fade, params.fadeIn, params.volume);
+                binaural.start(params.carrier1, params.beat1, params.carrier2, params.beat2, {
+                    fade: params.fade,
+                    fadeIn: params.fadeIn,
+                    volume: params.volume,
+                    interleave: params.interleave,
+                    band2Mix: params.band2Mix
+                });
                 audioState.binaural = {
                     active: true,
-                    carrier: params.carrier,
-                    beat: params.beat,
-                    volume: params.volume
+                    carrier1: params.carrier1,
+                    beat1: params.beat1,
+                    carrier2: params.carrier2,
+                    beat2: params.beat2,
+                    volume: params.volume,
+                    interleave: params.interleave,
+                    band2Mix: params.band2Mix
                 };
             }
         },
@@ -273,7 +283,7 @@ Thank you again for watching, and I will see you in the next one.`;
         binaural.stop(0.3);
         noise.stop(0.3);
         // Reset audio state
-        audioState.binaural = { active: false, carrier: 300, beat: 10, volume: 0 };
+        audioState.binaural = { active: false, carrier1: 300, beat1: 10, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 };
         audioState.noise = { active: false, volume: 0 };
         rsvp.restart();
     });
@@ -327,7 +337,7 @@ Thank you again for watching, and I will see you in the next one.`;
             binaural.stop(0.3);
             noise.stop(0.3);
             // Reset audio state
-            audioState.binaural = { active: false, carrier: 300, beat: 10, volume: 0 };
+            audioState.binaural = { active: false, carrier1: 300, beat1: 10, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 };
             audioState.noise = { active: false, volume: 0 };
             rsvp.load(text);
             loadedScript = scriptEditor.value;

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Audio Test</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 { color: #00d4ff; text-align: center; }
+        h2 { color: #ff6b6b; margin-top: 30px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .test-group { margin: 15px 0; }
+        button {
+            background: #4a4e69;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 5px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            min-width: 120px;
+        }
+        button:active { background: #22223b; }
+        button.success { background: #2d6a4f; }
+        button.fail { background: #9d0208; }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            background: #2a2a4a;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+        }
+        .info {
+            font-size: 12px;
+            color: #888;
+            margin: 5px 0;
+        }
+        #log {
+            background: #0a0a1a;
+            padding: 15px;
+            border-radius: 8px;
+            height: 200px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 11px;
+            margin-top: 20px;
+        }
+        .log-entry { margin: 2px 0; }
+        .log-success { color: #4ade80; }
+        .log-error { color: #f87171; }
+        .log-info { color: #60a5fa; }
+    </style>
+</head>
+<body>
+    <h1>iOS Audio Debug</h1>
+    <p class="info">Test different audio approaches to find what works on iOS Safari.</p>
+
+    <h2>1. HTML Audio Element</h2>
+    <div class="test-group">
+        <p class="info">Standard &lt;audio&gt; tag with MP3 - simplest approach</p>
+        <button onclick="testHTMLAudio()">Play MP3</button>
+        <button onclick="stopHTMLAudio()">Stop</button>
+    </div>
+    <audio id="test-audio" preload="auto">
+        <source src="audio/snap.mp3" type="audio/mpeg">
+    </audio>
+
+    <h2>2. Web Audio: OscillatorNode</h2>
+    <div class="test-group">
+        <p class="info">Native browser oscillator - no worklet needed</p>
+        <button onclick="testOscillator()">Play Tone</button>
+        <button onclick="stopOscillator()">Stop</button>
+    </div>
+
+    <h2>3. Web Audio: Stereo Oscillators (Binaural)</h2>
+    <div class="test-group">
+        <p class="info">Two native oscillators, slightly detuned for binaural effect</p>
+        <button onclick="testStereoBinaural()">Play Binaural</button>
+        <button onclick="stopStereoBinaural()">Stop</button>
+    </div>
+
+    <h2>4. AudioWorklet: Blob URL</h2>
+    <div class="test-group">
+        <p class="info">Current approach - worklet code via Blob URL</p>
+        <button onclick="testWorkletBlob()">Play Worklet (Blob)</button>
+        <button onclick="stopWorklet()">Stop</button>
+    </div>
+
+    <h2>5. AudioWorklet: Data URL</h2>
+    <div class="test-group">
+        <p class="info">Alternative - worklet code via base64 data URL</p>
+        <button onclick="testWorkletDataURL()">Play Worklet (Data URL)</button>
+        <button onclick="stopWorklet()">Stop</button>
+    </div>
+
+    <h2>6. AudioBufferSourceNode</h2>
+    <div class="test-group">
+        <p class="info">Pre-generated buffer played through source node</p>
+        <button onclick="testBufferSource()">Play Buffer</button>
+        <button onclick="stopBufferSource()">Stop</button>
+    </div>
+
+    <h2>7. ScriptProcessorNode (Deprecated)</h2>
+    <div class="test-group">
+        <p class="info">Old approach before AudioWorklet - may still work on iOS</p>
+        <button onclick="testScriptProcessor()">Play ScriptProcessor</button>
+        <button onclick="stopScriptProcessor()">Stop</button>
+    </div>
+
+    <h2>8. White Noise Worklet</h2>
+    <div class="test-group">
+        <p class="info">Same worklet pattern as binaural but generating noise</p>
+        <button onclick="testNoiseWorklet()">Play Noise</button>
+        <button onclick="stopNoiseWorklet()">Stop</button>
+    </div>
+
+    <div id="log"></div>
+
+    <script>
+        // Logging
+        function log(msg, type = 'info') {
+            const logEl = document.getElementById('log');
+            const entry = document.createElement('div');
+            entry.className = `log-entry log-${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            logEl.appendChild(entry);
+            logEl.scrollTop = logEl.scrollHeight;
+            console.log(msg);
+        }
+
+        // Shared audio context
+        let ctx = null;
+        function getContext() {
+            if (!ctx) {
+                ctx = new (window.AudioContext || window.webkitAudioContext)();
+                log(`AudioContext created, state: ${ctx.state}, sampleRate: ${ctx.sampleRate}`);
+            }
+            return ctx;
+        }
+
+        async function resumeContext() {
+            const c = getContext();
+            if (c.state === 'suspended') {
+                await c.resume();
+                log(`AudioContext resumed, state: ${c.state}`);
+            }
+            return c;
+        }
+
+        // 1. HTML Audio Element
+        function testHTMLAudio() {
+            try {
+                const audio = document.getElementById('test-audio');
+                audio.currentTime = 0;
+                audio.play()
+                    .then(() => log('HTML Audio: Playing', 'success'))
+                    .catch(e => log(`HTML Audio: ${e.message}`, 'error'));
+            } catch (e) {
+                log(`HTML Audio error: ${e.message}`, 'error');
+            }
+        }
+        function stopHTMLAudio() {
+            document.getElementById('test-audio').pause();
+            log('HTML Audio: Stopped');
+        }
+
+        // 2. OscillatorNode
+        let osc = null;
+        let oscGain = null;
+        async function testOscillator() {
+            try {
+                const c = await resumeContext();
+                osc = c.createOscillator();
+                oscGain = c.createGain();
+                osc.type = 'sine';
+                osc.frequency.value = 300;
+                oscGain.gain.value = 0.3;
+                osc.connect(oscGain);
+                oscGain.connect(c.destination);
+                osc.start();
+                log('OscillatorNode: Playing 300Hz', 'success');
+            } catch (e) {
+                log(`OscillatorNode error: ${e.message}`, 'error');
+            }
+        }
+        function stopOscillator() {
+            if (osc) { osc.stop(); osc = null; }
+            log('OscillatorNode: Stopped');
+        }
+
+        // 3. Stereo Binaural (native oscillators)
+        let binauralOscL = null, binauralOscR = null;
+        let binauralMerger = null, binauralGain = null;
+        async function testStereoBinaural() {
+            try {
+                const c = await resumeContext();
+
+                // Create stereo merger
+                binauralMerger = c.createChannelMerger(2);
+                binauralGain = c.createGain();
+                binauralGain.gain.value = 0.3;
+
+                // Left oscillator (lower freq)
+                binauralOscL = c.createOscillator();
+                binauralOscL.type = 'sine';
+                binauralOscL.frequency.value = 295;
+
+                // Right oscillator (higher freq)
+                binauralOscR = c.createOscillator();
+                binauralOscR.type = 'sine';
+                binauralOscR.frequency.value = 305;
+
+                // Route to stereo
+                binauralOscL.connect(binauralMerger, 0, 0);
+                binauralOscR.connect(binauralMerger, 0, 1);
+                binauralMerger.connect(binauralGain);
+                binauralGain.connect(c.destination);
+
+                binauralOscL.start();
+                binauralOscR.start();
+
+                log('Stereo Binaural: L=295Hz, R=305Hz (10Hz beat)', 'success');
+            } catch (e) {
+                log(`Stereo Binaural error: ${e.message}`, 'error');
+            }
+        }
+        function stopStereoBinaural() {
+            if (binauralOscL) { binauralOscL.stop(); binauralOscL = null; }
+            if (binauralOscR) { binauralOscR.stop(); binauralOscR = null; }
+            log('Stereo Binaural: Stopped');
+        }
+
+        // 4 & 5. AudioWorklet tests
+        const workletCode = `
+class TestProcessor extends AudioWorkletProcessor {
+    constructor() {
+        super();
+        this.phase = 0;
+        this.gain = 0.3;
+    }
+    process(inputs, outputs) {
+        const out = outputs[0];
+        if (!out || !out[0]) return true;
+        const L = out[0], R = out[1] || L;
+        for (let i = 0; i < L.length; i++) {
+            const sample = Math.sin(this.phase) * this.gain;
+            L[i] = sample;
+            R[i] = sample;
+            this.phase += (300 * 2 * Math.PI) / sampleRate;
+            if (this.phase > 2 * Math.PI) this.phase -= 2 * Math.PI;
+        }
+        return true;
+    }
+}
+registerProcessor('test-processor', TestProcessor);
+`;
+
+        let workletNode = null;
+        async function testWorkletBlob() {
+            try {
+                const c = await resumeContext();
+                const blob = new Blob([workletCode], { type: 'application/javascript' });
+                const url = URL.createObjectURL(blob);
+                log(`Worklet Blob URL: ${url.substring(0, 50)}...`);
+                await c.audioWorklet.addModule(url);
+                URL.revokeObjectURL(url);
+                workletNode = new AudioWorkletNode(c, 'test-processor', { outputChannelCount: [2] });
+                workletNode.connect(c.destination);
+                log('AudioWorklet (Blob): Playing 300Hz', 'success');
+            } catch (e) {
+                log(`AudioWorklet (Blob) error: ${e.message}`, 'error');
+            }
+        }
+
+        async function testWorkletDataURL() {
+            try {
+                const c = await resumeContext();
+                const dataUrl = 'data:application/javascript;base64,' + btoa(workletCode);
+                log(`Worklet Data URL: ${dataUrl.substring(0, 50)}...`);
+                await c.audioWorklet.addModule(dataUrl);
+                workletNode = new AudioWorkletNode(c, 'test-processor', { outputChannelCount: [2] });
+                workletNode.connect(c.destination);
+                log('AudioWorklet (Data URL): Playing 300Hz', 'success');
+            } catch (e) {
+                log(`AudioWorklet (Data URL) error: ${e.message}`, 'error');
+            }
+        }
+
+        function stopWorklet() {
+            if (workletNode) {
+                workletNode.disconnect();
+                workletNode = null;
+            }
+            log('AudioWorklet: Stopped');
+        }
+
+        // 6. AudioBufferSourceNode
+        let bufferSource = null;
+        async function testBufferSource() {
+            try {
+                const c = await resumeContext();
+                const duration = 5;
+                const buffer = c.createBuffer(2, c.sampleRate * duration, c.sampleRate);
+                const L = buffer.getChannelData(0);
+                const R = buffer.getChannelData(1);
+
+                // Generate stereo binaural in buffer
+                for (let i = 0; i < buffer.length; i++) {
+                    const t = i / c.sampleRate;
+                    L[i] = Math.sin(2 * Math.PI * 295 * t) * 0.3;
+                    R[i] = Math.sin(2 * Math.PI * 305 * t) * 0.3;
+                }
+
+                bufferSource = c.createBufferSource();
+                bufferSource.buffer = buffer;
+                bufferSource.loop = true;
+                bufferSource.connect(c.destination);
+                bufferSource.start();
+
+                log('AudioBufferSource: Playing pre-generated binaural', 'success');
+            } catch (e) {
+                log(`AudioBufferSource error: ${e.message}`, 'error');
+            }
+        }
+        function stopBufferSource() {
+            if (bufferSource) { bufferSource.stop(); bufferSource = null; }
+            log('AudioBufferSource: Stopped');
+        }
+
+        // 7. ScriptProcessorNode (deprecated but may work)
+        let scriptProcessor = null;
+        async function testScriptProcessor() {
+            try {
+                const c = await resumeContext();
+                const bufferSize = 4096;
+                scriptProcessor = c.createScriptProcessor(bufferSize, 0, 2);
+                let phaseL = 0, phaseR = 0;
+
+                scriptProcessor.onaudioprocess = (e) => {
+                    const L = e.outputBuffer.getChannelData(0);
+                    const R = e.outputBuffer.getChannelData(1);
+                    for (let i = 0; i < bufferSize; i++) {
+                        L[i] = Math.sin(phaseL) * 0.3;
+                        R[i] = Math.sin(phaseR) * 0.3;
+                        phaseL += (295 * 2 * Math.PI) / c.sampleRate;
+                        phaseR += (305 * 2 * Math.PI) / c.sampleRate;
+                    }
+                };
+
+                scriptProcessor.connect(c.destination);
+                log('ScriptProcessor: Playing binaural (deprecated API)', 'success');
+            } catch (e) {
+                log(`ScriptProcessor error: ${e.message}`, 'error');
+            }
+        }
+        function stopScriptProcessor() {
+            if (scriptProcessor) { scriptProcessor.disconnect(); scriptProcessor = null; }
+            log('ScriptProcessor: Stopped');
+        }
+
+        // 8. Noise Worklet (same pattern, different output)
+        const noiseWorkletCode = `
+class NoiseTestProcessor extends AudioWorkletProcessor {
+    constructor() {
+        super();
+        this.gain = 0.1;
+    }
+    process(inputs, outputs) {
+        const out = outputs[0];
+        if (!out || !out[0]) return true;
+        const L = out[0], R = out[1] || L;
+        for (let i = 0; i < L.length; i++) {
+            L[i] = (Math.random() * 2 - 1) * this.gain;
+            R[i] = (Math.random() * 2 - 1) * this.gain;
+        }
+        return true;
+    }
+}
+registerProcessor('noise-test-processor', NoiseTestProcessor);
+`;
+
+        let noiseWorkletNode = null;
+        async function testNoiseWorklet() {
+            try {
+                const c = await resumeContext();
+                const blob = new Blob([noiseWorkletCode], { type: 'application/javascript' });
+                const url = URL.createObjectURL(blob);
+                await c.audioWorklet.addModule(url);
+                URL.revokeObjectURL(url);
+                noiseWorkletNode = new AudioWorkletNode(c, 'noise-test-processor', { outputChannelCount: [2] });
+                noiseWorkletNode.connect(c.destination);
+                log('Noise Worklet: Playing white noise', 'success');
+            } catch (e) {
+                log(`Noise Worklet error: ${e.message}`, 'error');
+            }
+        }
+        function stopNoiseWorklet() {
+            if (noiseWorkletNode) { noiseWorkletNode.disconnect(); noiseWorkletNode = null; }
+            log('Noise Worklet: Stopped');
+        }
+
+        // Initial log
+        log('iOS Audio Test loaded');
+        log(`User Agent: ${navigator.userAgent.substring(0, 80)}...`, 'info');
+    </script>
+</body>
+</html>
