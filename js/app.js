@@ -49,6 +49,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Flag to skip audio stop during snap pauses
     let isSnapPause = false;
 
+    // iOS audio priming - must start audio within ~4s of user gesture
+    let audioPrimed = false;
+    async function primeAudioForIOS() {
+        if (audioPrimed) return;
+        audioPrimed = true;
+
+        // Prime binaural at vol:0
+        await binaural.start(300, 10, null, null, { volume: 0, fade: 0.01, fadeIn: 0.01 });
+
+        // Prime noise at vol:0
+        await noise.start(0, 0.01);
+
+        // Prime snap: play at vol:0 then pause
+        if (snapSound) {
+            const origVol = snapSound.volume;
+            snapSound.volume = 0;
+            snapSound.play().then(() => {
+                snapSound.pause();
+                snapSound.currentTime = 0;
+                snapSound.volume = origVol;
+            }).catch(() => {}); // Ignore errors
+        }
+    }
+
     // Default demo script - original speed reading video transcript
     const DEFAULT_SCRIPT = `@wpm 300
 Let's see if you can keep up with this speed reading exercise. We'll kick things off at 300 words per minute. The average person reads around 200 to 250 words per minute, so you're already reading faster than most people. Anyway, let's give 360 words per minute a try.
@@ -271,7 +295,8 @@ Thank you again for watching, and I will see you in the next one.`;
     // Event Listeners
 
     // Play/Pause button
-    btnPlay.addEventListener('click', () => {
+    btnPlay.addEventListener('click', async () => {
+        await primeAudioForIOS();
         rsvp.toggle();
     });
 
@@ -282,9 +307,10 @@ Thank you again for watching, and I will see you in the next one.`;
         subliminals.stop(0.3);
         binaural.stop(0.3);
         noise.stop(0.3);
-        // Reset audio state
+        // Reset audio state and prime flag
         audioState.binaural = { active: false, carrier1: 300, beat1: 10, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 };
         audioState.noise = { active: false, volume: 0 };
+        audioPrimed = false;
         rsvp.restart();
     });
 
@@ -336,9 +362,10 @@ Thank you again for watching, and I will see you in the next one.`;
             subliminals.stop(0.3);
             binaural.stop(0.3);
             noise.stop(0.3);
-            // Reset audio state
+            // Reset audio state and prime flag
             audioState.binaural = { active: false, carrier1: 300, beat1: 10, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 };
             audioState.noise = { active: false, volume: 0 };
+            audioPrimed = false;
             rsvp.load(text);
             loadedScript = scriptEditor.value;
             updateLoadButton();
@@ -353,7 +380,7 @@ Thank you again for watching, and I will see you in the next one.`;
         switch (e.code) {
             case 'Space':
                 e.preventDefault();
-                rsvp.toggle();
+                primeAudioForIOS().then(() => rsvp.toggle());
                 break;
             case 'KeyR':
                 rsvp.restart();
