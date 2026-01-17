@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iOS Audio Test</title>
+    <title>iOS Audio Gesture Timeout Test</title>
     <style>
         * { box-sizing: border-box; }
         body {
@@ -26,30 +26,37 @@
             border-radius: 8px;
             font-size: 14px;
             cursor: pointer;
-            min-width: 120px;
         }
         button:active { background: #22223b; }
-        button.success { background: #2d6a4f; }
-        button.fail { background: #9d0208; }
-        .status {
-            padding: 10px;
-            margin: 10px 0;
-            background: #2a2a4a;
-            border-radius: 5px;
-            font-family: monospace;
-            font-size: 12px;
-            white-space: pre-wrap;
-        }
+        button:disabled { opacity: 0.5; }
         .info {
             font-size: 12px;
             color: #888;
             margin: 5px 0;
         }
+        .delay-control {
+            background: #2a2a4a;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .delay-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .delay-control input {
+            width: 80px;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            margin-right: 10px;
+        }
         #log {
             background: #0a0a1a;
             padding: 15px;
             border-radius: 8px;
-            height: 200px;
+            height: 250px;
             overflow-y: auto;
             font-family: monospace;
             font-size: 11px;
@@ -59,93 +66,77 @@
         .log-success { color: #4ade80; }
         .log-error { color: #f87171; }
         .log-info { color: #60a5fa; }
+        .log-warn { color: #fbbf24; }
+        .countdown {
+            font-size: 24px;
+            color: #00d4ff;
+            text-align: center;
+            padding: 10px;
+            min-height: 44px;
+        }
     </style>
 </head>
 <body>
-    <h1>iOS Audio Debug</h1>
-    <p class="info">Test different audio approaches to find what works on iOS Safari.</p>
+    <h1>iOS Gesture Timeout Test</h1>
+    <p class="info">Test whether iOS blocks audio started too long after a user gesture.</p>
 
-    <h2>1. HTML Audio Element</h2>
-    <div class="test-group">
-        <p class="info">Standard &lt;audio&gt; tag with MP3 - simplest approach</p>
-        <button onclick="testHTMLAudio()">Play MP3</button>
-        <button onclick="stopHTMLAudio()">Stop</button>
-    </div>
-    <audio id="test-audio" preload="auto">
-        <source src="audio/snap.mp3" type="audio/mpeg">
-    </audio>
-
-    <h2>2. Web Audio: OscillatorNode</h2>
-    <div class="test-group">
-        <p class="info">Native browser oscillator - no worklet needed</p>
-        <button onclick="testOscillator()">Play Tone</button>
-        <button onclick="stopOscillator()">Stop</button>
+    <div class="delay-control">
+        <label>Delay before audio starts: <input type="number" id="delay" value="5" min="1" max="120"> seconds</label>
+        <div class="countdown" id="countdown"></div>
     </div>
 
-    <h2>3. Web Audio: Stereo Oscillators (Binaural)</h2>
+    <h2>Unprimed Tests (expect fail on iOS with long delay)</h2>
+
     <div class="test-group">
-        <p class="info">Two native oscillators, slightly detuned for binaural effect</p>
-        <button onclick="testStereoBinaural()">Play Binaural</button>
-        <button onclick="stopStereoBinaural()">Stop</button>
+        <p class="info">1. Start snap sound after delay - no priming</p>
+        <button onclick="testSnapUnprimed()">Test Snap (Unprimed)</button>
     </div>
 
-    <h2>4. AudioWorklet: Blob URL</h2>
     <div class="test-group">
-        <p class="info">Current approach - worklet code via Blob URL</p>
-        <button onclick="testWorkletBlob()">Play Worklet (Blob)</button>
-        <button onclick="stopWorklet()">Stop</button>
+        <p class="info">2. Start binaural after delay - no priming</p>
+        <button onclick="testBinauralUnprimed()">Test Binaural (Unprimed)</button>
     </div>
 
-    <h2>5. AudioWorklet: Data URL</h2>
+    <h2>Primed Tests (expect success even with long delay)</h2>
+
     <div class="test-group">
-        <p class="info">Alternative - worklet code via base64 data URL</p>
-        <button onclick="testWorkletDataURL()">Play Worklet (Data URL)</button>
-        <button onclick="stopWorklet()">Stop</button>
+        <p class="info">3. Prime snap immediately, play after delay</p>
+        <button onclick="testSnapPrimed()">Test Snap (Primed)</button>
     </div>
 
-    <h2>6. AudioBufferSourceNode</h2>
     <div class="test-group">
-        <p class="info">Pre-generated buffer played through source node</p>
-        <button onclick="testBufferSource()">Play Buffer</button>
-        <button onclick="stopBufferSource()">Stop</button>
+        <p class="info">4. Prime binaural at vol:0 immediately, set volume after delay</p>
+        <button onclick="testBinauralPrimed()">Test Binaural (Primed)</button>
     </div>
 
-    <h2>7. ScriptProcessorNode (Deprecated)</h2>
+    <h2>Alternative Priming Methods</h2>
+
     <div class="test-group">
-        <p class="info">Old approach before AudioWorklet - may still work on iOS</p>
-        <button onclick="testScriptProcessor()">Play ScriptProcessor</button>
-        <button onclick="stopScriptProcessor()">Stop</button>
+        <p class="info">5. Prime snap with play()/pause() trick</p>
+        <button onclick="testSnapPlayPause()">Test Snap (Play/Pause Prime)</button>
     </div>
 
-    <h2>8. White Noise Worklet</h2>
     <div class="test-group">
-        <p class="info">Same worklet pattern as binaural but generating noise</p>
-        <button onclick="testNoiseWorklet()">Play Noise</button>
-        <button onclick="stopNoiseWorklet()">Stop</button>
+        <p class="info">6. Prime AudioContext only, create worklet after delay</p>
+        <button onclick="testBinauralContextOnly()">Test Binaural (Context Prime Only)</button>
     </div>
 
-    <h2>9. Binaural Worklet (True Stereo)</h2>
     <div class="test-group">
-        <p class="info">Worklet generating different frequencies for L/R channels</p>
-        <button onclick="testBinauralWorklet()">Play Binaural Worklet</button>
-        <button onclick="stopBinauralWorklet()">Stop</button>
+        <p class="info">7. Create worklet immediately, but don't connect until after delay</p>
+        <button onclick="testBinauralDelayedConnect()">Test Binaural (Delayed Connect)</button>
     </div>
 
-    <h2>10. Worklet + Native Oscillators Hybrid</h2>
+    <h2>Controls</h2>
     <div class="test-group">
-        <p class="info">Native oscillators feeding through a passthrough worklet</p>
-        <button onclick="testHybridWorklet()">Play Hybrid</button>
-        <button onclick="stopHybridWorklet()">Stop</button>
-    </div>
-
-    <h2>11. Worklet with ChannelSplitter/Merger</h2>
-    <div class="test-group">
-        <p class="info">Mono worklet split to stereo via channel nodes</p>
-        <button onclick="testSplitWorklet()">Play Split Worklet</button>
-        <button onclick="stopSplitWorklet()">Stop</button>
+        <button onclick="stopAll()">Stop All Audio</button>
+        <button onclick="clearLog()">Clear Log</button>
     </div>
 
     <div id="log"></div>
+
+    <audio id="snap-audio" preload="auto">
+        <source src="audio/snap.mp3" type="audio/mpeg">
+    </audio>
 
     <script>
         // Logging
@@ -159,12 +150,39 @@
             console.log(msg);
         }
 
-        // Shared audio context
+        function clearLog() {
+            document.getElementById('log').innerHTML = '';
+        }
+
+        function getDelay() {
+            return parseInt(document.getElementById('delay').value, 10) * 1000;
+        }
+
+        function countdown(seconds, callback) {
+            const el = document.getElementById('countdown');
+            let remaining = seconds;
+            el.textContent = remaining;
+            const interval = setInterval(() => {
+                remaining--;
+                if (remaining > 0) {
+                    el.textContent = remaining;
+                } else {
+                    el.textContent = 'NOW!';
+                    clearInterval(interval);
+                    callback();
+                    setTimeout(() => { el.textContent = ''; }, 1000);
+                }
+            }, 1000);
+        }
+
+        // Audio context management
         let ctx = null;
+        let binauralNode = null;
+
         function getContext() {
             if (!ctx) {
                 ctx = new (window.AudioContext || window.webkitAudioContext)();
-                log(`AudioContext created, state: ${ctx.state}, sampleRate: ${ctx.sampleRate}`);
+                log(`AudioContext created, state: ${ctx.state}`);
             }
             return ctx;
         }
@@ -173,277 +191,32 @@
             const c = getContext();
             if (c.state === 'suspended') {
                 await c.resume();
-                log(`AudioContext resumed, state: ${c.state}`);
+                log(`AudioContext resumed`);
             }
             return c;
         }
 
-        // 1. HTML Audio Element
-        function testHTMLAudio() {
-            try {
-                const audio = document.getElementById('test-audio');
-                audio.currentTime = 0;
-                audio.play()
-                    .then(() => log('HTML Audio: Playing', 'success'))
-                    .catch(e => log(`HTML Audio: ${e.message}`, 'error'));
-            } catch (e) {
-                log(`HTML Audio error: ${e.message}`, 'error');
-            }
-        }
-        function stopHTMLAudio() {
-            document.getElementById('test-audio').pause();
-            log('HTML Audio: Stopped');
-        }
-
-        // 2. OscillatorNode
-        let osc = null;
-        let oscGain = null;
-        async function testOscillator() {
-            try {
-                const c = await resumeContext();
-                osc = c.createOscillator();
-                oscGain = c.createGain();
-                osc.type = 'sine';
-                osc.frequency.value = 300;
-                oscGain.gain.value = 0.3;
-                osc.connect(oscGain);
-                oscGain.connect(c.destination);
-                osc.start();
-                log('OscillatorNode: Playing 300Hz', 'success');
-            } catch (e) {
-                log(`OscillatorNode error: ${e.message}`, 'error');
-            }
-        }
-        function stopOscillator() {
-            if (osc) { osc.stop(); osc = null; }
-            log('OscillatorNode: Stopped');
-        }
-
-        // 3. Stereo Binaural (native oscillators)
-        let binauralOscL = null, binauralOscR = null;
-        let binauralMerger = null, binauralGain = null;
-        async function testStereoBinaural() {
-            try {
-                const c = await resumeContext();
-
-                // Create stereo merger
-                binauralMerger = c.createChannelMerger(2);
-                binauralGain = c.createGain();
-                binauralGain.gain.value = 0.3;
-
-                // Left oscillator (lower freq)
-                binauralOscL = c.createOscillator();
-                binauralOscL.type = 'sine';
-                binauralOscL.frequency.value = 295;
-
-                // Right oscillator (higher freq)
-                binauralOscR = c.createOscillator();
-                binauralOscR.type = 'sine';
-                binauralOscR.frequency.value = 305;
-
-                // Route to stereo
-                binauralOscL.connect(binauralMerger, 0, 0);
-                binauralOscR.connect(binauralMerger, 0, 1);
-                binauralMerger.connect(binauralGain);
-                binauralGain.connect(c.destination);
-
-                binauralOscL.start();
-                binauralOscR.start();
-
-                log('Stereo Binaural: L=295Hz, R=305Hz (10Hz beat)', 'success');
-            } catch (e) {
-                log(`Stereo Binaural error: ${e.message}`, 'error');
-            }
-        }
-        function stopStereoBinaural() {
-            if (binauralOscL) { binauralOscL.stop(); binauralOscL = null; }
-            if (binauralOscR) { binauralOscR.stop(); binauralOscR = null; }
-            log('Stereo Binaural: Stopped');
-        }
-
-        // 4 & 5. AudioWorklet tests
-        const workletCode = `
-class TestProcessor extends AudioWorkletProcessor {
-    constructor() {
-        super();
-        this.phase = 0;
-        this.gain = 0.3;
-    }
-    process(inputs, outputs) {
-        const out = outputs[0];
-        if (!out || !out[0]) return true;
-        const L = out[0], R = out[1] || L;
-        for (let i = 0; i < L.length; i++) {
-            const sample = Math.sin(this.phase) * this.gain;
-            L[i] = sample;
-            R[i] = sample;
-            this.phase += (300 * 2 * Math.PI) / sampleRate;
-            if (this.phase > 2 * Math.PI) this.phase -= 2 * Math.PI;
-        }
-        return true;
-    }
-}
-registerProcessor('test-processor', TestProcessor);
-`;
-
-        let workletNode = null;
-        async function testWorkletBlob() {
-            try {
-                const c = await resumeContext();
-                const blob = new Blob([workletCode], { type: 'application/javascript' });
-                const url = URL.createObjectURL(blob);
-                log(`Worklet Blob URL: ${url.substring(0, 50)}...`);
-                await c.audioWorklet.addModule(url);
-                URL.revokeObjectURL(url);
-                workletNode = new AudioWorkletNode(c, 'test-processor', { outputChannelCount: [2] });
-                workletNode.connect(c.destination);
-                log('AudioWorklet (Blob): Playing 300Hz', 'success');
-            } catch (e) {
-                log(`AudioWorklet (Blob) error: ${e.message}`, 'error');
-            }
-        }
-
-        async function testWorkletDataURL() {
-            try {
-                const c = await resumeContext();
-                const dataUrl = 'data:application/javascript;base64,' + btoa(workletCode);
-                log(`Worklet Data URL: ${dataUrl.substring(0, 50)}...`);
-                await c.audioWorklet.addModule(dataUrl);
-                workletNode = new AudioWorkletNode(c, 'test-processor', { outputChannelCount: [2] });
-                workletNode.connect(c.destination);
-                log('AudioWorklet (Data URL): Playing 300Hz', 'success');
-            } catch (e) {
-                log(`AudioWorklet (Data URL) error: ${e.message}`, 'error');
-            }
-        }
-
-        function stopWorklet() {
-            if (workletNode) {
-                workletNode.disconnect();
-                workletNode = null;
-            }
-            log('AudioWorklet: Stopped');
-        }
-
-        // 6. AudioBufferSourceNode
-        let bufferSource = null;
-        async function testBufferSource() {
-            try {
-                const c = await resumeContext();
-                const duration = 5;
-                const buffer = c.createBuffer(2, c.sampleRate * duration, c.sampleRate);
-                const L = buffer.getChannelData(0);
-                const R = buffer.getChannelData(1);
-
-                // Generate stereo binaural in buffer
-                for (let i = 0; i < buffer.length; i++) {
-                    const t = i / c.sampleRate;
-                    L[i] = Math.sin(2 * Math.PI * 295 * t) * 0.3;
-                    R[i] = Math.sin(2 * Math.PI * 305 * t) * 0.3;
-                }
-
-                bufferSource = c.createBufferSource();
-                bufferSource.buffer = buffer;
-                bufferSource.loop = true;
-                bufferSource.connect(c.destination);
-                bufferSource.start();
-
-                log('AudioBufferSource: Playing pre-generated binaural', 'success');
-            } catch (e) {
-                log(`AudioBufferSource error: ${e.message}`, 'error');
-            }
-        }
-        function stopBufferSource() {
-            if (bufferSource) { bufferSource.stop(); bufferSource = null; }
-            log('AudioBufferSource: Stopped');
-        }
-
-        // 7. ScriptProcessorNode (deprecated but may work)
-        let scriptProcessor = null;
-        async function testScriptProcessor() {
-            try {
-                const c = await resumeContext();
-                const bufferSize = 4096;
-                scriptProcessor = c.createScriptProcessor(bufferSize, 0, 2);
-                let phaseL = 0, phaseR = 0;
-
-                scriptProcessor.onaudioprocess = (e) => {
-                    const L = e.outputBuffer.getChannelData(0);
-                    const R = e.outputBuffer.getChannelData(1);
-                    for (let i = 0; i < bufferSize; i++) {
-                        L[i] = Math.sin(phaseL) * 0.3;
-                        R[i] = Math.sin(phaseR) * 0.3;
-                        phaseL += (295 * 2 * Math.PI) / c.sampleRate;
-                        phaseR += (305 * 2 * Math.PI) / c.sampleRate;
-                    }
-                };
-
-                scriptProcessor.connect(c.destination);
-                log('ScriptProcessor: Playing binaural (deprecated API)', 'success');
-            } catch (e) {
-                log(`ScriptProcessor error: ${e.message}`, 'error');
-            }
-        }
-        function stopScriptProcessor() {
-            if (scriptProcessor) { scriptProcessor.disconnect(); scriptProcessor = null; }
-            log('ScriptProcessor: Stopped');
-        }
-
-        // 8. Noise Worklet (same pattern, different output)
-        const noiseWorkletCode = `
-class NoiseTestProcessor extends AudioWorkletProcessor {
-    constructor() {
-        super();
-        this.gain = 0.1;
-    }
-    process(inputs, outputs) {
-        const out = outputs[0];
-        if (!out || !out[0]) return true;
-        const L = out[0], R = out[1] || L;
-        for (let i = 0; i < L.length; i++) {
-            L[i] = (Math.random() * 2 - 1) * this.gain;
-            R[i] = (Math.random() * 2 - 1) * this.gain;
-        }
-        return true;
-    }
-}
-registerProcessor('noise-test-processor', NoiseTestProcessor);
-`;
-
-        let noiseWorkletNode = null;
-        async function testNoiseWorklet() {
-            try {
-                const c = await resumeContext();
-                const blob = new Blob([noiseWorkletCode], { type: 'application/javascript' });
-                const url = URL.createObjectURL(blob);
-                await c.audioWorklet.addModule(url);
-                URL.revokeObjectURL(url);
-                noiseWorkletNode = new AudioWorkletNode(c, 'noise-test-processor', { outputChannelCount: [2] });
-                noiseWorkletNode.connect(c.destination);
-                log('Noise Worklet: Playing white noise', 'success');
-            } catch (e) {
-                log(`Noise Worklet error: ${e.message}`, 'error');
-            }
-        }
-        function stopNoiseWorklet() {
-            if (noiseWorkletNode) { noiseWorkletNode.disconnect(); noiseWorkletNode = null; }
-            log('Noise Worklet: Stopped');
-        }
-
-        // 9. Binaural Worklet (True Stereo - different freqs per channel)
+        // Binaural worklet code
         const binauralWorkletCode = `
-class BinauralTestProcessor extends AudioWorkletProcessor {
+class BinauralProcessor extends AudioWorkletProcessor {
     constructor() {
         super();
         this.phaseL = 0;
         this.phaseR = 0;
-        this.gain = 0.3;
+        this.gain = 0;
+        this.targetGain = 0;
+        this.port.onmessage = (e) => {
+            if (e.data.gain !== undefined) this.targetGain = e.data.gain;
+        };
     }
     process(inputs, outputs) {
         const out = outputs[0];
         if (!out || !out[0] || !out[1]) return true;
         const L = out[0], R = out[1];
+        // Smooth gain changes
+        const smooth = 0.001;
         for (let i = 0; i < L.length; i++) {
+            this.gain += (this.targetGain - this.gain) * smooth;
             L[i] = Math.sin(this.phaseL) * this.gain;
             R[i] = Math.sin(this.phaseR) * this.gain;
             this.phaseL += (295 * 2 * Math.PI) / sampleRate;
@@ -454,165 +227,191 @@ class BinauralTestProcessor extends AudioWorkletProcessor {
         return true;
     }
 }
-registerProcessor('binaural-test-processor', BinauralTestProcessor);
+registerProcessor('binaural-processor', BinauralProcessor);
 `;
 
-        let binauralWorkletNode = null;
-        async function testBinauralWorklet() {
-            try {
-                const c = await resumeContext();
-                const blob = new Blob([binauralWorkletCode], { type: 'application/javascript' });
-                const url = URL.createObjectURL(blob);
-                await c.audioWorklet.addModule(url);
-                URL.revokeObjectURL(url);
-                binauralWorkletNode = new AudioWorkletNode(c, 'binaural-test-processor', { outputChannelCount: [2] });
-                binauralWorkletNode.connect(c.destination);
-                log('Binaural Worklet: L=295Hz, R=305Hz (should beat)', 'success');
-            } catch (e) {
-                log(`Binaural Worklet error: ${e.message}`, 'error');
-            }
-        }
-        function stopBinauralWorklet() {
-            if (binauralWorkletNode) { binauralWorkletNode.disconnect(); binauralWorkletNode = null; }
-            log('Binaural Worklet: Stopped');
+        let workletLoaded = false;
+        async function loadWorklet(c) {
+            if (workletLoaded) return;
+            const blob = new Blob([binauralWorkletCode], { type: 'application/javascript' });
+            const url = URL.createObjectURL(blob);
+            await c.audioWorklet.addModule(url);
+            URL.revokeObjectURL(url);
+            workletLoaded = true;
+            log('Worklet module loaded');
         }
 
-        // 10. Hybrid: Native oscillators through passthrough worklet
-        const passthroughWorkletCode = `
-class PassthroughProcessor extends AudioWorkletProcessor {
-    process(inputs, outputs) {
-        const input = inputs[0];
-        const output = outputs[0];
-        if (!input || !output) return true;
-        for (let ch = 0; ch < output.length; ch++) {
-            const inCh = input[ch] || input[0];
-            const outCh = output[ch];
-            if (inCh && outCh) {
-                for (let i = 0; i < outCh.length; i++) {
-                    outCh[i] = inCh[i];
+        // Stop all
+        function stopAll() {
+            const snap = document.getElementById('snap-audio');
+            snap.pause();
+            snap.currentTime = 0;
+            if (binauralNode) {
+                binauralNode.port.postMessage({ gain: 0 });
+                setTimeout(() => {
+                    if (binauralNode) {
+                        binauralNode.disconnect();
+                        binauralNode = null;
+                    }
+                }, 100);
+            }
+            log('All audio stopped');
+        }
+
+        // ============ TEST 1: Snap Unprimed ============
+        function testSnapUnprimed() {
+            const delay = getDelay();
+            log(`TEST 1: Snap unprimed - will play in ${delay/1000}s`, 'warn');
+
+            countdown(delay / 1000, () => {
+                const snap = document.getElementById('snap-audio');
+                snap.currentTime = 0;
+                snap.play()
+                    .then(() => log('Snap played successfully', 'success'))
+                    .catch(e => log(`Snap FAILED: ${e.message}`, 'error'));
+            });
+        }
+
+        // ============ TEST 2: Binaural Unprimed ============
+        async function testBinauralUnprimed() {
+            const delay = getDelay();
+            log(`TEST 2: Binaural unprimed - will start in ${delay/1000}s`, 'warn');
+
+            countdown(delay / 1000, async () => {
+                try {
+                    const c = await resumeContext();
+                    await loadWorklet(c);
+                    binauralNode = new AudioWorkletNode(c, 'binaural-processor', { outputChannelCount: [2] });
+                    binauralNode.connect(c.destination);
+                    binauralNode.port.postMessage({ gain: 0.3 });
+                    log('Binaural started successfully', 'success');
+                } catch (e) {
+                    log(`Binaural FAILED: ${e.message}`, 'error');
                 }
-            }
+            });
         }
-        return true;
-    }
-}
-registerProcessor('passthrough-processor', PassthroughProcessor);
-`;
 
-        let hybridOscL = null, hybridOscR = null, hybridMerger = null, hybridWorklet = null;
-        async function testHybridWorklet() {
+        // ============ TEST 3: Snap Primed ============
+        function testSnapPrimed() {
+            const delay = getDelay();
+            log(`TEST 3: Snap primed - priming now, will play in ${delay/1000}s`, 'warn');
+
+            // Prime: set volume to 0 and play immediately
+            const snap = document.getElementById('snap-audio');
+            const origVolume = snap.volume;
+            snap.volume = 0;
+            snap.currentTime = 0;
+            snap.play()
+                .then(() => {
+                    log('Snap primed (playing at vol:0)', 'info');
+                    snap.pause();
+                    snap.volume = origVolume;
+                    snap.currentTime = 0;
+                })
+                .catch(e => log(`Snap prime FAILED: ${e.message}`, 'error'));
+
+            countdown(delay / 1000, () => {
+                snap.currentTime = 0;
+                snap.play()
+                    .then(() => log('Snap played successfully after prime', 'success'))
+                    .catch(e => log(`Snap FAILED after prime: ${e.message}`, 'error'));
+            });
+        }
+
+        // ============ TEST 4: Binaural Primed at vol:0 ============
+        async function testBinauralPrimed() {
+            const delay = getDelay();
+            log(`TEST 4: Binaural primed - starting at vol:0 now, volume up in ${delay/1000}s`, 'warn');
+
             try {
                 const c = await resumeContext();
+                await loadWorklet(c);
+                binauralNode = new AudioWorkletNode(c, 'binaural-processor', { outputChannelCount: [2] });
+                binauralNode.connect(c.destination);
+                binauralNode.port.postMessage({ gain: 0 }); // Start silent
+                log('Binaural primed (running at vol:0)', 'info');
 
-                // Load passthrough worklet
-                const blob = new Blob([passthroughWorkletCode], { type: 'application/javascript' });
-                const url = URL.createObjectURL(blob);
-                await c.audioWorklet.addModule(url);
-                URL.revokeObjectURL(url);
-
-                // Create oscillators
-                hybridOscL = c.createOscillator();
-                hybridOscR = c.createOscillator();
-                hybridOscL.frequency.value = 295;
-                hybridOscR.frequency.value = 305;
-
-                // Merge to stereo
-                hybridMerger = c.createChannelMerger(2);
-                hybridOscL.connect(hybridMerger, 0, 0);
-                hybridOscR.connect(hybridMerger, 0, 1);
-
-                // Through worklet
-                hybridWorklet = new AudioWorkletNode(c, 'passthrough-processor', {
-                    numberOfInputs: 1,
-                    numberOfOutputs: 1,
-                    outputChannelCount: [2]
+                countdown(delay / 1000, () => {
+                    binauralNode.port.postMessage({ gain: 0.3 });
+                    log('Binaural volume set to 0.3', 'success');
                 });
-
-                const gain = c.createGain();
-                gain.gain.value = 0.3;
-
-                hybridMerger.connect(hybridWorklet);
-                hybridWorklet.connect(gain);
-                gain.connect(c.destination);
-
-                hybridOscL.start();
-                hybridOscR.start();
-
-                log('Hybrid: Native oscs -> worklet passthrough', 'success');
             } catch (e) {
-                log(`Hybrid error: ${e.message}`, 'error');
+                log(`Binaural prime FAILED: ${e.message}`, 'error');
             }
         }
-        function stopHybridWorklet() {
-            if (hybridOscL) { hybridOscL.stop(); hybridOscL = null; }
-            if (hybridOscR) { hybridOscR.stop(); hybridOscR = null; }
-            if (hybridWorklet) { hybridWorklet.disconnect(); hybridWorklet = null; }
-            log('Hybrid: Stopped');
+
+        // ============ TEST 5: Snap Play/Pause Prime ============
+        function testSnapPlayPause() {
+            const delay = getDelay();
+            log(`TEST 5: Snap play/pause prime - will play in ${delay/1000}s`, 'warn');
+
+            // Prime: play then immediately pause
+            const snap = document.getElementById('snap-audio');
+            snap.currentTime = 0;
+            snap.play()
+                .then(() => {
+                    snap.pause();
+                    snap.currentTime = 0;
+                    log('Snap primed (play/pause trick)', 'info');
+                })
+                .catch(e => log(`Snap prime FAILED: ${e.message}`, 'error'));
+
+            countdown(delay / 1000, () => {
+                snap.currentTime = 0;
+                snap.play()
+                    .then(() => log('Snap played successfully after play/pause prime', 'success'))
+                    .catch(e => log(`Snap FAILED: ${e.message}`, 'error'));
+            });
         }
 
-        // 11. Two mono worklets merged to stereo
-        const monoOscWorkletCode = `
-class MonoOscProcessor extends AudioWorkletProcessor {
-    constructor(options) {
-        super();
-        this.freq = options.processorOptions?.freq || 300;
-        this.phase = 0;
-        this.gain = 0.3;
-    }
-    process(inputs, outputs) {
-        const out = outputs[0][0];
-        if (!out) return true;
-        for (let i = 0; i < out.length; i++) {
-            out[i] = Math.sin(this.phase) * this.gain;
-            this.phase += (this.freq * 2 * Math.PI) / sampleRate;
-            if (this.phase > 2 * Math.PI) this.phase -= 2 * Math.PI;
-        }
-        return true;
-    }
-}
-registerProcessor('mono-osc-processor', MonoOscProcessor);
-`;
+        // ============ TEST 6: Context Prime Only ============
+        async function testBinauralContextOnly() {
+            const delay = getDelay();
+            log(`TEST 6: Context prime only - context now, worklet in ${delay/1000}s`, 'warn');
 
-        let splitWorkletL = null, splitWorkletR = null, splitMerger = null;
-        async function testSplitWorklet() {
+            // Only prime the context, not the worklet
+            const c = await resumeContext();
+            log('AudioContext primed', 'info');
+
+            countdown(delay / 1000, async () => {
+                try {
+                    await loadWorklet(c);
+                    binauralNode = new AudioWorkletNode(c, 'binaural-processor', { outputChannelCount: [2] });
+                    binauralNode.connect(c.destination);
+                    binauralNode.port.postMessage({ gain: 0.3 });
+                    log('Binaural started successfully (context-only prime)', 'success');
+                } catch (e) {
+                    log(`Binaural FAILED: ${e.message}`, 'error');
+                }
+            });
+        }
+
+        // ============ TEST 7: Delayed Connect ============
+        async function testBinauralDelayedConnect() {
+            const delay = getDelay();
+            log(`TEST 7: Delayed connect - create now, connect in ${delay/1000}s`, 'warn');
+
             try {
                 const c = await resumeContext();
+                await loadWorklet(c);
+                binauralNode = new AudioWorkletNode(c, 'binaural-processor', { outputChannelCount: [2] });
+                // DON'T connect yet
+                binauralNode.port.postMessage({ gain: 0.3 });
+                log('Binaural created but not connected', 'info');
 
-                const blob = new Blob([monoOscWorkletCode], { type: 'application/javascript' });
-                const url = URL.createObjectURL(blob);
-                await c.audioWorklet.addModule(url);
-                URL.revokeObjectURL(url);
-
-                // Two mono worklets
-                splitWorkletL = new AudioWorkletNode(c, 'mono-osc-processor', {
-                    outputChannelCount: [1],
-                    processorOptions: { freq: 295 }
+                countdown(delay / 1000, () => {
+                    binauralNode.connect(c.destination);
+                    log('Binaural connected to destination', 'success');
                 });
-                splitWorkletR = new AudioWorkletNode(c, 'mono-osc-processor', {
-                    outputChannelCount: [1],
-                    processorOptions: { freq: 305 }
-                });
-
-                // Merge to stereo
-                splitMerger = c.createChannelMerger(2);
-                splitWorkletL.connect(splitMerger, 0, 0);
-                splitWorkletR.connect(splitMerger, 0, 1);
-                splitMerger.connect(c.destination);
-
-                log('Split Worklet: Two mono worklets merged to stereo', 'success');
             } catch (e) {
-                log(`Split Worklet error: ${e.message}`, 'error');
+                log(`Binaural FAILED: ${e.message}`, 'error');
             }
-        }
-        function stopSplitWorklet() {
-            if (splitWorkletL) { splitWorkletL.disconnect(); splitWorkletL = null; }
-            if (splitWorkletR) { splitWorkletR.disconnect(); splitWorkletR = null; }
-            log('Split Worklet: Stopped');
         }
 
         // Initial log
-        log('iOS Audio Test loaded');
-        log(`User Agent: ${navigator.userAgent.substring(0, 80)}...`, 'info');
+        log('iOS Gesture Timeout Test loaded');
+        log(`User Agent: ${navigator.userAgent.substring(0, 60)}...`, 'info');
+        log('Set delay to ~10-30s to test gesture timeout on iOS', 'info');
     </script>
 </body>
 </html>
