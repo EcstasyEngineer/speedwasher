@@ -329,10 +329,73 @@ Thank you again for watching, and I will see you in the next one.`;
         rsvp.restart();
     });
 
-    // Fullscreen button
-    btnFullscreen.addEventListener('click', () => {
-        document.body.classList.toggle('fullscreen');
+    // Fullscreen button - use native APIs when available
+    async function enterFullscreen() {
+        const container = document.getElementById('rsvp-container');
+
+        // Try native fullscreen API first
+        try {
+            if (container.requestFullscreen) {
+                await container.requestFullscreen();
+            } else if (container.webkitRequestFullscreen) {
+                await container.webkitRequestFullscreen();
+            } else if (container.msRequestFullscreen) {
+                await container.msRequestFullscreen();
+            }
+        } catch (e) {
+            console.log('Fullscreen API not available');
+        }
+
+        // Try to lock orientation to landscape (Android only, iOS ignores this)
+        try {
+            if (screen.orientation && screen.orientation.lock) {
+                await screen.orientation.lock('landscape');
+            }
+        } catch (e) {
+            console.log('Orientation lock not available');
+        }
+
+        document.body.classList.add('fullscreen');
+    }
+
+    function exitFullscreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen().catch(() => {});
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        }
+
+        // Unlock orientation
+        try {
+            if (screen.orientation && screen.orientation.unlock) {
+                screen.orientation.unlock();
+            }
+        } catch (e) {}
+
+        document.body.classList.remove('fullscreen');
+    }
+
+    function toggleFullscreen() {
+        if (document.body.classList.contains('fullscreen')) {
+            exitFullscreen();
+        } else {
+            enterFullscreen();
+        }
+    }
+
+    // Listen for native fullscreen changes (e.g., Escape key)
+    document.addEventListener('fullscreenchange', () => {
+        if (!document.fullscreenElement) {
+            document.body.classList.remove('fullscreen');
+        }
     });
+    document.addEventListener('webkitfullscreenchange', () => {
+        if (!document.webkitFullscreenElement) {
+            document.body.classList.remove('fullscreen');
+        }
+    });
+
+    btnFullscreen.addEventListener('click', toggleFullscreen);
 
     // Helper to update sync button state
     function updateSyncButton(synced) {
@@ -414,23 +477,19 @@ Thank you again for watching, and I will see you in the next one.`;
                 wpmSlider.dispatchEvent(new Event('input'));
                 break;
             case 'KeyF':
-                document.body.classList.toggle('fullscreen');
+                toggleFullscreen();
                 break;
         }
     });
 
     // Double-click RSVP container for fullscreen
-    document.getElementById('rsvp-container').addEventListener('dblclick', () => {
-        document.body.classList.toggle('fullscreen');
-    });
+    document.getElementById('rsvp-container').addEventListener('dblclick', toggleFullscreen);
 
-    // Click anywhere in fullscreen to exit
+    // Click anywhere in fullscreen to exit (but not on the container itself)
     document.addEventListener('click', (e) => {
         if (document.body.classList.contains('fullscreen') &&
-            e.target.closest('#rsvp-container')) {
-            // Don't exit on container click
-        } else if (document.body.classList.contains('fullscreen')) {
-            document.body.classList.remove('fullscreen');
+            !e.target.closest('#rsvp-container')) {
+            exitFullscreen();
         }
     });
 
