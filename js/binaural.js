@@ -106,10 +106,10 @@ class BinauralEngine {
     async init() {
         if (this.ctx) return;
         this.ctx = new (window.AudioContext || window.webkitAudioContext)();
-        const blob = new Blob([workletCode], { type: 'application/javascript' });
-        const url = URL.createObjectURL(blob);
-        await this.ctx.audioWorklet.addModule(url);
-        URL.revokeObjectURL(url);
+
+        // Use data URL instead of blob URL for iOS Safari compatibility
+        const dataUrl = 'data:application/javascript;base64,' + btoa(workletCode);
+        await this.ctx.audioWorklet.addModule(dataUrl);
         this.node = new AudioWorkletNode(this.ctx, 'binaural-processor', {
             outputChannelCount: [2]
         });
@@ -119,7 +119,7 @@ class BinauralEngine {
     async start(carrier = 300, beat = 10, fade = 2, fadeIn = null, volume = 0.3) {
         await this.init();
         if (this.ctx.state === 'suspended') await this.ctx.resume();
-        // If we're off (isPlaying=false), use fadeIn for volume. If already on, use fade.
+
         const gainFade = this.isPlaying ? fade : (fadeIn !== null ? fadeIn : fade);
         this.node.port.postMessage({
             freqL: carrier - beat / 2,
