@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Track audio state for pause/resume
     let audioState = {
         binaural: { active: false, carrier: 300, beat: 10, volume: 0 },
-        binaural2: { active: false, carrier1: 312.5, beat1: 5, carrier2: null, beat2: null, volume: 0, iso: false, interleave: 0, band2Mix: 0.5 },
+        binaural2: { active: false, carrier1: 312.5, beat1: 5, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 },
         noise: { active: false, volume: 0 }
     };
 
@@ -161,7 +161,7 @@ Thank you again for watching, and I will see you in the next one.`;
                             fade: 0.5,
                             fadeIn: 0.5,
                             volume: audioState.binaural2.volume,
-                            isoRate: audioState.binaural2.isoRate,
+                            interleave: audioState.binaural2.interleave,
                             band2Mix: audioState.binaural2.band2Mix
                         }
                     );
@@ -249,7 +249,6 @@ Thank you again for watching, and I will see you in the next one.`;
                         fade: params.fade,
                         fadeIn: params.fadeIn,
                         volume: params.volume,
-                        iso: params.iso,
                         interleave: params.interleave,
                         band2Mix: params.band2Mix
                     }
@@ -261,7 +260,6 @@ Thank you again for watching, and I will see you in the next one.`;
                     carrier2: params.carrier2,
                     beat2: params.beat2,
                     volume: params.volume,
-                    iso: params.iso,
                     interleave: params.interleave,
                     band2Mix: params.band2Mix
                 };
@@ -326,7 +324,7 @@ Thank you again for watching, and I will see you in the next one.`;
         noise.stop(0.3);
         // Reset audio state
         audioState.binaural = { active: false, carrier: 300, beat: 10, volume: 0 };
-        audioState.binaural2 = { active: false, carrier1: 312.5, beat1: 5, carrier2: null, beat2: null, volume: 0, isoRate: 0, band2Mix: 0.5 };
+        audioState.binaural2 = { active: false, carrier1: 312.5, beat1: 5, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 };
         audioState.noise = { active: false, volume: 0 };
         rsvp.restart();
     });
@@ -445,7 +443,7 @@ Thank you again for watching, and I will see you in the next one.`;
             noise.stop(0.3);
             // Reset audio state
             audioState.binaural = { active: false, carrier: 300, beat: 10, volume: 0 };
-            audioState.binaural2 = { active: false, carrier1: 312.5, beat1: 5, carrier2: null, beat2: null, volume: 0, isoRate: 0, band2Mix: 0.5 };
+            audioState.binaural2 = { active: false, carrier1: 312.5, beat1: 5, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 };
             audioState.noise = { active: false, volume: 0 };
             rsvp.load(text);
             loadedScript = scriptEditor.value;

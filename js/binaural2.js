@@ -1,8 +1,7 @@
 /**
  * Hybrid Binaural Engine (binaural2.js)
  *
- * Dual-band binaural with optional isochronic modulation.
- * Matches the Python "bambi" mode from HYPNOCLI.
+ * Dual-band binaural beats with smooth frequency transitions and spatial interleave.
  *
  * Usage:
  *   @binaural2 [carrier1] [beat1] [carrier2] [beat2] [options]
@@ -12,23 +11,17 @@
  *   vol:N         - Volume 0-0.8 (default 0.15)
  *   fade:N        - Crossfade time in seconds (default 2)
  *   fadeIn:N      - Initial fade in time (default: same as fade)
- *   iso           - Enable per-band isochronic (each band pulses at its beat rate)
- *   interleave:N  - R channel delay in ms for spatial effect (default 100 when iso)
+ *   interleave:N  - R channel delay in ms for spatial width (default 0)
  *   mix:N         - Band 2 mix level 0-1 (default 0.5)
  *
  * Examples:
  *   @binaural2 312.5 5              - Single band at 312.5Hz with 5Hz beat
  *   @binaural2 312.5 5 61.7 3.25    - Dual band: high 312.5/5Hz, low 61.7/3.25Hz
- *   @binaural2 312.5 5 61.7 3.25 iso - Full bambi mode: dual-band with per-band
- *                                      isochronic pulsing and 100ms R-channel delay
- *   @binaural2 312.5 5 61.7 3.25 iso interleave:50 - Same but 50ms delay
+ *   @binaural2 312.5 5 61.7 3.25 interleave:100 - Same with 100ms R delay for width
  *   @binaural2 off                  - Fade out and stop
  *
- * How isochronic works (bambi mode):
- *   When 'iso' is enabled, each band pulses at its own beat frequency:
- *   - Band 1 (high): pulsing at beat1 rate (e.g., 5 Hz)
- *   - Band 2 (low): pulsing at beat2 rate (e.g., 3.25 Hz)
- *   The R channel is delayed to create spatial width (like the Python version).
+ * All frequency transitions are smooth (controlled by fade:N parameter).
+ * Interleave delay also transitions smoothly when changed.
  */
 
 const hybridWorkletCode = `
@@ -64,14 +57,7 @@ class HybridBinauralProcessor extends AudioWorkletProcessor {
         this.band2Mix = 0.5;
         this.targetBand2Mix = 0.5;
 
-        // Isochronic modulation (per-band envelopes like Python bambi mode)
-        this.isoPhase1 = 0;  // High band envelope phase
-        this.isoPhase2 = 0;  // Low band envelope phase
-        this.isoEnabled = false;  // When true, each band pulses at its beat rate
-
-        // Interleave delay for R channel (creates spatial staggering)
-        this.interleaveMs = 0;
-        this.targetInterleaveMs = 0;
+        // Interleave delay for R channel (creates spatial width)
         this.delayBuffer = new Float32Array(Math.ceil(sampleRate * 0.2));  // Max 200ms
         this.delayWritePos = 0;
         this.delaySamples = 0;
@@ -100,12 +86,8 @@ class HybridBinauralProcessor extends AudioWorkletProcessor {
             if (d.band2Enabled !== undefined) this.band2Enabled = d.band2Enabled;
             if (d.band2Mix !== undefined) this.targetBand2Mix = d.band2Mix;
 
-            // Isochronic on/off (per-band pulsing at each beat rate)
-            if (d.isoEnabled !== undefined) this.isoEnabled = d.isoEnabled;
-
             // Interleave delay for R channel
             if (d.interleaveMs !== undefined) {
-                this.targetInterleaveMs = d.interleaveMs;
                 this.targetDelaySamples = Math.floor(sampleRate * d.interleaveMs / 1000);
             }
 
@@ -122,11 +104,6 @@ class HybridBinauralProcessor extends AudioWorkletProcessor {
         };
     }
 
-    // Raised cosine envelope for isochronic modulation (0 to 1)
-    isochronicEnvelope(phase) {
-        return 0.5 * (1 + Math.cos(phase + Math.PI));
-    }
-
     process(inputs, outputs) {
         const out = outputs[0];
         if (!out || !out[0] || !out[1]) return true;
@@ -138,7 +115,7 @@ class HybridBinauralProcessor extends AudioWorkletProcessor {
 
         // Frequency smoothing coefficient
         const fSmooth = 1 - Math.exp(-5 / (sampleRate * Math.max(0.001, this.freqSmooth)));
-        // Slower smoothing for mix and iso rate
+        // Slower smoothing for mix and delay
         const slowSmooth = 1 - Math.exp(-2 / (sampleRate * 0.1));
 
         for (let i = 0; i < L.length; i++) {
@@ -161,22 +138,11 @@ class HybridBinauralProcessor extends AudioWorkletProcessor {
                 this.gain = this.gainEnd;
             }
 
-            // Calculate beat frequencies for isochronic envelopes
-            const beat1 = this.freq1R - this.freq1L;  // High band beat rate
-            const beat2 = this.freq2R - this.freq2L;  // Low band beat rate
-
             // Band 1 oscillators (interpolated wavetable lookup)
             const i1L = this.phase1L | 0, f1L = this.phase1L - i1L;
             const i1R = this.phase1R | 0, f1R = this.phase1R - i1R;
-            let s1L = table[i1L] + (table[i1L + 1] - table[i1L]) * f1L;
-            let s1R = table[i1R] + (table[i1R + 1] - table[i1R]) * f1R;
-
-            // Apply band 1 isochronic envelope (same envelope for both L/R)
-            if (this.isoEnabled) {
-                const iso1 = this.isochronicEnvelope(this.isoPhase1);
-                s1L *= iso1;
-                s1R *= iso1;
-            }
+            const s1L = table[i1L] + (table[i1L + 1] - table[i1L]) * f1L;
+            const s1R = table[i1R] + (table[i1R + 1] - table[i1R]) * f1R;
 
             // Band 2 oscillators
             let s2L = 0, s2R = 0;
@@ -185,13 +151,6 @@ class HybridBinauralProcessor extends AudioWorkletProcessor {
                 const i2R = this.phase2R | 0, f2R = this.phase2R - i2R;
                 s2L = table[i2L] + (table[i2L + 1] - table[i2L]) * f2L;
                 s2R = table[i2R] + (table[i2R + 1] - table[i2R]) * f2R;
-
-                // Apply band 2 isochronic envelope (same envelope for both L/R)
-                if (this.isoEnabled) {
-                    const iso2 = this.isochronicEnvelope(this.isoPhase2);
-                    s2L *= iso2;
-                    s2R *= iso2;
-                }
             }
 
             // Mix bands: band1 at full, band2 at mix level
@@ -205,7 +164,7 @@ class HybridBinauralProcessor extends AudioWorkletProcessor {
                 mixR *= normFactor;
             }
 
-            // Apply interleave delay to R channel (spatial staggering like Python bambi)
+            // Apply interleave delay to R channel (spatial width)
             if (this.delaySamples > 0) {
                 // Write current R sample to delay buffer
                 this.delayBuffer[this.delayWritePos] = mixR;
@@ -233,17 +192,6 @@ class HybridBinauralProcessor extends AudioWorkletProcessor {
                 this.phase2R += this.freq2R * scale;
                 if (this.phase2L >= N) this.phase2L -= N;
                 if (this.phase2R >= N) this.phase2R -= N;
-            }
-
-            // Advance isochronic envelope phases (each band pulses at its beat rate)
-            if (this.isoEnabled) {
-                this.isoPhase1 += (2 * Math.PI * beat1) / sampleRate;
-                if (this.isoPhase1 >= 2 * Math.PI) this.isoPhase1 -= 2 * Math.PI;
-
-                if (this.band2Enabled) {
-                    this.isoPhase2 += (2 * Math.PI * beat2) / sampleRate;
-                    if (this.isoPhase2 >= 2 * Math.PI) this.isoPhase2 -= 2 * Math.PI;
-                }
             }
         }
         return true;
@@ -278,16 +226,15 @@ class HybridBinauralEngine {
      * @param {number} beat1 - Band 1 beat frequency (Hz)
      * @param {number|null} carrier2 - Band 2 carrier frequency (Hz), null to disable
      * @param {number|null} beat2 - Band 2 beat frequency (Hz)
-     * @param {object} options - { fade, fadeIn, volume, iso, band2Mix, interleave }
+     * @param {object} options - { fade, fadeIn, volume, band2Mix, interleave }
      */
     async start(carrier1 = 312.5, beat1 = 5, carrier2 = null, beat2 = null, options = {}) {
         const {
             fade = 2,
             fadeIn = null,
             volume = 0.15,
-            iso = false,          // Per-band isochronic (each band pulses at its beat rate)
             band2Mix = 0.5,
-            interleave = 0        // R channel delay in ms (default 0, Python uses 100)
+            interleave = 0
         } = options;
 
         await this.init();
@@ -300,7 +247,6 @@ class HybridBinauralEngine {
             freq1L: carrier1 - beat1 / 2,
             freq1R: carrier1 + beat1 / 2,
             band2Enabled: band2Enabled,
-            isoEnabled: iso,
             interleaveMs: interleave,
             band2Mix: band2Mix,
             gain: Math.min(0.8, volume),
@@ -336,14 +282,6 @@ class HybridBinauralEngine {
         }
 
         this.node.port.postMessage(msg);
-    }
-
-    /**
-     * Enable/disable per-band isochronic modulation
-     */
-    setIsoEnabled(enabled) {
-        if (!this.node) return;
-        this.node.port.postMessage({ isoEnabled: enabled });
     }
 
     /**
@@ -385,14 +323,7 @@ class HybridBinauralEngine {
     /**
      * Parse command string for hybrid binaural
      * Format: [carrier1] [beat1] [carrier2] [beat2] [options...]
-     * Options: vol:N, fade:N, fadeIn:N, iso, interleave:N, mix:N
-     *
-     * The 'iso' flag enables per-band isochronic modulation:
-     * - Band 1 pulses at beat1 rate
-     * - Band 2 pulses at beat2 rate
-     * This matches the Python "bambi" mode behavior.
-     *
-     * interleave:N delays the R channel by N milliseconds (default 100 when iso enabled)
+     * Options: vol:N, fade:N, fadeIn:N, interleave:N, mix:N
      */
     static parseCommand(args) {
         const parts = args.trim().split(/\s+/);
@@ -405,7 +336,6 @@ class HybridBinauralEngine {
             fade: 2,
             fadeIn: null,
             volume: 0.15,
-            iso: false,
             interleave: 0,
             band2Mix: 0.5
         };
@@ -416,7 +346,6 @@ class HybridBinauralEngine {
         }
 
         let numericIndex = 0;
-        let interleaveExplicit = false;
 
         for (const p of parts) {
             if (p.startsWith('fadeIn:')) {
@@ -426,13 +355,9 @@ class HybridBinauralEngine {
             } else if (p.startsWith('vol:')) {
                 const v = parseFloat(p.split(':')[1]);
                 result.volume = Math.min(0.8, Number.isFinite(v) ? v : 0.15);
-            } else if (p === 'iso') {
-                // Enable per-band isochronic modulation
-                result.iso = true;
             } else if (p.startsWith('interleave:')) {
                 const v = parseFloat(p.split(':')[1]);
-                result.interleave = Math.max(0, Math.min(200, Number.isFinite(v) ? v : 100));
-                interleaveExplicit = true;
+                result.interleave = Math.max(0, Math.min(200, Number.isFinite(v) ? v : 0));
             } else if (p.startsWith('mix:')) {
                 const m = parseFloat(p.split(':')[1]);
                 result.band2Mix = Math.min(1, Math.max(0, Number.isFinite(m) ? m : 0.5));
@@ -452,11 +377,6 @@ class HybridBinauralEngine {
 
         // fadeIn defaults to fade if not specified
         if (result.fadeIn === null) result.fadeIn = result.fade;
-
-        // If iso enabled but no explicit interleave, use default 100ms (like Python bambi)
-        if (result.iso && !interleaveExplicit) {
-            result.interleave = 100;
-        }
 
         return result;
     }
