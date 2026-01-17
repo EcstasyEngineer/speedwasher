@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Track audio state for pause/resume
     let audioState = {
         binaural: { active: false, carrier: 300, beat: 10, volume: 0 },
-        binaural2: { active: false, carrier1: 312.5, beat1: 5, carrier2: null, beat2: null, volume: 0, isoRate: 0, band2Mix: 0.5 },
+        binaural2: { active: false, carrier1: 312.5, beat1: 5, carrier2: null, beat2: null, volume: 0, iso: false, interleave: 0, band2Mix: 0.5 },
         noise: { active: false, volume: 0 }
     };
 
@@ -249,7 +249,8 @@ Thank you again for watching, and I will see you in the next one.`;
                         fade: params.fade,
                         fadeIn: params.fadeIn,
                         volume: params.volume,
-                        isoRate: params.isoRate,
+                        iso: params.iso,
+                        interleave: params.interleave,
                         band2Mix: params.band2Mix
                     }
                 );
@@ -260,7 +261,8 @@ Thank you again for watching, and I will see you in the next one.`;
                     carrier2: params.carrier2,
                     beat2: params.beat2,
                     volume: params.volume,
-                    isoRate: params.isoRate,
+                    iso: params.iso,
+                    interleave: params.interleave,
                     band2Mix: params.band2Mix
                 };
             }
