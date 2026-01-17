@@ -205,96 +205,19 @@ class HybridBinauralEngine {
         this.ctx = null;
         this.node = null;
         this.isPlaying = false;
-        this.useOscillators = false;  // Fallback mode for iOS
-        // Oscillator fallback components
-        this.osc1L = null;
-        this.osc1R = null;
-        this.osc2L = null;
-        this.osc2R = null;
-        this.gainNode = null;
-        this.gain2Node = null;
-        this.isoGain = null;
-        this.isoLfo = null;
     }
 
     async init() {
         if (this.ctx) return;
         this.ctx = new (window.AudioContext || window.webkitAudioContext)();
 
-        // Try AudioWorklet first, fall back to OscillatorNode for iOS compatibility
-        try {
-            const dataUrl = 'data:application/javascript;base64,' + btoa(hybridWorkletCode);
-            await this.ctx.audioWorklet.addModule(dataUrl);
-            this.node = new AudioWorkletNode(this.ctx, 'hybrid-binaural-processor', {
-                outputChannelCount: [2]
-            });
-            this.node.connect(this.ctx.destination);
-        } catch (e) {
-            console.log('AudioWorklet not supported, using oscillator fallback for hybrid');
-            this.useOscillators = true;
-            this._initOscillators();
-        }
-    }
-
-    _initOscillators() {
-        // Fallback: use native OscillatorNodes (works everywhere including iOS)
-        // Note: isochronic modulation not supported in fallback mode
-
-        // Master gain
-        this.gainNode = this.ctx.createGain();
-        this.gainNode.gain.value = 0;
-
-        // Band 2 gain (for mixing)
-        this.gain2Node = this.ctx.createGain();
-        this.gain2Node.gain.value = 0.5;
-
-        // Stereo merger
-        this.merger = this.ctx.createChannelMerger(2);
-
-        // Band 1 oscillators
-        this.osc1L = this.ctx.createOscillator();
-        this.osc1R = this.ctx.createOscillator();
-        this.osc1L.type = 'sine';
-        this.osc1R.type = 'sine';
-        this.osc1L.frequency.value = 310;
-        this.osc1R.frequency.value = 315;
-
-        // Band 2 oscillators
-        this.osc2L = this.ctx.createOscillator();
-        this.osc2R = this.ctx.createOscillator();
-        this.osc2L.type = 'sine';
-        this.osc2R.type = 'sine';
-        this.osc2L.frequency.value = 60;
-        this.osc2R.frequency.value = 63.25;
-
-        // Routing: each band gets its own L/R gains
-        const gain1L = this.ctx.createGain();
-        const gain1R = this.ctx.createGain();
-        const gain2L = this.ctx.createGain();
-        const gain2R = this.ctx.createGain();
-
-        this.osc1L.connect(gain1L);
-        this.osc1R.connect(gain1R);
-        this.osc2L.connect(gain2L);
-        this.osc2R.connect(gain2R);
-
-        // Band 2 goes through mix gain
-        gain2L.connect(this.gain2Node);
-        gain2R.connect(this.gain2Node);
-
-        // Mix to stereo
-        gain1L.connect(this.merger, 0, 0);
-        gain1R.connect(this.merger, 0, 1);
-        this.gain2Node.connect(this.merger, 0, 0);
-        this.gain2Node.connect(this.merger, 0, 1);
-
-        this.merger.connect(this.gainNode);
-        this.gainNode.connect(this.ctx.destination);
-
-        this.osc1L.start();
-        this.osc1R.start();
-        this.osc2L.start();
-        this.osc2R.start();
+        // Use data URL instead of blob URL for iOS Safari compatibility
+        const dataUrl = 'data:application/javascript;base64,' + btoa(hybridWorkletCode);
+        await this.ctx.audioWorklet.addModule(dataUrl);
+        this.node = new AudioWorkletNode(this.ctx, 'hybrid-binaural-processor', {
+            outputChannelCount: [2]
+        });
+        this.node.connect(this.ctx.destination);
     }
 
     /**
@@ -319,48 +242,24 @@ class HybridBinauralEngine {
 
         const gainFade = this.isPlaying ? fade : (fadeIn !== null ? fadeIn : fade);
         const band2Enabled = carrier2 !== null && beat2 !== null;
-        const targetGain = Math.min(0.8, volume);
 
-        const freq1L = carrier1 - beat1 / 2;
-        const freq1R = carrier1 + beat1 / 2;
-        const freq2L = band2Enabled ? carrier2 - beat2 / 2 : 60;
-        const freq2R = band2Enabled ? carrier2 + beat2 / 2 : 63.25;
+        const msg = {
+            freq1L: carrier1 - beat1 / 2,
+            freq1R: carrier1 + beat1 / 2,
+            band2Enabled: band2Enabled,
+            isoRate: isoRate,
+            band2Mix: band2Mix,
+            gain: Math.min(0.8, volume),
+            freqSmooth: fade,
+            gainSmooth: gainFade
+        };
 
-        if (this.useOscillators) {
-            // Oscillator fallback mode (no isochronic support)
-            const now = this.ctx.currentTime;
-            const tc = fade * 0.3;
-
-            this.osc1L.frequency.setTargetAtTime(freq1L, now, tc);
-            this.osc1R.frequency.setTargetAtTime(freq1R, now, tc);
-
-            if (band2Enabled) {
-                this.osc2L.frequency.setTargetAtTime(freq2L, now, tc);
-                this.osc2R.frequency.setTargetAtTime(freq2R, now, tc);
-                this.gain2Node.gain.setTargetAtTime(band2Mix * 0.5, now, tc);
-            } else {
-                this.gain2Node.gain.setTargetAtTime(0, now, tc);
-            }
-
-            this.gainNode.gain.setTargetAtTime(targetGain, now, gainFade * 0.3);
-        } else {
-            const msg = {
-                freq1L, freq1R,
-                band2Enabled,
-                isoRate,
-                band2Mix,
-                gain: targetGain,
-                freqSmooth: fade,
-                gainSmooth: gainFade
-            };
-
-            if (band2Enabled) {
-                msg.freq2L = freq2L;
-                msg.freq2R = freq2R;
-            }
-
-            this.node.port.postMessage(msg);
+        if (band2Enabled) {
+            msg.freq2L = carrier2 - beat2 / 2;
+            msg.freq2R = carrier2 + beat2 / 2;
         }
+
+        this.node.port.postMessage(msg);
         this.isPlaying = true;
     }
 
@@ -368,38 +267,27 @@ class HybridBinauralEngine {
      * Update frequencies without changing other parameters
      */
     setFrequencies(carrier1, beat1, carrier2 = null, beat2 = null, seconds = 2) {
-        const freq1L = carrier1 - beat1 / 2;
-        const freq1R = carrier1 + beat1 / 2;
-        const band2Enabled = carrier2 !== null && beat2 !== null;
+        if (!this.node) return;
 
-        if (this.useOscillators) {
-            if (!this.osc1L) return;
-            const now = this.ctx.currentTime;
-            const tc = seconds * 0.3;
-            this.osc1L.frequency.setTargetAtTime(freq1L, now, tc);
-            this.osc1R.frequency.setTargetAtTime(freq1R, now, tc);
-            if (band2Enabled) {
-                this.osc2L.frequency.setTargetAtTime(carrier2 - beat2 / 2, now, tc);
-                this.osc2R.frequency.setTargetAtTime(carrier2 + beat2 / 2, now, tc);
-            }
-        } else {
-            if (!this.node) return;
-            const msg = { freq1L, freq1R, freqSmooth: seconds };
-            if (band2Enabled) {
-                msg.freq2L = carrier2 - beat2 / 2;
-                msg.freq2R = carrier2 + beat2 / 2;
-                msg.band2Enabled = true;
-            }
-            this.node.port.postMessage(msg);
+        const msg = {
+            freq1L: carrier1 - beat1 / 2,
+            freq1R: carrier1 + beat1 / 2,
+            freqSmooth: seconds
+        };
+
+        if (carrier2 !== null && beat2 !== null) {
+            msg.freq2L = carrier2 - beat2 / 2;
+            msg.freq2R = carrier2 + beat2 / 2;
+            msg.band2Enabled = true;
         }
+
+        this.node.port.postMessage(msg);
     }
 
     /**
      * Set isochronic pulse rate
      */
     setIsoRate(rate) {
-        // Not supported in oscillator fallback mode
-        if (this.useOscillators) return;
         if (!this.node) return;
         this.node.port.postMessage({ isoRate: rate });
     }
@@ -408,41 +296,27 @@ class HybridBinauralEngine {
      * Set band 2 mix level
      */
     setBand2Mix(mix) {
-        const val = Math.max(0, Math.min(1, mix));
-        if (this.useOscillators) {
-            if (!this.gain2Node) return;
-            this.gain2Node.gain.setTargetAtTime(val * 0.5, this.ctx.currentTime, 0.1);
-        } else {
-            if (!this.node) return;
-            this.node.port.postMessage({ band2Mix: val });
-        }
+        if (!this.node) return;
+        this.node.port.postMessage({ band2Mix: Math.max(0, Math.min(1, mix)) });
     }
 
     /**
      * Fade volume
      */
     fadeTo(volume, seconds = 2) {
-        const targetGain = Math.min(0.8, Math.max(0, volume));
-        if (this.useOscillators) {
-            if (!this.gainNode) return;
-            this.gainNode.gain.setTargetAtTime(targetGain, this.ctx.currentTime, seconds * 0.3);
-        } else {
-            if (!this.node) return;
-            this.node.port.postMessage({ gain: targetGain, gainSmooth: seconds });
-        }
+        if (!this.node) return;
+        this.node.port.postMessage({
+            gain: Math.min(0.8, Math.max(0, volume)),
+            gainSmooth: seconds
+        });
     }
 
     /**
      * Stop with fade out
      */
     stop(fade = 2) {
-        if (this.useOscillators) {
-            if (!this.gainNode) return;
-            this.gainNode.gain.setTargetAtTime(0, this.ctx.currentTime, fade * 0.3);
-        } else {
-            if (!this.node) return;
-            this.node.port.postMessage({ gain: 0, gainSmooth: fade });
-        }
+        if (!this.node) return;
+        this.node.port.postMessage({ gain: 0, gainSmooth: fade });
         this.isPlaying = false;
     }
 

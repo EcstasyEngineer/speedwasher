@@ -101,123 +101,56 @@ class BinauralEngine {
         this.ctx = null;
         this.node = null;
         this.isPlaying = false;
-        this.useOscillators = false;  // Fallback mode for iOS
-        this.oscL = null;
-        this.oscR = null;
-        this.gainNode = null;
     }
 
     async init() {
         if (this.ctx) return;
         this.ctx = new (window.AudioContext || window.webkitAudioContext)();
 
-        // Try AudioWorklet first, fall back to OscillatorNode for iOS compatibility
-        try {
-            // Use data URL instead of blob URL for better iOS compatibility
-            const dataUrl = 'data:application/javascript;base64,' + btoa(workletCode);
-            await this.ctx.audioWorklet.addModule(dataUrl);
-            this.node = new AudioWorkletNode(this.ctx, 'binaural-processor', {
-                outputChannelCount: [2]
-            });
-            this.node.connect(this.ctx.destination);
-        } catch (e) {
-            console.log('AudioWorklet not supported, using oscillator fallback');
-            this.useOscillators = true;
-            this._initOscillators();
-        }
-    }
-
-    _initOscillators() {
-        // Fallback: use native OscillatorNodes (works everywhere including iOS)
-        this.gainNode = this.ctx.createGain();
-        this.gainNode.gain.value = 0;
-
-        // Create stereo output via channel merger
-        this.merger = this.ctx.createChannelMerger(2);
-
-        this.oscL = this.ctx.createOscillator();
-        this.oscR = this.ctx.createOscillator();
-        this.oscL.type = 'sine';
-        this.oscR.type = 'sine';
-        this.oscL.frequency.value = 295;
-        this.oscR.frequency.value = 305;
-
-        // Left osc -> left channel, Right osc -> right channel
-        const gainL = this.ctx.createGain();
-        const gainR = this.ctx.createGain();
-        this.oscL.connect(gainL);
-        this.oscR.connect(gainR);
-        gainL.connect(this.merger, 0, 0);
-        gainR.connect(this.merger, 0, 1);
-
-        this.merger.connect(this.gainNode);
-        this.gainNode.connect(this.ctx.destination);
-
-        this.oscL.start();
-        this.oscR.start();
+        // Use data URL instead of blob URL for iOS Safari compatibility
+        const dataUrl = 'data:application/javascript;base64,' + btoa(workletCode);
+        await this.ctx.audioWorklet.addModule(dataUrl);
+        this.node = new AudioWorkletNode(this.ctx, 'binaural-processor', {
+            outputChannelCount: [2]
+        });
+        this.node.connect(this.ctx.destination);
     }
 
     async start(carrier = 300, beat = 10, fade = 2, fadeIn = null, volume = 0.3) {
         await this.init();
         if (this.ctx.state === 'suspended') await this.ctx.resume();
 
-        const freqL = carrier - beat / 2;
-        const freqR = carrier + beat / 2;
         const gainFade = this.isPlaying ? fade : (fadeIn !== null ? fadeIn : fade);
-        const targetGain = Math.min(0.8, volume);
-
-        if (this.useOscillators) {
-            // Oscillator fallback mode
-            const now = this.ctx.currentTime;
-            this.oscL.frequency.setTargetAtTime(freqL, now, fade * 0.3);
-            this.oscR.frequency.setTargetAtTime(freqR, now, fade * 0.3);
-            this.gainNode.gain.setTargetAtTime(targetGain, now, gainFade * 0.3);
-        } else {
-            this.node.port.postMessage({
-                freqL, freqR,
-                gain: targetGain,
-                freqSmooth: fade,
-                gainSmooth: gainFade
-            });
-        }
+        this.node.port.postMessage({
+            freqL: carrier - beat / 2,
+            freqR: carrier + beat / 2,
+            gain: Math.min(0.8, volume),
+            freqSmooth: fade,
+            gainSmooth: gainFade
+        });
         this.isPlaying = true;
     }
 
     setFrequencies(carrier, beat, seconds = 2) {
-        const freqL = carrier - beat / 2;
-        const freqR = carrier + beat / 2;
-
-        if (this.useOscillators) {
-            if (!this.oscL) return;
-            const now = this.ctx.currentTime;
-            this.oscL.frequency.setTargetAtTime(freqL, now, seconds * 0.3);
-            this.oscR.frequency.setTargetAtTime(freqR, now, seconds * 0.3);
-        } else {
-            if (!this.node) return;
-            this.node.port.postMessage({ freqL, freqR, freqSmooth: seconds });
-        }
+        if (!this.node) return;
+        this.node.port.postMessage({
+            freqL: carrier - beat / 2,
+            freqR: carrier + beat / 2,
+            freqSmooth: seconds
+        });
     }
 
     fadeTo(volume, seconds = 2) {
-        const targetGain = Math.min(0.8, Math.max(0, volume));
-
-        if (this.useOscillators) {
-            if (!this.gainNode) return;
-            this.gainNode.gain.setTargetAtTime(targetGain, this.ctx.currentTime, seconds * 0.3);
-        } else {
-            if (!this.node) return;
-            this.node.port.postMessage({ gain: targetGain, gainSmooth: seconds });
-        }
+        if (!this.node) return;
+        this.node.port.postMessage({
+            gain: Math.min(0.8, Math.max(0, volume)),
+            gainSmooth: seconds
+        });
     }
 
     stop(fade = 2) {
-        if (this.useOscillators) {
-            if (!this.gainNode) return;
-            this.gainNode.gain.setTargetAtTime(0, this.ctx.currentTime, fade * 0.3);
-        } else {
-            if (!this.node) return;
-            this.node.port.postMessage({ gain: 0, gainSmooth: fade });
-        }
+        if (!this.node) return;
+        this.node.port.postMessage({ gain: 0, gainSmooth: fade });
         this.isPlaying = false;
     }
 
