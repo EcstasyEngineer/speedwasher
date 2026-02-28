@@ -23,8 +23,7 @@ class RSVPEngine {
         this.onSpiral = options.onSpiral || (() => {});
         this.onSubliminals = options.onSubliminals || (() => {});
         this.onSnap = options.onSnap || (() => {});
-        this.onBinaural = options.onBinaural || (() => {});
-        this.onNoise = options.onNoise || (() => {});
+        this.onAudio = options.onAudio || (() => {});
     }
 
     /**
@@ -80,22 +79,13 @@ class RSVPEngine {
                 continue;
             }
 
-            // Check for @binaural command
-            const binauralMatch = trimmed.match(/^@binaural\s+(.+)/i);
-            if (binauralMatch) {
+            // Check for @binaural / @isochronic / @hybrid commands
+            const audioMatch = trimmed.match(/^@(binaural|isochronic|hybrid)\s+(.+)/i);
+            if (audioMatch) {
                 pendingCommands.push({
-                    type: 'binaural',
-                    args: binauralMatch[1]
-                });
-                continue;
-            }
-
-            // Check for @noise command
-            const noiseMatch = trimmed.match(/^@noise\s+(.+)/i);
-            if (noiseMatch) {
-                pendingCommands.push({
-                    type: 'noise',
-                    args: noiseMatch[1]
+                    type: 'audio',
+                    mode: audioMatch[1].toLowerCase(),
+                    args: audioMatch[2]
                 });
                 continue;
             }
@@ -190,10 +180,8 @@ class RSVPEngine {
                     this.onSubliminals(cmd.args);
                 } else if (cmd.type === 'snap') {
                     this.onSnap(cmd.pause);
-                } else if (cmd.type === 'binaural') {
-                    this.onBinaural(cmd.args);
-                } else if (cmd.type === 'noise') {
-                    this.onNoise(cmd.args);
+                } else if (cmd.type === 'audio') {
+                    this.onAudio(cmd.mode, cmd.args);
                 }
             }
         }

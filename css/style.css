@@ -290,8 +290,14 @@ body {
     color: var(--muted-color);
 }
 
-#btn-load-script {
+#script-buttons {
+    display: flex;
+    gap: 8px;
     margin-top: 10px;
+}
+
+#btn-load-script,
+#btn-share {
     padding: 10px 20px;
     border: 1px solid var(--accent-color);
     background: transparent;
@@ -301,7 +307,8 @@ body {
     font-size: 0.9rem;
 }
 
-#btn-load-script:hover:not(:disabled) {
+#btn-load-script:hover:not(:disabled),
+#btn-share:hover {
     background: var(--accent-color);
 }
 

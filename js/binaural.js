@@ -1,95 +1,91 @@
 /**
- * Binaural Beats Engine
+ * Tone Engine - Binaural, Isochronic, and Hybrid modes
  *
- * Stereo oscillator with optional dual-band and spatial interleave.
+ * Supports multiple named layers with keyframeable parameters.
+ * Calling a named layer again smoothly transitions to the new values.
  *
- * Usage:
- *   @binaural [carrier] [beat] [options]              - Single band
- *   @binaural [carrier1] [beat1] [carrier2] [beat2] [options]  - Dual band
- *   @binaural off
+ * Tags:
+ *   @binaural [name] <carrier> <beat> [amplitude_db] [fade:N] [vol:N] [interleave:N]
+ *   @isochronic [name] <carrier> <pulse_rate> [amplitude_db] [L|R|LR] [fade:N] [vol:N]
+ *   @hybrid [name] <carrier> <beat> <pulse_rate> [amplitude_db] [fade:N] [vol:N] [interleave:N]
+ *   @<tag> [name] off [fade:N]
  *
- * Options:
- *   vol:N         - Volume 0-0.8 (default 0.15)
- *   fade:N        - Crossfade time in seconds (default 2)
- *   fadeIn:N      - Initial fade in time (default: same as fade)
- *   interleave:N  - R channel delay in ms for spatial width (default 0)
- *   mix:N         - Band 2 mix level 0-1 (default 0.5)
+ * Parameter order matches hypnocli:
+ *   binaural:   carrier, beat, amplitude_db
+ *   isochronic: carrier, pulse_rate, amplitude_db, ear
+ *   hybrid:     carrier, beat, pulse_rate, amplitude_db
+ *
+ * Keyframing: reuse the same layer name with new values to transition.
  */
 
-const workletCode = `
-class BinauralProcessor extends AudioWorkletProcessor {
+const MAX_LAYERS = 8;
+
+const toneWorkletCode = `
+class ToneProcessor extends AudioWorkletProcessor {
     constructor() {
         super();
 
-        // Wavetable (shared for all oscillators)
-        this.tableSize = 4096;
-        this.table = new Float32Array(this.tableSize + 1);
-        for (let i = 0; i <= this.tableSize; i++) {
-            this.table[i] = Math.sin((i / this.tableSize) * Math.PI * 2);
+        // Sine wavetable (4096 + guard point)
+        this.N = 4096;
+        this.table = new Float32Array(this.N + 1);
+        for (let i = 0; i <= this.N; i++) {
+            this.table[i] = Math.sin((i / this.N) * Math.PI * 2);
         }
 
-        // Band 1 (primary)
-        this.phase1L = 0;
-        this.phase1R = 0;
-        this.freq1L = 295;
-        this.freq1R = 305;
-        this.targetFreq1L = 295;
-        this.targetFreq1R = 305;
+        // Per-layer state
+        this.layers = new Array(${MAX_LAYERS});
+        for (let i = 0; i < ${MAX_LAYERS}; i++) {
+            this.layers[i] = {
+                active: false,
+                phaseL: 0, phaseR: 0,           // carrier phases (wavetable units)
+                freqL: 0, freqR: 0,             // current carrier freqs
+                targetFreqL: 0, targetFreqR: 0,
+                pulsePhase: 0,                   // isochronic envelope phase (radians)
+                pulseOffset: 0,                  // R channel envelope offset (0 or PI)
+                pulseRate: 0, targetPulseRate: 0,
+                gain: 0, targetGain: 0,
+                gainStart: 0, gainRampLen: 1, gainRampPos: 1,
+                ear: 2,                          // 0=L, 1=R, 2=LR
+                freqSmooth: 2                    // transition time in seconds
+            };
+        }
 
-        // Band 2 (optional secondary)
-        this.phase2L = 0;
-        this.phase2R = 0;
-        this.freq2L = 60;
-        this.freq2R = 63.25;
-        this.targetFreq2L = 60;
-        this.targetFreq2R = 63.25;
-        this.band2Enabled = false;
-        this.band2Mix = 0.5;
-        this.targetBand2Mix = 0.5;
-
-        // Interleave delay for R channel (spatial width)
-        this.delayBuffer = new Float32Array(Math.ceil(sampleRate * 0.2));  // Max 200ms
-        this.delayWritePos = 0;
+        // Interleave delay (global, R channel)
+        this.delayBuf = new Float32Array(Math.ceil(sampleRate * 0.2));
+        this.delayW = 0;
         this.delaySamples = 0;
-        this.targetDelaySamples = 0;
-
-        // Gain control
-        this.gain = 0;
-        this.gainStart = 0;
-        this.gainEnd = 0;
-        this.gainRampSamples = 0;
-        this.gainRampProgress = 0;
-
-        // Smoothing
-        this.freqSmooth = 0.01;
+        this.targetDelay = 0;
 
         this.port.onmessage = (e) => {
             const d = e.data;
-
-            // Band 1 frequencies
-            if (d.freq1L !== undefined) this.targetFreq1L = d.freq1L;
-            if (d.freq1R !== undefined) this.targetFreq1R = d.freq1R;
-
-            // Band 2 frequencies
-            if (d.freq2L !== undefined) this.targetFreq2L = d.freq2L;
-            if (d.freq2R !== undefined) this.targetFreq2R = d.freq2R;
-            if (d.band2Enabled !== undefined) this.band2Enabled = d.band2Enabled;
-            if (d.band2Mix !== undefined) this.targetBand2Mix = d.band2Mix;
-
-            // Interleave delay
-            if (d.interleaveMs !== undefined) {
-                this.targetDelaySamples = Math.floor(sampleRate * d.interleaveMs / 1000);
+            if (d.layer !== undefined && d.layer >= 0 && d.layer < ${MAX_LAYERS}) {
+                const l = this.layers[d.layer];
+                l.active = true;
+                // snap: set current freq immediately (for new layers)
+                if (d.snap) {
+                    if (d.freqL !== undefined) { l.freqL = d.freqL; l.targetFreqL = d.freqL; }
+                    if (d.freqR !== undefined) { l.freqR = d.freqR; l.targetFreqR = d.freqR; }
+                    if (d.pulseRate !== undefined) { l.pulseRate = d.pulseRate; l.targetPulseRate = d.pulseRate; }
+                } else {
+                    if (d.freqL !== undefined) l.targetFreqL = d.freqL;
+                    if (d.freqR !== undefined) l.targetFreqR = d.freqR;
+                    if (d.pulseRate !== undefined) l.targetPulseRate = d.pulseRate;
+                }
+                if (d.pulseOffset !== undefined) l.pulseOffset = d.pulseOffset;
+                if (d.ear !== undefined) l.ear = d.ear;
+                if (d.freqSmooth !== undefined) l.freqSmooth = d.freqSmooth;
+                if (d.gain !== undefined) {
+                    l.gainStart = l.gain;
+                    l.targetGain = Math.max(0, Math.min(1, d.gain));
+                    l.gainRampLen = Math.max(1, (d.fadeTime || 0.01) * sampleRate);
+                    l.gainRampPos = 0;
+                }
             }
-
-            // Smoothing
-            if (d.freqSmooth !== undefined) this.freqSmooth = d.freqSmooth;
-
-            // Gain with linear ramp
-            if (d.gain !== undefined) {
-                this.gainStart = this.gain;
-                this.gainEnd = Math.max(0, Math.min(1, d.gain));
-                this.gainRampSamples = (d.gainSmooth || 0.01) * sampleRate;
-                this.gainRampProgress = 0;
+            if (d.interleaveMs !== undefined) {
+                this.targetDelay = Math.min(
+                    Math.floor(sampleRate * d.interleaveMs / 1000),
+                    this.delayBuf.length - 1
+                );
             }
         };
     }
@@ -100,242 +96,363 @@ class BinauralProcessor extends AudioWorkletProcessor {
 
         const L = out[0], R = out[1];
         const table = this.table;
-        const N = this.tableSize;
+        const N = this.N;
         const scale = N / sampleRate;
+        const dSmooth = 1 - Math.exp(-2 / (sampleRate * 0.1));
+        const TWO_PI = 6.283185307179586;
+        const blockLen = L.length;
 
-        // Frequency smoothing coefficient
-        const fSmooth = 1 - Math.exp(-5 / (sampleRate * Math.max(0.001, this.freqSmooth)));
-        // Slower smoothing for mix and delay
-        const slowSmooth = 1 - Math.exp(-2 / (sampleRate * 0.1));
+        L.fill(0);
+        R.fill(0);
 
-        for (let i = 0; i < L.length; i++) {
-            // Smooth frequency changes
-            this.freq1L += (this.targetFreq1L - this.freq1L) * fSmooth;
-            this.freq1R += (this.targetFreq1R - this.freq1R) * fSmooth;
-            this.freq2L += (this.targetFreq2L - this.freq2L) * fSmooth;
-            this.freq2R += (this.targetFreq2R - this.freq2R) * fSmooth;
-
-            // Smooth mix and delay
-            this.band2Mix += (this.targetBand2Mix - this.band2Mix) * slowSmooth;
-            this.delaySamples += (this.targetDelaySamples - this.delaySamples) * slowSmooth;
-
-            // Linear gain ramp
-            if (this.gainRampProgress < this.gainRampSamples) {
-                this.gainRampProgress++;
-                const t = this.gainRampProgress / this.gainRampSamples;
-                this.gain = this.gainStart + (this.gainEnd - this.gainStart) * t;
-            } else {
-                this.gain = this.gainEnd;
+        for (let li = 0; li < ${MAX_LAYERS}; li++) {
+            const ly = this.layers[li];
+            if (!ly.active) continue;
+            if (ly.gain === 0 && ly.targetGain === 0) {
+                ly.active = false;
+                continue;
             }
 
-            // Band 1 oscillators
-            const i1L = this.phase1L | 0, f1L = this.phase1L - i1L;
-            const i1R = this.phase1R | 0, f1R = this.phase1R - i1R;
-            const s1L = table[i1L] + (table[i1L + 1] - table[i1L]) * f1L;
-            const s1R = table[i1R] + (table[i1R + 1] - table[i1R]) * f1R;
+            const fSmooth = 1 - Math.exp(-5 / (sampleRate * Math.max(0.001, ly.freqSmooth)));
 
-            // Band 2 oscillators (if enabled)
-            let s2L = 0, s2R = 0;
-            if (this.band2Enabled) {
-                const i2L = this.phase2L | 0, f2L = this.phase2L - i2L;
-                const i2R = this.phase2R | 0, f2R = this.phase2R - i2R;
-                s2L = table[i2L] + (table[i2L + 1] - table[i2L]) * f2L;
-                s2R = table[i2R] + (table[i2R + 1] - table[i2R]) * f2R;
-            }
+            for (let i = 0; i < blockLen; i++) {
+                // Smooth frequency transitions
+                ly.freqL += (ly.targetFreqL - ly.freqL) * fSmooth;
+                ly.freqR += (ly.targetFreqR - ly.freqR) * fSmooth;
+                ly.pulseRate += (ly.targetPulseRate - ly.pulseRate) * fSmooth;
 
-            // Mix bands
-            let mixL = s1L + s2L * this.band2Mix;
-            let mixR = s1R + s2R * this.band2Mix;
+                // Linear gain ramp
+                if (ly.gainRampPos < ly.gainRampLen) {
+                    ly.gainRampPos++;
+                    const t = ly.gainRampPos / ly.gainRampLen;
+                    ly.gain = ly.gainStart + (ly.targetGain - ly.gainStart) * t;
+                } else {
+                    ly.gain = ly.targetGain;
+                }
 
-            // Normalize to prevent clipping when both bands active
-            if (this.band2Enabled && this.band2Mix > 0) {
-                const normFactor = 1 / (1 + this.band2Mix);
-                mixL *= normFactor;
-                mixR *= normFactor;
-            }
+                // Carrier oscillators (wavetable with linear interpolation)
+                const iL = ly.phaseL | 0, fL = ly.phaseL - iL;
+                const iR = ly.phaseR | 0, fR = ly.phaseR - iR;
+                let sL = table[iL] + (table[iL + 1] - table[iL]) * fL;
+                let sR = table[iR] + (table[iR + 1] - table[iR]) * fR;
 
-            // Apply interleave delay to R channel
-            if (this.delaySamples > 0) {
-                this.delayBuffer[this.delayWritePos] = mixR;
-                const delaySamplesInt = Math.floor(this.delaySamples);
-                let readPos = this.delayWritePos - delaySamplesInt;
-                if (readPos < 0) readPos += this.delayBuffer.length;
-                mixR = this.delayBuffer[readPos];
-                this.delayWritePos = (this.delayWritePos + 1) % this.delayBuffer.length;
-            }
+                // Isochronic envelope: raised cosine with optional L/R offset
+                if (ly.pulseRate > 0.001) {
+                    const envL = 0.5 * (1 - Math.cos(ly.pulsePhase));
+                    const envR = 0.5 * (1 - Math.cos(ly.pulsePhase + ly.pulseOffset));
+                    sL *= envL;
+                    sR *= envR;
 
-            // Apply gain
-            L[i] = mixL * this.gain;
-            R[i] = mixR * this.gain;
+                    ly.pulsePhase += TWO_PI * ly.pulseRate / sampleRate;
+                    if (ly.pulsePhase >= TWO_PI) ly.pulsePhase -= TWO_PI;
+                }
 
-            // Advance phases
-            this.phase1L += this.freq1L * scale;
-            this.phase1R += this.freq1R * scale;
-            if (this.phase1L >= N) this.phase1L -= N;
-            if (this.phase1R >= N) this.phase1R -= N;
+                // Ear routing + gain
+                const g = ly.gain;
+                if (ly.ear === 0) {
+                    L[i] += sL * g;
+                } else if (ly.ear === 1) {
+                    R[i] += sR * g;
+                } else {
+                    L[i] += sL * g;
+                    R[i] += sR * g;
+                }
 
-            if (this.band2Enabled) {
-                this.phase2L += this.freq2L * scale;
-                this.phase2R += this.freq2R * scale;
-                if (this.phase2L >= N) this.phase2L -= N;
-                if (this.phase2R >= N) this.phase2R -= N;
+                // Advance carrier phases
+                ly.phaseL += ly.freqL * scale;
+                ly.phaseR += ly.freqR * scale;
+                if (ly.phaseL >= N) ly.phaseL -= N;
+                if (ly.phaseR >= N) ly.phaseR -= N;
             }
         }
+
+        // Interleave delay on mixed R output
+        this.delaySamples += (this.targetDelay - this.delaySamples) * dSmooth;
+        if (this.delaySamples > 0.5) {
+            const ds = Math.floor(this.delaySamples);
+            for (let i = 0; i < blockLen; i++) {
+                this.delayBuf[this.delayW] = R[i];
+                let rp = this.delayW - ds;
+                if (rp < 0) rp += this.delayBuf.length;
+                R[i] = this.delayBuf[rp];
+                this.delayW = (this.delayW + 1) % this.delayBuf.length;
+            }
+        }
+
         return true;
     }
 }
-registerProcessor('binaural-processor', BinauralProcessor);
+registerProcessor('tone-processor', ToneProcessor);
 `;
 
 class BinauralEngine {
     constructor() {
         this.ctx = null;
         this.node = null;
+        this.layers = new Map();   // name -> { index, mode, carrier, beat, pulse, ampDb, ear, vol, gain, fade }
+        this.nextIndex = 0;
+        this.freeIndices = [];
+        this.masterVol = 0.15;
         this.isPlaying = false;
     }
 
     async init() {
         if (this.ctx) return;
         this.ctx = new (window.AudioContext || window.webkitAudioContext)();
-        const blob = new Blob([workletCode], { type: 'application/javascript' });
+        const blob = new Blob([toneWorkletCode], { type: 'application/javascript' });
         const url = URL.createObjectURL(blob);
         await this.ctx.audioWorklet.addModule(url);
         URL.revokeObjectURL(url);
-        this.node = new AudioWorkletNode(this.ctx, 'binaural-processor', {
+        this.node = new AudioWorkletNode(this.ctx, 'tone-processor', {
             outputChannelCount: [2]
         });
         this.node.connect(this.ctx.destination);
     }
 
-    async start(carrier1 = 300, beat1 = 10, carrier2 = null, beat2 = null, options = {}) {
-        const {
-            fade = 2,
-            fadeIn = null,
-            volume = 0.15,
-            band2Mix = 0.5,
-            interleave = 0
-        } = options;
+    _allocIndex() {
+        return this.freeIndices.length > 0 ? this.freeIndices.pop() : this.nextIndex++;
+    }
 
+    _freeIndex(idx) {
+        this.freeIndices.push(idx);
+    }
+
+    dbToLinear(db) {
+        return Math.pow(10, db / 20);
+    }
+
+    async applyCommand(mode, params) {
         await this.init();
         if (this.ctx.state === 'suspended') await this.ctx.resume();
 
-        const gainFade = this.isPlaying ? fade : (fadeIn !== null ? fadeIn : fade);
-        const band2Enabled = carrier2 !== null && beat2 !== null;
+        if (params.action === 'off') {
+            if (params.name) {
+                this.stopLayer(params.name, params.fade);
+            } else {
+                this.stopAll(params.fade);
+            }
+            return;
+        }
 
+        // Update master vol if explicitly set
+        if (params.vol !== undefined) this.masterVol = params.vol;
+
+        // Get or create layer
+        let layer = this.layers.get(params.name);
+        let isNew = false;
+        if (!layer) {
+            const idx = this._allocIndex();
+            if (idx >= MAX_LAYERS) {
+                console.warn('Max tone layers reached (' + MAX_LAYERS + ')');
+                return;
+            }
+            layer = { index: idx };
+            this.layers.set(params.name, layer);
+            isNew = true;
+        }
+
+        // Compute L/R frequencies based on mode
+        let freqL, freqR, pulseRate, pulseOffset;
+        switch (mode) {
+            case 'binaural':
+                freqL = params.carrier - params.beat / 2;
+                freqR = params.carrier + params.beat / 2;
+                pulseRate = 0;
+                pulseOffset = 0;
+                break;
+            case 'isochronic':
+                freqL = params.carrier;
+                freqR = params.carrier;
+                pulseRate = params.pulse;
+                pulseOffset = 0;  // same envelope both ears
+                break;
+            case 'hybrid':
+                freqL = params.carrier - params.beat / 2;
+                freqR = params.carrier + params.beat / 2;
+                pulseRate = params.pulse;
+                pulseOffset = Math.PI;  // 180 degree L/R offset
+                break;
+        }
+
+        // Compute gain: vol * db_to_linear(ampDb), capped at 0.8
+        const vol = params.vol !== undefined ? params.vol : this.masterVol;
+        const gain = Math.min(0.8, vol * this.dbToLinear(params.ampDb));
+
+        // Send to worklet
+        // New layers: snap freq immediately, only fade gain
+        // Existing layers: smooth freq transition (keyframing)
         const msg = {
-            freq1L: carrier1 - beat1 / 2,
-            freq1R: carrier1 + beat1 / 2,
-            band2Enabled: band2Enabled,
-            interleaveMs: interleave,
-            band2Mix: band2Mix,
-            gain: Math.min(0.8, volume),
-            freqSmooth: fade,
-            gainSmooth: gainFade
+            layer: layer.index,
+            freqL, freqR,
+            pulseRate, pulseOffset,
+            gain,
+            fadeTime: params.fade,
+            freqSmooth: params.fade,
+            snap: isNew,
+            ear: params.ear === 'L' ? 0 : params.ear === 'R' ? 1 : 2
         };
 
-        if (band2Enabled) {
-            msg.freq2L = carrier2 - beat2 / 2;
-            msg.freq2R = carrier2 + beat2 / 2;
+        if (params.interleave !== undefined) {
+            msg.interleaveMs = Math.max(0, Math.min(200, params.interleave));
         }
 
         this.node.port.postMessage(msg);
+
+        // Store state for pause/resume
+        layer.mode = mode;
+        layer.carrier = params.carrier;
+        layer.beat = params.beat || 0;
+        layer.pulse = params.pulse || 0;
+        layer.ampDb = params.ampDb;
+        layer.ear = params.ear || 'LR';
+        layer.vol = vol;
+        layer.gain = gain;
+        layer.fade = params.fade;
+
         this.isPlaying = true;
     }
 
-    setFrequencies(carrier1, beat1, carrier2 = null, beat2 = null, seconds = 2) {
+    stopLayer(name, fade = 2) {
+        const layer = this.layers.get(name);
+        if (!layer || !this.node) return;
+        this.node.port.postMessage({ layer: layer.index, gain: 0, fadeTime: fade });
+        this._freeIndex(layer.index);
+        this.layers.delete(name);
+        if (this.layers.size === 0) this.isPlaying = false;
+    }
+
+    stopAll(fade = 2) {
         if (!this.node) return;
-
-        const msg = {
-            freq1L: carrier1 - beat1 / 2,
-            freq1R: carrier1 + beat1 / 2,
-            freqSmooth: seconds
-        };
-
-        if (carrier2 !== null && beat2 !== null) {
-            msg.freq2L = carrier2 - beat2 / 2;
-            msg.freq2R = carrier2 + beat2 / 2;
-            msg.band2Enabled = true;
+        for (const [, layer] of this.layers) {
+            this.node.port.postMessage({ layer: layer.index, gain: 0, fadeTime: fade });
         }
-
-        this.node.port.postMessage(msg);
-    }
-
-    setInterleave(ms) {
-        if (!this.node) return;
-        this.node.port.postMessage({ interleaveMs: Math.max(0, Math.min(200, ms)) });
-    }
-
-    setBand2Mix(mix) {
-        if (!this.node) return;
-        this.node.port.postMessage({ band2Mix: Math.max(0, Math.min(1, mix)) });
-    }
-
-    fadeTo(volume, seconds = 2) {
-        if (!this.node) return;
-        this.node.port.postMessage({
-            gain: Math.min(0.8, Math.max(0, volume)),
-            gainSmooth: seconds
-        });
-    }
-
-    stop(fade = 2) {
-        if (!this.node) return;
-        this.node.port.postMessage({ gain: 0, gainSmooth: fade });
+        this.layers.clear();
+        this.nextIndex = 0;
+        this.freeIndices = [];
         this.isPlaying = false;
     }
 
-    static parseCommand(args) {
+    // Alias for app.js compatibility
+    stop(fade = 2) {
+        this.stopAll(fade);
+    }
+
+    // Pause: fade all layers to 0 but keep them in the map
+    pauseAll(fade = 0.5) {
+        if (!this.node) return;
+        for (const [, layer] of this.layers) {
+            this.node.port.postMessage({ layer: layer.index, gain: 0, fadeTime: fade });
+        }
+        this.isPlaying = false;
+    }
+
+    // Resume: restore all layers to their stored gain
+    resumeAll(fade = 0.5) {
+        if (!this.node) return;
+        for (const [, layer] of this.layers) {
+            if (layer.gain > 0) {
+                this.node.port.postMessage({
+                    layer: layer.index,
+                    gain: layer.gain,
+                    fadeTime: fade
+                });
+            }
+        }
+        if (this.layers.size > 0) this.isPlaying = true;
+    }
+
+    hasActiveLayers() {
+        return this.layers.size > 0;
+    }
+
+    /**
+     * Parse command args for any of the three modes.
+     *
+     * @param {string} mode - 'binaural', 'isochronic', or 'hybrid'
+     * @param {string} args - Everything after "@tag "
+     * @returns {object} Parsed params
+     */
+    static parseCommand(mode, args) {
         const parts = args.trim().split(/\s+/);
         const result = {
             action: 'on',
-            carrier1: 300,
-            beat1: 10,
-            carrier2: null,
-            beat2: null,
+            name: null,      // null = stop-all when action is 'off'
+            carrier: 200,
+            beat: 0,
+            pulse: 0,
+            ampDb: 0,
+            ear: 'LR',
             fade: 2,
-            fadeIn: null,
-            volume: 0.15,
-            interleave: 0,
-            band2Mix: 0.5
+            vol: undefined,
+            interleave: undefined
         };
 
-        if (parts[0] === 'off') {
+        let pi = 0;  // current index into parts
+
+        // Check for name: starts with a letter, isn't 'off' or an ear code
+        if (parts[0] && /^[a-zA-Z]/.test(parts[0]) &&
+            parts[0] !== 'off' && !['L','R','LR'].includes(parts[0].toUpperCase())) {
+            result.name = parts[0];
+            pi = 1;
+        }
+
+        // Check for 'off'
+        if (parts[pi] === 'off') {
             result.action = 'off';
+            for (let i = pi + 1; i < parts.length; i++) {
+                if (parts[i].startsWith('fade:')) {
+                    result.fade = parseFloat(parts[i].split(':')[1]) || 2;
+                }
+            }
             return result;
         }
 
-        let numericIndex = 0;
+        // If no name was given for an 'on' command, default to '_default'
+        if (result.name === null) result.name = '_default';
 
-        for (const p of parts) {
-            if (p.startsWith('fadeIn:')) {
-                result.fadeIn = parseFloat(p.split(':')[1]) || 2;
-            } else if (p.startsWith('fade:')) {
+        // Parse positional numerics + options
+        let numIdx = 0;
+        for (let i = pi; i < parts.length; i++) {
+            const p = parts[i];
+
+            if (p.startsWith('fade:')) {
                 result.fade = parseFloat(p.split(':')[1]) || 2;
             } else if (p.startsWith('vol:')) {
                 const v = parseFloat(p.split(':')[1]);
-                result.volume = Math.min(0.8, Number.isFinite(v) ? v : 0.15);
+                result.vol = Number.isFinite(v) ? Math.min(0.8, Math.max(0, v)) : undefined;
             } else if (p.startsWith('interleave:')) {
                 const v = parseFloat(p.split(':')[1]);
-                result.interleave = Math.max(0, Math.min(200, Number.isFinite(v) ? v : 0));
-            } else if (p.startsWith('mix:')) {
-                const m = parseFloat(p.split(':')[1]);
-                result.band2Mix = Math.min(1, Math.max(0, Number.isFinite(m) ? m : 0.5));
+                result.interleave = Number.isFinite(v) ? Math.max(0, Math.min(200, v)) : undefined;
+            } else if (['L', 'R', 'LR'].includes(p.toUpperCase())) {
+                result.ear = p.toUpperCase();
             } else {
                 const v = parseFloat(p);
                 if (!isNaN(v)) {
-                    switch (numericIndex) {
-                        case 0: result.carrier1 = v; break;
-                        case 1: result.beat1 = v; break;
-                        case 2: result.carrier2 = v; break;
-                        case 3: result.beat2 = v; break;
+                    switch (mode) {
+                        case 'binaural':
+                            // carrier, beat, amplitude_db
+                            if (numIdx === 0) result.carrier = v;
+                            else if (numIdx === 1) result.beat = v;
+                            else if (numIdx === 2) result.ampDb = v;
+                            break;
+                        case 'isochronic':
+                            // carrier, pulse_rate, amplitude_db
+                            if (numIdx === 0) result.carrier = v;
+                            else if (numIdx === 1) result.pulse = v;
+                            else if (numIdx === 2) result.ampDb = v;
+                            break;
+                        case 'hybrid':
+                            // carrier, beat, pulse_rate, amplitude_db
+                            if (numIdx === 0) result.carrier = v;
+                            else if (numIdx === 1) result.beat = v;
+                            else if (numIdx === 2) result.pulse = v;
+                            else if (numIdx === 3) result.ampDb = v;
+                            break;
                     }
-                    numericIndex++;
+                    numIdx++;
                 }
             }
         }
-
-        // fadeIn defaults to fade if not specified
-        if (result.fadeIn === null) result.fadeIn = result.fade;
 
         return result;
     }
