@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const scriptEditor = document.getElementById('script-editor');
     const btnLoadScript = document.getElementById('btn-load-script');
+    const btnShare = document.getElementById('btn-share');
 
     const progressBar = document.getElementById('progress-bar');
     const wordCount = document.getElementById('word-count');
@@ -36,15 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const subliminalBottom = document.getElementById('subliminal-bottom');
     const subliminals = new SubliminalEngine(subliminalTop, subliminalBottom);
 
-    // Initialize audio engines
+    // Initialize audio engine (handles binaural, isochronic, hybrid)
     const binaural = new BinauralEngine();
-    const noise = new NoiseEngine();
-
-    // Track audio state for pause/resume
-    let audioState = {
-        binaural: { active: false, carrier1: 300, beat1: 10, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 },
-        noise: { active: false, volume: 0 }
-    };
 
     // Flag to skip audio stop during snap pauses
     let isSnapPause = false;
@@ -55,11 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (audioPrimed) return;
         audioPrimed = true;
 
-        // Prime binaural at vol:0
-        await binaural.start(300, 10, null, null, { volume: 0, fade: 0.01, fadeIn: 0.01 });
-
-        // Prime noise at vol:0
-        await noise.start(0, 0.01);
+        // Init audio context and worklet within gesture timeout
+        await binaural.init();
+        if (binaural.ctx.state === 'suspended') await binaural.ctx.resume();
+        // Start a silent layer to keep context alive
+        binaural.node.port.postMessage({ layer: 7, gain: 0, fadeTime: 0.01 });
 
         // Prime snap: play at vol:0 then pause
         if (snapSound) {
@@ -149,30 +143,17 @@ Thank you again for watching, and I will see you in the next one.`;
         },
         onComplete: () => {
             updatePlayButton(false);
-            // Auto-stop audio effects
             binaural.stop(2);
-            noise.stop(2);
         },
         onStateChange: (playing) => {
             updatePlayButton(playing);
             if (!playing && !isSnapPause) {
-                // Pause - fade out but keep state (skip if snap pause)
-                binaural.stop(0.5);
-                noise.stop(0.5);
+                // Pause - fade layers to 0 but keep state
+                binaural.pauseAll(0.5);
             } else if (playing) {
-                // Resume - restore audio if it was active (and not already playing)
-                // Pass explicit short fadeIn (0.5s) for quick resume
-                if (audioState.binaural.active && audioState.binaural.volume > 0 && !binaural.isPlaying) {
-                    binaural.start(
-                        audioState.binaural.carrier1,
-                        audioState.binaural.beat1,
-                        audioState.binaural.carrier2,
-                        audioState.binaural.beat2,
-                        { fade: 0.5, fadeIn: 0.5, volume: audioState.binaural.volume, interleave: audioState.binaural.interleave, band2Mix: audioState.binaural.band2Mix }
-                    );
-                }
-                if (audioState.noise.active && audioState.noise.volume > 0 && !noise.isPlaying) {
-                    noise.start(audioState.noise.volume, 0.5);
+                // Resume - restore layers
+                if (binaural.hasActiveLayers()) {
+                    binaural.resumeAll(0.5);
                 }
             }
         },
@@ -224,59 +205,106 @@ Thank you again for watching, and I will see you in the next one.`;
                 rsvp.play();
             }, pauseDuration);
         },
-        onBinaural: (args) => {
-            const params = BinauralEngine.parseCommand(args);
-            if (params.action === 'off') {
-                binaural.stop(params.fade);
-                audioState.binaural.active = false;
-                audioState.binaural.volume = 0;
-            } else {
-                binaural.start(params.carrier1, params.beat1, params.carrier2, params.beat2, {
-                    fade: params.fade,
-                    fadeIn: params.fadeIn,
-                    volume: params.volume,
-                    interleave: params.interleave,
-                    band2Mix: params.band2Mix
-                });
-                audioState.binaural = {
-                    active: true,
-                    carrier1: params.carrier1,
-                    beat1: params.beat1,
-                    carrier2: params.carrier2,
-                    beat2: params.beat2,
-                    volume: params.volume,
-                    interleave: params.interleave,
-                    band2Mix: params.band2Mix
-                };
-            }
-        },
-        onNoise: (args) => {
-            const params = NoiseEngine.parseCommand(args);
-            if (params.action === 'off') {
-                noise.stop(params.fade);
-                audioState.noise.active = false;
-                audioState.noise.volume = 0;
-            } else {
-                noise.start(params.volume, params.fade);
-                audioState.noise = { active: true, volume: params.volume };
-            }
+        onAudio: (mode, args) => {
+            const params = BinauralEngine.parseCommand(mode, args);
+            binaural.applyCommand(mode, params);
         }
     });
 
-    // Load default script from external file (falls back to inline if fetch fails)
-    fetch('scripts/demo.txt')
-        .then(response => response.ok ? response.text() : Promise.reject('File not found'))
-        .then(text => {
-            scriptEditor.value = text;
-            loadedScript = text;
-            rsvp.load(text);
-        })
-        .catch(err => {
-            console.log('Loading inline script:', err);
-            scriptEditor.value = DEFAULT_SCRIPT;
-            loadedScript = DEFAULT_SCRIPT;
-            rsvp.load(DEFAULT_SCRIPT);
-        });
+    // Track loaded script to detect changes
+    let loadedScript = '';
+
+    // --- Script loading: URL params > external file > inline fallback ---
+
+    // Sanitize fetched script text (strip HTML tags to prevent XSS)
+    function sanitizeScript(text) {
+        return text.replace(/<[^>]*>/g, '');
+    }
+
+    // Normalize a paste URL to its raw content URL
+    function toRawURL(url) {
+        try {
+            const u = new URL(url);
+            // GitHub Gist: convert /user/id to raw
+            if (u.hostname === 'gist.github.com') {
+                return url + '/raw';
+            }
+            // Already a raw gist URL
+            if (u.hostname === 'gist.githubusercontent.com') {
+                return url;
+            }
+            // Rentry.co: ensure /raw suffix
+            if (u.hostname === 'rentry.co' || u.hostname === 'rentry.org') {
+                if (!u.pathname.endsWith('/raw')) {
+                    return url.replace(/\/?$/, '/raw');
+                }
+                return url;
+            }
+            // dpaste.org: ensure /raw suffix
+            if (u.hostname === 'dpaste.org') {
+                if (!u.pathname.endsWith('/raw')) {
+                    return url.replace(/\/?$/, '/raw');
+                }
+                return url;
+            }
+            // Generic URL - fetch as-is
+            return url;
+        } catch (e) {
+            return url;
+        }
+    }
+
+    function loadScript(text) {
+        scriptEditor.value = text;
+        loadedScript = text;
+        rsvp.load(text);
+    }
+
+    // Check URL params for shared script
+    const urlParams = new URLSearchParams(window.location.search);
+    const pasteURL = urlParams.get('paste');
+    const scriptB64 = urlParams.get('script');
+
+    if (pasteURL) {
+        // Load script from a paste service URL
+        const rawURL = toRawURL(pasteURL);
+        scriptEditor.placeholder = 'Loading shared script...';
+        fetch(rawURL)
+            .then(r => {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.text();
+            })
+            .then(text => loadScript(sanitizeScript(text)))
+            .catch(err => {
+                console.error('Failed to load shared script:', err);
+                scriptEditor.placeholder = 'Failed to load shared script. Loading demo...';
+                return fetch('scripts/demo.txt')
+                    .then(r => r.ok ? r.text() : Promise.reject())
+                    .then(text => loadScript(text))
+                    .catch(() => loadScript(DEFAULT_SCRIPT));
+            });
+    } else if (scriptB64) {
+        // Inline base64-encoded script
+        try {
+            const text = decodeURIComponent(atob(scriptB64));
+            loadScript(sanitizeScript(text));
+        } catch (e) {
+            console.error('Failed to decode script param:', e);
+            fetch('scripts/demo.txt')
+                .then(r => r.ok ? r.text() : Promise.reject())
+                .then(text => loadScript(text))
+                .catch(() => loadScript(DEFAULT_SCRIPT));
+        }
+    } else {
+        // Default: load from file
+        fetch('scripts/demo.txt')
+            .then(response => response.ok ? response.text() : Promise.reject('File not found'))
+            .then(text => loadScript(text))
+            .catch(err => {
+                console.log('Loading inline script:', err);
+                loadScript(DEFAULT_SCRIPT);
+            });
+    }
 
     // Update play button appearance
     function updatePlayButton(playing) {
@@ -302,14 +330,9 @@ Thank you again for watching, and I will see you in the next one.`;
 
     // Restart button
     btnRestart.addEventListener('click', () => {
-        // Stop effects on restart
         spiral.stop(0.3);
         subliminals.stop(0.3);
         binaural.stop(0.3);
-        noise.stop(0.3);
-        // Reset audio state and prime flag
-        audioState.binaural = { active: false, carrier1: 300, beat1: 10, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 };
-        audioState.noise = { active: false, volume: 0 };
         audioPrimed = false;
         rsvp.restart();
     });
@@ -341,9 +364,6 @@ Thank you again for watching, and I will see you in the next one.`;
         updateSyncButton(true);
     });
 
-    // Track loaded script to detect changes
-    let loadedScript = '';
-
     function updateLoadButton() {
         const isLoaded = scriptEditor.value === loadedScript;
         btnLoadScript.classList.toggle('loaded', isLoaded);
@@ -357,18 +377,52 @@ Thank you again for watching, and I will see you in the next one.`;
     btnLoadScript.addEventListener('click', () => {
         const text = scriptEditor.value.trim();
         if (text) {
-            // Stop any running effects
             spiral.stop(0.3);
             subliminals.stop(0.3);
             binaural.stop(0.3);
-            noise.stop(0.3);
-            // Reset audio state and prime flag
-            audioState.binaural = { active: false, carrier1: 300, beat1: 10, carrier2: null, beat2: null, volume: 0, interleave: 0, band2Mix: 0.5 };
-            audioState.noise = { active: false, volume: 0 };
             audioPrimed = false;
             rsvp.load(text);
             loadedScript = scriptEditor.value;
             updateLoadButton();
+        }
+    });
+
+    // Share button - generate a shareable URL
+    btnShare.addEventListener('click', () => {
+        const text = scriptEditor.value.trim();
+        if (!text) return;
+
+        const base = window.location.origin + window.location.pathname;
+
+        // For short scripts (< 2KB), use inline base64
+        if (text.length < 2000) {
+            const encoded = btoa(encodeURIComponent(text));
+            const url = base + '?script=' + encoded;
+            navigator.clipboard.writeText(url).then(() => {
+                btnShare.textContent = 'Copied!';
+                setTimeout(() => { btnShare.textContent = 'Share'; }, 2000);
+            }).catch(() => {
+                prompt('Share URL (too long for clipboard):', url);
+            });
+        } else {
+            // For longer scripts, prompt to use a paste service
+            const msg = 'Script is too long for a URL.\n\n' +
+                'Paste your script to one of these (they support CORS):\n' +
+                '  - rentry.co\n' +
+                '  - dpaste.org\n' +
+                '  - gist.github.com\n\n' +
+                'Then share with:\n' +
+                base + '?paste=YOUR_PASTE_URL';
+            const pasteUrl = prompt(msg);
+            if (pasteUrl && pasteUrl.trim()) {
+                const url = base + '?paste=' + encodeURIComponent(pasteUrl.trim());
+                navigator.clipboard.writeText(url).then(() => {
+                    btnShare.textContent = 'Copied!';
+                    setTimeout(() => { btnShare.textContent = 'Share'; }, 2000);
+                }).catch(() => {
+                    prompt('Share URL:', url);
+                });
+            }
         }
     });
 

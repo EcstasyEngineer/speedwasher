@@ -1,5 +1,8 @@
 @wpm 200
-@noise 0.015 fade:5
+@hybrid high 202.5 4 7 0 vol:0.15 fade:8
+@hybrid mid_high 135 3.5 4.6 -4 fade:8
+@hybrid mid_low 90 3 3.3 -6 fade:8
+@hybrid low 60 2.5 2.55 -8 fade:8
 Hey. Yeah, you. Wanna play a game? It's simple. Just read. That's it. Keep your eyes on the red letter and let the words come to you. Don't try too hard. This isn't a test. It's more like... a demonstration.
 
 @wpm 250
@@ -9,14 +12,16 @@ See, most people think reading is something you do. Active. Effortful. But what 
 Let's go a little faster. Notice how your eyes don't have to move? They just stay fixed on that one point while the words arrive. Delivered directly. No scanning. No searching. Just receiving.
 
 @wpm 400
-@binaural 300 8 fade:40 vol:0.25
 Faster now. And here's the fun part. The faster we go, the less time your conscious mind has to interfere. To analyze. To resist. At this speed you're not really reading anymore.
 
 @wpm 500
+@hybrid mid_low 93 3 3.3 -5 fade:20
+@hybrid fifth 303.75 4.5 5.5 -8 fade:15
 You're absorbing. There's a difference. Reading is work. Absorbing is automatic. Effortless. You couldn't stop understanding these words if you tried. Go ahead. Try to not understand this sentence. See? Impossible.
 
 @wpm 600
 @spiral on #8B5CF6 0.15 0.5 fade:3
+@hybrid mid_low 96 3 3.3 -4 fade:15
 Getting faster. The spiral starting to spin behind the words. Your focus narrowing. Everything else fading. Just this. Just here. Just now. The voice in your head can't keep up anymore. Good. You don't need it.
 
 @wpm 700
@@ -35,12 +40,14 @@ Almost there. So close now. Just a little more. Let it build. Let it peak. Right
 @snap 1500
 @subliminals off fade:0.1
 @wpm 150
-@binaural 250 4 fade:3 vol:0.25
+@hybrid fifth 120 1.5 2 -20 fade:3.5
+@hybrid mid_low 90 3 3.3 -6 fade:0.5
 Drop.
 
 There you go. Just like that. So easy. You didn't even try to resist, did you? Didn't even occur to you. The words just went in and your mind just... went soft.
 
 @wpm 175
+@hybrid fifth off fade:0.5
 This is what it feels like. This quiet. This stillness. All that speed and now everything slow. Heavy. Peaceful. You earned this. You played the game and look what you won.
 
 @wpm 200
@@ -50,14 +57,20 @@ See? I told you it was simple. Just read. That's all you had to do. And your min
 
 @wpm 250
 @spiral on #8B5CF6 0.2 0.3 fade:2
-@binaural 266 6.5 fade:18 vol:0
+@hybrid mid_low 94 3 3.3 -5 fade:12
+@hybrid mid_high 140 3.5 4.6 -3 fade:12
 But we should probably bring you back now. Slowly. Gently. Letting the world fade back in around the edges. Thoughts starting to move again. Just a little.
 
 @wpm 300
 @spiral off fade:10
-@noise off fade:12
+@hybrid mid_low 98 3.5 4 -4 fade:8
+@hybrid mid_high 145 4 5 -2 fade:8
 Coming up now. More alert. More aware. But keeping that soft feeling underneath. That openness. You can come back to it anytime. Just read a little faster and release a little more.
 
+@hybrid high off fade:8
+@hybrid mid_high off fade:8
+@hybrid mid_low off fade:8
+@hybrid low off fade:8
 Almost there. Take a breath. Let it out. Eyes focusing. Mind clearing. And... back.
 
-Welcome back. Told you it would be fun. You did so well. Now go tell everyone what just happened to you.
+Welcome back. Told you it would be fun. Want to try again?
