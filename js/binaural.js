@@ -4,16 +4,11 @@
  * Supports multiple named layers with keyframeable parameters.
  * Calling a named layer again smoothly transitions to the new values.
  *
- * Tags:
- *   @binaural [name] <carrier> <beat> [amplitude_db] [fade:N] [vol:N] [interleave:N]
- *   @isochronic [name] <carrier> <pulse_rate> [amplitude_db] [L|R|LR] [fade:N] [vol:N]
- *   @hybrid [name] <carrier> <beat> <pulse_rate> [amplitude_db] [fade:N] [vol:N] [interleave:N]
+ * Tags (all parameters are key:value):
+ *   @binaural [name] carrier:N beat:N db:N fade:N vol:N interleave:N
+ *   @isochronic [name] carrier:N pulse:N db:N ear:L|R|LR fade:N vol:N
+ *   @hybrid [name] carrier:N beat:N pulse:N db:N fade:N vol:N interleave:N
  *   @<tag> [name] off [fade:N]
- *
- * Parameter order matches hypnocli:
- *   binaural:   carrier, beat, amplitude_db
- *   isochronic: carrier, pulse_rate, amplitude_db, ear
- *   hybrid:     carrier, beat, pulse_rate, amplitude_db
  *
  * Keyframing: reuse the same layer name with new values to transition.
  */
@@ -66,6 +61,8 @@ class ToneProcessor extends AudioWorkletProcessor {
                     if (d.freqL !== undefined) { l.freqL = d.freqL; l.targetFreqL = d.freqL; }
                     if (d.freqR !== undefined) { l.freqR = d.freqR; l.targetFreqR = d.freqR; }
                     if (d.pulseRate !== undefined) { l.pulseRate = d.pulseRate; l.targetPulseRate = d.pulseRate; }
+                    l.gain = 0;       // new layers start from silence
+                    l.gainStart = 0;
                 } else {
                     if (d.freqL !== undefined) l.targetFreqL = d.freqL;
                     if (d.freqR !== undefined) l.targetFreqR = d.freqR;
@@ -145,6 +142,7 @@ class ToneProcessor extends AudioWorkletProcessor {
 
                     ly.pulsePhase += TWO_PI * ly.pulseRate / sampleRate;
                     if (ly.pulsePhase >= TWO_PI) ly.pulsePhase -= TWO_PI;
+                    else if (ly.pulsePhase < 0) ly.pulsePhase += TWO_PI;
                 }
 
                 // Ear routing + gain
@@ -162,7 +160,9 @@ class ToneProcessor extends AudioWorkletProcessor {
                 ly.phaseL += ly.freqL * scale;
                 ly.phaseR += ly.freqR * scale;
                 if (ly.phaseL >= N) ly.phaseL -= N;
+                else if (ly.phaseL < 0) ly.phaseL += N;
                 if (ly.phaseR >= N) ly.phaseR -= N;
+                else if (ly.phaseR < 0) ly.phaseR += N;
             }
         }
 
@@ -194,23 +194,40 @@ class BinauralEngine {
         this.freeIndices = [];
         this.masterVol = 0.15;
         this.isPlaying = false;
+        this._initPromise = null;
+        this._generation = 0;
     }
 
     async init() {
         if (this.ctx) return;
-        this.ctx = new (window.AudioContext || window.webkitAudioContext)();
-        const blob = new Blob([toneWorkletCode], { type: 'application/javascript' });
-        const url = URL.createObjectURL(blob);
-        await this.ctx.audioWorklet.addModule(url);
-        URL.revokeObjectURL(url);
-        this.node = new AudioWorkletNode(this.ctx, 'tone-processor', {
-            outputChannelCount: [2]
-        });
-        this.node.connect(this.ctx.destination);
+        if (this._initPromise) return this._initPromise;
+        this._initPromise = this._doInit();
+        return this._initPromise;
+    }
+
+    async _doInit() {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        try {
+            const blob = new Blob([toneWorkletCode], { type: 'application/javascript' });
+            const url = URL.createObjectURL(blob);
+            await ctx.audioWorklet.addModule(url);
+            URL.revokeObjectURL(url);
+            this.node = new AudioWorkletNode(ctx, 'tone-processor', {
+                outputChannelCount: [2]
+            });
+            this.node.connect(ctx.destination);
+            this.ctx = ctx;
+        } catch (e) {
+            ctx.close().catch(() => {});
+            this._initPromise = null;
+            throw e;
+        }
     }
 
     _allocIndex() {
-        return this.freeIndices.length > 0 ? this.freeIndices.pop() : this.nextIndex++;
+        if (this.freeIndices.length > 0) return this.freeIndices.pop();
+        if (this.nextIndex >= MAX_LAYERS) return -1;
+        return this.nextIndex++;
     }
 
     _freeIndex(idx) {
@@ -242,7 +259,7 @@ class BinauralEngine {
         let isNew = false;
         if (!layer) {
             const idx = this._allocIndex();
-            if (idx >= MAX_LAYERS) {
+            if (idx < 0) {
                 console.warn('Max tone layers reached (' + MAX_LAYERS + ')');
                 return;
             }
@@ -273,6 +290,11 @@ class BinauralEngine {
                 pulseOffset = Math.PI;  // 180 degree L/R offset
                 break;
         }
+
+        // Clamp frequencies to non-negative (negative freq causes NaN in worklet)
+        freqL = Math.max(0, freqL);
+        freqR = Math.max(0, freqR);
+        pulseRate = Math.max(0, pulseRate);
 
         // Compute gain: vol * db_to_linear(ampDb), capped at 0.8
         const vol = params.vol !== undefined ? params.vol : this.masterVol;
@@ -316,13 +338,20 @@ class BinauralEngine {
         const layer = this.layers.get(name);
         if (!layer || !this.node) return;
         this.node.port.postMessage({ layer: layer.index, gain: 0, fadeTime: fade });
-        this._freeIndex(layer.index);
+        const idx = layer.index;
         this.layers.delete(name);
         if (this.layers.size === 0) this.isPlaying = false;
+        // Delay freeing the index until the worklet fade completes.
+        // Guard with generation so stopAll() invalidates pending frees.
+        const gen = this._generation;
+        setTimeout(() => {
+            if (this._generation === gen) this._freeIndex(idx);
+        }, fade * 1000 + 100);
     }
 
     stopAll(fade = 2) {
         if (!this.node) return;
+        this._generation++;  // invalidate pending stopLayer frees
         for (const [, layer] of this.layers) {
             this.node.port.postMessage({ layer: layer.index, gain: 0, fadeTime: fade });
         }
@@ -389,9 +418,9 @@ class BinauralEngine {
 
         let pi = 0;  // current index into parts
 
-        // Check for name: starts with a letter, isn't 'off' or an ear code
+        // Check for name: starts with a letter, isn't 'off', no colon
         if (parts[0] && /^[a-zA-Z]/.test(parts[0]) &&
-            parts[0] !== 'off' && !['L','R','LR'].includes(parts[0].toUpperCase())) {
+            parts[0] !== 'off' && !parts[0].includes(':')) {
             result.name = parts[0];
             pi = 1;
         }
@@ -401,7 +430,8 @@ class BinauralEngine {
             result.action = 'off';
             for (let i = pi + 1; i < parts.length; i++) {
                 if (parts[i].startsWith('fade:')) {
-                    result.fade = parseFloat(parts[i].split(':')[1]) || 2;
+                    const v = parseFloat(parts[i].split(':')[1]);
+                    result.fade = Number.isFinite(v) ? v : 2;
                 }
             }
             return result;
@@ -410,47 +440,30 @@ class BinauralEngine {
         // If no name was given for an 'on' command, default to '_default'
         if (result.name === null) result.name = '_default';
 
-        // Parse positional numerics + options
-        let numIdx = 0;
+        // Parse key:value parameters
         for (let i = pi; i < parts.length; i++) {
             const p = parts[i];
+            if (!p.includes(':')) continue;
 
-            if (p.startsWith('fade:')) {
-                result.fade = parseFloat(p.split(':')[1]) || 2;
-            } else if (p.startsWith('vol:')) {
-                const v = parseFloat(p.split(':')[1]);
-                result.vol = Number.isFinite(v) ? Math.min(0.8, Math.max(0, v)) : undefined;
-            } else if (p.startsWith('interleave:')) {
-                const v = parseFloat(p.split(':')[1]);
-                result.interleave = Number.isFinite(v) ? Math.max(0, Math.min(200, v)) : undefined;
-            } else if (['L', 'R', 'LR'].includes(p.toUpperCase())) {
-                result.ear = p.toUpperCase();
-            } else {
-                const v = parseFloat(p);
-                if (!isNaN(v)) {
-                    switch (mode) {
-                        case 'binaural':
-                            // carrier, beat, amplitude_db
-                            if (numIdx === 0) result.carrier = v;
-                            else if (numIdx === 1) result.beat = v;
-                            else if (numIdx === 2) result.ampDb = v;
-                            break;
-                        case 'isochronic':
-                            // carrier, pulse_rate, amplitude_db
-                            if (numIdx === 0) result.carrier = v;
-                            else if (numIdx === 1) result.pulse = v;
-                            else if (numIdx === 2) result.ampDb = v;
-                            break;
-                        case 'hybrid':
-                            // carrier, beat, pulse_rate, amplitude_db
-                            if (numIdx === 0) result.carrier = v;
-                            else if (numIdx === 1) result.beat = v;
-                            else if (numIdx === 2) result.pulse = v;
-                            else if (numIdx === 3) result.ampDb = v;
-                            break;
-                    }
-                    numIdx++;
-                }
+            const [key, val] = p.split(':');
+
+            // ear: is a string value, handle separately
+            if (key === 'ear') {
+                result.ear = val.toUpperCase();
+                continue;
+            }
+
+            const v = parseFloat(val);
+            if (!Number.isFinite(v)) continue;
+
+            switch (key) {
+                case 'carrier': result.carrier = v; break;
+                case 'beat': result.beat = v; break;
+                case 'pulse': result.pulse = v; break;
+                case 'db': result.ampDb = v; break;
+                case 'fade': result.fade = v; break;
+                case 'vol': result.vol = Math.min(0.8, Math.max(0, v)); break;
+                case 'interleave': result.interleave = Math.max(0, Math.min(200, v)); break;
             }
         }
 

@@ -36,12 +36,25 @@ const ORP = {
             return { before: '', orp: '', after: '' };
         }
 
-        const index = this.getIndex(word);
+        // ORP index is computed on alpha-only chars, so map it back
+        // to the correct position in the original word.
+        const targetAlpha = this.getIndex(word);
+        let alphaCount = 0;
+        let orpPos = 0;
+        for (let i = 0; i < word.length; i++) {
+            if (/[a-zA-Z]/.test(word[i])) {
+                if (alphaCount === targetAlpha) {
+                    orpPos = i;
+                    break;
+                }
+                alphaCount++;
+            }
+        }
 
         return {
-            before: word.substring(0, index),
-            orp: word.charAt(index),
-            after: word.substring(index + 1)
+            before: word.substring(0, orpPos),
+            orp: word.charAt(orpPos),
+            after: word.substring(orpPos + 1)
         };
     },
 

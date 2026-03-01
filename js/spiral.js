@@ -44,9 +44,14 @@ class SpiralEffect {
         this.color = color;
         this.targetOpacity = opacity;
         this.speed = speed;
-        this.fadeSpeed = fade;
+        this.fadeSpeed = Math.max(0.001, fade);
 
         if (!this.isRunning) {
+            // Cancel any orphaned rAF from a previous loop that just stopped
+            if (this.animationId) {
+                cancelAnimationFrame(this.animationId);
+                this.animationId = null;
+            }
             this.isRunning = true;
             this.lastTime = performance.now();
             this.animate();
@@ -59,7 +64,7 @@ class SpiralEffect {
      */
     stop(fade = 1) {
         this.targetOpacity = 0;
-        this.fadeSpeed = fade;
+        this.fadeSpeed = Math.max(0.001, fade);
         // Animation loop will stop itself when opacity reaches 0
     }
 
@@ -153,10 +158,10 @@ class SpiralEffect {
 
         if (parts[0] === 'off') {
             result.action = 'off';
-            // Check for fade parameter
             for (let i = 1; i < parts.length; i++) {
                 if (parts[i].startsWith('fade:')) {
-                    result.fade = parseFloat(parts[i].split(':')[1]) || 1;
+                    const v = parseFloat(parts[i].split(':')[1]);
+                    result.fade = Number.isFinite(v) ? v : 1;
                 }
             }
         } else {
@@ -165,16 +170,18 @@ class SpiralEffect {
             for (const part of parts) {
                 if (part.startsWith('#')) {
                     result.color = part;
-                } else if (part.startsWith('fade:')) {
-                    result.fade = parseFloat(part.split(':')[1]) || 1;
-                } else {
-                    const num = parseFloat(part);
-                    if (!isNaN(num)) {
-                        if (num <= 1) {
-                            result.opacity = num;
-                        } else {
-                            result.speed = num;
-                        }
+                } else if (part.includes(':')) {
+                    const [key, val] = part.split(':');
+                    if (key === 'color') {
+                        result.color = val;
+                        continue;
+                    }
+                    const v = parseFloat(val);
+                    if (!Number.isFinite(v)) continue;
+                    switch (key) {
+                        case 'opacity': result.opacity = Math.max(0, Math.min(1, v)); break;
+                        case 'speed': result.speed = v; break;
+                        case 'fade': result.fade = v; break;
                     }
                 }
             }

@@ -26,6 +26,8 @@ At higher speeds (600+ WPM), conscious analysis can't keep up. The words just...
 
 ## Script Commands
 
+All parameters (except `@wpm` and layer names) use explicit `key:value` syntax.
+
 ### Speed
 ```
 @wpm 300                    Set reading speed to 300 words per minute
@@ -33,12 +35,13 @@ At higher speeds (600+ WPM), conscious analysis can't keep up. The words just...
 
 ### Audio - Three Modes
 
-All three modes support **named layers**. Reusing a name transitions to the new values (keyframing). Name is optional (defaults to `_default`).
+All three modes support **named layers**. Reusing a name transitions to the new values (keyframing). Name is optional (defaults to `_default`) — it's the first token if it starts with a letter and has no colon.
 
 ```
-@binaural [name] <carrier> <beat> [amp_db] [fade:N] [vol:N] [interleave:N]
-@isochronic [name] <carrier> <pulse> [amp_db] [L|R|LR] [fade:N] [vol:N]
-@hybrid [name] <carrier> <beat> <pulse> [amp_db] [fade:N] [vol:N] [interleave:N]
+@binaural [name] carrier:N beat:N db:N fade:N vol:N interleave:N
+@isochronic [name] carrier:N pulse:N db:N ear:L|R|LR fade:N vol:N
+@hybrid [name] carrier:N beat:N pulse:N db:N fade:N vol:N interleave:N
+@<mode> [name] off [fade:N]
 ```
 
 **Binaural** - Two slightly different frequencies, one per ear. The brain perceives a "beat" at the difference frequency. Pure sine tones, no pulsing.
@@ -47,40 +50,67 @@ All three modes support **named layers**. Reusing a name transitions to the new 
 
 **Hybrid** - Binaural frequency split AND isochronic pulsing. L/R envelopes are 180 degrees out of phase (when left peaks, right troughs).
 
-**Parameter order** (matches [hypnocli](https://github.com/EcstasyEngineer/hypnocli)):
-| Mode | Positional params |
-|------|------------------|
-| binaural | carrier, beat, amplitude_db |
-| isochronic | carrier, pulse_rate, amplitude_db |
-| hybrid | carrier, beat, pulse_rate, amplitude_db |
-
-**Options:**
-- `fade:N` - Transition time in seconds (default 2)
-- `vol:N` - Master volume 0-0.8 (default 0.15, sticky once set)
-- `interleave:N` - R channel delay in ms for spatial width (default 0)
-- `amp_db` - Layer volume relative to master. 0 = full, -6 = half power, -12 = quarter
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `carrier:` | Base frequency in Hz | 200 |
+| `beat:` | Binaural beat frequency in Hz | 0 |
+| `pulse:` | Isochronic pulse rate in Hz | 0 |
+| `db:` | Layer amplitude relative to master (0 = full, -6 = half power) | 0 |
+| `fade:` | Transition time in seconds | 2 |
+| `vol:` | Master volume 0-0.8 (sticky once set) | 0.15 |
+| `interleave:` | R channel delay in ms for spatial width | 0 |
+| `ear:` | Ear routing: L, R, or LR (isochronic only) | LR |
 
 **Examples:**
 ```
-@hybrid bass 312 3 5 0 vol:0.15 fade:8     Start "bass" layer: 312Hz carrier, 3Hz beat, 5Hz pulse, 0dB
-@hybrid bass 200 2 3 -6 fade:30            Keyframe: transition "bass" to new params over 30s
-@binaural fifth 303.75 4.5 -4 fade:15      Add a pure binaural layer called "fifth"
-@binaural fifth off fade:0.1               Kill "fifth" instantly
-@hybrid off fade:2                          Stop ALL layers with 2s fade
+@hybrid bass carrier:312 beat:3 pulse:5 db:0 vol:0.15 fade:8   Start "bass" layer
+@hybrid bass carrier:200 beat:2 pulse:3 db:-6 fade:30          Keyframe to new params over 30s
+@binaural fifth carrier:303.75 beat:4.5 db:-4 fade:15          Add binaural layer "fifth"
+@binaural fifth off fade:0.1                                    Kill "fifth" instantly
+@hybrid off fade:2                                              Stop ALL layers with 2s fade
 ```
 
 ### Visuals
 ```
-@spiral on #8B5CF6 0.3 0.5 fade:2          Purple spiral, 30% opacity, 0.5 rot/sec, 2s fade
-@spiral off fade:1                          Fade out
-
-@subliminals 0.4 fade:0.5 empty drift sink  Flash words at 40% opacity
-@subliminals off fade:0.3                    Stop
+@spiral color:#8B5CF6 opacity:0.3 speed:0.5 fade:2     Purple spiral, 30% opacity, 0.5 rot/sec
+@spiral #8B5CF6 opacity:0.3 speed:0.5 fade:2           Bare #hex also works
+@spiral off fade:1                                       Fade out
 ```
 
-### Effects
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `color:` | Hex color (or bare `#hex`) | #8B5CF6 |
+| `opacity:` | Target opacity 0-1 | 0.3 |
+| `speed:` | Rotations per second | 1 |
+| `fade:` | Fade duration in seconds | 1 |
+
 ```
-@snap 1000                                  Snap sound + white flash + 1000ms pause
+@subliminals opacity:0.4 empty drift sink               Flash words at 40% opacity
+@subliminals off                                          Stop
+```
+
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `opacity:` | Flash opacity 0-1 | 0.4 |
+| (bare tokens) | Words to flash | (none) |
+
+### Snap
+```
+@snap duration:1500 word:Drop.     Snap + flash + show "Drop." for 1500ms
+@snap duration:800                  Snap + flash + blank display for 800ms
+@snap                               Default 800ms blank snap
+```
+
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `duration:` | Pause duration in ms | 800 |
+| `word:` | Word to display during pause (self-contained, doesn't consume next word) | (blank) |
+
+**Snap is blocking:** commands placed *after* `@snap` don't fire until the pause completes and the next word displays. To have audio/visual changes coincide with the snap, place them *before* `@snap`:
+```
+@hybrid layer off fade:0.1       These fire immediately
+@subliminals off
+@snap duration:1500 word:Drop.   Then the snap fires
 ```
 
 ## Audio Design Guide
@@ -88,6 +118,14 @@ All three modes support **named layers**. Reusing a name transitions to the new 
 ### The Reactor Preset (Perfect Fifths)
 
 The default demo uses four hybrid layers tuned in **perfect fifth intervals** (3:2 frequency ratio):
+
+```
+@hybrid high carrier:202.5 beat:4 pulse:7 db:0 vol:0.15 fade:8
+@hybrid mid_high carrier:135 beat:3.5 pulse:4.6 db:-4 fade:8
+@hybrid mid_low carrier:90 beat:3 pulse:3.3 db:-6 fade:8
+@hybrid low carrier:60 beat:2.5 pulse:2.55 db:-8 fade:8
+@hybrid fifth carrier:303.75 beat:4.5 pulse:5.5 db:-8 fade:8
+```
 
 | Layer | Carrier | Beat | Pulse | Amp | Ratio to next |
 |-------|---------|------|-------|-----|---------------|
@@ -102,26 +140,37 @@ The pulse rates use **max-entropy spacing** - all pairs take 4+ seconds to synch
 
 ### Creating Tension with Dissonance
 
-To create psychological tension, nudge one layer away from its perfect fifth. The demo drifts `mid_low` during the speed ramp:
+To create psychological tension, drift multiple layers away from their perfect fifths simultaneously. The demo progressively deforms the stack during the speed ramp:
 
-| mid_low freq | Ratio to 135 Hz | Musical interval | Feel |
-|-------------|-----------------|-----------------|------|
-| 90 Hz | 1.500 | Perfect fifth | Consonant, stable |
-| 93 Hz | 1.452 | Between fifth and tritone | Slightly unsettled |
-| 96 Hz | 1.406 | Near tritone (1.414 = tritone) | Clearly tense |
+| Change | Freq | Ratio to partner | Interval | Feel |
+|--------|------|-------------------|----------|------|
+| mid_low baseline | 90 Hz | 135/90 = 1.500 | Perfect fifth | Consonant, stable |
+| mid_low creep | 93 Hz | 135/93 = 1.452 | Between fifth and tritone | Slightly unsettled |
+| mid_low peak | 95.5 Hz | 135/95.5 = 1.414 | **Exact tritone** | Maximally tense |
+| mid_high drift | 138→140 Hz | 202.5/140 = 1.446 | Near tritone | Second dissonance axis |
 
-The **tritone** (ratio of sqrt(2), roughly 1.414) is historically called "diabolus in musica" - the devil in music. It's the interval of maximum harmonic tension. 96 Hz puts mid_low within 1% of a tritone relationship with mid_high, which is close enough for the brain to register as "wrong" without being able to articulate why.
+The **tritone** (ratio of sqrt(2), roughly 1.414) is historically called "diabolus in musica" - the devil in music. It's the interval of maximum harmonic tension.
 
-Going to exactly 95.46 Hz (the mathematical tritone from 135) would be maximum dissonance. Staying at 96 is "almost the worst" - unsettling but not jarring.
+Three mechanisms amplify the dissonance beyond just interval math:
+- **Multi-layer deformation**: Both mid_low AND mid_high drift, creating tritone relationships with two different partners
+- **Amplitude boost**: mid_low rises from -6 to -2 dB at peak tension (roughness scales with amplitude product)
+- **Pulse rate slowdown**: Isochronic pulsing slows from ~3.3 Hz to ~1.5 Hz, exposing the inter-carrier roughness that fast pulsing masks
 
 ### The Drop Technique
 
-The demo adds a pure **binaural layer at 303.75 Hz** (the next perfect fifth *above* the reactor stack) during the buildup. This becomes part of the texture - the listener habituates to it.
+The demo includes a **fifth layer at 303.75 Hz** (the next perfect fifth above the reactor stack) from the start. It's quiet (-8 dB) and becomes part of the baseline texture - the listener habituates without knowing it's there.
 
-At the snap:
-1. The 303.75 Hz binaural layer is killed instantly (`fade:0.1`)
-2. mid_low snaps back from 96 to 90 Hz (`fade:0.5`)
-3. Everything else stays
+At the snap (note: audio changes placed *before* `@snap` so they fire simultaneously):
+```
+@hybrid fifth carrier:120 beat:1.5 pulse:2 db:-20 fade:3.5
+@hybrid mid_low carrier:90 beat:3 pulse:3.3 db:-6 fade:0.5
+@hybrid mid_high carrier:135 beat:3.5 pulse:4.6 db:-4 fade:0.5
+@snap duration:1500 word:Drop.
+```
+1. The fifth layer is crushed to near-silence (`db:-20`)
+2. mid_low snaps back from 95.5 to 90 Hz — tritone resolves to perfect fifth
+3. mid_high snaps back from 140 to 135 Hz — second tritone resolves
+4. The snap fires with "Drop." displayed during the 1500ms pause
 
 The drop isn't about adding something loud. It's about **removing something the listener didn't know they were relying on**, while simultaneously resolving the dissonance back to consonance. The brain registers both the absence and the relief.
 
@@ -130,8 +179,9 @@ The drop isn't about adding something loud. It's about **removing something the 
 - **Dissonance should build gradually.** Jump straight to a tritone and it just sounds bad. Drift there over 60+ seconds and it creates *tension*.
 - **The drop = absence + resolution.** Kill one layer, resolve another. The contrast does the work.
 - **Use `fade:` generously.** Long fades (10-30s) on frequency changes are subliminal. Short fades (0.1-0.5s) are dramatic events.
-- **Layer naming = keyframing.** Every time you use `@hybrid mid_low ...`, you're setting a new keyframe for that layer. The engine interpolates smoothly.
+- **Layer naming = keyframing.** Every time you use `@hybrid mid_low carrier:... beat:...`, you're setting a new keyframe for that layer. The engine interpolates smoothly.
 - **Beat frequencies guide brainwave state:** 1-4 Hz = delta (deep sleep), 4-8 Hz = theta (trance/meditation), 8-12 Hz = alpha (relaxed), 12-30 Hz = beta (alert). The reactor uses theta-range beats.
+- **@snap is self-contained.** `word:Drop.` displays the word during the pause without consuming the next word in the script flow.
 
 ## Sharing Scripts
 
