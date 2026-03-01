@@ -36,6 +36,8 @@ The drop reinforces this: maximum dissonance resolves to instant consonance at t
 - **Spiral visual**: Rotating background spiral for enhanced focus
 - **Subliminals**: Peripheral word flashing during high-speed sections
 - **Snap induction**: Audio + white flash for trance drops
+- **Pulse border**: Pulsing colored glow for ambient state indication (touch/ready/edge/stop)
+- **Script comments**: `//` comments (full-line or inline)
 - **Sharable links**: Share scripts via URL (base64 or paste service links)
 - **Fullscreen mode**: Immersive distraction-free reading
 
@@ -43,9 +45,16 @@ The drop reinforces this: maximum dissonance resolves to instant consonance at t
 
 All parameters (except `@wpm` and layer names) use explicit `key:value` syntax.
 
+### Comments
+```
+// This is a full-line comment
+@wpm 300                     // Inline comments work too
+@spiral color:#8B5CF6        // Hex colors are safe — requires space before //
+```
+
 ### Speed
 ```
-@wpm 300                    Set reading speed to 300 words per minute
+@wpm 300                     // Set reading speed to 300 words per minute
 ```
 
 ### Audio - Three Modes
@@ -53,10 +62,10 @@ All parameters (except `@wpm` and layer names) use explicit `key:value` syntax.
 All three modes support **named layers**. Reusing a name transitions to the new values (keyframing). Name is optional (defaults to `_default`) — it's the first token if it starts with a letter and has no colon.
 
 ```
-@binaural [name] carrier:N beat:N db:N fade:N vol:N interleave:N
-@isochronic [name] carrier:N pulse:N db:N ear:L|R|LR fade:N vol:N
-@hybrid [name] carrier:N beat:N pulse:N db:N fade:N vol:N interleave:N
-@<mode> [name] off [fade:N]
+@binaural [name] carrier:N beat:N db:N fade:N vol:N interleave:N   // frequency split between ears
+@isochronic [name] carrier:N pulse:N db:N ear:L|R|LR fade:N vol:N // pulsed on/off carrier
+@hybrid [name] carrier:N beat:N pulse:N db:N fade:N vol:N         // binaural + isochronic
+@<mode> [name] off [fade:N]                                        // stop layer(s)
 ```
 
 **Binaural** - Two slightly different frequencies, one per ear. The brain perceives a "beat" at the difference frequency. Pure sine tones, no pulsing.
@@ -78,18 +87,18 @@ All three modes support **named layers**. Reusing a name transitions to the new 
 
 **Examples:**
 ```
-@hybrid bass carrier:312 beat:3 pulse:5 db:0 vol:0.15 fade:8   Start "bass" layer
-@hybrid bass carrier:200 beat:2 pulse:3 db:-6 fade:30          Keyframe to new params over 30s
-@binaural fifth carrier:303.75 beat:4.5 db:-4 fade:15          Add binaural layer "fifth"
-@binaural fifth off fade:0.1                                    Kill "fifth" instantly
-@hybrid off fade:2                                              Stop ALL layers with 2s fade
+@hybrid bass carrier:312 beat:3 pulse:5 db:0 vol:0.15 fade:8   // start "bass" layer
+@hybrid bass carrier:200 beat:2 pulse:3 db:-6 fade:30          // keyframe to new params over 30s
+@binaural fifth carrier:303.75 beat:4.5 db:-4 fade:15          // add binaural layer "fifth"
+@binaural fifth off fade:0.1                                    // kill "fifth" instantly
+@hybrid off fade:2                                              // stop ALL layers with 2s fade
 ```
 
 ### Visuals
 ```
-@spiral color:#8B5CF6 opacity:0.3 speed:0.5 fade:2     Purple spiral, 30% opacity, 0.5 rot/sec
-@spiral #8B5CF6 opacity:0.3 speed:0.5 fade:2           Bare #hex also works
-@spiral off fade:1                                       Fade out
+@spiral color:#8B5CF6 opacity:0.3 speed:0.5 fade:2      // purple spiral, 30% opacity
+@spiral #8B5CF6 opacity:0.3 speed:0.5 fade:2            // bare #hex also works
+@spiral off fade:1                                        // fade out
 ```
 
 | Parameter | Description | Default |
@@ -100,8 +109,8 @@ All three modes support **named layers**. Reusing a name transitions to the new 
 | `fade:` | Fade duration in seconds | 1 |
 
 ```
-@subliminals opacity:0.4 empty drift sink               Flash words at 40% opacity
-@subliminals off                                          Stop
+@subliminals opacity:0.4 empty drift sink                // flash words at 40% opacity
+@subliminals off                                          // stop
 ```
 
 | Parameter | Description | Default |
@@ -111,9 +120,9 @@ All three modes support **named layers**. Reusing a name transitions to the new 
 
 ### Snap
 ```
-@snap duration:1500 word:Drop.     Snap + flash + show "Drop." for 1500ms
-@snap duration:800                  Snap + flash + blank display for 800ms
-@snap                               Default 800ms blank snap
+@snap duration:1500 word:Drop.      // snap + flash + show "Drop." for 1500ms
+@snap duration:800                   // snap + flash + blank display for 800ms
+@snap                                // default 800ms blank snap
 ```
 
 | Parameter | Description | Default |
@@ -123,10 +132,28 @@ All three modes support **named layers**. Reusing a name transitions to the new 
 
 **Snap is blocking:** commands placed *after* `@snap` don't fire until the pause completes and the next word displays. To have audio/visual changes coincide with the snap, place them *before* `@snap`:
 ```
-@hybrid layer off fade:0.1       These fire immediately
+@hybrid layer off fade:0.1        // these fire immediately
 @subliminals off
-@snap duration:1500 word:Drop.   Then the snap fires
+@snap duration:1500 word:Drop.    // then the snap fires
 ```
+
+### Pulse Border
+```
+@pulseborder green hz:0.33        // slow green pulse (touching)
+@pulseborder yellow hz:0.5        // get ready
+@pulseborder edge hz:0.5          // edge (raspberry/magenta)
+@pulseborder red hz:0.75          // stop / no touching
+@pulseborder #8B5CF6 hz:0.5      // custom hex color
+@pulseborder off fade:1           // fade out
+```
+
+Pulsing inset glow on the RSVP container for persistent ambient state indication. The glow pulses between 25% and 100% intensity (never fully off while active).
+
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| (color) | Named (`green`, `yellow`, `edge`, `red`, `purple`) or hex | green |
+| `hz:` | Pulse frequency (cycles per second) | 0.33 |
+| `fade:` | Transition time in seconds when switching/stopping | 1 |
 
 ## Audio Design Guide
 
