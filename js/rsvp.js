@@ -24,6 +24,7 @@ class RSVPEngine {
         this.onSubliminals = options.onSubliminals || (() => {});
         this.onSnap = options.onSnap || (() => {});
         this.onAudio = options.onAudio || (() => {});
+        this.onPulseBorder = options.onPulseBorder || (() => {});
     }
 
     /**
@@ -65,6 +66,16 @@ class RSVPEngine {
                 pendingCommands.push({
                     type: 'subliminals',
                     args: subMatch[1]
+                });
+                continue;
+            }
+
+            // Check for @pulseborder command
+            const pulseMatch = trimmed.match(/^@pulseborder\s+(.+)/i);
+            if (pulseMatch) {
+                pendingCommands.push({
+                    type: 'pulseborder',
+                    args: pulseMatch[1]
                 });
                 continue;
             }
@@ -208,6 +219,8 @@ class RSVPEngine {
                     this.onSnap(cmd.pause, cmd.word);
                 } else if (cmd.type === 'audio') {
                     this.onAudio(cmd.mode, cmd.args);
+                } else if (cmd.type === 'pulseborder') {
+                    this.onPulseBorder(cmd.args);
                 }
             }
         }

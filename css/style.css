@@ -48,6 +48,28 @@ body {
     overflow: hidden;
 }
 
+/* Pulse border for touch state indication */
+#rsvp-container.pulsing {
+    --pulse-duration: 3s;
+    animation: pulse-border var(--pulse-duration) ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+    0%, 100% {
+        box-shadow: inset 0 0 15px 2px color-mix(in srgb, var(--pulse-color, #22c55e) 25%, transparent);
+    }
+    50% {
+        box-shadow: inset 0 0 30px 6px var(--pulse-color, #22c55e);
+    }
+}
+
+/* Fade transition when pulse border turns off */
+#rsvp-container.pulse-fading {
+    animation: none;
+    transition: box-shadow var(--pulse-fade, 1s) ease;
+    box-shadow: inset 0 0 0px 0px transparent;
+}
+
 #flash-overlay {
     position: absolute;
     top: 0;
