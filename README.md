@@ -12,6 +12,21 @@ Words flash one at a time with a red **Optimal Recognition Point (ORP)** - the l
 
 At higher speeds (600+ WPM), conscious analysis can't keep up. The words just... go in.
 
+## The Induction Model
+
+SpeedWashing exploits a simple asymmetry: **WPM is the induction**. The speed itself does the work.
+
+At 200-300 WPM, the reader's inner voice narrates comfortably. They feel in control. As speed ramps to 500-750 WPM, the inner voice can't keep up and drops out — the reader shifts from *actively reading* to *passively receiving*. They don't choose to let go; they simply can't hold on. This is the cognitive overload window where suggestions bypass critical analysis.
+
+The audio and visual layers exploit this further by inverting the listener's expectations:
+
+- **Consonance (perfect fifths) accompanies the trance.** The harmonious, "correct" sound is paired with receptivity and surrender. The brain learns: consonance = safe to let go.
+- **Dissonance (tritones) accompanies the wake-up.** The tense, unsettled intervals are paired with alertness and emergence. The brain learns: dissonance = being pulled away from the good place.
+
+This is backwards from how most media uses tension. Usually dissonance = danger, consonance = resolution. Here, the consonant state *is* the trance — which means the listener's unconscious motivation is to return to it. The wake-up feels like something being taken away, not something being given back.
+
+The drop reinforces this: maximum dissonance resolves to instant consonance at the moment of deepest surrender. Relief and release arrive together.
+
 ## Features
 
 - **Variable speed**: 100-1200 WPM with proportional punctuation pauses
@@ -174,13 +189,21 @@ At the snap (note: audio changes placed *before* `@snap` so they fire simultaneo
 
 The drop isn't about adding something loud. It's about **removing something the listener didn't know they were relying on**, while simultaneously resolving the dissonance back to consonance. The brain registers both the absence and the relief.
 
+### The Wake-Up Inversion
+
+The wake-up section deliberately uses dissonance — detuned intervals and faster pulse rates pushing toward beta range — to make emergence feel *uncomfortable*. The listener's unconscious takeaway: the trance was the good part. Being awake is the wrong-sounding part. This inverts the usual framing where "coming back" is presented as positive.
+
+The wake-up detuning is more aggressive than the tension buildup (ratios of 1.33 and 1.42 vs the pre-drop 1.41) because the listener is in a more suggestible state post-drop. Subtlety matters less; the association between dissonance and waking is what matters.
+
 ### Tips for Script Creators
 
+- **WPM is the induction.** Everything else is seasoning. A bare script with just `@wpm` ramps from 200→750→150 will induce on its own. Audio and visuals deepen what the speed already does.
 - **Dissonance should build gradually.** Jump straight to a tritone and it just sounds bad. Drift there over 60+ seconds and it creates *tension*.
 - **The drop = absence + resolution.** Kill one layer, resolve another. The contrast does the work.
 - **Use `fade:` generously.** Long fades (10-30s) on frequency changes are subliminal. Short fades (0.1-0.5s) are dramatic events.
 - **Layer naming = keyframing.** Every time you use `@hybrid mid_low carrier:... beat:...`, you're setting a new keyframe for that layer. The engine interpolates smoothly.
 - **Beat frequencies guide brainwave state:** 1-4 Hz = delta (deep sleep), 4-8 Hz = theta (trance/meditation), 8-12 Hz = alpha (relaxed), 12-30 Hz = beta (alert). The reactor uses theta-range beats.
+- **Pair consonance with surrender, dissonance with waking.** This trains the listener to want the trance state back.
 - **@snap is self-contained.** `word:Drop.` displays the word during the pause without consuming the next word in the script flow.
 
 ## Sharing Scripts
