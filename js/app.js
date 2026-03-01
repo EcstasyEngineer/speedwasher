@@ -40,6 +40,71 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize audio engine (handles binaural, isochronic, hybrid)
     const binaural = new BinauralEngine();
 
+    // Pulse border color map and helpers
+    const PULSE_COLORS = {
+        green: '#22c55e',    // touch
+        yellow: '#eab308',   // get ready
+        edge: '#e91e8c',     // edge (raspberry/magenta)
+        red: '#ef4444',      // stop / no touching
+        purple: '#8B5CF6'    // reserved
+    };
+    const rsvpContainer = document.getElementById('rsvp-container');
+
+    function parsePulseBorder(args) {
+        const tokens = args.trim().split(/\s+/);
+        if (tokens[0].toLowerCase() === 'off') {
+            let fade = 1;
+            for (const t of tokens) {
+                if (t.startsWith('fade:')) {
+                    const v = parseFloat(t.split(':')[1]);
+                    if (Number.isFinite(v)) fade = v;
+                }
+            }
+            return { action: 'off', fade };
+        }
+        // First token is color (named or hex)
+        const colorToken = tokens[0];
+        const color = PULSE_COLORS[colorToken.toLowerCase()] || colorToken;
+        let hz = 0.33;
+        let fade = 1;
+        for (const t of tokens.slice(1)) {
+            if (t.startsWith('hz:')) {
+                const v = parseFloat(t.split(':')[1]);
+                if (Number.isFinite(v) && v > 0) hz = v;
+            } else if (t.startsWith('fade:')) {
+                const v = parseFloat(t.split(':')[1]);
+                if (Number.isFinite(v)) fade = v;
+            }
+        }
+        return { action: 'on', color, hz, fade };
+    }
+
+    function applyPulseBorder(params) {
+        if (params.action === 'off') {
+            rsvpContainer.style.setProperty('--pulse-fade', params.fade + 's');
+            rsvpContainer.classList.remove('pulsing');
+            rsvpContainer.classList.add('pulse-fading');
+            // Clean up after fade
+            setTimeout(() => {
+                rsvpContainer.classList.remove('pulse-fading');
+                rsvpContainer.style.removeProperty('--pulse-fade');
+            }, params.fade * 1000);
+        } else {
+            rsvpContainer.classList.remove('pulse-fading');
+            rsvpContainer.style.setProperty('--pulse-color', params.color);
+            rsvpContainer.style.setProperty('--pulse-duration', (1 / params.hz) + 's');
+            rsvpContainer.classList.add('pulsing');
+        }
+    }
+
+    function resetPulseBorder() {
+        rsvpContainer.classList.remove('pulsing', 'pulse-fading');
+        rsvpContainer.style.removeProperty('--pulse-color');
+        rsvpContainer.style.removeProperty('--pulse-duration');
+        rsvpContainer.style.removeProperty('--pulse-fade');
+        rsvpContainer.style.boxShadow = '';
+    }
+
     // Flag to skip audio stop during snap pauses
     let isSnapPause = false;
     let snapTimeoutId = null;
@@ -153,6 +218,7 @@ Thank you again for watching, and I will see you in the next one.`;
             spiral.stop(2);
             subliminals.stop(2);
             binaural.stop(2);
+            resetPulseBorder();
         },
         onStateChange: (playing) => {
             updatePlayButton(playing);
@@ -236,6 +302,10 @@ Thank you again for watching, and I will see you in the next one.`;
         onAudio: (mode, args) => {
             const params = BinauralEngine.parseCommand(mode, args);
             binaural.applyCommand(mode, params);
+        },
+        onPulseBorder: (args) => {
+            const params = parsePulseBorder(args);
+            applyPulseBorder(params);
         }
     });
 
@@ -361,6 +431,7 @@ Thank you again for watching, and I will see you in the next one.`;
         spiral.stop(fade);
         subliminals.stop(fade);
         binaural.stop(fade);
+        resetPulseBorder();
         audioPrimed = false;
     }
 
