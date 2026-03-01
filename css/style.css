@@ -226,11 +226,6 @@ body {
     text-align: right;
 }
 
-#preset-buttons {
-    display: flex;
-    gap: 5px;
-}
-
 #btn-sync {
     padding: 8px 20px;
     border: 1px solid var(--accent-color);
@@ -402,8 +397,4 @@ body.fullscreen #info {
         flex-direction: column;
     }
 
-    #preset-buttons {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }

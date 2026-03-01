@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Flag to skip audio stop during snap pauses
     let isSnapPause = false;
+    let snapTimeoutId = null;
 
     // iOS audio priming - must start audio within ~4s of user gesture
     let audioPrimed = false;
@@ -49,11 +50,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (audioPrimed) return;
         audioPrimed = true;
 
-        // Init audio context and worklet within gesture timeout
-        await binaural.init();
-        if (binaural.ctx.state === 'suspended') await binaural.ctx.resume();
-        // Start a silent layer to keep context alive
-        binaural.node.port.postMessage({ layer: 7, gain: 0, fadeTime: 0.01 });
+        try {
+            // Init audio context and worklet within gesture timeout
+            await binaural.init();
+            if (binaural.ctx.state === 'suspended') await binaural.ctx.resume();
+            // Poke worklet with a silent layer to prevent iOS from suspending the audio thread.
+            // Safe: runs once on first gesture before any user layers are allocated.
+            binaural.node.port.postMessage({ layer: 7, gain: 0, fadeTime: 0.01 });
+        } catch (e) {
+            audioPrimed = false;
+            console.error('Audio init failed:', e);
+        }
 
         // Prime snap: play at vol:0 then pause
         if (snapSound) {
@@ -143,11 +150,18 @@ Thank you again for watching, and I will see you in the next one.`;
         },
         onComplete: () => {
             updatePlayButton(false);
+            spiral.stop(2);
+            subliminals.stop(2);
             binaural.stop(2);
         },
         onStateChange: (playing) => {
             updatePlayButton(playing);
             if (!playing && !isSnapPause) {
+                // Manual pause - cancel any pending snap resume
+                if (snapTimeoutId) {
+                    clearTimeout(snapTimeoutId);
+                    snapTimeoutId = null;
+                }
                 // Pause - fade layers to 0 but keep state
                 binaural.pauseAll(0.5);
             } else if (playing) {
@@ -173,7 +187,7 @@ Thank you again for watching, and I will see you in the next one.`;
                 subliminals.start(params.opacity, params.fade, params.words);
             }
         },
-        onSnap: (pauseDuration) => {
+        onSnap: (pauseDuration, snapWord) => {
             // Play snap sound
             if (snapSound) {
                 snapSound.currentTime = 0;
@@ -190,17 +204,31 @@ Thank you again for watching, and I will see you in the next one.`;
                 }, 50);
             }
 
-            // Blank the display during pause
-            wordBefore.textContent = '';
-            wordORP.textContent = '';
-            wordAfter.textContent = '';
-            wordContainer.style.marginLeft = '0';
+            // Display snap word or blank
+            if (snapWord) {
+                const parts = ORP.split(snapWord);
+                wordBefore.textContent = parts.before;
+                wordORP.textContent = parts.orp;
+                wordAfter.textContent = parts.after;
+                requestAnimationFrame(() => {
+                    const beforeWidth = wordBefore.offsetWidth;
+                    const orpWidth = wordORP.offsetWidth;
+                    wordContainer.style.marginLeft = `-${beforeWidth + orpWidth/2}px`;
+                });
+            } else {
+                wordBefore.textContent = '';
+                wordORP.textContent = '';
+                wordAfter.textContent = '';
+                wordContainer.style.marginLeft = '0';
+            }
 
             // Pause playback, then resume after delay
             // Set flag so audio doesn't stop during snap
             isSnapPause = true;
             rsvp.pause();
-            setTimeout(() => {
+            snapTimeoutId = setTimeout(() => {
+                snapTimeoutId = null;
+                if (!isSnapPause) return;  // manual pause cancelled the snap
                 isSnapPause = false;
                 rsvp.play();
             }, pauseDuration);
@@ -227,7 +255,10 @@ Thank you again for watching, and I will see you in the next one.`;
             const u = new URL(url);
             // GitHub Gist: convert /user/id to raw
             if (u.hostname === 'gist.github.com') {
-                return url + '/raw';
+                if (!u.pathname.endsWith('/raw')) {
+                    return url + '/raw';
+                }
+                return url;
             }
             // Already a raw gist URL
             if (u.hostname === 'gist.githubusercontent.com') {
@@ -286,7 +317,7 @@ Thank you again for watching, and I will see you in the next one.`;
     } else if (scriptB64) {
         // Inline base64-encoded script
         try {
-            const text = decodeURIComponent(atob(scriptB64));
+            const text = decodeURIComponent(escape(atob(scriptB64)));
             loadScript(sanitizeScript(text));
         } catch (e) {
             console.error('Failed to decode script param:', e);
@@ -320,6 +351,30 @@ Thank you again for watching, and I will see you in the next one.`;
         }
     }
 
+    // Shared cleanup for restart / load / R-key
+    function resetPlayback(fade = 0.3) {
+        if (snapTimeoutId) {
+            clearTimeout(snapTimeoutId);
+            snapTimeoutId = null;
+        }
+        isSnapPause = false;
+        spiral.stop(fade);
+        subliminals.stop(fade);
+        binaural.stop(fade);
+        audioPrimed = false;
+    }
+
+    // Helper to copy text to clipboard with prompt fallback
+    function copyToClipboard(text, onSuccess) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(onSuccess).catch(() => {
+                prompt('Copy this URL:', text);
+            });
+        } else {
+            prompt('Copy this URL:', text);
+        }
+    }
+
     // Event Listeners
 
     // Play/Pause button
@@ -330,10 +385,7 @@ Thank you again for watching, and I will see you in the next one.`;
 
     // Restart button
     btnRestart.addEventListener('click', () => {
-        spiral.stop(0.3);
-        subliminals.stop(0.3);
-        binaural.stop(0.3);
-        audioPrimed = false;
+        resetPlayback();
         rsvp.restart();
     });
 
@@ -377,10 +429,7 @@ Thank you again for watching, and I will see you in the next one.`;
     btnLoadScript.addEventListener('click', () => {
         const text = scriptEditor.value.trim();
         if (text) {
-            spiral.stop(0.3);
-            subliminals.stop(0.3);
-            binaural.stop(0.3);
-            audioPrimed = false;
+            resetPlayback();
             rsvp.load(text);
             loadedScript = scriptEditor.value;
             updateLoadButton();
@@ -394,15 +443,13 @@ Thank you again for watching, and I will see you in the next one.`;
 
         const base = window.location.origin + window.location.pathname;
 
-        // For short scripts (< 2KB), use inline base64
-        if (text.length < 2000) {
-            const encoded = btoa(encodeURIComponent(text));
-            const url = base + '?script=' + encoded;
-            navigator.clipboard.writeText(url).then(() => {
+        // For short scripts, use inline base64 (encode unicode safely)
+        const encoded = btoa(unescape(encodeURIComponent(text)));
+        const url = base + '?script=' + encoded;
+        if (url.length <= 2000) {
+            copyToClipboard(url, () => {
                 btnShare.textContent = 'Copied!';
                 setTimeout(() => { btnShare.textContent = 'Share'; }, 2000);
-            }).catch(() => {
-                prompt('Share URL (too long for clipboard):', url);
             });
         } else {
             // For longer scripts, prompt to use a paste service
@@ -416,11 +463,9 @@ Thank you again for watching, and I will see you in the next one.`;
             const pasteUrl = prompt(msg);
             if (pasteUrl && pasteUrl.trim()) {
                 const url = base + '?paste=' + encodeURIComponent(pasteUrl.trim());
-                navigator.clipboard.writeText(url).then(() => {
+                copyToClipboard(url, () => {
                     btnShare.textContent = 'Copied!';
                     setTimeout(() => { btnShare.textContent = 'Share'; }, 2000);
-                }).catch(() => {
-                    prompt('Share URL:', url);
                 });
             }
         }
@@ -437,6 +482,7 @@ Thank you again for watching, and I will see you in the next one.`;
                 primeAudioForIOS().then(() => rsvp.toggle());
                 break;
             case 'KeyR':
+                resetPlayback();
                 rsvp.restart();
                 break;
             case 'ArrowUp':
@@ -462,14 +508,11 @@ Thank you again for watching, and I will see you in the next one.`;
         document.body.classList.toggle('fullscreen');
     });
 
-    // Click anywhere in fullscreen to exit
+    // Tap/click in fullscreen to exit (skip buttons/inputs)
     document.addEventListener('click', (e) => {
-        if (document.body.classList.contains('fullscreen') &&
-            e.target.closest('#rsvp-container')) {
-            // Don't exit on container click
-        } else if (document.body.classList.contains('fullscreen')) {
-            document.body.classList.remove('fullscreen');
-        }
+        if (!document.body.classList.contains('fullscreen')) return;
+        if (e.target.closest('button, input, textarea, a, select')) return;
+        document.body.classList.remove('fullscreen');
     });
 
     // Initial display

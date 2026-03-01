@@ -69,12 +69,32 @@ class RSVPEngine {
                 continue;
             }
 
-            // Check for @snap command (optional pause duration in ms)
-            const snapMatch = trimmed.match(/^@snap(?:\s+(\d+))?/i);
+            // Check for @snap command (named params: duration:N word:X)
+            const snapMatch = trimmed.match(/^@snap(?:\s+(.+))?$/i);
             if (snapMatch) {
-                pendingCommands.push({
-                    type: 'snap',
-                    pause: parseInt(snapMatch[1], 10) || 800  // Default 800ms pause
+                let snapPause = 800;
+                let snapWord = '';
+                if (snapMatch[1]) {
+                    for (const token of snapMatch[1].trim().split(/\s+/)) {
+                        if (token.startsWith('duration:')) {
+                            const v = parseInt(token.split(':')[1], 10);
+                            if (Number.isFinite(v)) snapPause = v;
+                        } else if (token.startsWith('word:')) {
+                            snapWord = token.split(':')[1] || '';
+                        }
+                    }
+                }
+                // Flush pending commands as a sentinel first
+                if (pendingCommands.length > 0) {
+                    words.push({ word: '', wpm: currentWPM, commands: pendingCommands });
+                    pendingCommands = [];
+                }
+                // Insert snap as its own word object
+                const snapCmd = { type: 'snap', pause: snapPause, word: snapWord };
+                words.push({
+                    word: snapWord,
+                    wpm: currentWPM,
+                    commands: [snapCmd]
                 });
                 continue;
             }
@@ -107,6 +127,11 @@ class RSVPEngine {
 
                 words.push(wordObj);
             }
+        }
+
+        // Flush any trailing commands that weren't attached to a word
+        if (pendingCommands.length > 0) {
+            words.push({ word: '', wpm: currentWPM, commands: pendingCommands });
         }
 
         return words;
@@ -142,23 +167,25 @@ class RSVPEngine {
      * @returns {number} - Milliseconds
      */
     getInterval(wpm, word = '') {
+        wpm = Math.max(1, wpm);
         const baseInterval = Math.round(60000 / wpm);
 
         // Proportional pause for punctuation (multipliers)
         const lastChar = word.slice(-1);
+        let interval = baseInterval;
 
         if ('.!?'.includes(lastChar)) {
             // End of sentence - 2x base (natural breath)
-            return Math.round(baseInterval * 2);
+            interval = Math.round(baseInterval * 2);
         } else if (',;:'.includes(lastChar)) {
             // Mid-sentence pause - 1.4x base
-            return Math.round(baseInterval * 1.4);
+            interval = Math.round(baseInterval * 1.4);
         } else if ('—–-'.includes(lastChar)) {
             // Dash - 1.25x base
-            return Math.round(baseInterval * 1.25);
+            interval = Math.round(baseInterval * 1.25);
         }
 
-        return baseInterval;
+        return Math.max(10, interval);
     }
 
     /**
@@ -169,7 +196,6 @@ class RSVPEngine {
         if (index < 0 || index >= this.words.length) return;
 
         const wordObj = this.words[index];
-        const parts = ORP.split(wordObj.word);
 
         // Process any commands attached to this word (only while playing)
         if (wordObj.commands && this.isPlaying) {
@@ -179,12 +205,17 @@ class RSVPEngine {
                 } else if (cmd.type === 'subliminals') {
                     this.onSubliminals(cmd.args);
                 } else if (cmd.type === 'snap') {
-                    this.onSnap(cmd.pause);
+                    this.onSnap(cmd.pause, cmd.word);
                 } else if (cmd.type === 'audio') {
                     this.onAudio(cmd.mode, cmd.args);
                 }
             }
         }
+
+        // Skip display for empty sentinel words (EOF command flush)
+        if (wordObj.word === '') return;
+
+        const parts = ORP.split(wordObj.word);
 
         // Check if WPM changed (only if following script)
         if (this.followScript && wordObj.wpm !== this.wpm) {
@@ -292,6 +323,15 @@ class RSVPEngine {
         }
 
         const wordObj = this.words[this.currentIndex];
+
+        // Skip sentinel words (EOF command flush) — process commands, no delay
+        if (wordObj.word === '') {
+            this.showWord(this.currentIndex);
+            this.currentIndex++;
+            this.scheduleNext();
+            return;
+        }
+
         const effectiveWpm = this.followScript ? wordObj.wpm : this.manualWpm;
         const interval = this.getInterval(effectiveWpm, wordObj.word);
 
@@ -313,6 +353,16 @@ class RSVPEngine {
 
         if (this.words.length > 0) {
             this.showWord(this.currentIndex);
+            this.currentIndex++;
+        }
+
+        // If playing, reschedule from new position
+        if (this.isPlaying) {
+            if (this.timer) {
+                clearTimeout(this.timer);
+                this.timer = null;
+            }
+            this.scheduleNext();
         }
     }
 }
