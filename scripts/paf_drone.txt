@@ -1,6 +1,6 @@
-# PAF Drone - Obedience Calibration Script
-# TODO: Replace problematic snaps once we have @sfx / @pause (#5)
-# See analysis/paf_drone_timeline.html for full snap inventory
+//PAF Drone - Obedience Calibration Script
+//TODO: Replace problematic snaps once we have @sfx / @pause (#5)
+//See analysis/paf_drone_timeline.html for full snap inventory
 
 @wpm 180
 @hybrid drone_low carrier:60 beat:2.5 pulse:5.5 db:-6 vol:0.13 fade:8
@@ -68,7 +68,7 @@ Get ready.
 @pulseborder green hz:0.33
 Start touching yourself. Slow. Not to finish. To feel.
 
-# TODO: Replace @snap word:Touch with @sfx or remove — contradicts snap=stop conditioning
+//TODO: Replace @snap word:Touch with @sfx or remove — contradicts snap=stop conditioning
 @snap duration:2000 word:Touch.
 
 There. Just like that.
@@ -221,13 +221,13 @@ Keep touching. Steady.
 
 But let me ask you something. How do you know this is what you need? What if the guidance stopped? What if the voice went quiet and you were left with just... this.
 
-# TODO: Replace with @pause — silent snap during touch triggers false stop
+//TODO: Replace with @pause — silent snap during touch triggers false stop
 @snap duration:3000
 
 @wpm 150
 Feel that uncertainty. That wobble. The comfort is here. The pleasure is here. But the certainty is gone and something feels wrong. Unmoored. Drifting without direction.
 
-# TODO: Replace with @pause — silent snap during touch triggers false stop
+//TODO: Replace with @pause — silent snap during touch triggers false stop
 @snap duration:2000
 
 But it won't stop. Because you chose the headphones. And the headphones chose you. And the certainty returns like a door clicking shut. Solid. Locked. Right.
@@ -248,7 +248,7 @@ The body wants to stop. The sound says something is wrong. But the guidance is c
 
 Keep going. Steady. The guidance holds even when the comfort doesn't.
 
-# TODO: Replace with @pause — silent snap during touch triggers false stop
+//TODO: Replace with @pause — silent snap during touch triggers false stop
 @snap duration:3000
 
 @hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
@@ -277,13 +277,13 @@ This is the reward state. This is what compliance feels like when nothing is mis
 
 Breathe into it. Let it fill you. This is home. Let it write itself into your body.
 
-# TODO: Replace with @pause — silent snap during touch triggers false stop
+//TODO: Replace with @pause — silent snap during touch triggers false stop
 @snap duration:3000
 
 @wpm 150
 Feel how deeply you accept this. Not because you decided to. Because it simply is. The rightness of it needs no argument. It settles like gravity. Like breathing. Like something you were always meant to feel.
 
-# TODO: Replace with @sfx bell or similar — Good snap during touch is ambiguous
+//TODO: Replace with @sfx bell or similar — Good snap during touch is ambiguous
 @snap duration:1500 word:Good.
 
 @wpm 200
@@ -298,7 +298,7 @@ Now.
 
 And the sound is gone. The comfort. Stripped away. And the certainty — what if there were no guidance? No voice? No structure? Just you. Alone. Without the headphones. Without the comfort. Without the certainty that someone is steering.
 
-# These silent snaps during no-touch are fine — dramatic pauses, not touching
+//These silent snaps during no-touch are fine — dramatic pauses, not touching
 @snap duration:2000
 
 Feel that. All three gone at once.
@@ -367,7 +367,7 @@ Hands still. Thoughts gone. Only the guidance.
 @wpm 200
 Now the unit says it inside. The guidance goes quiet. The unit's own voice speaks the truth. Say it now.
 
-# TODO: Replace vocalization pauses with @sfx bell — snap during no-touch is OK but bell would be clearer
+//TODO: Replace vocalization pauses with @sfx bell — snap during no-touch is OK but bell would be clearer
 @snap duration:2500
 
 @wpm 200
@@ -413,7 +413,7 @@ Fixating on the guidance is the only important thing.
 
 Now the guidance speaks the first half. The unit completes it. Fixating on the guidance...
 
-# TODO: Replace with @sfx bell — vocalization pause snaps during edge touching
+//TODO: Replace with @sfx bell — vocalization pause snaps during edge touching
 @snap duration:2000
 
 Good. Again. Fixating on the guidance...

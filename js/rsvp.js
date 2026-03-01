@@ -43,8 +43,8 @@ class RSVPEngine {
         for (const line of lines) {
             const trimmed = line.trim();
 
-            // Strip inline comments (# to end of line) and skip pure comment lines
-            const stripped = trimmed.replace(/\s+#.*$/, '').replace(/^#.*$/, '');
+            // Strip comments (// to end of line) and skip pure comment lines
+            const stripped = trimmed.replace(/\s+\/\/.*$/, '').replace(/^\/\/.*$/, '');
             if (!stripped) continue;
 
             // Check for @wpm command
