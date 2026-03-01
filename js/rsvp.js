@@ -338,6 +338,11 @@ class RSVPEngine {
         this.showWord(this.currentIndex);
         this.currentIndex++;
 
+        // Guard: if showWord triggered a snap (or other pause), bail out
+        // before creating an orphan timer. The index is already advanced
+        // so the snap resume will pick up at the next word.
+        if (!this.isPlaying) return;
+
         this.timer = setTimeout(() => {
             this.scheduleNext();
         }, interval);
