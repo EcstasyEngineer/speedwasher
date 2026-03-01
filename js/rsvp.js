@@ -43,18 +43,19 @@ class RSVPEngine {
         for (const line of lines) {
             const trimmed = line.trim();
 
-            // Skip comments (lines starting with #)
-            if (trimmed.startsWith('#')) continue;
+            // Strip inline comments (# to end of line) and skip pure comment lines
+            const stripped = trimmed.replace(/\s+#.*$/, '').replace(/^#.*$/, '');
+            if (!stripped) continue;
 
             // Check for @wpm command
-            const wpmMatch = trimmed.match(/^@wpm\s+(\d+)/i);
+            const wpmMatch = stripped.match(/^@wpm\s+(\d+)/i);
             if (wpmMatch) {
                 currentWPM = parseInt(wpmMatch[1], 10);
                 continue;
             }
 
             // Check for @spiral command
-            const spiralMatch = trimmed.match(/^@spiral\s+(.+)/i);
+            const spiralMatch = stripped.match(/^@spiral\s+(.+)/i);
             if (spiralMatch) {
                 pendingCommands.push({
                     type: 'spiral',
@@ -64,7 +65,7 @@ class RSVPEngine {
             }
 
             // Check for @subliminals command
-            const subMatch = trimmed.match(/^@subliminals\s+(.+)/i);
+            const subMatch = stripped.match(/^@subliminals\s+(.+)/i);
             if (subMatch) {
                 pendingCommands.push({
                     type: 'subliminals',
@@ -74,7 +75,7 @@ class RSVPEngine {
             }
 
             // Check for @pulseborder command
-            const pulseMatch = trimmed.match(/^@pulseborder\s+(.+)/i);
+            const pulseMatch = stripped.match(/^@pulseborder\s+(.+)/i);
             if (pulseMatch) {
                 pendingCommands.push({
                     type: 'pulseborder',
@@ -84,7 +85,7 @@ class RSVPEngine {
             }
 
             // Check for @snap command (named params: duration:N word:X)
-            const snapMatch = trimmed.match(/^@snap(?:\s+(.+))?$/i);
+            const snapMatch = stripped.match(/^@snap(?:\s+(.+))?$/i);
             if (snapMatch) {
                 let snapPause = 800;
                 let snapWord = '';
@@ -114,7 +115,7 @@ class RSVPEngine {
             }
 
             // Check for @binaural / @isochronic / @hybrid commands
-            const audioMatch = trimmed.match(/^@(binaural|isochronic|hybrid)\s+(.+)/i);
+            const audioMatch = stripped.match(/^@(binaural|isochronic|hybrid)\s+(.+)/i);
             if (audioMatch) {
                 pendingCommands.push({
                     type: 'audio',
@@ -125,7 +126,7 @@ class RSVPEngine {
             }
 
             // Split line into words
-            const lineWords = trimmed.split(/\s+/).filter(w => w.length > 0);
+            const lineWords = stripped.split(/\s+/).filter(w => w.length > 0);
 
             for (let i = 0; i < lineWords.length; i++) {
                 const wordObj = {
