@@ -27,11 +27,12 @@
         <!-- Controls -->
         <div id="controls">
             <div id="playback-controls">
+                <button id="btn-rewind" title="Rewind to start">&#x23EE;</button>
                 <button id="btn-play" title="Play/Pause">
                     <span class="play-icon">&#9658;</span>
                     <span class="pause-icon" style="display:none;">&#10074;&#10074;</span>
                 </button>
-                <button id="btn-restart" title="Restart">&#8634;</button>
+                <button id="btn-loop" title="Loop">&#8634;</button>
                 <button id="btn-fullscreen" title="Fullscreen (F)">&#x26F6;</button>
             </div>
 
@@ -79,6 +80,8 @@
                     <tr><td><code>@spiral</code></td><td>[#hex] color: opacity: speed: fade:</td><td><code>@spiral #8B5CF6 opacity:0.3 speed:0.5 fade:2</code></td></tr>
                     <tr><td><code>@subliminals</code></td><td>opacity: word1 word2 ...</td><td><code>@subliminals opacity:0.4 obey drift sink</code></td></tr>
                     <tr><td><code>@snap</code></td><td>duration: word: (blocking — place audio changes before it)</td><td><code>@snap duration:1500 word:Drop.</code></td></tr>
+                    <tr><td><code>@pause</code></td><td>duration: word: (blocking silent pause, no sound/flash)</td><td><code>@pause duration:2000 word:Hold.</code></td></tr>
+                    <tr><td><code>@sfx</code></td><td>[name] (non-blocking — plays audio/sfx/{name}.ogg/.mp3)</td><td><code>@sfx bell</code></td></tr>
                     <tr><td><code>@pulseborder</code></td><td>[color] hz: fade: — green/yellow/edge/red/purple or #hex</td><td><code>@pulseborder green hz:0.33</code></td></tr>
                     <tr><td><code>@&lt;any&gt; off</code></td><td>[fade:]</td><td><code>@hybrid bass off fade:2</code></td></tr>
                     <tr><td><code>//</code></td><td>Comment (full-line or inline)</td><td><code>@wpm 300 // speed up</code></td></tr>
@@ -89,7 +92,7 @@
 
     <!-- Audio elements -->
     <audio id="snap-sound" preload="auto">
-        <source src="audio/snap.mp3" type="audio/mpeg">
+        <source src="audio/sfx/snap.mp3" type="audio/mpeg">
     </audio>
 
     <script src="js/orp.js"></script>

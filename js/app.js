@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const wpmDisplay = document.getElementById('wpm-display');
 
     const btnPlay = document.getElementById('btn-play');
-    const btnRestart = document.getElementById('btn-restart');
+    const btnRewind = document.getElementById('btn-rewind');
+    const btnLoop = document.getElementById('btn-loop');
     const btnFullscreen = document.getElementById('btn-fullscreen');
     const wpmSlider = document.getElementById('wpm-slider');
     const wpmValue = document.getElementById('wpm-value');
@@ -105,6 +106,34 @@ document.addEventListener('DOMContentLoaded', () => {
         rsvpContainer.style.boxShadow = '';
     }
 
+    // SFX audio cache — Audio objects keyed by name
+    const sfxCache = {};
+
+    function ensureSfx(name) {
+        if (!sfxCache[name]) {
+            const audio = new Audio();
+            audio.src = `audio/sfx/${name}.ogg`;
+            audio.onerror = () => { audio.src = `audio/sfx/${name}.mp3`; };
+            sfxCache[name] = audio;
+        }
+        return sfxCache[name];
+    }
+
+    function playSfx(name) {
+        const audio = ensureSfx(name);
+        audio.currentTime = 0;
+        audio.play().catch(e => console.log('SFX blocked:', e));
+    }
+
+    // Pre-scan script text for @sfx names and populate cache (for iOS priming)
+    function prescanSfx(text) {
+        const re = /^@sfx\s+(\S+)/gim;
+        let m;
+        while ((m = re.exec(text)) !== null) {
+            ensureSfx(m[1]);
+        }
+    }
+
     // Flag to skip audio stop during snap pauses
     let isSnapPause = false;
     let snapTimeoutId = null;
@@ -137,57 +166,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 snapSound.volume = origVol;
             }).catch(() => {}); // Ignore errors
         }
+
+        // Prime cached sfx audio objects
+        for (const audio of Object.values(sfxCache)) {
+            const origVol = audio.volume;
+            audio.volume = 0;
+            audio.play().then(() => {
+                audio.pause();
+                audio.currentTime = 0;
+                audio.volume = origVol;
+            }).catch(() => {});
+        }
     }
-
-    // Default demo script - original speed reading video transcript
-    const DEFAULT_SCRIPT = `@wpm 300
-Let's see if you can keep up with this speed reading exercise. We'll kick things off at 300 words per minute. The average person reads around 200 to 250 words per minute, so you're already reading faster than most people. Anyway, let's give 360 words per minute a try.
-
-@wpm 360
-The main trick with this kind of speed reading is all about quieting the voice in your head. This voice reads every single word aloud. That's the main habit that slows us all down. Think of it like taking the training wheels off a bike. At first it feels strange, but soon you find your balance.
-
-The idea here is your eyes do the work. Just absorb the words as they appear on screen. Most of us learned to read at a certain pace and just never updated that skill. So how does this actually work?
-
-The technique we're using is called Rapid Serial Visual Presentation. The idea behind it is really simple. Instead of your eyes having to move across a page, the words are rapidly presented to you one at a time.
-
-@wpm 450
-Your eyes don't move smoothly when you read normally. They make tiny jumps and stops. These small movements are what take up most of your reading time.
-
-By getting rid of them, you naturally start to process information much faster. You'll notice there's a red letter in each word. That's your focal point. It acts as an anchor for your eyes. This helps your brain to lock onto the word and recognize it almost instantly. You don't need to scan the whole thing.
-
-It's a cool trick that makes a huge difference. Before we got artificial intelligence to do our work for us, speed reading was a key skill. Even if it's not as vital now, it's still a fun little cognitive workout.
-
-It helps you learn faster and enjoy reading more. With consistent practice, you can train your brain to process information at a much higher rate.
-
-@wpm 600
-Start with a comfortable speed and gradually increase it. The goal is not just to see words, but to absorb their meaning effortlessly.
-
-You might be surprised at how quickly your reading speed and comprehension can improve. Think of this as a complete workout for your brain. You're training several key skills at once. For starters, you're building serious focus. To keep up with this speed, your brain has to lock in and ignore distractions. It's like a form of meditation.
-
-You are literally training your attention muscle. It also exercises your working memory when you're pushing to connect ideas more rapidly. Your visual processing also gets a massive upgrade. You train your brain to see whole words as pictures, not just letters.
-
-And maybe most importantly, you're practicing self-control by actively telling that reading voice in your head to stay quiet. This can even make reading less tiring over long periods.
-
-@wpm 900
-But here's the most important thing to remember: it only counts if you understand what you're reading. Speed is great, but comprehension is the real goal.
-
-Push the speed. Check in with yourself. After a long paragraph, pause and ask yourself what you just read. If you can't say, you're going too fast.
-
-The aim is to find that sweet spot where you're reading faster than ever but missing nothing. If you can read this, then you're doing pretty well.
-
-Your brain has switched from reading to predicting. You are no longer processing each word individually. Instead, you are using the context of the previous words to anticipate what comes next.
-
-Your brain confirms its guess as the next word flashes into view. It's the same way you can finish a friend's sentence or know the next note in a song you love.
-
-You are witnessing your brain's amazing pattern-matching ability.
-
-Operating at an elite level. This is a powerful demonstration of neuroplasticity. Your mind is literally building faster pathways in real time.
-
-As a reward for taking on this challenge, I would love to hear about your experience. Was it just a blur, or could you pick out key phrases? At what point did it feel like you were guessing instead of reading?
-
-Let everyone know your top speed in the comments. Please like the video, subscribe for more brain workouts, and share your results.
-
-Thank you again for watching, and I will see you in the next one.`;
 
     // Initialize RSVP Engine
     const rsvp = new RSVPEngine({
@@ -252,6 +242,38 @@ Thank you again for watching, and I will see you in the next one.`;
             } else {
                 subliminals.start(params.opacity, params.fade, params.words);
             }
+        },
+        onSfx: (name) => {
+            playSfx(name);
+        },
+        onPause: (pauseDuration, pauseWord) => {
+            // Display pause word or blank (same as snap, but no sound/flash)
+            if (pauseWord) {
+                const parts = ORP.split(pauseWord);
+                wordBefore.textContent = parts.before;
+                wordORP.textContent = parts.orp;
+                wordAfter.textContent = parts.after;
+                requestAnimationFrame(() => {
+                    const beforeWidth = wordBefore.offsetWidth;
+                    const orpWidth = wordORP.offsetWidth;
+                    wordContainer.style.marginLeft = `-${beforeWidth + orpWidth/2}px`;
+                });
+            } else {
+                wordBefore.textContent = '';
+                wordORP.textContent = '';
+                wordAfter.textContent = '';
+                wordContainer.style.marginLeft = '0';
+            }
+
+            // Pause playback, then resume after delay (no sound, no flash)
+            isSnapPause = true;
+            rsvp.pause();
+            snapTimeoutId = setTimeout(() => {
+                snapTimeoutId = null;
+                if (!isSnapPause) return;
+                isSnapPause = false;
+                rsvp.play();
+            }, pauseDuration);
         },
         onSnap: (pauseDuration, snapWord) => {
             // Play snap sound
@@ -358,13 +380,24 @@ Thank you again for watching, and I will see you in the next one.`;
     function loadScript(text) {
         scriptEditor.value = text;
         loadedScript = text;
+        prescanSfx(text);
         rsvp.load(text);
     }
 
-    // Check URL params for shared script
+    // Check URL params for shared script and options
     const urlParams = new URLSearchParams(window.location.search);
     const pasteURL = urlParams.get('paste');
     const scriptB64 = urlParams.get('script');
+
+    // Apply loop param from URL
+    if (urlParams.get('loop') === '1') {
+        rsvp.setLoop(true);
+        btnLoop.classList.add('loop-active');
+    }
+
+    function loadFailed() {
+        scriptEditor.placeholder = 'Failed to load script. Paste one above and click Load.';
+    }
 
     if (pasteURL) {
         // Load script from a paste service URL
@@ -382,7 +415,7 @@ Thank you again for watching, and I will see you in the next one.`;
                 return fetch('scripts/demo.txt')
                     .then(r => r.ok ? r.text() : Promise.reject())
                     .then(text => loadScript(text))
-                    .catch(() => loadScript(DEFAULT_SCRIPT));
+                    .catch(loadFailed);
             });
     } else if (scriptB64) {
         // Inline base64-encoded script
@@ -394,17 +427,14 @@ Thank you again for watching, and I will see you in the next one.`;
             fetch('scripts/demo.txt')
                 .then(r => r.ok ? r.text() : Promise.reject())
                 .then(text => loadScript(text))
-                .catch(() => loadScript(DEFAULT_SCRIPT));
+                .catch(loadFailed);
         }
     } else {
         // Default: load from file
         fetch('scripts/demo.txt')
             .then(response => response.ok ? response.text() : Promise.reject('File not found'))
             .then(text => loadScript(text))
-            .catch(err => {
-                console.log('Loading inline script:', err);
-                loadScript(DEFAULT_SCRIPT);
-            });
+            .catch(loadFailed);
     }
 
     // Update play button appearance
@@ -454,10 +484,19 @@ Thank you again for watching, and I will see you in the next one.`;
         rsvp.toggle();
     });
 
-    // Restart button
-    btnRestart.addEventListener('click', () => {
+    // Rewind button — jump to start, keep playing if was playing
+    btnRewind.addEventListener('click', () => {
+        const wasPlaying = rsvp.isPlaying;
         resetPlayback();
         rsvp.restart();
+        if (wasPlaying) rsvp.play();
+    });
+
+    // Loop button — toggle loop mode
+    btnLoop.addEventListener('click', () => {
+        const enabled = !rsvp.loop;
+        rsvp.setLoop(enabled);
+        btnLoop.classList.toggle('loop-active', enabled);
     });
 
     // Fullscreen button
@@ -501,6 +540,7 @@ Thank you again for watching, and I will see you in the next one.`;
         const text = scriptEditor.value.trim();
         if (text) {
             resetPlayback();
+            prescanSfx(text);
             rsvp.load(text);
             loadedScript = scriptEditor.value;
             updateLoadButton();
@@ -513,10 +553,11 @@ Thank you again for watching, and I will see you in the next one.`;
         if (!text) return;
 
         const base = window.location.origin + window.location.pathname;
+        const loopSuffix = rsvp.loop ? '&loop=1' : '';
 
         // For short scripts, use inline base64 (encode unicode safely)
         const encoded = btoa(unescape(encodeURIComponent(text)));
-        const url = base + '?script=' + encoded;
+        const url = base + '?script=' + encoded + loopSuffix;
         if (url.length <= 2000) {
             copyToClipboard(url, () => {
                 btnShare.textContent = 'Copied!';
@@ -533,7 +574,7 @@ Thank you again for watching, and I will see you in the next one.`;
                 base + '?paste=YOUR_PASTE_URL';
             const pasteUrl = prompt(msg);
             if (pasteUrl && pasteUrl.trim()) {
-                const url = base + '?paste=' + encodeURIComponent(pasteUrl.trim());
+                const url = base + '?paste=' + encodeURIComponent(pasteUrl.trim()) + loopSuffix;
                 copyToClipboard(url, () => {
                     btnShare.textContent = 'Copied!';
                     setTimeout(() => { btnShare.textContent = 'Share'; }, 2000);
@@ -553,8 +594,19 @@ Thank you again for watching, and I will see you in the next one.`;
                 primeAudioForIOS().then(() => rsvp.toggle());
                 break;
             case 'KeyR':
-                resetPlayback();
-                rsvp.restart();
+                {
+                    const wasPlaying = rsvp.isPlaying;
+                    resetPlayback();
+                    rsvp.restart();
+                    if (wasPlaying) rsvp.play();
+                }
+                break;
+            case 'KeyL':
+                {
+                    const enabled = !rsvp.loop;
+                    rsvp.setLoop(enabled);
+                    btnLoop.classList.toggle('loop-active', enabled);
+                }
                 break;
             case 'ArrowUp':
                 e.preventDefault();

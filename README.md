@@ -36,7 +36,10 @@ The drop reinforces this: maximum dissonance resolves to instant consonance at t
 - **Spiral visual**: Rotating background spiral for enhanced focus
 - **Subliminals**: Peripheral word flashing during high-speed sections
 - **Snap induction**: Audio + white flash for trance drops
+- **Pause**: Silent blocking pause (like snap without sound/flash)
+- **Sound effects**: `@sfx name` plays custom sounds non-blocking (drop files in `audio/sfx/`)
 - **Pulse border**: Pulsing colored glow for ambient state indication (touch/ready/edge/stop)
+- **Loop & rewind**: Loop toggle, rewind-to-start, shareable `loop=1` URL param
 - **Script comments**: `//` comments (full-line or inline)
 - **Sharable links**: Share scripts via URL (base64 or paste service links)
 - **Fullscreen mode**: Immersive distraction-free reading
@@ -137,6 +140,35 @@ All three modes support **named layers**. Reusing a name transitions to the new 
 @snap duration:1500 word:Drop.    // then the snap fires
 ```
 
+### Pause
+```
+@pause duration:2500              // silent pause, blank display, 2500ms
+@pause duration:2000 word:Hold.   // silent pause with word shown
+@pause                            // default 800ms blank pause
+```
+
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `duration:` | Pause duration in ms | 800 |
+| `word:` | Word to display during pause | (blank) |
+
+**Pause is blocking** (same timing as snap) but produces **no sound and no flash**. Use it for dramatic silences, vocalization gaps, or anywhere you want a timed pause without the snap's compliance-trigger connotations.
+
+**Composing sfx + pause:** `@sfx` is non-blocking, so placing it before `@pause` fires the sound and then pauses:
+```
+@sfx bell                         // bell rings immediately
+@pause duration:2500 word:Speak.  // then 2500ms silent pause with "Speak." shown
+```
+
+### Sound Effects
+```
+@sfx bell                         // plays audio/sfx/bell.ogg (falls back to .mp3)
+@sfx snap                         // plays the snap sound without the flash/pause
+@sfx moan                         // whatever's in audio/sfx/moan.ogg
+```
+
+**Non-blocking** — just plays the sound, playback continues immediately. Files are lazy-loaded and cached. Drop `.ogg` or `.mp3` files in `audio/sfx/` and reference them by name.
+
 ### Pulse Border
 ```
 @pulseborder green hz:0.33        // slow green pulse (touching)
@@ -231,7 +263,8 @@ The wake-up detuning is more aggressive than the tension buildup (ratios of 1.33
 - **Layer naming = keyframing.** Every time you use `@hybrid mid_low carrier:... beat:...`, you're setting a new keyframe for that layer. The engine interpolates smoothly.
 - **Beat frequencies guide brainwave state:** 1-4 Hz = delta (deep sleep), 4-8 Hz = theta (trance/meditation), 8-12 Hz = alpha (relaxed), 12-30 Hz = beta (alert). The reactor uses theta-range beats.
 - **Pair consonance with surrender, dissonance with waking.** This trains the listener to want the trance state back.
-- **@snap is self-contained.** `word:Drop.` displays the word during the pause without consuming the next word in the script flow.
+- **@snap and @pause are blocking.** They pause playback for their duration. Place non-blocking commands (`@sfx`, audio, visual changes) *before* them so they fire at the right moment. `word:` displays during the pause without consuming the next word in the script flow.
+- **Reserve @snap for compliance triggers.** Use `@pause` for dramatic silences and vocalization gaps. Use `@sfx bell` + `@pause` for speaking prompts. Keep snap's sound+flash associated with obedience cues (Blank/Stop/Drop/Good).
 
 ## Sharing Scripts
 
@@ -249,7 +282,8 @@ The app automatically converts paste URLs to their raw content endpoints.
 ## Keyboard Shortcuts
 
 - `Space` - Play/Pause
-- `R` - Restart
+- `R` - Rewind (restart from beginning; keeps playing if was playing)
+- `L` - Toggle loop mode
 - `F` - Fullscreen
 - `Up/Down` - Adjust WPM
 

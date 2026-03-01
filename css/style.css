@@ -228,6 +228,11 @@ body {
     background: var(--accent-color);
 }
 
+#btn-loop.loop-active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
 #speed-controls {
     display: flex;
     align-items: center;

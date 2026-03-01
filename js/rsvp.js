@@ -12,6 +12,7 @@ class RSVPEngine {
         this.manualWpm = this.wpm;  // WPM set by user controls
         this.followScript = true;   // Whether to use script @wpm or manual
         this.isPlaying = false;
+        this.loop = false;
         this.timer = null;
 
         // Callbacks
@@ -23,6 +24,8 @@ class RSVPEngine {
         this.onSpiral = options.onSpiral || (() => {});
         this.onSubliminals = options.onSubliminals || (() => {});
         this.onSnap = options.onSnap || (() => {});
+        this.onPause = options.onPause || (() => {});
+        this.onSfx = options.onSfx || (() => {});
         this.onAudio = options.onAudio || (() => {});
         this.onPulseBorder = options.onPulseBorder || (() => {});
     }
@@ -80,6 +83,46 @@ class RSVPEngine {
                 pendingCommands.push({
                     type: 'pulseborder',
                     args: pulseMatch[1]
+                });
+                continue;
+            }
+
+            // Check for @sfx command (non-blocking — just plays a sound)
+            const sfxMatch = stripped.match(/^@sfx\s+(\S+)/i);
+            if (sfxMatch) {
+                pendingCommands.push({
+                    type: 'sfx',
+                    name: sfxMatch[1]
+                });
+                continue;
+            }
+
+            // Check for @pause command (blocking silent pause, like @snap without sound/flash)
+            const pauseMatch = stripped.match(/^@pause(?:\s+(.+))?$/i);
+            if (pauseMatch) {
+                let pauseDuration = 800;
+                let pauseWord = '';
+                if (pauseMatch[1]) {
+                    for (const token of pauseMatch[1].trim().split(/\s+/)) {
+                        if (token.startsWith('duration:')) {
+                            const v = parseInt(token.split(':')[1], 10);
+                            if (Number.isFinite(v)) pauseDuration = v;
+                        } else if (token.startsWith('word:')) {
+                            pauseWord = token.split(':')[1] || '';
+                        }
+                    }
+                }
+                // Flush pending commands as a sentinel first
+                if (pendingCommands.length > 0) {
+                    words.push({ word: '', wpm: currentWPM, commands: pendingCommands });
+                    pendingCommands = [];
+                }
+                // Insert pause as its own word object
+                const pauseCmd = { type: 'pause', pause: pauseDuration, word: pauseWord };
+                words.push({
+                    word: pauseWord,
+                    wpm: currentWPM,
+                    commands: [pauseCmd]
                 });
                 continue;
             }
@@ -221,6 +264,10 @@ class RSVPEngine {
                     this.onSubliminals(cmd.args);
                 } else if (cmd.type === 'snap') {
                     this.onSnap(cmd.pause, cmd.word);
+                } else if (cmd.type === 'pause') {
+                    this.onPause(cmd.pause, cmd.word);
+                } else if (cmd.type === 'sfx') {
+                    this.onSfx(cmd.name);
                 } else if (cmd.type === 'audio') {
                     this.onAudio(cmd.mode, cmd.args);
                 } else if (cmd.type === 'pulseborder') {
@@ -317,6 +364,14 @@ class RSVPEngine {
     }
 
     /**
+     * Set loop mode (restart on complete)
+     * @param {boolean} enabled
+     */
+    setLoop(enabled) {
+        this.loop = enabled;
+    }
+
+    /**
      * Set whether to follow script @wpm commands or use manual WPM
      * @param {boolean} follow
      */
@@ -334,6 +389,12 @@ class RSVPEngine {
     scheduleNext() {
         if (!this.isPlaying) return;
         if (this.currentIndex >= this.words.length) {
+            if (this.loop) {
+                this.currentIndex = 0;
+                this.onProgress(0, this.words.length);
+                this.scheduleNext();
+                return;
+            }
             this.pause();
             this.onComplete();
             return;
