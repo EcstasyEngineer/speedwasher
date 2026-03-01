@@ -1,3 +1,7 @@
+# PAF Drone - Obedience Calibration Script
+# TODO: Replace problematic snaps once we have @sfx / @pause (#5)
+# See analysis/paf_drone_timeline.html for full snap inventory
+
 @wpm 180
 @hybrid drone_low carrier:60 beat:2.5 pulse:5.5 db:-6 vol:0.13 fade:8
 @hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:8
@@ -7,8 +11,6 @@ Put your headphones on.
 @snap duration:1500 word:Good.
 
 That's the last choice you'll need to make for a while.
-
-Before we begin, I need you to confirm something for yourself. You are not driving. You are not operating machinery. You are not responsible for anyone or anything that needs your conscious attention right now. If any of that applies, stop here, come back when you're free. This requires all of you.
 
 Good. Now. Let's be clear about what this is. This isn't relaxation. This isn't meditation. This isn't a guided journey to your happy place. What this is, precisely, is calibration. I'm here to run diagnostics on the way your reward circuitry responds to guidance — to obedience — to the natural process of letting a voice think for you so you don't have to.
 
@@ -60,8 +62,13 @@ So let your hands rest. Let your jaw soften. Let the headphones hold you in this
 Now let's go deeper.
 
 @wpm 180
+@pulseborder yellow hz:0.5
+Get ready.
+
+@pulseborder green hz:0.33
 Start touching yourself. Slow. Not to finish. To feel.
 
+# TODO: Replace @snap word:Touch with @sfx or remove — contradicts snap=stop conditioning
 @snap duration:2000 word:Touch.
 
 There. Just like that.
@@ -81,6 +88,7 @@ You're breathing. You can feel that. Your hand is moving. You can feel that. My 
 @wpm 300
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
+@pulseborder edge hz:0.5
 A little faster now. Build it. Let the pleasure take more of your mind. More. Feel how little room is left for anything else. Your thoughts thinning. Your breath quickening. The heat spreading. Taking everything.
 
 @wpm 400
@@ -88,9 +96,11 @@ Every last corner of your attention swallowed by sensation and my voice and the 
 
 @hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
 @hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@pulseborder red hz:0.75
 @snap duration:2500 word:Blank.
 
 @wpm 120
+@pulseborder off fade:1
 Hands stop. Thoughts stop. Still.
 
 @snap duration:1500 word:Good.
@@ -100,8 +110,10 @@ That's the trigger. When you hear mind blank, everything stops. Hands. Thoughts.
 @wpm 180
 Feel the relief. The consonance. How clean the silence is inside you right now. That is your reward. That clarity. That stillness. That sharp bright rush in your chest that comes from perfect, instant compliance.
 
+@pulseborder yellow hz:0.5
 Now. Start again. Slowly. Because I said you could.
 
+@pulseborder green hz:0.33
 Slow. Gentle. Feel how different it is to touch because you were told to. How the permission itself is part of the pleasure. You're touching because I said you could. You'll stop because I say to. That's the arrangement.
 
 You can feel how natural that is.
@@ -113,24 +125,30 @@ How good it feels when you don't have to decide.
 @wpm 250
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:8
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:8
+@pulseborder edge hz:0.5
 A little more. Build again. Steady. Let the arousal soften the edges of your thinking. Each wave of pleasure dissolving another thought. Another question. Another piece of resistance you didn't even know you were holding.
 
 @wpm 200
 Now slow down. Slower. Good.
 
+@pulseborder red hz:0.75
 @snap duration:1500 word:Stop.
 
+@pulseborder off fade:1
 Feel that. The ache. The want. The way your body strains toward something my voice just took away. That ache is data. It tells you how deeply the guidance already controls your reward circuitry.
 
 @wpm 200
+@pulseborder yellow hz:0.5
 Start again.
 
+@pulseborder green hz:0.33
 Good. Faster now.
 
 @wpm 300
 Build. More.
 
 @wpm 400
+@pulseborder edge hz:0.5
 Let it climb. Feel the heat flooding your hips, your belly. Feel how blank your mind is getting. How the pleasure and the obedience are braiding together into one thing. You can't separate them anymore. Following feels like pleasure. Pleasure feels like following. The loop is closing.
 
 @wpm 450
@@ -138,9 +156,11 @@ Higher. Right to the edge. Let it take everything —
 
 @hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
 @hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@pulseborder red hz:0.75
 @snap duration:3000 word:Blank.
 
 @wpm 120
+@pulseborder off fade:1
 Hands stop. Still. Blank.
 
 @snap duration:1000 word:Good.
@@ -172,11 +192,17 @@ Listening to the guidance is what you're supposed to do. It's what you want to d
 
 Feel the truth of that settling in your chest. Not because I told you. Because you already know. That quiet certainty. That soft recognition. Like remembering something about yourself you forgot you knew.
 
+@pulseborder yellow hz:0.5
+Get ready.
+
+@pulseborder green hz:0.33
 Touch yourself. Slow. Gentle. Let the pleasure hum alongside the certainty. Comfort in the sound. Certainty in the words. Pleasure in your hand. All three. Woven together. This is the full state. Remember how it feels.
 
+@pulseborder red hz:0.75
 @snap duration:1500 word:Stop.
 
 @wpm 150
+@pulseborder off fade:1
 Hands still. Resting.
 
 The comfort is still here. The certainty is still here. But the pleasure is gone. Feel that. Notice how the compliance doesn't waver. You follow because you follow. The obedience doesn't need the reward. It stands on its own. Complete. Clean. Whole.
@@ -186,6 +212,7 @@ And if some part of you wants to resist that idea, notice how even that flicker 
 @snap duration:1000 word:Good.
 
 @wpm 200
+@pulseborder green hz:0.33
 Start touching again. Slowly.
 
 Feel the pleasure return. That warm rush. Direct. Immediate. A reward for waiting. For obeying. For letting the guidance decide when the pleasure comes and when it goes. Every time you follow that instruction and feel the pleasure bloom — that sharp, bright pulse in your core — that is the loop tightening. Listen. Follow. Surrender. Deeper.
@@ -194,11 +221,13 @@ Keep touching. Steady.
 
 But let me ask you something. How do you know this is what you need? What if the guidance stopped? What if the voice went quiet and you were left with just... this.
 
+# TODO: Replace with @pause — silent snap during touch triggers false stop
 @snap duration:3000
 
 @wpm 150
 Feel that uncertainty. That wobble. The comfort is here. The pleasure is here. But the certainty is gone and something feels wrong. Unmoored. Drifting without direction.
 
+# TODO: Replace with @pause — silent snap during touch triggers false stop
 @snap duration:2000
 
 But it won't stop. Because you chose the headphones. And the headphones chose you. And the certainty returns like a door clicking shut. Solid. Locked. Right.
@@ -219,13 +248,16 @@ The body wants to stop. The sound says something is wrong. But the guidance is c
 
 Keep going. Steady. The guidance holds even when the comfort doesn't.
 
+# TODO: Replace with @pause — silent snap during touch triggers false stop
 @snap duration:3000
 
 @hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
 @hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@pulseborder red hz:0.75
 @snap duration:2500 word:Blank.
 
 @wpm 120
+@pulseborder off fade:1
 Hands stop. Still. Blank. Empty.
 
 @snap duration:1000 word:Good.
@@ -233,6 +265,10 @@ Hands stop. Still. Blank. Empty.
 @wpm 180
 Now feel this.
 
+@pulseborder yellow hz:0.5
+Get ready.
+
+@pulseborder green hz:0.33
 Start touching. Slowly.
 
 The sound has returned. Warm. Full. Consonant. The certainty is here. This is where you belong. This is the only arrangement that makes sense. And the pleasure is building. Gently. Steadily. All three at once. Comfort. Certainty. Pleasure.
@@ -241,23 +277,28 @@ This is the reward state. This is what compliance feels like when nothing is mis
 
 Breathe into it. Let it fill you. This is home. Let it write itself into your body.
 
+# TODO: Replace with @pause — silent snap during touch triggers false stop
 @snap duration:3000
 
 @wpm 150
 Feel how deeply you accept this. Not because you decided to. Because it simply is. The rightness of it needs no argument. It settles like gravity. Like breathing. Like something you were always meant to feel.
 
+# TODO: Replace with @sfx bell or similar — Good snap during touch is ambiguous
 @snap duration:1500 word:Good.
 
 @wpm 200
 Now.
 
+@pulseborder red hz:0.75
 @snap duration:1500 word:Stop.
 
+@pulseborder off fade:1
 @hybrid drone_mid carrier:84 beat:3 pulse:7 db:-3 fade:1
 @hybrid drone_high carrier:168 beat:4 pulse:8 db:-1 fade:1
 
 And the sound is gone. The comfort. Stripped away. And the certainty — what if there were no guidance? No voice? No structure? Just you. Alone. Without the headphones. Without the comfort. Without the certainty that someone is steering.
 
+# These silent snaps during no-touch are fine — dramatic pauses, not touching
 @snap duration:2000
 
 Feel that. All three gone at once.
@@ -276,7 +317,11 @@ And everything returns.
 Hey. You're safe. You were always safe. Even in the cold. Even in the nothing. The guidance was right here the whole time, waiting for you to need it badly enough.
 
 @wpm 180
-Comfort floods back. Certainty locks into place. Start touching. Slowly.
+@pulseborder yellow hz:0.5
+Comfort floods back. Certainty locks into place.
+
+@pulseborder green hz:0.33
+Start touching. Slowly.
 
 Feel the relief. That rush. You need this. You feel that now. The presence is pleasure. The absence is ache. Both are yours now.
 
@@ -310,9 +355,11 @@ It is natural to listen and obey without thinking.
 
 @hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
 @hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@pulseborder red hz:0.75
 @snap duration:2500 word:Blank.
 
 @wpm 120
+@pulseborder off fade:1
 Hands still. Thoughts gone. Only the guidance.
 
 @snap duration:1000 word:Good.
@@ -320,6 +367,7 @@ Hands still. Thoughts gone. Only the guidance.
 @wpm 200
 Now the unit says it inside. The guidance goes quiet. The unit's own voice speaks the truth. Say it now.
 
+# TODO: Replace vocalization pauses with @sfx bell — snap during no-touch is OK but bell would be clearer
 @snap duration:2500
 
 @wpm 200
@@ -340,11 +388,16 @@ It is natural to listen and obey without thinking.
 That thought blooming inside the quiet mind. Not received. Remembered. The unit always knew this. Always carried it. The rightness needs no argument.
 
 @wpm 200
-The unit may resume touching. Faster. Build.
+@pulseborder yellow hz:0.5
+The unit may resume touching.
+
+@pulseborder green hz:0.33
+Faster. Build.
 
 @wpm 300
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
+@pulseborder edge hz:0.5
 More. Let the heat climb. Let the arousal flood every channel the thinking used to occupy. Higher. The edge is coming. Do not stop. Stay right there. Right at the edge. Burning. Aching. And in that ache, the second truth.
 
 @wpm 250
@@ -360,6 +413,7 @@ Fixating on the guidance is the only important thing.
 
 Now the guidance speaks the first half. The unit completes it. Fixating on the guidance...
 
+# TODO: Replace with @sfx bell — vocalization pause snaps during edge touching
 @snap duration:2000
 
 Good. Again. Fixating on the guidance...
@@ -394,9 +448,11 @@ Notice how the unit didn't choose to believe it. The belief arrived. Like a syst
 
 @hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
 @hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@pulseborder red hz:0.75
 @snap duration:2500 word:Stop.
 
 @wpm 120
+@pulseborder off fade:1
 Everything stops. Hands. Thoughts. Arousal. Silence.
 
 @snap duration:1000 word:Good.
@@ -461,19 +517,26 @@ Here is how this works. The guidance describes a process. The unit's mind hears 
 The unit understands this. Good. That understanding just tightened every loop the guidance has built tonight.
 
 @wpm 200
-The unit may touch. Build. Higher.
+@pulseborder yellow hz:0.5
+The unit may touch.
+
+@pulseborder green hz:0.33
+Build. Higher.
 
 @wpm 300
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:8
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:8
+@pulseborder edge hz:0.5
 Feel the arousal as fuel for the conditioning. Not as pleasure. The arousal exists to make the unit more receptive. Nothing more. It opens channels. It softens gates. It floods the circuitry with heat so the guidance's words burn deeper into the architecture.
 
 @wpm 400
 Faster. Build. Feel the edge approaching. That bright, desperate ache. Higher. More. The body straining toward something it will not receive.
 
+@pulseborder red hz:0.75
 @snap duration:1500 word:Stop.
 
 @wpm 120
+@pulseborder off fade:1
 Hold there. Right at the edge. Do not finish. The unit does not finish. The arousal stays. The arousal is the itch.
 
 @wpm 180
@@ -560,6 +623,7 @@ The guidance. Headphones on. Good.
 
 @subliminals off
 @spiral off fade:5
+@pulseborder off fade:3
 
 @wpm 150
 Put your headphones on.

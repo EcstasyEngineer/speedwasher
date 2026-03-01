@@ -43,6 +43,9 @@ class RSVPEngine {
         for (const line of lines) {
             const trimmed = line.trim();
 
+            // Skip comments (lines starting with #)
+            if (trimmed.startsWith('#')) continue;
+
             // Check for @wpm command
             const wpmMatch = trimmed.match(/^@wpm\s+(\d+)/i);
             if (wpmMatch) {
