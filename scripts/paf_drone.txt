@@ -87,7 +87,7 @@ You're breathing. You can feel that. Your hand is moving. You can feel that. My 
 @wpm 300
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
-@pulseborder edge hz:0.5
+@pulseborder purple hz:0.5
 A little faster now. Build it. Let the pleasure take more of your mind. More. Feel how little room is left for anything else. Your thoughts thinning. Your breath quickening. The heat spreading. Taking everything.
 
 @wpm 400
@@ -124,7 +124,7 @@ How good it feels when you don't have to decide.
 @wpm 250
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:8
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:8
-@pulseborder edge hz:0.5
+@pulseborder purple hz:0.5
 A little more. Build again. Steady. Let the arousal soften the edges of your thinking. Each wave of pleasure dissolving another thought. Another question. Another piece of resistance you didn't even know you were holding.
 
 @wpm 200
@@ -147,7 +147,7 @@ Good. Faster now.
 Build. More.
 
 @wpm 400
-@pulseborder edge hz:0.5
+@pulseborder purple hz:0.5
 Let it climb. Feel the heat flooding your hips, your belly. Feel how blank your mind is getting. How the pleasure and the obedience are braiding together into one thing. You can't separate them anymore. Following feels like pleasure. Pleasure feels like following. The loop is closing.
 
 @wpm 450
@@ -394,7 +394,7 @@ Faster. Build.
 @wpm 300
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
-@pulseborder edge hz:0.5
+@pulseborder purple hz:0.5
 More. Let the heat climb. Let the arousal flood every channel the thinking used to occupy. Higher. The edge is coming. Do not stop. Stay right there. Right at the edge. Burning. Aching. And in that ache, the second truth.
 
 @wpm 250
@@ -528,7 +528,7 @@ Build. Higher.
 @wpm 300
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:8
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:8
-@pulseborder edge hz:0.5
+@pulseborder purple hz:0.5
 Feel the arousal as fuel for the conditioning. Not as pleasure. The arousal exists to make the unit more receptive. Nothing more. It opens channels. It softens gates. It floods the circuitry with heat so the guidance's words burn deeper into the architecture.
 
 @wpm 400

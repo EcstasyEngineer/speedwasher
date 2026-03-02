@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Pulse border color map and helpers
     const PULSE_COLORS = {
-        green: '#22c55e',    // touch
-        yellow: '#eab308',   // get ready
-        edge: '#e91e8c',     // edge (raspberry/magenta)
-        red: '#ef4444',      // stop / no touching
-        purple: '#8B5CF6'    // reserved
+        green: '#22c55e',
+        yellow: '#eab308',
+        purple: '#8B5CF6',
+        raspberry: '#e91e8c',
+        red: '#ef4444'
     };
     const rsvpContainer = document.getElementById('rsvp-container');
 

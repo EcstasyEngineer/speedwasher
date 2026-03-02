@@ -81,18 +81,18 @@
                 <summary>Command Reference</summary>
                 <table>
                     <tr><th>Command</th><th>Parameters</th><th>Example</th></tr>
-                    <tr><td><code>@wpm</code></td><td>speed (positional)</td><td><code>@wpm 300</code></td></tr>
-                    <tr><td><code>@binaural</code></td><td>[name] carrier: beat: db: fade: vol: interleave:</td><td><code>@binaural pad carrier:200 beat:10 db:-6 fade:2</code></td></tr>
-                    <tr><td><code>@isochronic</code></td><td>[name] carrier: pulse: db: ear: fade: vol:</td><td><code>@isochronic tone carrier:200 pulse:6 db:-6 ear:L</code></td></tr>
-                    <tr><td><code>@hybrid</code></td><td>[name] carrier: beat: pulse: db: fade: vol: interleave:</td><td><code>@hybrid bass carrier:90 beat:3 pulse:3.3 db:-6</code></td></tr>
-                    <tr><td><code>@spiral</code></td><td>[#hex] color: opacity: speed: fade:</td><td><code>@spiral #8B5CF6 opacity:0.3 speed:0.5 fade:2</code></td></tr>
-                    <tr><td><code>@subliminals</code></td><td>opacity: word1 word2 ...</td><td><code>@subliminals opacity:0.4 obey drift sink</code></td></tr>
-                    <tr><td><code>@snap</code></td><td>duration: word: (blocking — place audio changes before it)</td><td><code>@snap duration:1500 word:Drop.</code></td></tr>
-                    <tr><td><code>@pause</code></td><td>duration: word: (blocking silent pause, no sound/flash)</td><td><code>@pause duration:2000 word:Hold.</code></td></tr>
-                    <tr><td><code>@sfx</code></td><td>[name] (non-blocking — plays audio/sfx/{name}.ogg/.mp3)</td><td><code>@sfx bell</code></td></tr>
-                    <tr><td><code>@pulseborder</code></td><td>[color] hz: fade: — green/yellow/edge/red/purple or #hex</td><td><code>@pulseborder green hz:0.33</code></td></tr>
+                    <tr><td><code>@wpm</code></td><td>speed</td><td><code>@wpm 300</code></td></tr>
+                    <tr><td><code>@binaural</code></td><td>[name] carrier: beat: db: fade: vol:</td><td><code>@binaural pad carrier:200 beat:10</code></td></tr>
+                    <tr><td><code>@isochronic</code></td><td>[name] carrier: pulse: db: ear: fade: vol:</td><td><code>@isochronic tone carrier:200 pulse:6</code></td></tr>
+                    <tr><td><code>@hybrid</code></td><td>[name] carrier: beat: pulse: db: fade: vol:</td><td><code>@hybrid bass carrier:90 beat:3 pulse:3.3</code></td></tr>
+                    <tr><td><code>@spiral</code></td><td>color: opacity: speed: fade:</td><td><code>@spiral #8B5CF6 opacity:0.3</code></td></tr>
+                    <tr><td><code>@subliminals</code></td><td>opacity: word1 word2 ...</td><td><code>@subliminals opacity:0.4 obey drift</code></td></tr>
+                    <tr><td><code>@snap</code></td><td>duration: word:</td><td><code>@snap duration:1500 word:Drop.</code></td></tr>
+                    <tr><td><code>@pause</code></td><td>duration: word:</td><td><code>@pause duration:2000 word:Hold.</code></td></tr>
+                    <tr><td><code>@sfx</code></td><td>name [vol:]</td><td><code>@sfx bell vol:0.5</code></td></tr>
+                    <tr><td><code>@pulseborder</code></td><td>color [hz:] [fade:]</td><td><code>@pulseborder green hz:0.33</code></td></tr>
                     <tr><td><code>@&lt;any&gt; off</code></td><td>[fade:]</td><td><code>@hybrid bass off fade:2</code></td></tr>
-                    <tr><td><code>//</code></td><td>Comment (full-line or inline)</td><td><code>@wpm 300 // speed up</code></td></tr>
+                    <tr><td><code>//</code></td><td>comment</td><td><code>@wpm 300 // speed up</code></td></tr>
                 </table>
             </details>
         </div>

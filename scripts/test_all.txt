@@ -113,8 +113,12 @@ Green pulse. Slow glow around the border. This means touch state.
 Yellow now. Faster pulse. Get ready state.
 
 @pause duration:3000
-@pulseborder edge hz:0.5
-Edge color. Raspberry magenta.
+@pulseborder purple hz:0.5
+Purple. Then raspberry.
+
+@pause duration:3000
+@pulseborder raspberry hz:0.5
+Raspberry.
 
 @pause duration:3000
 @pulseborder red hz:0.75

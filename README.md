@@ -37,8 +37,8 @@ The drop reinforces this: maximum dissonance resolves to instant consonance at t
 - **Subliminals**: Peripheral word flashing during high-speed sections
 - **Snap induction**: Audio + white flash for trance drops
 - **Pause**: Silent blocking pause (like snap without sound/flash)
-- **Sound effects**: `@sfx name` plays custom sounds non-blocking (drop files in `audio/sfx/`)
-- **Pulse border**: Pulsing colored glow for ambient state indication (touch/ready/edge/stop)
+- **Sound effects**: `@sfx name [vol:0-1]` plays custom sounds non-blocking (drop files in `audio/sfx/`)
+- **Pulse border**: Pulsing colored glow for ambient state indication
 - **Loop & rewind**: Loop toggle, rewind-to-start, shareable `loop=1` URL param
 - **Script comments**: `//` comments (full-line or inline)
 - **Sharable links**: Share scripts via URL (base64 or paste service links)
@@ -164,26 +164,32 @@ All three modes support **named layers**. Reusing a name transitions to the new 
 ```
 @sfx bell                         // plays audio/sfx/bell.ogg (falls back to .mp3)
 @sfx snap                         // plays the snap sound without the flash/pause
-@sfx moan                         // whatever's in audio/sfx/moan.ogg
+@sfx pop vol:0.5                  // plays pop at half volume
 ```
 
-**Non-blocking** — just plays the sound, playback continues immediately. Files are lazy-loaded and cached. Drop `.ogg` or `.mp3` files in `audio/sfx/` and reference them by name.
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| (name) | Sound file name (looks in `audio/sfx/`) | (required) |
+| `vol:` | Playback volume 0.0-1.0 | 0.7 |
+
+**Non-blocking** — just plays the sound, playback continues immediately. Files are lazy-loaded and cached (`.ogg` then `.mp3` fallback). Drop files in `audio/sfx/` and reference by name.
 
 ### Pulse Border
 ```
-@pulseborder green hz:0.33        // slow green pulse (touching)
-@pulseborder yellow hz:0.5        // get ready
-@pulseborder edge hz:0.5          // edge (raspberry/magenta)
-@pulseborder red hz:0.75          // stop / no touching
+@pulseborder green hz:0.33        // slow green pulse
+@pulseborder yellow hz:0.5        // medium amber pulse
+@pulseborder purple hz:0.5        // purple
+@pulseborder raspberry hz:0.5     // hot pink / magenta
+@pulseborder red hz:0.75          // red
 @pulseborder #8B5CF6 hz:0.5      // custom hex color
 @pulseborder off fade:1           // fade out
 ```
 
-Pulsing inset glow on the RSVP container for persistent ambient state indication. The glow pulses between 25% and 100% intensity (never fully off while active).
+Pulsing inset glow on the RSVP container for persistent ambient state indication. The glow pulses between 25% and 100% intensity (never fully off while active). Use colors to communicate whatever you want — traffic light logic, intensity levels, mood shifts. You'll figure it out.
 
 | Parameter | Description | Default |
 |-----------|-------------|---------|
-| (color) | Named (`green`, `yellow`, `edge`, `red`, `purple`) or hex | green |
+| (color) | Named (`green`, `yellow`, `purple`, `raspberry`, `red`) or hex | green |
 | `hz:` | Pulse frequency (cycles per second) | 0.33 |
 | `fade:` | Transition time in seconds when switching/stopping | 1 |
 
