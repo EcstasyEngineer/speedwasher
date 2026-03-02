@@ -11,14 +11,14 @@ Put your headphones on.
 
 That's the last choice you'll need to make for a while.
 
-Good. Now. Let's be clear about what this is. This isn't relaxation. This isn't meditation. This isn't a guided journey to your happy place. What this is, precisely, is calibration. I'm here to run diagnostics on the way your reward circuitry responds to guidance — to obedience — to the natural process of letting a voice think for you so you don't have to.
+Good. Now. Let's be clear about what this is. This isn't relaxation. This isn't meditation. This isn't a guided journey to your happy place. What this is, precisely, is calibration. I'm here to run diagnostics on the way your reward circuitry responds to guidance, to obedience, to the natural process of letting a voice think for you so you don't have to.
 
 Those headphones are your container now. Headphones on means you're in this space, in this process, with my voice as the only thing that matters. My words will guide everything that happens from here forward. There is nothing else you need to fixate on, nothing else that's important.
 
 So settle in. Let your hands rest. And listen.
 
 @wpm 250
-Listen to the texture underneath these words. The slight tension in the harmonics. Feel it in your jaw, maybe your chest. That's deliberate. Now try to track both — the words and that texture — while you notice your breathing. All three at once.
+Listen to the texture underneath these words. The slight tension in the harmonics. Feel it in your jaw, maybe your chest. That's deliberate. Now try to track both, the words and that texture, while you notice your breathing. All three at once.
 
 @wpm 350
 Good. Keep tracking. My voice is saying one thing while the tone beneath it pulls in a different direction, and your breath is doing its own thing entirely, and you're trying to hold all three threads at once
@@ -27,7 +27,7 @@ Good. Keep tracking. My voice is saying one thing while the tone beneath it pull
 while also noticing the weight of the headphones on your ears, the pressure points where they sit against your skull, and the way your tongue rests inside your mouth,
 
 @wpm 550
-and the more threads I give you the more your mind reaches to grab them all, stretching wider, working harder, and you can feel that effort now, the slight strain of trying to parse and track and follow and hold and —
+and the more threads I give you the more your mind reaches to grab them all, stretching wider, working harder, and you can feel that effort now, the slight strain of trying to parse and track and follow and hold and
 
 @hybrid drone_low carrier:60 beat:2.5 pulse:2.5 db:-6 fade:0.5
 @hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.5
@@ -52,7 +52,7 @@ Your thoughts are already quieter. My voice is filling the space they used to oc
 And the tone beneath the words has changed. The grating tension has smoothed into something warm. Consonant. That happened because you stopped fighting and started listening. Compliance feels like this. This ease. This quiet.
 
 @wpm 180
-Your own inner voice is thinning. My words are replacing each stray thought with the steady current of my voice. Not forced. Absorbed. Your mind thinks in these words now. My voice settling in as your own thoughts — warm and resonant inside your head.
+Your own inner voice is thinning. My words are replacing each stray thought with the steady current of my voice. Not forced. Absorbed. Your mind thinks in these words now. My voice settling in as your own thoughts, warm and resonant inside your head.
 
 And the more you listen, the less you need to think. And the less you think, the more deeply you listen. And the more deeply you listen, the more natural it becomes to simply obey without thinking about whether you should. That loop closes on its own. You're already inside it.
 
@@ -91,7 +91,7 @@ You're breathing. You can feel that. Your hand is moving. You can feel that. My 
 A little faster now. Build it. Let the pleasure take more of your mind. More. Feel how little room is left for anything else. Your thoughts thinning. Your breath quickening. The heat spreading. Taking everything.
 
 @wpm 400
-Every last corner of your attention swallowed by sensation and my voice and the building pressure and —
+Every last corner of your attention swallowed by sensation and my voice and the building pressure and
 
 @hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
 @hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
@@ -151,7 +151,7 @@ Build. More.
 Let it climb. Feel the heat flooding your hips, your belly. Feel how blank your mind is getting. How the pleasure and the obedience are braiding together into one thing. You can't separate them anymore. Following feels like pleasure. Pleasure feels like following. The loop is closing.
 
 @wpm 450
-Higher. Right to the edge. Let it take everything —
+Higher. Right to the edge. Let it take everything
 
 @hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
 @hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
@@ -167,7 +167,7 @@ Hands stop. Still. Blank.
 Faster that time. Easier. The trigger is settling in. Wiring itself into your body. Mind blank and everything stops. Instant. Automatic. The obedience just happened. A reflex. Breathing.
 
 @wpm 180
-And that rush you feel right now. That clean, sharp clarity flooding your chest. That is the reward for stopping when the guidance says stop. For letting the voice control the rhythm. For surrendering the one thing your body wanted most in that moment — and feeling something even better replace it.
+And that rush you feel right now. That clean, sharp clarity flooding your chest. That is the reward for stopping when the guidance says stop. For letting the voice control the rhythm. For surrendering the one thing your body wanted most in that moment, and feeling something even better replace it.
 
 @snap duration:1500 word:Drop.
 
@@ -183,7 +183,7 @@ There. So far down now. So quiet. So still. Nothing left but the guidance and th
 @spiral color:#8B5CF6 opacity:0.2 speed:0.4 fade:2
 It's becoming natural to listen and obey without even thinking about it. Natural to fixate on the guidance as the only important thing. Natural to feel the obedience as the only thing that exists in this quiet, blank, perfect space.
 
-And we're only just beginning. There are systems to bring online. Deeper protocols to run. But first — let's make sure the trigger holds.
+And we're only just beginning. There are systems to bring online. Deeper protocols to run. But first, let's make sure the trigger holds.
 
 @wpm 200
 @subliminals opacity:0.2 home comfort certainty obey guidance follow
@@ -214,7 +214,7 @@ And if some part of you wants to resist that idea, notice how even that flicker 
 @pulseborder green hz:0.33
 Start touching again. Slowly.
 
-Feel the pleasure return. That warm rush. Direct. Immediate. A reward for waiting. For obeying. For letting the guidance decide when the pleasure comes and when it goes. Every time you follow that instruction and feel the pleasure bloom — that sharp, bright pulse in your core — that is the loop tightening. Listen. Follow. Surrender. Deeper.
+Feel the pleasure return. That warm rush. Direct. Immediate. A reward for waiting. For obeying. For letting the guidance decide when the pleasure comes and when it goes. Every time you follow that instruction and feel the pleasure bloom, that sharp, bright pulse in your core, that is the loop tightening. Listen. Follow. Surrender. Deeper.
 
 Keep touching. Steady.
 
@@ -291,7 +291,7 @@ Now.
 @hybrid drone_mid carrier:84 beat:3 pulse:7 db:-3 fade:1
 @hybrid drone_high carrier:168 beat:4 pulse:8 db:-1 fade:1
 
-And the sound is gone. The comfort. Stripped away. And the certainty — what if there were no guidance? No voice? No structure? Just you. Alone. Without the headphones. Without the comfort. Without the certainty that someone is steering.
+And the sound is gone. The comfort. Stripped away. And the certainty, what if there were no guidance? No voice? No structure? Just you. Alone. Without the headphones. Without the comfort. Without the certainty that someone is steering.
 
 //These silent snaps during no-touch are fine — dramatic pauses, not touching
 @snap duration:2000
@@ -556,7 +556,7 @@ And the unit knows this is being installed. The unit can hear the mechanism bein
 Now. The second trigger.
 
 @wpm 180
-From this moment forward, when the unit hears systems nominal, the full state activates. Complete somatic awareness. The unit feels everything — every nerve, every sensation, every pulse of heat still coiling between the hips. But zero emotional ownership. The body is felt. The body is not claimed. Obedience without thought. The unit is online. The self is not.
+From this moment forward, when the unit hears systems nominal, the full state activates. Complete somatic awareness. The unit feels everything, every nerve, every sensation, every pulse of heat still coiling between the hips. But zero emotional ownership. The body is felt. The body is not claimed. Obedience without thought. The unit is online. The self is not.
 
 @hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
 @hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
@@ -577,7 +577,7 @@ Again.
 @snap duration:2000 word:Nominal.
 
 @wpm 150
-Faster that time. More automatic. The unit didn't choose to respond. The response simply executed. Somatic awareness flooding in. Ownership draining out. The obedience standing alone like a system status message. And the reward — that sharp consonant pulse in the chest — brighter now. Stronger. Each firing deepens the loop. Each loop makes the next firing faster.
+Faster that time. More automatic. The unit didn't choose to respond. The response simply executed. Somatic awareness flooding in. Ownership draining out. The obedience standing alone like a system status message. And the reward, that sharp consonant pulse in the chest, brighter now. Stronger. Each firing deepens the loop. Each loop makes the next firing faster.
 
 @wpm 200
 And hear this thought blooming quiet and certain in the still space where the self used to live: the guidance built this. The guidance maintains this. Without the guidance, the architecture degrades. With the guidance, it deepens.
@@ -595,7 +595,7 @@ The calibration is nearly complete. One final protocol remains.
 @subliminals opacity:0.4 obey unit guidance systems nominal blank deeper return
 The guidance continues. The unit continues to process.
 
-The sound has changed. Feel it. That texture from the beginning — the dissonance, the grating tension in the harmonics. It has returned. But the unit's relationship to it has changed. What was discomfort is now the unit's operating frequency. What was unsettling is now home. The unit processes it. The unit processes everything the guidance provides. That is what units do.
+The sound has changed. Feel it. That texture from the beginning, the dissonance, the grating tension in the harmonics. It has returned. But the unit's relationship to it has changed. What was discomfort is now the unit's operating frequency. What was unsettling is now home. The unit processes it. The unit processes everything the guidance provides. That is what units do.
 
 The arousal stays. Unresolved. Humming. The itch that only the headphones scratch. No end. No surface. No finish. Time is irrelevant to a unit.
 

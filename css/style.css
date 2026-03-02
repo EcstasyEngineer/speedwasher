@@ -51,15 +51,19 @@ body {
 /* Pulse border for touch state indication */
 #rsvp-container.pulsing {
     --pulse-duration: 3s;
+    --pulse-blur-min: 15px;
+    --pulse-spread-min: 2px;
+    --pulse-blur-max: 30px;
+    --pulse-spread-max: 6px;
     animation: pulse-border var(--pulse-duration) ease-in-out infinite;
 }
 
 @keyframes pulse-border {
     0%, 100% {
-        box-shadow: inset 0 0 15px 2px color-mix(in srgb, var(--pulse-color, #22c55e) 25%, transparent);
+        box-shadow: inset 0 0 var(--pulse-blur-min) var(--pulse-spread-min) color-mix(in srgb, var(--pulse-color, #22c55e) 25%, transparent);
     }
     50% {
-        box-shadow: inset 0 0 30px 6px var(--pulse-color, #22c55e);
+        box-shadow: inset 0 0 var(--pulse-blur-max) var(--pulse-spread-max) var(--pulse-color, #22c55e);
     }
 }
 
@@ -404,6 +408,36 @@ body.fullscreen #rsvp-container {
     z-index: 1000;
 }
 
+body.fullscreen #word-container {
+    font-size: 8vw;
+}
+
+body.fullscreen .subliminal {
+    font-size: 3vw;
+}
+
+body.fullscreen #wpm-display {
+    font-size: 2.5vw;
+}
+
+body.fullscreen #rsvp-container.pulsing {
+    --pulse-blur-min: 40px;
+    --pulse-spread-min: 8px;
+    --pulse-blur-max: 80px;
+    --pulse-spread-max: 20px;
+}
+
+body.fullscreen #guide-top::after,
+body.fullscreen #guide-bottom::after {
+    height: 30px;
+    width: 2px;
+}
+
+body.fullscreen #guide-top,
+body.fullscreen #guide-bottom {
+    height: 2px;
+}
+
 body.fullscreen #controls,
 body.fullscreen #script-section,
 body.fullscreen #info {
@@ -413,7 +447,7 @@ body.fullscreen #info {
 /* Responsive */
 @media (max-width: 600px) {
     #word-container {
-        font-size: 2.5rem;
+        font-size: min(2.5rem, 10vw);
     }
 
     #word-before {
@@ -423,5 +457,4 @@ body.fullscreen #info {
     #controls {
         flex-direction: column;
     }
-
 }

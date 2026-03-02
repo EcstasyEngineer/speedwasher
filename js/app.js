@@ -93,8 +93,17 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             rsvpContainer.classList.remove('pulse-fading');
             rsvpContainer.style.setProperty('--pulse-color', params.color);
-            rsvpContainer.style.setProperty('--pulse-duration', (1 / params.hz) + 's');
-            rsvpContainer.classList.add('pulsing');
+            if (rsvpContainer.classList.contains('pulsing')) {
+                // Adjust playback rate to match new hz without restarting animation
+                const anim = rsvpContainer.getAnimations().find(a => a.animationName === 'pulse-border');
+                if (anim) {
+                    const baseDuration = parseFloat(rsvpContainer.style.getPropertyValue('--pulse-duration'));
+                    anim.playbackRate = baseDuration / (1 / params.hz);
+                }
+            } else {
+                rsvpContainer.style.setProperty('--pulse-duration', (1 / params.hz) + 's');
+                rsvpContainer.classList.add('pulsing');
+            }
         }
     }
 
@@ -113,14 +122,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!sfxCache[name]) {
             const audio = new Audio();
             audio.src = `audio/sfx/${name}.ogg`;
-            audio.onerror = () => { audio.src = `audio/sfx/${name}.mp3`; };
+            audio.onerror = () => {
+                // Fallback to mp3 once, then stop retrying
+                if (!audio.dataset.fellback) {
+                    audio.dataset.fellback = '1';
+                    audio.src = `audio/sfx/${name}.mp3`;
+                }
+            };
             sfxCache[name] = audio;
         }
         return sfxCache[name];
     }
 
-    function playSfx(name) {
+    function playSfx(name, vol = 0.7) {
         const audio = ensureSfx(name);
+        audio.volume = vol;
         audio.currentTime = 0;
         audio.play().catch(e => console.log('SFX blocked:', e));
     }
@@ -167,16 +183,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }).catch(() => {}); // Ignore errors
         }
 
-        // Prime cached sfx audio objects
-        for (const audio of Object.values(sfxCache)) {
-            const origVol = audio.volume;
-            audio.volume = 0;
-            audio.play().then(() => {
-                audio.pause();
-                audio.currentTime = 0;
-                audio.volume = origVol;
-            }).catch(() => {});
-        }
     }
 
     // Initialize RSVP Engine
@@ -211,7 +217,9 @@ document.addEventListener('DOMContentLoaded', () => {
             resetPulseBorder();
         },
         onStateChange: (playing) => {
-            updatePlayButton(playing);
+            if (playing || !isSnapPause) {
+                updatePlayButton(playing);
+            }
             if (!playing && !isSnapPause) {
                 // Manual pause - cancel any pending snap resume
                 if (snapTimeoutId) {
@@ -243,8 +251,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 subliminals.start(params.opacity, params.fade, params.words);
             }
         },
-        onSfx: (name) => {
-            playSfx(name);
+        onSfx: (name, vol) => {
+            playSfx(name, vol);
         },
         onPause: (pauseDuration, pauseWord) => {
             // Display pause word or blank (same as snap, but no sound/flash)

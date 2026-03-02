@@ -1,0 +1,193 @@
+// QA Test Script — exercises every feature, narrates what's happening
+// Read along. If something doesn't match the narration, that's a bug.
+
+@wpm 200
+Starting QA test. Each section will announce what it's testing before it fires.
+
+// === SECTION 1: SFX (non-blocking) ===
+Section one. Sound effects. You should hear each sound play WITHOUT any pause in the text.
+
+Testing bell.
+@sfx bell
+The bell should have played just now. Text kept flowing.
+
+Testing chimes.
+@sfx chimes
+Chimes should have played. Still no pause.
+
+Testing whimper.
+@sfx whimper
+Whimper should have played.
+
+Testing clicker.
+@sfx clicker
+Clicker should have played. Short click sound.
+
+Testing gong.
+@sfx gong
+Gong should be ringing now. It rings for about seven seconds but text keeps going because sfx is non-blocking. You should still hear it fading out.
+
+Testing snap via sfx. This plays the snap SOUND but no flash and no pause.
+@sfx snap
+Snap sound only. No white flash. No pause. Text kept going.
+
+// === SECTION 2: SFX VOLUME ===
+Section two. Gong at three different volumes. Listen for the difference.
+
+Gong at twenty percent volume.
+@sfx gong vol:0.2
+@pause duration:3000
+That was quiet.
+
+Gong at sixty percent volume.
+@sfx gong vol:0.6
+@pause duration:3000
+That was medium.
+
+Gong at full volume.
+@sfx gong vol:1.0
+@pause duration:3000
+That was loud. If all three sounded different, volume works.
+
+// === SECTION 3: PAUSE (blocking, silent) ===
+Section three. Pause command. Silent blocking pause. No sound. No flash.
+
+About to pause for two seconds with a blank display.
+@pause duration:2000
+You should have seen a blank screen for two seconds. No snap sound. No flash.
+
+Now pausing for two seconds with a word shown.
+@pause duration:2000 word:Breathe.
+The word Breathe should have displayed during that pause. Still no sound or flash.
+
+// === SECTION 4: SNAP (blocking, sound + flash) ===
+Section four. Snap command. Should produce sound AND white flash AND pause.
+
+@snap duration:1500 word:Snap!
+That should have flashed white, played the snap sound, and shown the word Snap for one and a half seconds.
+
+@snap duration:800
+Blank snap. Flash plus sound plus brief blank.
+
+// === SECTION 5: SFX + PAUSE COMPOSITION ===
+Section five. Composition test. Bell should ring at the same moment the pause starts.
+
+@sfx bell
+@pause duration:2500 word:Hold.
+The bell should have played AND the word Hold displayed for two and a half seconds. No snap sound. No flash. If the bell played before the pause started, composition works.
+
+Now testing sfx before snap. Chimes should play at the same moment as the snap flash.
+@sfx chimes
+@snap duration:1500 word:Drop.
+Chimes plus snap flash plus the word Drop. Both should have fired together.
+
+// === SECTION 6: BINAURAL / HYBRID AUDIO ===
+Section six. Audio engine. Starting a hybrid drone.
+
+@hybrid test carrier:150 beat:4 pulse:6 db:0 vol:0.15 fade:3
+You should hear a pulsing tone fading in over three seconds. Binaural beat at four hertz. Isochronic pulse at six hertz.
+
+@wpm 250
+Let it play for a moment. The tone should be steady and present in both ears.
+
+Now keyframing to a lower carrier frequency.
+@hybrid test carrier:90 beat:3 pulse:4 db:-3 fade:5
+The tone should be shifting lower and getting slightly quieter over five seconds. Same layer, smooth transition.
+
+Now stopping the audio layer.
+@hybrid test off fade:2
+Audio should be fading out over two seconds.
+
+@pause duration:2500
+Silence. The drone should be gone.
+
+// === SECTION 7: PULSEBORDER ===
+@wpm 200
+Section seven. Pulse border. Watch the edges of the display.
+
+@pulseborder green hz:0.33
+Green pulse. Slow glow around the border. This means touch state.
+
+@pause duration:3000
+@pulseborder yellow hz:0.5
+Yellow now. Faster pulse. Get ready state.
+
+@pause duration:3000
+@pulseborder edge hz:0.5
+Edge color. Raspberry magenta.
+
+@pause duration:3000
+@pulseborder red hz:0.75
+Red. Fast pulse. Stop state.
+
+@pause duration:2000
+@pulseborder off fade:2
+Fading out. The border glow should dissolve over two seconds.
+
+@pause duration:2500
+
+// === SECTION 8: WRONG PARAM TEST ===
+Section eight. Error resilience. This sfx references a file that does not exist.
+@sfx nonexistent_sound
+Text should still be flowing. No crash. Just a console error.
+
+This pause has no parameters. Should default to eight hundred milliseconds blank.
+@pause
+
+Survived. If you're still reading, error handling works.
+
+// === SECTION 9: MINI INDUCTION ===
+@wpm 180
+Section nine. Final test. A quick demonstration that everything composes together.
+
+@hybrid drone carrier:90 beat:3 pulse:3.3 db:-6 vol:0.13 fade:8
+@hybrid shimmer carrier:170 beat:4 pulse:7 db:-4 fade:8
+@spiral color:#8B5CF6 opacity:0.15 speed:0.3 fade:3
+@subliminals opacity:0.1 relax breathe easy good safe
+
+The audio is building. The spiral is spinning. Subliminals are flickering. Everything layered together.
+
+@wpm 250
+Now let's bring it together. You've been testing patiently. Clicking through every section. Reading every word. Following along carefully. That's focus. That's attention. That's good.
+
+@wpm 300
+@spiral color:#8B5CF6 opacity:0.25 speed:0.4 fade:2
+@subliminals opacity:0.2 good easy safe trust relax
+And the thing about focus is — it's a skill. The same skill that makes you good at QA makes you good at this. Tracking details. Noticing what's right and what's wrong. Staying present. Staying attentive.
+
+@wpm 350
+@pulseborder green hz:0.33
+You've been a good tester. Thorough. Patient. Attentive to every detail.
+
+@wpm 400
+@hybrid drone carrier:93 beat:3 pulse:2.5 db:-4 fade:10
+@hybrid shimmer carrier:140 beat:3.5 pulse:5.5 db:-2 fade:10
+And if your focus softened a little during that stretch — if the words started just flowing in without effort — that's fine. That's the tool working exactly as designed. You built it. You earned the right to feel it work.
+
+@sfx bell
+@pause duration:2000 word:Good.
+
+@wpm 200
+@pulseborder off fade:2
+@hybrid drone carrier:90 beat:3 pulse:3.3 db:-6 fade:3
+@hybrid shimmer carrier:170 beat:4 pulse:7 db:-4 fade:3
+Now gently coming back up. The audio is settling. The spiral is slowing. Easy transition.
+
+@wpm 250
+@spiral color:#8B5CF6 opacity:0.1 speed:0.2 fade:2
+@subliminals opacity:0.1 awake alert clear present
+
+You are a good user. Patient and thorough. Everything you built today works. The sfx. The pauses. The loops. The composition. All of it.
+
+@subliminals off fade:2
+@spiral off fade:3
+@hybrid drone off fade:4
+@hybrid shimmer off fade:4
+
+@wpm 200
+Coming all the way back now. Clear. Alert. Present.
+
+@sfx chimes
+@pause duration:2000
+
+QA complete. All sections tested. Welcome back.

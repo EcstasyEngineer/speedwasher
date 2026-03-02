@@ -88,11 +88,21 @@ class RSVPEngine {
             }
 
             // Check for @sfx command (non-blocking — just plays a sound)
-            const sfxMatch = stripped.match(/^@sfx\s+(\S+)/i);
+            const sfxMatch = stripped.match(/^@sfx\s+(.+)/i);
             if (sfxMatch) {
+                const sfxTokens = sfxMatch[1].trim().split(/\s+/);
+                const sfxName = sfxTokens[0];
+                let sfxVol = 1;
+                for (const t of sfxTokens.slice(1)) {
+                    if (t.startsWith('vol:')) {
+                        const v = parseFloat(t.split(':')[1]);
+                        if (Number.isFinite(v)) sfxVol = Math.max(0, Math.min(1, v));
+                    }
+                }
                 pendingCommands.push({
                     type: 'sfx',
-                    name: sfxMatch[1]
+                    name: sfxName,
+                    vol: sfxVol
                 });
                 continue;
             }
@@ -267,7 +277,7 @@ class RSVPEngine {
                 } else if (cmd.type === 'pause') {
                     this.onPause(cmd.pause, cmd.word);
                 } else if (cmd.type === 'sfx') {
-                    this.onSfx(cmd.name);
+                    this.onSfx(cmd.name, cmd.vol);
                 } else if (cmd.type === 'audio') {
                     this.onAudio(cmd.mode, cmd.args);
                 } else if (cmd.type === 'pulseborder') {
