@@ -670,12 +670,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === Script Browser ===
     const archetypes = [
-        { id: 'mommy', emoji: '🌸', name: 'Mommy', desc: 'Comfort & safety', sfw: 'sfw_mommy', nsfw: 'venus_golden_path', color: '#D4AF37' },
-        { id: 'yandere', emoji: '🔪', name: 'Yandere', desc: 'Obsessive devotion', sfw: 'sfw_yandere', nsfw: 'yandere', color: '#FF1493' },
-        { id: 'teacher', emoji: '📖', name: 'Teacher', desc: 'Understanding is descent', sfw: 'sfw_teacher', nsfw: 'paf_drone', color: '#4169E1' },
-        { id: 'mesugaki', emoji: '👅', name: 'Mesugaki', desc: 'The brat always wins', sfw: 'sfw_mesugaki', nsfw: 'mesugaki', color: '#FF69B4' },
-        { id: 'succubus', emoji: '🦋', name: 'Succubus', desc: 'Mutual transformation', sfw: 'sfw_succubus', nsfw: 'succubus', color: '#9B59B6' },
-        { id: 'puppet', emoji: '🪶', name: 'Puppet', desc: 'Set it all down', sfw: 'sfw_puppet', nsfw: 'puppet', color: '#FFFFFF' },
+        { id: 'mommy', emoji: '🌸', name: 'Mommy', desc: 'Comfort & safety', sfw: 'sfw_mommy', nsfw_deny: 'venus_golden_path', nsfw_cum: 'mommy_cum', denialBump: 5 },
+        { id: 'yandere', emoji: '🔪', name: 'Yandere', desc: 'Obsessive devotion', sfw: 'sfw_yandere', nsfw_deny: 'yandere', nsfw_cum: 'yandere_cum', denialBump: 15 },
+        { id: 'teacher', emoji: '📖', name: 'Teacher', desc: 'Understanding is descent', sfw: 'sfw_teacher', nsfw_deny: 'paf_drone', nsfw_cum: 'teacher_cum', denialBump: 10 },
+        { id: 'mesugaki', emoji: '👅', name: 'Mesugaki', desc: 'The brat always wins', sfw: 'sfw_mesugaki', nsfw_deny: 'mesugaki', nsfw_cum: 'mesugaki_cum', denialBump: 40 },
+        { id: 'succubus', emoji: '🦋', name: 'Succubus', desc: 'Mutual transformation', sfw: 'sfw_succubus', nsfw_deny: 'succubus', nsfw_cum: 'succubus_cum', denialBump: 10 },
+        { id: 'puppet', emoji: '🪶', name: 'Puppet', desc: 'Set it all down', sfw: 'sfw_puppet', nsfw_deny: 'puppet', nsfw_cum: 'puppet_cum', denialBump: 20 },
     ];
 
     const grid = document.getElementById('archetype-grid');
@@ -683,12 +683,32 @@ document.addEventListener('DOMContentLoaded', () => {
     const nsfwModal = document.getElementById('nsfw-modal');
     const nsfwConfirm = document.getElementById('nsfw-confirm');
     const nsfwCancel = document.getElementById('nsfw-cancel');
+    const denialToggle = document.getElementById('denial-toggle');
+    const denialSlider = document.getElementById('denial-slider');
+    const denialValue = document.getElementById('denial-value');
     const editor = document.getElementById('script-editor');
     const btnLoad = document.getElementById('btn-load-script');
 
-    // Check stored NSFW preference
+    // Load stored preferences
     const nsfwEnabled = localStorage.getItem('speedwashing-nsfw') === 'true';
     nsfwCheckbox.checked = nsfwEnabled;
+    if (nsfwEnabled) denialToggle.style.display = 'flex';
+
+    const storedDenial = localStorage.getItem('speedwashing-denial');
+    if (storedDenial !== null) {
+        denialSlider.value = parseInt(storedDenial, 10);
+    }
+    denialValue.textContent = denialSlider.value + '%';
+
+    // Track whether user has ever fiddled with denial or played NSFW
+    const hasEverPlayed = localStorage.getItem('speedwashing-has-played') === 'true';
+    const hasEverFiddledDenial = localStorage.getItem('speedwashing-denial-fiddled') === 'true';
+
+    denialSlider.addEventListener('input', () => {
+        denialValue.textContent = denialSlider.value + '%';
+        localStorage.setItem('speedwashing-denial', denialSlider.value);
+        localStorage.setItem('speedwashing-denial-fiddled', 'true');
+    });
 
     // Render archetype cards
     function renderCards() {
@@ -709,19 +729,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadArchetype(archetype) {
         const isNsfw = nsfwCheckbox.checked;
-        const scriptName = isNsfw ? archetype.nsfw : archetype.sfw;
+
+        if (!isNsfw) {
+            // SFW mode — just load the SFW script
+            return loadScript(archetype.sfw, archetype.id);
+        }
+
+        // NSFW mode — determine denial vs cum
+        let denialChance = parseInt(denialSlider.value, 10);
+
+        // First-play bump: if user has never played NSFW AND never touched denial slider,
+        // bump denial chance by the persona's denialBump for this play only
+        if (!hasEverPlayed && !hasEverFiddledDenial && denialChance === 0) {
+            denialChance = archetype.denialBump;
+        }
+
+        // Mark that they've played
+        localStorage.setItem('speedwashing-has-played', 'true');
+
+        // Roll the dice
+        const roll = Math.random() * 100;
+        const isDenied = roll < denialChance;
+
+        const scriptName = isDenied ? archetype.nsfw_deny : archetype.nsfw_cum;
+        return loadScript(scriptName, archetype.id);
+    }
+
+    async function loadScript(scriptName, archetypeId) {
         try {
             const resp = await fetch(`scripts/${scriptName}.txt`);
             if (!resp.ok) throw new Error('Script not found');
             const text = await resp.text();
             editor.value = text;
-            // Trigger load
             btnLoad.disabled = false;
             btnLoad.classList.remove('loaded');
             btnLoad.click();
-            // Highlight active card
             document.querySelectorAll('.archetype-card').forEach(c => c.classList.remove('active'));
-            document.querySelector(`.archetype-card[data-id="${archetype.id}"]`).classList.add('active');
+            const activeCard = document.querySelector(`.archetype-card[data-id="${archetypeId}"]`);
+            if (activeCard) activeCard.classList.add('active');
         } catch (e) {
             console.error('Failed to load script:', e);
         }
@@ -730,11 +775,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // NSFW toggle with modal
     nsfwCheckbox.addEventListener('change', (e) => {
         if (e.target.checked && localStorage.getItem('speedwashing-nsfw') !== 'true') {
-            // First time enabling — show modal
-            e.target.checked = false; // revert until confirmed
+            e.target.checked = false;
             nsfwModal.style.display = 'flex';
-        } else if (!e.target.checked) {
+        } else if (e.target.checked) {
+            denialToggle.style.display = 'flex';
+        } else {
             localStorage.setItem('speedwashing-nsfw', 'false');
+            denialToggle.style.display = 'none';
         }
     });
 
@@ -742,6 +789,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('speedwashing-nsfw', 'true');
         nsfwCheckbox.checked = true;
         nsfwModal.style.display = 'none';
+        denialToggle.style.display = 'flex';
     });
 
     nsfwCancel.addEventListener('click', () => {

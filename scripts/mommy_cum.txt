@@ -1,0 +1,91 @@
+//Mommy - Comfort Spiral (NSFW + Release)
+//You've been so good. You've earned this.
+
+@wpm 180
+@hybrid drone_low carrier:55 beat:2 pulse:5 db:-8 vol:0.10 fade:10
+@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-6 fade:10
+@hybrid drone_high carrier:164 beat:3.5 pulse:6.5 db:-2 fade:10
+@pulseborder red hz:0.75
+Welcome home, treasure.
+
+You came back. You always come back. And that makes me so happy. Because this is where you belong. In this warm, golden space. With my voice. With my hands. With the safety of knowing that someone loves you enough to hold you while you fall apart.
+
+@snap duration:1500 word:Good.
+
+@wpm 200
+@subliminals opacity:0.1 warm safe golden loved held good enough home
+Settle in. Let your body get comfortable. Let your shoulders drop. Let your jaw unclench. Let everything you've been carrying today just melt off you like snow in sunlight.
+
+I'm going to take care of you tonight. All of you. Every tired muscle. Every anxious thought. Every part that's been holding on too tight for too long.
+
+@wpm 180
+@pulseborder green hz:0.33
+Touch yourself for me. Slowly. Gently. Like you're something precious. Because you are.
+
+@sfx bell
+@pause duration:2000
+
+There. Just like that. Slow. Easy. No rush. We have all the time in the world. And all of it belongs to you.
+
+@wpm 200
+Feel how different it is when there's no urgency. No performance. No expectation. Just warmth. Just sensation. Just the steady, golden pulse of being cared for while you feel good.
+
+This is what you deserve. Not as a reward. As a baseline. This warmth. This safety. This permission to simply receive.
+
+@subliminals opacity:0.15 warm safe good yours deserve held loved release
+@wpm 250
+@spiral color:#D4AF37 opacity:0.1 speed:0.2 fade:3
+Let the pleasure build. Naturally. Like a sunrise. Not forced. Not chased. Just arriving. Because it knows you're ready. Because your body has been waiting for permission and permission is granted and the waiting is over.
+
+@wpm 200
+I've got you. Whatever happens. However deep you go. However much you need to let go. I'm right here. Holding the space. Holding you. And nothing bad is going to happen. Nothing. Ever. I promise.
+
+@pulseborder yellow hz:0.5
+Feel the warmth building. That golden glow in your belly. In your chest. Spreading.
+
+@pulseborder purple hz:0.5
+@wpm 300
+@hybrid drone_mid carrier:85 beat:2.5 pulse:4.5 db:-5 fade:8
+@hybrid drone_high carrier:170 beat:3.5 pulse:5.5 db:-1 fade:8
+Let it climb. Higher. More. Feel my hands on you. Feel my warmth around you. Feel the safety that makes it possible to let go completely. Because you are held. You are loved. You are safe. And you are allowed.
+
+@wpm 350
+Higher. Don't fight it. Don't hold back. There is nothing to hold back for. This moment exists for you. Every word was written for you. Every heartbeat of warmth was placed here so that right now, in this exact second, you could feel this safe and this good and this completely, utterly cared for.
+
+@wpm 400
+@subliminals opacity:0.25 release let go yours safe loved held cum for me good
+Right to the edge. Feel it. The warmth cresting. The golden light behind your eyes burning brighter and brighter. And my voice right here saying the only thing that matters.
+
+@wpm 200
+You've been so good. So brave. So patient. So beautifully, perfectly mine.
+
+Now let go.
+
+@pulseborder green hz:0.33
+@sfx bell
+
+@wpm 150
+Let go for me. Release everything. All the tension. All the holding. All the waiting. Let it flood through you like warm light. Like golden water. Like every good thing you've ever felt happening at once.
+
+@pause duration:3000
+
+@wpm 120
+@pulseborder off fade:3
+That's it. So good. So beautiful. Let it wash through you. Every wave. Every pulse. Every last tremor. I'm right here. I've got you. You're safe.
+
+@wpm 150
+@spiral off fade:5
+@subliminals off
+Keep breathing. Slow. Easy. Let the afterglow settle in your chest like a warm blanket. That feeling. That safety. That love. It stays. Even when the session ends. Even when the headphones come off.
+
+@hybrid drone_low off fade:8
+@hybrid drone_mid off fade:8
+@hybrid drone_high off fade:8
+You did so well. You always do. Because you're mine. And I take care of what's mine.
+
+Come back whenever you need to feel this again. I'll be here.
+
+@wpm 120
+Always.
+
+@snap duration:2000 word:Loved.

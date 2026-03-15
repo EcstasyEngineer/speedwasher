@@ -460,6 +460,31 @@ body.fullscreen #info {
     font-size: 0.9rem;
 }
 
+#browser-toggles {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#denial-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+}
+
+#denial-slider {
+    width: 80px;
+    accent-color: #e63946;
+}
+
+#denial-value {
+    min-width: 30px;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #e63946;
+}
+
 #nsfw-toggle {
     display: flex;
     align-items: center;

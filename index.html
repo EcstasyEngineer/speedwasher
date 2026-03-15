@@ -73,10 +73,17 @@
         <div id="script-browser">
             <div id="browser-header">
                 <span>Scripts</span>
-                <label id="nsfw-toggle">
-                    <input type="checkbox" id="nsfw-checkbox">
-                    <span class="toggle-label">NSFW</span>
-                </label>
+                <div id="browser-toggles">
+                    <label id="denial-toggle" style="display:none;">
+                        <span class="toggle-label">Denial:</span>
+                        <input type="range" id="denial-slider" min="0" max="100" value="0" step="5">
+                        <span id="denial-value">0%</span>
+                    </label>
+                    <label id="nsfw-toggle">
+                        <input type="checkbox" id="nsfw-checkbox">
+                        <span class="toggle-label">NSFW</span>
+                    </label>
+                </div>
             </div>
             <div id="archetype-grid"></div>
         </div>
