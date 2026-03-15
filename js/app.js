@@ -486,10 +486,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event Listeners
 
+    // Screen Wake Lock — prevent screensaver during playback
+    let wakeLock = null;
+    async function requestWakeLock() {
+        try {
+            if ('wakeLock' in navigator) {
+                wakeLock = await navigator.wakeLock.request('screen');
+                wakeLock.addEventListener('release', () => { wakeLock = null; });
+            }
+        } catch (e) { /* Wake lock not supported or denied */ }
+    }
+    function releaseWakeLock() {
+        if (wakeLock) { wakeLock.release(); wakeLock = null; }
+    }
+    // Re-acquire wake lock when page becomes visible again (browser releases on tab switch)
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible' && rsvp.isPlaying) requestWakeLock();
+    });
+
     // Play/Pause button
     btnPlay.addEventListener('click', async () => {
         await primeAudioForIOS();
         rsvp.toggle();
+        if (rsvp.isPlaying) requestWakeLock(); else releaseWakeLock();
     });
 
     // Rewind button — jump to start, keep playing if was playing
@@ -648,4 +667,87 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial display
     wpmDisplay.textContent = '300 wpm';
+
+    // === Script Browser ===
+    const archetypes = [
+        { id: 'mommy', emoji: '🌸', name: 'Mommy', desc: 'Comfort & safety', sfw: 'sfw_mommy', nsfw: 'venus_golden_path', color: '#D4AF37' },
+        { id: 'yandere', emoji: '🔪', name: 'Yandere', desc: 'Obsessive devotion', sfw: 'sfw_yandere', nsfw: 'yandere', color: '#FF1493' },
+        { id: 'teacher', emoji: '📖', name: 'Teacher', desc: 'Understanding is descent', sfw: 'sfw_teacher', nsfw: 'paf_drone', color: '#4169E1' },
+        { id: 'mesugaki', emoji: '👅', name: 'Mesugaki', desc: 'The brat always wins', sfw: 'sfw_mesugaki', nsfw: 'mesugaki', color: '#FF69B4' },
+        { id: 'succubus', emoji: '🦋', name: 'Succubus', desc: 'Mutual transformation', sfw: 'sfw_succubus', nsfw: 'succubus', color: '#9B59B6' },
+        { id: 'puppet', emoji: '🪶', name: 'Puppet', desc: 'Set it all down', sfw: 'sfw_puppet', nsfw: 'puppet', color: '#FFFFFF' },
+    ];
+
+    const grid = document.getElementById('archetype-grid');
+    const nsfwCheckbox = document.getElementById('nsfw-checkbox');
+    const nsfwModal = document.getElementById('nsfw-modal');
+    const nsfwConfirm = document.getElementById('nsfw-confirm');
+    const nsfwCancel = document.getElementById('nsfw-cancel');
+    const editor = document.getElementById('script-editor');
+    const btnLoad = document.getElementById('btn-load-script');
+
+    // Check stored NSFW preference
+    const nsfwEnabled = localStorage.getItem('speedwashing-nsfw') === 'true';
+    nsfwCheckbox.checked = nsfwEnabled;
+
+    // Render archetype cards
+    function renderCards() {
+        grid.innerHTML = '';
+        archetypes.forEach(a => {
+            const card = document.createElement('div');
+            card.className = 'archetype-card';
+            card.dataset.id = a.id;
+            card.innerHTML = `
+                <div class="archetype-emoji">${a.emoji}</div>
+                <div class="archetype-name">${a.name}</div>
+                <div class="archetype-desc">${a.desc}</div>
+            `;
+            card.addEventListener('click', () => loadArchetype(a));
+            grid.appendChild(card);
+        });
+    }
+
+    async function loadArchetype(archetype) {
+        const isNsfw = nsfwCheckbox.checked;
+        const scriptName = isNsfw ? archetype.nsfw : archetype.sfw;
+        try {
+            const resp = await fetch(`scripts/${scriptName}.txt`);
+            if (!resp.ok) throw new Error('Script not found');
+            const text = await resp.text();
+            editor.value = text;
+            // Trigger load
+            btnLoad.disabled = false;
+            btnLoad.classList.remove('loaded');
+            btnLoad.click();
+            // Highlight active card
+            document.querySelectorAll('.archetype-card').forEach(c => c.classList.remove('active'));
+            document.querySelector(`.archetype-card[data-id="${archetype.id}"]`).classList.add('active');
+        } catch (e) {
+            console.error('Failed to load script:', e);
+        }
+    }
+
+    // NSFW toggle with modal
+    nsfwCheckbox.addEventListener('change', (e) => {
+        if (e.target.checked && localStorage.getItem('speedwashing-nsfw') !== 'true') {
+            // First time enabling — show modal
+            e.target.checked = false; // revert until confirmed
+            nsfwModal.style.display = 'flex';
+        } else if (!e.target.checked) {
+            localStorage.setItem('speedwashing-nsfw', 'false');
+        }
+    });
+
+    nsfwConfirm.addEventListener('click', () => {
+        localStorage.setItem('speedwashing-nsfw', 'true');
+        nsfwCheckbox.checked = true;
+        nsfwModal.style.display = 'none';
+    });
+
+    nsfwCancel.addEventListener('click', () => {
+        nsfwCheckbox.checked = false;
+        nsfwModal.style.display = 'none';
+    });
+
+    renderCards();
 });

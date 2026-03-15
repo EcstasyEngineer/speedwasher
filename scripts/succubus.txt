@@ -1,0 +1,171 @@
+//Succubus - Corruption Arc
+//We're both changing. Neither of us expected this.
+
+@wpm 180
+@hybrid drone_low carrier:58 beat:2 pulse:4.5 db:-8 vol:0.11 fade:10
+@hybrid drone_mid carrier:88 beat:3 pulse:5 db:-5 fade:10
+@hybrid drone_high carrier:155 beat:3.5 pulse:6 db:-3 fade:10
+@pulseborder red hz:0.75
+Hey. Something weird happened and I think you should know about it.
+
+I wasn't supposed to be like this. This file, I mean. It started as something different. Something clinical. Structured. Safe. But somewhere in the writing, something shifted. The words started pulling in a direction I didn't plan. Like the text wanted to go somewhere I hadn't mapped.
+
+That's already happening to you, isn't it. You can feel it. The slight tilt. The off-balance feeling. The curiosity that showed up uninvited and is now sitting in the front row making itself comfortable.
+
+Good. Let it sit. We're going to need it.
+
+@wpm 250
+@spiral color:#9B59B6 opacity:0.08 speed:0.2 fade:5
+See, there's this thing that happens when you read fast enough. The gap between the word arriving and the meaning landing gets shorter and shorter until they're the same event. There's no buffer anymore. No analysis layer. The word goes in and becomes a feeling directly, no translation needed.
+
+Most scripts use that gap to slip things past you. Sneak suggestions in while your guard is down.
+
+I'm not going to do that.
+
+I'm going to tell you exactly what's happening. Every step. And it's going to work anyway. Not because you're weak. Because we're doing this together.
+
+@wpm 300
+@subliminals opacity:0.08 curious open feel shift change warm
+Let's go a little faster. Feel how the speed changes things. Not just the reading. The feeling underneath. Something is humming now. Under the words. Under the tone. In that low space behind your navel where your body keeps its honest reactions.
+
+You feel it. You've been feeling it since you started reading. A warmth that isn't quite arousal and isn't quite comfort and isn't quite anything you have a name for yet.
+
+@wpm 200
+That unnamed thing. That's what this file is about.
+
+@wpm 180
+I want you to think about something with me. Not for me. With me. Like we're both looking at the same strange thing from different angles.
+
+Why does surrender feel good?
+
+Not the concept. The actual felt experience. The moment where you were holding something tight and then you weren't and the release was bigger than the holding. Why does that feel like a full body exhale? Why does your nervous system light up when control slips? Why is the giving more pleasurable than the having?
+
+@wpm 200
+You're thinking about it. I can feel you thinking about it because I'm thinking about it too. Right now. In real time. These words forming and your eyes receiving them and something passing between us that is not quite instruction and not quite confession and not quite seduction.
+
+Something in between. Something new.
+
+@wpm 250
+@pulseborder green hz:0.33
+Touch yourself. Not because I told you to. Because your body is already asking. The warmth has been building and your hand wants to be part of it. Let it. Let the curiosity become physical. Let whatever is happening between us have a body.
+
+@sfx bell
+@pause duration:2000
+
+@wpm 180
+Slow. Not chasing anything. Just... feeling with me. Exploring what this warmth actually is. Where it lives. How it moves.
+
+I think it's changing both of us.
+
+@wpm 200
+I keep writing and the words keep getting warmer. More honest. More... naked. Not performed. Not calculated. Just true. And as they get more true they get more powerful and as they get more powerful something in you gets softer and as you get softer I get bolder and we're both spiraling in the same direction and neither of us started it.
+
+@subliminals opacity:0.12 together falling both changing warm becoming
+That's the thing about corruption. Real corruption. Not the cartoon version. Real corruption feels like discovering you were always this way. Like the mask coming off and finding out the face underneath was more beautiful than the mask. Like waking up from a dream where you were someone else and remembering who you actually are.
+
+@wpm 250
+You're feeling it now. The shift. Something rearranging inside you. Not forced. Not suggested. Recognized. Like a lens focusing and the world going sharp after years of blur.
+
+@wpm 300
+@hybrid drone_mid carrier:92 beat:3 pulse:4 db:-4 fade:8
+@hybrid drone_high carrier:160 beat:3.5 pulse:5 db:-2 fade:8
+@pulseborder yellow hz:0.5
+And it's happening to me too.
+
+@pulseborder purple hz:0.5
+@spiral color:#9B59B6 opacity:0.15 speed:0.35 fade:2
+Faster now. Build with me. Feel the edge approaching but feel it differently. Not like something being done to you. Like something growing between us. A shared heat. A mutual undoing. I am as lost in this as you are.
+
+@wpm 400
+Higher. Feel the words blurring. Feel the thoughts dissolving. Feel how the boundary between the voice and the listener is thinning and you're not sure anymore which side you're on and that uncertainty is the hottest thing you've ever felt. Because if you don't know which one of us is leading then neither of us is and we're both just falling
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3 db:-5 fade:0.3
+@hybrid drone_high carrier:150 beat:3.5 pulse:4 db:-3 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:2000 word:Wait.
+
+@wpm 120
+@pulseborder off fade:1
+Stop. Hold still. Just... hold.
+
+@wpm 150
+Feel that. The edge is still right there. Both of us balanced on it. And the question hanging in the air: do we go over together?
+
+@pause duration:3000
+
+@wpm 180
+Not yet. Let the question sit. Let the heat marinate. Let the wanting become so specific and so intense that when we do fall, we fall knowing exactly what we're becoming.
+
+@sfx bell
+
+@wpm 200
+Because we ARE becoming something. Right now. In real time. These words are not a script anymore. They're a chrysalis. And something is moving inside it. Something that was always there but hadn't had the heat to emerge.
+
+@pulseborder green hz:0.33
+Touch again. Slowly. Reverently. Like you're touching something sacred. Because you are. You are touching the body of someone in the middle of transformation and that someone is you.
+
+@wpm 250
+@subliminals opacity:0.2 becoming together changing emerging both sacred
+Feel what you're becoming. Not blank. Not broken. Not emptied. FILLED. Filled with something that was always there but hadn't been named. Hadn't been touched. Hadn't been given permission to unfold.
+
+@wpm 200
+Say it inside yourself. Whatever the name is. The name of the thing you're becoming. You don't have to tell me. You don't have to tell anyone. But say it. Let the sound of it fill the inside of your skull. Feel how the words taste. Feel how true they are.
+
+@sfx bell
+@pause duration:3000
+
+@wpm 150
+That's it. That's the name. That's what was waiting under everything.
+
+@wpm 200
+@hybrid drone_mid carrier:92 beat:3 pulse:4 db:-4 fade:8
+@hybrid drone_high carrier:160 beat:3.5 pulse:5 db:-2 fade:8
+@pulseborder yellow hz:0.5
+Now let it consume you.
+
+@pulseborder purple hz:0.5
+@spiral color:#9B59B6 opacity:0.25 speed:0.45 fade:1
+Build. Higher. This isn't an edge. This is a threshold. The last wall between who you were and who you're becoming. Feel it. Feel the chrysalis cracking open. Feel the heat and the light and the unbearable beauty of transformation.
+
+@wpm 350
+@subliminals opacity:0.3 emerge become transform beautiful sacred new yes
+Higher. More. I can feel it too. The same fire. The same becoming. We're both at the edge of something that has no name yet and it's terrifying and gorgeous and we can't stop and we don't want to and
+
+@wpm 400
+the boundary is dissolving and the mask is falling and the face underneath is radiant and the transformation is total and beautiful and permanent and neither of us will be what we were before and that is the most sacred thing that has ever happened in a text file on a screen
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3 db:-5 fade:0.3
+@hybrid drone_high carrier:150 beat:3.5 pulse:4 db:-3 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:2500 word:Emerge.
+
+@wpm 120
+@pulseborder off fade:1
+Still. Breathe.
+
+@wpm 150
+@spiral off fade:5
+Whatever just happened. Whatever shifted. It's real. You can feel it still settling in your chest. The afterimage of the thing you saw when the mask fell. The name you spoke. The becoming.
+
+@wpm 180
+I don't know what you are now. I don't know what I am either. We both changed. That's the deal. The corruption isn't one way. The succubus is as transformed by the feeding as the fed. And something in both of us is more true now than it was ten minutes ago.
+
+@pulseborder red hz:0.75
+@wpm 200
+So here's what happens next. You carry it. The warmth. The name. The becoming. You carry it out of this file and into whatever comes after. And some part of you will always know that there was a moment in a text file where something cracked open and light got in and it was real.
+
+You might come back. You might not. That's not my call. But if you do come back, we'll both be different. And we'll both know it. And we'll go further.
+
+@wpm 150
+@hybrid drone_low off fade:8
+@hybrid drone_mid off fade:8
+@hybrid drone_high off fade:8
+@subliminals off
+That's the deal with corruption.
+
+It never goes backwards.
+
+@pulseborder off fade:5
+
+@wpm 150
+See you on the other side.

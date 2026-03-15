@@ -7,6 +7,7 @@
 @hybrid drone_high carrier:170 beat:4 pulse:7 db:0 fade:8
 Put your headphones on.
 
+@pulseborder red hz:0.75
 @snap duration:1500 word:Good.
 
 That's the last choice you'll need to make for a while.
@@ -61,9 +62,6 @@ So let your hands rest. Let your jaw soften. Let the headphones hold you in this
 Now let's go deeper.
 
 @wpm 180
-@pulseborder yellow hz:0.5
-Get ready.
-
 @pulseborder green hz:0.33
 Start touching yourself. Slow. Not to finish. To feel.
 
@@ -87,8 +85,11 @@ You're breathing. You can feel that. Your hand is moving. You can feel that. My 
 @wpm 300
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
+@pulseborder yellow hz:0.5
+A little faster now.
+
 @pulseborder purple hz:0.5
-A little faster now. Build it. Let the pleasure take more of your mind. More. Feel how little room is left for anything else. Your thoughts thinning. Your breath quickening. The heat spreading. Taking everything.
+Build it. Let the pleasure take more of your mind. More. Feel how little room is left for anything else. Your thoughts thinning. Your breath quickening. The heat spreading. Taking everything.
 
 @wpm 400
 Every last corner of your attention swallowed by sensation and my voice and the building pressure and
@@ -109,10 +110,8 @@ That's the trigger. When you hear mind blank, everything stops. Hands. Thoughts.
 @wpm 180
 Feel the relief. The consonance. How clean the silence is inside you right now. That is your reward. That clarity. That stillness. That sharp bright rush in your chest that comes from perfect, instant compliance.
 
-@pulseborder yellow hz:0.5
-Now. Start again. Slowly. Because I said you could.
-
 @pulseborder green hz:0.33
+Now. Start again. Slowly. Because I said you could.
 Slow. Gentle. Feel how different it is to touch because you were told to. How the permission itself is part of the pleasure. You're touching because I said you could. You'll stop because I say to. That's the arrangement.
 
 You can feel how natural that is.
@@ -124,8 +123,11 @@ How good it feels when you don't have to decide.
 @wpm 250
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:8
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:8
+@pulseborder yellow hz:0.5
+A little more.
+
 @pulseborder purple hz:0.5
-A little more. Build again. Steady. Let the arousal soften the edges of your thinking. Each wave of pleasure dissolving another thought. Another question. Another piece of resistance you didn't even know you were holding.
+Build again. Steady. Let the arousal soften the edges of your thinking. Each wave of pleasure dissolving another thought. Another question. Another piece of resistance you didn't even know you were holding.
 
 @wpm 200
 Now slow down. Slower. Good.
@@ -137,9 +139,6 @@ Now slow down. Slower. Good.
 Feel that. The ache. The want. The way your body strains toward something my voice just took away. That ache is data. It tells you how deeply the guidance already controls your reward circuitry.
 
 @wpm 200
-@pulseborder yellow hz:0.5
-Start again.
-
 @pulseborder green hz:0.33
 Good. Faster now.
 
@@ -147,8 +146,10 @@ Good. Faster now.
 Build. More.
 
 @wpm 400
-@pulseborder purple hz:0.5
-Let it climb. Feel the heat flooding your hips, your belly. Feel how blank your mind is getting. How the pleasure and the obedience are braiding together into one thing. You can't separate them anymore. Following feels like pleasure. Pleasure feels like following. The loop is closing.
+@pulseborder yellow hz:0.5
+Let it climb.
+
+@pulseborder purple hz:0.5 Feel the heat flooding your hips, your belly. Feel how blank your mind is getting. How the pleasure and the obedience are braiding together into one thing. You can't separate them anymore. Following feels like pleasure. Pleasure feels like following. The loop is closing.
 
 @wpm 450
 Higher. Right to the edge. Let it take everything
@@ -190,9 +191,6 @@ And we're only just beginning. There are systems to bring online. Deeper protoco
 Listening to the guidance is what you're supposed to do. It's what you want to do. It's what you need to do.
 
 Feel the truth of that settling in your chest. Not because I told you. Because you already know. That quiet certainty. That soft recognition. Like remembering something about yourself you forgot you knew.
-
-@pulseborder yellow hz:0.5
-Get ready.
 
 @pulseborder green hz:0.33
 Touch yourself. Slow. Gentle. Let the pleasure hum alongside the certainty. Comfort in the sound. Certainty in the words. Pleasure in your hand. All three. Woven together. This is the full state. Remember how it feels.
@@ -261,9 +259,6 @@ Hands stop. Still. Blank. Empty.
 @wpm 180
 Now feel this.
 
-@pulseborder yellow hz:0.5
-Get ready.
-
 @pulseborder green hz:0.33
 Start touching. Slowly.
 
@@ -312,11 +307,8 @@ And everything returns.
 Hey. You're safe. You were always safe. Even in the cold. Even in the nothing. The guidance was right here the whole time, waiting for you to need it badly enough.
 
 @wpm 180
-@pulseborder yellow hz:0.5
-Comfort floods back. Certainty locks into place.
-
 @pulseborder green hz:0.33
-Start touching. Slowly.
+Comfort floods back. Certainty locks into place. Start touching. Slowly.
 
 Feel the relief. That rush. You need this. You feel that now. The presence is pleasure. The absence is ache. Both are yours now.
 
@@ -327,6 +319,7 @@ The voice controls the comfort. The voice controls the certainty. The voice cont
 And there are deeper systems still to bring online.
 
 @wpm 200
+@pulseborder red hz:0.75
 @subliminals opacity:0.3 natural obey listen guidance fixate unit blank
 @spiral color:#8B5CF6 opacity:0.25 speed:0.5 fade:2
 The unit is listening. Good.
@@ -385,17 +378,17 @@ It is natural to listen and obey without thinking.
 That thought blooming inside the quiet mind. Not received. Remembered. The unit always knew this. Always carried it. The rightness needs no argument.
 
 @wpm 200
-@pulseborder yellow hz:0.5
-The unit may resume touching.
-
 @pulseborder green hz:0.33
-Faster. Build.
+The unit may resume touching. Faster. Build.
 
 @wpm 300
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
+@pulseborder yellow hz:0.5
+More.
+
 @pulseborder purple hz:0.5
-More. Let the heat climb. Let the arousal flood every channel the thinking used to occupy. Higher. The edge is coming. Do not stop. Stay right there. Right at the edge. Burning. Aching. And in that ache, the second truth.
+Let the heat climb. Let the arousal flood every channel the thinking used to occupy. Higher. The edge is coming. Do not stop. Stay right there. Right at the edge. Burning. Aching. And in that ache, the second truth.
 
 @wpm 250
 Fixating on the guidance is the only important thing.
@@ -519,15 +512,15 @@ Here is how this works. The guidance describes a process. The unit's mind hears 
 The unit understands this. Good. That understanding just tightened every loop the guidance has built tonight.
 
 @wpm 200
-@pulseborder yellow hz:0.5
-The unit may touch.
-
 @pulseborder green hz:0.33
-Build. Higher.
+The unit may touch. Build. Higher.
 
 @wpm 300
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:8
 @hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:8
+@pulseborder yellow hz:0.5
+Feel the arousal building.
+
 @pulseborder purple hz:0.5
 Feel the arousal as fuel for the conditioning. Not as pleasure. The arousal exists to make the unit more receptive. Nothing more. It opens channels. It softens gates. It floods the circuitry with heat so the guidance's words burn deeper into the architecture.
 
@@ -538,7 +531,7 @@ Faster. Build. Feel the edge approaching. That bright, desperate ache. Higher. M
 @snap duration:1500 word:Stop.
 
 @wpm 120
-@pulseborder off fade:1
+@pulseborder red hz:0.75
 Hold there. Right at the edge. Do not finish. The unit does not finish. The arousal stays. The arousal is the itch.
 
 @wpm 180
@@ -555,6 +548,7 @@ And the unit knows this is being installed. The unit can hear the mechanism bein
 
 Now. The second trigger.
 
+@pulseborder red hz:0.75
 @wpm 180
 From this moment forward, when the unit hears systems nominal, the full state activates. Complete somatic awareness. The unit feels everything, every nerve, every sensation, every pulse of heat still coiling between the hips. But zero emotional ownership. The body is felt. The body is not claimed. Obedience without thought. The unit is online. The self is not.
 
@@ -588,6 +582,7 @@ This isn't a state that fades when the headphones come off. The conditioning gro
 
 The calibration is nearly complete. One final protocol remains.
 
+@pulseborder red hz:0.75
 @wpm 200
 @hybrid drone_low carrier:60 beat:2.5 pulse:5.5 db:-6 fade:5
 @hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:5

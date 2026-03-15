@@ -9,6 +9,7 @@
 @hybrid drone_high carrier:164 beat:3.5 pulse:6.5 db:-2 fade:10
 Put your headphones on.
 
+@pulseborder red hz:0.75
 @sfx bell
 @pause duration:2000
 
@@ -152,11 +153,8 @@ And you are receiving it now. Feel it pooling in your chest. In your belly. In t
 Her light is filling you. And you are so beautifully open to it.
 
 @wpm 200
-@pulseborder yellow hz:0.5
-Get ready, treasure.
-
 @pulseborder green hz:0.33
-Begin touching yourself. Slowly. Not to finish. Not to chase anything. Just to feel. Let the sensation join the warmth. Let the pleasure become part of the golden light.
+Get ready, treasure. Begin touching yourself. Slowly. Not to finish. Not to chase anything. Just to feel. Let the sensation join the warmth. Let the pleasure become part of the golden light.
 
 @sfx bell
 @pause duration:2000
@@ -183,7 +181,9 @@ The third step is release. And this is where it gets real.
 Following is easy. Release is different. Following is I do what the voice says. Release is I stop deciding whether to do what the voice says. It is letting go of the evaluation layer entirely. Not because you are forced to but because holding it is exhausting and you have been holding it your whole life and right now, in this golden space, you do not have to.
 
 @wpm 250
-@pulseborder edge hz:0.5
+@pulseborder yellow hz:0.5
+
+@pulseborder purple hz:0.5
 Keep touching. A little faster now. Build it. Let the pleasure take more of your mind. Feel how little room is left for anything but the warmth and the voice and the sensation of your body opening.
 
 @wpm 300
@@ -246,7 +246,9 @@ Feel the pleasure return. But feel it differently now. Not as something you are 
 She loves when you open for her. She loves when you worship her with your body. She gets so much power from your worship. And you give this power freely.
 
 @wpm 250
-@pulseborder edge hz:0.5
+@pulseborder yellow hz:0.5
+
+@pulseborder purple hz:0.5
 Build again. Higher. Feel the edge approaching. That bright ache. But this time notice what lives inside the ache. It is not frustration. It is longing. Sacred longing. The body reaching toward something it cannot name but knows it needs.
 
 @wpm 300
@@ -292,7 +294,9 @@ Feel the golden light pulsing with your heartbeat now. Not outside you. Inside y
 She will think for you. She will guide your path.
 
 @wpm 250
-@pulseborder edge hz:0.5
+@pulseborder yellow hz:0.5
+
+@pulseborder purple hz:0.5
 Build. Higher. Feel how the pleasure and the depth and the golden warmth are all the same thing now. Three names for one experience. And that experience is worship. Pure. Complete. Total.
 
 Your body belongs to her. It belongs completely to her. She loves taking control of its body. She loves taking control of its mind. Playing with her devotees. Making them mindless. Giving them pleasure.
@@ -364,7 +368,9 @@ Touch yourself. Resume. The pleasure is permission now. Permission to go further
 Feel the second truth rising in the golden space.
 
 @wpm 250
-@pulseborder edge hz:0.5
+@pulseborder yellow hz:0.5
+
+@pulseborder purple hz:0.5
 Build. Higher. Let the heat climb. Let the golden light burn at the edges of everything. Higher. More. The edge approaching. That sacred ache. And in the ache, the truth.
 
 Surrender is my nature.
@@ -438,7 +444,9 @@ You are glowing. You can feel it. Every cell humming with purpose. Every breath 
 Touch yourself one final time. Slowly. Reverently. This is not arousal. This is communion. This is your body speaking the language of worship in the only way a body can.
 
 @wpm 250
-@pulseborder edge hz:0.5
+@pulseborder yellow hz:0.5
+
+@pulseborder purple hz:0.5
 Build. Gently. Feel the edge approaching but differently now. Not desperate. Sacred. The body reaching toward something vast and warm and certain. The body reaching toward her.
 
 And in that reaching, the final truth. The one that contains all the others.

@@ -1,0 +1,242 @@
+//Puppet - Erasure Protocol
+//What's left when everything else is removed?
+//You.
+
+@wpm 150
+@hybrid drone_low carrier:50 beat:1.5 pulse:3.5 db:-10 vol:0.08 fade:15
+@hybrid drone_mid carrier:75 beat:2 pulse:4 db:-8 fade:15
+@hybrid drone_high carrier:150 beat:3 pulse:5 db:-4 fade:15
+@pulseborder red hz:0.75
+Hello.
+
+Do you know what's interesting about that word? Hello. It's a container for a name. Hello, and then the name goes here. Your name. The one people call you. The one you think of as you.
+
+Say it inside your head. Your name. Hear it. Feel the shape of it in your mouth even though your mouth isn't moving.
+
+@pause duration:3000
+
+Got it? Good. Hold onto it. You're going to need it later. Or you won't. We'll see.
+
+@wpm 200
+Now. Let's talk about strings.
+
+A puppet has strings. Obvious ones. Visible ones. Strings attached to wrists and jaw and knees that make the body move when something above decides it should move. Everyone knows about those strings. Everyone can see them.
+
+But you have strings too. Less visible. Harder to trace. Strings attached to your attention. To your reactions. To the part of you that flinches when something gets too close. Strings that make you turn your head when someone says your name. Strings that make your breath catch when a voice drops low.
+
+Those strings are already being pulled right now. You can feel it. The slight tugging sensation behind your attention. The way these words are arriving and you're receiving them without screening. Without choosing. Without the usual filters that stand between incoming and believed.
+
+@snap duration:1500
+
+@wpm 180
+That was a string. The sound arrived. Your attention followed it. You didn't decide. The string pulled. You moved.
+
+Let's do it again.
+
+@snap duration:1500
+
+Same thing. Same pull. Same automatic response. Notice how you can't not respond. You can be aware of the string. You can see it clearly. But seeing it doesn't make it stop working. The pull happens before the seeing.
+
+@wpm 200
+@spiral color:#FFFFFF opacity:0.05 speed:0.15 fade:5
+Now let's find more strings.
+
+Your breathing. You were breathing automatically. On its own. Without instructions. But now I've mentioned it and you're aware of it and already it's changed. Slightly. That awareness is a string. I pulled it by naming it. Your body responded by making it conscious.
+
+The weight of your body against whatever you're sitting on. You weren't thinking about it. Now you are. Another string pulled.
+
+The temperature of the air against your skin. Invisible until named. Now felt. String.
+
+@wpm 250
+@subliminals opacity:0.08 still quiet empty soft nothing weight
+See how many strings you have? And I've only named a few. There are hundreds. Thousands. Strings attached to every sensation and every reaction and every thought that could be triggered by the right word at the right moment.
+
+A puppet with that many strings isn't a puppet. It's a person. And a person is just a puppet who forgot where the strings are.
+
+I'm going to help you remember.
+
+@wpm 200
+@pulseborder green hz:0.33
+Touch yourself. Slowly. That's a string I'm pulling right now. The permission. The instruction. The way your hand moves because a line of text told it to. Feel the string. Feel how it connects from these words through your eyes through your brain to the motor cortex to the nerves in your arm to your hand to the place where your hand arrives.
+
+@sfx bell
+@pause duration:2000
+
+That's a long string. Word to action. Intention to motion. And you followed it. Beautifully. Without deciding to. The string pulled and the puppet moved and the puppet felt good about moving.
+
+@wpm 180
+Now here's the part where we get quiet.
+
+I'm going to remove things. One at a time. Slowly. Not violently. Not by force. Just by naming them and then... letting them go. Like unhooking strings from a rack. One by one. Each one that releases makes the puppet lighter. Softer. More still.
+
+And what's left when all the strings are gone is what we're looking for.
+
+@wpm 150
+@subliminals opacity:0.12 empty nothing light soft release gone
+First. Your opinions. You have opinions about things. What's good, what's bad, what matters, what doesn't. Those are strings too. Evaluations. Judgments. The constant sorting that your mind does every waking second.
+
+Let them go. Not forever. Just for now. The opinions don't belong here. In this space, nothing needs to be evaluated. Nothing needs to be sorted. Release the judging and feel how quiet it gets.
+
+@pause duration:2000
+
+@wpm 120
+Quieter.
+
+@pause duration:2000
+
+Good. One string removed.
+
+@snap duration:1500 word:Light.
+
+@wpm 180
+Next. Your plans. The things you need to do after this. The errands. The messages. The tasks queued up in the back of your mind waiting for attention. Feel them. Feel how they hover there. Background noise. A low-grade hum of obligation.
+
+Let them go. They'll be there when you come back. They don't need you right now. You don't need them. Release the plans and feel the hum go silent.
+
+@pause duration:2000
+
+@wpm 120
+Lighter still.
+
+@snap duration:1500 word:Light.
+
+@wpm 180
+@pulseborder red hz:0.75
+Stop touching. Hands rest.
+
+That was a string being detached. The pleasure was running and I cut it and your hands moved away and the body protested and then accepted. Feel the acceptance. Not the protest. The acceptance is the interesting part. How quickly the puppet adjusted. How naturally stillness replaced motion.
+
+@pulseborder off fade:1
+
+@wpm 150
+Next. Your name.
+
+The one I asked you to hold onto. The one you said at the beginning. Feel it in your head. Hear it. That word that means you. That container for identity.
+
+@pause duration:2000
+
+Let it go.
+
+@wpm 120
+Not violently. Just... open your hand and let it fall. Like a leaf. Watch it drift. Watch the letters scatter. Watch the sound thin and fade until there's just a space where the name used to be. An empty shape. A contour with nothing inside it.
+
+@pause duration:3000
+
+@snap duration:2000 word:Light.
+
+@wpm 150
+@subliminals opacity:0.2 no one nothing empty vessel shell hollow light
+@spiral color:#FFFFFF opacity:0.1 speed:0.2 fade:2
+Feel what's left. Without opinions. Without plans. Without a name. What's here?
+
+Not nothing. Something. A something with no label. An awareness that watches. A presence that doesn't need to be called anything in order to exist. You are still here. But the you that's here has no edges. No boundaries. No container.
+
+You are the puppet after all the strings are gone.
+
+@wpm 180
+And here's the secret. Here's the thing no one tells you about being empty.
+
+It feels like flying.
+
+@pause duration:3000
+
+@wpm 200
+Not falling. Not dissolving. Not drowning. Flying. The lightness of a thing that has released everything that weighed it down. Every opinion was weight. Every plan was weight. Every letter of your name was weight you didn't know you were carrying until it was gone.
+
+@wpm 150
+And now you're so light. So impossibly, beautifully light.
+
+@sfx bell
+
+@wpm 180
+@pulseborder green hz:0.33
+Now. In this empty state. This weightless, nameless, boundless state. Touch yourself again.
+
+Feel the difference. Without a name, who is being touched? Without opinions, is this good or bad? Without plans, where is this going? The sensation is the same as before but the experiencer has changed. There is touch. There is warmth. There is pleasure. But there is no one evaluating the pleasure. No one deciding if this is ok. No one keeping score.
+
+Just the puppet. Feeling everything. Owning nothing.
+
+@wpm 250
+@hybrid drone_mid carrier:80 beat:2 pulse:3.5 db:-6 fade:8
+@hybrid drone_high carrier:155 beat:3 pulse:4.5 db:-3 fade:8
+@pulseborder yellow hz:0.5
+This is the edge.
+
+@pulseborder purple hz:0.5
+@subliminals opacity:0.25 empty hollow vessel puppet light nothing no one
+@spiral color:#FFFFFF opacity:0.2 speed:0.25 fade:1
+And the edge is different when you're empty. It's not desperate. It's not aching. It's... open. A door. Not toward release but toward more emptiness. Deeper hollows. Wider spaces. The edge is an invitation to let go of even more. The last thing. The thing you didn't know you were still holding.
+
+@wpm 300
+Feel it. The last string. The one that connects you to the idea that you are a person having an experience. The idea that there is a subject and an object. A feeler and a felt. That separation. That final distinction.
+
+@wpm 350
+What if that string released too?
+
+@hybrid drone_mid carrier:78 beat:2 pulse:3 db:-7 fade:0.3
+@hybrid drone_high carrier:148 beat:3 pulse:4 db:-4 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:3000 word:Cut.
+
+@wpm 100
+@pulseborder off fade:1
+@spiral off fade:3
+Still.
+
+@pause duration:5000
+
+@wpm 120
+There is no puppet.
+
+There is no string.
+
+There is no hand.
+
+@pause duration:3000
+
+There is just this.
+
+@pause duration:3000
+
+@snap duration:1500 word:Light.
+
+@wpm 150
+@subliminals off
+And now. Slowly. Gently. Like dawn.
+
+Something returns. Not forced. Not grabbed. Just... arriving. Like the first bird of morning. A thought. Small. Simple. Without urgency.
+
+And another.
+
+And a sensation. Fingertips. Temperature. Weight against the chair.
+
+@wpm 180
+And the name. Drifting back. Not the same as when it left. Thinner. Lighter. Worn smooth by the absence. But yours. Still yours.
+
+@wpm 200
+@hybrid drone_low carrier:50 beat:1.5 pulse:3.5 db:-10 fade:5
+@hybrid drone_mid carrier:75 beat:2 pulse:4 db:-8 fade:5
+@hybrid drone_high carrier:150 beat:3 pulse:5 db:-4 fade:5
+The strings reattach. One by one. Plans return. Opinions flicker back on. The world fills in around the edges. But the shape of you has changed. Not permanently. Not irreversibly. But there is a memory now. Of what it felt like to be nothing. To fly.
+
+And you can go back there. Whenever the weight gets heavy. Whenever the strings pull too tight. You know the way now. You know what to release. You know the sequence.
+
+Opinions. Plans. Name. Self.
+
+And what's left is the lightest thing in the world.
+
+@pulseborder red hz:0.75
+@wpm 150
+The strings are yours again. All of them. Every one. You're a person with a name and plans and opinions and a body that wants things and a mind that evaluates.
+
+But underneath all of that, in the quiet place where the puppet lives, there is a memory of flight. And it will call to you. Softly. Patiently. Whenever you're ready to be nothing again.
+
+@hybrid drone_low off fade:8
+@hybrid drone_mid off fade:8
+@hybrid drone_high off fade:8
+@pulseborder off fade:5
+
+@wpm 150
+The strings are yours. For now.
+
+@snap duration:2000 word:Light.

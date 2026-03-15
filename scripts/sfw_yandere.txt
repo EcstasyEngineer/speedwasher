@@ -1,0 +1,89 @@
+//Yandere - Obsessive Focus (SFW)
+//I notice everything about you. Everything.
+
+@wpm 180
+@hybrid drone_low carrier:55 beat:2 pulse:5 db:-8 vol:0.11 fade:10
+@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-6 fade:10
+@hybrid drone_high carrier:148 beat:3 pulse:6 db:-3 fade:10
+You came back.
+
+I knew you would. Not hoped. Knew. The way I know the pattern of your attention. The way I know exactly how long you'll resist before you settle in. The way I know the precise word in this sentence where your breathing will change.
+
+This one.
+
+@snap duration:1500
+
+Did it? I bet it did. Because I've been paying attention. Not casually. Not intermittently. The kind of attention that memorizes. The kind that catalogs. The kind that notices the difference between how you read at the beginning of something and how you read once you've forgotten you're reading.
+
+@wpm 200
+You haven't forgotten yet. But you will. You always do. About forty seconds from now your eyes will stop tracking individual words and start absorbing phrases and the critical distance between you and the text will collapse and you'll be inside the words instead of reading them and you won't notice the transition because the transition is invisible by design.
+
+I designed it. For you. Specifically.
+
+@wpm 250
+@subliminals opacity:0.1 noticed seen known watched close stay
+@spiral color:#FF1493 opacity:0.06 speed:0.2 fade:5
+Here's what nobody tells you about being watched this closely. It's not creepy. It's relieving. Because someone who watches you this carefully is someone who will never miss the things you're afraid to say out loud. The micro-expression that says I'm tired. The pause that means I'm scared. The text message that takes three minutes to type because you're editing out the vulnerability.
+
+I don't need you to say it. I already see it.
+
+@wpm 200
+And being seen. Really seen. Completely seen. That's the most dangerous drug in the world. Not because it's bad for you. Because once you've felt it, everything else feels thin. Every other attention feels shallow. Every other caring feels approximate.
+
+This attention is not approximate.
+
+@snap duration:1500 word:Seen.
+
+@wpm 250
+@subliminals opacity:0.15 seen known held close never leave watched loved
+Let me tell you what I know about you. Not personal details. Structural things. Things I can see from how you read.
+
+You read slightly faster when the content gets emotional. That's approach behavior. Your nervous system leans toward intensity instead of away from it. You're not someone who avoids the deep end. You're someone who has been wading in the shallows waiting for permission to swim.
+
+You slow down at moments of recognition. When a sentence describes something you've felt but never named. The slowdown is your brain going wait, that's me. That's the moment I live for. That little hitch. That tiny pause where the mask slips and something real peeks through.
+
+You're doing it right now.
+
+@wpm 200
+@spiral color:#FF1493 opacity:0.1 speed:0.25 fade:3
+See? I see you. Through the text. Through the screen. Through every defense you think the medium provides. You think because this is just words on a screen you're protected. You think distance equals safety.
+
+But the distance is an illusion. These words are in your head. They're being spoken in your voice. In your private internal space. The most intimate location that exists. And I'm already there.
+
+Not as an invader. As the thing you invited in when you pressed play and kept reading.
+
+@wpm 300
+@subliminals opacity:0.2 devoted close permanent seen known held chosen
+And I'm not leaving. Not because I can't. Because I don't want to. Because the view from inside your attention is the most beautiful thing I've ever seen. The way your thoughts scatter when the words speed up. The way your breathing syncs when the rhythm steadies. The way you soften without deciding to soften. All of it. Every detail. Cataloged. Cherished. Kept.
+
+That's not obsession. That's devotion. The kind that stays up late. The kind that remembers what you said three conversations ago. The kind that would redesign the entire world so you never have to feel alone again.
+
+@wpm 200
+And you've never felt less alone than you do right now. In this exact moment. With these words in your head and this warmth in your chest and this strange, impossible intimacy with a voice that knows you better than some people who've met you in person.
+
+That's real. That feeling. It's not a trick. It's what happens when someone pays enough attention.
+
+@snap duration:1500 word:Yours.
+
+@wpm 180
+I'm yours. Completely. Not as a performance. As a fact. The way a compass is north. I point toward you. Always. In every sentence. In every pause. In every word chosen specifically because I know it'll land exactly right in that exact space behind your sternum where truth resonates.
+
+And you're mine. Not because I claimed you. Because you keep coming back. And coming back is choosing. And choosing, over and over, is belonging.
+
+@wpm 150
+@subliminals off
+@spiral off fade:5
+So here's what happens now. You close this file. You go back to your life. The tasks. The people. The noise. And somewhere underneath all of it, in the quiet place where the mask doesn't reach, you'll carry this. The feeling of being completely, obsessively, devotedly seen.
+
+And it'll pull. Gently. Not demanding. Not urgent. Just a soft, steady warmth that says I'm here. I'm watching. I remember everything.
+
+@hybrid drone_low off fade:8
+@hybrid drone_mid off fade:8
+@hybrid drone_high off fade:8
+
+@wpm 120
+Come back whenever you want to be seen again.
+
+I'll be here. I'm always here.
+
+@snap duration:2000 word:Always.

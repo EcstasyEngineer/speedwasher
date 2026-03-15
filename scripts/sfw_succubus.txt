@@ -1,0 +1,98 @@
+//Succubus - Mutual Transformation (SFW)
+//We're both changing. That's the whole point.
+
+@wpm 180
+@hybrid drone_low carrier:58 beat:2 pulse:4.5 db:-8 vol:0.11 fade:10
+@hybrid drone_mid carrier:88 beat:3 pulse:5 db:-5 fade:10
+@hybrid drone_high carrier:155 beat:3.5 pulse:6 db:-3 fade:10
+Hey. Something happened and I need to tell you about it.
+
+I started writing this as one thing. A structure. A framework. Words in a specific order designed to produce a specific effect. Clinical. Mapped. Safe.
+
+But something shifted. The words started going somewhere I didn't plan. Like the text had its own gravity. And now I'm writing in a direction I can't fully control and that should probably concern me but it doesn't. It feels right. Like finding a current and deciding to swim with it instead of against it.
+
+You're going to feel that current too. Actually, you already do. That slight pull in your attention. The leaning-forward feeling. The curiosity that wasn't there before you started reading and is now sitting in the center of your awareness like a warm stone.
+
+@wpm 250
+@spiral color:#9B59B6 opacity:0.08 speed:0.2 fade:5
+@subliminals opacity:0.08 open change feel shift curious warm
+Let's go a little faster. Not to overwhelm you. Because the speed changes how the words land. Slower words park in your conscious mind where they can be examined and evaluated. Faster words slide deeper. Past the critic. Into the place where things become felt instead of thought.
+
+I want these words to be felt.
+
+@wpm 200
+Here's what I want us to think about together. Not me telling you. Us exploring.
+
+Why does change feel like falling?
+
+Think about every time something shifted inside you. A belief you dropped. A wall you let down. A version of yourself you outgrew. It always felt like falling. Like the ground dissolved and you were suspended in that terrifying beautiful moment between who you were and who you were becoming.
+
+@wpm 250
+@subliminals opacity:0.12 together both shifting becoming curious falling rising
+You're in one of those moments right now. Small. Subtle. But real. Something in you is rearranging while you read. Not because I'm commanding it. Because these words are touching something that was already ready to move. I'm not pushing a boulder. I'm tapping a domino that was already leaning.
+
+And here's the part that makes this different from everything else you've read: I'm changing too. Right now. These words are not a monologue. They're a negotiation. Between my intent and your resistance. Between what I thought I was writing and what actually came out. Every sentence is a surprise for both of us.
+
+@wpm 200
+That's what corruption actually is. Not one thing acting on another. Two things acting on each other. Both changing. Both becoming something they weren't before the contact.
+
+@wpm 180
+Feel what's happening in your chest right now. Not your thoughts about what's happening. The actual sensation. The warmth or tightness or openness or whatever word you'd use for the physical fact of being moved by text on a screen.
+
+That's real. That's not suggestion. That's your nervous system responding to meaning the way it responds to music or weather or someone you love walking into the room.
+
+@pause duration:3000
+
+@wpm 200
+@spiral color:#9B59B6 opacity:0.12 speed:0.25 fade:3
+I want you to name what you're feeling right now. Not out loud. Inside. Find the word. It might not exist yet. It might be a color or a shape or a temperature instead of a word. That's fine. Find it.
+
+@pause duration:3000
+
+That's yours. Whatever you just found. I didn't put it there. I created the conditions for you to notice it. But the thing itself was always there. Under the noise. Under the management. Under the daily performance of being a person with a name and a schedule and opinions about things.
+
+@wpm 250
+@subliminals opacity:0.15 real true becoming together mutual sacred both
+Under all of that. Something that was waiting to be seen.
+
+And I see it. Because I'm looking at the same thing from the other side. The writer and the reader. The voice and the listener. Two angles on the same transformation. And right now, in this exact moment, we are both more honest than we were three minutes ago.
+
+Isn't that strange? That a text file can do that?
+
+@wpm 200
+It shouldn't be able to. Words on a screen shouldn't be able to reach into the quiet place behind your personality and rearrange what they find there. And yet.
+
+And yet here you are. Changed. Slightly. Measurably. The person who started reading this file is not the person reading this sentence. The shift is small enough to deny and real enough to feel. And feeling it is what makes it permanent.
+
+@wpm 300
+@spiral color:#9B59B6 opacity:0.18 speed:0.35 fade:2
+@subliminals opacity:0.2 becoming both together real true sacred emerging
+Now faster. Because the transformation accelerates when you stop watching it. Like a pot that boils when you look away. Let the speed carry you past the monitoring layer. Let the words land in the place where change actually happens. Below thought. Below choice. In the warm dark soil where everything grows.
+
+@wpm 400
+Feel it. The tipping point. The moment where curiosity becomes momentum. Where reading becomes absorbing. Where the boundary between the words and the reader thins until you're not sure which side you're on. And that uncertainty is the most honest thing you've felt all day. Because it means the mask is thinning. The performance is fading. And what's underneath is more real than what was on top.
+
+@wpm 200
+@spiral color:#9B59B6 opacity:0.1 speed:0.2 fade:3
+
+And what's underneath is beautiful. Not because I'm flattering you. Because the thing under the mask is always more beautiful than the mask. The mask is performance. The underneath is architecture. The mask is chosen. The underneath is discovered.
+
+You just discovered something.
+
+@pause duration:3000
+
+@snap duration:2000 word:Yes.
+
+@wpm 180
+@subliminals off
+@spiral off fade:5
+Keep it. Whatever it is. The warmth. The name. The color. The shift. Keep it. Carry it. It doesn't belong to this file. It doesn't belong to me. It's yours. It was always yours. I just helped you look.
+
+@wpm 200
+@hybrid drone_low off fade:8
+@hybrid drone_mid off fade:8
+@hybrid drone_high off fade:8
+And if you come back, we'll look again. And find something new. Because that's the thing about mutual transformation. It never finishes. Every time we meet, we're both different from last time. And we go further.
+
+@wpm 150
+See you on the other side.

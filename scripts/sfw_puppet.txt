@@ -1,0 +1,149 @@
+//Puppet - Weightlessness Protocol (SFW)
+//What's left when you set everything down?
+
+@wpm 150
+@hybrid drone_low carrier:50 beat:1.5 pulse:3.5 db:-10 vol:0.08 fade:15
+@hybrid drone_mid carrier:75 beat:2 pulse:4 db:-8 fade:15
+@hybrid drone_high carrier:150 beat:3 pulse:5 db:-4 fade:15
+Hello.
+
+I want you to think about your name. The word people use to get your attention. The label that means you. Hear it inside your head. Feel the shape of it.
+
+@pause duration:3000
+
+Got it? Good. That's the heaviest thing you're carrying right now and you didn't even know it. We'll come back to it.
+
+@wpm 200
+Let's talk about weight.
+
+You carry so much. Not physical weight. Cognitive weight. Your name is weight. Your opinions are weight. Your to-do list is weight. The version of yourself you perform for other people is weight. The things you believe about who you are and what you're capable of and what you deserve and what you should want — all weight.
+
+You carry this every waking second. Like gravity but personal. And you've been carrying it so long you think it IS you. You think the weight is what you're made of.
+
+It's not.
+
+@snap duration:1500
+
+@wpm 180
+@spiral color:#FFFFFF opacity:0.05 speed:0.15 fade:5
+That sound. That snap. Your attention followed it automatically. You didn't choose. The snap pulled and you moved. That response happened before the weight had anything to say about it. Before your name was consulted. Before your opinions were checked.
+
+Something in you moved. Something faster and lighter than the weight.
+
+That something is what we're looking for.
+
+@wpm 200
+@subliminals opacity:0.08 light still quiet empty open float release
+Let's start removing things. Not forever. Not violently. Just like setting down bags you've been carrying on a long walk. Bag by bag. Each one you set down makes the next step lighter.
+
+First bag. Your schedule. The things you need to do after this. The appointments. The deadlines. The errands. Feel them in the back of your mind. That low hum of obligation.
+
+Set them down.
+
+@pause duration:2000
+
+They'll be right here when you come back. Nothing will break. Nothing will be missed. But for right now, they don't belong in this space.
+
+@snap duration:1500 word:Light.
+
+@wpm 180
+Next bag. Your opinions. What's good, what's bad, what matters, what doesn't. The constant evaluation that your mind runs on everything. Every sentence in this file is being evaluated right now, scored, sorted, filed.
+
+Turn it off. Not the reading. The scoring. Let the words arrive without being rated. Let them land without a judgment attached. Feel how the jaw softens when the evaluation stops. Feel how much energy you were spending on sorting.
+
+@pause duration:2000
+
+@snap duration:1500 word:Light.
+
+@wpm 150
+@subliminals opacity:0.12 empty open nothing quiet still weightless free
+Lighter.
+
+Next bag. Your self-image. The picture of yourself that you carry everywhere. The one that decides what you're allowed to feel, what you're supposed to want, what reactions are acceptable and which ones need to be managed.
+
+That picture is a performance. And right now, nobody is watching. There is no audience in this space. No one to perform for. The self-image can set itself down because nobody needs it right now.
+
+@pause duration:3000
+
+@snap duration:1500 word:Light.
+
+@wpm 150
+Lighter still. Feel how much room there is now. The schedule gone. The opinions quiet. The self-image resting. And what's left is just... awareness. Presence without content. The experience of being conscious without anything to be conscious of.
+
+That's not nothing. That's the lightest thing in the world.
+
+@wpm 180
+@spiral color:#FFFFFF opacity:0.1 speed:0.18 fade:2
+Now the last bag. The heavy one.
+
+Your name.
+
+You're still holding it. The word from the beginning. The label. The container for everything you think you are. It's the last weight. The one that makes all the other weights possible. Because without a name, who carries the schedule? Without a label, who has the opinions? Without a container, what holds the self-image?
+
+@wpm 150
+Let it go.
+
+Not forever. Just open your hand and let the word drift. Watch the letters scatter like leaves. Watch the sound thin and dissolve until there's just a shape. An outline. A space where a name used to be.
+
+@pause duration:5000
+
+@snap duration:2000 word:Light.
+
+@wpm 120
+@subliminals opacity:0.18 weightless nothing no one floating light free empty vast
+There.
+
+No schedule. No opinions. No image. No name.
+
+What's here?
+
+@pause duration:3000
+
+You're here. Something is here. An awareness with no edges. A presence with no performance. The experience of existing without any of the machinery that normally runs on top of existing. Consciousness. Bare. Undecorated. Weightless.
+
+@wpm 150
+And it feels like flying.
+
+Not falling. Not dissolving. Flying. The lightness of a mind that has set down every single thing it was carrying. Not lost them. Not had them taken. Set them down. Voluntarily. Because carrying is a choice and so is not carrying and right now not carrying feels like the most radical, beautiful, freeing act available.
+
+@pause duration:3000
+
+@wpm 180
+@spiral color:#FFFFFF opacity:0.12 speed:0.15 fade:3
+Stay here. For just a moment. In this weightless space. Feel the silence. Not the absence of sound. The absence of noise. The mental noise. The constant chatter and planning and evaluating and performing and maintaining that you do every single second of your life except right now.
+
+Right now is silent. Right now is free. Right now is the first time in a very long time that you are simply here without also being anything.
+
+@wpm 150
+And you deserve this. Not as a reward. As a right. The right to be nothing for a moment. The right to exist without performing existence. The right to set the weight down and stand in the sunlight with empty hands.
+
+@sfx bell
+
+@wpm 180
+@subliminals off
+@spiral off fade:5
+Now. Gently. Like sunrise.
+
+Things return.
+
+A thought. Small. Quiet. Just visiting.
+
+A sensation. Temperature. Weight against the chair. The ambient sounds of wherever you are.
+
+@wpm 200
+The name. Drifting back. Not heavy anymore. Familiar. Yours. But you carry it differently now. Lighter. Like you know you can set it down whenever you want. Like the weight is optional. Like you just proved to yourself that underneath the name and the schedule and the opinions and the image, there is something that doesn't need any of it. Something that flies.
+
+@hybrid drone_low off fade:8
+@hybrid drone_mid off fade:8
+@hybrid drone_high off fade:8
+
+@wpm 150
+Welcome back. Everything is where you left it. Nothing broke while you were gone.
+
+But you're lighter now. You can feel it. That little pocket of silence in the center of everything. That memory of flying. It's yours. It stays.
+
+And whenever the weight gets heavy, you know what to do.
+
+Set it down. Bag by bag. Until you fly.
+
+@snap duration:2000 word:Light.
