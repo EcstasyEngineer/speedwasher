@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (params.action === 'off') {
                 spiral.stop(params.fade);
             } else {
-                spiral.start(params.color, params.opacity, params.speed, params.fade);
+                spiral.start(params.colors || params.color, params.opacity, params.speed, params.fade);
             }
         },
         onSubliminals: (args) => {

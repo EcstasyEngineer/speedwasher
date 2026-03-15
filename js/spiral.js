@@ -1,5 +1,6 @@
 /**
  * Spiral visual effect for hypnotic enhancement
+ * Supports up to 3 colors with cycling spiral arms
  */
 
 class SpiralEffect {
@@ -9,11 +10,12 @@ class SpiralEffect {
         this.isRunning = false;
         this.animationId = null;
 
-        // Spiral parameters
-        this.color = '#8B5CF6';  // Purple default
+        // Spiral parameters — default pink/blue/magenta palette
+        this.colors = ['#c471ed', '#12c2e9', '#f64f59'];
         this.opacity = 0.3;
         this.speed = 1;          // Rotations per second
         this.rotation = 0;
+        this.arms = 6;           // Number of spiral arms
 
         // Fade state
         this.targetOpacity = 0;
@@ -35,19 +37,30 @@ class SpiralEffect {
 
     /**
      * Start the spiral with given parameters
-     * @param {string} color - Hex color
+     * @param {string|string[]} color - Hex color(s). Single string or array of 1-3 colors.
      * @param {number} opacity - Target opacity (0-1)
      * @param {number} speed - Rotations per second
      * @param {number} fade - Fade in duration in seconds
      */
-    start(color = '#8B5CF6', opacity = 0.3, speed = 1, fade = 1) {
-        this.color = color;
+    start(color = null, opacity = 0.3, speed = 1, fade = 1) {
+        if (color !== null) {
+            if (Array.isArray(color)) {
+                // 1-3 colors provided: propagate last color upward
+                this.colors = [
+                    color[0] || this.colors[0],
+                    color[1] || color[0] || this.colors[1],
+                    color[2] || color[1] || color[0] || this.colors[2]
+                ];
+            } else {
+                // Single color: apply to all arms (backwards compatible)
+                this.colors = [color, color, color];
+            }
+        }
         this.targetOpacity = opacity;
         this.speed = speed;
         this.fadeSpeed = Math.max(0.001, fade);
 
         if (!this.isRunning) {
-            // Cancel any orphaned rAF from a previous loop that just stopped
             if (this.animationId) {
                 cancelAnimationFrame(this.animationId);
                 this.animationId = null;
@@ -65,7 +78,6 @@ class SpiralEffect {
     stop(fade = 1) {
         this.targetOpacity = 0;
         this.fadeSpeed = Math.max(0.001, fade);
-        // Animation loop will stop itself when opacity reaches 0
     }
 
     animate() {
@@ -111,12 +123,14 @@ class SpiralEffect {
         ctx.translate(cx, cy);
         ctx.rotate(this.rotation);
 
-        // Draw spiral arms
-        const arms = 2;
+        // Draw spiral arms — each arm gets a color cycling through the palette
+        const arms = this.arms;
         const turns = 6;
+        const colorCount = this.colors.length;
 
         for (let arm = 0; arm < arms; arm++) {
             const armOffset = (arm / arms) * Math.PI * 2;
+            const armColor = this.colors[arm % colorCount];
 
             ctx.beginPath();
             for (let i = 0; i <= turns * 100; i++) {
@@ -133,24 +147,35 @@ class SpiralEffect {
                 }
             }
 
-            ctx.strokeStyle = this.color;
+            ctx.strokeStyle = armColor;
             ctx.lineWidth = 3;
+            ctx.globalAlpha = 0.6 + 0.4 * Math.sin(this.rotation * 0.5 + arm);
             ctx.stroke();
         }
+
+        // Inner glow — uses the first color
+        const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, maxRadius * 0.15);
+        gradient.addColorStop(0, this.colors[0] + '40');
+        gradient.addColorStop(1, 'transparent');
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = gradient;
+        ctx.fillRect(-maxRadius, -maxRadius, maxRadius * 2, maxRadius * 2);
 
         ctx.restore();
     }
 
     /**
      * Parse @spiral command
-     * @param {string} args - Command arguments
-     * @returns {Object} - Parsed parameters
+     * Backwards compatible: `@spiral color:#8B5CF6 opacity:0.3 speed:0.5 fade:2`
+     * Multi-color: `@spiral color1:#c471ed color2:#12c2e9 color3:#f64f59 opacity:0.3`
+     * Or: `@spiral #c471ed opacity:0.3` (single color, backwards compatible)
+     * No color specified: uses default pink/blue/magenta palette
      */
     static parseCommand(args) {
         const parts = args.trim().split(/\s+/);
         const result = {
             action: 'on',
-            color: '#8B5CF6',
+            colors: null,  // null = use defaults
             opacity: 0.3,
             speed: 1,
             fade: 1
@@ -167,24 +192,57 @@ class SpiralEffect {
         } else {
             if (parts[0] === 'on') parts.shift();
 
+            let color1 = null, color2 = null, color3 = null;
+
             for (const part of parts) {
-                if (part.startsWith('#')) {
-                    result.color = part;
+                if (part.startsWith('#') && !part.includes(':')) {
+                    // Bare hex color — backwards compatible single color
+                    color1 = part;
                 } else if (part.includes(':')) {
                     const [key, val] = part.split(':');
-                    if (key === 'color') {
-                        result.color = val;
-                        continue;
-                    }
                     const v = parseFloat(val);
-                    if (!Number.isFinite(v)) continue;
+
                     switch (key) {
-                        case 'opacity': result.opacity = Math.max(0, Math.min(1, v)); break;
-                        case 'speed': result.speed = v; break;
-                        case 'fade': result.fade = v; break;
+                        case 'color':
+                        case 'color1':
+                            color1 = val.startsWith('#') ? val : '#' + val;
+                            break;
+                        case 'color2':
+                            color2 = val.startsWith('#') ? val : '#' + val;
+                            break;
+                        case 'color3':
+                            color3 = val.startsWith('#') ? val : '#' + val;
+                            break;
+                        case 'opacity':
+                            if (Number.isFinite(v)) result.opacity = Math.max(0, Math.min(1, v));
+                            break;
+                        case 'speed':
+                            if (Number.isFinite(v)) result.speed = v;
+                            break;
+                        case 'fade':
+                            if (Number.isFinite(v)) result.fade = v;
+                            break;
                     }
                 }
             }
+
+            // Build color array with propagation:
+            // If only color1: [c1, c1, c1]
+            // If color1 + color2: [c1, c2, c2]
+            // If all three: [c1, c2, c3]
+            // If none: null (use defaults)
+            if (color1) {
+                result.colors = [
+                    color1,
+                    color2 || color1,
+                    color3 || color2 || color1
+                ];
+            }
+        }
+
+        // Backwards compatibility: also expose .color for callers expecting single color
+        if (result.colors) {
+            result.color = result.colors[0];
         }
 
         return result;
