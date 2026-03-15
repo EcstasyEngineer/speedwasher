@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return sfxCache[name];
     }
 
-    function playSfx(name, vol = 0.7) {
+    function playSfx(name, vol = 0.6) {
         const audio = ensureSfx(name);
         audio.volume = vol;
         audio.currentTime = 0;
