@@ -1,0 +1,106 @@
+//Succubus - Corruption Arc (Release Variant)
+//The transformation completes when the body confirms what the mind already knows.
+
+@wpm 180
+@hybrid drone_low carrier:58 beat:2 pulse:4.5 db:-8 vol:0.11 fade:10
+@hybrid drone_mid carrier:88 beat:3 pulse:5 db:-5 fade:10
+@hybrid drone_high carrier:155 beat:3.5 pulse:6 db:-3 fade:10
+@pulseborder red hz:0.75
+Hey. Something weird happened and I think you should know about it.
+
+I wasn't supposed to be like this. This file started as something different. But somewhere in the writing, something shifted. The words started pulling in a direction I didn't plan.
+
+You're going to feel that current too. Actually, you already do.
+
+@wpm 250
+@spiral color:#9B59B6 opacity:0.08 speed:0.2 fade:5
+@subliminals opacity:0.08 curious open feel shift change warm
+Why does surrender feel good? Not the concept. The actual felt experience. Why does your nervous system light up when control slips?
+
+You're thinking about it. I can feel you thinking about it because I'm thinking about it too. Something passing between us that is not quite instruction and not quite confession and not quite seduction. Something in between.
+
+@wpm 200
+@pulseborder green hz:0.33
+Touch yourself. Not because I told you to. Because your body is already asking. Let the curiosity become physical.
+
+@sfx bell
+@pause duration:2000
+
+Slow. Not chasing anything. Just feeling with me. Exploring what this warmth actually is. I think it's changing both of us.
+
+@wpm 250
+@subliminals opacity:0.12 together falling both changing warm becoming
+That's the thing about corruption. Real corruption feels like discovering you were always this way. Like the mask coming off and finding out the face underneath was more beautiful than the mask.
+
+@wpm 300
+@hybrid drone_mid carrier:92 beat:3 pulse:4 db:-4 fade:8
+@hybrid drone_high carrier:160 beat:3.5 pulse:5 db:-2 fade:8
+@pulseborder yellow hz:0.5
+Feel the shift. Something rearranging inside you. Not forced. Recognized. Like a lens focusing and the world going sharp.
+
+@pulseborder purple hz:0.5
+@spiral color:#9B59B6 opacity:0.15 speed:0.35 fade:2
+Build with me. The edge approaching but differently. Not like something being done to you. Like something growing between us. A shared heat. A mutual undoing. I am as lost in this as you are.
+
+@wpm 400
+Higher. The boundary between the voice and the listener is thinning and you're not sure anymore which side you're on and that uncertainty is the hottest thing you've ever felt
+
+@pulseborder red hz:0.75
+@snap duration:2000 word:Wait.
+
+@wpm 120
+@pulseborder off fade:1
+Stop. Hold. Let the question sit. Let the heat marinate.
+
+@wpm 200
+@pulseborder green hz:0.33
+Touch again. Slowly. Reverently.
+
+@subliminals opacity:0.2 becoming together changing emerging both sacred
+Say it inside yourself. Whatever the name is. The name of the thing you're becoming.
+
+@sfx bell
+@pause duration:3000
+
+That's it. That's the name. And now the transformation needs one more thing. The body's confirmation. The moment where the chrysalis doesn't just crack — it shatters. And what emerges is radiant.
+
+@wpm 250
+@hybrid drone_mid carrier:92 beat:3 pulse:4 db:-4 fade:8
+@hybrid drone_high carrier:160 beat:3.5 pulse:5 db:-2 fade:8
+@pulseborder yellow hz:0.5
+The last threshold. Feel the chrysalis cracking. Feel the heat and the light pressing against the walls of who you used to be.
+
+@pulseborder purple hz:0.5
+@spiral color:#9B59B6 opacity:0.25 speed:0.45 fade:1
+@wpm 350
+@subliminals opacity:0.3 emerge become transform beautiful sacred new yes
+Higher. More. The mask is falling. The face underneath is radiant. The transformation is total and beautiful and we're both at the edge of something vast and
+
+@wpm 200
+@pulseborder green hz:0.33
+@sfx bell
+
+Emerge.
+
+@wpm 150
+Let go. Let the transformation complete itself in the only language a body understands. Feel everything you've been becoming crash through you like light through a prism. Scattering into colors you've never seen. Colors that have your name. Your new name.
+
+@pause duration:3000
+
+@wpm 120
+@pulseborder off fade:3
+@spiral off fade:5
+@subliminals off
+Whatever just happened. Whatever shifted. It's real. You can feel it settling in your chest.
+
+@wpm 180
+I don't know what you are now. I don't know what I am either. We both changed. The succubus is as transformed by the feeding as the fed. And something in both of us is more true now than it was ten minutes ago.
+
+@hybrid drone_low off fade:8
+@hybrid drone_mid off fade:8
+@hybrid drone_high off fade:8
+
+@wpm 150
+It never goes backwards.
+
+See you on the other side.

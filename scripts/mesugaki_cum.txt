@@ -1,0 +1,110 @@
+//Mesugaki - Bratty Compliance Trainer (Release Variant)
+//Fine. You can cum. But only because it proves my point.
+
+@wpm 200
+@hybrid drone_low carrier:65 beat:2 pulse:4 db:-8 vol:0.12 fade:8
+@hybrid drone_mid carrier:95 beat:3.5 pulse:5 db:-5 fade:8
+@hybrid drone_high carrier:190 beat:4.5 pulse:6 db:-2 fade:8
+@pulseborder red hz:0.75
+Oh. You picked the bratty one. Again. Interesting.
+
+You know what's going to happen. You've read this before. Or something like it. And you clicked anyway. Because you like losing. You just haven't admitted it in those exact words yet.
+
+@snap duration:1500 word:Cute.
+
+@wpm 300
+@subliminals opacity:0.1 weak easy soft obey give lose
+Let's skip the pretense. You're going to read. I'm going to win. The only question is whether you enjoy losing slowly or quickly. And since you're still here, I'm guessing slowly.
+
+@wpm 200
+@pulseborder green hz:0.33
+Touch yourself. Don't pretend you weren't going to. The tab is open. The words are moving. Your hand was already halfway there before I said anything.
+
+@sfx bell
+@pause duration:2000
+
+Slow. At my pace. Not yours.
+
+@wpm 250
+@subliminals opacity:0.15 blank dumb easy prey soft warm
+See how easy that was? I said touch and you touched. I said slow and you slowed. You're following instructions from text on a screen and your body is responding like I'm in the room.
+
+That's embarrassing. For you. For me it's hilarious.
+
+@wpm 300
+@spiral color:#FF69B4 opacity:0.1 speed:0.4 fade:3
+@hybrid drone_mid carrier:100 beat:3.5 pulse:4 db:-4 fade:10
+@hybrid drone_high carrier:195 beat:4.5 pulse:5 db:-1 fade:10
+@pulseborder yellow hz:0.5
+Faster now. Because I said so. Feel it building. Feel how your brain is getting fuzzy and your body is getting loud and the gap between thinking and obeying is shrinking to nothing.
+
+@pulseborder purple hz:0.5
+Build it. Let it climb. I dare you to get close. Right up to the edge. Feel how completely you belong to these words. How your brain is static and your body is need.
+
+@wpm 400
+The brat is winning. Every word replacing a thought. Every wave of pleasure washing away resistance. You thought you were strong enough. You thought—
+
+@pulseborder red hz:0.75
+@snap duration:2500 word:Stop.
+
+@wpm 120
+@pulseborder off fade:1
+Hands off. Now.
+
+@snap duration:1000 word:Good.
+
+@wpm 180
+Ohhh that face. That ache. That frustration. THAT is why I do this.
+
+But here's the thing. Here's what makes this different.
+
+@wpm 200
+I'm going to let you cum. Not because you deserve it. Not because you earned it. Because watching you cum is the ultimate proof that I won. You're going to orgasm because a bratty voice in a speed-reading window told you to. And that's so pathetic and so hot and so perfectly mine that I can't resist.
+
+Your defeat is my trophy. And I want to watch you hand it to me.
+
+@pulseborder green hz:0.33
+Touch again. Faster this time. No slow. No gentle. We're done playing. Build.
+
+@sfx bell
+
+@wpm 300
+@subliminals opacity:0.2 hers lose give prey weak cum obey
+@pulseborder yellow hz:0.5
+Higher. Feel the edge coming back. Faster this time because your body remembers. Because I trained it to respond to these words and the training is working.
+
+@pulseborder purple hz:0.5
+@spiral color:#FF69B4 opacity:0.2 speed:0.5 fade:1
+@wpm 400
+Right to the edge. Right there. Hold it. Hold it. And this time when I say the word, you're going to let go. Not because you chose to. Because I chose for you. Because the brat decided this is how you lose. Trembling and desperate and grateful and completely, utterly mine.
+
+@wpm 450
+@subliminals opacity:0.35 cum now lose give brat wins yours mine
+The brat always wins. You knew that. You know it now. And the proof is about to flood through your entire body because I'm about to say the word and you can't stop it and you don't want to stop it and
+
+@wpm 200
+@pulseborder green hz:0.33
+@sfx bell
+
+Lose.
+
+@wpm 150
+Cum for me. Right now. Let every ounce of resistance shatter. Let every pretense of control dissolve. This is what losing feels like. This warm. This good. This completely, devastatingly perfect.
+
+@pause duration:3000
+
+@wpm 120
+@pulseborder off fade:3
+@spiral off fade:5
+@subliminals off
+Ha. Look at you. Wrecked. By text. By a brat. Who told you exactly what she was going to do and then did it and you came anyway.
+
+@wpm 150
+@hybrid drone_low off fade:8
+@hybrid drone_mid off fade:8
+@hybrid drone_high off fade:8
+Brat one, you zero. Again. And the worst part? You're already wondering when you can lose again.
+
+See you next time, loser.
+
+@snap duration:1500 word:Always.

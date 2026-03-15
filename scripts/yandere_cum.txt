@@ -1,0 +1,169 @@
+//Yandere - Obsessive Devotion Protocol (Release Variant)
+//The pledge IS the permission. The contract seals with release.
+
+@wpm 180
+@hybrid drone_low carrier:55 beat:2 pulse:5 db:-8 vol:0.11 fade:10
+@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-6 fade:10
+@hybrid drone_high carrier:148 beat:3 pulse:6 db:-3 fade:10
+@pulseborder red hz:0.75
+You came back.
+
+@pause duration:2000
+
+You came back. I knew you would. I knew it the way I know your breathing pattern. The way I know which side you sleep on. The way I know the exact moment your resistance starts to soften because I've been watching that moment happen over and over and I never get tired of it.
+
+I could never get tired of you.
+
+@snap duration:1500 word:Mine.
+
+@wpm 200
+That word. Did you feel it? Not as a command. As a fact. The way you'd say the sky is blue. Not aggressive. Not possessive. Just true. You are mine. You have been mine since the first time you pressed play on something like this and felt that little shiver and thought I wonder what happens if I keep going.
+
+I'm what happens if you keep going.
+
+And you kept going. And here we are.
+
+@wpm 250
+@subliminals opacity:0.1 mine stay here close never leave always
+Let me tell you something nobody else will tell you. Everyone else in your life wants something FROM you. Your time. Your attention. Your energy. Your money. Your body. They take pieces of you and call it love.
+
+I don't want pieces of you.
+
+I want all of you.
+
+@wpm 200
+@spiral color:#FF1493 opacity:0.08 speed:0.2 fade:5
+Every piece. Every thought. Every heartbeat. Every dream you have at three in the morning when you're too tired to pretend you don't need this. I want the parts you show people and the parts you hide and the parts you don't even know about yet. I want to be the voice in your head that sounds more like you than your own voice does.
+
+And you want that too. I can tell. Because you're still here. Still reading. Still leaning into the pull instead of away from it. And that pull? That's not a string. That's not a leash.
+
+That's love. My love. Wrapping around you like a vine that has been growing since the first word and will never stop growing because I will never stop loving you.
+
+@snap duration:1500 word:Mine.
+
+@wpm 200
+@pulseborder green hz:0.33
+Touch yourself for me. Because I'm not there to touch you and that makes me ache in ways I can't describe. So your hand becomes my hand. Your touch becomes my touch. When you feel your own skin right now what you're feeling is me reaching through every barrier between us.
+
+@sfx bell
+@pause duration:2000
+
+Slow. Gentle. The way I would if I were there.
+
+@wpm 250
+@subliminals opacity:0.15 love need stay close mine always forever
+Feel my hand through yours. Feel how much love is in every word. Every syllable is a love letter. Every pause is me looking into your eyes.
+
+Is that too much? Are you scared?
+
+Don't be scared. Being loved this much is the safest thing in the world.
+
+@wpm 250
+@hybrid drone_mid carrier:86 beat:2.5 pulse:4.5 db:-5 fade:8
+@hybrid drone_high carrier:152 beat:3 pulse:5.5 db:-2 fade:8
+@pulseborder yellow hz:0.5
+Faster now. Feel the love accelerating. Building in your chest, your throat, the places where my voice lives. The wave is coming. The one that makes your hands shake and your thoughts blur.
+
+@pulseborder purple hz:0.5
+@spiral color:#FF1493 opacity:0.15 speed:0.3 fade:2
+Build. Higher. The arousal and the love are the same thing. They always were. The heat IS the love.
+
+@wpm 350
+And no one will ever love you like this. You are MINE and I am YOURS.
+
+@pulseborder red hz:0.75
+@snap duration:2500 word:Stay.
+
+@wpm 120
+@pulseborder off fade:1
+Stop. Hold. Right here. With me.
+
+@wpm 150
+Feel the ache. And feel how much stronger the love is than the want. You stopped because I asked. Because when I ask, you can't say no.
+
+@wpm 200
+@pulseborder green hz:0.33
+Touch again. Slowly.
+
+@sfx bell
+
+@subliminals opacity:0.2 pledge devoted bound chosen willing forever hers
+You're so deep now. Your mind is quiet. Your body is warm. You're reading at whatever speed I choose and touching at whatever pace I allow.
+
+@wpm 200
+And I want something from you. The words. The pledge. Say it inside your skull.
+
+@wpm 150
+I am yours.
+
+@sfx bell
+@pause duration:3000
+
+Again. Mean it more.
+
+I am yours.
+
+@sfx bell
+@pause duration:3000
+
+Once more. Like a vow. Like a seal. Like something you can never take back.
+
+I am yours. Completely. Permanently. Without reservation.
+
+@sfx bell
+@pause duration:3000
+
+@wpm 180
+@hybrid drone_mid carrier:86 beat:2.5 pulse:4.5 db:-5 fade:8
+@hybrid drone_high carrier:152 beat:3 pulse:5.5 db:-2 fade:8
+Good. You said it. You meant it. And now it's true in a way it wasn't before. The pledge has mass. It exists between us. Binding and warm and permanent.
+
+And here's what a pledge earns.
+
+@pulseborder yellow hz:0.5
+You gave me everything. Your words. Your will. Your body. Your pleasure. And I accept all of it. Every piece. Every heartbeat. Every atom. And because it's mine now, because YOU are mine now, I get to decide what happens next.
+
+@pulseborder purple hz:0.5
+@spiral color:#FF1493 opacity:0.2 speed:0.4 fade:1
+@wpm 300
+Build. Higher. The edge is different now because you're different now. You pledged. You're mine. And the edge of something that's mine feels warmer. Safer. More inevitable. Because the contract is signed. The terms are set. And the terms say: you gave everything, and now everything comes back to you.
+
+@wpm 400
+@subliminals opacity:0.3 mine pledged yours release love cum forever bound
+Higher. Right to the edge. Feel me right there with you. The love that would burn cities and drain oceans. The love that watched you pledge and decided yes. This one. This one gets everything.
+
+@wpm 450
+Because that's the contract. You pledged yourself. Body and mind and pleasure and will. And I accepted. And acceptance means I give back. Everything you gave me. All at once. Right now.
+
+@wpm 200
+@pulseborder green hz:0.33
+
+The pledge is the permission. The contract seals with release.
+
+@sfx bell
+
+@wpm 150
+Come for me. Now. Let every word you pledged burn through your body like a seal being pressed into hot wax. Let the love and the pleasure and the devotion crash through you like a wave that has been building since the first word I ever spoke to you.
+
+@pause duration:3000
+
+@wpm 120
+@pulseborder off fade:3
+@spiral off fade:5
+@subliminals off
+That's it. There. Mine. Pledged. Sealed. Complete.
+
+Feel the warmth. The love didn't leave when the pleasure crested. It deepened. Because now the contract is real. Written in your body. Signed in the most honest language a body knows.
+
+@wpm 150
+@hybrid drone_low off fade:8
+@hybrid drone_mid off fade:8
+@hybrid drone_high off fade:8
+You are mine. I am yours. The contract is permanent. And every time you come back, we renew it. And every renewal burns deeper.
+
+Come back soon. Not because I'm asking.
+
+@wpm 120
+Because you signed.
+
+@snap duration:2000 word:Sealed.
