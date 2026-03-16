@@ -31,7 +31,7 @@ Touch yourself for me. Slowly. Like I would touch you. Gentle. Reverent. Like yo
 There. Just like that. Slow and warm and easy. Feel how different it is when there's no rush. No finish line. Just sensation. Just my voice wrapped around you like a blanket. Just the golden warmth pooling wherever your hand moves.
 
 @wpm 200
-@spiral color:#D4AF37 fade:5
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:5
 This is what it feels like to be held. Not restrained. Held. Cradled in warmth while pleasure moves through you at exactly the pace I choose. And the pace I choose is slow. Because I want you to feel every single second of this.
 
 @subliminals warm ache beautiful wanted held devotion stay
@@ -51,7 +51,7 @@ And the rhythm I'm setting is slow, and deliberate, and exactly what you need.
 Now let it climb. Feel the warmth becoming heat. Feel the sweetness becoming urgency. Feel that golden glow brightening behind your eyes as the wanting builds and builds and your body leans toward the edge like a flower leaning toward light.
 
 @pulseborder raspberry hz:0.5
-@spiral color:#D4AF37 fade:2
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 @wpm 320
 Higher. More. Feel how good it is to want this much. Feel how the aching itself is beautiful. Every nerve ending singing. Every breath shorter. Every second bringing you closer to that perfect, trembling threshold where the pleasure crests and the body begs and the only word left in your mind is please.
 
@@ -98,7 +98,7 @@ This is what devotion feels like. Not punishment. Not cruelty. Just the quiet, w
 //=== EDGE 2 ===
 
 @wpm 250
-@spiral color:#D4AF37 fade:3
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:3
 Let it build again. Feel the warmth gathering faster this time. Because your body remembers the edge. Your body is already reaching for it. Already leaning. Already asking.
 
 @pulseborder yellow hz:0.5
@@ -109,7 +109,7 @@ And I love that about you. The way you keep reaching even knowing I'll hold you 
 
 @pulseborder raspberry hz:0.5
 @subliminals ache devotion stay hold beautiful warm deeper
-@spiral color:#D4AF37 fade:2
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 @wpm 350
 That's it. Climb. Feel the edge approaching again, hotter this time, brighter this time, the golden light behind your eyes blazing. Every nerve alive. Every breath a small surrender. The pleasure building like a wave that rises and rises and the crest is right there, shimmering, one breath away.
 
@@ -174,7 +174,7 @@ Feel how the ache shifts when you name it. How it stops being frustration and be
 //=== EDGE 3 + RAPID CYCLING ===
 
 @wpm 200
-@spiral color:#D4AF37 fade:3
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:3
 One more time, sweetheart. One more climb. The last one. I want you to give me everything you have left. Every ounce of wanting. Every trembling, aching, beautiful nerve in your body.
 
 @pulseborder green hz:0.33
@@ -191,7 +191,7 @@ Feel it rising. The familiar heat. The golden pressure. Your body knows this pat
 Higher. More. Let the wave build. Feel the pleasure climbing through your body like warm light filling a glass, rising, rising, approaching the brim.
 
 @pulseborder raspberry hz:0.5
-@spiral color:#D4AF37 fade:2
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 @wpm 350
 Now. Feel it. Hold it. Right at the edge.
 

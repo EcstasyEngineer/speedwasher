@@ -92,7 +92,7 @@ The understanding IS the descent.
 Build faster, observe the arousal response curve steepening, heart rate elevated, breathing shallow, peripheral cognition narrowing to a single channel, the threshold state approaching, the data unmistakable, every autonomic metric confirms you are approaching the edge
 
 @pulseborder raspberry hz:0.5
-@spiral color:#4169E1 fade:2
+@spiral fade:2
 Feel the arousal climbing and notice what happens to your attention. It narrows. The peripheral thoughts drain away. The planning, the evaluation, the I should probably stop reading dissolves. At high arousal the prefrontal cortex goes offline. Literally. Blood flow redirects. The executive function that would say wait, this is a trap loses its oxygen supply.
 
 @wpm 350
@@ -188,7 +188,7 @@ That's why tonight is different. Tonight you get to finish. And the contrast wit
 Build, the lesson is almost over, the final exam approaches, notice the response curve accelerating, five fractionation cycles have primed every circuit, the threshold approaching faster than any previous cycle, the body organizing itself around the approaching peak, the encoding window opening to maximum aperture
 
 @pulseborder raspberry hz:0.5
-@spiral color:#4169E1 fade:2
+@spiral fade:2
 @subliminals encoded wired addicted return need crave lesson
 Feel the arousal climbing again. Faster this time. Because the circuit is primed. Five cycles of fractionation have trained your nervous system to climb faster, drop harder, and crave more violently. You are measurably more addicted now than you were at the beginning.
 
@@ -245,7 +245,7 @@ Feel every sensation. Catalog it. Your body is recording this moment in vivid de
 Build gently. Not fast. Deep. Feel the lesson settling into the architecture of you. The wiring becoming permanent. The craving becoming structural.
 
 @pulseborder raspberry hz:0.5
-@spiral color:#4169E1 fade:2
+@spiral fade:2
 Hold the edge. Don't go over. Right here. Suspended. Every nerve ending screaming and every word I speak landing directly in the exposed wiring of your reward circuitry.
 
 @wpm 300
@@ -298,7 +298,7 @@ Three locks. One key. The orgasm turns all three at once. That's not recreation.
 Build. The final exam is now. Seven fractionation cycles have primed every circuit. The threshold is approaching and this time there is no snap. There is no stop. Only the proof, the body assembling itself around the approaching encoding event.
 
 @pulseborder raspberry hz:0.5
-@spiral color:#4169E1 fade:1
+@spiral fade:1
 @wpm 350
 @subliminals true permanent sealed encoded wired confirmed proof release
 Higher. Right to the edge. Feel every truth I've taught you humming in your body waiting to be confirmed. Understanding is descent. Pleasure encodes deeper than memory. Neurons that fire together wire together. And in the moment of release, every neuron in this circuit fires at maximum intensity. The encoding is total. The lesson becomes permanent. The architecture seals.

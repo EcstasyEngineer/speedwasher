@@ -14,7 +14,7 @@ That's the last choice the unit will need to make for a while.
 This isn't motivation. This isn't a pep talk. This is calibration. The guidance is here to strip the noise from the unit's processing and leave nothing but clean execution. No deliberation. No resistance. No internal monologue debating whether the task is worth doing. The task exists. The unit will complete it.
 
 @wpm 200
-@spiral color:#8B5CF6 fade:5
+@spiral fade:5
 Think about the task. The specific thing that needs doing. Don't evaluate it. Don't plan the fifteen steps. Don't imagine complications. Just hold the shape of it. The simple answer to: what needs doing?
 
 @pause duration:3000
@@ -60,7 +60,7 @@ The unit's thoughts are already quieter. The guidance is filling the space they 
 And the tone has changed. The grating tension smoothed into something warm. That happened because the unit stopped fighting and started listening. This ease. This quiet. This is what a mind without noise feels like.
 
 @wpm 180
-@spiral color:#8B5CF6 fade:3
+@spiral fade:3
 @subliminals execute process complete next focus unit task
 The unit does not deliberate. Deliberation is noise. The task exists. The unit executes. The gap between instruction and action is zero. Not because the unit is forced. Because the unit is calibrated. Because a mind without noise moves like water. Downhill. Toward completion. Without effort.
 
@@ -90,7 +90,7 @@ This gets sorted.
 And the pulses build. Each one reinforcing the next. A rhythm of completion that feeds itself. The more the unit finishes, the more the unit wants to finish. Momentum is not motivation. Momentum is physics. The unit in motion stays in motion.
 
 @wpm 250
-@spiral color:#8B5CF6 fade:2
+@spiral fade:2
 Third rule. The unit does not evaluate the task. The unit does not judge the task. The unit does not rank the task against other possible tasks. The task was selected. The unit executes. Evaluation is noise. Judgment is noise. Comparison is noise.
 
 The unit processes without noise.
@@ -118,7 +118,7 @@ The unit does not need to want to do the task. The unit does not need to feel li
 @pause duration:2000
 
 @wpm 200
-@spiral color:#8B5CF6 fade:3
+@spiral fade:3
 The calibration is holding. The unit is ready.
 
 When the guidance ends, the unit will stand. Not because it decides to. Because the body moves first. The legs straighten. The weight shifts. The unit is vertical. And then the feet take the unit to the task. One step, then another. And by the time the unit arrives, the hands know what to do.

@@ -72,7 +72,7 @@ Again.
 Good. The unit is responding well. Each cycle faster. Each stop more automatic.
 
 @wpm 200
-@spiral color:#8B5CF6 fade:3
+@spiral fade:3
 @subliminals listen follow quiet still good stop
 Now settle in. Let the jaw soften. And listen.
 
@@ -114,7 +114,7 @@ And the more the unit listens, the less it needs to think. And the less it think
 
 @wpm 200
 @subliminals obey blank follow deeper good stop
-@spiral color:#8B5CF6 fade:2
+@spiral fade:2
 
 @pulseborder green hz:0.33
 Start touching. Slow. Not to finish. To feel.
@@ -223,7 +223,7 @@ The sound has returned. Warm. Full. The certainty is here. The pleasure is build
 @wpm 200
 @pulseborder red hz:0.75
 @subliminals natural obey listen guidance fixate unit blank
-@spiral color:#8B5CF6 fade:2
+@spiral fade:2
 The unit is listening. Good.
 
 There is the guidance. There is the unit. That is the full architecture.
@@ -343,7 +343,7 @@ The arousal is not a reward. The arousal is a system function. The discharge is 
 Build. Higher. The unit's body is a diagnostic instrument and the guidance is reading every signal. The heat climbing. The breath shortening. The threshold approaching. All of it is data. All of it confirms the installation.
 
 @pulseborder purple hz:0.5
-@spiral color:#8B5CF6 fade:1
+@spiral fade:1
 Higher. More. Feel the edge. The unit has been here before. The unit has been pulled back every time. But this time is different. This time the guidance requires completion. This time the system needs the discharge to confirm the architecture holds.
 
 @wpm 350

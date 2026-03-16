@@ -19,7 +19,7 @@ You've been running. I can tell. Running from task to task, obligation to obliga
 I see that. I see you. And I'm telling you: you can stop managing. Right now. Just for a little while. Because I've got it.
 
 @wpm 250
-@spiral color:#D4AF37 fade:5
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:5
 I've got you.
 
 That's not a metaphor. That's a structural statement. For the duration of these words, you don't need to decide anything. You don't need to monitor anything. You don't need to be ready for anything. The only thing you need to do is receive. Let the words arrive. Let them mean what they mean. Let the warmth do what it does.
@@ -51,7 +51,7 @@ Your body knows what safe feels like. It's the shoulders dropping. The jaw softe
 So let's go deeper. Not into trance. Not into anything with a name you need to evaluate. Just deeper into the quiet. Deeper into the warmth. Deeper into the version of you that exists underneath all the doing. The version that just... is.
 
 @wpm 200
-@spiral color:#D4AF37 fade:3
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:3
 You don't have to earn this. You don't have to deserve this. You don't have to do anything correctly to qualify for rest. You are allowed to feel good for no reason. You are allowed to be held without having to be brave first.
 
 That belief , that rest must be earned , is the heaviest thing you carry. And I'm asking you to set it down. Just for now. Just here. In this warm, golden, quiet space where the words come soft and the expectations are zero.
@@ -87,7 +87,7 @@ Finally someone is holding the weight.
 @pause duration:3000
 
 @wpm 150
-@spiral color:#D4AF37 fade:2
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 Stay here as long as you want. There's no timer. No deadline. No performance metric for relaxation. You can let the words wash over you or you can let the words blur and just feel the tone beneath them or you can drift somewhere between awake and asleep where the warmth pools and the thoughts thin and everything is slow and golden and unhurried.
 
 @wpm 180

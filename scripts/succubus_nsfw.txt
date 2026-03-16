@@ -42,7 +42,7 @@ Touch again. Slowly. Reverently. Like you're touching something sacred. Because 
 Still. Feel the ache. Feel how the giving and taking is already changing something between us.
 
 @wpm 200
-@spiral color:#9B59B6 fade:5
+@spiral fade:5
 @subliminals curious open feel shift change warm
 Now listen. There's this thing that happens when you read fast enough. The gap between the word arriving and the meaning landing gets shorter until they're the same event. No buffer. No analysis layer. The word goes in and becomes a feeling directly.
 
@@ -95,7 +95,7 @@ You're feeling it now. The shift. Something rearranging inside you. Not forced. 
 And it's happening to me too, we are both feeling this, the heat rising between us like something alive, both of us leaning into the same fire, both of us trembling at the same edge, feel how the hunger is mutual, how the warmth belongs to neither of us and both of us, rising together
 
 @pulseborder purple hz:0.5
-@spiral color:#9B59B6 fade:2
+@spiral fade:2
 Faster now. Build with me. Feel the edge approaching but feel it differently. Not like something being done to you. Like something growing between us. A shared heat. A mutual undoing. I am as lost in this as you are.
 
 @wpm 400
@@ -146,7 +146,7 @@ That's it. That's the name. That's what was waiting under everything.
 Now let it consume you, we are both at the edge now, both trembling, both becoming, the chrysalis cracking from inside, the shared heat rising past every threshold, the name pressing against who you were
 
 @pulseborder purple hz:0.5
-@spiral color:#9B59B6 fade:1
+@spiral fade:1
 Build. Higher. This isn't an edge. This is a threshold. The last wall between who you were and who you're becoming. Feel it. Feel the chrysalis cracking open. Feel the heat and the light and the unbearable beauty of transformation.
 
 @wpm 350

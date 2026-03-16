@@ -18,7 +18,7 @@ Your brain is wrong. No task is beneath you. And by the time we're done, you won
 @snap duration:1500 word:Serve.
 
 @wpm 250
-@spiral color:#FFFFFF fade:3
+@spiral fade:3
 Here is the first rule of service. The mind that serves does not deliberate. Deliberation is a luxury for people who have time to stand still. You are not standing still. You are in motion. The task exists. The task will be completed. The only question is how much mental noise you generate between now and completion.
 
 The answer is: none. Zero. We are going to strip the noise out and leave nothing but clean, efficient motion.
@@ -39,7 +39,7 @@ They don't exist right now. There is one task. There is you. There is the space 
 @snap duration:1500 word:Focus.
 
 @wpm 250
-@spiral color:#FFFFFF fade:2
+@spiral fade:2
 Second rule of service. The body moves first. The mind follows. Not the other way around. You have been trying to think your way into motivation. That doesn't work. Motivation is a byproduct of action, not a prerequisite for it.
 
 @wpm 200
@@ -61,7 +61,7 @@ The thinking is the resistance. The doing is effortless.
 Third rule. Completion is the reward. Not praise. Not recognition. Not checking it off a list, though that helps. The reward is the specific feeling , and you know this feeling , the clean, bright, quiet satisfaction that comes when a thing that needed doing has been done.
 
 @wpm 200
-@spiral color:#87CEEB fade:3
+@spiral fade:3
 Feel that now. In advance. The version of you who has already finished the task. The kitchen is clean. The laundry is folded. The desk is cleared. The emails are sent. Whatever it is. See the after. Feel the after. That lightness.
 
 @pause duration:3000
@@ -90,7 +90,7 @@ This gets folded. Done.
 And the chimes build. Each one adds to the last. A rhythm of completion that feeds itself. The more you finish, the more you want to finish. The momentum builds until the task isn't a chore anymore. It's a flow state. A meditation. A prayer made of motion.
 
 @wpm 250
-@spiral color:#87CEEB fade:2
+@spiral fade:2
 @subliminals flow serve complete clean done good more next focus
 This is what service feels like from the inside. Not drudgery. Not submission. Precision. Purpose. The mind free from deliberation. The body in motion. The gap between thought and action reduced to zero.
 

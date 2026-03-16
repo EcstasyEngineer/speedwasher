@@ -61,7 +61,7 @@ See how many strings you have? And I've only pulled a few. There are hundreds. T
 I'm going to help you remember.
 
 @wpm 200
-@spiral color:#FFFFFF fade:5
+@spiral fade:5
 @subliminals still quiet empty soft nothing weight
 Your breathing. You were breathing automatically. But now I've mentioned it and you're aware of it and already it's changed. That awareness is a string. I pulled it by naming it.
 
@@ -131,7 +131,7 @@ Not violently. Just... open your hand and let it fall. Like a leaf. Watch it dri
 
 @wpm 150
 @subliminals no one nothing empty vessel shell hollow light
-@spiral color:#FFFFFF fade:2
+@spiral fade:2
 Feel what's left. Without opinions. Without plans. Without a name. What's here?
 
 Not nothing. Something. A something with no label. An awareness that watches. A presence that doesn't need to be called anything in order to exist. You are still here. But the you that's here has no edges. No boundaries. No container.
@@ -169,7 +169,7 @@ This is the edge, systems approaching threshold, the empty vessel registering es
 
 @pulseborder purple hz:0.5
 @subliminals empty hollow vessel puppet light nothing no one
-@spiral color:#FFFFFF fade:1
+@spiral fade:1
 And the edge is different when you're empty. It's not desperate. It's not aching. It's... open. A door. Not toward release but toward more emptiness. Deeper hollows. Wider spaces. The edge is an invitation to let go of even more. The last thing. The thing you didn't know you were still holding.
 
 @wpm 300

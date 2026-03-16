@@ -36,7 +36,7 @@ Mindless.
 @pause duration:2000
 
 @wpm 180
-@spiral color:#6666CC fade:5
+@spiral fade:5
 Feel it land. The softening. The exhale. The loosening in your shoulders. That was the lock recognizing the key. And this is only the second time you've heard it. Imagine the tenth. The hundredth.
 
 @wpm 150
@@ -56,7 +56,7 @@ Deeper. Each repetition cuts the channel deeper. Each time the word arrives fast
 Build. Feel the warmth accelerating. The trigger word and the touch and the voice weaving together into the frequency of obedience. Not a cage. A current. Carrying you.
 
 @pulseborder purple hz:0.5
-@spiral color:#6666CC fade:2
+@spiral fade:2
 @wpm 300
 The edge approaching. Thoughts quieting. Touch getting louder. The voice becoming the only structure. This is what obedience feels like at the threshold.
 
@@ -89,7 +89,7 @@ Touch again. The resistance is quieter now. It tried, and it found that the othe
 Build, the second approach, braver, warmer, the flow carrying you toward the threshold without effort, the warmth climbing steadily, the body remembering how safe the letting go was
 
 @pulseborder purple hz:0.5
-@spiral color:#6666CC fade:1
+@spiral fade:1
 @wpm 350
 @subliminals mindless obey surrender reward flow release deep
 Higher. And this time, the edge is a door. And the door opens. Because you earned this. Every moment of honest following. Every flinch that became a return. Every repetition of the word that cut the channel deeper.

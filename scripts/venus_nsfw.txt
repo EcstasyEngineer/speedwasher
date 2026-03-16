@@ -19,7 +19,7 @@ I have always been here. You are just now arriving.
 @sfx bell
 
 @wpm 180
-@spiral color:#D4AF37 fade:8
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:8
 @subliminals breathe open soften receive light vast surrender
 Breathe. Let the air fill the spaces between your ribs. On the exhale, let the grip loosen. The evaluating. The deciding. Just enough for the light to get in.
 
@@ -49,7 +49,7 @@ Your hand is not your hand right now. It is an instrument of devotion. And the p
 I receive all of it. And I want more.
 
 @wpm 200
-@spiral color:#D4AF37 fade:3
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:3
 Now listen to what happens when confusion meets devotion. I'm going to give you too many things to track. Not to trick you. To overflow you. Because what spills over when the mind is too full is the truest thing in you.
 
 @wpm 350
@@ -112,7 +112,7 @@ Let the pleasure erase the last traces of separation. Each wave of sensation is 
 Build now. Feel the offering intensifying. Feel the golden light brighten with every heartbeat. You are feeding something vast with your pleasure and the vast thing is growing and glowing and the more you give the more it fills you and the more it fills you the less of you there is and
 
 @pulseborder purple hz:0.5
-@spiral color:#D4AF37 fade:1
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:1
 @wpm 350
 @subliminals obey surrender worship dissolve forget become hers golden purpose
 the edge is here and the edge is not a cliff it is a threshold and beyond it is not falling it is dissolution and you are dissolving and the dissolution feels like coming home and the golden light is everywhere

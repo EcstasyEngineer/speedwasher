@@ -14,7 +14,7 @@ There is a place inside you that has always been still. Not quiet. Still. Quiet 
 You've visited before. In those moments between waking and sleeping when the mind accidentally lets go of the steering wheel and for one half-second everything is clear. Perfectly, achingly clear.
 
 @wpm 200
-@spiral color:#C9A96E fade:8
+@spiral fade:8
 We're going there now. Not for a half-second. For as long as you need.
 
 @sfx gong
@@ -40,7 +40,7 @@ This is the Memory Library.
 Every bottle holds a thought pattern. Not a specific memory. A pattern. The way you always assume the worst. The way you replay conversations looking for mistakes. The habit of comparing yourself to a version of yourself that doesn't exist. The loop that says you're falling behind. The one that says you don't deserve rest.
 
 @wpm 180
-@spiral color:#C9A96E fade:3
+@spiral fade:3
 They glow because they're active. Running right now. Burning energy in the background like programs you forgot to close. Each one a tiny furnace consuming attention you didn't know you were spending.
 
 Walk along the shelves. Let your hand drift over the bottles. Feel the warmth of each one. You don't need to name them. Your hand knows which ones are yours. Your fingertips recognize the heat of the patterns that have been running the longest.
@@ -80,7 +80,7 @@ The bottle is cool now. Clear glass. Empty. And you can feel the space it left. 
 You can do more. You can come back and dissolve a dozen bottles or a hundred. But one is enough for now. One pattern released is enough to change the temperature of an entire day.
 
 @wpm 180
-@spiral color:#C9A96E fade:3
+@spiral fade:3
 Walk deeper. Past the library. Through a low archway carved with a single word in a language you don't speak but understand anyway. The word means truth. Or maybe it means mirror. In this language they are the same.
 
 The Mirror Room.
@@ -108,7 +108,7 @@ Look. Don't flinch. The mirrors are kind here. They show what is, not what you f
 Clarity is not a thought. Clarity is a feeling. It lives in the chest. A warmth that is different from comfort. Sharper. More specific. The feeling of seeing something exactly as it is and not needing it to be different.
 
 @wpm 150
-@spiral color:#FFFFFF fade:5
+@spiral fade:5
 Feel that now. In the center of your chest. A point of warmth. Of knowing. Of seeing clearly without the distortion of the patterns.
 
 @snap duration:2000 word:Clarity.
