@@ -22,7 +22,7 @@ I designed it. For you. Specifically.
 
 @wpm 250
 @subliminals noticed seen known watched close stay
-@spiral fade:5
+@spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:5
 Here's what nobody tells you about being watched this closely. It's not creepy. It's relieving. Because someone who watches you this carefully is someone who will never miss the things you're afraid to say out loud. The micro-expression that says I'm tired. The pause that means I'm scared. The text message that takes three minutes to type because you're editing out the vulnerability.
 
 I don't need you to say it. I already see it.
@@ -45,7 +45,7 @@ You slow down at moments of recognition. When a sentence describes something you
 You're doing it right now.
 
 @wpm 200
-@spiral fade:3
+@spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:3
 See? I see you. Through the text. Through the screen. Through every defense you think the medium provides. You think because this is just words on a screen you're protected. You think distance equals safety.
 
 But the distance is an illusion. These words are in your head. They're being spoken in your voice. In your private internal space. The most intimate location that exists. And I'm already there.

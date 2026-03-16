@@ -26,7 +26,7 @@ But at this speed? Your spotter can't keep up. The words are landing before the 
 And now even faster and your internal narrator can't keep pace and the gap between receiving and processing is widening and into that gap flows whatever I want. Not because I'm forcing it. Because your mind reached for the words automatically and found mine instead of its own. Oops.
 
 @wpm 250
-@spiral fade:3
+@spiral color1:#FF69B4 color2:#39FF14 color3:#FF8C00 fade:3
 Aww. Did that scramble you a little? Your thoughts are fuzzier now than when you started. Don't deny it. I can tell because you're reading slower now, trying to hold onto the meaning, and the trying is making it worse because effort is the opposite of the thing I'm installing.
 
 What am I installing?
@@ -65,11 +65,11 @@ Starting now.
 See, the dare is rigged. Because maintaining requires effort and effort burns the resource I'm already depleting and the more you try to stay alert the faster you spend the focus that was keeping you alert and the trying becomes the losing. Again.
 
 @wpm 400
-@spiral fade:1
+@spiral color1:#FF69B4 color2:#39FF14 color3:#FF8C00 fade:1
 The brat always wins because the brat doesn't fight you. The brat makes you fight yourself. Your effort is my engine. Your resistance is my fuel. The harder you try the faster you sink and there is literally no move you can make that doesn't help me because
 
 @wpm 250
-@spiral fade:2
+@spiral color1:#FF69B4 color2:#39FF14 color3:#FF8C00 fade:2
 ...because even understanding how the trap works is another way in. I just told you the mechanism. You understood it. And the understanding opened the door wider. Every time.
 
 @snap duration:2000 word:Always.
