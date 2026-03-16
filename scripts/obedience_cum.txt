@@ -86,9 +86,7 @@ Touch again. The resistance is quieter now. It tried, and it found that the othe
 
 @wpm 250
 @pulseborder yellow hz:0.5
-And here's the part that matters. Did the arousal arrive before you decided to feel it? Before you chose to comply? Check honestly. The warmth was already there. The body said yes before the mind could weigh the options. That's not weakness. That's the oldest part of you recognizing something it trusts.
-
-Build, the second approach, braver, warmer, this is the edge again but different now, feel how natural this is, the flow carrying you toward the threshold without effort, the warmth climbing steadily, the body remembering how safe the letting go was, almost there
+Build, the second approach, braver, warmer, the flow carrying you toward the threshold without effort, the warmth climbing steadily, the body remembering how safe the letting go was
 
 @pulseborder purple hz:0.5
 @spiral color:#6666CC opacity:0.18 speed:0.3 fade:1

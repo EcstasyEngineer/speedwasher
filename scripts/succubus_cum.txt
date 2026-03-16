@@ -148,7 +148,7 @@ And now the chrysalis needs one more thing. The body's confirmation. The moment 
 
 @pulseborder yellow hz:0.5
 @wpm 280
-Feel it building. The final threshold. Not an edge this time. A door. The last wall between who you were and who you're becoming. Feel the heat pressing against it from both sides, because I am pressing too, because we are both at this door, both of us with our hands on the same handle, both of us about to step through into whatever waits on the other side.
+Feel it building. The final threshold. Not an edge this time. A door. Feel the heat pressing against it from both sides, both of us about to step through into whatever waits on the other side.
 
 @pulseborder raspberry hz:0.5
 @spiral color:#9B59B6 opacity:0.25 speed:0.45 fade:1

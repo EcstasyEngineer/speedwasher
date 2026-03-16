@@ -138,9 +138,7 @@ Third time. Deeper still. Each repetition cuts the channel deeper. Each time the
 @hybrid drone_mid carrier:82 beat:2 pulse:4.5 db:-5 fade:8
 @hybrid drone_high carrier:155 beat:3 pulse:5.5 db:-2 fade:8
 @pulseborder yellow hz:0.5
-And here's the part that matters. Did the arousal arrive before you decided to feel it? Before you chose to comply? Check honestly. The warmth was already there. The body said yes before the mind could weigh the options. That's not weakness. That's the oldest part of you recognizing something it trusts.
-
-Build again. The second approach. Different now because the repair loop changed something. The resistance is quieter. Not gone. Quieter. It tried and found that the other side of letting go was warmth, not destruction.
+Build again. The resistance is quieter now. The flow carrying you toward the threshold, the warmth climbing steadily, the body remembering how safe the letting go was
 
 @pulseborder purple hz:0.5
 @spiral color:#6666CC opacity:0.18 speed:0.3 fade:1

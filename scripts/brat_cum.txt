@@ -213,7 +213,7 @@ You think this is mercy? This is the meanest thing I've done all night. Because 
 @hybrid drone_mid carrier:100 beat:3.5 pulse:4 db:-4 fade:5
 @hybrid drone_high carrier:195 beat:4.5 pulse:5 db:-1 fade:5
 @pulseborder yellow hz:0.5
-Feel the edge coming back, faster this time because your body remembers, because I trained it to respond to these words and the training is working, feel it climbing, building, the desperation sharper than every edge before because this time, this time, the brat is going to let you fall and the falling is going to be the funniest thing that has ever happened
+Feel the edge coming back, faster this time because your body remembers, because I trained it to respond and the training is working, feel it climbing, the desperation sharper than before because this time the brat is going to let you fall
 
 @pulseborder raspberry hz:0.5
 @spiral color:#FF69B4 opacity:0.25 speed:0.55 fade:1
