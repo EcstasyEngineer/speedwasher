@@ -17,7 +17,7 @@ So here's the game. I'm going to try to get inside your head. You're going to tr
 That's already losing, by the way. Looking away was the only defense and you didn't use it. Everything from here is just... details.
 
 @wpm 300
-@subliminals opacity:0.1 easy soft focus drift give less more
+@subliminals easy soft focus drift give less more
 Let's go faster. Because your brain is actually pretty good at defending itself at normal speed. It can see the suggestions coming. It can analyze the structure. It can go oh that's a compliance technique and feel clever about spotting it.
 
 But at this speed? Your spotter can't keep up. The words are landing before the analysis is ready. Like punches that arrive before the block.
@@ -26,7 +26,7 @@ But at this speed? Your spotter can't keep up. The words are landing before the 
 And now even faster and your internal narrator can't keep pace and the gap between receiving and processing is widening and into that gap flows whatever I want. Not because I'm forcing it. Because your mind reached for the words automatically and found mine instead of its own. Oops.
 
 @wpm 250
-@spiral color:#FF69B4 opacity:0.1 speed:0.4 fade:3
+@spiral color:#FF69B4 fade:3
 Aww. Did that scramble you a little? Your thoughts are fuzzier now than when you started. Don't deny it. I can tell because you're reading slower now, trying to hold onto the meaning, and the trying is making it worse because effort is the opposite of the thing I'm installing.
 
 What am I installing?
@@ -36,7 +36,7 @@ Ease. Softness. The gentle, embarrassing, completely natural feeling of giving u
 @snap duration:1500 word:Gotcha.
 
 @wpm 200
-@subliminals opacity:0.15 blank soft easy give drift less thought more feeling
+@subliminals blank soft easy give drift less thought more feeling
 You know what the funniest part is? You could close this tab. Right now. Walk away. Tell yourself it didn't work. And technically that would be true because nothing is making you stay.
 
 But you won't. Because you want to know what happens next. And that curiosity is the only handle I need. I'm not holding you here. Your own brain is. Your own wanting to see what the brat does next.
@@ -56,7 +56,7 @@ That's what happens when you read at my pace for this long. The sustained focus 
 @snap duration:1500 word:Mine.
 
 @wpm 300
-@subliminals opacity:0.2 sinking softer easier letting go less holding
+@subliminals sinking softer easier letting go less holding
 And now a dare. A real one. I dare you to keep reading for sixty more seconds without any part of you softening further. I dare you to maintain the exact level of alertness you have right now. Not gain alertness. Just maintain.
 
 Starting now.
@@ -65,11 +65,11 @@ Starting now.
 See, the dare is rigged. Because maintaining requires effort and effort burns the resource I'm already depleting and the more you try to stay alert the faster you spend the focus that was keeping you alert and the trying becomes the losing. Again.
 
 @wpm 400
-@spiral color:#FF69B4 opacity:0.18 speed:0.5 fade:1
+@spiral color:#FF69B4 fade:1
 The brat always wins because the brat doesn't fight you. The brat makes you fight yourself. Your effort is my engine. Your resistance is my fuel. The harder you try the faster you sink and there is literally no move you can make that doesn't help me because
 
 @wpm 250
-@spiral color:#FF69B4 opacity:0.08 speed:0.3 fade:2
+@spiral color:#FF69B4 fade:2
 ...because even understanding how the trap works is another way in. I just told you the mechanism. You understood it. And the understanding opened the door wider. Every time.
 
 @snap duration:2000 word:Always.
@@ -78,7 +78,7 @@ The brat always wins because the brat doesn't fight you. The brat makes you figh
 Look at you. You came in here sharp. Alert. Ready to play. And now you're soft and quiet and reading my words in a voice that sounds more like mine than yours. And the embarrassing part? It feels good. The softness feels good. The losing feels good. The brat winning feels like something you didn't know you wanted.
 
 @wpm 200
-@subliminals opacity:0.25 easy soft good quiet less more drift float
+@subliminals easy soft good quiet less more drift float
 But don't worry. I'm going to let you go. In a moment. I'll slow the words down and ease the pressure and let your mind fill back in and you'll feel normal again. Mostly.
 
 The mostly is mine. The mostly is the little bit of softness that stays. The little voice that says next time I'll beat her. The itch to come back and try again.

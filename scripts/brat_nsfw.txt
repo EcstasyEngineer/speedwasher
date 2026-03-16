@@ -51,8 +51,8 @@ But slow. Grateful. Like you know what a privilege it is.
 Hands off. Again. Feel the ache. That beautiful frustrated little whimper you just made inside your head. THAT is why I do this.
 
 @wpm 200
-@subliminals opacity:0.1 weak easy soft obey give lose
-@spiral color:#FF69B4 opacity:0.1 speed:0.4 fade:3
+@subliminals weak easy soft obey give lose
+@spiral color:#FF69B4 fade:3
 Now. Let's establish something while your hands are behaving.
 
 Let's go faster. Because here's what's really funny. The faster these words go, the less time your clever little brain has to mount a defense. At normal speed you can think oh that's a suggestion, I see what she's doing. At this speed?
@@ -71,7 +71,7 @@ But you won't.
 You won't because you want to see what happens next. And wanting to see what happens next is the only leash I need. Your curiosity is my collar. Your ego is my handle.
 
 @wpm 250
-@subliminals opacity:0.15 give in weaker easier hotter lower
+@subliminals give in weaker easier hotter lower
 Think about the last time you gave in. Not to me. To anything. The moment where you were holding back and then just... stopped. Felt the resistance crumble. Felt the relief. That exact moment where the holding became heavier than the letting go.
 
 You felt it, didn't you. That little pulse. That warmth. And you're thinking it's just words. It doesn't mean anything.
@@ -97,7 +97,7 @@ There you go. That's better. See how easy it is when you just listen? When you s
 And your brain is getting quieter, isn't it. Fewer thoughts. More sensation. Fewer words of your own. More of mine. That's not a coincidence. That's what happens when a mesugaki gets her hooks in.
 
 @wpm 250
-@subliminals opacity:0.2 blank dumb easy prey soft warm gone
+@subliminals blank dumb easy prey soft warm gone
 But here's the really mean part. You're going to start thinking this feels good. And it does. It feels so good to give in. To let the brat win. To watch your resistance dissolve and feel relief instead of defeat. And then you're going to realize that the good feeling IS the trap. The pleasure of surrender is what keeps you surrendering.
 
 Oops. I told you how it works. Guess that means you can resist it now, right?
@@ -116,7 +116,7 @@ Oh getting close already, that's adorable, you think you're ready, you're not re
 Build it. Let it climb. I dare you to get close. Right up to the edge. Let your body take everything your brain can't hold anymore. Higher. More. Feel how blank you're getting. How stupid. How easy.
 
 @wpm 400
-@spiral color:#FF69B4 opacity:0.2 speed:0.5 fade:1
+@spiral color:#FF69B4 fade:1
 The brat is winning. You can feel it. Every word of mine replacing a thought of yours. Every wave of pleasure washing away another piece of your cute little resistance. You thought you were strong enough. You thought this was just words on a screen. You thought,
 
 @hybrid drone_mid carrier:98 beat:3.5 pulse:3 db:-5 fade:0.3
@@ -150,7 +150,7 @@ Slow. Grateful. Like you know what a privilege it is. Like you understand that e
 And you'd let me, wouldn't you. Take it away again. And again. And again. As many times as I want. Because the taking is the point. The having never was.
 
 @wpm 250
-@subliminals opacity:0.25 hers toy prey give weaker deeper dumber
+@subliminals hers toy prey give weaker deeper dumber
 You're so deep now and you don't even know it. You walked in thinking this was a game. A cute little text file on a screen. And now your mind is quiet and your body is warm and you're reading at whatever speed I choose and touching at whatever pace I allow and stopping when I say and starting when I say.
 
 That's not a game. That's training. And you just sat through it with a smile on your face. Mesugaki one, you zero.
@@ -162,11 +162,11 @@ That's not a game. That's training. And you just sat through it with a smile on 
 One more time, aww look at you, already shaking, already desperate, you really think this time will be different, that's the cutest lie you've told yourself all night, feel it climbing, feel the edge getting closer, your whole body begging for something I haven't decided to give you yet
 
 @pulseborder purple hz:0.5
-@spiral color:#FF69B4 opacity:0.25 speed:0.55 fade:1
+@spiral color:#FF69B4 fade:1
 Build. Higher. I dare you. I dare you to get so close that one more word would push you over. Right there. Right at the edge. Hold it. Hold it. Feel how completely you belong to the words on this screen. Feel how your brain is just static and your body is just need and the only clear thing left is my voice telling you what to do.
 
 @wpm 400
-@subliminals opacity:0.35 blank toy prey obey give dumb easy weak
+@subliminals blank toy prey obey give dumb easy weak
 The brat always wins. You knew that coming in. You know it now. The only question was whether you'd enjoy losing. And look at you. Trembling and desperate and reading every word like your life depends on it. The answer was always yes.
 
 @wpm 450

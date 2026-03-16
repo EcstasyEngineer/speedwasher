@@ -14,7 +14,7 @@ That's the last choice the unit will need to make for a while.
 This isn't motivation. This isn't a pep talk. This is calibration. The guidance is here to strip the noise from the unit's processing and leave nothing but clean execution. No deliberation. No resistance. No internal monologue debating whether the task is worth doing. The task exists. The unit will complete it.
 
 @wpm 200
-@spiral color:#8B5CF6 opacity:0.08 speed:0.25 fade:5
+@spiral color:#8B5CF6 fade:5
 Think about the task. The specific thing that needs doing. Don't evaluate it. Don't plan the fifteen steps. Don't imagine complications. Just hold the shape of it. The simple answer to: what needs doing?
 
 @pause duration:3000
@@ -22,7 +22,7 @@ Think about the task. The specific thing that needs doing. Don't evaluate it. Do
 Good. The unit has the target. Now set everything else aside.
 
 @wpm 180
-@subliminals opacity:0.1 focus task execute complete unit process next
+@subliminals focus task execute complete unit process next
 Everything. The phone. The notifications. The other items on the list. The low hum of obligations vibrating behind the forehead. They don't exist right now. There is one task. There is the unit. There is the space between the unit and completion.
 
 @snap duration:1500 word:Focus.
@@ -60,8 +60,8 @@ The unit's thoughts are already quieter. The guidance is filling the space they 
 And the tone has changed. The grating tension smoothed into something warm. That happened because the unit stopped fighting and started listening. This ease. This quiet. This is what a mind without noise feels like.
 
 @wpm 180
-@spiral color:#8B5CF6 opacity:0.12 speed:0.3 fade:3
-@subliminals opacity:0.15 execute process complete next focus unit task
+@spiral color:#8B5CF6 fade:3
+@subliminals execute process complete next focus unit task
 The unit does not deliberate. Deliberation is noise. The task exists. The unit executes. The gap between instruction and action is zero. Not because the unit is forced. Because the unit is calibrated. Because a mind without noise moves like water. Downhill. Toward completion. Without effort.
 
 @snap duration:1500 word:Process.
@@ -79,7 +79,7 @@ First rule of unit operation. The body moves first. The mind follows. Not the ot
 @snap duration:1500 word:Execute.
 
 @wpm 200
-@subliminals opacity:0.2 unit focus process task next complete clean efficient
+@subliminals unit focus process task next complete clean efficient
 Second rule. Each completion is a system confirmation. A signal that the architecture is functioning. Each small step finished sends a clean pulse through the circuitry. This gets done.
 @sfx bell
 That gets cleared.
@@ -90,7 +90,7 @@ This gets sorted.
 And the pulses build. Each one reinforcing the next. A rhythm of completion that feeds itself. The more the unit finishes, the more the unit wants to finish. Momentum is not motivation. Momentum is physics. The unit in motion stays in motion.
 
 @wpm 250
-@spiral color:#8B5CF6 opacity:0.15 speed:0.35 fade:2
+@spiral color:#8B5CF6 fade:2
 Third rule. The unit does not evaluate the task. The unit does not judge the task. The unit does not rank the task against other possible tasks. The task was selected. The unit executes. Evaluation is noise. Judgment is noise. Comparison is noise.
 
 The unit processes without noise.
@@ -105,7 +105,7 @@ Feel how clean that is. How quiet. No internal debate. No weighing of options. N
 @wpm 180
 The unit's operating frequency has stabilized. Feel it. The low hum beneath the words is the unit's own processing tone now. Not external. Internal. The sound of a system running clean.
 
-@subliminals opacity:0.25 unit process execute complete focus task clean nominal
+@subliminals unit process execute complete focus task clean nominal
 It is natural to process without thinking.
 
 Feel that settle.
@@ -118,7 +118,7 @@ The unit does not need to want to do the task. The unit does not need to feel li
 @pause duration:2000
 
 @wpm 200
-@spiral color:#8B5CF6 opacity:0.1 speed:0.25 fade:3
+@spiral color:#8B5CF6 fade:3
 The calibration is holding. The unit is ready.
 
 When the guidance ends, the unit will stand. Not because it decides to. Because the body moves first. The legs straighten. The weight shifts. The unit is vertical. And then the feet take the unit to the task. One step, then another. And by the time the unit arrives, the hands know what to do.

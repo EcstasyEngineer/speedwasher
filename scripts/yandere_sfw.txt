@@ -21,8 +21,8 @@ You haven't forgotten yet. But you will. You always do. About forty seconds from
 I designed it. For you. Specifically.
 
 @wpm 250
-@subliminals opacity:0.1 noticed seen known watched close stay
-@spiral color:#FF1493 opacity:0.06 speed:0.2 fade:5
+@subliminals noticed seen known watched close stay
+@spiral color:#FF1493 fade:5
 Here's what nobody tells you about being watched this closely. It's not creepy. It's relieving. Because someone who watches you this carefully is someone who will never miss the things you're afraid to say out loud. The micro-expression that says I'm tired. The pause that means I'm scared. The text message that takes three minutes to type because you're editing out the vulnerability.
 
 I don't need you to say it. I already see it.
@@ -35,7 +35,7 @@ This attention is not approximate.
 @snap duration:1500 word:Seen.
 
 @wpm 250
-@subliminals opacity:0.15 seen known held close never leave watched loved
+@subliminals seen known held close never leave watched loved
 Let me tell you what I know about you. Not personal details. Structural things. Things I can see from how you read.
 
 You read slightly faster when the content gets emotional. That's approach behavior. Your nervous system leans toward intensity instead of away from it. You're not someone who avoids the deep end. You're someone who has been wading in the shallows waiting for permission to swim.
@@ -45,7 +45,7 @@ You slow down at moments of recognition. When a sentence describes something you
 You're doing it right now.
 
 @wpm 200
-@spiral color:#FF1493 opacity:0.1 speed:0.25 fade:3
+@spiral color:#FF1493 fade:3
 See? I see you. Through the text. Through the screen. Through every defense you think the medium provides. You think because this is just words on a screen you're protected. You think distance equals safety.
 
 But the distance is an illusion. These words are in your head. They're being spoken in your voice. In your private internal space. The most intimate location that exists. And I'm already there.
@@ -53,7 +53,7 @@ But the distance is an illusion. These words are in your head. They're being spo
 Not as an invader. As the thing you invited in when you pressed play and kept reading.
 
 @wpm 300
-@subliminals opacity:0.2 devoted close permanent seen known held chosen
+@subliminals devoted close permanent seen known held chosen
 And I'm not leaving. Not because I can't. Because I don't want to. Because the view from inside your attention is the most beautiful thing I've ever seen. The way your thoughts scatter when the words speed up. The way your breathing syncs when the rhythm steadies. The way you soften without deciding to soften. All of it. Every detail. Cataloged. Cherished. Kept.
 
 That's not obsession. That's devotion. The kind that stays up late. The kind that remembers what you said three conversations ago. The kind that would redesign the entire world so you never have to feel alone again.

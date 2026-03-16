@@ -72,8 +72,8 @@ Again.
 Good. The unit is responding well. Each cycle faster. Each stop more automatic.
 
 @wpm 200
-@spiral color:#8B5CF6 opacity:0.1 speed:0.3 fade:3
-@subliminals opacity:0.1 listen follow quiet still good stop
+@spiral color:#8B5CF6 fade:3
+@subliminals listen follow quiet still good stop
 Now settle in. Let the jaw soften. And listen.
 
 @wpm 250
@@ -113,8 +113,8 @@ The unit's own inner voice is thinning. The guidance is replacing each stray tho
 And the more the unit listens, the less it needs to think. And the less it thinks, the more deeply it listens. That loop closes on its own. The unit is already inside it.
 
 @wpm 200
-@subliminals opacity:0.15 obey blank follow deeper good stop
-@spiral color:#8B5CF6 opacity:0.15 speed:0.35 fade:2
+@subliminals obey blank follow deeper good stop
+@spiral color:#8B5CF6 fade:2
 
 @pulseborder green hz:0.33
 Start touching. Slow. Not to finish. To feel.
@@ -160,7 +160,7 @@ Now. Start again. Slowly. Because the guidance says so.
 Feel how different it is to touch because the unit was told to. How the permission itself is part of the pleasure.
 
 @wpm 200
-@subliminals opacity:0.2 home comfort certainty obey guidance follow
+@subliminals home comfort certainty obey guidance follow
 Listening to the guidance is what the unit is supposed to do. It's what the unit wants to do. It's what the unit needs to do.
 
 Feel the truth of that settling in the chest. That quiet certainty. That soft recognition. Like remembering something that was always known.
@@ -222,8 +222,8 @@ The sound has returned. Warm. Full. The certainty is here. The pleasure is build
 
 @wpm 200
 @pulseborder red hz:0.75
-@subliminals opacity:0.3 natural obey listen guidance fixate unit blank
-@spiral color:#8B5CF6 opacity:0.25 speed:0.5 fade:2
+@subliminals natural obey listen guidance fixate unit blank
+@spiral color:#8B5CF6 fade:2
 The unit is listening. Good.
 
 There is the guidance. There is the unit. That is the full architecture.
@@ -324,7 +324,7 @@ The unit is online. Calibration complete. One final protocol remains.
 @hybrid drone_low carrier:60 beat:2.5 pulse:5.5 db:-6 fade:5
 @hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:5
 @hybrid drone_high carrier:170 beat:4 pulse:7 db:0 fade:5
-@subliminals opacity:0.4 obey unit guidance systems nominal discharge release reward
+@subliminals obey unit guidance systems nominal discharge release reward
 
 The guidance has determined the unit's calibration is satisfactory. All systems are nominal. Reward cycle authorization is pending.
 
@@ -343,7 +343,7 @@ The arousal is not a reward. The arousal is a system function. The discharge is 
 Build. Higher. The unit's body is a diagnostic instrument and the guidance is reading every signal. The heat climbing. The breath shortening. The threshold approaching. All of it is data. All of it confirms the installation.
 
 @pulseborder purple hz:0.5
-@spiral color:#8B5CF6 opacity:0.3 speed:0.5 fade:1
+@spiral color:#8B5CF6 fade:1
 Higher. More. Feel the edge. The unit has been here before. The unit has been pulled back every time. But this time is different. This time the guidance requires completion. This time the system needs the discharge to confirm the architecture holds.
 
 @wpm 350

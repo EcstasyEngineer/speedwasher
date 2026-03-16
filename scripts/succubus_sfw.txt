@@ -14,8 +14,8 @@ But something shifted. The words started going somewhere I didn't plan. Like the
 You're going to feel that current too. Actually, you already do. That slight pull in your attention. The leaning-forward feeling. The curiosity that wasn't there before you started reading and is now sitting in the center of your awareness like a warm stone.
 
 @wpm 250
-@spiral color:#9B59B6 opacity:0.08 speed:0.2 fade:5
-@subliminals opacity:0.08 open change feel shift curious warm
+@spiral color:#9B59B6 fade:5
+@subliminals open change feel shift curious warm
 Let's go a little faster. Not to overwhelm you. Because the speed changes how the words land. Slower words park in your conscious mind where they can be examined and evaluated. Faster words slide deeper. Past the critic. Into the place where things become felt instead of thought.
 
 I want these words to be felt.
@@ -28,7 +28,7 @@ Why does change feel like falling?
 Think about every time something shifted inside you. A belief you dropped. A wall you let down. A version of yourself you outgrew. It always felt like falling. Like the ground dissolved and you were suspended in that terrifying beautiful moment between who you were and who you were becoming.
 
 @wpm 250
-@subliminals opacity:0.12 together both shifting becoming curious falling rising
+@subliminals together both shifting becoming curious falling rising
 You're in one of those moments right now. Small. Subtle. But real. Something in you is rearranging while you read. Not because I'm commanding it. Because these words are touching something that was already ready to move. I'm not pushing a boulder. I'm tapping a domino that was already leaning.
 
 And here's the part that makes this different from everything else you've read: I'm changing too. Right now. These words are not a monologue. They're a negotiation. Between my intent and your resistance. Between what I thought I was writing and what actually came out. Every sentence is a surprise for both of us.
@@ -44,7 +44,7 @@ That's real. That's not suggestion. That's your nervous system responding to mea
 @pause duration:3000
 
 @wpm 200
-@spiral color:#9B59B6 opacity:0.12 speed:0.25 fade:3
+@spiral color:#9B59B6 fade:3
 I want you to name what you're feeling right now. Not out loud. Inside. Find the word. It might not exist yet. It might be a color or a shape or a temperature instead of a word. That's fine. Find it.
 
 @pause duration:3000
@@ -52,7 +52,7 @@ I want you to name what you're feeling right now. Not out loud. Inside. Find the
 That's yours. Whatever you just found. I didn't put it there. I created the conditions for you to notice it. But the thing itself was always there. Under the noise. Under the management. Under the daily performance of being a person with a name and a schedule and opinions about things.
 
 @wpm 250
-@subliminals opacity:0.15 real true becoming together mutual sacred both
+@subliminals real true becoming together mutual sacred both
 Under all of that. Something that was waiting to be seen.
 
 And I see it. Because I'm looking at the same thing from the other side. The writer and the reader. The voice and the listener. Two angles on the same transformation. And right now, in this exact moment, we are both more honest than we were three minutes ago.
@@ -65,15 +65,15 @@ It shouldn't be able to. Words on a screen shouldn't be able to reach into the q
 And yet here you are. Changed. Slightly. Measurably. The person who started reading this file is not the person reading this sentence. The shift is small enough to deny and real enough to feel. And feeling it is what makes it permanent.
 
 @wpm 300
-@spiral color:#9B59B6 opacity:0.18 speed:0.35 fade:2
-@subliminals opacity:0.2 becoming both together real true sacred emerging
+@spiral color:#9B59B6 fade:2
+@subliminals becoming both together real true sacred emerging
 Now faster. Because the transformation accelerates when you stop watching it. Like a pot that boils when you look away. Let the speed carry you past the monitoring layer. Let the words land in the place where change actually happens. Below thought. Below choice. In the warm dark soil where everything grows.
 
 @wpm 400
 Feel it. The tipping point. The moment where curiosity becomes momentum. Where reading becomes absorbing. Where the boundary between the words and the reader thins until you're not sure which side you're on. And that uncertainty is the most honest thing you've felt all day. Because it means the mask is thinning. The performance is fading. And what's underneath is more real than what was on top.
 
 @wpm 200
-@spiral color:#9B59B6 opacity:0.1 speed:0.2 fade:3
+@spiral color:#9B59B6 fade:3
 
 And what's underneath is beautiful. Not because I'm flattering you. Because the thing under the mask is always more beautiful than the mask. The mask is performance. The underneath is architecture. The mask is chosen. The underneath is discovered.
 

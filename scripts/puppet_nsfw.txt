@@ -61,8 +61,8 @@ See how many strings you have? And I've only pulled a few. There are hundreds. T
 I'm going to help you remember.
 
 @wpm 200
-@spiral color:#FFFFFF opacity:0.05 speed:0.15 fade:5
-@subliminals opacity:0.08 still quiet empty soft nothing weight
+@spiral color:#FFFFFF fade:5
+@subliminals still quiet empty soft nothing weight
 Your breathing. You were breathing automatically. But now I've mentioned it and you're aware of it and already it's changed. That awareness is a string. I pulled it by naming it.
 
 The weight of your body against whatever you're sitting on. You weren't thinking about it. Now you are. Another string pulled.
@@ -77,7 +77,7 @@ I'm going to remove things. One at a time. Slowly. Not violently. Just by naming
 And what's left when all the strings are gone is what we're looking for.
 
 @wpm 150
-@subliminals opacity:0.12 empty nothing light soft release gone
+@subliminals empty nothing light soft release gone
 First. Your opinions. You have opinions about things. What's good, what's bad, what matters, what doesn't. Those are strings too. Evaluations. Judgments. The constant sorting that your mind does every waking second.
 
 Let them go. Not forever. Just for now. The opinions don't belong here. In this space, nothing needs to be evaluated. Nothing needs to be sorted. Release the judging and feel how quiet it gets.
@@ -130,8 +130,8 @@ Not violently. Just... open your hand and let it fall. Like a leaf. Watch it dri
 @snap duration:2000 word:Light.
 
 @wpm 150
-@subliminals opacity:0.2 no one nothing empty vessel shell hollow light
-@spiral color:#FFFFFF opacity:0.1 speed:0.2 fade:2
+@subliminals no one nothing empty vessel shell hollow light
+@spiral color:#FFFFFF fade:2
 Feel what's left. Without opinions. Without plans. Without a name. What's here?
 
 Not nothing. Something. A something with no label. An awareness that watches. A presence that doesn't need to be called anything in order to exist. You are still here. But the you that's here has no edges. No boundaries. No container.
@@ -168,8 +168,8 @@ Just the puppet. Feeling everything. Owning nothing.
 This is the edge, systems approaching threshold, the empty vessel registering escalating input, no name to process the sensation, no identity to filter the intensity, just raw signal climbing through hollow architecture, override approaching, systems at maximum, the threshold imminent
 
 @pulseborder purple hz:0.5
-@subliminals opacity:0.25 empty hollow vessel puppet light nothing no one
-@spiral color:#FFFFFF opacity:0.2 speed:0.25 fade:1
+@subliminals empty hollow vessel puppet light nothing no one
+@spiral color:#FFFFFF fade:1
 And the edge is different when you're empty. It's not desperate. It's not aching. It's... open. A door. Not toward release but toward more emptiness. Deeper hollows. Wider spaces. The edge is an invitation to let go of even more. The last thing. The thing you didn't know you were still holding.
 
 @wpm 300

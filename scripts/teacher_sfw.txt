@@ -19,7 +19,7 @@ Here's the first thing. You're reading these words and your brain is parsing the
 You are being taught right now whether you consent to it or not.
 
 @wpm 300
-@subliminals opacity:0.1 learn understand accept true correct obvious
+@subliminals learn understand accept true correct obvious
 Second thing. The faster these words move, the less time your prefrontal cortex has to evaluate them. At normal reading speed, you can fact-check each claim, consider objections, maintain a critical distance. At this speed? The claims arrive and become part of your mental furniture before the fact-checker even clocks in.
 
 That's not a bug. That's how all learning works. Think about it. Did you evaluate the multiplication table before you memorized it? Did you critically assess the alphabet? No. It went in. It became structure. You can't un-know that 7 times 8 is 56.
@@ -34,7 +34,7 @@ You haven't looked away.
 @snap duration:1500 word:Lesson.
 
 @wpm 250
-@spiral color:#4169E1 opacity:0.1 speed:0.3 fade:3
+@spiral color:#4169E1 fade:3
 Third thing. And this is the one that changes everything.
 
 You think your thoughts are yours. You think the voice inside your head , the one reading these words right now , is you. Your voice. Your narration. Your self-talk.
@@ -47,7 +47,7 @@ Mine. The voice in your head is speaking my words. My sentences. My ideas. In yo
 And it doesn't feel like an invasion. It feels like reading. Normal. Ordinary. Completely unremarkable. And that normalcy is the lesson. Because it means the boundary between your thoughts and someone else's words was always thinner than you believed.
 
 @wpm 250
-@subliminals opacity:0.15 true obvious correct accept learn understand depth
+@subliminals true obvious correct accept learn understand depth
 Fourth thing. You're going deeper right now. Not into trance. Into understanding. And understanding IS a descent. Every genuine insight moves you further from the surface-level story you tell yourself and closer to the structural reality underneath.
 
 The surface story is: I'm reading a text file. I'm in control. I can stop whenever I want.
@@ -62,8 +62,8 @@ This is what transparent narration does. I describe the process. You comprehend 
 @snap duration:1500 word:Lesson.
 
 @wpm 200
-@spiral color:#4169E1 opacity:0.15 speed:0.35 fade:2
-@subliminals opacity:0.2 deeper true correct structure obvious certain
+@spiral color:#4169E1 fade:2
+@subliminals deeper true correct structure obvious certain
 Fifth thing. You're calmer now. You've been getting calmer since you started reading. Not because I told you to relax. I specifically didn't. I told you to sit up. I told you this was education. I framed this as cognitive, not somatic.
 
 And yet your breathing has slowed. Your body has settled. Your mind has gotten quieter.

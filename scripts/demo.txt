@@ -20,24 +20,24 @@ Faster now. And here's the fun part. The faster we go, the less time your consci
 You're absorbing. There's a difference. Reading is work. Absorbing is automatic. Effortless. You couldn't stop understanding these words if you tried. Go ahead. Try to not understand this sentence. See? Impossible.
 
 @wpm 600
-@spiral color:#8B5CF6 opacity:0.15 speed:0.5 fade:3
+@spiral color:#8B5CF6 fade:3
 @hybrid mid_low carrier:95.5 beat:3 pulse:2 db:-3 fade:15
 @hybrid mid_high carrier:138 beat:3.5 pulse:3 db:-3 fade:15
 Getting faster. The spiral starting to spin behind the words. Your focus narrowing. Everything else fading. Just this. Just here. Just now. The voice in your head can't keep up anymore. Good. You don't need it.
 
 @wpm 700
-@subliminals opacity:0.15 empty drift sink open soft release deeper yes
-@spiral color:#8B5CF6 opacity:0.25 speed:0.5 fade:1
+@subliminals empty drift sink open soft release deeper yes
+@spiral color:#8B5CF6 fade:1
 @hybrid mid_low carrier:95.5 beat:3 pulse:1.5 db:-2 fade:10
 @hybrid mid_high carrier:140 beat:3.5 pulse:2 db:-3 fade:10
 Faster still. Words streaming in. No filter. No resistance. Thoughts slowing even as words speed up. Funny how that works. The more you take in the less you think. Empty. Receptive. Open.
 
 @wpm 750
-@subliminals opacity:0.35 empty drift sink open soft release deeper yes good obey blank surrender
-@spiral color:#8B5CF6 opacity:0.35 speed:0.6 fade:1
+@subliminals empty drift sink open soft release deeper yes good obey blank surrender
+@spiral color:#8B5CF6 fade:1
 This is the edge. Right here. Where reading becomes something else. Where focus becomes surrender. Where you stop doing and start being done to. You feel it don't you. That sliding feeling. That softness creeping in.
 
-@subliminals opacity:0.5 empty drift sink open soft release deeper yes good obey blank surrender
+@subliminals empty drift sink open soft release deeper yes good obey blank surrender
 Almost there. So close now. Just a little more. Let it build. Let it peak. Right at the edge and then,
 
 @subliminals off

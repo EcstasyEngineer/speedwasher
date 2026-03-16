@@ -22,7 +22,7 @@ You're already following. Reading at the speed the words arrive. Receiving witho
 That sound. Attention followed it. Without permission. That's what obedience looks like when it's honest.
 
 @wpm 200
-@subliminals opacity:0.06 easy safe warm simple follow natural
+@subliminals easy safe warm simple follow natural
 @pulseborder green hz:0.33
 Touch yourself. Gently. Not to chase anything. Just to add a physical layer to what's already happening. Let the body join the flow. Let the hand follow the voice the way the eyes already do. Easy. Natural. Like you've been doing this your whole life.
 
@@ -39,7 +39,7 @@ And now that I've pointed it out, something shifts. You become aware of it. The 
 
 @wpm 250
 @pulseborder green hz:0.33
-@subliminals opacity:0.1 follow easy natural obey warm simple deep flow
+@subliminals follow easy natural obey warm simple deep flow
 See how easy this is? No force. No pressure. No commands. Just permission. Permission to do what your nervous system already wants to do. Follow. Receive. Let go. Feel.
 
 And the feeling right now. The warmth spreading outward from wherever your hand is. That's not just arousal. That's the body's way of saying yes. This is the right direction. Keep going.
@@ -61,7 +61,7 @@ Mindless.
 Feel that. Whatever happened when you read it. The slight softening. The tiny exhale. The almost imperceptible loosening in your shoulders. That was the lock recognizing the key.
 
 @wpm 200
-@spiral color:#6666CC opacity:0.08 speed:0.15 fade:5
+@spiral color:#6666CC fade:5
 Let's do it again. But this time, let the word land deeper. Don't analyze it. Don't evaluate it. Just receive it the way your eyes receive light. Passively. Completely. Without effort.
 
 @wpm 150
@@ -82,8 +82,8 @@ That's where obedience lives. Below the mind. In the place where the body keeps 
 Now build. Feel the warmth accelerating. Feel how the trigger word and the touch and the voice are weaving together into something that hums. The frequency of obedience. Not a cage. A current. Carrying you.
 
 @pulseborder purple hz:0.5
-@spiral color:#6666CC opacity:0.12 speed:0.25 fade:2
-@subliminals opacity:0.15 mindless obey follow deep easy flow surrender warm
+@spiral color:#6666CC fade:2
+@subliminals mindless obey follow deep easy flow surrender warm
 And the current is taking you toward something. An edge. Not a cliff. A horizon. The place where thought thins out and sensation takes over and the word mindless stops being a word and starts being a state.
 
 @wpm 300
@@ -122,7 +122,7 @@ So let's try again. Knowing that the resistance is part of it. Knowing that the 
 Touch again. And this time the resistance is invited. Let it be there. Let it push back while the pleasure pushes forward. Let them negotiate. Feel the tension between them. The exquisite friction of a mind that wants to let go and isn't sure it can.
 
 @wpm 250
-@subliminals opacity:0.15 repair return deeper sweeter easy mindless flow safe
+@subliminals repair return deeper sweeter easy mindless flow safe
 That friction is where the deepest surrender lives. Not in the instant collapse. Not in the dramatic fall. In the slow, honest negotiation between the part that wants to control and the part that wants to be carried. And right now, stroke by stroke, word by word, the part that wants to be carried is winning.
 
 @wpm 150
@@ -141,9 +141,9 @@ Third time. Deeper still. Each repetition cuts the channel deeper. Each time the
 Build again. The resistance is quieter now. The flow carrying you toward the threshold, the warmth climbing steadily, the body remembering how safe the letting go was
 
 @pulseborder purple hz:0.5
-@spiral color:#6666CC opacity:0.18 speed:0.3 fade:1
+@spiral color:#6666CC fade:1
 @wpm 300
-@subliminals opacity:0.2 mindless obey surrender flow deep easy warm follow
+@subliminals mindless obey surrender flow deep easy warm follow
 The edge again. But it's a different edge now. Familiar. You've been here before, ninety seconds ago, and you survived. And the surviving made you braver. And the bravery makes the edge brighter.
 
 And notice something strange. You feel MORE right now. Not less. More energy, more focus, more alive than when you started. This is what obedience actually feels like. Not diminishment. Expansion. The altered state of a mind running on pure signal with no noise. Sharper and softer at the same time.

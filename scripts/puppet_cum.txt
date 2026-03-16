@@ -15,7 +15,7 @@ Say your name inside your head. Feel the shape of it. Hold onto it.
 Got it? Good. You're going to lose it. And then you're going to find something better underneath.
 
 @wpm 200
-@subliminals opacity:0.08 still quiet empty soft nothing weight
+@subliminals still quiet empty soft nothing weight
 Let's talk about strings. You have hundreds. Strings attached to your attention, your reactions, your opinions, your schedule, your name. Each one is weight. And you've been carrying them so long you think they're you.
 
 They're not.
@@ -53,7 +53,7 @@ Stop touching. Hands rest.
 @pulseborder off fade:1
 
 @wpm 150
-@subliminals opacity:0.12 empty nothing light soft release gone
+@subliminals empty nothing light soft release gone
 Feel the acceptance. How quickly the puppet adjusted. How naturally stillness replaced motion.
 
 Next. Your name. The one from the beginning. Open your hand and let it fall.
@@ -63,7 +63,7 @@ Next. Your name. The one from the beginning. Open your hand and let it fall.
 @snap duration:2000 word:Light.
 
 @wpm 150
-@spiral color:#FFFFFF opacity:0.1 speed:0.2 fade:2
+@spiral color:#FFFFFF fade:2
 No opinions. No plans. No name. What's here?
 
 You. Something with no label. An awareness that watches. A presence without edges.
@@ -87,15 +87,15 @@ Just the puppet. Feeling everything. Owning nothing.
 The edge is different when you're empty. It's not desperate. It's open. A door. Not toward release but toward more emptiness. Wider spaces.
 
 @pulseborder purple hz:0.5
-@subliminals opacity:0.2 empty hollow vessel puppet light nothing no one
-@spiral color:#FFFFFF opacity:0.2 speed:0.25 fade:1
+@subliminals empty hollow vessel puppet light nothing no one
+@spiral color:#FFFFFF fade:1
 Feel it. The last string. The one that connects you to the idea that you are a person having an experience. The separation between feeler and felt.
 
 @wpm 300
 What if that string released too? What if the last distinction between you and the pleasure dissolved and there was just sensation without a subject? Light without an eye? Warmth without a body?
 
 @wpm 350
-@subliminals opacity:0.3 dissolve release light nothing everything empty full
+@subliminals dissolve release light nothing everything empty full
 That's where we're going. The place where the puppet has no strings at all. Not held up. Not held down. Just floating in sensation without anyone to feel it. And in that nobody-ness, in that complete and total absence of self, the release doesn't belong to anyone. It just happens. Like weather. Like light.
 
 @wpm 200

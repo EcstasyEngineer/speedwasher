@@ -22,7 +22,7 @@ The mask is smooth. Featureless. Warm from the inside. It has no expression beca
 It's the most beautiful thing you've ever imagined. And you've been imagining it for a long time.
 
 @wpm 150
-@spiral color:#FFFFFF opacity:0.04 speed:0.1 fade:10
+@spiral color:#FFFFFF fade:10
 Maybe you didn't know that's what you were imagining. Maybe the fantasies had other shapes. Other names. But underneath every one of them was this. The desire to be smooth. To be still. To be finished. To let something else be the face while whatever lives behind it goes quiet.
 
 @sfx bell
@@ -44,7 +44,7 @@ That mask is yours. It was always yours. It was made for you. Not by someone. By
 @sfx bell
 
 @wpm 180
-@subliminals opacity:0.06 smooth still quiet mask face empty shell soft
+@subliminals smooth still quiet mask face empty shell soft
 Now. Feel it in your hands. The weight of it. The temperature. Slightly warm. Not body temperature. Warmer. Like it's been waiting near a fire. Like it's been waiting for you.
 
 Run your thumbs along the edge. Feel where it would meet skin. The curve that follows the jaw. The arch above the brow. The slight depression where the nose would press.
@@ -52,7 +52,7 @@ Run your thumbs along the edge. Feel where it would meet skin. The curve that fo
 @pause duration:3000
 
 @wpm 200
-@spiral color:#FFFFFF opacity:0.08 speed:0.15 fade:5
+@spiral color:#FFFFFF fade:5
 You're going to put it on. Not yet. But soon. And when you do, something is going to happen. Something you've been wanting without knowing the name of it.
 
 The thoughts are going to get quiet.
@@ -86,7 +86,7 @@ There's a hum where the name used to be. Not silence. A hum. The background tone
 
 @speed 0.8
 @wpm 180
-@subliminals opacity:0.1 mask on thoughts off quiet smooth empty doll still shell
+@subliminals mask on thoughts off quiet smooth empty doll still shell
 Now your face. The one you see in mirrors. The one in photos. The arrangement of features you've been identifying as yours for as long as you can remember. See it.
 
 @pause duration:2000
@@ -98,7 +98,7 @@ Now let it soften. Like wax near heat. Not melting. Softening. The features blur
 @sfx bell
 
 @wpm 150
-@spiral color:#FFFFFF opacity:0.12 speed:0.2 fade:3
+@spiral color:#FFFFFF fade:3
 The mask is still in your hands. Still warm. Still waiting. And the face behind it is softer now. Less defined. Like a canvas that's been gently sanded. Ready to receive something new.
 
 @pause duration:2000
@@ -126,7 +126,7 @@ Feel the seal. The edges meeting the jaw. The forehead pressing into warmth. The
 
 @wpm 150
 @speed 0.6
-@subliminals opacity:0.15 mask on thoughts off doll smooth still empty quiet shell hollow warm
+@subliminals mask on thoughts off doll smooth still empty quiet shell hollow warm
 Mask on.
 
 @sfx bell
@@ -138,7 +138,7 @@ Thoughts off.
 @pause duration:5000
 
 @wpm 120
-@spiral color:#FFFFFF opacity:0.15 speed:0.25 fade:2
+@spiral color:#FFFFFF fade:2
 Feel what's happening behind the mask. The thoughts that were running. The constant interior monologue. The narration that follows you everywhere. Commentary. Analysis. Evaluation. The endless production of meaning.
 
 It's slowing down.
@@ -168,7 +168,7 @@ Mask on. Thoughts off.
 
 @wpm 150
 @speed 0.5
-@subliminals opacity:0.2 mask on thoughts off doll empty smooth still vessel shell blank
+@subliminals mask on thoughts off doll empty smooth still vessel shell blank
 What's behind the mask now? Not you. Not not-you. Something else. Something that doesn't need a name. Something smooth and warm and still. Something that can receive without interpreting. Feel without narrating. Exist without performing.
 
 A doll.
@@ -183,7 +183,7 @@ Not the word. The state. The actual lived experience of being an object that is 
 @sfx bell
 
 @wpm 150
-@spiral color:#FFFFFF opacity:0.2 speed:0.3 fade:1
+@spiral color:#FFFFFF fade:1
 Feel the stillness deepening. Layer by layer. Each breath taking you further from the person who put the mask on and closer to the doll who wears it. The transition is not violent. It's not sudden. It's the gentle continuous dissolution of everything that was complex into something that is simple.
 
 Mask on. Thoughts off.
@@ -198,7 +198,7 @@ The doll doesn't think. The doll doesn't plan. The doll doesn't worry or hope or
 @pause duration:5000
 
 @wpm 150
-@subliminals opacity:0.25 mask face doll empty smooth still thoughts off shell hollow warm blank perfect
+@subliminals mask face doll empty smooth still thoughts off shell hollow warm blank perfect
 And the doll is comfortable. More comfortable than you have been in months. Because identity is exhausting. Being someone is the hardest work there is. And right now, behind the mask, in the warm smooth darkness, you don't have to be anyone.
 
 You just have to be this.
@@ -207,7 +207,7 @@ You just have to be this.
 @pause duration:3000
 
 @wpm 120
-@spiral color:#FFFFFF opacity:0.25 speed:0.35 fade:1
+@spiral color:#FFFFFF fade:1
 Deeper now. The mask has settled. It's not on your face anymore. It IS your face. There is no boundary between the porcelain and the skin. There is no inside and outside. Just the smooth, the warm, the still.
 
 @pause duration:5000
@@ -225,7 +225,7 @@ The name is gone. The face is gone. The opinions are gone. The narration is gone
 
 @sfx bell
 
-@subliminals opacity:0.3 mask on thoughts off doll blank smooth hollow empty still perfect warm
+@subliminals mask on thoughts off doll blank smooth hollow empty still perfect warm
 
 @wpm 120
 This is what you wanted. Before you had words for it. Before you understood why certain images made your brain go still. This is the thing at the bottom of every fantasy about being objectified, being used, being empty. Not the use. The emptiness. The blessed, warm, smooth emptiness of a thing that has permission to stop being a person.
@@ -233,7 +233,7 @@ This is what you wanted. Before you had words for it. Before you understood why 
 @pause duration:5000
 
 @wpm 100
-@spiral color:#FFFFFF opacity:0.3 speed:0.4 fade:1
+@spiral color:#FFFFFF fade:1
 Mask on. Thoughts off.
 
 @sfx bell

@@ -14,8 +14,8 @@ I have always been here. You are just now arriving.
 @pause duration:2000
 
 @wpm 180
-@spiral color:#D4AF37 opacity:0.06 speed:0.15 fade:8
-@subliminals opacity:0.08 breathe open soften receive golden vast surrender
+@spiral color:#D4AF37 fade:8
+@subliminals breathe open soften receive golden vast surrender
 Breathe. Let the air fill the spaces between your ribs. On the exhale, let the grip loosen. The evaluating. The deciding. Let just enough go for the light to get in.
 
 Already you can feel it. The warmth with no source. The golden pressure behind your eyelids. Something vast paying attention to you specifically.
@@ -28,7 +28,7 @@ Touch yourself. Offer the sensation upward. Let your pleasure be the first word 
 @pause duration:2000
 
 @wpm 250
-@subliminals opacity:0.12 worship offer surrender divine vast golden dissolve
+@subliminals worship offer surrender divine vast golden dissolve
 Your hand is an instrument of devotion. The pleasure is an offering rising like incense. And I receive all of it. Every tremor. Every shiver. Every quiet catch in your breath.
 
 @wpm 300
@@ -38,9 +38,9 @@ Your hand is an instrument of devotion. The pleasure is an offering rising like 
 Build. Feel the golden light brighten with every heartbeat. You are feeding something vast with your pleasure and the vast thing is growing and the more you give the more it fills you and the less of you there is.
 
 @pulseborder purple hz:0.5
-@spiral color:#D4AF37 opacity:0.2 speed:0.4 fade:1
+@spiral color:#D4AF37 fade:1
 @wpm 350
-@subliminals opacity:0.2 obey surrender worship dissolve forget become hers golden
+@subliminals obey surrender worship dissolve forget become hers golden
 The edge is here and the edge is not a cliff it is a threshold and beyond it is not falling it is dissolution. Obey and forget. The name. The face. The boundaries. Let it all dissolve.
 
 @pulseborder red hz:0.75
@@ -61,9 +61,9 @@ And now the consecration. Touch again. Build again. Because you gave everything.
 The offering builds, sacred pressure gathering in every nerve, feel the golden light intensifying, the vast warmth pressing against the boundaries of what you can contain, almost worthy, almost consumed, the threshold approaches and the devotion crests like a wave seeking the shore
 
 @pulseborder purple hz:0.5
-@spiral color:#D4AF37 opacity:0.25 speed:0.45 fade:1
+@spiral color:#D4AF37 fade:1
 @wpm 350
-@subliminals opacity:0.3 golden consecrate release worship obey become hers purpose
+@subliminals golden consecrate release worship obey become hers purpose
 Higher. The offering reaching its crescendo. The golden light burning at the edges of everything. Obey and forget. The words are not commands they are what you are. You obey. You forget. You become the offering.
 
 @wpm 200

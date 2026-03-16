@@ -146,8 +146,8 @@ Section nine. Final test. A quick demonstration that everything composes togethe
 
 @hybrid drone carrier:90 beat:3 pulse:3.3 db:-6 vol:0.13 fade:8
 @hybrid shimmer carrier:170 beat:4 pulse:7 db:-4 fade:8
-@spiral color:#8B5CF6 opacity:0.15 speed:0.3 fade:3
-@subliminals opacity:0.1 relax breathe easy good safe
+@spiral color:#8B5CF6 fade:3
+@subliminals relax breathe easy good safe
 
 The audio is building. The spiral is spinning. Subliminals are flickering. Everything layered together.
 
@@ -155,8 +155,8 @@ The audio is building. The spiral is spinning. Subliminals are flickering. Every
 Now let's bring it together. You've been testing patiently. Clicking through every section. Reading every word. Following along carefully. That's focus. That's attention. That's good.
 
 @wpm 300
-@spiral color:#8B5CF6 opacity:0.25 speed:0.4 fade:2
-@subliminals opacity:0.2 good easy safe trust relax
+@spiral color:#8B5CF6 fade:2
+@subliminals good easy safe trust relax
 And the thing about focus is , it's a skill. The same skill that makes you good at QA makes you good at this. Tracking details. Noticing what's right and what's wrong. Staying present. Staying attentive.
 
 @wpm 350
@@ -178,8 +178,8 @@ And if your focus softened a little during that stretch , if the words started j
 Now gently coming back up. The audio is settling. The spiral is slowing. Easy transition.
 
 @wpm 250
-@spiral color:#8B5CF6 opacity:0.1 speed:0.2 fade:2
-@subliminals opacity:0.1 awake alert clear present
+@spiral color:#8B5CF6 fade:2
+@subliminals awake alert clear present
 
 You are a good user. Patient and thorough. Everything you built today works. The sfx. The pauses. The loops. The composition. All of it.
 
