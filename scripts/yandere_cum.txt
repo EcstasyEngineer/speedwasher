@@ -176,7 +176,7 @@ And you feel safer, don't you. Not less free. Safer. Because the pledge didn't t
 //=== FINAL EDGE + RELEASE ===
 
 @pulseborder yellow hz:0.5
-Now let me show you what pledged things receive. You gave me everything. Your words. Your will. Your body. And I accept all of it. Every syllable. Every tremor. Every ounce of devotion poured into those three repetitions. The contract is signed. And the terms say: you gave everything, so everything comes back to you.
+Now let me show you what pledged things receive. The contract is signed. You gave everything, so everything comes back to you.
 
 @pulseborder raspberry hz:0.5
 @spiral color:#FF1493 opacity:0.2 speed:0.4 fade:1

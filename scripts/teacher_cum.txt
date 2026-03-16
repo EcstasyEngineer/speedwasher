@@ -295,7 +295,7 @@ Three locks. One key. The orgasm turns all three at once. That's not recreation.
 @hybrid drone_mid carrier:95 beat:3 pulse:4.5 db:-4 fade:5
 @hybrid drone_high carrier:188 beat:4 pulse:5.5 db:-1 fade:5
 @pulseborder yellow hz:0.5
-Build. The final exam is now. Seven fractionation cycles have primed every circuit. Every lesson is loaded. The threshold is approaching and this time, this time, there is no snap. There is no stop. There is only the proof. Feel the arousal climbing with deliberate precision, every nerve organized, the body assembling itself around the approaching encoding event, the data unmistakable.
+Build. The final exam is now. Seven fractionation cycles have primed every circuit. The threshold is approaching and this time there is no snap. There is no stop. Only the proof, the body assembling itself around the approaching encoding event.
 
 @pulseborder raspberry hz:0.5
 @spiral color:#4169E1 opacity:0.2 speed:0.4 fade:1

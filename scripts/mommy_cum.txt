@@ -238,6 +238,9 @@ Hold. Stay. Right here on the edge where the wanting burns like a star and my vo
 @sfx bell
 One more breath of warmth. One more wave of golden, aching pleasure.
 
+@pulseborder yellow hz:0.5
+Feel the warmth gathering now, sweetheart. The golden heat rising through you, your body leaning toward the edge with that beautiful, trembling trust.
+
 @pulseborder raspberry hz:0.5
 @wpm 400
 @subliminals opacity:0.25 ache devotion beautiful wanting stay hold edge golden
