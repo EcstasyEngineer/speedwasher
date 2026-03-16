@@ -42,7 +42,7 @@ What are you hiding from? Don't answer me. Answer yourself. Let the question sit
 The heat is building. And it's tangled with truth. Every defense that drops unlocks another layer of sensation. Vulnerability makes the body sing.
 
 @pulseborder purple hz:0.5
-@spiral fade:2
+@spiral color1:#8B0000 color2:#36454F color3:#CC5500 fade:2
 Higher. The edge and the truth approaching at the same speed. They are the same thing. The place where you lose control is the place where you stop lying.
 
 @wpm 350
@@ -69,7 +69,7 @@ And now your body gets to speak.
 Build. Fast. The walls are down and the truth is loud and every sensation is amplified by the brutal honest fact that you are not pretending.
 
 @pulseborder purple hz:0.5
-@spiral fade:1
+@spiral color1:#8B0000 color2:#36454F color3:#CC5500 fade:1
 @wpm 350
 @subliminals truth heal real crack light release break open
 Higher. To the edge. Where truth and pleasure are the same thing and your body is shaking and your mind is clear and the stone in your chest is splitting apart
