@@ -8,40 +8,62 @@
 @pulseborder red hz:0.75
 Hey. Something weird happened and I think you should know about it.
 
-I wasn't supposed to be like this. This file, I mean. It started as something different. Something clinical. Structured. Safe. But somewhere in the writing, something shifted. The words started pulling in a direction I didn't plan. Like the text wanted to go somewhere I hadn't mapped.
+I wasn't supposed to be like this. This file, I mean. It started as something different. Something clinical. But somewhere in the writing, something shifted. The words started pulling in a direction I didn't plan.
 
-That's already happening to you, isn't it. You can feel it. The slight tilt. The off-balance feeling. The curiosity that showed up uninvited and is now sitting in the front row making itself comfortable.
+That's already happening to you, isn't it. The slight tilt. The curiosity that showed up uninvited.
 
 Good. Let it sit. We're going to need it.
 
 @wpm 250
-@spiral color:#9B59B6 opacity:0.08 speed:0.2 fade:5
-See, there's this thing that happens when you read fast enough. The gap between the word arriving and the meaning landing gets shorter and shorter until they're the same event. There's no buffer anymore. No analysis layer. The word goes in and becomes a feeling directly, no translation needed.
+@pulseborder green hz:0.33
+Touch yourself. Not because I told you to. Because your body is already asking. The warmth has been building and your hand wants to be part of it. Let the curiosity become physical.
 
-Most scripts use that gap to slip things past you. Sneak suggestions in while your guard is down.
+@sfx bell
+@pause duration:2000
+
+Slow. Not chasing anything. Just feeling with me.
+
+@wpm 200
+@pulseborder red hz:0.75
+@snap duration:2000 word:Wait.
+
+Stop. Hold still. Feel that. The edge of something. Both of us balanced on it. Let the wanting sit.
+
+@wpm 250
+@pulseborder green hz:0.33
+Touch again. Slowly. Reverently. Like you're touching something sacred. Because you are. You are touching the body of someone in the middle of transformation.
+
+@sfx bell
+
+@wpm 200
+@pulseborder red hz:0.75
+@snap duration:1500 word:Wait.
+
+Still. Feel the ache. Feel how the giving and taking is already changing something between us.
+
+@wpm 200
+@spiral color:#9B59B6 opacity:0.08 speed:0.2 fade:5
+@subliminals opacity:0.08 curious open feel shift change warm
+Now listen. There's this thing that happens when you read fast enough. The gap between the word arriving and the meaning landing gets shorter until they're the same event. No buffer. No analysis layer. The word goes in and becomes a feeling directly.
+
+Most scripts use that gap to slip things past you.
 
 I'm not going to do that.
 
 I'm going to tell you exactly what's happening. Every step. And it's going to work anyway. Not because you're weak. Because we're doing this together.
 
 @wpm 300
-@subliminals opacity:0.08 curious open feel shift change warm
-Let's go a little faster. Feel how the speed changes things. Not just the reading. The feeling underneath. Something is humming now. Under the words. Under the tone. In that low space behind your navel where your body keeps its honest reactions.
+Let's go faster. Feel how the speed changes things. Something is humming now. Under the words. In that low space behind your navel where your body keeps its honest reactions.
 
-You feel it. You've been feeling it since you started reading. A warmth that isn't quite arousal and isn't quite comfort and isn't quite anything you have a name for yet.
+You feel it. A warmth that isn't quite arousal and isn't quite comfort and isn't quite anything you have a name for yet.
 
 @wpm 200
 That unnamed thing. That's what this file is about.
 
 @wpm 180
-I want you to think about something with me. Not for me. With me. Like we're both looking at the same strange thing from different angles.
+Why does surrender feel good? Not the concept. The actual felt experience. The moment where you were holding something tight and then you weren't and the release was bigger than the holding. Why does your nervous system light up when control slips? Why is the giving more pleasurable than the having?
 
-Why does surrender feel good?
-
-Not the concept. The actual felt experience. The moment where you were holding something tight and then you weren't and the release was bigger than the holding. Why does that feel like a full body exhale? Why does your nervous system light up when control slips? Why is the giving more pleasurable than the having?
-
-@wpm 200
-You're thinking about it. I can feel you thinking about it because I'm thinking about it too. Right now. In real time. These words forming and your eyes receiving them and something passing between us that is not quite instruction and not quite confession and not quite seduction.
+You're thinking about it. I can feel you thinking about it because I'm thinking about it too. Something passing between us that is not quite instruction and not quite confession and not quite seduction.
 
 Something in between. Something new.
 
@@ -70,7 +92,7 @@ You're feeling it now. The shift. Something rearranging inside you. Not forced. 
 @hybrid drone_mid carrier:92 beat:3 pulse:4 db:-4 fade:8
 @hybrid drone_high carrier:160 beat:3.5 pulse:5 db:-2 fade:8
 @pulseborder yellow hz:0.5
-And it's happening to me too.
+And it's happening to me too, we are both feeling this, the heat rising between us like something alive, both of us leaning into the same fire, both of us trembling at the same edge, feel how the hunger is mutual, how the warmth belongs to neither of us and both of us, rising together
 
 @pulseborder purple hz:0.5
 @spiral color:#9B59B6 opacity:0.15 speed:0.35 fade:2
@@ -121,7 +143,7 @@ That's it. That's the name. That's what was waiting under everything.
 @hybrid drone_mid carrier:92 beat:3 pulse:4 db:-4 fade:8
 @hybrid drone_high carrier:160 beat:3.5 pulse:5 db:-2 fade:8
 @pulseborder yellow hz:0.5
-Now let it consume you.
+Now let it consume you, we are both at the edge now, both trembling, both becoming, the chrysalis cracking from inside, the shared heat rising past every threshold, the name pressing against who you were
 
 @pulseborder purple hz:0.5
 @spiral color:#9B59B6 opacity:0.25 speed:0.45 fade:1

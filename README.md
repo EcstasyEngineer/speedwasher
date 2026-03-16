@@ -97,16 +97,30 @@ All three modes support **named layers**. Reusing a name transitions to the new 
 @hybrid off fade:2                                              // stop ALL layers with 2s fade
 ```
 
-### Visuals
+### Visuals — Spiral
 ```
-@spiral color:#8B5CF6 opacity:0.3 speed:0.5 fade:2      // purple spiral, 30% opacity
+@spiral opacity:0.3 speed:0.5 fade:2                     // default type:1, default colors
+@spiral color1:#E30B5C color2:#8B5CF6 color3:#87CEEB     // 3 custom colors
+@spiral color:#8B5CF6                                     // single color propagated to all 3
 @spiral #8B5CF6 opacity:0.3 speed:0.5 fade:2            // bare #hex also works
+@spiral type:2 opacity:0.3                                // happy spiral (type 2)
 @spiral off fade:1                                        // fade out
 ```
 
+Two WebGL shader types (falls back to Canvas 2D if WebGL unavailable):
+
+| Type | Name | Description |
+|------|------|-------------|
+| `1` (default) | SDF Outline | Three independent logarithmic spiral layers at different speeds with glow, outlines, and ripple. Each layer takes one of the 3 colors. |
+| `2` | Happy Spiral | Convergent pull with Chebyshev angular patterns, radial pulse, and center glow. |
+
 | Parameter | Description | Default |
 |-----------|-------------|---------|
-| `color:` | Hex color (or bare `#hex`) | #8B5CF6 |
+| `type:` | Shader type (1 or 2) | 1 |
+| `color:` | Single hex color (propagated to all 3 layers) | (uses defaults) |
+| `color1:` | Layer 1 hex color | #E30B5C (raspberry) |
+| `color2:` | Layer 2 hex color | #8B5CF6 (purple) |
+| `color3:` | Layer 3 hex color | #87CEEB (light blue) |
 | `opacity:` | Target opacity 0-1 | 0.3 |
 | `speed:` | Rotations per second | 1 |
 | `fade:` | Fade duration in seconds | 1 |

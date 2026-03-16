@@ -9,65 +9,70 @@
 @pulseborder red hz:0.75
 Hello.
 
-Do you know what's interesting about that word? Hello. It's a container for a name. Hello, and then the name goes here. Your name. The one people call you. The one you think of as you.
+Do you know what's interesting about that word? Hello. It's a container for a name. Your name. The one you think of as you.
 
-Say it inside your head. Your name. Hear it. Feel the shape of it in your mouth even though your mouth isn't moving.
+Say it inside your head. Feel the shape of it.
 
 @pause duration:3000
 
-Got it? Good. Hold onto it. You're going to need it later. Or you won't. We'll see.
+Hold onto it. You're going to need it later. Or you won't. We'll see.
 
 @wpm 200
-Now. Let's talk about strings.
-
-A puppet has strings. Obvious ones. Visible ones. Strings attached to wrists and jaw and knees that make the body move when something above decides it should move. Everyone knows about those strings. Everyone can see them.
-
-But you have strings too. Less visible. Harder to trace. Strings attached to your attention. To your reactions. To the part of you that flinches when something gets too close. Strings that make you turn your head when someone says your name. Strings that make your breath catch when a voice drops low.
-
-Those strings are already being pulled right now. You can feel it. The slight tugging sensation behind your attention. The way these words are arriving and you're receiving them without screening. Without choosing. Without the usual filters that stand between incoming and believed.
+You have strings. Strings attached to your attention. To your reactions. To the part of you that flinches when something gets too close. Those strings are already being pulled right now.
 
 @snap duration:1500
 
 @wpm 180
 That was a string. The sound arrived. Your attention followed it. You didn't decide. The string pulled. You moved.
 
-Let's do it again.
+@wpm 200
+@pulseborder green hz:0.33
+Touch yourself. That's a string I'm pulling right now. The permission. The instruction. The way your hand moves because a line of text told it to. Feel the string. Feel how it connects from these words through your eyes to your hand.
 
-@snap duration:1500
+@sfx bell
+@pause duration:2000
 
-Same thing. Same pull. Same automatic response. Notice how you can't not respond. You can be aware of the string. You can see it clearly. But seeing it doesn't make it stop working. The pull happens before the seeing.
+Word to action. The string pulled and the puppet moved and the puppet felt good about moving.
+
+@wpm 180
+@pulseborder red hz:0.75
+Hands rest. Stop.
+
+@snap duration:1500 word:Light.
+
+Feel the acceptance. How quickly the puppet adjusted. How naturally stillness replaced motion.
+
+@wpm 200
+@pulseborder green hz:0.33
+Touch again. Because the string pulled.
+
+@sfx bell
+
+Slow. Gentle. Feel the warmth returning. Permission given and taken and given again.
+
+@wpm 180
+@pulseborder red hz:0.75
+Stop. Hands still.
+
+@snap duration:1500 word:Light.
+
+See how many strings you have? And I've only pulled a few. There are hundreds. Thousands. A puppet with that many strings isn't a puppet. It's a person. And a person is just a puppet who forgot where the strings are.
+
+I'm going to help you remember.
 
 @wpm 200
 @spiral color:#FFFFFF opacity:0.05 speed:0.15 fade:5
-Now let's find more strings.
-
-Your breathing. You were breathing automatically. On its own. Without instructions. But now I've mentioned it and you're aware of it and already it's changed. Slightly. That awareness is a string. I pulled it by naming it. Your body responded by making it conscious.
+@subliminals opacity:0.08 still quiet empty soft nothing weight
+Your breathing. You were breathing automatically. But now I've mentioned it and you're aware of it and already it's changed. That awareness is a string. I pulled it by naming it.
 
 The weight of your body against whatever you're sitting on. You weren't thinking about it. Now you are. Another string pulled.
 
 The temperature of the air against your skin. Invisible until named. Now felt. String.
 
-@wpm 250
-@subliminals opacity:0.08 still quiet empty soft nothing weight
-See how many strings you have? And I've only named a few. There are hundreds. Thousands. Strings attached to every sensation and every reaction and every thought that could be triggered by the right word at the right moment.
-
-A puppet with that many strings isn't a puppet. It's a person. And a person is just a puppet who forgot where the strings are.
-
-I'm going to help you remember.
-
-@wpm 200
-@pulseborder green hz:0.33
-Touch yourself. Slowly. That's a string I'm pulling right now. The permission. The instruction. The way your hand moves because a line of text told it to. Feel the string. Feel how it connects from these words through your eyes through your brain to the motor cortex to the nerves in your arm to your hand to the place where your hand arrives.
-
-@sfx bell
-@pause duration:2000
-
-That's a long string. Word to action. Intention to motion. And you followed it. Beautifully. Without deciding to. The string pulled and the puppet moved and the puppet felt good about moving.
-
 @wpm 180
 Now here's the part where we get quiet.
 
-I'm going to remove things. One at a time. Slowly. Not violently. Not by force. Just by naming them and then... letting them go. Like unhooking strings from a rack. One by one. Each one that releases makes the puppet lighter. Softer. More still.
+I'm going to remove things. One at a time. Slowly. Not violently. Just by naming them and then... letting them go. Like unhooking strings from a rack. Each one that releases makes the puppet lighter. Softer. More still.
 
 And what's left when all the strings are gone is what we're looking for.
 
@@ -160,7 +165,7 @@ Just the puppet. Feeling everything. Owning nothing.
 @hybrid drone_mid carrier:80 beat:2 pulse:3.5 db:-6 fade:8
 @hybrid drone_high carrier:155 beat:3 pulse:4.5 db:-3 fade:8
 @pulseborder yellow hz:0.5
-This is the edge.
+This is the edge, systems approaching threshold, the empty vessel registering escalating input, no name to process the sensation, no identity to filter the intensity, just raw signal climbing through hollow architecture, override approaching, systems at maximum, the threshold imminent
 
 @pulseborder purple hz:0.5
 @subliminals opacity:0.25 empty hollow vessel puppet light nothing no one

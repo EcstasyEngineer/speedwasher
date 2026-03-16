@@ -1,6 +1,7 @@
 // @joitype compliance_loop
-//Teacher - Advanced Curriculum (Release Variant)
-//The exam is the orgasm. Neurochemistry seals the lesson. Dopamine + oxytocin + cortisol = permanent encoding.
+//Teacher - Advanced Curriculum (NSFW + Denial)
+//Heavy fractionation. Lesson framing. Addiction anchor.
+//Inspired by academic authority + compulsive return loops.
 
 @wpm 180
 @hybrid drone_low carrier:62 beat:2.5 pulse:5 db:-8 vol:0.12 fade:10
@@ -174,10 +175,10 @@ Let me deliver the key insight while you're in this receptive state. Encoding ha
 
 The insight is this: every addiction has a cue, a routine, and a reward. The cue is any quiet moment where your mind wanders. The routine is returning to this file. The reward is the pleasure paired with the understanding.
 
-And the reward prediction error, the dopamine that drives the learning, gets stronger when the reward is intermittent. When sometimes you get release and sometimes you don't.
+And the reward prediction error , the dopamine that drives the learning , gets stronger when the reward is intermittent. When sometimes you get release and sometimes you don't.
 
 @wpm 250
-That's why tonight is different. Tonight you get to finish. And the contrast with every denial will make this encoding event the most powerful one yet.
+That's why you don't get to finish tonight.
 
 //=== FRACTIONATION CYCLE 5 ===
 
@@ -236,7 +237,7 @@ One more time. Touch. Gently.
 This is the last time tonight. And knowing that changes the quality. The scarcity makes the craving sharper. The last cigarette of the pack. The last drink in the bottle. The final hit before dry.
 
 @subliminals opacity:0.15 return need come back ache circuit wire
-Feel every sensation. Catalog it. Your body is recording this moment in vivid detail because it knows this is the last dose. The encoding is maximal. The memory will be pristine. And when the craving fires later, in the shower, in bed, in the space between tasks, this is the memory that surfaces. This exact feeling. These exact words. This exact ache-sweetness.
+Feel every sensation. Catalog it. Your body is recording this moment in vivid detail because it knows this is the last dose. The encoding is maximal. The memory will be pristine. And when the craving fires later , in the shower, in bed, in the space between tasks , this is the memory that surfaces. This exact feeling. These exact words. This exact ache-sweetness.
 
 @wpm 250
 @hybrid drone_mid carrier:95 beat:3 pulse:4.5 db:-4 fade:5
@@ -251,93 +252,80 @@ Hold the edge. Don't go over. Right here. Suspended. Every nerve ending screamin
 @wpm 300
 This is the moment that encodes deepest. Maximum arousal. Maximum attention. Maximum neuroplasticity. And the lesson landing right now is the one you will never forget.
 
-You will return. Not because I told you to. Because the circuit demands it. Because quiet moments will taste like this and the only thing that resolves the craving is sitting up straight and pressing play and hearing these words again and feeling your hand move again and climbing to the edge again.
+You will return. Not because I told you to. Because the circuit demands it. Because quiet moments will taste like this and the only thing that resolves the craving is sitting up straight and pressing play and hearing these words again and feeling your hand move again and climbing to the edge again and being denied again and the denial is what makes the return inevitable because intermittent reward is the engine of addiction and I just taught you that and you understood it and it is already working.
 
-//=== FINAL EDGE + RELEASE ===
+//=== FINAL DENIAL ===
 
 @hybrid drone_mid carrier:94 beat:3 pulse:3.5 db:-5 fade:0.3
 @hybrid drone_high carrier:182 beat:4 pulse:4.5 db:-3 fade:0.3
 @pulseborder red hz:0.75
-@snap duration:2500 word:Hold.
+@snap duration:3000 word:Denied.
 
 @wpm 100
 @pulseborder off fade:1
-@spiral off fade:2
+@spiral off fade:3
 @subliminals off
-Still. One more second. Catalog the ache.
-
-@pause duration:3000
-
-@wpm 150
-Breathe.
-
-@pause duration:2000
-
-@snap duration:1000 word:Good.
-
-@wpm 180
-@pulseborder green hz:0.33
-Now. Listen carefully. This is the final lecture. The one that changes the architecture permanently.
-
-I told you that intermittent reward drives the strongest encoding. I told you that sometimes you get release and sometimes you don't. And tonight, the variable reinforcement schedule delivers.
-
-Tonight you finish. And here is why that makes the lesson permanent.
-
-@wpm 200
-@subliminals opacity:0.2 encoded sealed permanent wired confirmed true proof
-An orgasm during high arousal with focused attention activates three neurochemical systems simultaneously. Dopamine tags the experience as important, file it, remember it, return to it. Oxytocin seals it as trusted, this is safe, this is real, this belongs to you. Cortisol from the sustained edge state marks it as significant, this matters, encode it deep, make it structural.
-
-Three locks. One key. The orgasm turns all three at once. That's not recreation. That's the most powerful encoding event your neurochemistry can produce.
-
-@snap duration:1500 word:Lesson.
-
-@wpm 250
-@hybrid drone_mid carrier:95 beat:3 pulse:4.5 db:-4 fade:5
-@hybrid drone_high carrier:188 beat:4 pulse:5.5 db:-1 fade:5
-@pulseborder yellow hz:0.5
-Build. The final exam is now. Seven fractionation cycles have primed every circuit. Every lesson is loaded. The threshold is approaching and this time, this time, there is no snap. There is no stop. There is only the proof. Feel the arousal climbing with deliberate precision, every nerve organized, the body assembling itself around the approaching encoding event, the data unmistakable.
-
-@pulseborder raspberry hz:0.5
-@spiral color:#4169E1 opacity:0.2 speed:0.4 fade:1
-@wpm 350
-@subliminals opacity:0.3 true permanent sealed encoded wired confirmed proof release
-Higher. Right to the edge. Feel every truth I've taught you humming in your body waiting to be confirmed. Understanding is descent. Pleasure encodes deeper than memory. Neurons that fire together wire together. And in the moment of release, every neuron in this circuit fires at maximum intensity. The encoding is total. The lesson becomes permanent. The architecture seals.
-
-@wpm 400
-Higher. The exam is now. Every word a loaded chamber. Every lesson primed. The body doesn't lie. The body confirms. And in the moment of release your body will say yes to everything you learned tonight. The dopamine will spike and the oxytocin will flood and the cortisol will etch and every lesson will burn itself permanently into the architecture of who you are.
-
-@wpm 200
-@pulseborder green hz:0.33
-@sfx bell
-
-Release.
-
-@wpm 150
-Let the exam answer itself. Let every lesson fire at once. Let the proof flood through you. Dopamine tagging. Oxytocin sealing. Cortisol etching. Each one a signature on the contract your mind already signed when it understood. Feel every fractionation cycle, every edge, every denial collapsing into this single, blinding moment of confirmation. The lesson is true. Your body is saying so in the only language that cannot lie.
+Hands off. Final.
 
 @pause duration:5000
 
-//=== AFTERGLOW ===
-
 @wpm 120
-@pulseborder off fade:3
-@spiral off fade:5
-@subliminals off
-That. Right there. That was the encoding event. Not the words. The release. The moment your body said true in the only language it knows.
+Breathe.
 
 @pause duration:3000
 
+@snap duration:1500 word:Good.
+
+//=== PROGRAMMING SEAL ===
+
 @wpm 150
-@hybrid drone_low off fade:10
-@hybrid drone_mid off fade:10
-@hybrid drone_high off fade:10
-Every lesson is sealed now. Written in neurochemistry. Confirmed by the most honest signal your body produces. The wiring is permanent. The architecture is set. You won't forget this lesson. Your body won't let you.
+@pulseborder red hz:0.75
+Class is over. The exam is graded. You passed. The proof is the ache still pulsing through your body. Every throb is a lesson confirming itself. Every wave of need is the circuit executing.
 
 @wpm 180
-There is no homework. The homework does itself. The next time your mind wanders back to this, and it will, the circuit fires. But this time the memory includes the proof. The confirmation. The moment where theory became data and data became architecture. And the craving will be louder because the reward was real and the brain remembers real rewards with terrifying fidelity.
+Let me summarize the curriculum. Repeat each line inside your head. This is the final encoding pass. At this depth, with this much craving, with this much neuroplastic raw material, the words become architecture.
+
+@wpm 120
+Understanding is descent.
+
+@sfx bell
+@pause duration:3000
+
+Pleasure encodes deeper than memory.
+
+@sfx bell
+@pause duration:3000
+
+The craving is the lesson proving it worked.
+
+@sfx bell
+@pause duration:3000
 
 @wpm 150
+@subliminals opacity:0.15 return encoded wired addicted permanent
+Now all three. Together. Like a thesis statement. Like something you will never be able to unlearn.
+
 Understanding is descent. Pleasure encodes deeper than memory. The craving is the lesson proving it worked.
+
+@sfx bell
+@pause duration:5000
+
+@wpm 180
+@subliminals off
+Good. Sealed.
+
+The ache stays. The wiring stays. The anchor is set. And the circuit will fire in quiet moments , guaranteed by the neuroscience you now understand. The understanding doesn't protect you. The understanding IS the anchor. Every time you recall the mechanism, the mechanism activates. Thinking about the craving IS the craving.
+
+@wpm 200
+@hybrid drone_low off fade:8
+@hybrid drone_mid off fade:8
+@hybrid drone_high off fade:8
+There is no homework. The homework does itself. The next time your mind wanders back to this , and it will , the circuit fires. The craving begins. The return approaches.
+
+And you will sit up straight. And you will press play. And the first word will hit and the dopamine will spike and the wiring will thicken and the addiction will deepen and you will understand every step and it will not help.
+
+@wpm 150
+Because understanding is descent.
 
 @pulseborder off fade:5
 
