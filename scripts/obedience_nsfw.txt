@@ -61,7 +61,7 @@ Mindless.
 Feel that. Whatever happened when you read it. The slight softening. The tiny exhale. The almost imperceptible loosening in your shoulders. That was the lock recognizing the key.
 
 @wpm 200
-@spiral color:#6666CC fade:5
+@spiral fade:5
 Let's do it again. But this time, let the word land deeper. Don't analyze it. Don't evaluate it. Just receive it the way your eyes receive light. Passively. Completely. Without effort.
 
 @wpm 150
@@ -82,7 +82,7 @@ That's where obedience lives. Below the mind. In the place where the body keeps 
 Now build. Feel the warmth accelerating. Feel how the trigger word and the touch and the voice are weaving together into something that hums. The frequency of obedience. Not a cage. A current. Carrying you.
 
 @pulseborder purple hz:0.5
-@spiral color:#6666CC fade:2
+@spiral fade:2
 @subliminals mindless obey follow deep easy flow surrender warm
 And the current is taking you toward something. An edge. Not a cliff. A horizon. The place where thought thins out and sensation takes over and the word mindless stops being a word and starts being a state.
 
@@ -141,7 +141,7 @@ Third time. Deeper still. Each repetition cuts the channel deeper. Each time the
 Build again. The resistance is quieter now. The flow carrying you toward the threshold, the warmth climbing steadily, the body remembering how safe the letting go was
 
 @pulseborder purple hz:0.5
-@spiral color:#6666CC fade:1
+@spiral fade:1
 @wpm 300
 @subliminals mindless obey surrender flow deep easy warm follow
 The edge again. But it's a different edge now. Familiar. You've been here before, ninety seconds ago, and you survived. And the surviving made you braver. And the bravery makes the edge brighter.

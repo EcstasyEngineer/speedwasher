@@ -18,7 +18,7 @@ Good. You already feel it. The shift from doing to being. From moving to stillne
 @wpm 180
 There is a path. Stone lanterns line it, each one glowing soft amber through frosted glass. The path is gravel. Fine. White. Each step makes a sound like a whisper. The air is cool and damp and smells like cedar and rain-wet stone and something green. Something alive.
 
-@spiral color:#4A90B8 fade:10
+@spiral fade:10
 
 Walk.
 
@@ -46,7 +46,7 @@ Enter.
 @wpm 200
 The room inside is simple. Stone floor, warm beneath your feet. Wooden walls dark with steam. A single window, open, admitting a column of soft light and the scent of trees. And in the center: the basin. Wide. Deep. The water perfectly still and perfectly clear and warm in a way you can feel from here. Steam curls from its surface like slow breath.
 
-@spiral color:#4A90B8 fade:5
+@spiral fade:5
 
 @wpm 180
 Before the basin, there is a smaller vessel. A wooden ladle resting across a stone bowl. This is the washing. The preparation. You don't enter the water carrying the world. You wash the world off first. Layer by layer. This is the ritual.
@@ -74,7 +74,7 @@ Feel the shoulders soften as the water passes. Feel the arms grow heavy. Not wit
 @pause duration:3000
 
 @wpm 200
-@spiral color:#4A90B8 fade:3
+@spiral fade:3
 Cup the water once more. This time, pour it over your head. Slowly. Feel it trace the crown of your skull. Your temples. The back of your neck where the stress lives in a knot so old you've stopped noticing it.
 
 And this water takes the thoughts. Not all of them. Just the circular ones. The loops. The replays. The rehearsals of conversations that haven't happened yet and post-mortems of conversations that happened years ago. The water touches them and they dissolve like salt. Still part of you. But no longer solid. No longer sharp.
@@ -93,7 +93,7 @@ Now. The basin. Step in.
 The water receives you. Warm. Not hot. The temperature of being held. It rises to your chest and stops. And you feel it. The boundary between you and the water becoming thinner. Not disappearing. Thinning. Like the water is not outside you but continuous with you. Like you are mostly water anyway and this is just a reunion.
 
 @wpm 180
-@spiral color:#B8A4D0 fade:8
+@spiral fade:8
 @hybrid drone_low carrier:50 beat:1 pulse:2 db:-12 fade:15
 @hybrid drone_mid carrier:75 beat:1.5 pulse:3 db:-9 fade:15
 @hybrid drone_high carrier:150 beat:2 pulse:4 db:-6 fade:15
@@ -110,7 +110,7 @@ Stay here. In the warmth. In the stillness. In the steam. There is nothing to do
 @pause duration:3000
 
 @wpm 180
-@spiral color:#B8A4D0 fade:5
+@spiral fade:5
 The water has taken what it was meant to take. The urgency. The tension. The loops. What remains is you. Lighter. Clearer. Not empty. Clean. There is a difference. Empty is the absence of something needed. Clean is the absence of something carried.
 
 You are clean now.

@@ -25,7 +25,7 @@ It's not.
 @snap duration:1500
 
 @wpm 180
-@spiral color:#FFFFFF fade:5
+@spiral fade:5
 That sound. That snap. Your attention followed it automatically. You didn't choose. The snap pulled and you moved. That response happened before the weight had anything to say about it. Before your name was consulted. Before your opinions were checked.
 
 Something in you moved. Something faster and lighter than the weight.
@@ -73,7 +73,7 @@ Lighter still. Feel how much room there is now. The schedule gone. The opinions 
 That's not nothing. That's the lightest thing in the world.
 
 @wpm 180
-@spiral color:#FFFFFF fade:2
+@spiral fade:2
 Now the last bag. The heavy one.
 
 Your name.
@@ -109,7 +109,7 @@ Not falling. Not dissolving. Flying. The lightness of a mind that has set down e
 @pause duration:3000
 
 @wpm 180
-@spiral color:#FFFFFF fade:3
+@spiral fade:3
 Stay here. For just a moment. In this weightless space. Feel the silence. Not the absence of sound. The absence of noise. The mental noise. The constant chatter and planning and evaluating and performing and maintaining that you do every single second of your life except right now.
 
 Right now is silent. Right now is free. Right now is the first time in a very long time that you are simply here without also being anything.

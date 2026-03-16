@@ -42,7 +42,7 @@ Touch again. Slowly. Reverently. Like you're touching something sacred. Because 
 Still. Feel the ache. Feel how the giving and taking is already changing something between us.
 
 @wpm 200
-@spiral color:#9B59B6 fade:5
+@spiral fade:5
 @subliminals curious open feel shift change warm
 Now listen. There's this thing that happens when you read fast enough. The gap between the word arriving and the meaning landing gets shorter until they're the same event. No buffer. No analysis layer. The word goes in and becomes a feeling directly.
 
@@ -95,7 +95,7 @@ You're feeling it now. The shift. Something rearranging inside you. Not forced. 
 And it's happening to me too, we are both feeling this, the heat rising between us like something alive, both of us leaning into the same fire, both of us trembling at the same edge, feel how the hunger is mutual, how the warmth belongs to neither of us and both of us, rising together
 
 @pulseborder purple hz:0.5
-@spiral color:#9B59B6 fade:2
+@spiral fade:2
 Faster now. Build with me. Feel the edge approaching but feel it differently. Not like something being done to you. Like something growing between us. A shared heat. A mutual undoing. I am as lost in this as you are.
 
 @wpm 400
@@ -151,7 +151,7 @@ And now the chrysalis needs one more thing. The body's confirmation. The moment 
 Feel it building. The final threshold. Not an edge this time. A door. Feel the heat pressing against it from both sides, both of us about to step through into whatever waits on the other side.
 
 @pulseborder raspberry hz:0.5
-@spiral color:#9B59B6 fade:1
+@spiral fade:1
 @wpm 350
 @subliminals emerge become transform beautiful sacred new yes both together
 Higher. More. The chrysalis is cracking. Not from the outside. From inside. From the thing that has been growing in the heat of these words, in the ache of these edges, in the mutual fire that belongs to neither of us and both of us. Feel it pressing against the walls of who you used to be. Feel the cracks spreading. Feel the light coming through. The name you spoke is pushing against the shell and the shell cannot hold and the emergence is not a choice anymore, it is a fact, it is happening, it is both of us becoming what we always were

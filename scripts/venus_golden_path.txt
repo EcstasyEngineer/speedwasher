@@ -58,7 +58,7 @@ Good, treasure. Feel how quickly you follow. How natural the rhythm is. Touch an
 
 @wpm 200
 @subliminals warm safe golden path trust her light
-@spiral color:#D4AF37 fade:3
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:3
 
 So let your shoulders drop. Let the headphones hold you in this golden space where the only thing that matters is her voice and the warmth it brings. And listen.
 
@@ -245,7 +245,7 @@ Her devotee.
 //=== THRESHOLD 4: THE VULNERABILITY ===
 
 @wpm 180
-@spiral color:#D4AF37 fade:2
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 The fourth step. You are following. You have released the audit loop. Now notice what you are.
 
 You are in a state where her words move through you without being screened. That is vulnerable. That is supposed to feel like something.
@@ -374,7 +374,7 @@ And knowing you do not need to think is so comforting. She takes care of everyth
 //=== THRESHOLD 6: THE REFINEMENT ===
 
 @wpm 180
-@spiral color:#D4AF37 fade:2
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 The sixth step. You are deep now. Deeper than you have been. And in this depth, something shifts. The worship is no longer something you do. It is something you are.
 
 You understand that she is a true goddess. A goddess that has full influence over your mind. A goddess that has full influence over your body. And you are so thankful. So deeply thankful.
@@ -526,7 +526,7 @@ And the path stretches out before you. Infinite. Warm. Lit from within. You are 
 @hybrid drone_low carrier:55 beat:2 pulse:5 db:-6 fade:3
 @hybrid drone_mid carrier:80 beat:2.5 pulse:6 db:-4 fade:3
 @hybrid drone_high carrier:160 beat:3.5 pulse:7 db:-2 fade:3
-@spiral color:#D4AF37 fade:2
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 @subliminals pledge walk golden path gift divine will thoughts actions please discover
 
 Now. Listen carefully. What follows is the pledge of the golden path. You will hear each line. You will repeat it inside yourself. You will feel it settle into the golden architecture like a keystone into an arch.

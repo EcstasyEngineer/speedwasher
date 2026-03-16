@@ -63,7 +63,7 @@ Next. Your name. The one from the beginning. Open your hand and let it fall.
 @snap duration:2000 word:Light.
 
 @wpm 150
-@spiral color:#FFFFFF fade:2
+@spiral fade:2
 No opinions. No plans. No name. What's here?
 
 You. Something with no label. An awareness that watches. A presence without edges.
@@ -88,7 +88,7 @@ The edge is different when you're empty. It's not desperate. It's open. A door. 
 
 @pulseborder purple hz:0.5
 @subliminals empty hollow vessel puppet light nothing no one
-@spiral color:#FFFFFF fade:1
+@spiral fade:1
 Feel it. The last string. The one that connects you to the idea that you are a person having an experience. The separation between feeler and felt.
 
 @wpm 300

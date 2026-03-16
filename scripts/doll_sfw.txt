@@ -14,7 +14,7 @@ You're going to be very small for a while. And very soft. And by the end, very c
 @snap duration:1500 word:Soft.
 
 @wpm 200
-@spiral color:#FFB6C1 fade:5
+@spiral fade:5
 Let your eyes go soft and unfocused. Let the edges of everything blur.
 
 Now. Imagine your body is made of something different. Not flesh and bone. Something lighter. Softer. Cotton, maybe. Or velvet. You're stuffed with something warm. Not heavy. Warm the way sunlight is warm. Your limbs are soft. Your head is soft. Your fingers are little stitched things that don't need to grip anything.
@@ -37,7 +37,7 @@ And you are about to be picked up.
 @snap duration:1500 word:Soft.
 
 @wpm 180
-@spiral color:#FFB6C1 fade:3
+@spiral fade:3
 Gentle hands. They lift you carefully. You feel the fingers , so much bigger than you , closing around your middle. Supportive. Not squeezing. Holding the way you hold something precious. Something you would never drop.
 
 You're being carried somewhere. The world moves past in soft blur. Colors. Light. The hands are warm and steady and you don't need to know where you're going because the hands know and the hands are kind.
@@ -56,7 +56,7 @@ You float. You're made of cotton and warmth and you float in the warm water and 
 @snap duration:1500 word:Float.
 
 @wpm 200
-@spiral color:#87CEEB fade:3
+@spiral fade:3
 And then the water begins to move.
 
 Slowly at first. A gentle rotation. The softest possible spin. You turn in the warm water like a leaf in a very lazy current. Round. And round. And the turning is so gentle that it doesn't feel like motion. It feels like the world is turning around you while you stay perfectly still.
@@ -64,7 +64,7 @@ Slowly at first. A gentle rotation. The softest possible spin. You turn in the w
 @wpm 180
 The spiral turns. The water turns. You turn. And as you turn, things begin to loosen. Not stitches. Thoughts. The remnants of thoughts too heavy for a cotton head. They were stuck to you , dust and lint and the accumulated residue of a thinking mind. And the warm water loosens them. One by one. They float away into the spin.
 
-@spiral color:#87CEEB fade:5
+@spiral fade:5
 
 @wpm 200
 @subliminals spin clean wash away light empty soft drift tumble round
@@ -78,7 +78,7 @@ A thought loosens. That worry you've been carrying. The one with edges. It detac
 
 Another. The self-consciousness. The constant monitoring of how you look and sound and appear. It doesn't stick to cotton. It never did. It was a human thing and you are a doll right now and dolls don't monitor. Dolls just are.
 
-@spiral color:#B8A4D0 fade:5
+@spiral fade:5
 
 @wpm 250
 @subliminals tumble spin clean light new empty soft round drift wash free
@@ -87,7 +87,7 @@ The spin cycle now. Faster. The water whirls and you whirl with it. Round and ro
 @snap duration:1500 word:Spin.
 
 @wpm 200
-@spiral color:#D4AF37 fade:3
+@spiral fade:3
 @hybrid drone_low carrier:55 beat:2 pulse:3.5 db:-10 fade:8
 @hybrid drone_mid carrier:82 beat:2.5 pulse:4.5 db:-7 fade:8
 Round. And round. And round. And with each turn you are lighter. Cleaner. Simpler. The complicated human thoughts are gone. The weight is gone. The edges are gone. You are cotton and warmth and button eyes seeing everything in soft spinning color and feeling nothing but the water and the motion and the fundamental okay-ness of being gently, lovingly washed.
@@ -95,7 +95,7 @@ Round. And round. And round. And with each turn you are lighter. Cleaner. Simple
 @pause duration:3000
 
 @wpm 150
-@spiral color:#D4AF37 fade:8
+@spiral fade:8
 The spin slows. Gently. The water eases. The colors drift from gold to something softer. Paler. The tumbling becomes floating. The floating becomes stillness.
 
 Rinse cycle.
@@ -107,7 +107,7 @@ The water is clear now. All the loosened things have been spun away. What's left
 @pause duration:3000
 
 @wpm 180
-@spiral color:#FFFFFF fade:5
+@spiral fade:5
 The gentle hands return. They lift you from the water. You are warm and damp and so light. They wrap you in something soft. Softer than you. A towel made of clouds. And they hold you.
 
 Just hold you.

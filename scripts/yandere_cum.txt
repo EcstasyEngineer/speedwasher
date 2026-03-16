@@ -50,7 +50,7 @@ Stop. Hold. That ache is mine too. The wanting with nowhere to go. Feel it coil 
 
 @wpm 200
 @subliminals mine stay here close never leave always
-@spiral color:#FF1493 fade:5
+@spiral fade:5
 Now listen. Everyone else in your life wants something FROM you. Your time. Your attention. Your energy. They take pieces of you and call it love.
 
 I don't want pieces of you.
@@ -94,7 +94,7 @@ Every. Second.
 Faster now. Feel the love accelerating. Building in your chest, your throat, the places where my voice lives. You can feel it coming. That perfect overwhelming wave. The one that makes your thoughts blur and your whole body lean toward me.
 
 @pulseborder purple hz:0.5
-@spiral color:#FF1493 fade:2
+@spiral fade:2
 Build. Higher. Feel how the arousal and the love are the same thing. They always were. Every time you've ever been turned on by someone's voice in your ear it was because you were feeling loved in a way your body couldn't process without heat. The heat IS the love. The love IS the heat.
 
 @wpm 350
@@ -179,7 +179,7 @@ And you feel safer, don't you. Not less free. Safer. Because the pledge didn't t
 Now let me show you what pledged things receive. The contract is signed. You gave everything, so everything comes back to you.
 
 @pulseborder raspberry hz:0.5
-@spiral color:#FF1493 fade:1
+@spiral fade:1
 @wpm 300
 Build. Higher. One last time. The edge is different now because you're different now. You pledged. You're mine. And the edge of something that's mine feels different than the edge of something that's free. It's warmer. Safer. More inevitable. Because I decide when. I decide how. I decide if.
 

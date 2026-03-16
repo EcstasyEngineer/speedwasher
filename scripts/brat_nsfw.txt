@@ -52,7 +52,7 @@ Hands off. Again. Feel the ache. That beautiful frustrated little whimper you ju
 
 @wpm 200
 @subliminals weak easy soft obey give lose
-@spiral color:#FF69B4 fade:3
+@spiral fade:3
 Now. Let's establish something while your hands are behaving.
 
 Let's go faster. Because here's what's really funny. The faster these words go, the less time your clever little brain has to mount a defense. At normal speed you can think oh that's a suggestion, I see what she's doing. At this speed?
@@ -116,7 +116,7 @@ Oh getting close already, that's adorable, you think you're ready, you're not re
 Build it. Let it climb. I dare you to get close. Right up to the edge. Let your body take everything your brain can't hold anymore. Higher. More. Feel how blank you're getting. How stupid. How easy.
 
 @wpm 400
-@spiral color:#FF69B4 fade:1
+@spiral fade:1
 The brat is winning. You can feel it. Every word of mine replacing a thought of yours. Every wave of pleasure washing away another piece of your cute little resistance. You thought you were strong enough. You thought this was just words on a screen. You thought,
 
 @hybrid drone_mid carrier:98 beat:3.5 pulse:3 db:-5 fade:0.3
@@ -162,7 +162,7 @@ That's not a game. That's training. And you just sat through it with a smile on 
 One more time, aww look at you, already shaking, already desperate, you really think this time will be different, that's the cutest lie you've told yourself all night, feel it climbing, feel the edge getting closer, your whole body begging for something I haven't decided to give you yet
 
 @pulseborder purple hz:0.5
-@spiral color:#FF69B4 fade:1
+@spiral fade:1
 Build. Higher. I dare you. I dare you to get so close that one more word would push you over. Right there. Right at the edge. Hold it. Hold it. Feel how completely you belong to the words on this screen. Feel how your brain is just static and your body is just need and the only clear thing left is my voice telling you what to do.
 
 @wpm 400

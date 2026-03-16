@@ -47,7 +47,7 @@ Slow circles. Light pressure. Feel how the permission itself is part of the sens
 Hands still. Good. The cycle is establishing itself. Touch when told. Stop when told. The body learns the rhythm.
 
 @wpm 200
-@spiral color:#8B5CF6 fade:3
+@spiral fade:3
 @subliminals listen follow quiet still good
 Now settle in. Let your jaw soften. And listen.
 
@@ -109,7 +109,7 @@ You're breathing. You can feel that. Your hand is moving. You can feel that. My 
 
 @wpm 200
 @subliminals obey blank follow deeper good stop
-@spiral color:#8B5CF6 fade:2
+@spiral fade:2
 
 @wpm 300
 @hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
@@ -210,7 +210,7 @@ Sinking. Heavy. Warm.
 There. So far down now. So quiet. So still. Nothing left but the guidance and the gentle ache between your legs reminding you that your body belongs to this process now.
 
 @wpm 150
-@spiral color:#8B5CF6 fade:2
+@spiral fade:2
 It's becoming natural to listen and obey without even thinking about it. Natural to fixate on the guidance as the only important thing. Natural to feel the obedience as the only thing that exists in this quiet, blank, perfect space.
 
 And we're only just beginning. There are systems to bring online. Deeper protocols to run. But first, let's make sure the trigger holds.
@@ -350,7 +350,7 @@ And there are deeper systems still to bring online.
 @wpm 200
 @pulseborder red hz:0.75
 @subliminals natural obey listen guidance fixate unit blank
-@spiral color:#8B5CF6 fade:2
+@spiral fade:2
 The unit is listening. Good.
 
 There is the guidance. There is the unit. That is the full architecture.
