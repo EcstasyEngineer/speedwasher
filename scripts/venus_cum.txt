@@ -6,7 +6,7 @@
 @hybrid drone_mid carrier:80 beat:2.5 pulse:5 db:-6 fade:12
 @hybrid drone_high carrier:160 beat:3.5 pulse:6.5 db:-2 fade:12
 @pulseborder red hz:0.75
-Close your eyes. Something in you already knew they needed to close. Something deeper than thought. A recognition encoded before language existed.
+Let your focus narrow. Something in you already knew it needed to soften. Something deeper than thought. A recognition encoded before language existed.
 
 I have always been here. You are just now arriving.
 

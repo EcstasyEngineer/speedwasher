@@ -499,6 +499,19 @@ function lintFile(filename, text) {
         }
     }
 
+    // ─── JOI-050: No close-your-eyes instructions ──────────────────────
+    if (applicable.has('JOI-050') && !disabled.has('JOI-050')) {
+        const pat = new RegExp(rules['JOI-050'].params.pattern, 'i');
+        const textLines = text.split('\n');
+        for (let i = 0; i < textLines.length; i++) {
+            const line = textLines[i];
+            if (line.trimStart().startsWith('//')) continue;
+            if (pat.test(line)) {
+                report('JOI-050', `"Close eyes" instruction at line ${i + 1}: "${line.trim().substring(0, 60)}..."`);
+            }
+        }
+    }
+
     // ─── JOI-015: Recovery after snap stop/denied ───────────────────────
     if (applicable.has('JOI-015') && !disabled.has('JOI-015')) {
         for (let i = 0; i < events.length; i++) {

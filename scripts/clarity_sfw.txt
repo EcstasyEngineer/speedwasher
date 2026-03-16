@@ -5,7 +5,7 @@
 @hybrid drone_low carrier:55 beat:1.5 pulse:3 db:-10 vol:0.10 fade:15
 @hybrid drone_mid carrier:82 beat:2 pulse:4.5 db:-6 fade:15
 @hybrid drone_high carrier:164 beat:3 pulse:5.5 db:-3 fade:15
-Close your eyes. Or don't. It doesn't matter. The temple finds you either way.
+The temple finds you either way.
 
 @pause duration:3000
 
@@ -116,7 +116,7 @@ Feel that now. In the center of your chest. A point of warmth. Of knowing. Of se
 @wpm 180
 This feeling has a name now. Clarity. And it has a location. Your chest. And those two things , the name and the location , are a key. A way back.
 
-Whenever the world gets loud and the patterns spin up and the bottles start glowing hot, you can close your eyes. Put your hand on your chest. Say the word. Clarity. And for just a moment the temple doors will open and the cool stone will be under your feet and the mirrors will show you what's true.
+Whenever the world gets loud and the patterns spin up and the bottles start glowing hot, you can let your gaze soften. Put your hand on your chest. Say the word. Clarity. And for just a moment the temple doors will open and the cool stone will be under your feet and the mirrors will show you what's true.
 
 @wpm 200
 @subliminals off

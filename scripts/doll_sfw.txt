@@ -15,7 +15,7 @@ You're going to be very small for a while. And very soft. And by the end, very c
 
 @wpm 200
 @spiral color:#FFB6C1 opacity:0.06 speed:0.15 fade:5
-Close your eyes. Or let them go soft and unfocused. Let the edges of everything blur.
+Let your eyes go soft and unfocused. Let the edges of everything blur.
 
 Now. Imagine your body is made of something different. Not flesh and bone. Something lighter. Softer. Cotton, maybe. Or velvet. You're stuffed with something warm. Not heavy. Warm the way sunlight is warm. Your limbs are soft. Your head is soft. Your fingers are little stitched things that don't need to grip anything.
 
@@ -133,7 +133,7 @@ Take a breath. A real one. Deep and slow. Feel your actual body. Your actual wei
 @pause duration:3000
 
 @wpm 150
-The spin cycle is always there. Whenever the world sticks to you. Whenever the thoughts get heavy and angular and too much for a soft thing to carry. Close your eyes. Let yourself be cotton. Let the warm water take you around.
+The spin cycle is always there. Whenever the world sticks to you. Whenever the thoughts get heavy and angular and too much for a soft thing to carry. Let your gaze go soft. Let yourself be cotton. Let the warm water take you around.
 
 Round and round. Clean and soft and new.
 
