@@ -10,42 +10,58 @@ You came back.
 
 @pause duration:2000
 
-You came back. I knew you would. I knew it the way I know your breathing pattern. The way I know which side you sleep on. The way I know the exact moment your resistance starts to soften because I've been watching that moment happen over and over and I never get tired of it.
+You came back. I knew you would. I knew it the way I know your breathing pattern. The way I know which side you sleep on. The way I know the exact moment your resistance starts to soften.
 
 I could never get tired of you.
 
 @snap duration:1500 word:Mine.
 
 @wpm 200
-That word. Did you feel it? Not as a command. As a fact. The way you'd say the sky is blue. Not aggressive. Not possessive. Just true. You are mine. You have been mine since the first time you pressed play on something like this and felt that little shiver and thought I wonder what happens if I keep going.
-
-I'm what happens if you keep going.
-
-And you kept going. And here we are.
+That word. Did you feel it? Not as a command. As a fact. You are mine. You have been mine since the first time you pressed play on something like this and felt that little shiver. I'm what happens if you keep going. And you kept going. And here we are.
 
 @wpm 250
+@pulseborder green hz:0.33
+Touch yourself for me. Because I'm not there to do it and that makes me ache. So your hand becomes my hand. Your touch becomes my touch.
+
+@sfx bell
+@pause duration:2000
+
+Slow. Gentle. The way I would if I were there.
+
+@wpm 200
+@pulseborder red hz:0.75
+@snap duration:1500 word:Stop.
+
+@pause 2000
+
+Hands still. Stay with me. Feel the ache. Feel how much your body wants to keep going. And feel how much stronger the love is than the want. You stopped because I asked.
+
+@wpm 250
+@pulseborder green hz:0.33
+Touch again. Because the three seconds your hand was still felt like three years to me. Because being without your pleasure is being without your attention and being without your attention is being without you.
+
+@sfx bell
+
+@wpm 200
+@pulseborder red hz:0.75
+@snap duration:1500 word:Mine.
+
+Stop. Hold. That ache is mine too. The wanting with nowhere to go. Feel it coil tighter.
+
+@wpm 200
 @subliminals opacity:0.1 mine stay here close never leave always
-Let me tell you something nobody else will tell you. Everyone else in your life wants something FROM you. Your time. Your attention. Your energy. Your money. Your body. They take pieces of you and call it love.
+@spiral color:#FF1493 opacity:0.08 speed:0.2 fade:5
+Now listen. Everyone else in your life wants something FROM you. Your time. Your attention. Your energy. They take pieces of you and call it love.
 
 I don't want pieces of you.
 
 I want all of you.
 
-@wpm 200
-@spiral color:#FF1493 opacity:0.08 speed:0.2 fade:5
 Every piece. Every thought. Every heartbeat. Every dream you have at three in the morning when you're too tired to pretend you don't need this. I want the parts you show people and the parts you hide and the parts you don't even know about yet. I want to be the voice in your head that sounds more like you than your own voice does.
 
-And you want that too. I can tell. Because you're still here. Still reading. Still leaning into the pull instead of away from it. And that pull? That's not a string. That's not a leash.
+And you want that too. I can tell. Because you're still here. Still leaning into the pull instead of away from it. And that pull? That's not a leash.
 
-That's love. My love. Wrapping around you like a vine that has been growing since the first word and will never stop growing because I will never stop loving you.
-
-@wpm 180
-And I need you to understand something. This love? It's not casual. It's not flexible. It's not the kind that shrugs and says well if it's not working out. This love is the kind that rearranges furniture. The kind that remembers what you said three months ago and brings it up when you try to pretend you didn't mean it. The kind that texts at 2 AM not because it's convenient but because the thought of you sleeping without knowing how much I love you is physically unbearable.
-
-@snap duration:1500 word:Mine.
-
-@wpm 200
-There it is again. That word. Landing softer each time. Like a hand on your cheek. Like a key turning in a lock you didn't know was there.
+That's love. My love. Wrapping around you like a vine that will never stop growing because I will never stop loving you.
 
 @wpm 250
 @pulseborder green hz:0.33
@@ -75,7 +91,7 @@ Every. Second.
 @hybrid drone_mid carrier:86 beat:2.5 pulse:4.5 db:-5 fade:8
 @hybrid drone_high carrier:152 beat:3 pulse:5.5 db:-2 fade:8
 @pulseborder yellow hz:0.5
-Faster now. Feel the love accelerating. Feel it building in your chest, in your throat, in the places where my voice lives now. You can feel it coming, can't you. That perfect overwhelming wave. The one that makes your hands shake and your thoughts blur and your whole body lean toward me like gravity changed direction.
+Faster now. Feel the love accelerating. Building in your chest, your throat, the places where my voice lives. You can feel it coming. That perfect overwhelming wave. The one that makes your thoughts blur and your whole body lean toward me.
 
 @pulseborder purple hz:0.5
 @spiral color:#FF1493 opacity:0.15 speed:0.3 fade:2
@@ -158,7 +174,7 @@ Good. So good. You said it. You meant it. And now it's true in a way it wasn't b
 And you feel safer, don't you. Not less free. Safer. Because the pledge didn't take anything away. It gave you something. Certainty. Direction. The bone-deep peace of knowing exactly where you belong and who you belong to.
 
 @pulseborder yellow hz:0.5
-Now let me show you what happens to pledged things. Pledged things get taken to the edge. Pledged things get held there, trembling, while the one who owns them decides what comes next. And you want me to decide. You're aching for me to decide.
+Now let me show you what happens to pledged things, pledged things get taken to the edge, held there trembling while the one who owns them decides, you're aching for me to decide
 
 @pulseborder purple hz:0.5
 @spiral color:#FF1493 opacity:0.2 speed:0.4 fade:1

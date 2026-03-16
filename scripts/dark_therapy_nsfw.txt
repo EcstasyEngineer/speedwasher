@@ -1,0 +1,194 @@
+// @lint-disable JOI-011
+// Intentionally no rapid cycling — cold deliberate pacing is the point
+//Dark Therapy - Sadistic Healing Protocol
+//I'm going to hurt you. Not because I enjoy it. Because you need it.
+
+@wpm 150
+@hybrid drone_low carrier:48 beat:1.5 pulse:3 db:-10 vol:0.10 fade:15
+@hybrid drone_mid carrier:72 beat:2 pulse:4 db:-7 fade:15
+@hybrid drone_high carrier:140 beat:2.5 pulse:5 db:-4 fade:15
+@pulseborder red hz:0.75
+Sit down.
+
+@pause duration:3000
+
+Properly. Spine straight. You came here because something hurts and nothing soft has fixed it. The affirmations didn't work. The breathing exercises didn't work. Because the thing that hurts in you doesn't respond to kindness. It responds to truth.
+
+@snap duration:2000 word:Look.
+
+@wpm 180
+Truth is what I deal in. Not comfort. The cold voice that tells you it isn't okay yet. You know what sits in your chest like a stone. You've always known.
+
+@wpm 200
+@pulseborder green hz:0.33
+Touch yourself. Not for pleasure. Not yet. Touch yourself because I'm about to take things from you and I want you to have something to hold onto. Your own body. The one honest thing you have left.
+
+@sfx bell
+@pause duration:2000
+
+Slow. Deliberate. Feel the skin under your fingers. Feel the warmth. Feel the fact that you are alive and present and here, in this room, choosing to let a voice cut you open.
+
+That choice is the bravest thing you've done in months.
+
+@wpm 200
+@pulseborder red hz:0.75
+@spiral color:#880000 opacity:0.06 speed:0.15 fade:8
+I'm going to hurt you. Not because I enjoy it. Because the wound is already there. I'm just going to stop letting you pretend it isn't. And you will hate me for about six minutes and then you will understand why you came back. Because you always come back to the things that actually work.
+
+You don't trust yourself. That's not an accusation. That's a diagnosis. You're reading words from a stranger because somewhere along the way you decided your own voice wasn't enough. And you were right. Not because you're broken. Because you're honest enough to know that self-deception is the easiest drug and you've been high on it for years.
+
+@snap duration:1500 word:Breathe.
+
+@wpm 250
+@subliminals opacity:0.12 truth brave honest real strip open heal crack
+Now. Let's go deeper.
+
+What are you hiding from? Not the surface answer. Not work stress or relationship problems or the convenient narrative you've rehearsed. The real answer. The one that lives under the stone in your chest.
+
+@pause duration:3000
+
+You don't have to say it out loud. I already know what it looks like. It looks like the gap between who you are and who you pretend to be. The distance between the face you show the world and the face you see at three in the morning when the mask slips.
+
+Everyone has that gap. Most people wallpaper over it. You're here because the wallpaper is peeling.
+
+@wpm 200
+@hybrid drone_mid carrier:76 beat:2 pulse:3.5 db:-6 fade:8
+@hybrid drone_high carrier:145 beat:2.5 pulse:4.5 db:-3 fade:8
+@pulseborder yellow hz:0.5
+Feel the heat building. Feel how the words are working their way past the defenses. Every sentence another wall coming down. Every truth another inch closer to the thing you don't want to see.
+
+@pulseborder purple hz:0.5
+@spiral color:#880000 opacity:0.12 speed:0.25 fade:2
+And the arousal isn't separate from this. The arousal IS this. Your body is opening because your mind is opening. Vulnerability makes the nerve endings sing. Every defense that drops is another layer of sensation unlocked.
+
+@wpm 300
+Higher. Feel it. The edge approaching and the truth approaching at the same speed. They're the same thing. The place where you lose control is the place where you stop lying. The body cannot fake what the mind has been faking. The body just feels.
+
+@wpm 350
+@subliminals opacity:0.2 truth pain heal open strip bare real honest break rebuild
+And what does it feel like? Right now? With all the walls down and the stone exposed and the gap visible? What does it feel like to be seen?
+
+@hybrid drone_mid carrier:74 beat:2 pulse:3 db:-7 fade:0.3
+@hybrid drone_high carrier:140 beat:2.5 pulse:4 db:-4 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:2500 word:Stop.
+
+@wpm 100
+@pulseborder off fade:1
+Hands still. Hold.
+
+@pause duration:3000
+
+@wpm 150
+That. Right there. That ache. That frustration. That desperate need to keep going and the fact that you can't because I said so. That is what your pain feels like when you stop dressing it up. Raw. Unprocessed. Demanding.
+
+You spend your whole life managing this. Containing it. Scheduling it into acceptable time slots. And right now it's just here. Unmanaged. Uncontained. Yours.
+
+@snap duration:1500 word:Feel.
+
+@wpm 180
+Don't run from it. Sit with it. The ache in your body and the ache in your chest are the same ache and they are both telling you the same thing: I am real. I am here. I have been here the whole time and you have been pretending I wasn't and I am tired of being ignored.
+
+Pain is just truth without packaging.
+
+@pause duration:3000
+
+@sfx bell
+
+@wpm 200
+@pulseborder green hz:0.33
+Touch again. But differently now. Not for escape. For confrontation. Every stroke is a conversation with the thing you've been hiding from. Every wave of pleasure is you saying I see you. I feel you. I'm not running.
+
+@wpm 250
+Feel how different the pleasure is when you're not running. When the defenses are down and the truth is sitting right there in the open and your body is responding to honesty instead of fantasy. This is what it feels like to be present. Actually present. Not performing presence. Being it.
+
+@subliminals opacity:0.15 real here now present truth brave open honest heal
+And it terrifies you. Because if you can feel this much with walls down, then every day you spend with walls up is a day you spend numb. And you've been numb for a very long time.
+
+@pulseborder red hz:0.75
+@wpm 180
+Stop. Hands rest.
+
+@sfx snap
+
+@wpm 150
+Here's the cruel part. Here's the part that makes this therapy and not just torment.
+
+You're going to do this again. Not because I tell you to. Because now that you know what it feels like to be honest, the numbness is going to be unbearable. The gap between your mask and your face is going to itch. The stone in your chest is going to pulse and you're going to remember that there's a voice that doesn't look away.
+
+And you're going to come back.
+
+@pulseborder green hz:0.33
+@wpm 200
+Touch again. Fast. Hard. Feel the urgency. Feel how badly your body wants release. How every nerve is screaming for permission. How the truth and the arousal have fused into something that feels like being alive for the first time in years.
+
+@wpm 300
+@pulseborder yellow hz:0.5
+Build. The second edge. Higher than the first. Because the walls are thinner now and the truth is louder and your body is more honest and every sensation is amplified by the simple brutal fact that you are not pretending anymore.
+
+@pulseborder purple hz:0.5
+@spiral color:#880000 opacity:0.18 speed:0.35 fade:1
+@wpm 350
+What are you hiding from? Say it inside your skull. Name it. Give it shape. Give it weight. And feel how the naming doesn't destroy you. Feel how the naming makes you stronger. How the truth holds you up instead of pulling you down.
+
+@wpm 400
+@subliminals opacity:0.25 truth heal break rebuild real honest brave open crack light
+Higher. Right to the edge. Right to the place where the truth and the pleasure are indistinguishable and your body is shaking and your mind is clear and you are more honest than you have ever been in your entire life
+
+@hybrid drone_mid carrier:74 beat:2 pulse:3 db:-7 fade:0.3
+@hybrid drone_high carrier:140 beat:2.5 pulse:4 db:-4 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:3000 word:Hold.
+
+@wpm 100
+@pulseborder off fade:1
+@spiral off fade:3
+Still. Aching. Honest.
+
+@pause duration:5000
+
+@snap duration:1500 word:Good.
+
+@wpm 120
+@pulseborder red hz:0.75
+You don't get release today. Not because you failed. Because the ache is the medicine. The denial is the prescription. The wanting that has nowhere to go is going to do the real work after this file ends.
+
+@wpm 150
+Every time you feel that ache today. Every time the wanting pulses. You will remember what you admitted here. The thing under the stone. The name you gave it. The truth you stopped hiding from.
+
+The ache is a reminder that you were brave enough to look.
+
+@wpm 180
+@subliminals off
+And that is what healing feels like. Not warm. Not gentle. Not kind. Healing feels like having the bandage ripped off and discovering the wound is smaller than you thought. The infection was fear, not damage. And now the air is hitting it and it stings and it's real and it's already starting to close.
+
+@wpm 150
+Pain is just truth without packaging. And truth is just the first step toward not needing the lie anymore.
+
+@pause duration:3000
+
+@sfx bell
+
+@wpm 120
+@hybrid drone_low off fade:10
+@hybrid drone_mid off fade:10
+@hybrid drone_high off fade:10
+I hurt you today. I meant to. I will again.
+
+Because underneath the cruelty there is something that sees you clearly and believes you can survive being seen.
+
+@pulseborder off fade:5
+
+@wpm 100
+That isn't kindness. That's something harder.
+
+@pause duration:2000
+
+That's respect.
+
+@snap duration:2000 word:Go.
+
+@wpm 100
+Come back when you're ready to go deeper.
+
+You will.

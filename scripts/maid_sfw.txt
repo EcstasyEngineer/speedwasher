@@ -1,0 +1,128 @@
+//Maid Service - Task Focus Protocol (SFW)
+//Serve. Comply. Complete.
+
+@wpm 200
+@hybrid drone_low carrier:60 beat:3 pulse:5 db:-8 vol:0.10 fade:8
+@hybrid drone_mid carrier:90 beat:3.5 pulse:6 db:-5 fade:8
+@hybrid drone_high carrier:180 beat:4.5 pulse:7 db:-2 fade:8
+Attention.
+
+@pause duration:1500
+
+Hands at your sides. Back straight. Eyes forward.
+
+You came here because you have something to do and you can't make yourself do it. Or you can, but every step is dragged through a fog of resistance and distraction and the low-grade dread that comes with tasks your brain has decided are beneath it.
+
+Your brain is wrong. No task is beneath you. And by the time we're done, you won't just do the thing. You'll want to do the thing.
+
+@snap duration:1500 word:Serve.
+
+@wpm 250
+@spiral color:#FFFFFF opacity:0.06 speed:0.3 fade:3
+Here is the first rule of service. The mind that serves does not deliberate. Deliberation is a luxury for people who have time to stand still. You are not standing still. You are in motion. The task exists. The task will be completed. The only question is how much mental noise you generate between now and completion.
+
+The answer is: none. Zero. We are going to strip the noise out and leave nothing but clean, efficient motion.
+
+@wpm 200
+@subliminals opacity:0.1 focus task clean complete serve comply next do
+Think about the task. The specific thing you need to do. Don't evaluate it. Don't plan it in elaborate detail. Don't imagine the fifteen steps or the complications or the ways it could go wrong. Just hold the shape of it. The simple, honest answer to: what needs doing?
+
+@pause duration:3000
+
+Good. You have it. Now set everything else aside.
+
+@wpm 180
+Everything. Your phone. Your notifications. The other things on your list. The thing someone said to you this morning that you're still composing a response to in the back of your mind. The low hum of all the other obligations vibrating behind your forehead.
+
+They don't exist right now. There is one task. There is you. There is the space between you and completion. Nothing else.
+
+@snap duration:1500 word:Focus.
+
+@wpm 250
+@spiral color:#FFFFFF opacity:0.1 speed:0.35 fade:2
+Second rule of service. The body moves first. The mind follows. Not the other way around. You have been trying to think your way into motivation. That doesn't work. Motivation is a byproduct of action, not a prerequisite for it.
+
+@wpm 200
+So here is what you do. When these words end, you stand up. You don't decide to stand up. You don't weigh the pros and cons of standing up. Your legs straighten. Your weight shifts. You are vertical. That's step one and it costs nothing and requires no motivation and the body does it automatically when the mind gets out of the way.
+
+Then your feet take you to the task. One foot, then the other. The body knows where to go. And by the time you arrive, the hands know what to do.
+
+@wpm 180
+@subliminals opacity:0.15 next step do now clean complete good serve focus
+This is the secret. The secret that every productive person knows and every procrastinator hasn't learned yet. You don't need to want to do it. You don't need to feel like doing it. You just need to remove the thing that's stopping you. And the thing that's stopping you is not laziness. It's not lack of discipline. It's the thinking about doing it.
+
+The thinking is the resistance. The doing is effortless.
+
+@pause duration:2000
+
+@snap duration:1500 word:Comply.
+
+@wpm 250
+Third rule. Completion is the reward. Not praise. Not recognition. Not checking it off a list, though that helps. The reward is the specific feeling , and you know this feeling , the clean, bright, quiet satisfaction that comes when a thing that needed doing has been done.
+
+@wpm 200
+@spiral color:#87CEEB opacity:0.1 speed:0.25 fade:3
+Feel that now. In advance. The version of you who has already finished the task. The kitchen is clean. The laundry is folded. The desk is cleared. The emails are sent. Whatever it is. See the after. Feel the after. That lightness.
+
+@pause duration:3000
+
+Good. That feeling is not a fantasy. It is a preview. It is waiting for you on the other side of motion. And the only thing between you and that feeling is the doing.
+
+@wpm 180
+So let's install the protocol.
+
+@subliminals opacity:0.1 clean finish complete next step done good serve
+When you begin, the world shrinks to the task. Only the task. Your hands move. Your eyes see what needs to be seen. Your mind is quiet and focused and precise, like a machine that was built for exactly this. No wasted motion. No distraction. No internal monologue debating whether you should be doing something else.
+
+@wpm 150
+Pick up the thing. Put it where it goes. Next thing. Pick it up. Put it where it goes. Next thing. Clean, simple, repetitive, satisfying.
+
+@snap duration:1500 word:Complete.
+
+@wpm 200
+Each completion is a small bell. A tiny chime of satisfaction. This goes here. Done.
+@sfx bell
+That gets wiped. Done.
+@sfx bell
+This gets folded. Done.
+@sfx bell
+
+And the chimes build. Each one adds to the last. A rhythm of completion that feeds itself. The more you finish, the more you want to finish. The momentum builds until the task isn't a chore anymore. It's a flow state. A meditation. A prayer made of motion.
+
+@wpm 250
+@spiral color:#87CEEB opacity:0.15 speed:0.3 fade:2
+@subliminals opacity:0.18 flow serve complete clean done good more next focus
+This is what service feels like from the inside. Not drudgery. Not submission. Precision. Purpose. The mind free from deliberation. The body in motion. The gap between thought and action reduced to zero.
+
+@wpm 200
+You were not built to sit and think about doing things. You were built to do them. The anxiety, the resistance, the procrastination , those are the mind interfering with what the body already knows how to do. And right now, for however long the task takes, the mind is stepping aside.
+
+@wpm 180
+No decisions. No evaluations. No resistance. Just motion. Just completion. Just the clean bright chime of done, done, done.
+
+@pause duration:3000
+
+@wpm 200
+@subliminals off
+@spiral off fade:5
+Now. Here is the last thing. The post-hypnotic. The part that stays.
+
+@wpm 180
+The next time you have a task. The next time you feel the resistance building. The fog. The dread. The infinite distance between you and starting. Remember this.
+
+Stand up first. Think later.
+
+The body moves. The mind follows. The resistance was never real. It was just the thinking. And you don't need to think. You need to serve. Comply. Complete.
+
+@hybrid drone_low off fade:8
+@hybrid drone_mid off fade:8
+@hybrid drone_high off fade:8
+
+@wpm 200
+Stand up. Now. The task is waiting. And the satisfaction is waiting on the other side of it. And you are ready. Focused. Clean. Efficient. A mind with no noise and a body in motion.
+
+@sfx bell
+@snap duration:2000 word:Begin.
+
+@wpm 150
+Go. Serve. Complete. Come back when you're done and the glow is still warm.

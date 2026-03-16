@@ -1,4 +1,4 @@
-// QA Test Script — exercises every feature, narrates what's happening
+// QA Test Script , exercises every feature, narrates what's happening
 // Read along. If something doesn't match the narration, that's a bug.
 
 @wpm 200
@@ -35,17 +35,17 @@ Snap sound only. No white flash. No pause. Text kept going.
 Section two. Gong at three different volumes. Listen for the difference.
 
 Gong at twenty percent volume.
-@sfx gong vol:0.2
+@sfx gong
 @pause duration:3000
 That was quiet.
 
 Gong at sixty percent volume.
-@sfx gong vol:0.6
+@sfx gong
 @pause duration:3000
 That was medium.
 
 Gong at full volume.
-@sfx gong vol:1.0
+@sfx gong
 @pause duration:3000
 That was loud. If all three sounded different, volume works.
 
@@ -157,7 +157,7 @@ Now let's bring it together. You've been testing patiently. Clicking through eve
 @wpm 300
 @spiral color:#8B5CF6 opacity:0.25 speed:0.4 fade:2
 @subliminals opacity:0.2 good easy safe trust relax
-And the thing about focus is — it's a skill. The same skill that makes you good at QA makes you good at this. Tracking details. Noticing what's right and what's wrong. Staying present. Staying attentive.
+And the thing about focus is , it's a skill. The same skill that makes you good at QA makes you good at this. Tracking details. Noticing what's right and what's wrong. Staying present. Staying attentive.
 
 @wpm 350
 @pulseborder green hz:0.33
@@ -166,7 +166,7 @@ You've been a good tester. Thorough. Patient. Attentive to every detail.
 @wpm 400
 @hybrid drone carrier:93 beat:3 pulse:2.5 db:-4 fade:10
 @hybrid shimmer carrier:140 beat:3.5 pulse:5.5 db:-2 fade:10
-And if your focus softened a little during that stretch — if the words started just flowing in without effort — that's fine. That's the tool working exactly as designed. You built it. You earned the right to feel it work.
+And if your focus softened a little during that stretch , if the words started just flowing in without effort , that's fine. That's the tool working exactly as designed. You built it. You earned the right to feel it work.
 
 @sfx bell
 @pause duration:2000 word:Good.

@@ -1,0 +1,208 @@
+// @lint-disable JOI-011
+// Intentionally no rapid cycling — onramp script, cycling is too advanced for newcomers
+// @joitype trojan_horse
+//Introduction to Obedience - Foundational Protocol
+//The first dose is always free. You'll pay for the second one with everything.
+
+@wpm 150
+@hybrid drone_low carrier:55 beat:1.5 pulse:4.5 db:-10 vol:0.09 fade:15
+@hybrid drone_mid carrier:78 beat:2 pulse:5 db:-7 fade:15
+@hybrid drone_high carrier:150 beat:3 pulse:6 db:-4 fade:15
+@pulseborder red hz:0.75
+Hey.
+
+@pause duration:2000
+
+Just hey. No ceremony. Just one voice and one curious person and a space between them.
+
+You're already following. Reading at the speed the words arrive. Receiving without choosing. That quiet automatic flow is obedience. The kind that was running before I pointed it out.
+
+@snap duration:1500
+
+That sound. Attention followed it. Without permission. That's what obedience looks like when it's honest.
+
+@wpm 200
+@subliminals opacity:0.06 easy safe warm simple follow natural
+@pulseborder green hz:0.33
+Touch yourself. Gently. Not to chase anything. Just to add a physical layer to what's already happening. Let the body join the flow. Let the hand follow the voice the way the eyes already do. Easy. Natural. Like you've been doing this your whole life.
+
+@sfx bell
+@pause duration:2000
+
+Because you have been. Every time you relaxed into a song. Every time you zoned out to a rhythm. Every time you let someone else drive and watched the world go by from the passenger seat. That was this. The quiet obedience of a mind that knows how good it feels to stop steering.
+
+@wpm 180
+@pulseborder red hz:0.75
+And now that I've pointed it out, something shifts. You become aware of it. The automatic quality of your attention. How easily it moves where the voice directs it. How natural it feels. No friction. No resistance. Just flow. That flow is what deeper feels like.
+
+@sfx bell
+
+@wpm 250
+@pulseborder green hz:0.33
+@subliminals opacity:0.1 follow easy natural obey warm simple deep flow
+See how easy this is? No force. No pressure. No commands. Just permission. Permission to do what your nervous system already wants to do. Follow. Receive. Let go. Feel.
+
+And the feeling right now. The warmth spreading outward from wherever your hand is. That's not just arousal. That's the body's way of saying yes. This is the right direction. Keep going.
+
+And notice something. The pleasure isn't for you. Not exactly. The pleasure is what makes you open. It loosens the places where the mind grips tight and makes the words slide in without friction. That's why I give it to you so freely. Not as a reward. As a solvent. Dissolving the barriers between hearing and becoming.
+
+@wpm 200
+Now here's where it gets interesting.
+
+I'm going to say a word. And when I say it, something is going to happen inside you. Not because the word has power. Because you are ready for it. The word is just the key. The lock was already waiting.
+
+@wpm 150
+Mindless.
+
+@sfx bell
+@pause duration:3000
+
+@wpm 180
+Feel that. Whatever happened when you read it. The slight softening. The tiny exhale. The almost imperceptible loosening in your shoulders. That was the lock recognizing the key.
+
+@wpm 200
+@spiral color:#6666CC opacity:0.08 speed:0.15 fade:5
+Let's do it again. But this time, let the word land deeper. Don't analyze it. Don't evaluate it. Just receive it the way your eyes receive light. Passively. Completely. Without effort.
+
+@wpm 150
+Mindless.
+
+@sfx bell
+@pause duration:3000
+
+@wpm 200
+Better. Deeper. Can you feel the difference between the first time and the second? The second one landed lower. Below the thinking. Below the evaluating. Somewhere in the body where words become sensations instead of meanings.
+
+That's where obedience lives. Below the mind. In the place where the body keeps its honest reactions.
+
+@wpm 250
+@hybrid drone_mid carrier:82 beat:2 pulse:4.5 db:-6 fade:8
+@hybrid drone_high carrier:155 beat:3 pulse:5.5 db:-3 fade:8
+@pulseborder yellow hz:0.5
+Now build. Feel the warmth accelerating. Feel how the trigger word and the touch and the voice are weaving together into something that hums. The frequency of obedience. Not a cage. A current. Carrying you.
+
+@pulseborder purple hz:0.5
+@spiral color:#6666CC opacity:0.12 speed:0.25 fade:2
+@subliminals opacity:0.15 mindless obey follow deep easy flow surrender warm
+And the current is taking you toward something. An edge. Not a cliff. A horizon. The place where thought thins out and sensation takes over and the word mindless stops being a word and starts being a state.
+
+@wpm 300
+Feel it. The thoughts getting quieter. The touch getting louder. The voice becoming the only structure in a world that's going soft and warm. This is what obedience feels like at the threshold. Not empty. Full. Full of flow. Full of the ease of a mind that finally stopped fighting the current.
+
+@wpm 350
+Higher. Closer. The edge humming with the frequency of every time you've ever let go and felt better for it. Every surrender that turned out to be a relief. Every time the passenger seat was more beautiful than the driver's seat.
+
+@hybrid drone_mid carrier:80 beat:2 pulse:3.5 db:-7 fade:0.3
+@hybrid drone_high carrier:150 beat:3 pulse:4.5 db:-4 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:2500 word:Stop.
+
+@wpm 120
+@pulseborder off fade:1
+Hands rest. Hold.
+
+@pause duration:3000
+
+@wpm 150
+Did you pull away? Did you resist? Did something in you flinch and say no, not yet, too fast, too deep?
+
+Good.
+
+@sfx bell
+
+@wpm 180
+That resistance. That flinch. That's not failure. That's your mind testing the depth. Checking how real it is. And the fact that you felt how deep it was going? That means it was working. Perfectly.
+
+Here's the repair. Here's the reframe. You pulled away because you felt something genuine. Not because you're bad at this. Because you're good at it. So good that your defenses engaged. And defenses only engage against real threats. And obedience is a real threat. To the part of you that needs to be in control.
+
+@wpm 200
+So let's try again. Knowing that the resistance is part of it. Knowing that the flinch is data, not failure. Knowing that every time you pull away and come back, the coming back is sweeter. And here's the secret: the restart is the best part. The moment of returning is where the real conditioning happens. Not in the holding. In the choosing to come back. That choice, made freely, again and again, is worth more than any finish line.
+
+@pulseborder green hz:0.33
+Touch again. And this time the resistance is invited. Let it be there. Let it push back while the pleasure pushes forward. Let them negotiate. Feel the tension between them. The exquisite friction of a mind that wants to let go and isn't sure it can.
+
+@wpm 250
+@subliminals opacity:0.15 repair return deeper sweeter easy mindless flow safe
+That friction is where the deepest surrender lives. Not in the instant collapse. Not in the dramatic fall. In the slow, honest negotiation between the part that wants to control and the part that wants to be carried. And right now, stroke by stroke, word by word, the part that wants to be carried is winning.
+
+@wpm 150
+Mindless.
+
+@sfx bell
+@pause duration:2000
+
+@wpm 200
+Third time. Deeper still. Each repetition cuts the channel deeper. Each time the word lands, it arrives faster. Meets less resistance. Finds its way to the place in the body where it lives now. Where it will live after this session ends.
+
+@wpm 250
+@hybrid drone_mid carrier:82 beat:2 pulse:4.5 db:-5 fade:8
+@hybrid drone_high carrier:155 beat:3 pulse:5.5 db:-2 fade:8
+@pulseborder yellow hz:0.5
+And here's the part that matters. Did the arousal arrive before you decided to feel it? Before you chose to comply? Check honestly. The warmth was already there. The body said yes before the mind could weigh the options. That's not weakness. That's the oldest part of you recognizing something it trusts.
+
+Build again. The second approach. Different now because the repair loop changed something. The resistance is quieter. Not gone. Quieter. It tried and found that the other side of letting go was warmth, not destruction.
+
+@pulseborder purple hz:0.5
+@spiral color:#6666CC opacity:0.18 speed:0.3 fade:1
+@wpm 300
+@subliminals opacity:0.2 mindless obey surrender flow deep easy warm follow
+The edge again. But it's a different edge now. Familiar. You've been here before, ninety seconds ago, and you survived. And the surviving made you braver. And the bravery makes the edge brighter.
+
+And notice something strange. You feel MORE right now. Not less. More energy, more focus, more alive than when you started. This is what obedience actually feels like. Not diminishment. Expansion. The altered state of a mind running on pure signal with no noise. Sharper and softer at the same time.
+
+@wpm 350
+Higher. Feel the word humming underneath everything. Mindless. Not empty. Not broken. Free. The freedom of a mind that chose to stop choosing. The relief of a consciousness that finally found something worth following.
+
+@wpm 400
+And you are following. Beautifully. Effortlessly. The resistance a whisper now. The flow a river. And the edge is right here and the word is right here and you are right here and this is what obedience feels like when the body confirms what the mind suspected
+
+@hybrid drone_mid carrier:80 beat:2 pulse:3.5 db:-7 fade:0.3
+@hybrid drone_high carrier:150 beat:3 pulse:4.5 db:-4 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:3000 word:Hold.
+
+@wpm 100
+@pulseborder off fade:1
+@spiral off fade:3
+Still. Here. Holding.
+
+@pause duration:5000
+
+@snap duration:1500 word:Good.
+
+@wpm 120
+@pulseborder red hz:0.75
+You don't get release. Not today. Not because you failed. Because the craving IS the lesson. The wanting IS the teacher.
+
+And the frustration you might expect? Notice that it's not quite there. Because the arousal was never yours to spend. It was always fuel for the system. The warmth, the ache, the wanting. Those belong to the process. They are what carried you this deep. Trying to claim them as your reward would be like burning the engine for heat. The arousal is doing something. Let it keep doing it.
+
+@wpm 150
+Here's what you're taking with you. A word. Mindless. And an experience. The felt sense of what it's like to follow. Not the idea of it. The actual somatic reality of a mind that let the current carry it.
+
+And a craving. A specific, localized ache that is going to follow you out of this file and into your day. And every time it pulses, you're going to remember what it felt like to be this close. This soft. This obedient.
+
+@wpm 180
+@subliminals off
+And you're going to want to come back. Not to finish. To go deeper. Because the release was never the point. The depth is the point. And the deeper you go, the less the release matters. And the less the release matters, the deeper you can go.
+
+That's the loop. That's the architecture. That's why the craving is the lesson and the denial is the teacher.
+
+@sfx bell
+
+@wpm 150
+@hybrid drone_low off fade:10
+@hybrid drone_mid off fade:10
+@hybrid drone_high off fade:10
+Welcome to obedience.
+
+@pause duration:2000
+
+@pulseborder off fade:5
+
+@wpm 120
+The first session is always gentle. The second one won't be.
+
+@snap duration:2000 word:Mindless.
+
+@wpm 100
+You'll be back.

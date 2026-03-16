@@ -37,7 +37,7 @@ You haven't looked away.
 @spiral color:#4169E1 opacity:0.1 speed:0.3 fade:3
 Third thing. And this is the one that changes everything.
 
-You think your thoughts are yours. You think the voice inside your head — the one reading these words right now — is you. Your voice. Your narration. Your self-talk.
+You think your thoughts are yours. You think the voice inside your head , the one reading these words right now , is you. Your voice. Your narration. Your self-talk.
 
 But right now, whose words is that voice speaking?
 

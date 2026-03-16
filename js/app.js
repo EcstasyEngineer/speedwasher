@@ -215,6 +215,17 @@ document.addEventListener('DOMContentLoaded', () => {
             subliminals.stop(2);
             binaural.stop(2);
             resetPulseBorder();
+
+            // Track play count for completed scripts
+            if (currentScriptName) {
+                try {
+                    const counts = JSON.parse(localStorage.getItem('speedwashing-play-counts') || '{}');
+                    counts[currentScriptName] = (counts[currentScriptName] || 0) + 1;
+                    localStorage.setItem('speedwashing-play-counts', JSON.stringify(counts));
+                } catch (e) {
+                    console.error('Failed to update play counts:', e);
+                }
+            }
         },
         onStateChange: (playing) => {
             if (playing || !isSnapPause) {
@@ -240,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (params.action === 'off') {
                 spiral.stop(params.fade);
             } else {
-                spiral.start(params.colors || params.color, params.opacity, params.speed, params.fade);
+                spiral.start(params.colors || params.color, params.opacity, params.speed, params.fade, params.type);
             }
         },
         onSubliminals: (args) => {
@@ -342,6 +353,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Track loaded script to detect changes
     let loadedScript = '';
 
+    // Track which script file is currently loaded (for play count telemetry)
+    let currentScriptName = null;
+
     // --- Script loading: URL params > external file > inline fallback ---
 
     // Sanitize fetched script text (strip HTML tags to prevent XSS)
@@ -385,9 +399,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function loadScript(text) {
+    function loadScriptText(text, scriptName) {
         scriptEditor.value = text;
         loadedScript = text;
+        currentScriptName = scriptName || null;
         prescanSfx(text);
         rsvp.load(text);
     }
@@ -416,32 +431,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!r.ok) throw new Error('HTTP ' + r.status);
                 return r.text();
             })
-            .then(text => loadScript(sanitizeScript(text)))
+            .then(text => loadScriptText(sanitizeScript(text)))
             .catch(err => {
                 console.error('Failed to load shared script:', err);
                 scriptEditor.placeholder = 'Failed to load shared script. Loading demo...';
                 return fetch('scripts/demo.txt')
                     .then(r => r.ok ? r.text() : Promise.reject())
-                    .then(text => loadScript(text))
+                    .then(text => loadScriptText(text))
                     .catch(loadFailed);
             });
     } else if (scriptB64) {
         // Inline base64-encoded script
         try {
             const text = decodeURIComponent(escape(atob(scriptB64)));
-            loadScript(sanitizeScript(text));
+            loadScriptText(sanitizeScript(text));
         } catch (e) {
             console.error('Failed to decode script param:', e);
             fetch('scripts/demo.txt')
                 .then(r => r.ok ? r.text() : Promise.reject())
-                .then(text => loadScript(text))
+                .then(text => loadScriptText(text))
                 .catch(loadFailed);
         }
     } else {
         // Default: load from file
         fetch('scripts/demo.txt')
             .then(response => response.ok ? response.text() : Promise.reject('File not found'))
-            .then(text => loadScript(text))
+            .then(text => loadScriptText(text, 'demo'))
             .catch(loadFailed);
     }
 
@@ -570,6 +585,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prescanSfx(text);
             rsvp.load(text);
             loadedScript = scriptEditor.value;
+            // Don't overwrite currentScriptName if set by loadScript() just before this click
             updateLoadButton();
         }
     });
@@ -670,12 +686,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === Script Browser ===
     const archetypes = [
-        { id: 'mommy', emoji: '🌸', name: 'Mommy', desc: 'Comfort & safety', sfw: 'sfw_mommy', nsfw_deny: 'venus_golden_path', nsfw_cum: 'mommy_cum', denialBump: 5 },
-        { id: 'yandere', emoji: '🔪', name: 'Yandere', desc: 'Obsessive devotion', sfw: 'sfw_yandere', nsfw_deny: 'yandere', nsfw_cum: 'yandere_cum', denialBump: 15 },
-        { id: 'teacher', emoji: '📖', name: 'Teacher', desc: 'Understanding is descent', sfw: 'sfw_teacher', nsfw_deny: 'paf_drone', nsfw_cum: 'teacher_cum', denialBump: 10 },
-        { id: 'mesugaki', emoji: '👅', name: 'Mesugaki', desc: 'The brat always wins', sfw: 'sfw_mesugaki', nsfw_deny: 'mesugaki', nsfw_cum: 'mesugaki_cum', denialBump: 40 },
-        { id: 'succubus', emoji: '🦋', name: 'Succubus', desc: 'Mutual transformation', sfw: 'sfw_succubus', nsfw_deny: 'succubus', nsfw_cum: 'succubus_cum', denialBump: 10 },
-        { id: 'puppet', emoji: '🪶', name: 'Puppet', desc: 'Set it all down', sfw: 'sfw_puppet', nsfw_deny: 'puppet', nsfw_cum: 'puppet_cum', denialBump: 20 },
+        { id: 'mommy', emoji: '🌸', name: 'Mommy', desc: 'Comfort & safety',
+          sfw: 'mommy_sfw', nsfw_deny: 'mommy_nsfw', nsfw_cum: 'mommy_cum', denialBump: 5 },
+        { id: 'yandere', emoji: '🔪', name: 'Yandere', desc: 'Obsessive devotion',
+          sfw: 'yandere_sfw', nsfw_deny: 'yandere_nsfw', nsfw_cum: 'yandere_cum', denialBump: 15 },
+        { id: 'teacher', emoji: '📖', name: 'Teacher', desc: 'Understanding is descent',
+          sfw: 'teacher_sfw', nsfw_deny: 'teacher_nsfw', nsfw_cum: 'teacher_cum', denialBump: 10 },
+        { id: 'brat', emoji: '👅', name: 'Brat', desc: 'The brat always wins',
+          sfw: 'brat_sfw', nsfw_deny: 'brat_nsfw', nsfw_cum: 'brat_cum', denialBump: 40 },
+        { id: 'succubus', emoji: '🦋', name: 'Succubus', desc: 'Mutual transformation',
+          sfw: 'succubus_sfw', nsfw_deny: 'succubus_nsfw', nsfw_cum: 'succubus_cum', denialBump: 10 },
+        { id: 'drone', emoji: '🪶', name: 'Drone', desc: 'Systems nominal',
+          sfw: 'drone_sfw', nsfw_deny: 'drone_nsfw', nsfw_cum: 'drone_cum', denialBump: 20 },
     ];
 
     const grid = document.getElementById('archetype-grid');
@@ -722,7 +744,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="archetype-name">${a.name}</div>
                 <div class="archetype-desc">${a.desc}</div>
             `;
-            card.addEventListener('click', () => loadArchetype(a));
+            card.addEventListener('click', () => {
+                scriptDropdown.value = '';
+                loadArchetype(a);
+            });
             grid.appendChild(card);
         });
     }
@@ -760,6 +785,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const resp = await fetch(`scripts/${scriptName}.txt`);
             if (!resp.ok) throw new Error('Script not found');
             const text = await resp.text();
+            currentScriptName = scriptName;
             editor.value = text;
             btnLoad.disabled = false;
             btnLoad.classList.remove('loaded');
@@ -772,29 +798,50 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // NSFW toggle with modal
+    // NSFW toggle with modal (modal only shows once ever)
     nsfwCheckbox.addEventListener('change', (e) => {
-        if (e.target.checked && localStorage.getItem('speedwashing-nsfw') !== 'true') {
-            e.target.checked = false;
-            nsfwModal.style.display = 'flex';
-        } else if (e.target.checked) {
-            denialToggle.style.display = 'flex';
+        if (e.target.checked) {
+            // Show modal only if user has NEVER confirmed before
+            if (localStorage.getItem('speedwashing-nsfw-confirmed') !== 'true') {
+                e.target.checked = false;
+                nsfwModal.style.display = 'flex';
+            } else {
+                // Already confirmed once — enable directly
+                localStorage.setItem('speedwashing-nsfw', 'true');
+                denialToggle.style.display = 'flex';
+                renderCards();
+            }
         } else {
             localStorage.setItem('speedwashing-nsfw', 'false');
             denialToggle.style.display = 'none';
+            renderCards();
         }
     });
 
     nsfwConfirm.addEventListener('click', () => {
         localStorage.setItem('speedwashing-nsfw', 'true');
+        localStorage.setItem('speedwashing-nsfw-confirmed', 'true');
         nsfwCheckbox.checked = true;
         nsfwModal.style.display = 'none';
         denialToggle.style.display = 'flex';
+        renderCards();
     });
 
     nsfwCancel.addEventListener('click', () => {
         nsfwCheckbox.checked = false;
         nsfwModal.style.display = 'none';
+    });
+
+    // Script dropdown — manual script selection
+    const scriptDropdown = document.getElementById('script-dropdown');
+
+    scriptDropdown.addEventListener('change', () => {
+        const val = scriptDropdown.value;
+        if (!val) return;
+        // Deselect archetype cards
+        document.querySelectorAll('.archetype-card').forEach(c => c.classList.remove('active'));
+        // Load the selected script directly
+        loadScript(val, null);
     });
 
     renderCards();

@@ -1,0 +1,7 @@
+#!/bin/sh
+# JOI Script Linter — blocks push on errors
+# Warnings are reported but do not block.
+
+echo "Running JOI script linter..."
+node "$(dirname "$0")/../lint.js"
+exit $?

@@ -1,0 +1,165 @@
+{
+  "rules": {
+    "JOI-001": {
+      "name": "default-red",
+      "description": "First @pulseborder should appear within first 5 words or be a deliberate choice",
+      "severity": "info"
+    },
+    "JOI-002": {
+      "name": "green-touch-early",
+      "description": "First @pulseborder green must appear within first 150 words",
+      "severity": "error",
+      "params": { "max_words": 150 }
+    },
+    "JOI-003": {
+      "name": "red-programming",
+      "description": "@pulseborder red sections must contain at least 20 words",
+      "severity": "warning",
+      "params": { "min_words": 10 }
+    },
+    "JOI-004": {
+      "name": "yellow-before-purple",
+      "description": "@pulseborder yellow must immediately precede @pulseborder raspberry or purple",
+      "severity": "error"
+    },
+    "JOI-005": {
+      "name": "yellow-duration",
+      "description": "Yellow phase must be 5-12 seconds at current WPM",
+      "severity": "error",
+      "params": { "min_seconds": 5, "max_seconds": 12 }
+    },
+    "JOI-006": {
+      "name": "purple-after-yellow",
+      "description": "@pulseborder raspberry/purple must be preceded by @pulseborder yellow",
+      "severity": "error"
+    },
+    "JOI-007": {
+      "name": "recovery-green-extended",
+      "description": "Recovery GREEN after edge→red→green sequence must be at least 10 seconds",
+      "severity": "warning",
+      "params": { "min_recovery_seconds": 10 }
+    },
+    "JOI-008": {
+      "name": "sfw-no-borders",
+      "description": "Files matching *_sfw.txt must not contain @pulseborder",
+      "severity": "error"
+    },
+    "JOI-009": {
+      "name": "edge-escalation",
+      "description": "Edge (raspberry/purple) durations should trend upward (linear regression for 3+ edges; info-only for 2 edges)",
+      "severity": "warning"
+    },
+    "JOI-010": {
+      "name": "edge-variation",
+      "description": "Not all edges should be the same duration (variable reinforcement)",
+      "severity": "warning",
+      "params": { "min_unique_durations": 2 }
+    },
+    "JOI-011": {
+      "name": "rapid-cycling-present",
+      "description": "NSFW scripts should contain at least one rapid GREEN/RED cycling section",
+      "severity": "warning"
+    },
+    "JOI-012": {
+      "name": "sfx-no-volume",
+      "description": "@sfx directives must not contain volume parameters",
+      "severity": "error"
+    },
+    "JOI-013": {
+      "name": "min-edges",
+      "description": "NSFW deny scripts should have at least 2 edge sequences",
+      "severity": "warning",
+      "params": { "min_edges": 2 }
+    },
+    "JOI-014": {
+      "name": "no-personal-refs",
+      "description": "Scripts must not contain personal references or named characters",
+      "severity": "error",
+      "params": {
+        "banned_patterns": ["adrianna", "connor", "conno", "dudebot", "ToyMaker", "/mnt/c/Users/"]
+      }
+    },
+    "JOI-015": {
+      "name": "pause-after-snap-stop",
+      "description": "@snap with word:Stop or word:Denied should be followed by recovery pause or border-off",
+      "severity": "warning"
+    },
+    "JOI-016": {
+      "name": "opening-red-present",
+      "description": "NSFW scripts should open with @pulseborder red before first green",
+      "severity": "info"
+    },
+    "JOI-017": {
+      "name": "wpm-range",
+      "description": "@wpm values should be between 80 and 800",
+      "severity": "warning",
+      "params": { "min_wpm": 80, "max_wpm": 800 }
+    },
+    "JOI-018": {
+      "name": "border-off-before-end",
+      "description": "Pulse border should be turned off before script ends",
+      "severity": "warning"
+    },
+    "JOI-019": {
+      "name": "no-emdashes",
+      "description": "Scripts must not contain em dashes or en dashes",
+      "severity": "error",
+      "params": { "banned_chars": ["—", "–"] }
+    },
+    "JOI-020": {
+      "name": "cl-edge-escalation-within-cycle",
+      "description": "Edge durations should escalate within each compliance cycle (sawtooth OK)",
+      "severity": "warning"
+    },
+    "JOI-021": {
+      "name": "cl-loop-structure",
+      "description": "Must have GREEN->RED/GREEN cycles->YELLOW->PURPLE->RED pattern at least twice",
+      "severity": "warning",
+      "params": { "min_loops": 2 }
+    },
+    "JOI-022": {
+      "name": "cl-variable-edge-gaps",
+      "description": "Time between edges should be variable (CV > 0.2)",
+      "severity": "warning",
+      "params": { "min_cv": 0.2 }
+    },
+    "JOI-030": {
+      "name": "ct-rapid-cycling-section",
+      "description": "Must have 4+ GREEN/RED transitions within 120 words",
+      "severity": "warning",
+      "params": { "min_transitions": 4, "max_words": 120 }
+    },
+    "JOI-031": {
+      "name": "ct-regular-intervals",
+      "description": "Rapid cycling phases should be regular (within 30% of section average)",
+      "severity": "warning",
+      "params": { "max_deviation": 0.3 }
+    },
+    "JOI-032": {
+      "name": "ct-edge-regularity-ok",
+      "description": "Edge timing may be regular (no variability requirement)",
+      "severity": "info"
+    },
+    "JOI-040": {
+      "name": "th-escalating-density",
+      "description": "First third should have fewer color transitions than final third",
+      "severity": "warning"
+    },
+    "JOI-041": {
+      "name": "th-override-expected",
+      "description": "Rule violations with @lint-override JOI-XXX: trojan are expected, not errors",
+      "severity": "info"
+    }
+  },
+  "file_categories": {
+    "_sfw": { "applies": ["JOI-008", "JOI-012", "JOI-014", "JOI-017", "JOI-019"] },
+    "_nsfw": { "applies": ["JOI-002", "JOI-003", "JOI-004", "JOI-005", "JOI-006", "JOI-007", "JOI-009", "JOI-010", "JOI-011", "JOI-012", "JOI-013", "JOI-014", "JOI-015", "JOI-016", "JOI-017", "JOI-018", "JOI-019"] },
+    "_cum": { "applies": ["JOI-002", "JOI-004", "JOI-005", "JOI-006", "JOI-012", "JOI-014", "JOI-017", "JOI-018", "JOI-019"] },
+    "default": { "applies": ["JOI-012", "JOI-014", "JOI-017", "JOI-019"] }
+  },
+  "deployment_variants": {
+    "compliance_loop": ["JOI-020", "JOI-021", "JOI-022"],
+    "clicker_training": ["JOI-030", "JOI-031", "JOI-032"],
+    "trojan_horse": ["JOI-040", "JOI-041"]
+  }
+}

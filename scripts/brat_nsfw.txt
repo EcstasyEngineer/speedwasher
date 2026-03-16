@@ -15,58 +15,76 @@ Look, I know why you're here. You saw the title. You clicked anyway. And now you
 That's the funniest thing anyone has thought today. Congratulations.
 
 @wpm 250
-Here's the thing about reading. You're doing it right now and you can't stop. Not really. Your eyes are locked on that red letter and the words are arriving and your brain is decoding them before you even choose to. You're not reading. You're being read to. By yourself. Against your own will.
+Here's the thing about reading. You're doing it right now and you can't stop. Your eyes are locked on that red letter and your brain is decoding the words before you even choose to. You're not reading. You're being read to. By yourself. Against your own will.
 
 Isn't that embarrassing?
 
 @wpm 300
+@pulseborder green hz:0.33
+Fine. You know what? Touch yourself. I know you were going to anyway. Might as well stop pretending you have dignity.
+
+@sfx bell
+@pause duration:2000
+
+Slow. I said slow. You'll go at my pace.
+
+@wpm 200
+@pulseborder red hz:0.75
+@snap duration:1500 word:Stop.
+
+@pause 2000
+
+Hands off. Now. See how easy that was? I gave and I took and you just sat there and let it happen. That's the funniest part.
+
+@wpm 250
+@pulseborder green hz:0.33
+Fine, fine. Touch again. Because I'm generous like that.
+
+@sfx bell
+
+But slow. Grateful. Like you know what a privilege it is.
+
+@wpm 300
+@pulseborder red hz:0.75
+@snap duration:1500 word:Gotcha.
+
+Hands off. Again. Feel the ache. That beautiful frustrated little whimper you just made inside your head. THAT is why I do this.
+
+@wpm 200
+@subliminals opacity:0.1 weak easy soft obey give lose
+@spiral color:#FF69B4 opacity:0.1 speed:0.4 fade:3
+Now. Let's establish something while your hands are behaving.
+
 Let's go faster. Because here's what's really funny. The faster these words go, the less time your clever little brain has to mount a defense. At normal speed you can think oh that's a suggestion, I see what she's doing. At this speed?
 
 @wpm 400
 You're just swallowing. Every word. Whole. No chewing. No tasting. No deciding whether you like the flavor. It just goes down. And you can feel that happening right now. The words going in faster than your critic can screen them.
 
 @wpm 300
-@subliminals opacity:0.1 weak easy soft obey give lose
-Aww, was that too fast? Did your brain get a little fuzzy? Good. That was the point. I slowed down just so I could watch you catch your breath. Because I'm generous like that.
+Aww, was that too fast? Did your brain get a little fuzzy? Good. That was the point. I slowed down just so I could watch you catch your breath.
 
 @wpm 200
-So. Let's establish something.
-
-You think you're the one deciding to keep reading. You think you could close this tab or look away or just stop at any point. And technically? Sure. You could. Nobody's stopping you.
+You think you're the one deciding to keep reading. You think you could close this tab or look away or just stop. And technically? Sure. Nobody's stopping you.
 
 But you won't.
 
-@snap duration:1500 word:Gotcha.
-
-You won't because you want to see what happens next. And wanting to see what happens next is the only leash I need. Your curiosity is my collar. Your ego is my handle. And I haven't even done anything yet.
-
-@wpm 250
-@spiral color:#FF69B4 opacity:0.1 speed:0.4 fade:3
-So here's a dare. I dare you to keep reading without touching yourself. Just read. Hands where I can't see them. I mean, hands away from anywhere fun. Because this next part is designed to make you want to and I want to see how long you hold out.
-
-Ready? Sure you are.
-
-@wpm 300
-Think about the last time you gave in. Not to me. To anything. The moment where you were holding back and then just... stopped. Felt the resistance crumble. Felt the relief wash through you. That exact moment. Where the holding became heavier than the letting go.
-
-@wpm 200
-You're remembering it right now. I can tell because the words slowed down and you're still here. Still reading. Still not closing the tab. Still curious. Still leashed.
-
-You felt it, didn't you. That little pulse. That warmth. And you're thinking it's just a memory. It's just words. It doesn't mean anything.
-
-@snap duration:1500 word:Liar.
+You won't because you want to see what happens next. And wanting to see what happens next is the only leash I need. Your curiosity is my collar. Your ego is my handle.
 
 @wpm 250
 @subliminals opacity:0.15 give in weaker easier hotter lower
-It means everything. Because right now you're aroused and you're pretending you're not and that pretending is the funniest game I've ever played. I can see the mask. The oh I'm just reading this for fun mask. The I'm not actually affected mask. The I could stop if I wanted to mask.
+Think about the last time you gave in. Not to me. To anything. The moment where you were holding back and then just... stopped. Felt the resistance crumble. Felt the relief. That exact moment where the holding became heavier than the letting go.
 
-Masks are my favorite toys. Wanna know why?
+You felt it, didn't you. That little pulse. That warmth. And you're thinking it's just words. It doesn't mean anything.
+
+@snap duration:1500 word:Liar.
+
+It means everything. Because right now you're aroused and you're pretending you're not and that pretending is the funniest game I've ever played. Masks are my favorite toys. Wanna know why?
 
 Because I don't take them off. I let you wear them while I win anyway.
 
 @wpm 300
 @pulseborder green hz:0.33
-Fine. Touch yourself. I know you were going to anyway. Might as well stop pretending. See? Was that so hard? Giving yourself permission to do what your body was already begging for?
+Touch yourself. I know you were going to anyway. Might as well stop pretending. See? Was that so hard? Giving yourself permission to do what your body was already begging for?
 
 @sfx bell
 @pause duration:2000
@@ -92,14 +110,14 @@ Knowing how the trap works doesn't help. Knowing is just another way in. I told 
 @hybrid drone_mid carrier:100 beat:3.5 pulse:4 db:-4 fade:10
 @hybrid drone_high carrier:195 beat:4.5 pulse:5 db:-1 fade:10
 @pulseborder yellow hz:0.5
-Faster now.
+Oh getting close already, that's adorable, you think you're ready, you're not ready, but the way your body is trembling right now is so cute I almost feel bad, almost, feel it building, feel the ache climbing, you want it so badly and that desperation is the funniest thing, keep squirming
 
 @pulseborder purple hz:0.5
 Build it. Let it climb. I dare you to get close. Right up to the edge. Let your body take everything your brain can't hold anymore. Higher. More. Feel how blank you're getting. How stupid. How easy.
 
 @wpm 400
 @spiral color:#FF69B4 opacity:0.2 speed:0.5 fade:1
-The brat is winning. You can feel it. Every word of mine replacing a thought of yours. Every wave of pleasure washing away another piece of your cute little resistance. You thought you were strong enough. You thought this was just words on a screen. You thought—
+The brat is winning. You can feel it. Every word of mine replacing a thought of yours. Every wave of pleasure washing away another piece of your cute little resistance. You thought you were strong enough. You thought this was just words on a screen. You thought,
 
 @hybrid drone_mid carrier:98 beat:3.5 pulse:3 db:-5 fade:0.3
 @hybrid drone_high carrier:185 beat:4 pulse:4 db:-3 fade:0.3
@@ -141,7 +159,7 @@ That's not a game. That's training. And you just sat through it with a smile on 
 @hybrid drone_mid carrier:100 beat:3.5 pulse:4 db:-4 fade:8
 @hybrid drone_high carrier:195 beat:4.5 pulse:5 db:-1 fade:8
 @pulseborder yellow hz:0.5
-One more time.
+One more time, aww look at you, already shaking, already desperate, you really think this time will be different, that's the cutest lie you've told yourself all night, feel it climbing, feel the edge getting closer, your whole body begging for something I haven't decided to give you yet
 
 @pulseborder purple hz:0.5
 @spiral color:#FF69B4 opacity:0.25 speed:0.55 fade:1

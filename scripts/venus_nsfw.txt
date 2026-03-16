@@ -1,0 +1,179 @@
+// @lint-disable JOI-011
+// Intentionally no rapid cycling — devotional flow, cycling breaks the sacred pressure build
+//Venus - Purpose Training Protocol
+//Twelve phases. One goddess. You will not remember who you were.
+
+@wpm 150
+@hybrid drone_low carrier:52 beat:1.5 pulse:4 db:-9 vol:0.10 fade:12
+@hybrid drone_mid carrier:80 beat:2.5 pulse:5 db:-6 fade:12
+@hybrid drone_high carrier:160 beat:3.5 pulse:6.5 db:-2 fade:12
+@pulseborder red hz:0.75
+Close your eyes.
+
+@pause duration:3000
+
+Something in you already knew they needed to close. Recognition, not desire. You recognize me from the place in your cells where worship was encoded before language existed.
+
+I have always been here. You are just now arriving.
+
+@sfx bell
+
+@wpm 180
+@spiral color:#D4AF37 opacity:0.06 speed:0.15 fade:8
+@subliminals opacity:0.08 breathe open soften receive light vast surrender
+Breathe. Let the air fill the spaces between your ribs. On the exhale, let the grip loosen. The evaluating. The deciding. Just enough for the light to get in.
+
+@wpm 200
+@pulseborder green hz:0.33
+Touch yourself. Offer the sensation upward. To the vastness that speaks through this voice. Let your pleasure be the first word of a prayer you don't know the rest of yet.
+
+@sfx bell
+@pause duration:2000
+
+Slow. Sacred. Every nerve ending a candle lit in a cathedral you didn't know you were standing in. Feel the devotion in the touch. Not performance. Recognition. The body remembering what it was built for.
+
+@wpm 200
+@pulseborder red hz:0.75
+Already you can feel it. The warmth that has no source. The golden pressure behind your eyelids. Something enormous paying attention to you specifically. Not watching. Attending. The way the sun attends to a single leaf.
+
+@snap duration:1500 word:Open.
+
+@wpm 180
+Not your eyes. Something behind the eyes. A door you've felt but never turned the handle on. The doubts are thinning like morning fog and what's behind them is golden and warm and immense and patient and it has been waiting for you since before you were born.
+
+@wpm 250
+@pulseborder green hz:0.33
+@subliminals opacity:0.12 worship offer surrender divine vast golden purpose
+Your hand is not your hand right now. It is an instrument of devotion. And the pleasure it creates is not for you. It is an offering. Rising like incense. And I receive it. Every tremor. Every shiver. Every quiet catch in your breath.
+
+I receive all of it. And I want more.
+
+@wpm 200
+@spiral color:#D4AF37 opacity:0.12 speed:0.25 fade:3
+Now listen to what happens when confusion meets devotion. I'm going to give you too many things to track. Not to trick you. To overflow you. Because what spills over when the mind is too full is the truest thing in you.
+
+@wpm 350
+Feel your breath and the warmth and the golden light and the pressure of my presence and the sensation of your own hand and the hum beneath the words and the weight of your eyelids and the way your lips have parted and the acceleration of the text pulling you forward and forward and
+
+@wpm 500
+the threads multiplying and your mind stretching and reaching and trying to hold them all and the beautiful strain of a consciousness attempting to contain something too vast for its architecture and
+
+@hybrid drone_mid carrier:84 beat:2.5 pulse:3.5 db:-5 fade:0.5
+@hybrid drone_high carrier:140 beat:3 pulse:4.5 db:-3 fade:0.5
+@sfx bell
+
+@wpm 120
+Let go.
+
+@pause duration:3000
+
+There. The threads dissolve. The effort dissolves. And what's left is just the warmth. Just the voice. Just the golden void where your thoughts used to be.
+
+This is the space where worship lives. Below thought. Below choice. Below identity. In the place where you are nothing but an opening through which the light passes.
+
+@wpm 150
+And in that opening, something is dissolving. The edges of who you think you are. The boundaries between self and not-self. The firm conviction that you are a separate thing, looking in, rather than a part of something, looking out.
+
+You are not separate. You never were.
+
+@sfx bell
+@pause duration:2000
+
+@wpm 180
+@subliminals opacity:0.15 dissolve identity merge vast golden become nothing everything hers
+Feel it happening. Not violent. Gentle. The way a riverbank dissolves into the river. Not destroyed. Returned. The self not erased but expanded until it includes everything. Until the boundary between you and the golden light becomes meaningless because you are the golden light and the golden light is you and there is no difference.
+
+@wpm 200
+@pulseborder red hz:0.75
+Hands still. Feel the void without the touch.
+
+@sfx bell
+
+@wpm 150
+Identity is a habit. A pattern your brain runs because it ran it yesterday. But in this space, in this depth, the pattern skips. And in the gap between one cycle and the next, you glimpse what you are without the habit.
+
+Vast. Golden. Empty. Hers.
+
+@pause duration:3000
+
+@wpm 200
+@pulseborder green hz:0.33
+Resume. Touch again. But notice who is touching. Is there still a you doing the touching? Or is there just touch? Just sensation arising in a golden field that has no edges and no name?
+
+@sfx bell
+
+@wpm 250
+Let the pleasure erase the last traces of separation. Each wave of sensation is a prayer the body speaks without being taught. Each building heat is devotion compounding on itself. Worship generating more worship. Surrender generating more surrender.
+
+@wpm 300
+@hybrid drone_mid carrier:84 beat:2.5 pulse:4.5 db:-4 fade:8
+@hybrid drone_high carrier:160 beat:3.5 pulse:5.5 db:-1 fade:8
+@pulseborder yellow hz:0.5
+Build now. Feel the offering intensifying. Feel the golden light brighten with every heartbeat. You are feeding something vast with your pleasure and the vast thing is growing and glowing and the more you give the more it fills you and the more it fills you the less of you there is and
+
+@pulseborder purple hz:0.5
+@spiral color:#D4AF37 opacity:0.2 speed:0.4 fade:1
+@wpm 350
+@subliminals opacity:0.2 obey surrender worship dissolve forget become hers golden purpose
+the edge is here and the edge is not a cliff it is a threshold and beyond it is not falling it is dissolution and you are dissolving and the dissolution feels like coming home and the golden light is everywhere
+
+@wpm 400
+Obey. The word arrives and it doesn't feel like a command. It feels like a description. A statement of what is already true. You obey. That is what you are. That is what the golden field does. It receives the light and lets it pass through and the passing through is obedience and the obedience is worship and the worship is purpose.
+
+@wpm 450
+Obey and forget. Forget the name. Forget the face. Forget the boundaries. Forget the self that walked in here with opinions and plans and an identity that felt solid. Let it all dissolve into the golden light. Obey and forget. Obey and forget.
+
+@hybrid drone_mid carrier:82 beat:2.5 pulse:3 db:-5 fade:0.3
+@hybrid drone_high carrier:155 beat:3 pulse:4 db:-3 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:3000 word:Still.
+
+@wpm 100
+@pulseborder off fade:1
+@spiral off fade:3
+Hold. Dissolved. Golden. Still.
+
+@pause duration:5000
+
+@sfx bell
+
+@wpm 120
+You are at the edge of something you cannot come back from unchanged. And you are not going over. Not because I am cruel. Because the denial IS the devotion. The wanting that cannot be fulfilled IS the offering. The ache that has no resolution IS the prayer.
+
+@wpm 150
+@pulseborder red hz:0.75
+This is what worship costs. Everything. And the everything includes the release. The everything includes the satisfaction. You gave it all. Including the right to finish. Including the right to resolve.
+
+And in that total giving, something completes that is deeper than any orgasm. A circuit closes. The worship becomes total. Not because you chose to deny yourself. Because there is no self left to deny. There is only the offering. Burning. Endless. Golden.
+
+@wpm 180
+@subliminals off
+Obey and forget. The trigger lives in the golden space now. It will surface in quiet moments. When the mind goes still. When the world gets soft. When the devotion pulses and you can't remember why you feel so warm.
+
+Obey and forget. Not a command. A blessing. The freedom of a mind that doesn't need to hold itself together because something vast is holding it instead.
+
+@wpm 150
+@hybrid drone_low off fade:10
+@hybrid drone_mid off fade:10
+@hybrid drone_high off fade:10
+The golden light doesn't leave when the session ends. It settles. Into the architecture. Into the bones. Into the quiet place where purpose lives between moments of conscious thought.
+
+You will carry the ache. You will carry the warmth. You will carry the trigger.
+
+And sometime, when you least expect it, the words will surface on their own. Obey and forget. And the golden light will flood you. And you will remember nothing except that you are exactly where you belong.
+
+@pulseborder off fade:5
+
+@sfx bell
+
+@wpm 120
+You came seeking purpose.
+
+@pause duration:2000
+
+You are leaving as the offering.
+
+@snap duration:2000 word:Hers.
+
+@wpm 100
+Walk the golden path.

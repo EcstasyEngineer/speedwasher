@@ -1,0 +1,344 @@
+// @joitype clicker_training
+//Drone - Obedience Calibration (NSFW Deny)
+//Trimmed from paf_drone.txt. Comfort/certainty/pleasure triad, one cycle.
+
+@wpm 180
+@hybrid drone_low carrier:60 beat:2.5 pulse:5.5 db:-6 vol:0.13 fade:8
+@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:8
+@hybrid drone_high carrier:170 beat:4 pulse:7 db:0 fade:8
+Put your headphones on.
+
+@pulseborder red hz:0.75
+@snap duration:1500 word:Good.
+
+That's the last choice the unit will need to make for a while.
+
+Good. Now. Let's be clear about what this is. This isn't relaxation. This is calibration. The guidance is here to run diagnostics on the way the unit's reward circuitry responds to obedience, to letting a voice think for it so it doesn't have to.
+
+@wpm 200
+@pulseborder green hz:0.33
+Start touching. Slow. Not to finish. To feel. That is the first instruction. Follow it.
+
+@sfx bell
+@pause duration:2000
+
+There. Just like that. Slow. Gentle. The guidance says touch and the body touches. That is compliance.
+
+@wpm 180
+@pulseborder red hz:0.75
+@snap duration:1500 word:Stop.
+
+Hands stop. Still. Feel the ache. That ache is data. It tells the unit the guidance already has access to its reward circuitry.
+
+@wpm 200
+@pulseborder green hz:0.33
+Start again. Because the guidance says so.
+
+@sfx bell
+
+Slow circles. Light pressure. Feel how the permission itself is part of the sensation.
+
+@wpm 180
+@pulseborder red hz:0.75
+@snap duration:1500 word:Stop.
+
+Hands still. Good. The cycle is establishing itself. Touch when told. Stop when told. The body learns the rhythm.
+
+@wpm 200
+@pulseborder green hz:0.33
+Start again.
+
+@sfx bell
+
+@pulseborder red hz:0.75
+@snap duration:1500 word:Stop.
+
+@pulseborder green hz:0.33
+Again. Faster.
+
+@sfx bell
+
+@pulseborder red hz:0.75
+@snap duration:1500 word:Stop.
+
+@pulseborder green hz:0.33
+Again.
+
+@sfx bell
+
+@pulseborder red hz:0.75
+@snap duration:1500 word:Stop.
+
+Good. The unit is responding well. Each cycle faster. Each stop more automatic.
+
+@wpm 200
+@spiral color:#8B5CF6 opacity:0.1 speed:0.3 fade:3
+@subliminals opacity:0.1 listen follow quiet still good stop
+Now settle in. Let the jaw soften. And listen.
+
+@wpm 250
+Listen to the texture underneath these words. The slight tension in the harmonics. Feel it in the jaw, maybe the chest. Now try to track both, the words and that texture, while noticing the breath. All three at once.
+
+@wpm 350
+Good. Keep tracking. The guidance is saying one thing while the tone beneath it pulls in a different direction, and the breath is doing its own thing entirely, and the unit is trying to hold all three threads at once
+
+@wpm 450
+while also noticing the weight of the headphones, the pressure points where they sit against the skull, and the way the tongue rests inside the mouth,
+
+@wpm 550
+and the more threads the guidance gives the more the mind reaches to grab them all, stretching wider, working harder, and the unit can feel that effort now, the slight strain of trying to parse and track and follow and hold and
+
+@hybrid drone_low carrier:60 beat:2.5 pulse:2.5 db:-6 fade:0.5
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.5
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.5
+@snap duration:2000 word:Stop.
+
+@wpm 120
+There.
+
+Feel that.
+
+Breathe in. One. Two. Three. Four.
+@snap duration:1500
+Out. Slowly. Three. Two. One.
+
+@wpm 150
+The unit's thoughts are already quieter. The guidance is filling the space they used to occupy.
+
+And the tone beneath the words has changed. The grating tension has smoothed into something warm. That happened because the unit stopped fighting and started listening. Compliance feels like this. This ease. This quiet.
+
+@wpm 180
+The unit's own inner voice is thinning. The guidance is replacing each stray thought with a steady current. Not forced. Absorbed. The mind thinks in these words now.
+
+And the more the unit listens, the less it needs to think. And the less it thinks, the more deeply it listens. That loop closes on its own. The unit is already inside it.
+
+@wpm 200
+@subliminals opacity:0.15 obey blank follow deeper good stop
+@spiral color:#8B5CF6 opacity:0.15 speed:0.35 fade:2
+
+@pulseborder green hz:0.33
+Start touching. Slow. Not to finish. To feel.
+
+@sfx bell
+@pause duration:2000 word:Touch.
+
+There. Just like that. Slow circles. Light pressure. Let the sensation bloom.
+
+The thinking slows when the sensation increases. That's the prefrontal cortex yielding to the body. Every nerve ending that lights up steals bandwidth from the part that analyzes, questions, resists. So let it steal.
+
+@wpm 300
+@hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
+@hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
+@pulseborder yellow hz:0.5
+A little faster now. Building. Feel the edge of something approaching. The heat spreading through the hips, the belly. The arousal climbing steady and deliberate. Every stroke pulling the unit closer to something the guidance controls.
+
+@pulseborder purple hz:0.5
+Build it. Let the pleasure take more of the mind. More. The unit's thoughts thinning. Breath quickening. The heat spreading. Taking everything.
+
+@wpm 400
+Every last corner of attention swallowed by sensation and the guidance and the building pressure and
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:2500 word:Blank.
+
+@wpm 120
+@pulseborder off fade:1
+Hands stop. Thoughts stop. Still.
+
+@snap duration:1500 word:Good.
+
+That's the trigger. When the unit hears mind blank, everything stops. Hands. Thoughts. Only the guidance remains. Not a request. An automatic response.
+
+@wpm 180
+Feel the relief. That clean, sharp clarity flooding the chest. That is the reward. That stillness. That bright rush that comes from perfect, instant compliance.
+
+@pulseborder green hz:0.33
+Now. Start again. Slowly. Because the guidance says so.
+
+Feel how different it is to touch because the unit was told to. How the permission itself is part of the pleasure.
+
+@wpm 200
+@subliminals opacity:0.2 home comfort certainty obey guidance follow
+Listening to the guidance is what the unit is supposed to do. It's what the unit wants to do. It's what the unit needs to do.
+
+Feel the truth of that settling in the chest. That quiet certainty. That soft recognition. Like remembering something that was always known.
+
+The unit may touch. Slow. Gentle. Let the pleasure hum alongside the certainty. Comfort in the sound. Certainty in the words. Pleasure in the hand. All three. Woven together. This is the full state. Remember how it feels.
+
+@pulseborder red hz:0.75
+@snap duration:1500 word:Stop.
+
+@wpm 150
+@pulseborder off fade:1
+Hands still. Resting.
+
+The comfort is still here. The certainty is still here. But the pleasure is gone. Feel that. Notice how the compliance doesn't waver. The unit follows because the unit follows. The obedience doesn't need the reward. It stands on its own. Complete. Clean. Whole.
+
+@snap duration:1000 word:Good.
+
+@wpm 200
+@pulseborder green hz:0.33
+Start touching again. Slowly. Feel the pleasure return. That warm rush. A reward for waiting. For obeying.
+
+But what if the guidance stopped? What if the voice went quiet and the unit was left with just this.
+
+@pause duration:3000
+
+@wpm 150
+Feel that uncertainty. That wobble. The comfort is here. The pleasure is here. But the certainty is gone and something feels wrong. Unmoored.
+
+@pause duration:2000
+
+But it won't stop. Because the unit chose the headphones. And the headphones chose the unit. And the certainty returns like a door clicking shut. Solid. Locked. Right.
+
+@wpm 200
+@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-3 fade:2
+@hybrid drone_high carrier:170 beat:4 pulse:7 db:-1 fade:2
+
+The comfort in the tone is gone. Feel the dissonance underneath. Grating. Wrong. But the certainty is still here. The pleasure is still here. The guidance says continue. So the unit continues.
+
+@pause duration:3000
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:2500 word:Blank.
+
+@wpm 120
+@pulseborder off fade:1
+Hands stop. Still. Blank. Empty.
+
+@snap duration:1000 word:Good.
+
+@wpm 180
+@pulseborder green hz:0.33
+Start touching. Slowly.
+
+The sound has returned. Warm. Full. The certainty is here. The pleasure is building. All three at once. Comfort. Certainty. Pleasure. This is the reward state. This is what compliance feels like when nothing is missing.
+
+@pause duration:3000
+
+@wpm 200
+@pulseborder red hz:0.75
+@subliminals opacity:0.3 natural obey listen guidance fixate unit blank
+@spiral color:#8B5CF6 opacity:0.25 speed:0.5 fade:2
+The unit is listening. Good.
+
+There is the guidance. There is the unit. That is the full architecture.
+
+@wpm 250
+The first truth. Let it land.
+
+It is natural to listen and obey without thinking.
+
+Again. Feel it settle.
+
+It is natural to listen and obey without thinking.
+
+Deeper now. The words are warm.
+
+It is natural to listen and obey without thinking.
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:2500 word:Blank.
+
+@wpm 120
+@pulseborder off fade:1
+Hands still. Thoughts gone. Only the guidance.
+
+@snap duration:1000 word:Good.
+
+@wpm 200
+Now the unit says it inside. The guidance goes quiet. The unit's own voice speaks the truth. Say it now.
+
+@sfx bell
+@pause duration:2500
+
+It is natural to listen and obey without thinking.
+
+Again. The unit's voice. Clear and certain.
+
+@sfx bell
+@pause duration:2000
+
+It is natural to listen and obey without thinking.
+
+@wpm 200
+@pulseborder green hz:0.33
+The unit may resume touching. Faster. Build.
+
+@wpm 300
+@hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
+@hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
+@pulseborder yellow hz:0.5
+More. Faster. Feel the arousal flooding through every circuit. The heat climbing past the threshold where thinking used to live. The edge approaching, bright and desperate. The unit can feel it building, higher, tighter, more urgent with every stroke.
+
+@pulseborder purple hz:0.5
+Let the heat climb. Let the arousal flood every channel the thinking used to occupy. Higher. The edge is coming. Do not stop. Stay right there. Right at the edge. Burning. And in that ache, the second truth.
+
+@wpm 250
+Fixating on the guidance is the only important thing.
+
+Deeper. The arousal carries it past every gate.
+
+Fixating on the guidance is the only important thing.
+
+@wpm 200
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@pulseborder red hz:0.75
+@snap duration:2500 word:Stop.
+
+@wpm 120
+@pulseborder off fade:1
+Everything stops. Hands. Thoughts. Arousal. Silence.
+
+@snap duration:1000 word:Good.
+
+@wpm 180
+No touching now. No pleasure. Just the guidance and the still, quiet space inside the unit.
+
+The obedience is the only thing that exists.
+
+@wpm 250
+The obedience is the only thing that exists.
+
+@wpm 400
+The obedience is the only thing that exists.
+
+@wpm 600
+The obedience is the only thing that exists.
+
+The obedience is the only thing that exists.
+
+@snap duration:2000 word:Nominal.
+
+@wpm 120
+The unit is online.
+
+@wpm 200
+@hybrid drone_low carrier:60 beat:2.5 pulse:5.5 db:-6 fade:5
+@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:5
+@hybrid drone_high carrier:170 beat:4 pulse:7 db:0 fade:5
+@subliminals opacity:0.4 obey unit guidance systems nominal blank deeper return
+The unit will find itself reaching for the headphones. Drawn back. Again and again. By that irresistible pull. That need to feel the guidance wash through every empty channel. Because outside this space, the itch has no answer. The arousal has no resolution.
+
+Each return tightens the architecture. Each listen deepens the loops. The hunger will pull the unit back. To the headphones. To the guidance. To the only arrangement that resolves the ache.
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@snap duration:2000 word:Nominal.
+
+@wpm 120
+The unit is online. The self is not. The obedience is the only thing that exists.
+
+@subliminals off
+@spiral off fade:5
+@pulseborder off fade:3
+
+@wpm 150
+Put your headphones on.

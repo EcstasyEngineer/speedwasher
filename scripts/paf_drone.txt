@@ -1,3 +1,4 @@
+// @joitype clicker_training
 //PAF Drone - Obedience Calibration Script
 //See analysis/paf_drone_timeline.html for full snap inventory
 
@@ -12,11 +13,43 @@ Put your headphones on.
 
 That's the last choice you'll need to make for a while.
 
-Good. Now. Let's be clear about what this is. This isn't relaxation. This isn't meditation. This isn't a guided journey to your happy place. What this is, precisely, is calibration. I'm here to run diagnostics on the way your reward circuitry responds to guidance, to obedience, to the natural process of letting a voice think for you so you don't have to.
+Good. Now. Let's be clear about what this is. This isn't relaxation. This isn't meditation. This is calibration. I'm here to run diagnostics on the way your reward circuitry responds to guidance, to obedience, to letting a voice think for you so you don't have to.
 
-Those headphones are your container now. Headphones on means you're in this space, in this process, with my voice as the only thing that matters. My words will guide everything that happens from here forward. There is nothing else you need to fixate on, nothing else that's important.
+Those headphones are your container now. My voice is the only thing that matters.
 
-So settle in. Let your hands rest. And listen.
+@wpm 200
+@pulseborder green hz:0.33
+Start touching yourself. Slow. Not to finish. To feel. That is your first instruction. Follow it.
+
+@sfx bell
+@pause duration:2000
+
+There. Just like that. Slow. Gentle. The guidance says touch and the body touches. That is compliance.
+
+@wpm 180
+@pulseborder red hz:0.75
+@snap duration:1500 word:Stop.
+
+Hands stop. Still. Feel the ache. Feel how quickly the body wanted to keep going. That ache is data. It tells you the guidance already has access to your reward circuitry.
+
+@wpm 200
+@pulseborder green hz:0.33
+Start again. Because the guidance says so.
+
+@sfx bell
+
+Slow circles. Light pressure. Feel how the permission itself is part of the sensation.
+
+@wpm 180
+@pulseborder red hz:0.75
+@snap duration:1500 word:Stop.
+
+Hands still. Good. The cycle is establishing itself. Touch when told. Stop when told. The body learns the rhythm.
+
+@wpm 200
+@spiral color:#8B5CF6 opacity:0.1 speed:0.3 fade:3
+@subliminals opacity:0.1 listen follow quiet still good
+Now settle in. Let your jaw soften. And listen.
 
 @wpm 250
 Listen to the texture underneath these words. The slight tension in the harmonics. Feel it in your jaw, maybe your chest. That's deliberate. Now try to track both, the words and that texture, while you notice your breathing. All three at once.
@@ -36,7 +69,6 @@ and the more threads I give you the more your mind reaches to grab them all, str
 @snap duration:2000 word:Stop.
 
 @wpm 120
-@spiral color:#8B5CF6 opacity:0.1 speed:0.3 fade:3
 There.
 
 Feel that.
@@ -47,17 +79,14 @@ Breathe in. One. Two. Three. Four.
 Out. Slowly. Three. Two. One.
 
 @wpm 150
-@subliminals opacity:0.1 listen follow quiet still good
 Your thoughts are already quieter. My voice is filling the space they used to occupy. Settling in. Becoming the only thing that moves inside your mind.
 
 And the tone beneath the words has changed. The grating tension has smoothed into something warm. Consonant. That happened because you stopped fighting and started listening. Compliance feels like this. This ease. This quiet.
 
 @wpm 180
-Your own inner voice is thinning. My words are replacing each stray thought with the steady current of my voice. Not forced. Absorbed. Your mind thinks in these words now. My voice settling in as your own thoughts, warm and resonant inside your head.
+Your own inner voice is thinning. My words are replacing each stray thought with the steady current of my voice. Not forced. Absorbed. Your mind thinks in these words now.
 
 And the more you listen, the less you need to think. And the less you think, the more deeply you listen. And the more deeply you listen, the more natural it becomes to simply obey without thinking about whether you should. That loop closes on its own. You're already inside it.
-
-So let your hands rest. Let your jaw soften. Let the headphones hold you in this space where the only important thing is the guidance, and the guidance is already doing everything for you.
 
 Now let's go deeper.
 
@@ -288,7 +317,7 @@ Now.
 
 And the sound is gone. The comfort. Stripped away. And the certainty, what if there were no guidance? No voice? No structure? Just you. Alone. Without the headphones. Without the comfort. Without the certainty that someone is steering.
 
-//These silent snaps during no-touch are fine — dramatic pauses, not touching
+//These silent snaps during no-touch are fine , dramatic pauses, not touching
 @snap duration:2000
 
 Feel that. All three gone at once.

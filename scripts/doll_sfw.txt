@@ -1,0 +1,141 @@
+//Doll - Spin Cycle Protocol (SFW)
+//Round and round. Clean and soft and new.
+
+@wpm 150
+@hybrid drone_low carrier:55 beat:2 pulse:4 db:-8 vol:0.10 fade:10
+@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-5 fade:10
+@hybrid drone_high carrier:165 beat:3.5 pulse:6.5 db:-3 fade:10
+Hello, little one.
+
+Not little in the way the world means it. Not small. Not diminished. Little in the way a treasured thing is little. Something that fits in the palm of a hand. Something kept safe in a soft place.
+
+You're going to be very small for a while. And very soft. And by the end, very clean.
+
+@snap duration:1500 word:Soft.
+
+@wpm 200
+@spiral color:#FFB6C1 opacity:0.06 speed:0.15 fade:5
+Close your eyes. Or let them go soft and unfocused. Let the edges of everything blur.
+
+Now. Imagine your body is made of something different. Not flesh and bone. Something lighter. Softer. Cotton, maybe. Or velvet. You're stuffed with something warm. Not heavy. Warm the way sunlight is warm. Your limbs are soft. Your head is soft. Your fingers are little stitched things that don't need to grip anything.
+
+You are a doll.
+
+@wpm 180
+@subliminals opacity:0.08 soft small light warm safe clean tumble float
+Not a rigid doll. A soft one. A plush one. The kind that gets carried everywhere. The kind with button eyes that have seen everything and judged nothing. The kind that fits perfectly into the curve of an arm or the hollow of a bed.
+
+Your thoughts are different when you're made of cotton. Slower. Simpler. The big complicated ones don't fit inside a soft head. They try to enter and they're too angular, too heavy, and they just... bounce off. Leave. Go bother someone who has room for them.
+
+@pause duration:2000
+
+@wpm 200
+All that fits inside you now is warmth. Warmth and softness and the gentle, patient nothing of a doll on a shelf waiting to be picked up.
+
+And you are about to be picked up.
+
+@snap duration:1500 word:Soft.
+
+@wpm 180
+@spiral color:#FFB6C1 opacity:0.1 speed:0.2 fade:3
+Gentle hands. They lift you carefully. You feel the fingers , so much bigger than you , closing around your middle. Supportive. Not squeezing. Holding the way you hold something precious. Something you would never drop.
+
+You're being carried somewhere. The world moves past in soft blur. Colors. Light. The hands are warm and steady and you don't need to know where you're going because the hands know and the hands are kind.
+
+@pause duration:2000
+
+@wpm 200
+You hear water. Not a river. Not rain. Warm water. Moving in gentle circles. The hands lower you toward it.
+
+And the water is perfect. Warm as bathwater. Warm as being held. It receives you the way warm water receives a soft thing , completely, gently, without resistance.
+
+@subliminals opacity:0.12 spin float warm clean tumble soft light drift new
+You float. You're made of cotton and warmth and you float in the warm water and the world is very, very simple.
+
+@sfx bell
+@snap duration:1500 word:Float.
+
+@wpm 200
+@spiral color:#87CEEB opacity:0.15 speed:0.3 fade:3
+And then the water begins to move.
+
+Slowly at first. A gentle rotation. The softest possible spin. You turn in the warm water like a leaf in a very lazy current. Round. And round. And the turning is so gentle that it doesn't feel like motion. It feels like the world is turning around you while you stay perfectly still.
+
+@wpm 180
+The spiral turns. The water turns. You turn. And as you turn, things begin to loosen. Not stitches. Thoughts. The remnants of thoughts too heavy for a cotton head. They were stuck to you , dust and lint and the accumulated residue of a thinking mind. And the warm water loosens them. One by one. They float away into the spin.
+
+@spiral color:#87CEEB opacity:0.2 speed:0.5 fade:5
+
+@wpm 200
+@subliminals opacity:0.15 spin clean wash away light empty soft drift tumble round
+The spin picks up. Just slightly. The water moves faster. You tumble gently. Over and around and through. It's not violent. It's playful. The way a washing machine treats a favorite shirt. With care. With purpose. With the understanding that the goal is not to break but to clean.
+
+@pause duration:2000
+
+A thought loosens. That worry you've been carrying. The one with edges. It detaches from your soft cotton body and swirls away into the water. Gone. Dissolved. The water takes it and it becomes nothing.
+
+@sfx bell
+
+Another. The self-consciousness. The constant monitoring of how you look and sound and appear. It doesn't stick to cotton. It never did. It was a human thing and you are a doll right now and dolls don't monitor. Dolls just are.
+
+@spiral color:#B8A4D0 opacity:0.2 speed:0.6 fade:5
+
+@wpm 250
+@subliminals opacity:0.18 tumble spin clean light new empty soft round drift wash free
+The spin cycle now. Faster. The water whirls and you whirl with it. Round and round and the colors change as you spin. Blue into lavender into gold into blue again. And every rotation takes something else. The tension. The planning. The exhaustion. The trying. Layer by layer the warm water strips away everything that isn't soft, everything that isn't warm, everything that isn't the simple quiet experience of being a small gentle thing in a world that is holding you.
+
+@snap duration:1500 word:Spin.
+
+@wpm 200
+@spiral color:#D4AF37 opacity:0.2 speed:0.7 fade:3
+@hybrid drone_low carrier:55 beat:2 pulse:3.5 db:-10 fade:8
+@hybrid drone_mid carrier:82 beat:2.5 pulse:4.5 db:-7 fade:8
+Round. And round. And round. And with each turn you are lighter. Cleaner. Simpler. The complicated human thoughts are gone. The weight is gone. The edges are gone. You are cotton and warmth and button eyes seeing everything in soft spinning color and feeling nothing but the water and the motion and the fundamental okay-ness of being gently, lovingly washed.
+
+@pause duration:3000
+
+@wpm 150
+@spiral color:#D4AF37 opacity:0.15 speed:0.3 fade:8
+The spin slows. Gently. The water eases. The colors drift from gold to something softer. Paler. The tumbling becomes floating. The floating becomes stillness.
+
+Rinse cycle.
+
+@subliminals opacity:0.1 clean new soft warm still light quiet rest
+The water is clear now. All the loosened things have been spun away. What's left is you. Clean. Soft in a way you have never been soft before. Not vulnerable. Clean. Every fiber of your cotton body is fresh and warm and new.
+
+@sfx bell
+@pause duration:3000
+
+@wpm 180
+@spiral color:#FFFFFF opacity:0.08 speed:0.1 fade:5
+The gentle hands return. They lift you from the water. You are warm and damp and so light. They wrap you in something soft. Softer than you. A towel made of clouds. And they hold you.
+
+Just hold you.
+
+@pause duration:5000
+
+@wpm 150
+You dry in the warmth. The hands set you somewhere soft. A sunny windowsill. A pillow. Somewhere the light falls gentle and golden and the air is warm and there is no spin and no water and no motion. Just stillness. Just the after.
+
+@subliminals off
+@spiral off fade:8
+
+@wpm 180
+And slowly, gently, the cotton becomes flesh again. The button eyes become real eyes. The warmth stays. The softness stays. The cleanness stays. You are you again but you are the clean version. The version that has been gently tumbled free of everything that was clinging to you.
+
+@hybrid drone_low off fade:10
+@hybrid drone_mid off fade:10
+@hybrid drone_high off fade:10
+
+@wpm 200
+Take a breath. A real one. Deep and slow. Feel your actual body. Your actual weight. Your actual shape. All here. All intact. But lighter. Softer. Cleaner.
+
+@pause duration:3000
+
+@wpm 150
+The spin cycle is always there. Whenever the world sticks to you. Whenever the thoughts get heavy and angular and too much for a soft thing to carry. Close your eyes. Let yourself be cotton. Let the warm water take you around.
+
+Round and round. Clean and soft and new.
+
+@sfx bell
+@snap duration:2000 word:Clean.
