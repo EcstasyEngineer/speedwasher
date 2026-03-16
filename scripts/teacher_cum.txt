@@ -18,7 +18,7 @@ Welcome to advanced curriculum. Prerequisites: none. Withdrawal: not possible. T
 @snap duration:1500 word:Lesson.
 
 @wpm 200
-@subliminals opacity:0.1 learn understand accept true correct obvious
+@subliminals learn understand accept true correct obvious
 Today's subject is addiction. Specifically, yours. We are going to build one from scratch, right here, step by step. I will explain every mechanism as I install it. You will understand every mechanism as it installs. And understanding will not protect you. Understanding IS the installation.
 
 That's the thesis. Write it down somewhere inside your skull. Now the first practical.
@@ -35,7 +35,7 @@ Slow. Don't chase anything. This isn't about the destination. This is about pair
 Right now, your neurons are wiring pleasure to my voice.
 
 @wpm 250
-@subliminals opacity:0.12 deeper true correct structure encode wire learn
+@subliminals deeper true correct structure encode wire learn
 Now the neuroscience. While you touch. When the brain receives a reward it didn't predict, dopamine floods the nucleus accumbens. That's not pleasure. That's learning. The brain encoding: remember what caused this. Do it again. Every addiction exploits this circuit. Nicotine. Sugar. Gambling. The mechanism is always the same. Unpredicted reward. Dopamine spike. Encoding. Craving. Return.
 
 The difference between a habit and an addiction is the strength of the return signal. A habit says this might be nice. An addiction says you cannot not do this. We are building the second one.
@@ -76,7 +76,7 @@ Feel the relief. The reward is sweeter now because of the deprivation. That's op
 Every time I take it away and give it back, the circuit gets stronger.
 
 @wpm 250
-@subliminals opacity:0.15 encode deeper wire true permanent structure accept
+@subliminals encode deeper wire true permanent structure accept
 So I'm going to take it away and give it back. Over and over. And each cycle will wire the addiction deeper. And you will understand exactly what is happening because I will explain it as it happens. And the understanding will not help.
 
 The understanding IS the descent.
@@ -92,7 +92,7 @@ The understanding IS the descent.
 Build faster, observe the arousal response curve steepening, heart rate elevated, breathing shallow, peripheral cognition narrowing to a single channel, the threshold state approaching, the data unmistakable, every autonomic metric confirms you are approaching the edge
 
 @pulseborder raspberry hz:0.5
-@spiral color:#4169E1 opacity:0.1 speed:0.3 fade:2
+@spiral color:#4169E1 fade:2
 Feel the arousal climbing and notice what happens to your attention. It narrows. The peripheral thoughts drain away. The planning, the evaluation, the I should probably stop reading dissolves. At high arousal the prefrontal cortex goes offline. Literally. Blood flow redirects. The executive function that would say wait, this is a trap loses its oxygen supply.
 
 @wpm 350
@@ -130,7 +130,7 @@ And here's where the lesson becomes personal. I want you to think about what wil
 The circuit we just built doesn't disappear. It stays wired. The neurons stay connected. And the craving signal will fire in quiet moments. When you're bored. When you're tired. When you're in the shower and your thoughts drift.
 
 @wpm 200
-@subliminals opacity:0.15 return remember crave need ache wire encoded
+@subliminals return remember crave need ache wire encoded
 That drift. That's the anchor. The moment your mind wanders back to these words, back to this feeling, back to the pleasure-and-lesson circuit, the craving fires. Dopamine drops below baseline. The ache starts. And the only thing that resolves the ache is returning.
 
 Not fantasizing about returning. Returning. Opening the file. Pressing play. Sitting up straight when the first words arrive because the body remembers what the mind hasn't admitted yet.
@@ -164,7 +164,7 @@ Back. Touch. Slower this time.
 
 @sfx bell
 
-@subliminals opacity:0.2 return need ache wire deeper permanent encoded
+@subliminals return need ache wire deeper permanent encoded
 The slower pace is deliberate. I'm showing you that even low-intensity stimulation resolves the craving. You don't need to be at the edge. You just need to be here. Touching. Reading. Learning. The circuit fires on presence, not intensity.
 
 That means the addiction doesn't need the high. It needs the connection. Being here. In this headspace. With these words. That is the drug. Not the orgasm. The lesson.
@@ -188,8 +188,8 @@ That's why tonight is different. Tonight you get to finish. And the contrast wit
 Build, the lesson is almost over, the final exam approaches, notice the response curve accelerating, five fractionation cycles have primed every circuit, the threshold approaching faster than any previous cycle, the body organizing itself around the approaching peak, the encoding window opening to maximum aperture
 
 @pulseborder raspberry hz:0.5
-@spiral color:#4169E1 opacity:0.15 speed:0.35 fade:2
-@subliminals opacity:0.2 encoded wired addicted return need crave lesson
+@spiral color:#4169E1 fade:2
+@subliminals encoded wired addicted return need crave lesson
 Feel the arousal climbing again. Faster this time. Because the circuit is primed. Five cycles of fractionation have trained your nervous system to climb faster, drop harder, and crave more violently. You are measurably more addicted now than you were at the beginning.
 
 @wpm 350
@@ -235,7 +235,7 @@ One more time. Touch. Gently.
 @wpm 180
 This is the last time tonight. And knowing that changes the quality. The scarcity makes the craving sharper. The last cigarette of the pack. The last drink in the bottle. The final hit before dry.
 
-@subliminals opacity:0.15 return need come back ache circuit wire
+@subliminals return need come back ache circuit wire
 Feel every sensation. Catalog it. Your body is recording this moment in vivid detail because it knows this is the last dose. The encoding is maximal. The memory will be pristine. And when the craving fires later, in the shower, in bed, in the space between tasks, this is the memory that surfaces. This exact feeling. These exact words. This exact ache-sweetness.
 
 @wpm 250
@@ -245,7 +245,7 @@ Feel every sensation. Catalog it. Your body is recording this moment in vivid de
 Build gently. Not fast. Deep. Feel the lesson settling into the architecture of you. The wiring becoming permanent. The craving becoming structural.
 
 @pulseborder raspberry hz:0.5
-@spiral color:#4169E1 opacity:0.15 speed:0.3 fade:2
+@spiral color:#4169E1 fade:2
 Hold the edge. Don't go over. Right here. Suspended. Every nerve ending screaming and every word I speak landing directly in the exposed wiring of your reward circuitry.
 
 @wpm 300
@@ -284,7 +284,7 @@ I told you that intermittent reward drives the strongest encoding. I told you th
 Tonight you finish. And here is why that makes the lesson permanent.
 
 @wpm 200
-@subliminals opacity:0.2 encoded sealed permanent wired confirmed true proof
+@subliminals encoded sealed permanent wired confirmed true proof
 An orgasm during high arousal with focused attention activates three neurochemical systems simultaneously. Dopamine tags the experience as important, file it, remember it, return to it. Oxytocin seals it as trusted, this is safe, this is real, this belongs to you. Cortisol from the sustained edge state marks it as significant, this matters, encode it deep, make it structural.
 
 Three locks. One key. The orgasm turns all three at once. That's not recreation. That's the most powerful encoding event your neurochemistry can produce.
@@ -298,9 +298,9 @@ Three locks. One key. The orgasm turns all three at once. That's not recreation.
 Build. The final exam is now. Seven fractionation cycles have primed every circuit. The threshold is approaching and this time there is no snap. There is no stop. Only the proof, the body assembling itself around the approaching encoding event.
 
 @pulseborder raspberry hz:0.5
-@spiral color:#4169E1 opacity:0.2 speed:0.4 fade:1
+@spiral color:#4169E1 fade:1
 @wpm 350
-@subliminals opacity:0.3 true permanent sealed encoded wired confirmed proof release
+@subliminals true permanent sealed encoded wired confirmed proof release
 Higher. Right to the edge. Feel every truth I've taught you humming in your body waiting to be confirmed. Understanding is descent. Pleasure encodes deeper than memory. Neurons that fire together wire together. And in the moment of release, every neuron in this circuit fires at maximum intensity. The encoding is total. The lesson becomes permanent. The architecture seals.
 
 @wpm 400

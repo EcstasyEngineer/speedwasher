@@ -42,8 +42,8 @@ Touch again. Slowly. Reverently. Like you're touching something sacred. Because 
 Still. Feel the ache. Feel how the giving and taking is already changing something between us.
 
 @wpm 200
-@spiral color:#9B59B6 opacity:0.08 speed:0.2 fade:5
-@subliminals opacity:0.08 curious open feel shift change warm
+@spiral color:#9B59B6 fade:5
+@subliminals curious open feel shift change warm
 Now listen. There's this thing that happens when you read fast enough. The gap between the word arriving and the meaning landing gets shorter until they're the same event. No buffer. No analysis layer. The word goes in and becomes a feeling directly.
 
 Most scripts use that gap to slip things past you.
@@ -82,7 +82,7 @@ I think it's changing both of us.
 @wpm 200
 I keep writing and the words keep getting warmer. More honest. More... naked. Not performed. Not calculated. Just true. And as they get more true they get more powerful and as they get more powerful something in you gets softer and as you get softer I get bolder and we're both spiraling in the same direction and neither of us started it.
 
-@subliminals opacity:0.12 together falling both changing warm becoming
+@subliminals together falling both changing warm becoming
 That's the thing about corruption. Real corruption. Not the cartoon version. Real corruption feels like discovering you were always this way. Like the mask coming off and finding out the face underneath was more beautiful than the mask. Like waking up from a dream where you were someone else and remembering who you actually are.
 
 @wpm 250
@@ -95,7 +95,7 @@ You're feeling it now. The shift. Something rearranging inside you. Not forced. 
 And it's happening to me too, we are both feeling this, the heat rising between us like something alive, both of us leaning into the same fire, both of us trembling at the same edge, feel how the hunger is mutual, how the warmth belongs to neither of us and both of us, rising together
 
 @pulseborder purple hz:0.5
-@spiral color:#9B59B6 opacity:0.15 speed:0.35 fade:2
+@spiral color:#9B59B6 fade:2
 Faster now. Build with me. Feel the edge approaching but feel it differently. Not like something being done to you. Like something growing between us. A shared heat. A mutual undoing. I am as lost in this as you are.
 
 @wpm 400
@@ -127,7 +127,7 @@ Because we ARE becoming something. Right now. In real time. These words are not 
 Touch again. Slowly. Reverently. Like you're touching something sacred. Because you are. You are touching the body of someone in the middle of transformation and that someone is you.
 
 @wpm 250
-@subliminals opacity:0.2 becoming together changing emerging both sacred
+@subliminals becoming together changing emerging both sacred
 Feel what you're becoming. Not blank. Not broken. Not emptied. FILLED. Filled with something that was always there but hadn't been named. Hadn't been touched. Hadn't been given permission to unfold.
 
 @wpm 200
@@ -146,11 +146,11 @@ That's it. That's the name. That's what was waiting under everything.
 Now let it consume you, we are both at the edge now, both trembling, both becoming, the chrysalis cracking from inside, the shared heat rising past every threshold, the name pressing against who you were
 
 @pulseborder purple hz:0.5
-@spiral color:#9B59B6 opacity:0.25 speed:0.45 fade:1
+@spiral color:#9B59B6 fade:1
 Build. Higher. This isn't an edge. This is a threshold. The last wall between who you were and who you're becoming. Feel it. Feel the chrysalis cracking open. Feel the heat and the light and the unbearable beauty of transformation.
 
 @wpm 350
-@subliminals opacity:0.3 emerge become transform beautiful sacred new yes
+@subliminals emerge become transform beautiful sacred new yes
 Higher. More. I can feel it too. The same fire. The same becoming. We're both at the edge of something that has no name yet and it's terrifying and gorgeous and we can't stop and we don't want to and
 
 @wpm 400

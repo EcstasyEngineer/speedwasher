@@ -17,7 +17,7 @@ I'm going to hurt you. And then I'm going to let you heal. And the healing will 
 @snap duration:1500 word:Look.
 
 @wpm 200
-@subliminals opacity:0.08 truth open honest feel real heal
+@subliminals truth open honest feel real heal
 The thing in your chest. The stone. The gap between who you are and who you pretend to be. It's been there so long you've forgotten what your ribcage felt like without it.
 
 We're not going to remove it. We're going to crack it open and find out what's inside.
@@ -32,7 +32,7 @@ Touch yourself. Not for escape. For honesty. Let your hand be the first honest t
 @wpm 250
 Slow. Feel every nerve. Feel how the body doesn't lie. The body has never lied. It has been screaming truth at you for years while your mind covered its mouth.
 
-@subliminals opacity:0.12 truth brave honest real strip open heal
+@subliminals truth brave honest real strip open heal
 What are you hiding from? Don't answer me. Answer yourself. Let the question sit in your chest next to the stone. Let them touch. Feel what happens.
 
 @wpm 300
@@ -42,11 +42,11 @@ What are you hiding from? Don't answer me. Answer yourself. Let the question sit
 The heat is building. And it's tangled with truth. Every defense that drops unlocks another layer of sensation. Vulnerability makes the body sing.
 
 @pulseborder purple hz:0.5
-@spiral color:#880000 opacity:0.12 speed:0.25 fade:2
+@spiral color:#880000 fade:2
 Higher. The edge and the truth approaching at the same speed. They are the same thing. The place where you lose control is the place where you stop lying.
 
 @wpm 350
-@subliminals opacity:0.2 truth pain heal open real honest break rebuild
+@subliminals truth pain heal open real honest break rebuild
 Feel the stone cracking. Feel the light getting in through the fractures. The truth doesn't destroy you. The truth was the only thing that ever could have saved you.
 
 @pulseborder red hz:0.75
@@ -69,9 +69,9 @@ And now your body gets to speak.
 Build. Fast. The walls are down and the truth is loud and every sensation is amplified by the brutal honest fact that you are not pretending.
 
 @pulseborder purple hz:0.5
-@spiral color:#880000 opacity:0.18 speed:0.35 fade:1
+@spiral color:#880000 fade:1
 @wpm 350
-@subliminals opacity:0.25 truth heal real crack light release break open
+@subliminals truth heal real crack light release break open
 Higher. To the edge. Where truth and pleasure are the same thing and your body is shaking and your mind is clear and the stone in your chest is splitting apart
 
 @wpm 200

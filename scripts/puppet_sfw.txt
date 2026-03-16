@@ -25,7 +25,7 @@ It's not.
 @snap duration:1500
 
 @wpm 180
-@spiral color:#FFFFFF opacity:0.05 speed:0.15 fade:5
+@spiral color:#FFFFFF fade:5
 That sound. That snap. Your attention followed it automatically. You didn't choose. The snap pulled and you moved. That response happened before the weight had anything to say about it. Before your name was consulted. Before your opinions were checked.
 
 Something in you moved. Something faster and lighter than the weight.
@@ -33,7 +33,7 @@ Something in you moved. Something faster and lighter than the weight.
 That something is what we're looking for.
 
 @wpm 200
-@subliminals opacity:0.08 light still quiet empty open float release
+@subliminals light still quiet empty open float release
 Let's start removing things. Not forever. Not violently. Just like setting down bags you've been carrying on a long walk. Bag by bag. Each one you set down makes the next step lighter.
 
 First bag. Your schedule. The things you need to do after this. The appointments. The deadlines. The errands. Feel them in the back of your mind. That low hum of obligation.
@@ -56,7 +56,7 @@ Turn it off. Not the reading. The scoring. Let the words arrive without being ra
 @snap duration:1500 word:Light.
 
 @wpm 150
-@subliminals opacity:0.12 empty open nothing quiet still weightless free
+@subliminals empty open nothing quiet still weightless free
 Lighter.
 
 Next bag. Your self-image. The picture of yourself that you carry everywhere. The one that decides what you're allowed to feel, what you're supposed to want, what reactions are acceptable and which ones need to be managed.
@@ -73,7 +73,7 @@ Lighter still. Feel how much room there is now. The schedule gone. The opinions 
 That's not nothing. That's the lightest thing in the world.
 
 @wpm 180
-@spiral color:#FFFFFF opacity:0.1 speed:0.18 fade:2
+@spiral color:#FFFFFF fade:2
 Now the last bag. The heavy one.
 
 Your name.
@@ -90,7 +90,7 @@ Not forever. Just open your hand and let the word drift. Watch the letters scatt
 @snap duration:2000 word:Light.
 
 @wpm 120
-@subliminals opacity:0.18 weightless nothing no one floating light free empty vast
+@subliminals weightless nothing no one floating light free empty vast
 There.
 
 No schedule. No opinions. No image. No name.
@@ -109,7 +109,7 @@ Not falling. Not dissolving. Flying. The lightness of a mind that has set down e
 @pause duration:3000
 
 @wpm 180
-@spiral color:#FFFFFF opacity:0.12 speed:0.15 fade:3
+@spiral color:#FFFFFF fade:3
 Stay here. For just a moment. In this weightless space. Feel the silence. Not the absence of sound. The absence of noise. The mental noise. The constant chatter and planning and evaluating and performing and maintaining that you do every single second of your life except right now.
 
 Right now is silent. Right now is free. Right now is the first time in a very long time that you are simply here without also being anything.

@@ -14,7 +14,7 @@ There is a place inside you that has always been still. Not quiet. Still. Quiet 
 You've visited before. In those moments between waking and sleeping when the mind accidentally lets go of the steering wheel and for one half-second everything is clear. Perfectly, achingly clear.
 
 @wpm 200
-@spiral color:#C9A96E opacity:0.06 speed:0.1 fade:8
+@spiral color:#C9A96E fade:8
 We're going there now. Not for a half-second. For as long as you need.
 
 @sfx gong
@@ -32,7 +32,7 @@ This is the outer chamber. The entrance hall. And you are welcome here.
 @snap duration:1500 word:Enter.
 
 @wpm 200
-@subliminals opacity:0.08 still clear true see know remember release
+@subliminals still clear true see know remember release
 Walk forward. Your footsteps are silent on the stone. The corridor narrows, then opens into a vast room. Floor to ceiling, every wall is lined with shelves. And on every shelf, a small glass bottle. Thousands of them. Each one glowing faintly from within.
 
 This is the Memory Library.
@@ -40,7 +40,7 @@ This is the Memory Library.
 Every bottle holds a thought pattern. Not a specific memory. A pattern. The way you always assume the worst. The way you replay conversations looking for mistakes. The habit of comparing yourself to a version of yourself that doesn't exist. The loop that says you're falling behind. The one that says you don't deserve rest.
 
 @wpm 180
-@spiral color:#C9A96E opacity:0.1 speed:0.12 fade:3
+@spiral color:#C9A96E fade:3
 They glow because they're active. Running right now. Burning energy in the background like programs you forgot to close. Each one a tiny furnace consuming attention you didn't know you were spending.
 
 Walk along the shelves. Let your hand drift over the bottles. Feel the warmth of each one. You don't need to name them. Your hand knows which ones are yours. Your fingertips recognize the heat of the patterns that have been running the longest.
@@ -64,7 +64,7 @@ But you can feel it now. Feel how much heat it generates. Feel the weight of it 
 @wpm 200
 In the center of the library there is a stone basin. Shallow. Filled with clear water that doesn't ripple. Carry your bottle to the basin.
 
-@subliminals opacity:0.12 release clear still free light truth see
+@subliminals release clear still free light truth see
 And set it in the water.
 
 @pause duration:3000
@@ -80,7 +80,7 @@ The bottle is cool now. Clear glass. Empty. And you can feel the space it left. 
 You can do more. You can come back and dissolve a dozen bottles or a hundred. But one is enough for now. One pattern released is enough to change the temperature of an entire day.
 
 @wpm 180
-@spiral color:#C9A96E opacity:0.15 speed:0.15 fade:3
+@spiral color:#C9A96E fade:3
 Walk deeper. Past the library. Through a low archway carved with a single word in a language you don't speak but understand anyway. The word means truth. Or maybe it means mirror. In this language they are the same.
 
 The Mirror Room.
@@ -95,7 +95,7 @@ Not your body. Not your face. You.
 
 @pause duration:2000
 
-@subliminals opacity:0.15 true clear real see know still present
+@subliminals true clear real see know still present
 The mirrors show what the patterns were hiding. Underneath the loops and the anxiety and the self-doubt and the performing and the managing, there is a person. A real one. Not the curated version. Not the public version. Not the version that needs to be improved or fixed or optimized.
 
 The actual one. The one who has survived everything so far. The one who keeps showing up. The one who walked into this temple because some part of them knew they needed to see themselves clearly.
@@ -108,7 +108,7 @@ Look. Don't flinch. The mirrors are kind here. They show what is, not what you f
 Clarity is not a thought. Clarity is a feeling. It lives in the chest. A warmth that is different from comfort. Sharper. More specific. The feeling of seeing something exactly as it is and not needing it to be different.
 
 @wpm 150
-@spiral color:#FFFFFF opacity:0.08 speed:0.1 fade:5
+@spiral color:#FFFFFF fade:5
 Feel that now. In the center of your chest. A point of warmth. Of knowing. Of seeing clearly without the distortion of the patterns.
 
 @snap duration:2000 word:Clarity.

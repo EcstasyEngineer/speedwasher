@@ -42,8 +42,8 @@ Touch again. Slowly. Reverently. Like you're touching something sacred. Because 
 Still. Feel the ache. Feel how the giving and taking is already changing something between us.
 
 @wpm 200
-@spiral color:#9B59B6 opacity:0.08 speed:0.2 fade:5
-@subliminals opacity:0.08 curious open feel shift change warm
+@spiral color:#9B59B6 fade:5
+@subliminals curious open feel shift change warm
 Now listen. There's this thing that happens when you read fast enough. The gap between the word arriving and the meaning landing gets shorter until they're the same event. No buffer. No analysis layer. The word goes in and becomes a feeling directly.
 
 Most scripts use that gap to slip things past you.
@@ -82,7 +82,7 @@ I think it's changing both of us.
 @wpm 200
 I keep writing and the words keep getting warmer. More honest. More... naked. Not performed. Not calculated. Just true. And as they get more true they get more powerful and as they get more powerful something in you gets softer and as you get softer I get bolder and we're both spiraling in the same direction and neither of us started it.
 
-@subliminals opacity:0.12 together falling both changing warm becoming
+@subliminals together falling both changing warm becoming
 That's the thing about corruption. Real corruption. Not the cartoon version. Real corruption feels like discovering you were always this way. Like the mask coming off and finding out the face underneath was more beautiful than the mask. Like waking up from a dream where you were someone else and remembering who you actually are.
 
 @wpm 250
@@ -95,7 +95,7 @@ You're feeling it now. The shift. Something rearranging inside you. Not forced. 
 And it's happening to me too, we are both feeling this, the heat rising between us like something alive, both of us leaning into the same fire, both of us trembling at the same edge, feel how the hunger is mutual, how the warmth belongs to neither of us and both of us, rising together
 
 @pulseborder purple hz:0.5
-@spiral color:#9B59B6 opacity:0.15 speed:0.35 fade:2
+@spiral color:#9B59B6 fade:2
 Faster now. Build with me. Feel the edge approaching but feel it differently. Not like something being done to you. Like something growing between us. A shared heat. A mutual undoing. I am as lost in this as you are.
 
 @wpm 400
@@ -127,7 +127,7 @@ Because we ARE becoming something. Right now. In real time. These words are not 
 Touch again. Slowly. Reverently. Like you're touching something sacred. Because you are. You are touching the body of someone in the middle of transformation and that someone is you.
 
 @wpm 250
-@subliminals opacity:0.2 becoming together changing emerging both sacred
+@subliminals becoming together changing emerging both sacred
 Feel what you're becoming. Not blank. Not broken. Not emptied. FILLED. Filled with something that was always there but hadn't been named. Hadn't been touched. Hadn't been given permission to unfold.
 
 @wpm 200
@@ -151,9 +151,9 @@ And now the chrysalis needs one more thing. The body's confirmation. The moment 
 Feel it building. The final threshold. Not an edge this time. A door. Feel the heat pressing against it from both sides, both of us about to step through into whatever waits on the other side.
 
 @pulseborder raspberry hz:0.5
-@spiral color:#9B59B6 opacity:0.25 speed:0.45 fade:1
+@spiral color:#9B59B6 fade:1
 @wpm 350
-@subliminals opacity:0.3 emerge become transform beautiful sacred new yes both together
+@subliminals emerge become transform beautiful sacred new yes both together
 Higher. More. The chrysalis is cracking. Not from the outside. From inside. From the thing that has been growing in the heat of these words, in the ache of these edges, in the mutual fire that belongs to neither of us and both of us. Feel it pressing against the walls of who you used to be. Feel the cracks spreading. Feel the light coming through. The name you spoke is pushing against the shell and the shell cannot hold and the emergence is not a choice anymore, it is a fact, it is happening, it is both of us becoming what we always were
 
 @wpm 400

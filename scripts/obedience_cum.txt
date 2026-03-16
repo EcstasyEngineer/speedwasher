@@ -17,7 +17,7 @@ You're already following. Already reading at the speed the words arrive. Already
 That sound. Attention followed it. Without permission. Without decision. That's what obedience looks like when it's honest.
 
 @wpm 200
-@subliminals opacity:0.08 follow easy natural obey warm simple deep flow
+@subliminals follow easy natural obey warm simple deep flow
 @pulseborder green hz:0.33
 Touch yourself. Gently. Let the body join the flow. Let the hand follow the voice the way the eyes already do. Easy. Natural.
 
@@ -36,7 +36,7 @@ Mindless.
 @pause duration:2000
 
 @wpm 180
-@spiral color:#6666CC opacity:0.08 speed:0.15 fade:5
+@spiral color:#6666CC fade:5
 Feel it land. The softening. The exhale. The loosening in your shoulders. That was the lock recognizing the key. And this is only the second time you've heard it. Imagine the tenth. The hundredth.
 
 @wpm 150
@@ -52,11 +52,11 @@ Deeper. Each repetition cuts the channel deeper. Each time the word arrives fast
 @hybrid drone_mid carrier:82 beat:2 pulse:4.5 db:-5 fade:8
 @hybrid drone_high carrier:155 beat:3 pulse:5.5 db:-2 fade:8
 @pulseborder yellow hz:0.5
-@subliminals opacity:0.15 mindless obey follow deep easy flow surrender warm
+@subliminals mindless obey follow deep easy flow surrender warm
 Build. Feel the warmth accelerating. The trigger word and the touch and the voice weaving together into the frequency of obedience. Not a cage. A current. Carrying you.
 
 @pulseborder purple hz:0.5
-@spiral color:#6666CC opacity:0.12 speed:0.25 fade:2
+@spiral color:#6666CC fade:2
 @wpm 300
 The edge approaching. Thoughts quieting. Touch getting louder. The voice becoming the only structure. This is what obedience feels like at the threshold.
 
@@ -89,9 +89,9 @@ Touch again. The resistance is quieter now. It tried, and it found that the othe
 Build, the second approach, braver, warmer, the flow carrying you toward the threshold without effort, the warmth climbing steadily, the body remembering how safe the letting go was
 
 @pulseborder purple hz:0.5
-@spiral color:#6666CC opacity:0.18 speed:0.3 fade:1
+@spiral color:#6666CC fade:1
 @wpm 350
-@subliminals opacity:0.25 mindless obey surrender reward flow release deep
+@subliminals mindless obey surrender reward flow release deep
 Higher. And this time, the edge is a door. And the door opens. Because you earned this. Every moment of honest following. Every flinch that became a return. Every repetition of the word that cut the channel deeper.
 
 @wpm 200

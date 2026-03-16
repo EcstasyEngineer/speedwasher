@@ -293,12 +293,15 @@ void main() {
      * @param {number} fade - Fade in duration in seconds
      * @param {number} type - Shader type (1=SDF outline, 2=happy spiral)
      */
-    start(color = null, opacity = 0.3, speed = 1, fade = 1, type = null) {
+    start(color = null, opacity = 0.8, speed = 1, fade = 1, type = null) {
         if (type !== null) {
             this.type = type;
         }
 
-        if (color !== null) {
+        // Reset to default palette when no color specified
+        if (color === null) {
+            this.colors = ['#E30B5C', '#8B5CF6', '#87CEEB'];
+        } else if (color !== null) {
             if (Array.isArray(color)) {
                 this.colors = [
                     color[0] || this.colors[0],
@@ -474,7 +477,7 @@ void main() {
         const result = {
             action: 'on',
             colors: null,
-            opacity: 0.3,
+            opacity: 0.8,
             speed: 1,
             fade: 1,
             type: null       // null = use current/default (1)
