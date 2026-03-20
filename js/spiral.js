@@ -181,16 +181,19 @@ void main() {
     outline2 *= center_fade;
     outline3 *= center_fade;
 
-    float ripple = abs(sin(logr * 3.0 + t1 * 2.0));
-    ripple = abs(ripple - 0.5) * 2.0;
-    ripple *= exp(-length(uv) * 0.5);
+    float ripplePhase = logr * 3.0 + t1 * 2.0;
+    float ripple = abs(sin(ripplePhase));
+    ripple = abs(ripple - 0.5) * 2.0 * exp(-length(uv) * 0.5);
+    float bandSeed = ripplePhase * 0.318 + sin(ripplePhase * 1.7 + t2) * 2.0 + cos(logr * 5.3 + t3) * 1.5;
+    float band = floor(mod(bandSeed, 3.0));
+    vec3 rippleColor = band < 1.0 ? uColor1 : (band < 2.0 ? uColor2 : uColor3);
 
     float v1 = pow(glow1 + outline1 * 0.6, 0.65);
     float v2 = pow(glow2 + outline2 * 0.5, 0.7);
     float v3 = pow(glow3 + outline3 * 0.4, 0.6);
 
     vec3 final_col = uColor1 * v1 * 0.7 + uColor2 * v2 * 0.6 + uColor3 * v3 * 0.5;
-    final_col += vec3(ripple * 0.3);
+    final_col += rippleColor * ripple * 0.3;
 
     float depth = exp(-length(uv) * 1.5);
     final_col *= (0.7 + 0.3 * depth);

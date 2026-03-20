@@ -151,6 +151,11 @@ body {
     top: 50%;
     transform: translate(0, -50%);
     /* JS sets left offset dynamically */
+    text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
 }
 
 #word-before {
