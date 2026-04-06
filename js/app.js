@@ -353,6 +353,19 @@ document.addEventListener('DOMContentLoaded', () => {
         onPulseBorder: (args) => {
             const params = parsePulseBorder(args);
             applyPulseBorder(params);
+        },
+        onContentWarning: (warnings, onAcknowledge) => {
+            const cwModal = document.getElementById('cw-modal');
+            const cwText = document.getElementById('cw-text');
+            cwText.innerHTML = warnings.map(w => `<p>${w.replace(/</g, '&lt;')}</p>`).join('');
+            cwModal.style.display = 'flex';
+            const cwBtn = document.getElementById('cw-acknowledge');
+            const handler = () => {
+                cwModal.style.display = 'none';
+                cwBtn.removeEventListener('click', handler);
+                onAcknowledge();
+            };
+            cwBtn.addEventListener('click', handler);
         }
     });
 
