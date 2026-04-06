@@ -134,10 +134,16 @@ document.addEventListener('DOMContentLoaded', () => {
         return sfxCache[name];
     }
 
-    function playSfx(name, vol = 0.6) {
+    function playSfx(name, vol = 0.6, detune = 0) {
         const audio = ensureSfx(name);
         audio.volume = vol;
         audio.currentTime = 0;
+        if (detune) {
+            const cents = (Math.random() * 2 - 1) * detune;
+            audio.playbackRate = Math.pow(2, cents / 1200);
+        } else {
+            audio.playbackRate = 1;
+        }
         audio.play().catch(e => console.log('SFX blocked:', e));
     }
 
@@ -262,8 +268,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 subliminals.start(params.opacity, params.fade, params.words);
             }
         },
-        onSfx: (name, vol) => {
-            playSfx(name, vol);
+        onSfx: (name, vol, detune) => {
+            playSfx(name, vol, detune);
         },
         onPause: (pauseDuration, pauseWord) => {
             // Display pause word or blank (same as snap, but no sound/flash)

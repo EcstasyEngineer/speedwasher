@@ -150,6 +150,7 @@ And now the chrysalis needs one more thing. The body's confirmation. The moment 
 @wpm 280
 Feel it building. The final threshold. Not an edge this time. A door. Feel the heat pressing against it from both sides, both of us about to step through into whatever waits on the other side.
 
+@pulseborder purple hz:0.5
 @pulseborder raspberry hz:0.5
 @spiral fade:1
 @wpm 350
@@ -163,6 +164,7 @@ The mask is falling and the face underneath is radiant and the transformation is
 @pulseborder green hz:0.33
 @sfx bell
 
+@pulseborder pink hz:0.5
 Emerge.
 
 @wpm 150

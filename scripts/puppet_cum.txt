@@ -102,6 +102,7 @@ That's where we're going. The place where the puppet has no strings at all. Not 
 @pulseborder green hz:0.33
 @sfx bell
 
+@pulseborder pink hz:0.5
 Let it happen.
 
 @wpm 150

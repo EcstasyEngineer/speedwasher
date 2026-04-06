@@ -92,6 +92,7 @@ The understanding IS the descent.
 @pulseborder yellow hz:0.5
 Build faster, observe the arousal response curve steepening, heart rate elevated, breathing shallow, peripheral cognition narrowing to a single channel, the threshold state approaching, the data unmistakable, every autonomic metric confirms you are approaching the edge
 
+@pulseborder purple hz:0.5
 @pulseborder raspberry hz:0.5
 @spiral fade:2
 Feel the arousal climbing and notice what happens to your attention. It narrows. The peripheral thoughts drain away. The planning, the evaluation, the I should probably stop reading dissolves. At high arousal the prefrontal cortex goes offline. Literally. Blood flow redirects. The executive function that would say wait, this is a trap loses its oxygen supply.
@@ -188,6 +189,7 @@ That's why you don't get to finish tonight.
 @pulseborder yellow hz:0.5
 Build, the lesson is almost over, the final exam approaches, notice the response curve accelerating, five fractionation cycles have primed every circuit, the threshold approaching faster than any previous cycle, the body organizing itself around the approaching peak, the encoding window opening to maximum aperture
 
+@pulseborder purple hz:0.5
 @pulseborder raspberry hz:0.5
 @spiral fade:2
 @subliminals encoded wired addicted return need crave lesson
@@ -245,6 +247,7 @@ Feel every sensation. Catalog it. Your body is recording this moment in vivid de
 @pulseborder yellow hz:0.5
 Build gently. Not fast. Deep. Feel the lesson settling into the architecture of you. The wiring becoming permanent. The craving becoming structural.
 
+@pulseborder purple hz:0.5
 @pulseborder raspberry hz:0.5
 @spiral fade:2
 Hold the edge. Don't go over. Right here. Suspended. Every nerve ending screaming and every word I speak landing directly in the exposed wiring of your reward circuitry.

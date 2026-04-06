@@ -512,6 +512,25 @@ function lintFile(filename, text) {
         }
     }
 
+    // ─── JOI-051: No long hyphenated words ────────────────────────────
+    if (applicable.has('JOI-051') && !disabled.has('JOI-051')) {
+        const maxLen = (rules['JOI-051'] && rules['JOI-051'].params && rules['JOI-051'].params.max_length) || 12;
+        const textLines = text.split('\n');
+        for (let i = 0; i < textLines.length; i++) {
+            const line = textLines[i];
+            if (line.trimStart().startsWith('//')) continue;
+            if (line.trimStart().startsWith('@')) continue; // skip commands
+            const matches = line.match(/\b\w+-\w+(?:-\w+)*\b/g);
+            if (matches) {
+                for (const m of matches) {
+                    if (m.length > maxLen) {
+                        report('JOI-051', `Long hyphenated word "${m}" (${m.length} chars) at line ${i + 1} — may be hard to read in RSVP`);
+                    }
+                }
+            }
+        }
+    }
+
     // ─── JOI-015: Recovery after snap stop/denied ───────────────────────
     if (applicable.has('JOI-015') && !disabled.has('JOI-015')) {
         for (let i = 0; i < events.length; i++) {

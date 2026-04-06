@@ -98,6 +98,7 @@ Higher. And this time, the edge is a door. And the door opens. Because you earne
 @pulseborder green hz:0.33
 @sfx bell
 
+@pulseborder pink hz:0.5
 Mindless.
 
 @wpm 150

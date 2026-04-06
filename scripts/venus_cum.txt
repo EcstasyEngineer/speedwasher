@@ -70,6 +70,7 @@ Higher. The offering reaching its crescendo. The golden light burning at the edg
 @pulseborder green hz:0.33
 @sfx bell
 
+@pulseborder pink hz:0.5
 Now. Let the offering complete. Let the golden light flood through you like dawn breaking inside your body. Every cell consecrated. Every nerve speaking the prayer in the only language flesh understands. Release is not taking back. Release is the offering burning through you completely.
 
 @pause duration:3000

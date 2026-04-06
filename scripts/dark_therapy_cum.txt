@@ -78,6 +78,7 @@ Higher. To the edge. Where truth and pleasure are the same thing and your body i
 @pulseborder green hz:0.33
 @sfx bell
 
+@pulseborder pink hz:0.5
 Now. Let go. Not of control. Of the lie. Let the truth crash through your body like light through a cracked wall. The release IS the honesty. The pleasure IS the wound closing. Feel every nerve carry the truth outward, every muscle confirm what your mind finally admitted.
 
 @pause duration:3000
