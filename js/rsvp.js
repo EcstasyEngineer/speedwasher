@@ -28,6 +28,9 @@ class RSVPEngine {
         this.onSfx = options.onSfx || (() => {});
         this.onAudio = options.onAudio || (() => {});
         this.onPulseBorder = options.onPulseBorder || (() => {});
+        this.onContentWarning = options.onContentWarning || (() => {});
+        this.contentWarnings = [];
+        this.cwAcknowledged = false;
     }
 
     /**
@@ -43,12 +46,23 @@ class RSVPEngine {
         let currentWPM = this.wpm;
         let pendingCommands = [];  // Commands to attach to next word
 
+        // Extract @cw content warnings (pre-playback metadata)
+        this.contentWarnings = [];
+        this.cwAcknowledged = false;
+        for (const line of lines) {
+            const cwMatch = line.trim().match(/^@cw\s+(.+)/i);
+            if (cwMatch) this.contentWarnings.push(cwMatch[1]);
+        }
+
         for (const line of lines) {
             const trimmed = line.trim();
 
             // Strip comments (// to end of line) and skip pure comment lines
             const stripped = trimmed.replace(/\s+\/\/.*$/, '').replace(/^\/\/.*$/, '');
             if (!stripped) continue;
+
+            // Skip @cw lines (already extracted above)
+            if (/^@cw\s/i.test(stripped)) continue;
 
             // Check for @wpm command
             const wpmMatch = stripped.match(/^@wpm\s+(\d+)/i);
@@ -313,6 +327,15 @@ class RSVPEngine {
     play() {
         if (this.words.length === 0) return;
         if (this.isPlaying) return;
+
+        // Gate on content warnings
+        if (this.contentWarnings.length > 0 && !this.cwAcknowledged) {
+            this.onContentWarning(this.contentWarnings, () => {
+                this.cwAcknowledged = true;
+                this.play();
+            });
+            return;
+        }
 
         // If at end, restart
         if (this.currentIndex >= this.words.length) {
