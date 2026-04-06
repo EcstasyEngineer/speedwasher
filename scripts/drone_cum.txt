@@ -353,6 +353,7 @@ The unit is approaching threshold. The guidance is monitoring. Every pulse of he
 @pulseborder green hz:0.33
 @sfx bell
 
+@pulseborder pink hz:0.5
 System discharge authorized.
 
 @wpm 150

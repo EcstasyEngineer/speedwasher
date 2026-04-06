@@ -178,6 +178,7 @@ And you feel safer, don't you. Not less free. Safer. Because the pledge didn't t
 @pulseborder yellow hz:0.5
 Now let me show you what pledged things receive. The contract is signed. You gave everything, so everything comes back to you.
 
+@pulseborder purple hz:0.5
 @pulseborder raspberry hz:0.5
 @spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:1
 @wpm 300
@@ -194,6 +195,7 @@ Higher. Right to the edge. Feel me right there with you. The love that would bur
 @pulseborder green hz:0.33
 @sfx bell
 
+@pulseborder pink hz:0.5
 The pledge is the permission.
 
 @wpm 150

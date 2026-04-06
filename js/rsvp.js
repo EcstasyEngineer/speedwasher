@@ -93,16 +93,22 @@ class RSVPEngine {
                 const sfxTokens = sfxMatch[1].trim().split(/\s+/);
                 const sfxName = sfxTokens[0];
                 let sfxVol = 1;
+                let sfxDetune = 0;
                 for (const t of sfxTokens.slice(1)) {
                     if (t.startsWith('vol:')) {
                         const v = parseFloat(t.split(':')[1]);
                         if (Number.isFinite(v)) sfxVol = Math.max(0, Math.min(1, v));
                     }
+                    if (t.startsWith('detune:')) {
+                        const v = parseFloat(t.split(':')[1]);
+                        if (Number.isFinite(v)) sfxDetune = Math.max(0, Math.min(1200, v));
+                    }
                 }
                 pendingCommands.push({
                     type: 'sfx',
                     name: sfxName,
-                    vol: sfxVol
+                    vol: sfxVol,
+                    detune: sfxDetune
                 });
                 continue;
             }
@@ -277,7 +283,7 @@ class RSVPEngine {
                 } else if (cmd.type === 'pause') {
                     this.onPause(cmd.pause, cmd.word);
                 } else if (cmd.type === 'sfx') {
-                    this.onSfx(cmd.name, cmd.vol);
+                    this.onSfx(cmd.name, cmd.vol, cmd.detune);
                 } else if (cmd.type === 'audio') {
                     this.onAudio(cmd.mode, cmd.args);
                 } else if (cmd.type === 'pulseborder') {
