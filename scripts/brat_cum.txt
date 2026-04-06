@@ -215,6 +215,7 @@ You think this is mercy? This is the meanest thing I've done all night. Because 
 @pulseborder yellow hz:0.5
 Feel the edge coming back, faster this time because your body remembers, because I trained it to respond and the training is working, feel it climbing, the desperation sharper than before because this time the brat is going to let you fall
 
+@pulseborder purple hz:0.5
 @pulseborder raspberry hz:0.5
 @spiral color1:#FF69B4 color2:#39FF14 color3:#FF8C00 fade:1
 @wpm 400
@@ -228,6 +229,7 @@ The brat always wins. You knew that. You know it now. And the proof is about to 
 @pulseborder green hz:0.33
 @sfx bell
 
+@pulseborder pink hz:0.5
 Lose.
 
 @wpm 150
