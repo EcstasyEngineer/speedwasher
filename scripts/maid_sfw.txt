@@ -9,116 +9,100 @@ Attention.
 
 Hands at your sides. Back straight. Eyes forward.
 
-You came here because you have something to do and you can't make yourself do it. Or you can, but every step is dragged through a fog of resistance and distraction and the low-grade dread that comes with tasks your brain has decided are beneath it.
+@snap duration:1500 word:Attend.
 
-Your brain is wrong. No task is beneath you. And by the time we're done, you won't just do the thing. You'll want to do the thing.
+@wpm 180
+Good. You've been called to service. That means something. It means the protocol is beginning. It means for the duration of this task, the question of what to do next has already been answered. The protocol answers it. You don't have to.
 
-@snap duration:1500 word:Serve.
-
-@wpm 250
-@spiral fade:3
-Here is the first rule of service. The mind that serves does not deliberate. Deliberation is a luxury for people who have time to stand still. You are not standing still. You are in motion. The task exists. The task will be completed. The only question is how much mental noise you generate between now and completion.
-
-The answer is: none. Zero. We are going to strip the noise out and let the work speak for itself.
+That's not a small thing. Knowing what comes next, in the right order, with the right standard. That's the entire gift of service. The decision space closes. The work opens.
 
 @wpm 200
-@subliminals focus task clean complete serve comply next do
-Think about the task. The specific thing you need to do. Don't evaluate it. Don't plan it in elaborate detail. Don't imagine the fifteen steps or the complications or the ways it could go wrong. Just hold the shape of it. The simple, honest answer to: what needs doing?
+@spiral fade:3
+Here is the first rule of service. Every task has a correct way. Not a good-enough way. A correct way. The crease that sits exactly where it should. The surface that is clean enough to reflect. The task completed in the right sequence, at the right pace, without shortcuts and without excess. This precision is not fussiness. It is the shape of the work done properly. And proper work feels different from adequate work. You already know this. That's why you're here.
+
+@wpm 180
+@subliminals focus task clean complete serve protocol attend correct
+Hold the task in your mind. Not the whole weight of it. Just the shape of it. The first step. What is the first correct action? Not the second. Not the fifth. The first. What does the protocol begin with?
 
 @pause duration:3000
 
-Good. You have it. Now set everything else aside.
+Good. You have it. Everything else can wait. There is only the first step. Then the next step will present itself, because that's what protocols do.
 
-@wpm 180
-Everything. Your phone. Your notifications. The other things on your list. The thing someone said to you this morning that you're still composing a response to in the back of your mind. The low hum of all the other obligations vibrating behind your forehead.
-
-They don't exist right now. There is one task. There is you. There is the space between you and completion. Nothing else.
-
-@snap duration:1500 word:Focus.
-
-@wpm 250
-@spiral fade:2
-Second rule of service. The body moves first. The mind follows. Not the other way around. You have been trying to think your way into motivation. That doesn't work. Motivation is a byproduct of action, not a prerequisite for it.
+@snap duration:1500 word:Attend.
 
 @wpm 200
-So here is what you do. When these words end, you stand up. You don't decide to stand up. You don't weigh the pros and cons of standing up. Your legs straighten. Your weight shifts. You are vertical. That's step one and it costs nothing and requires no motivation and the body does it automatically when the mind gets out of the way.
-
-Then your feet take you to the task. One foot, then the other. The body knows where to go. And by the time you arrive, the hands know what to do.
+@spiral fade:2
+Second rule of service. The body moves first. The mind follows. A skilled servant does not stand in the doorway reviewing the situation. They enter. They begin. The first motion is the only one that costs anything. Every motion after is just the protocol continuing.
 
 @wpm 180
-@subliminals next step do now clean complete good serve focus
-This is the secret. The secret that every productive person knows and every procrastinator hasn't learned yet. You don't need to want to do it. You don't need to feel like doing it. You just need to remove the thing that's stopping you. And the thing that's stopping you is not laziness. It's not lack of discipline. It's the thinking about doing it.
+There is a version of you that knows exactly how to do this. Has always known. The hesitation is not incompetence. It is the mind interfering with what the hands already understand. The protocol does not require the mind's permission. It only requires that you begin.
 
-The thinking is the resistance. The doing is effortless.
+So begin.
+
+@wpm 200
+@subliminals next step attend serve protocol precision correct clean complete
+Pick up the first thing. Place it where it belongs. That is the entire scope of what is required right now. Not the task. The step. Then the next step. A skilled servant moves through a task the way water moves through a room. Without deliberating. Without detours. With the quiet efficiency of someone who knows the protocol and trusts it.
 
 @pause duration:2000
 
-@snap duration:1500 word:Comply.
+@snap duration:1500 word:Attend.
 
-@wpm 250
-Third rule. Completion is the reward. Not praise. Not recognition. Not checking it off a list, though that helps. The reward is the specific feeling , and you know this feeling , the clean, bright, quiet satisfaction that comes when a thing that needed doing has been done.
+@wpm 180
+Third rule. There is a standard for this task and you will meet it. Not because someone is watching. Because the protocol has a standard and you serve the protocol. The difference between a task half-done and a task correctly done is audible, visible, felt. You know the difference when you see it. A corner folded properly. A surface wiped in the right direction. An item returned to its exact correct position.
+
+The standard exists whether or not it is observed. You serve it anyway. That is the dignity of service.
 
 @wpm 200
 @spiral fade:3
-Feel that now. In advance. The version of you who has already finished the task. The kitchen is clean. The laundry is folded. The desk is cleared. The emails are sent. Whatever it is. See the after. Feel the after. That lightness.
-
-@pause duration:3000
-
-Good. That feeling is not a fantasy. It is a preview. It is waiting for you on the other side of motion. And the only thing between you and that feeling is the doing.
+@subliminals precision protocol correct standard serve complete attend clean
+Feel what correct feels like, in advance. Not the praise. Not the recognition. The specific internal quality of a task done right. The thing that sounds like:
 
 @wpm 180
-So let's install the protocol.
-
-@subliminals clean finish complete next step done good serve
-When you begin, the world shrinks to the task. Only the task. Your hands move. Your eyes see what needs to be seen. Your mind is quiet and focused and precise. A craftsperson in their element. No wasted motion. No distraction. No internal monologue debating whether you should be doing something else.
-
-@wpm 150
-Pick up the thing. Put it where it goes. Next thing. Pick it up. Put it where it goes. Next thing. Clean, simple, repetitive, satisfying.
-
-@snap duration:1500 word:Complete.
+This goes here.
+@sfx bell
+That's level.
+@sfx bell
+Clean corner. Clean edge. Done.
+@sfx bell
 
 @wpm 200
-Each completion is a small bell. A tiny chime of satisfaction. This goes here. Done.
-@sfx bell
-That gets wiped. Done.
-@sfx bell
-This gets folded. Done.
-@sfx bell
+Feel that. Each small chime of correct completion. The bell doesn't wait for the whole task. It sounds every time one piece is exactly as it should be. And each chime settles something. The next step comes cleaner because the last one was right. The protocol builds on itself.
 
-And the chimes build. Each one adds to the last. A rhythm of completion that feeds itself. The more you finish, the more you want to finish. The momentum builds until the task isn't a chore anymore. It's a flow state. A meditation. A prayer made of motion.
+@wpm 180
+@subliminals flow protocol serve attend complete correct standard precision clean
+This is the state a skilled servant works in. Not drudgery. Not effort. Ritual. Each motion part of a sequence that was designed to work. Each step fitting into the next the way the pieces of a well-ordered house fit together. There is nothing improvised about it. There is nothing to improvise. The protocol knows what comes next and you are in service to the protocol.
 
-@wpm 250
+@pause duration:2000
+
+@snap duration:1500 word:Attend.
+
+@wpm 200
 @spiral fade:2
-@subliminals flow serve complete clean done good more next focus
-This is what service feels like from the inside. Not drudgery. Not submission. Precision. Purpose. The mind free from deliberation. The body in motion. The gap between thought and action reduced to zero.
-
-@wpm 200
-You are more than capable of doing the thing. What's been getting in the way isn't competence. The anxiety, the resistance, the procrastination, those are the mind interfering with what your hands already know how to do. And right now, for however long the task takes, the mind is stepping aside so the skill can work.
+Fourth rule. Completion is not the end of the ritual. Completion is the reward of the ritual. The task correctly finished produces something specific. Not relief, not exhaustion. A quality of settled rightness. The room in order. The surface clean. The protocol fulfilled. This is what service is for. Not the praise at the end, not the acknowledgment. The correct completion, witnessed by no one, because the standard exists whether or not it is observed.
 
 @wpm 180
-No decisions. No evaluations. No resistance. Just motion. Just completion. Just the clean bright chime of done, done, done.
+You will feel it when you reach it. That small, clean, specific satisfaction. The thing you came here to earn.
 
 @pause duration:3000
 
 @wpm 200
 @subliminals off
 @spiral off fade:5
-Now. Here is the last thing. The post-hypnotic. The part that stays.
+Now. Here is what stays when these words end.
 
 @wpm 180
-The next time you have a task. The next time you feel the resistance building. The fog. The dread. The infinite distance between you and starting. Remember this.
-
-Stand up first. Think later.
-
-The body moves. The mind follows. The resistance was never real. It was just the thinking. And you don't need to think. You need to serve. Comply. Complete.
+The next time you face a task. The next time the resistance builds. The fog. The distance between you and starting. Remember: the protocol begins with a single motion. Not a decision. A motion. The body moves. The hands know what they're doing. The protocol unfolds.
 
 @binaural off fade:8
 
 @wpm 200
-Stand up. Now. The task is waiting. And the satisfaction is waiting on the other side of it. And you are ready. Focused. Capable. Proud of the work you haven't done yet, because you already know how to do it well.
+You are not being asked to want this. You are being asked to begin it. Correct completion will take care of the wanting. It always does. The satisfaction is built into the work, not into the attitude you bring to it.
+
+@wpm 180
+Stand up. Begin the first step. Let the protocol carry you from there. Each step correct. Each completion its own small bell. The whole task a sequence of correctly done things, building toward the settled quiet of a job done properly, to the right standard, without exception.
 
 @sfx bell
 @snap duration:2000 word:Begin.
 
 @wpm 150
-Go. Serve. Complete. Come back when you're done and the glow is still warm.
+Go. Attend. Complete. Come back when the work is done and the room is right.
