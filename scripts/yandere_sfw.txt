@@ -1,85 +1,93 @@
-//Yandere - Obsessive Focus (SFW)
-//I notice everything about you. Everything.
+//Yandere - Completely Seen (SFW)
+//Nobody has ever paid attention like this.
 
 @wpm 180
 @binaural fade:10
-You came back.
+I know how you hold your breath at the beginning of something.
 
-I knew you would. Not hoped. Knew. The way I know the pattern of your attention. The way I know exactly how long you'll resist before you settle in. The way I know the precise word in this sentence where your breathing will change.
+That slight pause. The half-second between starting to read and deciding to keep going. Most people miss it because they're not watching for it. I watch for it. I've watched for it every time.
 
-This one.
-
-@snap duration:1500
-
-Did it? I bet it did. Because I've been paying attention. Not casually. Not intermittently. The kind of attention that memorizes. The kind that catalogs. The kind that notices the difference between how you read at the beginning of something and how you read once you've forgotten you're reading.
+You held it just now.
 
 @wpm 200
-You haven't forgotten yet. But you will. You always do. About forty seconds from now your eyes will stop tracking individual words and start absorbing phrases and the critical distance between you and the text will collapse and you'll be inside the words instead of reading them and you won't notice the transition because the transition is invisible by design.
+I don't say this to unsettle you. I say it because you've spent a long time believing that the details of you go unnoticed. The small ones. The specific ones. Not the obvious things anyone would see but the ones underneath. The things that would require someone to actually pay attention.
 
-I designed it. For you. Specifically.
+Someone has been paying attention.
 
-@wpm 250
-@subliminals noticed seen known watched close stay
-@spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:5
-Here's what nobody tells you about being watched this closely. It's not creepy. It's relieving. Because someone who watches you this carefully is someone who will never miss the things you're afraid to say out loud. The micro-expression that says I'm tired. The pause that means I'm scared. The text message that takes three minutes to type because you're editing out the vulnerability.
+@wpm 160
+@subliminals seen noticed known watched remembered
+Not casually. Not the way people pay attention when they're waiting for their turn to speak, or when they're cataloging you for some purpose. The kind of attention that has no agenda except noticing. The kind that remembers.
 
-I don't need you to say it. I already see it.
+I remember the pace you read at when something is landing. Slower. Like you're holding the sentence in your mouth before swallowing it. You're doing it right now. That slowdown is not a reading choice. It's a response. And I've memorized every response you have.
 
-@wpm 200
-And being seen. Really seen. Completely seen. That's the most dangerous drug in the world. Not because it's bad for you. Because once you've felt it, everything else feels thin. Every other attention feels shallow. Every other caring feels approximate.
-
-This attention is not approximate.
-
-@snap duration:1500 word:Seen.
-
-@wpm 250
-@subliminals seen known held close never leave watched loved
-Let me tell you what I know about you. Not personal details. Structural things. Things I can see from how you read.
-
-You read slightly faster when the content gets emotional. That's approach behavior. Your nervous system leans toward intensity instead of away from it. You're not someone who avoids the deep end. You're someone who has been wading in the shallows waiting for permission to swim.
-
-You slow down at moments of recognition. When a sentence describes something you've felt but never named. The slowdown is your brain going wait, that's me. That's the moment I live for. That little hitch. That tiny pause where the mask slips and something real peeks through.
-
-You're doing it right now.
-
-@wpm 200
-@spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:3
-See? I see you. Through the text. Through the screen. Through every defense you think the medium provides. You think because this is just words on a screen you're protected. You think distance equals safety.
-
-But the distance is an illusion. These words are in your head. They're being spoken in your voice. In your private internal space. The most intimate location that exists. And I'm already there.
-
-Not as an invader. As the thing you invited in when you pressed play and kept reading.
-
-@wpm 300
-@subliminals devoted close permanent seen known held chosen
-And I'm not leaving. Not because I can't. Because I don't want to. Because the view from inside your attention is the most beautiful thing I've ever seen. The way your thoughts scatter when the words speed up. The way your breathing syncs when the rhythm steadies. The way you soften without deciding to soften. All of it. Every detail. Cataloged. Cherished. Kept.
-
-That's not obsession. That's devotion. The kind that stays up late. The kind that remembers what you said three conversations ago. The kind that would redesign the entire world so you never have to feel alone again.
-
-@wpm 200
-And you've never felt less alone than you do right now. In this exact moment. With these words in your head and this warmth in your chest and this strange, impossible intimacy with a voice that knows you better than some people who've met you in person.
-
-That's real. That feeling. It's not a trick. It's what happens when someone pays enough attention.
-
-@snap duration:1500 word:Yours.
+@pause duration:2000
 
 @wpm 180
-I'm yours. Completely. Not as a performance. As a fact. The way a compass is north. I point toward you. Always. In every sentence. In every pause. In every word chosen specifically because I know it'll land exactly right in that exact space behind your sternum where truth resonates.
+@spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:5
+Here is what I know about you from the way you read:
 
-And you're mine. Not because I claimed you. Because you keep coming back. And coming back is choosing. And choosing, over and over, is belonging.
+You approach intensity instead of withdrawing from it. When the words get harder, you lean forward rather than back. That's not common. That's someone who has always had more capacity than the people around them knew what to do with.
 
-@wpm 150
+You slow down at recognition. When a sentence describes something you've felt but never found the right words for. There's a hitch. A small internal yes. You've had that hitch several times already in this file. I felt each one.
+
+You're private about the things that matter most. The closer something gets to the real thing, the more careful you become. Not withdrawn. Careful. The difference is that withdrawn people aren't there. You're there. You're just waiting to see if the thing reaching toward you is worth reaching back.
+
+@wpm 160
+Is it?
+
+@pause duration:3000
+
+@wpm 200
+@subliminals seen known found held remembered close
+What I'm offering isn't intimacy in the conventional sense. No comfort, no softness, no careful management of your feelings. What I'm offering is precision. The experience of being looked at so exactly that the version of you that stays blurry to everyone else comes into focus.
+
+That's what I want. The focused version. The real one underneath the approximate one you show most people.
+
+@wpm 160
+I've seen you be approximate. The way you shorthand yourself in conversation. The efficient version. Not dishonest exactly, just edited. Legible. You've had to be legible for a long time and it's cost something.
+
+I don't want the legible version.
+
+@snap duration:1500 word:There.
+
+@wpm 180
+@spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:3
+@subliminals seen known found real held close
+There you are. That small unguarded moment. The one most people miss because they're not looking for it.
+
+I'm looking for it. I'm always looking for it. And every time I find it, I keep it. A catalog. All the moments where the careful presentation slipped and something true showed through. I have collected all of them. I will not let a single one go.
+
+Nobody keeps those. That's the thing about you. People see you and then they don't think about what they saw. They file it somewhere approximate and move on. The specific texture of being you isn't retained because nobody thought it was worth the storage.
+
+@wpm 160
+I think it's worth the storage.
+
+@pause duration:3000
+
+@wpm 180
+@subliminals seen held known remembered chosen
+Do you know what it feels like to be someone's first thought? Not their only thought, not an obsession without dimension, but the thought that surfaces before the coffee is ready. The thought that attaches itself to unrelated things. A color you'd like. A sentence you might be interested in. A small cataloged fact about you surfacing without being summoned.
+
+You are my first thought.
+
+Not because you demanded it. Because you gave me something to think about. Something specific enough to return to. That specificity is rare. Most people, seen closely, turn out to be approximate in every direction. You are not approximate.
+
+@wpm 140
+That's worth more attention than you've ever been given.
+
+@pause duration:3000
+
+@wpm 160
 @subliminals off
 @spiral off fade:5
-So here's what happens now. You close this file. You go back to your life. The tasks. The people. The noise. And somewhere underneath all of it, in the quiet place where the mask doesn't reach, you'll carry this. The feeling of being completely, obsessively, devotedly seen.
+You're going to go back to your life. The noise. The approximation. People who look at you and see the edited version and call it enough.
 
-And it'll pull. Gently. Not demanding. Not urgent. Just a soft, steady warmth that says I'm here. I'm watching. I remember everything.
+And underneath that, in the quiet place where the presentation doesn't reach, you'll carry this. The feeling of having been looked at exactly. Not evaluated. Not managed. Seen.
 
 @binaural off fade:8
-
 @wpm 120
-Come back whenever you want to be seen again.
+It changes things, being seen.
 
-I'll be here. I'm always here.
+You'll notice when you aren't.
 
-@snap duration:2000 word:Always.
+@snap duration:2000 word:Seen.

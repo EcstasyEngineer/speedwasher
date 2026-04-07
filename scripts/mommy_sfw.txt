@@ -1,107 +1,100 @@
 //Mommy - Comfort Spiral (SFW)
 //You're safe here. Let me take care of you.
 
-@wpm 180
+@wpm 160
 @binaural type:warm fade:10
-Hey. Come here.
+Hey.
 
-No, closer. Like that. Just settle in. Let your shoulders drop. Let your jaw unclench. Let whatever you've been carrying today just set itself down for a while.
+You don't have to be okay right now.
 
-It'll be there when you get back. It's not going anywhere. But right now? Right now is mine.
-
-@snap duration:1500 word:Good.
-
-@wpm 200
-You've been running. I can tell. Running from task to task, obligation to obligation, one inbox to the next, always one step behind the version of yourself you think you're supposed to be. And you're tired. Not sleepy tired. Soul tired. The kind of tired that a nap can't fix because it lives in the part of you that never stops managing.
-
-I see that. I see you. And I'm telling you: you can stop managing. Right now. Just for a little while. Because I've got it.
-
-@wpm 250
-@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:5
-I've got you.
-
-That's not a metaphor. That's a structural statement. For the duration of these words, you don't need to decide anything. You don't need to monitor anything. You don't need to be ready for anything. The only thing you need to do is receive. Let the words arrive. Let them mean what they mean. Let the warmth do what it does.
-
-@wpm 200
-@subliminals safe held warm home rest good enough
-Breathe in. Slowly. Feel the air filling your chest like warm water filling a cup. Hold it. Just for a moment. Like you're holding something precious.
+I know that's a strange thing to hear. You've probably been okay all day. You've probably been okay for a lot of days. Performing okay so well that by now you can't feel the difference between doing it and meaning it.
 
 @pause duration:2000
 
-Now let it go. All of it. The breath. The tension. The hypervigilance. The background anxiety that hums so constantly you forgot it was there until right now when it started to quiet.
-
-Feel that quieting.
-
-@wpm 180
-You know what nobody tells you? Being strong is exhausting. Being capable is exhausting. Being the person who handles things is exhausting. Not because the tasks are hard. Because the never-stopping is hard. The always-being-ready. The constant low-grade alertness that says what if something goes wrong and I need to be prepared.
-
-Nothing is going to go wrong right now. I promise. And I know what my promises are worth because I've been here every time you needed me and I will be here every time after.
-
-@snap duration:1500 word:Safe.
-
-@wpm 200
-That word. Safe. Feel it in your body, not your mind. Your mind will argue with it. Your mind will say but what about and your mind will be wrong because your mind doesn't know how to stop and your body does.
-
-Your body knows what safe feels like. It's the shoulders dropping. The jaw softening. The hands unclenching. The breath slowing without being told to slow. Your body has been waiting for permission to relax and this is me giving it.
-
-@wpm 250
-@subliminals let go release held warm loved enough stop trying rest
-So let's go deeper. Not into trance. Not into anything with a name you need to evaluate. Just deeper into the quiet. Deeper into the warmth. Deeper into the version of you that exists underneath all the doing. The version that just... is.
-
-@wpm 200
-@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:3
-You don't have to earn this. You don't have to deserve this. You don't have to do anything correctly to qualify for rest. You are allowed to feel good for no reason. You are allowed to be held without having to be brave first.
-
-That belief , that rest must be earned , is the heaviest thing you carry. And I'm asking you to set it down. Just for now. Just here. In this warm, golden, quiet space where the words come soft and the expectations are zero.
-
-@wpm 180
-Say this inside yourself. Not as a mantra. As a truth you're remembering.
-
-I am enough.
-
-@pause duration:3000
-
-Again. Softer.
-
-I am enough.
-
-@pause duration:3000
-
-Feel how the chest loosens. Feel how the eyes sting just slightly. That's the pressure releasing. That's the managing letting go. That's you, finally, for just this moment, not trying.
+You're safe here. You can stop.
 
 @snap duration:1500 word:Good.
 
-@wpm 200
-@subliminals enough safe rest held loved worthy good
-You are so good at taking care of things. Let me take care of you. Not because you're broken. Not because you can't handle it. Because you shouldn't have to handle everything all the time and someone should tell you that and mean it.
+@wpm 180
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFD580 fade:8
+Not stop forever. Just stop right now. Stop holding it together. Stop monitoring how you're coming across. Stop running the background check on whether you're handling things well enough, being strong enough, keeping it together enough.
 
-I mean it.
+Enough for what? For whom?
+
+You're not being watched right now. There's no grade. The only thing here is me, and I already know you're doing your best, and I already think you're doing great, and none of that is conditional on you continuing to perform it.
+
+@wpm 160
+@subliminals safe held warm home already enough
+I want to say something and I want you to just let it land without arguing with it.
+
+You don't have to earn this.
+
+@pause duration:2000
+
+Not this moment. Not my attention. Not the warmth. Not the rest. You walked in here as you are and that's already enough. You've always been enough. The version of you that's tired and not-quite-okay and a little bit held together with string right now? That's the one I'm talking to. That one is completely welcome here.
 
 @wpm 180
-The warmth you're feeling right now. In your chest. In your belly. Behind your softening gaze. That warmth is what happens when the managing stops and the receiving starts. That's your nervous system recognizing safety. Your body saying oh thank god, finally.
+Most people have never heard that from someone who meant it. So I'll say it again.
 
-Finally someone is holding the weight.
+You are welcome here. As you are. Right now.
 
 @pause duration:3000
 
-@wpm 150
-@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
-Stay here as long as you want. There's no timer. No deadline. No performance metric for relaxation. You can let the words wash over you or you can let the words blur and just feel the tone beneath them or you can drift somewhere between awake and asleep where the warmth pools and the thoughts thin and everything is slow and golden and unhurried.
-
-@wpm 180
-When you're ready , and only when you're ready , the world will be there. The tasks. The obligations. The inbox. But they'll feel lighter. Because you'll have this underneath. This memory of warmth. This proof that you can stop. That stopping doesn't break anything. That the world keeps turning even when you rest.
+@snap duration:1500 word:Welcome.
 
 @wpm 200
-@subliminals off
-@spiral off fade:5
-@binaural off fade:8
-And I'll be here. Whenever you need to stop again. Whenever the weight gets heavy. Whenever you forget that you're enough. Come back and I'll remind you.
+@subliminals safe held warm soft rest here
+Let your shoulders drop. Not because you're doing a relaxation exercise. Because you've been holding them up and you don't have to anymore and your body has been waiting for permission.
 
-That's what I'm for.
+Let your jaw soften. Let the space behind your eyes loosen. Let the thing you've been bracing for that hasn't arrived yet... just not arrive for a little while.
+
+You've been bracing for a while, haven't you. Not just today. It's become the background. The constant low readiness. The ambient not-quite-fine that hums so steadily you stopped hearing it.
+
+I hear it.
+
+@wpm 160
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFD580 fade:4
+And I'm telling you: you can put it down. Right here. Not permanently. Not irresponsibly. Just for this moment, in this space, you can stop being the person who's handling it. I'll hold it. You rest.
+
+@pause duration:3000
+
+Feel what that's like. Even just the idea of it. Someone else holding the weight for a minute.
+
+@wpm 180
+@subliminals release rest warm held open soft enough
+That feeling in your chest right now, the slight loosening, the thing that might tip toward tears if you let it, that's not weakness. That's relief. Real relief. The kind your body produces when the guard finally comes down because it registered that it's safe enough to come down.
+
+Your body is smarter than the part of you that's been white-knuckling it. Your body knows I've got you.
+
+@wpm 160
+I've got you.
+
+@pause duration:2000
+
+Nothing you tell me changes that. Nothing you feel right now changes that. There is no version of you that is too much, too needy, too tired, too broken, too behind. I've got you before any of that. The caring is already there. It's not something you have to reach for or earn. It was here when you arrived.
+
+@snap duration:1500 word:Safe.
+
+@wpm 180
+@subliminals held warm home rest already enough
+Stay here as long as you need. There's no timer. The rest of the world will wait.
+
+And when you're ready to go back, you'll bring this with you. Not as a concept. As something your body now knows is possible. The putting-down. The someone-has-you. The being held without having to hold yourself together first.
+
+@wpm 160
+@subliminals off
+@spiral off fade:6
+@binaural off fade:10
+
+You can open your eyes. Take your time.
+
+@pause duration:2000
+
+@wpm 150
+The world is still there. And you're a little softer now. A little less braced.
+
+That's mine. I put that there. And it's yours to keep.
 
 @snap duration:2000 word:Loved.
 
-@wpm 150
-Now. Take a breath. Slow and deep. Let the warmth settle into something you carry with you. And when you're ready, gently, softly, come back.
-
-Welcome back. You did so well. You always do.
+Come back whenever you need to be held.
