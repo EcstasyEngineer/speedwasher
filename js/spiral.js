@@ -469,6 +469,18 @@ void main() {
     // ─── Command parser ─────────────────────────────────────────────
 
     /**
+     * Derive a lighter/darker variant from a hex color.
+     * amount > 0 brightens, < 0 darkens.
+     */
+    static shiftColor(hex, amount) {
+        const r = parseInt(hex.slice(1, 3), 16);
+        const g = parseInt(hex.slice(3, 5), 16);
+        const b = parseInt(hex.slice(5, 7), 16);
+        const shift = (c) => Math.min(255, Math.max(0, Math.round(c + (amount > 0 ? (255 - c) : c) * amount)));
+        return '#' + [shift(r), shift(g), shift(b)].map(c => c.toString(16).padStart(2, '0')).join('');
+    }
+
+    /**
      * Parse @spiral command
      * `@spiral type:1 color1:#ff0000 color2:#00ff00 color3:#0000ff`
      * `@spiral type:2` — happy spiral with default colors
@@ -536,8 +548,8 @@ void main() {
             if (color1) {
                 result.colors = [
                     color1,
-                    color2 || color1,
-                    color3 || color2 || color1
+                    color2 || SpiralEffect.shiftColor(color1, 0.15),
+                    color3 || SpiralEffect.shiftColor(color1, -0.2)
                 ];
             }
         }
