@@ -211,6 +211,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize RSVP Engine
     const rsvp = new RSVPEngine({
         wpm: 300,
+        getDenialChance: () => {
+            const slider = document.getElementById('denial-slider');
+            return slider ? parseInt(slider.value, 10) : 0;
+        },
         onWord: (parts, wordObj) => {
             wordBefore.textContent = parts.before;
             wordORP.textContent = parts.orp;
@@ -723,21 +727,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // === Script Browser ===
     const archetypes = [
         { id: 'mommy', emoji: '🌸', name: 'Mommy', desc: 'Comfort & safety',
-          sfw: 'mommy_sfw', nsfw_deny: 'mommy_nsfw', nsfw_cum: 'mommy_cum', denialBump: 5 },
+          sfw: 'mommy_sfw', nsfw: 'mommy_nsfw' },
         { id: 'yandere', emoji: '🔪', name: 'Yandere', desc: 'Obsessive devotion',
-          sfw: 'yandere_sfw', nsfw_deny: 'yandere_nsfw', nsfw_cum: 'yandere_cum', denialBump: 15 },
+          sfw: 'yandere_sfw', nsfw: 'yandere_nsfw' },
         { id: 'teacher', emoji: '📖', name: 'Teacher', desc: 'Understanding is descent',
-          sfw: 'teacher_sfw', nsfw_deny: 'teacher_nsfw', nsfw_cum: 'teacher_cum', denialBump: 10 },
+          sfw: 'teacher_sfw', nsfw: 'teacher_nsfw' },
         { id: 'brat', emoji: '👅', name: 'Brat', desc: 'The brat always wins',
-          sfw: 'brat_sfw', nsfw_deny: 'brat_nsfw', nsfw_cum: 'brat_cum', denialBump: 40 },
+          sfw: 'brat_sfw', nsfw: 'brat_nsfw' },
         { id: 'succubus', emoji: '🦋', name: 'Succubus', desc: 'Mutual transformation',
-          sfw: 'succubus_sfw', nsfw_deny: 'succubus_nsfw', nsfw_cum: 'succubus_cum', denialBump: 10 },
+          sfw: 'succubus_sfw', nsfw: 'succubus_nsfw' },
         { id: 'drone', emoji: '🪶', name: 'Drone', desc: 'Systems nominal',
-          sfw: 'drone_sfw', nsfw_deny: 'drone_nsfw', nsfw_cum: 'drone_cum', denialBump: 20 },
+          sfw: 'drone_sfw', nsfw: 'drone_nsfw' },
         { id: 'puppet', emoji: '🎭', name: 'Puppet', desc: 'Emptiness as relief',
-          sfw: 'puppet_sfw', nsfw_deny: 'puppet_nsfw', nsfw_cum: 'puppet_cum', denialBump: 15 },
+          sfw: 'puppet_sfw', nsfw: 'puppet_nsfw' },
         { id: 'venus', emoji: '✨', name: 'Goddess', desc: 'Worship & devotion',
-          sfw: 'venus_golden_path', nsfw_deny: 'venus_nsfw', nsfw_cum: 'venus_cum', denialBump: 5 },
+          sfw: 'venus_golden_path', nsfw: 'venus_nsfw' },
     ];
 
     const grid = document.getElementById('archetype-grid');
@@ -794,29 +798,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadArchetype(archetype) {
         const isNsfw = nsfwCheckbox.checked;
-
-        if (!isNsfw) {
-            // SFW mode — just load the SFW script
-            return loadScript(archetype.sfw, archetype.id);
-        }
-
-        // NSFW mode — determine denial vs cum
-        let denialChance = parseInt(denialSlider.value, 10);
-
-        // First-play bump: if user has never played NSFW AND never touched denial slider,
-        // bump denial chance by the persona's denialBump for this play only
-        if (!hasEverPlayed && !hasEverFiddledDenial && denialChance === 0) {
-            denialChance = archetype.denialBump;
-        }
-
-        // Mark that they've played
+        const scriptName = isNsfw ? archetype.nsfw : archetype.sfw;
         localStorage.setItem('speedwashing-has-played', 'true');
-
-        // Roll the dice
-        const roll = Math.random() * 100;
-        const isDenied = roll < denialChance;
-
-        const scriptName = isDenied ? archetype.nsfw_deny : archetype.nsfw_cum;
         return loadScript(scriptName, archetype.id);
     }
 

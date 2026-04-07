@@ -29,8 +29,12 @@ class RSVPEngine {
         this.onBinaural = options.onBinaural || (() => {});
         this.onPulseBorder = options.onPulseBorder || (() => {});
         this.onContentWarning = options.onContentWarning || (() => {});
+        this.getDenialChance = options.getDenialChance || (() => 0);
         this.contentWarnings = [];
         this.cwAcknowledged = false;
+        this.labels = {};       // label name -> word index
+        this.denialRolled = false;
+        this.isDenied = false;
     }
 
     /**
@@ -187,6 +191,33 @@ class RSVPEngine {
                 continue;
             }
 
+            // Check for @label — record position (will be resolved after parse)
+            const labelMatch = stripped.match(/^@label\s+(\S+)/i);
+            if (labelMatch) {
+                // Flush pending commands first
+                if (pendingCommands.length > 0) {
+                    words.push({ word: '', wpm: currentWPM, commands: pendingCommands });
+                    pendingCommands = [];
+                }
+                // Mark this position — will map label name to word index
+                words.push({ word: '', wpm: currentWPM, _label: labelMatch[1].toLowerCase() });
+                continue;
+            }
+
+            // Check for @goto
+            const gotoMatch = stripped.match(/^@goto\s+(\S+)/i);
+            if (gotoMatch) {
+                pendingCommands.push({ type: 'goto', target: gotoMatch[1].toLowerCase() });
+                continue;
+            }
+
+            // Check for @branch deny — conditional jump based on denial roll
+            const branchMatch = stripped.match(/^@branch\s+(\S+)/i);
+            if (branchMatch) {
+                pendingCommands.push({ type: 'branch', target: branchMatch[1].toLowerCase() });
+                continue;
+            }
+
             // Check for @binaural command
             const binauralMatch = stripped.match(/^@binaural\s+(.+)/i);
             if (binauralMatch) {
@@ -232,6 +263,17 @@ class RSVPEngine {
         this.stop();
         this.words = this.parse(text);
         this.currentIndex = 0;
+        this.denialRolled = false;
+        this.isDenied = false;
+
+        // Build label index
+        this.labels = {};
+        for (let i = 0; i < this.words.length; i++) {
+            if (this.words[i]._label) {
+                this.labels[this.words[i]._label] = i;
+            }
+        }
+
         this.onProgress(0, this.words.length);
 
         if (this.words.length > 0) {
@@ -287,7 +329,28 @@ class RSVPEngine {
         // Process any commands attached to this word (only while playing)
         if (wordObj.commands && this.isPlaying) {
             for (const cmd of wordObj.commands) {
-                if (cmd.type === 'spiral') {
+                if (cmd.type === 'goto') {
+                    const target = this.labels[cmd.target];
+                    if (target !== undefined) {
+                        this.currentIndex = target;
+                        return; // jump immediately
+                    }
+                } else if (cmd.type === 'branch') {
+                    // Roll denial once per playthrough
+                    if (!this.denialRolled) {
+                        this.denialRolled = true;
+                        const chance = this.getDenialChance();
+                        this.isDenied = Math.random() * 100 < chance;
+                    }
+                    if (this.isDenied) {
+                        const target = this.labels[cmd.target];
+                        if (target !== undefined) {
+                            this.currentIndex = target;
+                            return; // jump to deny path
+                        }
+                    }
+                    // else fall through to release path
+                } else if (cmd.type === 'spiral') {
                     this.onSpiral(cmd.args);
                 } else if (cmd.type === 'subliminals') {
                     this.onSubliminals(cmd.args);

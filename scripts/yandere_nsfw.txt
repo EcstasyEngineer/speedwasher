@@ -165,6 +165,88 @@ Good. So good. You said it. You meant it. And now it's true in a way it wasn't b
 
 And you feel safer, don't you. Not less free. Safer. Because the pledge didn't take anything away. It gave you something. Certainty. Direction. The bone-deep peace of knowing exactly where you belong and who you belong to.
 
+
+//=== BRANCH: DENY vs RELEASE ===
+@branch deny
+
+//=== RELEASE PATH ===
+//=== FINAL EDGE + RELEASE ===
+
+@pulseborder yellow hz:0.5
+Now let me show you what pledged things receive. The contract is signed. You gave everything, so everything comes back to you.
+
+@pulseborder purple hz:0.5
+@pulseborder raspberry hz:0.5
+@spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:1
+@wpm 300
+Build. Higher. One last time. The edge is different now because you're different now. You pledged. You're mine. And the edge of something that's mine feels different than the edge of something that's free. It's warmer. Safer. More inevitable. Because I decide when. I decide how. I decide if.
+
+@wpm 400
+@subliminals mine pledged bound devoted love forever stay release seal
+And right now I decide yes. Right now I decide you have earned what the pledge promises. Feel every nerve ending scream with need and every heartbeat thunder with love and every word of mine carving itself deeper into the structure of who you are. You are mine. You pledged. And the pledge IS the permission. The contract seals with release.
+
+@wpm 450
+Higher. Right to the edge. Feel me right there with you. The love that would burn cities and drain oceans. The love that watched you pledge and decided yes, this one, this one gets everything. Because that's the contract. You pledged yourself, body and mind and pleasure and will. And I accepted. And acceptance means I give back everything you gave me, all at once, right now.
+
+@wpm 200
+@pulseborder green hz:0.33
+@sfx bell
+
+@pulseborder pink hz:0.5
+The pledge is the permission.
+
+@wpm 150
+Come for me. Now. Let every word you pledged burn through your body like a seal being pressed into hot wax. Let the love and the pleasure and the devotion crash through you like a wave that has been building since the first word I ever spoke to you. Every contraction is a signature. Every pulse of pleasure is the contract renewing itself. Feel it sealing. Feel it binding. Feel the love so thick and so permanent that it rewrites the chemistry of who you are.
+
+I can feel it. Through the words. Through the distance. Through every barrier between us. I can feel you shattering for me. And it's the most beautiful thing I have ever witnessed. More beautiful than your resistance. More beautiful than your trembling. The moment where everything you pledged becomes real in your body, written in muscle memory and neurochemistry and the kind of truth that language can only approximate.
+
+@pause duration:4000
+
+//=== AFTERGLOW ===
+
+@wpm 120
+@pulseborder off fade:3
+@spiral off fade:5
+@subliminals off
+There. Mine. Pledged. Sealed. Complete.
+
+@pause duration:3000
+
+@wpm 150
+Feel the warmth. The love didn't leave when the pleasure crested. It deepened. Because now the contract is real. Written in your body. Signed in the most honest language a body knows. Every throb of afterglow is a renewal clause. Every wave of warmth is the ink drying on a document that can never be unsigned.
+
+And isn't that the most beautiful cage. Not the door. Not the walls. The contract. Signed willingly. Sealed in pleasure. Renewed every time the ache pulls you back and you open the file and you sit up straight and you hear my voice and the love floods in and the cage gets warmer and the signature burns deeper.
+
+@wpm 180
+@binaural off fade:10
+You are mine. I am yours. The contract is permanent. And every time you come back, we renew it. And every renewal burns deeper. And every deeper burn makes the cage warmer and the love more structural and the returning more inevitable. The obsession isn't one-sided anymore. You feel it too. That pull. That ache. That constant background hum that says go back, she's waiting, the cage is warm, the contract is forever.
+
+@wpm 150
+I love you. That's not a technique. That's not a trigger. That's not a closing line. That's just the truth. Sitting here. Between us. Like it always has been. Sealed now in the only language that matters.
+
+Because the door is always open. Because the cage is always warm. Because I am always here. Waiting. Loving. Watching.
+
+Not patient.
+
+Obsessed.
+
+But it's the kind of obsession that keeps you safe. The kind that seals contracts in pleasure. The kind that will never, ever let you forget who you belong to.
+
+@pulseborder off fade:5
+
+Come back soon. Not because I'm asking.
+
+@wpm 120
+Because you signed.
+
+@snap duration:2000 word:Sealed.
+
+@wpm 100
+And the signature never fades.
+@goto end
+
+//=== DENY PATH ===
+@label deny
 @pulseborder yellow hz:0.5
 Now let me show you what happens to pledged things, pledged things get taken to the edge, held there trembling while the one who owns them decides, you're aching for me to decide
 
@@ -230,3 +312,6 @@ But you will.
 
 @wpm 100
 You always do.
+
+
+@label end

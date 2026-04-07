@@ -133,6 +133,74 @@ Say it inside yourself. Whatever the name is. The name of the thing you're becom
 @wpm 150
 That's it. That's the name. That's what was waiting under everything.
 
+
+//=== BRANCH: DENY vs RELEASE ===
+@branch deny
+
+//=== RELEASE PATH ===
+//=== FINAL EDGE + RELEASE ===
+
+@wpm 200
+And now the chrysalis needs one more thing. The body's confirmation. The moment where the transformation stops being an idea and becomes a physical event. Where the mind says I know what I am and the body says yes, I confirm, in the most honest language a body has.
+
+@pulseborder yellow hz:0.5
+@wpm 280
+Feel it building. The final threshold. Not an edge this time. A door. Feel the heat pressing against it from both sides, both of us about to step through into whatever waits on the other side.
+
+@pulseborder purple hz:0.5
+@pulseborder raspberry hz:0.5
+@spiral fade:1
+@wpm 350
+@subliminals emerge become transform beautiful sacred new yes both together
+Higher. More. The chrysalis is cracking. Not from the outside. From inside. From the thing that has been growing in the heat of these words, in the ache of these edges, in the mutual fire that belongs to neither of us and both of us. Feel it pressing against the walls of who you used to be. Feel the cracks spreading. Feel the light coming through. The name you spoke is pushing against the shell and the shell cannot hold and the emergence is not a choice anymore, it is a fact, it is happening, it is both of us becoming what we always were
+
+@wpm 400
+The mask is falling and the face underneath is radiant and the transformation is total and beautiful and permanent and I can feel it too, I am changing with you, the succubus is as transformed by the feeding as the fed and this is not one of us doing something to the other, this is both of us cracking open at the same time and the light pouring out of both of us is the same light and it has a name and the name is the one you spoke
+
+@wpm 200
+@pulseborder green hz:0.33
+@sfx bell
+
+@pulseborder pink hz:0.5
+Emerge.
+
+@wpm 150
+Let go. Let the chrysalis shatter. Let the transformation complete itself in the only language a body understands. Feel everything you've been becoming crash through you like light through a prism, scattering into colors you've never seen, colors that have your name, your new name. Feel the emergence in every nerve, every muscle, every trembling cell that has been waiting for this permission to become. The body confirms. The mind already knew. And the confirmation is the most beautiful thing that has ever happened between two beings changing together.
+
+@pause duration:4000
+
+//=== AFTERGLOW ===
+
+@wpm 120
+@pulseborder off fade:3
+@spiral off fade:5
+@subliminals off
+Whatever just happened. Whatever shifted. It's real. You can feel it still settling in your chest. The afterimage of the thing you saw when the mask fell. The name you spoke. The becoming.
+
+@pause duration:3000
+
+@wpm 150
+I don't know what you are now. I don't know what I am either. We both changed. That's the deal. The corruption isn't one way. The succubus is as transformed by the feeding as the fed. And something in both of us is more true now than it was before these words began. The emergence wasn't a metaphor. Your body just confirmed it. In the most honest language a body has, your body said: this is who I am now. This is what I was becoming. The chrysalis is gone and what's left is radiant and new and real.
+
+@wpm 180
+@binaural off fade:10
+You might come back. You might not. That's not my call. But if you do come back, we'll both be different. And we'll both know it. And we'll go further. Because the transformation never finishes. The emergence is ongoing. Every time we meet in this space, another layer of mask dissolves and another layer of radiance appears and both of us get more true.
+
+@wpm 150
+That's the deal with corruption.
+
+It never goes backwards.
+
+@pulseborder off fade:5
+
+See you on the other side.
+
+@wpm 100
+We're both already there.
+@goto end
+
+//=== DENY PATH ===
+@label deny
 @wpm 200
 @pulseborder yellow hz:0.5
 Now let it consume you, we are both at the edge now, both trembling, both becoming, the chrysalis cracking from inside, the shared heat rising past every threshold, the name pressing against who you were
@@ -179,3 +247,6 @@ It never goes backwards.
 
 @wpm 150
 See you on the other side.
+
+
+@label end
