@@ -2,9 +2,7 @@
 //The water knows what you're carrying. Let it take.
 
 @wpm 150
-@hybrid drone_low carrier:50 beat:1 pulse:2.5 db:-10 vol:0.08 fade:15
-@hybrid drone_mid carrier:75 beat:1.5 pulse:3.5 db:-7 fade:15
-@hybrid drone_high carrier:150 beat:2.5 pulse:5 db:-4 fade:15
+@binaural type:still fade:15
 Breathe.
 
 @pause duration:3000
@@ -94,9 +92,6 @@ The water receives you. Warm. Not hot. The temperature of being held. It rises t
 
 @wpm 180
 @spiral fade:8
-@hybrid drone_low carrier:50 beat:1 pulse:2 db:-12 fade:15
-@hybrid drone_mid carrier:75 beat:1.5 pulse:3 db:-9 fade:15
-@hybrid drone_high carrier:150 beat:2 pulse:4 db:-6 fade:15
 The steam rises around you. Soft. The light through the window shifts. The world outside this room becomes quieter. Not silent. Quiet the way deep water is quiet. Present but distant. Available but not insistent.
 
 @subliminals still warm held pure clean peace flow breathe
@@ -127,9 +122,7 @@ Step out of the basin. Stand on the warm stone. Let the water run from you. Let 
 @spiral off fade:8
 
 @wpm 180
-@hybrid drone_low off fade:10
-@hybrid drone_mid off fade:10
-@hybrid drone_high off fade:10
+@binaural off fade:10
 The room is quiet. You are quiet. Inside and out. And there is a feeling in the center of your chest. Not warmth. Not emptiness. Gratitude. For the water. For the stillness. For the ritual. For yourself, for walking the path and stepping through the gate and trusting the process.
 
 @pause duration:3000

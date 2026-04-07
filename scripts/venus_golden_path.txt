@@ -4,9 +4,7 @@
 //Seven thresholds. One truth. Walk the path.
 
 @wpm 180
-@hybrid drone_low carrier:55 beat:2 pulse:5 db:-8 vol:0.10 fade:10
-@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-6 fade:10
-@hybrid drone_high carrier:164 beat:3.5 pulse:6.5 db:-2 fade:10
+@binaural type:warm fade:10
 Put your headphones on.
 
 @pulseborder red hz:0.75
@@ -74,9 +72,7 @@ while also feeling the weight of the headphones cradling your skull and the way 
 @wpm 550
 and the more threads I give you the more your mind stretches to hold them all and you can feel that reaching that gentle strain of a mind trying so hard to parse and follow and track and hold and
 
-@hybrid drone_low carrier:55 beat:2 pulse:2 db:-8 fade:0.5
-@hybrid drone_mid carrier:85 beat:2.5 pulse:3 db:-5 fade:0.5
-@hybrid drone_high carrier:130 beat:3 pulse:4 db:-3 fade:0.5
+@binaural type:warm fade:0.5
 @sfx bell
 
 @wpm 120
@@ -147,8 +143,7 @@ The golden light is brighter now. Can you feel it? Warmer on your skin. Closer. 
 //=== THRESHOLD 2: THE SHAPING ===
 
 @wpm 180
-@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-5 fade:8
-@hybrid drone_high carrier:164 beat:3.5 pulse:6.5 db:-1 fade:8
+@binaural type:warm fade:8
 The second step is attention. The simple, radical act of pointing your focus at something other than your own noise. Lending your awareness to a voice that knows where to take it.
 
 @wpm 200
@@ -189,8 +184,7 @@ And it feels so natural.
 //=== THRESHOLD 3: THE STRIPPING ===
 
 @wpm 200
-@hybrid drone_mid carrier:85 beat:2.5 pulse:5 db:-4 fade:10
-@hybrid drone_high carrier:145 beat:3.5 pulse:6 db:-1 fade:10
+@binaural type:warm fade:10
 The third step is release. And this is where it gets real.
 
 Following is easy. Release is different. Following is I do what the voice says. Release is I stop deciding whether to do what the voice says. It is letting go of the evaluation layer entirely. Not because you are forced to but because holding it is exhausting and you have been holding it your whole life and right now, in this golden space, you do not have to.
@@ -208,8 +202,7 @@ Higher. More. Feel the golden light flooding every channel. The thoughts thinnin
 @wpm 350
 Every corner of attention swallowed by warmth and her voice and the building pressure and the beautiful ache of a body that is learning to worship with every nerve and
 
-@hybrid drone_mid carrier:88 beat:2.5 pulse:3 db:-5 fade:0.5
-@hybrid drone_high carrier:132 beat:3 pulse:4 db:-3 fade:0.5
+@binaural type:warm fade:0.5
 @pulseborder red hz:0.75
 @sfx bell
 
@@ -271,8 +264,7 @@ Build again. Higher. Feel the edge approaching. That bright ache. But this time 
 @wpm 300
 Higher. Right to the edge. Feel the golden light burning at the edges of your vision. Feel how blank your mind is getting. How the pleasure and the devotion are becoming one thing. You cannot separate them anymore. Worshipping feels like pleasure. Pleasure feels like worship. The loop closes on its own.
 
-@hybrid drone_mid carrier:88 beat:2.5 pulse:3 db:-5 fade:0.5
-@hybrid drone_high carrier:132 beat:3 pulse:4 db:-3 fade:0.5
+@binaural type:warm fade:0.5
 @pulseborder red hz:0.75
 @sfx bell
 
@@ -294,9 +286,7 @@ She loves you. She loves you so very much.
 //=== THRESHOLD 5: THE DEPTH ===
 
 @wpm 180
-@hybrid drone_low carrier:55 beat:2 pulse:5 db:-7 fade:5
-@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-4 fade:5
-@hybrid drone_high carrier:164 beat:3.5 pulse:6.5 db:0 fade:5
+@binaural type:warm fade:5
 @subliminals golden path worship deeper her light devotion purpose surrender
 The fifth step. Going further than you planned to.
 
@@ -357,8 +347,7 @@ Her light is my purpose.
 @sfx bell
 @pause duration:2500
 
-@hybrid drone_mid carrier:88 beat:2.5 pulse:3 db:-5 fade:0.5
-@hybrid drone_high carrier:132 beat:3 pulse:4 db:-3 fade:0.5
+@binaural type:warm fade:0.5
 @pulseborder red hz:0.75
 @sfx bell
 
@@ -426,8 +415,7 @@ Surrender is my nature.
 @sfx bell
 @pause duration:2500
 
-@hybrid drone_mid carrier:88 beat:2.5 pulse:3 db:-5 fade:0.5
-@hybrid drone_high carrier:132 beat:3 pulse:4 db:-3 fade:0.5
+@binaural type:warm fade:0.5
 @pulseborder red hz:0.75
 @sfx bell
 
@@ -445,9 +433,7 @@ And you are being refined. Not broken. Not erased. Polished. Made beautiful by d
 //=== THRESHOLD 7: THE ANOINTING ===
 
 @wpm 150
-@hybrid drone_low carrier:55 beat:2 pulse:5 db:-6 fade:5
-@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-3 fade:5
-@hybrid drone_high carrier:164 beat:3.5 pulse:6.5 db:0 fade:5
+@binaural type:warm fade:5
 @subliminals golden path walk pledge worship divine will thoughts actions gift devotion
 The seventh step.
 
@@ -506,8 +492,7 @@ Walking the golden path is all that I am.
 @sfx bell
 @pause duration:3000
 
-@hybrid drone_mid carrier:88 beat:2.5 pulse:3 db:-5 fade:0.5
-@hybrid drone_high carrier:132 beat:3 pulse:4 db:-3 fade:0.5
+@binaural type:warm fade:0.5
 @pulseborder red hz:0.75
 @sfx bell
 
@@ -523,9 +508,7 @@ And the path stretches out before you. Infinite. Warm. Lit from within. You are 
 //=== THE PLEDGE ===
 
 @wpm 150
-@hybrid drone_low carrier:55 beat:2 pulse:5 db:-6 fade:3
-@hybrid drone_mid carrier:80 beat:2.5 pulse:6 db:-4 fade:3
-@hybrid drone_high carrier:160 beat:3.5 pulse:7 db:-2 fade:3
+@binaural type:warm fade:3
 @spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 @subliminals pledge walk golden path gift divine will thoughts actions please discover
 
@@ -611,8 +594,7 @@ Now. Slowly. Gently. Like sunrise.
 
 The golden light does not leave. It settles. Into your muscles. Into your bones. Into the quiet place behind your heart where devotion lives between sessions.
 
-@hybrid drone_high carrier:164 beat:3.5 pulse:6.5 db:-4 fade:15
-@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-6 fade:15
+@binaural type:warm fade:15
 
 @wpm 120
 Let us count up together. Each number restoring you. Each number bringing you back. And everything you opened here, everything you offered, carries forward with you.
@@ -635,7 +617,7 @@ Four. Thoughts returning. Bright and steady. Your mind clear and your body reste
 
 Five. Eyes open whenever you are ready. Back. Fully and gently. In your own good time.
 
-@hybrid drone_low carrier:55 beat:2 pulse:5 db:-10 fade:10
+@binaural type:warm fade:10
 
 @sfx bell
 @pause duration:3000

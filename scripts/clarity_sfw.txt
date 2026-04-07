@@ -2,9 +2,7 @@
 //What remains when the smoke clears.
 
 @wpm 150
-@hybrid drone_low carrier:55 beat:1.5 pulse:3 db:-10 vol:0.10 fade:15
-@hybrid drone_mid carrier:82 beat:2 pulse:4.5 db:-6 fade:15
-@hybrid drone_high carrier:164 beat:3 pulse:5.5 db:-3 fade:15
+@binaural type:still fade:15
 The temple finds you either way.
 
 @pause duration:3000
@@ -127,9 +125,6 @@ Not a trance. Not an escape. A reminder. A three-second visit to the place where
 
 @wpm 150
 @spiral off fade:8
-@hybrid drone_low carrier:55 beat:1.5 pulse:3 db:-14 fade:10
-@hybrid drone_mid carrier:82 beat:2 pulse:4.5 db:-10 fade:10
-@hybrid drone_high carrier:164 beat:3 pulse:5.5 db:-8 fade:10
 Now. The temple releases you. Not because you have to go. Because you're ready. The stone beneath your feet warms. The incense thins. The amber light brightens toward daylight.
 
 Walk back through the library. The bottles are still there. Yours is still empty. The basin is still waiting. You can come back tomorrow. Or tonight. Or in five minutes. The temple doesn't keep hours.
@@ -137,9 +132,7 @@ Walk back through the library. The bottles are still there. Yours is still empty
 @wpm 180
 Through the entrance hall. Through the columns. Into the light.
 
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 
 @wpm 200
 Breathe in. Feel the chair beneath you. The room around you. The weight of the day, but lighter now. Because one pattern is dissolved. One mirror has shown you the truth. One point of clarity lives in your chest where you can find it again.

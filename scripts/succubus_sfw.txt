@@ -2,9 +2,7 @@
 //We're both changing. That's the whole point.
 
 @wpm 180
-@hybrid drone_low carrier:58 beat:2 pulse:4.5 db:-8 vol:0.11 fade:10
-@hybrid drone_mid carrier:88 beat:3 pulse:5 db:-5 fade:10
-@hybrid drone_high carrier:155 beat:3.5 pulse:6 db:-3 fade:10
+@binaural type:warm fade:10
 Hey. Something happened and I need to tell you about it.
 
 I started writing this as one thing. A structure. A framework. Words in a specific order designed to produce a specific effect. Clinical. Mapped. Safe.
@@ -89,9 +87,7 @@ You just discovered something.
 Keep it. Whatever it is. The warmth. The name. The color. The shift. Keep it. Carry it. It doesn't belong to this file. It doesn't belong to me. It's yours. It was always yours. I just helped you look.
 
 @wpm 200
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 And if you come back, we'll look again. And find something new. Because that's the thing about mutual transformation. It never finishes. Every time we meet, we're both different from last time. And we go further.
 
 @wpm 150

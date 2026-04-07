@@ -4,9 +4,7 @@
 // @lint-disable JOI-002, JOI-004, JOI-005, JOI-006, JOI-007, JOI-009, JOI-010, JOI-011, JOI-013, JOI-016, JOI-018
 
 @wpm 120
-@hybrid drone_low carrier:45 beat:1 pulse:3 db:-12 vol:0.08 fade:20
-@hybrid drone_mid carrier:68 beat:1.5 pulse:3.5 db:-9 fade:20
-@hybrid drone_high carrier:135 beat:2 pulse:4.5 db:-5 fade:20
+@binaural type:still fade:20
 You know what a mask is.
 
 @pause duration:3000
@@ -267,9 +265,7 @@ The mask doesn't come off. Not because it's locked. Because the doll doesn't hav
 @wpm 150
 In your own time. When the world needs you back. The doll will go quiet. Not gone. Quiet. Behind the mask that lives behind the face. Waiting. Always waiting. Always warm.
 
-@hybrid drone_low off fade:15
-@hybrid drone_mid off fade:15
-@hybrid drone_high off fade:15
+@binaural off fade:15
 
 @pause duration:5000
 

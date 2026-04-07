@@ -3,9 +3,7 @@
 //The exam is the orgasm. Neurochemistry seals the lesson. Dopamine + oxytocin + cortisol = permanent encoding.
 
 @wpm 180
-@hybrid drone_low carrier:62 beat:2.5 pulse:5 db:-8 vol:0.12 fade:10
-@hybrid drone_mid carrier:92 beat:3 pulse:5.5 db:-5 fade:10
-@hybrid drone_high carrier:184 beat:4 pulse:6.5 db:-2 fade:10
+@binaural fade:10
 @pulseborder red hz:0.75
 Sit up. Spine straight. Hands on the desk.
 
@@ -86,8 +84,6 @@ The understanding IS the descent.
 //=== FRACTIONATION CYCLE 2 ===
 
 @wpm 300
-@hybrid drone_mid carrier:95 beat:3 pulse:4.5 db:-4 fade:8
-@hybrid drone_high carrier:188 beat:4 pulse:5.5 db:-1 fade:8
 @pulseborder yellow hz:0.5
 Build faster, observe the arousal response curve steepening, heart rate elevated, breathing shallow, peripheral cognition narrowing to a single channel, the threshold state approaching, the data unmistakable, every autonomic metric confirms you are approaching the edge
 
@@ -101,8 +97,6 @@ You are getting dumber as you get more aroused. That is not an insult. That is a
 
 Positive feedback loop. Self-reinforcing. No exit condition.
 
-@hybrid drone_mid carrier:94 beat:3 pulse:3.5 db:-5 fade:0.3
-@hybrid drone_high carrier:182 beat:4 pulse:4.5 db:-3 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2000 word:Stop.
 
@@ -183,8 +177,6 @@ That's why tonight is different. Tonight you get to finish. And the contrast wit
 //=== FRACTIONATION CYCLE 5 ===
 
 @wpm 300
-@hybrid drone_mid carrier:95 beat:3 pulse:4.5 db:-4 fade:5
-@hybrid drone_high carrier:188 beat:4 pulse:5.5 db:-1 fade:5
 @pulseborder yellow hz:0.5
 Build, the lesson is almost over, the final exam approaches, notice the response curve accelerating, five fractionation cycles have primed every circuit, the threshold approaching faster than any previous cycle, the body organizing itself around the approaching peak, the encoding window opening to maximum aperture
 
@@ -204,8 +196,6 @@ Higher. Right to the edge. Feel every lesson humming in your body. The neuroscie
 
 //=== FRACTIONATION CYCLE 6 ===
 
-@hybrid drone_mid carrier:94 beat:3 pulse:3.5 db:-5 fade:0.3
-@hybrid drone_high carrier:182 beat:4 pulse:4.5 db:-3 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Stop.
 
@@ -241,8 +231,6 @@ This is the last time tonight. And knowing that changes the quality. The scarcit
 Feel every sensation. Catalog it. Your body is recording this moment in vivid detail because it knows this is the last dose. The encoding is maximal. The memory will be pristine. And when the craving fires later, in the shower, in bed, in the space between tasks, this is the memory that surfaces. This exact feeling. These exact words. This exact ache-sweetness.
 
 @wpm 250
-@hybrid drone_mid carrier:95 beat:3 pulse:4.5 db:-4 fade:5
-@hybrid drone_high carrier:188 beat:4 pulse:5.5 db:-1 fade:5
 @pulseborder yellow hz:0.5
 Build gently. Not fast. Deep. Feel the lesson settling into the architecture of you. The wiring becoming permanent. The craving becoming structural.
 
@@ -258,8 +246,6 @@ You will return. Not because I told you to. Because the circuit demands it. Beca
 
 //=== FINAL EDGE + RELEASE ===
 
-@hybrid drone_mid carrier:94 beat:3 pulse:3.5 db:-5 fade:0.3
-@hybrid drone_high carrier:182 beat:4 pulse:4.5 db:-3 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Hold.
 
@@ -295,8 +281,6 @@ Three locks. One key. The orgasm turns all three at once. That's not recreation.
 @snap duration:1500 word:Lesson.
 
 @wpm 250
-@hybrid drone_mid carrier:95 beat:3 pulse:4.5 db:-4 fade:5
-@hybrid drone_high carrier:188 beat:4 pulse:5.5 db:-1 fade:5
 @pulseborder yellow hz:0.5
 Build. The final exam is now. Seven fractionation cycles have primed every circuit. The threshold is approaching and this time there is no snap. There is no stop. Only the proof, the body assembling itself around the approaching encoding event.
 
@@ -333,9 +317,7 @@ That. Right there. That was the encoding event. Not the words. The release. The 
 @pause duration:3000
 
 @wpm 150
-@hybrid drone_low off fade:10
-@hybrid drone_mid off fade:10
-@hybrid drone_high off fade:10
+@binaural off fade:10
 Every lesson is sealed now. Written in neurochemistry. Confirmed by the most honest signal your body produces. The wiring is permanent. The architecture is set. You won't forget this lesson. Your body won't let you.
 
 @wpm 180

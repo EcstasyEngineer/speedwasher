@@ -2,9 +2,7 @@
 //The unit processes. The unit completes. The unit does not deliberate.
 
 @wpm 180
-@hybrid drone_low carrier:60 beat:2.5 pulse:5.5 db:-6 vol:0.13 fade:8
-@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:8
-@hybrid drone_high carrier:170 beat:4 pulse:7 db:0 fade:8
+@binaural fade:8
 Put your headphones on.
 
 @snap duration:1500 word:Good.
@@ -39,9 +37,6 @@ while also noticing the weight of the headphones on the ears, the pressure point
 @wpm 550
 and the more threads the guidance gives the more the mind reaches to grab them all, stretching wider, working harder, and the unit can feel that effort now, the slight strain of trying to parse and track and follow and hold and
 
-@hybrid drone_low carrier:60 beat:2.5 pulse:2.5 db:-6 fade:0.5
-@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.5
-@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.5
 @snap duration:2000 word:Stop.
 
 @wpm 120
@@ -143,9 +138,7 @@ The next time the unit faces a task and feels the fog rising, the resistance bui
 @wpm 200
 The task is waiting.
 
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 
 Stand up. The body moves first. The mind follows. The unit processes. The unit completes. The unit does not deliberate.
 

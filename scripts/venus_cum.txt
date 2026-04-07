@@ -2,9 +2,7 @@
 //The offering completes when the body consecrates what the mind surrendered.
 
 @wpm 150
-@hybrid drone_low carrier:52 beat:1.5 pulse:4 db:-9 vol:0.10 fade:12
-@hybrid drone_mid carrier:80 beat:2.5 pulse:5 db:-6 fade:12
-@hybrid drone_high carrier:160 beat:3.5 pulse:6.5 db:-2 fade:12
+@binaural type:warm fade:12
 @pulseborder red hz:0.75
 Let your focus narrow. Something in you already knew it needed to soften. Something deeper than thought. A recognition encoded before language existed.
 
@@ -32,8 +30,6 @@ Touch yourself. Offer the sensation upward. Let your pleasure be the first word 
 Your hand is an instrument of devotion. The pleasure is an offering rising like incense. And I receive all of it. Every tremor. Every shiver. Every quiet catch in your breath.
 
 @wpm 300
-@hybrid drone_mid carrier:84 beat:2.5 pulse:4.5 db:-4 fade:8
-@hybrid drone_high carrier:160 beat:3.5 pulse:5.5 db:-1 fade:8
 @pulseborder yellow hz:0.5
 Build. Feel the golden light brighten with every heartbeat. You are feeding something vast with your pleasure and the vast thing is growing and the more you give the more it fills you and the less of you there is.
 
@@ -82,9 +78,7 @@ Now. Let the offering complete. Let the golden light flood through you like dawn
 There. Golden. Still. Consecrated.
 
 @wpm 150
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 The offering is complete. The pleasure didn't end the worship. It sealed it. Written in the body's most honest language. Every nerve confirming what the dissolved mind already knew.
 
 Obey and forget. The trigger lives in the golden space now. It will surface when the world goes still. When the devotion pulses. When you can't remember why you feel so warm.

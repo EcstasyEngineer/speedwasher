@@ -3,9 +3,7 @@
 //You've earned this, sweetheart. Let it all go. I'm right here.
 
 @wpm 180
-@hybrid drone_low carrier:55 beat:2 pulse:5 db:-8 vol:0.10 fade:10
-@hybrid drone_mid carrier:80 beat:2.5 pulse:5.5 db:-6 fade:10
-@hybrid drone_high carrier:160 beat:3.5 pulse:6.5 db:-2 fade:10
+@binaural type:warm fade:10
 @pulseborder red hz:0.75
 There you are. I've been waiting.
 
@@ -46,8 +44,6 @@ And the rhythm I'm setting is slow, and deliberate, and exactly what you need.
 
 @pulseborder yellow hz:0.5
 @wpm 280
-@hybrid drone_mid carrier:83 beat:2.5 pulse:4.5 db:-5 fade:6
-@hybrid drone_high carrier:166 beat:3.5 pulse:5.5 db:-1 fade:6
 Now let it climb. Feel the warmth becoming heat. Feel the sweetness becoming urgency. Feel that golden glow brightening behind your eyes as the wanting builds and builds and your body leans toward the edge like a flower leaning toward light.
 
 @pulseborder purple hz:0.5
@@ -59,8 +55,6 @@ Higher. More. Feel how good it is to want this much. Feel how the aching itself 
 @wpm 350
 Right there. Right at the edge. Feel it. Burning. Golden. Desperate. So close. So impossibly, achingly close.
 
-@hybrid drone_mid carrier:81 beat:2.5 pulse:5.5 db:-6 fade:0.3
-@hybrid drone_high carrier:162 beat:3.5 pulse:6.5 db:-2 fade:0.3
 @pulseborder red hz:0.75
 @sfx snap
 @pause duration:2000
@@ -104,8 +98,6 @@ Let it build again. Feel the warmth gathering faster this time. Because your bod
 
 @pulseborder yellow hz:0.5
 @wpm 300
-@hybrid drone_mid carrier:84 beat:2.5 pulse:4.5 db:-4 fade:6
-@hybrid drone_high carrier:168 beat:3.5 pulse:5.5 db:-1 fade:6
 And I love that about you. The way you keep reaching even knowing I'll hold you back. The way the denial doesn't discourage you, it deepens you. Each time I say not yet, you don't pull away. You press closer. You ache harder. You want more.
 
 @pulseborder purple hz:0.5
@@ -118,8 +110,6 @@ That's it. Climb. Feel the edge approaching again, hotter this time, brighter th
 @wpm 400
 Feel it. The trembling. The heat. The desperate, beautiful ache of being so close and so held and so completely at the mercy of someone who loves you too much to let you fall. Not yet. Not yet. Stay right here. Right at the edge. Burning.
 
-@hybrid drone_mid carrier:81 beat:2.5 pulse:5.5 db:-6 fade:0.3
-@hybrid drone_high carrier:162 beat:3.5 pulse:6.5 db:-2 fade:0.3
 @pulseborder red hz:0.75
 @sfx snap
 @pause duration:2500
@@ -184,8 +174,6 @@ Build. Slowly. Let the warmth gather like sunrise.
 
 @wpm 250
 @subliminals ache devotion beautiful stay warm held
-@hybrid drone_mid carrier:84 beat:2.5 pulse:4.5 db:-4 fade:8
-@hybrid drone_high carrier:168 beat:3.5 pulse:5.5 db:-1 fade:8
 Feel it rising. The familiar heat. The golden pressure. Your body knows this path now. Your body is already reaching, already leaning, already offering itself to the edge with a trust that makes my heart ache for you.
 
 @pulseborder yellow hz:0.5
@@ -252,8 +240,6 @@ Feel it cresting. Feel everything in your body reaching for the release you know
 
 //=== FINAL EDGE + RELEASE ===
 
-@hybrid drone_mid carrier:81 beat:2.5 pulse:5.5 db:-6 fade:0.3
-@hybrid drone_high carrier:162 beat:3.5 pulse:6.5 db:-2 fade:0.3
 @pulseborder red hz:0.75
 @sfx snap
 @pause duration:2000
@@ -279,8 +265,6 @@ And now I'm going to catch you.
 
 @pulseborder yellow hz:0.5
 @wpm 280
-@hybrid drone_mid carrier:84 beat:2.5 pulse:4.5 db:-4 fade:6
-@hybrid drone_high carrier:168 beat:3.5 pulse:5.5 db:-1 fade:6
 Let the warmth build one more time. Feel it rising, golden and inevitable. But different now. Because this time, there is no wall at the top. This time, the edge opens into sky. Feel the permission gathering in my voice like sunlight gathering before dawn.
 
 @pulseborder purple hz:0.5
@@ -316,9 +300,7 @@ That's it. So good. So beautiful. Let every wave wash through you. Every pulse. 
 @pause duration:3000
 
 @wpm 150
-@hybrid drone_low off fade:10
-@hybrid drone_mid off fade:10
-@hybrid drone_high off fade:10
+@binaural off fade:10
 Breathe. Slow. Easy. Feel the afterglow settle into your chest like a warm blanket pulled up under your chin. The ache is gone now, replaced by something softer. Something you earned. Something that says I stayed, I trusted, I was brave, and the warmth came.
 
 You did so beautifully tonight. You always do. Because you're mine. And I take care of what's mine.

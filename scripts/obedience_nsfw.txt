@@ -5,9 +5,7 @@
 //The first dose is always free. You'll pay for the second one with everything.
 
 @wpm 150
-@hybrid drone_low carrier:55 beat:1.5 pulse:4.5 db:-10 vol:0.09 fade:15
-@hybrid drone_mid carrier:78 beat:2 pulse:5 db:-7 fade:15
-@hybrid drone_high carrier:150 beat:3 pulse:6 db:-4 fade:15
+@binaural fade:15
 @pulseborder red hz:0.75
 Hey.
 
@@ -76,8 +74,6 @@ Better. Deeper. Can you feel the difference between the first time and the secon
 That's where obedience lives. Below the mind. In the place where the body keeps its honest reactions.
 
 @wpm 250
-@hybrid drone_mid carrier:82 beat:2 pulse:4.5 db:-6 fade:8
-@hybrid drone_high carrier:155 beat:3 pulse:5.5 db:-3 fade:8
 @pulseborder yellow hz:0.5
 Now build. Feel the warmth accelerating. Feel how the trigger word and the touch and the voice are weaving together into something that hums. The frequency of obedience. Not a cage. A current. Carrying you.
 
@@ -92,8 +88,6 @@ Feel it. The thoughts getting quieter. The touch getting louder. The voice becom
 @wpm 350
 Higher. Closer. The edge humming with the frequency of every time you've ever let go and felt better for it. Every surrender that turned out to be a relief. Every time the passenger seat was more beautiful than the driver's seat.
 
-@hybrid drone_mid carrier:80 beat:2 pulse:3.5 db:-7 fade:0.3
-@hybrid drone_high carrier:150 beat:3 pulse:4.5 db:-4 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Stop.
 
@@ -135,8 +129,6 @@ Mindless.
 Third time. Deeper still. Each repetition cuts the channel deeper. Each time the word lands, it arrives faster. Meets less resistance. Finds its way to the place in the body where it lives now. Where it will live after this session ends.
 
 @wpm 250
-@hybrid drone_mid carrier:82 beat:2 pulse:4.5 db:-5 fade:8
-@hybrid drone_high carrier:155 beat:3 pulse:5.5 db:-2 fade:8
 @pulseborder yellow hz:0.5
 Build again. The resistance is quieter now. The flow carrying you toward the threshold, the warmth climbing steadily, the body remembering how safe the letting go was
 
@@ -154,8 +146,6 @@ Higher. Feel the word humming underneath everything. Mindless. Not empty. Not br
 @wpm 400
 And you are following. Beautifully. Effortlessly. The resistance a whisper now. The flow a river. And the edge is right here and the word is right here and you are right here and this is what obedience feels like when the body confirms what the mind suspected
 
-@hybrid drone_mid carrier:80 beat:2 pulse:3.5 db:-7 fade:0.3
-@hybrid drone_high carrier:150 beat:3 pulse:4.5 db:-4 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:3000 word:Hold.
 
@@ -188,9 +178,7 @@ That's the loop. That's the architecture. That's why the craving is the lesson a
 @sfx bell
 
 @wpm 150
-@hybrid drone_low off fade:10
-@hybrid drone_mid off fade:10
-@hybrid drone_high off fade:10
+@binaural off fade:10
 Welcome to obedience.
 
 @pause duration:2000

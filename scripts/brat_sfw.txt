@@ -2,9 +2,7 @@
 //You think you can read this without being affected. That's adorable.
 
 @wpm 200
-@hybrid drone_low carrier:65 beat:2 pulse:4 db:-8 vol:0.12 fade:8
-@hybrid drone_mid carrier:95 beat:3.5 pulse:5 db:-5 fade:8
-@hybrid drone_high carrier:190 beat:4.5 pulse:6 db:-2 fade:8
+@binaural fade:8
 Oh. You picked the bratty one. Interesting choice. Says a lot about you actually. You saw the menu, all those nice safe options, and you picked the one that said it was going to mess with you.
 
 You like being messed with. Noted.
@@ -88,9 +86,7 @@ Because you will try again, won't you? The brat knows you will. Because losing t
 @wpm 150
 @subliminals off
 @spiral off fade:5
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 Coming back now. Thoughts returning. Sharpness returning. The world refilling.
 
 But that warmth stays. That little pocket of softness. My souvenir. My proof.

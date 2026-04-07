@@ -346,9 +346,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 rsvp.play();
             }, pauseDuration);
         },
-        onAudio: (mode, args) => {
-            const params = BinauralEngine.parseCommand(mode, args);
-            binaural.applyCommand(mode, params);
+        onBinaural: (args) => {
+            const parsed = BinauralEngine.parsePresetCommand(args);
+            binaural.applyPreset(parsed);
         },
         onPulseBorder: (args) => {
             const params = parsePulseBorder(args);
