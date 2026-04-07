@@ -805,10 +805,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!resp.ok) throw new Error('Script not found');
             const text = await resp.text();
             currentScriptName = scriptName;
-            editor.value = text;
-            btnLoad.disabled = false;
-            btnLoad.classList.remove('loaded');
-            btnLoad.click();
+            resetPlayback();
+            loadScriptText(text, scriptName);
+            updateLoadButton();
             document.querySelectorAll('.archetype-card').forEach(c => c.classList.remove('active'));
             const activeCard = document.querySelector(`.archetype-card[data-id="${archetypeId}"]`);
             if (activeCard) activeCard.classList.add('active');
