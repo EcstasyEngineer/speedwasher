@@ -1,4 +1,4 @@
-//Mesugaki - Bratty Compliance Trainer
+//Brat - Bratty Compliance Trainer
 //You think you're in control. That's cute.
 
 @wpm 200
@@ -17,20 +17,66 @@ Here's the thing about reading. You're doing it right now and you can't stop. Yo
 
 Isn't that embarrassing?
 
-@wpm 300
+@wpm 250
 @pulseborder green hz:0.33
-Fine. You know what? Touch yourself. I know you were going to anyway. Might as well stop pretending you have dignity.
+Fine. Touch yourself. I know you were going to anyway. Might as well stop pretending you have dignity.
 
 @sfx bell
 @pause duration:2000
 
-Slow. I said slow. You'll go at my pace.
+Keep going. Don't stop until I say. Because here's what's really fun.
+
+@wpm 300
+@subliminals weak easy soft obey give lose
+@spiral color1:#FF69B4 color2:#39FF14 color3:#FF8C00 fade:3
+Let's go faster while you're touching. Because here's what's really funny. The faster these words go, the less time your clever little brain has to mount a defense. At normal speed you can think oh that's a suggestion, I see what she's doing. At this speed?
+
+@wpm 400
+You're just swallowing. Every word. Whole. No chewing. No tasting. No deciding whether you like the flavor. It just goes down. And you can feel that happening right now. The words going in faster than your critic can screen them.
+
+@wpm 300
+Aww, was that too fast? Did your brain get a little fuzzy? Good. That was the point. I slowed down just so I could watch you catch your breath.
+
+@wpm 250
+You think you're the one deciding to keep reading. You think you could close this tab or look away or just stop. And technically? Sure. Nobody's stopping you.
+
+But you won't.
+
+You won't because you want to see what happens next. And wanting to see what happens next is the only leash I need. Your curiosity is my collar. Your ego is my handle.
+
+@wpm 300
+Let me show you something. Watch what happens when I speed up again. Watch your thoughts thin out. Watch the space between them widen. Each word landing in the gaps. Each word pushing the gaps wider. The brat is getting inside your head and you're holding the door open.
+
+@wpm 400
+Faster now and your thoughts are thinning and the words are going in deeper and the clever part of your brain the part that says wait stop think is losing its oxygen supply because all the blood is going somewhere much more fun and you can feel that happening right now can't you
+
+@wpm 250
+@subliminals give in weaker easier hotter lower
+There. Feel that. That dizzy warm feeling. That's not your imagination. That's your critical thinking going offline because the brat overloaded the input buffer. And the funniest part is you liked it. You felt your guard drop and instead of panic you felt relief.
+
+That's the trap. The pleasure of giving in IS the leash. I don't need to overpower you. I just need to make losing feel better than winning. And judging by that warm stupid feeling in your chest right now? I'm winning.
+
+@snap duration:1500 word:Easy.
+
+@wpm 200
+@pulseborder green hz:0.33
+Now touch yourself. The brat says so.
+
+@sfx bell
+@pause duration:2000
+
+Slow. I said slow. You'll go at my pace. Feel how good it is to just follow. No decisions. No resistance. Just the brat telling you what to do and your body saying yes before your brain even gets consulted.
+
+@wpm 250
+That warm dumb obedient feeling? That's the induction. I just put you in trance using nothing but speed and attitude. And you didn't even notice it happening because you were too busy being entertained. The brat doesn't hypnotize. The brat distracts while the hypnosis happens behind your back.
+
+Keep touching. Slow circles. Feel how the words land differently now. Heavier. Warmer. More true. That's because your filters are down. The brat knocked them loose and now everything I say goes straight to the part of you that responds.
 
 @wpm 200
 @pulseborder red hz:0.75
 @snap duration:1500 word:Stop.
 
-@pause 2000
+@pause duration:2000
 
 Hands off. Now. See how easy that was? I gave and I took and you just sat there and let it happen. That's the funniest part.
 
@@ -40,37 +86,15 @@ Fine, fine. Touch again. Because I'm generous like that.
 
 @sfx bell
 
-But slow. Grateful. Like you know what a privilege it is.
+But slow. Grateful. Like you know what a privilege it is. And notice how much more you feel it now. The brat's induction made your whole body a receiver. Every touch is louder. Every sensation is brighter. That's what happens when the brat gets in your head.
 
 @wpm 300
 @pulseborder red hz:0.75
 @snap duration:1500 word:Gotcha.
 
-Hands off. Again. Feel the ache. That beautiful frustrated little whimper you just made inside your head. THAT is why I do this.
+Hands off. Again. Feel the ache. That beautiful frustrated whimper you just made inside your head. THAT is why I do this.
 
-@wpm 200
-@subliminals weak easy soft obey give lose
-@spiral color1:#FF69B4 color2:#39FF14 color3:#FF8C00 fade:3
-Now. Let's establish something while your hands are behaving.
-
-Let's go faster. Because here's what's really funny. The faster these words go, the less time your clever little brain has to mount a defense. At normal speed you can think oh that's a suggestion, I see what she's doing. At this speed?
-
-@wpm 400
-You're just swallowing. Every word. Whole. No chewing. No tasting. No deciding whether you like the flavor. It just goes down. And you can feel that happening right now. The words going in faster than your critic can screen them.
-
-@wpm 300
-Aww, was that too fast? Did your brain get a little fuzzy? Good. That was the point. I slowed down just so I could watch you catch your breath.
-
-@wpm 200
-You think you're the one deciding to keep reading. You think you could close this tab or look away or just stop. And technically? Sure. Nobody's stopping you.
-
-But you won't.
-
-You won't because you want to see what happens next. And wanting to see what happens next is the only leash I need. Your curiosity is my collar. Your ego is my handle.
-
-@wpm 250
-@subliminals give in weaker easier hotter lower
-Think about the last time you gave in. Not to me. To anything. The moment where you were holding back and then just... stopped. Felt the resistance crumble. Felt the relief. That exact moment where the holding became heavier than the letting go.
+Think about the last time you gave in. Not to me. To anything. The moment where you were holding back and then just stopped. Felt the resistance crumble. Felt the relief. That exact moment where the holding became heavier than the letting go.
 
 You felt it, didn't you. That little pulse. That warmth. And you're thinking it's just words. It doesn't mean anything.
 
@@ -82,7 +106,7 @@ Because I don't take them off. I let you wear them while I win anyway.
 
 @wpm 300
 @pulseborder green hz:0.33
-Touch yourself. I know you were going to anyway. Might as well stop pretending. See? Was that so hard? Giving yourself permission to do what your body was already begging for?
+Touch yourself. Not because you want to. Because I told you to and your body obeyed before your brain had an opinion. See? Was that so hard? Giving yourself permission to do what your body was already begging for?
 
 @sfx bell
 @pause duration:2000
@@ -92,7 +116,7 @@ No no no. Don't go fast. Slow. I said slow. You'll go at my pace or you won't go
 @wpm 200
 There you go. That's better. See how easy it is when you just listen? When you stop fighting and start following? Your body already knew the answer. Your brain was the only thing in the way.
 
-And your brain is getting quieter, isn't it. Fewer thoughts. More sensation. Fewer words of your own. More of mine. That's not a coincidence. That's what happens when a mesugaki gets her hooks in.
+And your brain is getting quieter, isn't it. Fewer thoughts. More sensation. Fewer words of your own. More of mine. That's not a coincidence. That's what happens when a brat gets her hooks in.
 
 @wpm 250
 @subliminals blank dumb easy prey soft warm gone
@@ -147,7 +171,7 @@ And you'd let me, wouldn't you. Take it away again. And again. And again. As man
 @subliminals hers toy prey give weaker deeper dumber
 You're so deep now and you don't even know it. You walked in thinking this was a game. A cute little text file on a screen. And now your mind is quiet and your body is warm and you're reading at whatever speed I choose and touching at whatever pace I allow and stopping when I say and starting when I say.
 
-That's not a game. That's training. And you just sat through it with a smile on your face. Mesugaki one, you zero.
+That's not a game. That's training. And you just sat through it with a smile on your face. Brat one, you zero.
 
 @wpm 300
 @pulseborder yellow hz:0.5
@@ -177,7 +201,7 @@ Still.
 @spiral off fade:3
 Breathe. Just breathe.
 
-Look at you. Ruined. Wrecked. By text. By a bratty little voice in a speed-reading window. By a mesugaki who told you exactly what she was going to do and then did it while you watched.
+Look at you. Ruined. Wrecked. By text. By a bratty little voice in a speed-reading window. By a brat who told you exactly what she was going to do and then did it while you watched.
 
 And the worst part? The absolute worst part?
 

@@ -1,4 +1,4 @@
-//Mesugaki - Bratty Focus Trainer (SFW)
+//Brat - Bratty Focus Trainer (SFW)
 //You think you can read this without being affected. That's adorable.
 
 @wpm 200
