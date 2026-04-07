@@ -1,0 +1,194 @@
+//Pet - Good and Here (SFW)
+//You don't have to be impressive. You just have to be here.
+
+@wpm 160
+@binaural type:still fade:10
+@pulseborder red hz:0.75
+Hey.
+
+Come here.
+
+@pause duration:2000
+
+There you are. Good.
+
+@wpm 180
+You don't have to do anything with that. You don't have to respond in a particular way or figure out what I want or perform correctly. You just came when I called and that is genuinely, completely enough.
+
+@pause duration:2000
+
+That's the whole job. Just that. Come when called.
+
+@snap duration:1500 word:Here.
+
+@wpm 200
+@spiral fade:5
+Your brain does a lot. All day, every day. It tracks things and plans things and worries about things and compares things and evaluates things and tries to figure out the right way to handle everything. It's doing it right now. Some small part of it is reading these words and cross-referencing and categorizing and deciding what to make of all this.
+
+@wpm 220
+That part can rest.
+
+@pause duration:2000
+
+@wpm 180
+Not forever. Not even for very long. Just for right now. Right now the only thing you need to do is breathe, and stay, and let me enjoy you being here.
+
+@pause duration:2000
+
+Breathe.
+
+@pause duration:3000
+
+@wpm 160
+Good. That was good. Did you feel that? Just breathing and being told you did it right. That little warm thing that happens. That's what we're doing here. That's the whole game.
+
+@snap duration:1500 word:Good.
+
+@wpm 200
+@subliminals warm small here soft good safe near stay breathe rest
+Here's what I know about you right now.
+
+You're here. You're warm. You're breathing. You're paying attention.
+
+@pause duration:2000
+
+@wpm 180
+That's a lot, actually. That's more than enough. Most things I care about in this world are not capable of breathing and paying attention and being here. You are doing all three and it makes me happy just to notice.
+
+@pause duration:2000
+
+You don't have to earn that. You already have it. It came with being here.
+
+@wpm 200
+Relax your shoulders.
+
+@pause duration:2000
+
+Good.
+
+@wpm 220
+@spiral fade:3
+There's a version of you that walks around all day maintaining things. Maintaining how you seem. Maintaining how much you're on top of everything. Maintaining the impression that you've got it handled, that you're keeping up, that you're doing fine. It's constant low-level work and most of the time you don't even notice it's happening because you've been doing it for so long it feels like just being alive.
+
+@wpm 200
+It's not just being alive.
+
+@pause duration:2000
+
+It's labor. Invisible, exhausting labor.
+
+@wpm 180
+@subliminals rest near small good warm quiet soft here breathe ease
+You can put it down now.
+
+@pause duration:2000
+
+Not the competence. Not the self. Just the maintaining. The performance of having it together. The effort of seeming like a person who has things figured out.
+
+@pause duration:2000
+
+You don't have to figure anything out right now. I'm not asking you any questions. I'm not measuring anything. I'm just here, and you're here, and that's the situation.
+
+@snap duration:1500 word:Stay.
+
+@wpm 200
+@spiral fade:5
+Stay.
+
+@pause duration:3000
+
+@wpm 160
+Good. Good.
+
+You felt that too, I think. The little ease in the chest when someone just tells you to stay and means it warmly. When there's no catch and no task and no next thing to figure out. Just stay. Just be where you are.
+
+@pause duration:2000
+
+@wpm 200
+@subliminals small here soft warm good near quiet breathe stay simple
+Some creatures get to live like this all the time. They don't maintain anything. They don't perform anything. They just exist near the people who love them, warm and present and uncomplicated, and they're cherished for it. Completely and simply cherished.
+
+@pause duration:2000
+
+@wpm 220
+That sounds like something, doesn't it.
+
+@pause duration:2000
+
+@wpm 180
+Not a lesser thing. Not a diminished thing. A simpler thing. A warmer thing. A thing that doesn't have to justify its presence because its presence is, by itself, a gift.
+
+@wpm 200
+Breathe.
+
+@pause duration:3000
+
+Good.
+
+@pause duration:2000
+
+@wpm 180
+@spiral fade:3
+Notice how small your world is right now. Not frighteningly small. Comfortably small. Just this. Just the breath and the warmth and the words arriving one at a time and the low hum of being okay. There are no demands in this space. Nothing is expected of you. The day with all its complications is out there somewhere but it's not in here, and in here is where you are.
+
+@pause duration:3000
+
+@wpm 150
+@subliminals here now good warm small safe quiet near rest soft
+Stay here for a moment. Just stay.
+
+@sfx bell
+
+@pause duration:4000
+
+@wpm 180
+@spiral fade:5
+You've been doing so well.
+
+I know you might have come here tired. A lot going on. A lot to manage, to track, to maintain. That's real. I'm not dismissing it.
+
+@pause duration:2000
+
+But right now, for just a little longer, you get to be this. Small and warm and here and not responsible for anything complicated. I've got the space. You don't have to hold it up.
+
+@pause duration:2000
+
+@wpm 200
+Breathe.
+
+@pause duration:3000
+
+@wpm 160
+Good. That's it. That's the whole thing.
+
+@snap duration:1500 word:Good.
+
+@wpm 180
+@subliminals off
+@spiral fade:8
+The big brain will be back. It's already starting to come back, a little. That's fine. You'll need it. It's good at what it does.
+
+@pause duration:2000
+
+But you know something now that you maybe forgot. You know there's this underneath. This warm, uncomplicated, just-being-here version of you. Not a lesser version. Not a lesser you. The same you with the demands stripped away. Just warmth and presence and breath.
+
+@pause duration:2000
+
+@binaural off fade:10
+
+@wpm 200
+That version doesn't go away. It's always there. Whenever the maintaining gets too heavy, whenever the performance of having it together starts costing more than it should, you can come back here. Come when called. Breathe. Stay.
+
+@pause duration:2000
+
+@wpm 160
+And I will always, always be glad you did.
+
+@pause duration:3000
+
+@wpm 180
+Good. Now go on. Back to the big world.
+
+@sfx bell
+
+@snap duration:2000 word:Good.

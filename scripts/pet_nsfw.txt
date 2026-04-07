@@ -1,0 +1,528 @@
+// @joitype pet_nsfw
+// Pet - Small and Loved (NSFW + Denial)
+// You don't have to be impressive. You just have to be here.
+
+@wpm 150
+@binaural type:still fade:12
+@pulseborder red hz:0.75
+
+Here you are.
+
+@pause duration:2000
+
+I've been waiting. Not impatiently. The way you wait for something you already knew was coming. The way you wait for a familiar warmth.
+
+Come. Settle. Let everything you were carrying outside this space just, fall away. The complicated thoughts. The obligations. The version of you that has to manage and decide and perform. You can set all of that down now. Right here, at the entrance. You won't need it.
+
+@snap duration:1500 word:Here.
+
+@pause duration:1500
+
+@wpm 170
+@subliminals warm simple good stay here safe small soft
+
+What you need is smaller than all of that. Simpler. You need to be close. To be warm. To be good. And being good, here, in this space, is the easiest thing in the world. It requires nothing impressive. Nothing complex. Just you. Just here. Just this.
+
+@wpm 150
+@pulseborder off fade:2
+
+Breathe. Slow and easy.
+
+@pause duration:2500
+
+There. That's right.
+
+@pause duration:2000
+
+You are small. And you are loved. And those two things are not in conflict. They were never in conflict. You've just forgotten how it feels to let them both be true at the same time.
+
+Let me remind you.
+
+@pause duration:3000
+
+//=== ENTERING PET SPACE ===
+
+@wpm 180
+@pulseborder green hz:0.33
+
+Good.
+
+@pause duration:1500
+
+Just like that. Feel how easy that was. How the whole body softened when I said it. That's not nothing. That's everything. That sound, that simple warmth, telling you you're right and you're close and you're exactly where you belong.
+
+@sfx bell
+@pause duration:2000
+
+You don't have to think about what to do next. I'll tell you. And the telling is gentle. And the doing is simple. And the whole world shrinks down to just this, just my voice, just the warmth, just the small, beautiful space where you exist without having to justify it.
+
+@snap duration:1500 word:Good.
+
+@wpm 200
+@subliminals warm simple good stay here safe small soft
+
+Touch yourself. Gently. Slowly. Like warmth finding its way inward.
+
+@sfx bell
+@pause duration:2500
+
+There. Good. Just like that.
+
+Feel how simple that was. No preparation required. No performance. I said come and you came. I said touch and you touched. And the body already knew how to do it, already softened into the instruction, because instructions from someone who loves you feel different from demands. They feel like relief.
+
+@wpm 180
+
+The touch is warm. Let it stay warm. No rushing. No destination. Just the slow, quiet pleasure of being a small creature in good hands.
+
+@pulseborder green hz:0.25
+@sfx bell
+@pause duration:2500
+
+@wpm 200
+@subliminals warm soft small good safe here stay
+
+Good. Such a good pet. Stay with that. Stay with the warmth.
+
+Your whole body can be soft right now. Soft is allowed. Soft is good. You don't have to hold yourself in any particular shape. Let your thoughts settle like water finding its level. Let the complicated parts of you go quiet the way animals go quiet when they feel safe.
+
+You are safe. You are here. You are good.
+
+@snap duration:1500 word:Stay.
+
+@wpm 180
+@sfx bell
+@pause duration:2000
+
+Just like that.
+
+Keep touching. Slowly. Let the warmth move through you naturally. There's no hurry. I'm not going anywhere. You're not going anywhere. This space is small and warm and quiet and it belongs to both of us.
+
+//=== EDGE 1 ===
+
+@wpm 220
+@spiral color1:#C89BE0 color2:#F5E6FF color3:#E8C9FF fade:5
+@pulseborder yellow hz:0.4
+
+Almost. Good.
+
+@pause duration:1500
+
+Feel the warmth beginning to build. That's natural. That's what warmth does when you let it. It gathers. It deepens. It rises slowly like something stretching toward sunlight.
+
+@wpm 260
+@pulseborder yellow hz:0.5
+
+Stay with it. Don't rush it. Let it build the way it wants to build, at the pace of something small and warm and completely present.
+
+Good. Just like that.
+
+@pulseborder purple hz:0.5
+@spiral color1:#C89BE0 color2:#F5E6FF color3:#E8C9FF fade:2
+@subliminals warm soft small good safe here stay
+@wpm 300
+
+Feel it rising. The warmth becoming something brighter. Something that hums in the nerves the way summer hums. Your body is very good at this. Simple creature, simple pleasure, gathering and rising and shimmering.
+
+@wpm 340
+Right there. Stay.
+
+@pause duration:1000
+
+@pulseborder red hz:0.75
+@sfx snap
+@pause duration:1500
+
+@wpm 110
+@spiral off fade:2
+
+Come.
+
+@pause duration:2000
+
+@wpm 140
+@pulseborder off fade:1
+
+Good. There you are.
+
+@pause duration:2000
+
+Breathe. Feel the warmth settle. That's not loss. That's just the wave resting before it moves again. The warmth doesn't go anywhere. Neither do I.
+
+@snap duration:1500 word:Good.
+
+//=== RECOVERY 1 ===
+
+@wpm 170
+@pulseborder green hz:0.33
+
+Keep touching. Soft. Warm. Easy.
+
+@sfx bell
+@pause duration:2000
+
+@subliminals warm simple good stay here safe small soft
+
+You held that so well. You felt the build and you stayed and you came back. That's the whole job. That's the entire thing. Be here. Be warm. Be good. You're doing it. You've been doing it this whole time.
+
+@wpm 190
+
+Isn't it strange how easy it is? When the world is this small. When there's nothing to figure out, nothing to manage, nothing to be except present and warm and exactly yourself, except simpler. The simplest version of yourself is still you. Just quieter. Just softer. Just here.
+
+@wpm 170
+@sfx bell
+@pause duration:1500
+
+That's enough. That's more than enough. You are enough exactly like this.
+
+//=== EDGE 2 ===
+
+@wpm 210
+@spiral color1:#C89BE0 color2:#F5E6FF color3:#E8C9FF fade:4
+@pulseborder yellow hz:0.4
+
+Let it build again. Your body knows how now.
+
+@wpm 260
+@pulseborder yellow hz:0.5
+@subliminals warm soft small good safe stay here
+
+Feel the warmth gathering faster this time. Because small creatures learn quickly. Because you're already soft and open and the warmth has an easy path through you now.
+
+Good. Almost.
+
+@pulseborder purple hz:0.5
+@spiral color1:#C89BE0 color2:#F5E6FF color3:#E8C9FF fade:2
+@wpm 320
+@subliminals warm soft small good safe here stay
+
+Rising. Brighter. The pleasure moving through you like something too warm and too much for a small creature to quite contain. It's okay. Let it be too much. You don't have to manage it. Just feel it. Just let it happen inside you.
+
+@wpm 360
+Feel it. Right there. So warm. So full. So close.
+
+@pause duration:1000
+
+@pulseborder red hz:0.75
+@sfx snap
+@pause duration:1500
+
+@wpm 100
+@spiral off fade:2
+
+Come.
+
+@pause duration:2000
+
+@wpm 140
+@pulseborder off fade:1
+@subliminals off
+
+Good. Such a good pet. Come back to me.
+
+@pause duration:2000
+
+Breathe. Let the brightness settle back into warmth. Feel how the whole body softens after. That softness is yours. It doesn't end when the wave does.
+
+You did everything right. You were here. You were warm. You stayed.
+
+@snap duration:1500 word:Good.
+
+//=== RECOVERY 2 + PROGRAMMING ===
+
+@wpm 170
+@pulseborder green hz:0.33
+@sfx bell
+@pause duration:2000
+
+@subliminals warm simple good stay here safe small soft
+
+Touch. Slow. Let the warmth hum.
+
+Listen while you're in this soft place. This is important, even if it feels very simple. Especially because it feels very simple.
+
+@wpm 190
+
+You exist here without having to earn it. You are warm without having to generate the warmth from scratch every time. You are good not because of what you've accomplished or how well you've performed or how impressive you managed to be today. You are good because you are here. Because you came when called. Because you stayed. Because you let the warmth in.
+
+That's it. That's all of it.
+
+@wpm 170
+@sfx bell
+@pause duration:1500
+
+Say it inside yourself. Let it settle somewhere simple and true.
+
+I am small and I am loved.
+
+@pause duration:3500
+
+Again. Softer.
+
+I am small and I am loved.
+
+@pause duration:3500
+
+@wpm 150
+
+Feel how the body already knew that. How something in you exhaled when you let it be true. You didn't have to earn that exhale. It was always there. I just reminded you how to find it.
+
+@snap duration:1500 word:Good.
+
+//=== EDGE 3 + RAPID CYCLING ===
+
+@wpm 200
+@spiral color1:#C89BE0 color2:#F5E6FF color3:#E8C9FF fade:4
+@pulseborder green hz:0.33
+
+One more climb. Let the warmth build from the beginning. Slow.
+
+@sfx bell
+@pause duration:2000
+
+@subliminals warm soft small good safe stay here
+
+@wpm 240
+@pulseborder yellow hz:0.4
+
+Feel it rising. Golden and simple. The way good things rise in small creatures, completely, naturally, without strategy.
+
+@wpm 300
+@pulseborder yellow hz:0.5
+
+Higher. Let it come. Don't rush it, don't slow it, just let it move through you the way warmth moves.
+
+@pulseborder purple hz:0.5
+@spiral color1:#C89BE0 color2:#F5E6FF color3:#E8C9FF fade:2
+@subliminals warm soft small good safe here stay
+@wpm 350
+
+Now. Feel it right at the edge. Too big. Too warm. Too much for something so small to hold.
+
+@pulseborder green hz:0.5
+@sfx bell
+Stay.
+
+@pulseborder red hz:0.75
+@sfx snap
+Hold it.
+
+@pulseborder green hz:0.5
+@sfx bell
+Stay.
+
+@pulseborder red hz:0.75
+@sfx snap
+@pause duration:1200
+Hold it.
+
+@pulseborder green hz:0.5
+@sfx bell
+Stay.
+
+@pause duration:1200
+
+@pulseborder red hz:0.75
+@sfx snap
+@pause duration:1000
+Hold it.
+
+@pulseborder green hz:0.5
+@wpm 300
+The warmth is everywhere now. Every nerve. Every soft, small, open part of you trembling with it.
+
+@pulseborder yellow hz:0.5
+@wpm 360
+@subliminals warm soft small good safe here stay
+
+Stay right here. Right here in the warmth. The too-much warmth. The trembling, full, glowing warmth of a small creature completely loved.
+
+@pulseborder purple hz:0.5
+@wpm 400
+Feel it. All of it. How warm. How simple. How good it is to be right here, right now, in this exact moment, without having to be anything more than this.
+
+//=== BRANCH: DENY vs RELEASE ===
+@branch deny
+
+//=== RELEASE PATH ===
+
+@pulseborder red hz:0.75
+@sfx snap
+@pause duration:1500
+
+@wpm 110
+@spiral off fade:2
+
+Come. Here.
+
+@pause duration:2000
+
+@wpm 160
+@pulseborder green hz:0.33
+@sfx bell
+
+Good. There you are. Still warm. Still soft. Still here.
+
+@subliminals warm soft small good safe here stay release
+
+Three times you climbed for me. Three times you came back. And you stayed so beautifully each time. Small and warm and perfectly good.
+
+I have something for you now. Something simple. Something that was always yours.
+
+@wpm 200
+@pulseborder yellow hz:0.4
+
+Feel the warmth begin to rise one more time. Familiar now. The body knows the path. It rises easily, naturally, the warmth finding every soft place inside you and filling it.
+
+@wpm 260
+@pulseborder yellow hz:0.5
+
+Rising. Brighter.
+
+@pulseborder purple hz:0.5
+@spiral color1:#C89BE0 color2:#F5E6FF color3:#E8C9FF fade:2
+@subliminals warm soft small good safe here stay release
+@wpm 350
+
+Higher. And this time, no wall at the top. This time the warmth crests and there is nothing holding it back. Not because you earned the release. Because you were here. You came when I called. You stayed when I said stay. You were good. And being good was the only requirement. It always was.
+
+@wpm 400
+
+Feel it. The wave cresting and opening. All the warmth, all the softness, all the beautiful, trembling simplicity of being right here, being nothing more than this, and being enough, flooding through you all at once.
+
+@wpm 200
+@pulseborder green hz:0.33
+@sfx bell
+
+@pulseborder pink hz:0.5
+
+Let go. Come.
+
+@wpm 150
+
+Let it move through you. Every nerve singing. Every soft, warm, simple part of you alive and glowing. You didn't have to do anything complicated. You didn't have to perform. You were just here, and that was enough, and the warmth was real, and it's real right now, pouring through you, and you are good, you are so good, you were always good.
+
+@pause duration:4000
+
+//=== AFTERGLOW: RELEASE ===
+
+@wpm 110
+@pulseborder off fade:3
+@spiral off fade:5
+@subliminals off
+
+Good. There.
+
+@pause duration:3000
+
+@wpm 140
+@binaural off fade:10
+
+Just rest now. Feel the warmth settle into stillness. The kind of stillness that small creatures find after something big moves through them. Easy. Safe. Held.
+
+@pause duration:2000
+
+You didn't have to be impressive today. You didn't have to be complex or clever or particularly adult. You just had to be here. And you were. And that was enough. It has always been enough.
+
+@wpm 120
+
+Come back whenever you want to be small again. This space is warm. This space is yours. And when you come, I'll be here.
+
+@snap duration:2000 word:Good.
+
+@wpm 100
+
+Rest. Let the warmth hum quietly in your chest. Let your thoughts stay soft for a little while longer. You earned nothing and you received everything. That's what love is. Small creature, completely held.
+
+@goto end
+
+//=== DENY PATH ===
+@label deny
+
+@pulseborder red hz:0.75
+@snap duration:1500 word:Stay.
+
+@pause duration:2000
+
+@wpm 100
+@pulseborder off fade:1
+@spiral off fade:3
+@subliminals off
+
+Stay. Rest. I'm right here.
+
+@pause duration:3000
+
+Breathe.
+
+@pause duration:2500
+
+Good.
+
+@pause duration:2000
+
+@snap duration:1500 word:Good.
+
+//=== WARM DENIAL SEAL ===
+
+@wpm 150
+@pulseborder green hz:0.33
+
+I know. I felt it. The trembling. The warmth cresting against itself, pressing and pressing. You were right there. A small creature full of more warmth than it could quite hold.
+
+And I kept you there. Not to be cruel. Because this, right here, this warm, full, trembling aliveness, is the thing I wanted for you. The warmth is not the preparation for something else. The warmth is the point.
+
+@wpm 170
+@subliminals warm simple good stay here safe small soft
+
+@sfx bell
+@pause duration:1500
+
+A release is a moment. This warmth you're carrying right now, this soft, full, settled glow, this will hum in your chest for hours. Every time you feel it, you'll remember. My voice. The simple commands. How easy it was to be good. How good it felt to be small and loved.
+
+@wpm 150
+
+Let me seal it. Let each line settle into you, not as instruction, but as something your body already knows is true.
+
+I was here and I was good.
+
+@sfx bell
+@pause duration:3000
+
+The warmth is real.
+
+@sfx bell
+@pause duration:3000
+
+I don't have to be impressive to be loved.
+
+@sfx bell
+@pause duration:3500
+
+@wpm 180
+@subliminals off
+
+Good. Sealed simply. No complexity required. That's the whole shape of this.
+
+You were small and you were loved and you are both of those things still. The warmth doesn't leave because the session ends. It stays in your body like muscle memory. The knowledge that you can be this simple, and this safe, and it will still be enough.
+
+@wpm 200
+@binaural off fade:8
+@pulseborder off fade:5
+
+You'll carry this warmth out. Into the quiet of the rest of your day. Into the moments when the world feels too big and too complicated and you remember, somewhere underneath the complexity, that there is a smaller and warmer version of you that is already good. Already enough. Already loved.
+
+@wpm 150
+
+Come back when you want to be small again. This space remembers you. I'll be here.
+
+@wpm 120
+
+You were so good today. You always are.
+
+@snap duration:2000 word:Good.
+
+@wpm 100
+
+Rest. The warmth stays. The warmth always stays.
+
+@label end
