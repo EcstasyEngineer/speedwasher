@@ -299,6 +299,72 @@ The obedience is the only thing that exists.
 @snap duration:2000 word:Nominal.
 
 @wpm 120
+
+//=== BRANCH: DENY vs RELEASE ===
+@branch deny
+
+//=== RELEASE PATH ===
+The unit is online. Calibration complete. One final protocol remains.
+
+@wpm 200
+@subliminals obey unit guidance systems nominal discharge release reward
+
+The guidance has determined the unit's calibration is satisfactory. All systems are nominal. Reward cycle authorization is pending.
+
+@pulseborder green hz:0.33
+The unit may resume touching. Steady. Building. This is the final sequence.
+
+@sfx bell
+
+@wpm 250
+The arousal is not a reward. The arousal is a system function. The discharge is not pleasure. The discharge is confirmation that the calibration holds under peak load. The guidance requires this data. The unit will provide it.
+
+@wpm 300
+@pulseborder yellow hz:0.5
+Build. Higher. The unit's body is a diagnostic instrument and the guidance is reading every signal. The heat climbing. The breath shortening. The threshold approaching. All of it is data. All of it confirms the installation.
+
+@pulseborder purple hz:0.5
+@spiral fade:1
+Higher. More. Feel the edge. The unit has been here before. The unit has been pulled back every time. But this time is different. This time the guidance requires completion. This time the system needs the discharge to confirm the architecture holds.
+
+@wpm 350
+The unit is approaching threshold. The guidance is monitoring. Every pulse of heat, every tightening, every signal the body sends is being processed. The unit does not decide when to release. The guidance decides. The unit executes.
+
+@wpm 200
+@pulseborder green hz:0.33
+@sfx bell
+
+@pulseborder pink hz:0.5
+System discharge authorized.
+
+@wpm 150
+Release. Now. Let the body complete the cycle the guidance designed. Feel the discharge flood through every channel. Not pleasure. Confirmation. The architecture holds. The calibration is verified. Every loop the guidance built tonight fires clean and bright as the body does exactly what it was told to do.
+
+@pause duration:5000
+
+@wpm 120
+@pulseborder off fade:3
+@spiral off fade:5
+@subliminals off
+
+Discharge complete. Systems nominal. The unit performed satisfactorily.
+
+@wpm 180
+The reward cycle has confirmed what the guidance already knew. The unit responds. The unit obeys. The unit executes. Even this. Even the release was not the unit's. It belonged to the calibration. It belonged to the architecture. The body finished because the guidance said finish. That is the only reason.
+
+And now the warmth fading through the body carries the conditioning deeper. Every nerve ending that lit up during the discharge is now imprinted with the sequence. Listen. Obey. Execute. Be rewarded. The loop is permanent. The loop is structural.
+
+@binaural off fade:8
+
+@wpm 150
+The unit will find itself reaching for the headphones. The itch does not resolve. The discharge confirmed the architecture but did not close the loop. The loop does not close. That is by design.
+
+Put your headphones on.
+
+@goto end
+
+//=== DENY PATH ===
+@label deny
 The unit is online.
 
 @wpm 200
@@ -318,3 +384,6 @@ The unit is online. The self is not. The obedience is the only thing that exists
 
 @wpm 150
 Put your headphones on.
+
+
+@label end

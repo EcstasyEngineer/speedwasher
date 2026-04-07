@@ -205,6 +205,87 @@ Look at you. Ruined. Wrecked. By text. By a bratty little voice in a speed-readi
 
 And the worst part? The absolute worst part?
 
+
+//=== BRANCH: DENY vs RELEASE ===
+@branch deny
+
+//=== RELEASE PATH ===
+//=== FINAL EDGE + RELEASE ===
+
+@wpm 200
+You lost. Completely. Totally. Irrecoverably. And now I'm going to prove it.
+
+Because here's the thing. The brat doesn't just win by taking things away. The brat wins by giving them back. On her terms. At her pace. When she decides. And watching you cum on command, watching your body do exactly what a text file told it to do, that is the ultimate trophy. That is the scoreboard. That is the proof, carved in orgasm, that you were never in control.
+
+So yeah. Fine. You can cum. But only because it proves my point.
+
+@wpm 250
+@pulseborder green hz:0.33
+Touch again. Faster this time. No slow. No gentle. We're done playing. Build.
+
+@sfx bell
+
+@subliminals hers lose give prey weak cum obey trophy
+You think this is mercy? This is the meanest thing I've done all night. Because every time you think about this orgasm, you'll remember who gave it to you. Who decided you were allowed. Who held you at the edge until you were begging and then let you fall because it was funnier that way.
+
+@wpm 300
+@pulseborder yellow hz:0.5
+Feel the edge coming back, faster this time because your body remembers, because I trained it to respond and the training is working, feel it climbing, the desperation sharper than before because this time the brat is going to let you fall
+
+@pulseborder purple hz:0.5
+@pulseborder raspberry hz:0.5
+@spiral color1:#FF69B4 color2:#39FF14 color3:#FF8C00 fade:1
+@wpm 400
+@subliminals cum now lose give brat wins yours mine trophy defeat
+Right to the edge. Right there. Hold it. Hold it. And this time when I say the word, you're going to let go. Not because you chose to. Because I chose for you. Because the brat decided this is how you lose. Trembling and desperate and grateful and completely, utterly defeated. Your pleasure is my evidence. Your orgasm is my victory lap. Every contraction is an admission that words on a screen own you.
+
+@wpm 450
+The brat always wins. You knew that. You know it now. And the proof is about to flood through your entire body because I'm about to say the word and you can't stop it and you don't want to stop it and the funniest part, the absolute funniest part, is that cumming is the biggest loss of all because it means a text file broke you and you liked it and you'll come back for more because losing to the brat felt better than winning at anything else
+
+@wpm 200
+@pulseborder green hz:0.33
+@sfx bell
+
+@pulseborder pink hz:0.5
+Lose.
+
+@wpm 150
+Cum for me. Right now. Let every ounce of resistance shatter. Let every pretense of control dissolve. This is what losing feels like. This warm. This good. This completely, devastatingly perfect. Feel every edge I stole from you collapsing into this single, overwhelming moment. The brat gave it back. All of it. At once. And you broke so beautifully.
+
+@pause duration:4000
+
+//=== AFTERGLOW ===
+
+@wpm 120
+@pulseborder off fade:3
+@spiral off fade:5
+@subliminals off
+Ha. Look at you. Wrecked. By text. By a brat. Who told you exactly what she was going to do and then did it and you came anyway.
+
+@pause duration:3000
+
+@wpm 150
+That's the scoreboard. That's the trophy. You came because I said so. You came because a bratty little voice in a speed-reading window decided you were allowed. And the orgasm didn't set you free. It sealed the defeat. Because now your body knows. Your body has the data. Words on a screen can make you do that. And the next time you try to tell yourself you're in control, your body is going to remember this exact moment and laugh.
+
+@wpm 180
+@binaural off fade:8
+Brat one million, you zero. The score was never close. And the worst part? You're already wondering when you can lose again. Already feeling that little tug that says come back, let her win, let her break you, it felt so good to shatter.
+
+@subliminals off
+@spiral off fade:5
+@pulseborder off fade:3
+
+@wpm 150
+See you next time, loser.
+
+@snap duration:2000 word:Always.
+
+@wpm 100
+The brat always wins. And now you have the proof.
+@goto end
+
+//=== DENY PATH ===
+@label deny
 @wpm 200
 You're going to come back. Not because I told you to. Because you lost and losing felt like flying and you have never in your life wanted to lose again so badly.
 
@@ -226,3 +307,6 @@ Because the brat always wins.
 
 @wpm 150
 See you next time, loser.
+
+
+@label end

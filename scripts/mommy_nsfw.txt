@@ -238,6 +238,91 @@ Feel the warmth gathering now, sweetheart. The golden heat rising through you, y
 @subliminals ache devotion beautiful wanting stay hold edge golden
 Feel it cresting. Feel everything in your body reaching for the release you know isn't coming. Feel the desperate, trembling, beautiful devotion of staying at the edge because I asked you to stay. Because my voice is warmth and warmth is safety and safety is trust and trust is the willingness to ache when aching is what's asked of you.
 
+
+//=== BRANCH: DENY vs RELEASE ===
+@branch deny
+
+//=== RELEASE PATH ===
+//=== FINAL EDGE + RELEASE ===
+
+@pulseborder red hz:0.75
+@sfx snap
+@pause duration:2000
+
+@wpm 120
+@spiral off fade:2
+Not yet. One more breath. Stay with me.
+
+@pause duration:2000
+
+@wpm 180
+@pulseborder green hz:0.33
+@sfx bell
+Keep touching. Gently. I know you're trembling. I know every nerve in your body is begging. I can feel the devotion pouring off you like heat from a sun. Three edges. Three times you held. Three times you gave me the most beautiful gift anyone can give, your trust at the threshold.
+
+And I have something for you now. Something I've been holding. Something you've earned not through performance but through patience. Through devotion. Through the quiet, trembling courage of staying.
+
+@wpm 200
+@subliminals warm safe loved held release yours deserve earned good
+You've been so good, sweetheart. So brave. So patient. You held every edge I gave you. You ached when I asked you to ache. You stayed when every cell in your body was screaming to fall.
+
+And now I'm going to catch you.
+
+@pulseborder yellow hz:0.5
+@wpm 280
+Let the warmth build one more time. Feel it rising, golden and inevitable. But different now. Because this time, there is no wall at the top. This time, the edge opens into sky. Feel the permission gathering in my voice like sunlight gathering before dawn.
+
+@pulseborder purple hz:0.5
+@pulseborder raspberry hz:0.5
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
+@wpm 350
+@subliminals release let go safe loved held yours now permission granted
+Higher. More. Feel the wave cresting and this time, this time, do not hold it. Do not fight it. Let the golden light behind your eyes burn brighter than it has ever burned. Let every denied edge pour its stored warmth into this single, radiant moment. Three edges of devotion. Three edges of trust. All of them releasing at once, all of them pouring through you like sunlight through glass.
+
+@wpm 400
+I am so proud of you. I am right here. And you have earned this. Not as a reward. As a homecoming. This release is the warmth you've been building all along, every ache, every tremor, every held breath, all of it was storing this. Building this. Preparing your body for this exact, perfect, golden moment.
+
+@wpm 200
+@pulseborder green hz:0.33
+@sfx bell
+
+@pulseborder pink hz:0.5
+Let go, sweetheart.
+
+@wpm 150
+Let go for me. Let everything you've been holding flood through you like warm light. Like honey poured from a height. Like every good thing you've ever deserved arriving at once. Feel the wave break. Feel the gold rush through every nerve, every muscle, every trembling, devoted inch of you. I've got you. I'm right here. You're safe. You're held. You're mine.
+
+@pause duration:4000
+
+//=== AFTERGLOW ===
+
+@wpm 120
+@pulseborder off fade:3
+@spiral off fade:5
+@subliminals off
+That's it. So good. So beautiful. Let every wave wash through you. Every pulse. Every last tremor. I'm right here, holding the edges of you while the light settles.
+
+@pause duration:3000
+
+@wpm 150
+@binaural off fade:10
+Breathe. Slow. Easy. Feel the afterglow settle into your chest like a warm blanket pulled up under your chin. The ache is gone now, replaced by something softer. Something you earned. Something that says I stayed, I trusted, I was brave, and the warmth came.
+
+You did so beautifully tonight. You always do. Because you're mine. And I take care of what's mine.
+
+@wpm 120
+Come back whenever you need to feel this again. I'll be here. Warm. Patient. Ready to hold you again.
+
+@snap duration:2000 word:Loved.
+
+@wpm 100
+Now rest. You've earned this warmth. You've earned everything. Let your gaze soften. Let the gold fade gently. Let the last of it hum in your chest like a lullaby. And know, even as the words end, that you are loved. Completely. Permanently. Without condition.
+
+Always.
+@goto end
+
+//=== DENY PATH ===
+@label deny
 //=== FINAL DENIAL ===
 
 @pulseborder red hz:0.75
@@ -304,3 +389,6 @@ You did so beautifully tonight. You always do.
 
 @wpm 100
 Now rest. You've earned this warmth, even if you haven't earned release. Especially because you haven't earned release. The ache is the proof that you stayed. And staying is everything.
+
+
+@label end
