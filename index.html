@@ -54,7 +54,7 @@
             <button id="btn-sync" class="synced" disabled>Sync</button>
         </div>
 
-        <!-- Script Editor -->
+        <!-- Script Info Bar -->
         <div id="script-section">
             <div id="script-header">
                 <span>Script</span>
@@ -63,10 +63,11 @@
                 </div>
                 <span id="word-count"></span>
             </div>
-            <textarea id="script-editor" placeholder="Loading script..."></textarea>
+            <textarea id="script-editor" style="display:none;" placeholder="Loading script..."></textarea>
             <div id="script-buttons">
-                <button id="btn-load-script" class="loaded" disabled>Load</button>
+                <button id="btn-load-script" class="loaded" disabled style="display:none;">Load</button>
                 <button id="btn-share" title="Share script via URL">Share</button>
+                <a href="editor.html" style="color: #7dd3fc; text-decoration: none; font-size: 0.9em; padding: 6px 12px;">Open Editor</a>
             </div>
         </div>
 
@@ -184,16 +185,15 @@
                 <table>
                     <tr><th>Command</th><th>Parameters</th><th>Example</th></tr>
                     <tr><td><code>@wpm</code></td><td>speed</td><td><code>@wpm 300</code></td></tr>
-                    <tr><td><code>@binaural</code></td><td>[name] carrier: beat: db: fade: vol:</td><td><code>@binaural pad carrier:200 beat:10</code></td></tr>
-                    <tr><td><code>@isochronic</code></td><td>[name] carrier: pulse: db: ear: fade: vol:</td><td><code>@isochronic tone carrier:200 pulse:6</code></td></tr>
-                    <tr><td><code>@hybrid</code></td><td>[name] carrier: beat: pulse: db: fade: vol:</td><td><code>@hybrid bass carrier:90 beat:3 pulse:3.3</code></td></tr>
+                    <tr><td><code>@binaural</code></td><td>[type:] [fade:]</td><td><code>@binaural type:warm fade:8</code></td></tr>
+                    <tr><td><code>@binaural</code></td><td>layers:c/b/p,... [fade:]</td><td><code>@binaural layers:60/2/4,95/3/5 fade:8</code></td></tr>
                     <tr><td><code>@spiral</code></td><td>color: opacity: speed: fade:</td><td><code>@spiral #8B5CF6 opacity:0.3</code></td></tr>
                     <tr><td><code>@subliminals</code></td><td>opacity: word1 word2 ...</td><td><code>@subliminals opacity:0.4 obey drift</code></td></tr>
                     <tr><td><code>@snap</code></td><td>duration: word:</td><td><code>@snap duration:1500 word:Drop.</code></td></tr>
                     <tr><td><code>@pause</code></td><td>duration: word:</td><td><code>@pause duration:2000 word:Hold.</code></td></tr>
                     <tr><td><code>@sfx</code></td><td>name [vol:]</td><td><code>@sfx bell vol:0.5</code></td></tr>
                     <tr><td><code>@pulseborder</code></td><td>color [hz:] [fade:]</td><td><code>@pulseborder green hz:0.33</code></td></tr>
-                    <tr><td><code>@&lt;any&gt; off</code></td><td>[fade:]</td><td><code>@hybrid bass off fade:2</code></td></tr>
+                    <tr><td><code>@&lt;any&gt; off</code></td><td>[fade:]</td><td><code>@binaural off fade:8</code></td></tr>
                     <tr><td><code>//</code></td><td>comment</td><td><code>@wpm 300 // speed up</code></td></tr>
                 </table>
             </details>
