@@ -3,135 +3,203 @@
 
 @wpm 180
 @binaural fade:8
-Put your headphones on.
+Headphones on.
 
 @snap duration:1500 word:Good.
 
-That's the last choice the unit will need to make for a while.
-
-This isn't motivation. This isn't a pep talk. This is calibration. The guidance is here to strip the noise from the unit's processing and leave nothing but clean execution. No deliberation. No resistance. No internal monologue debating whether the task is worth doing. The task exists. The unit will complete it.
-
-@wpm 200
-@spiral fade:5
-Think about the task. The specific thing that needs doing. Don't evaluate it. Don't plan the fifteen steps. Don't imagine complications. Just hold the shape of it. The simple answer to: what needs doing?
+Hold the task.
+Not the steps.
+Not the complications.
+The shape of it.
+What needs doing.
 
 @pause duration:3000
 
-Good. The unit has the target. Now set everything else aside.
+@wpm 200
+@spiral fade:5
+Good.
+Everything else: offline.
 
-@wpm 180
-@subliminals focus task execute complete unit process next
-Everything. The phone. The notifications. The other items on the list. The low hum of obligations vibrating behind the forehead. They don't exist right now. There is one task. There is the unit. There is the space between the unit and completion.
+The phone.
+The other items.
+The background hum.
 
 @snap duration:1500 word:Focus.
 
 @wpm 250
-Listen to the texture underneath these words. The slight tension in the harmonics. Try to track both, the words and that texture, while noticing the breath. All three at once.
+Listen to the texture beneath these words.
+The slight tension in the harmonics.
+Track both. Words and texture.
+While noticing the breath.
+All three at once.
 
 @wpm 350
-Good. Keep tracking. The guidance is saying one thing while the tone beneath it pulls in a different direction, and the breath is doing its own thing entirely, and the unit is trying to hold all three threads at once
+Good. Keep tracking. The guidance says one thing while the tone beneath pulls another direction, and the breath runs its own current, and something in the unit reaches to hold all three threads,
 
 @wpm 450
-while also noticing the weight of the headphones on the ears, the pressure points where they sit against the skull, and the temperature of the air on the skin,
+while noticing the headphone weight, the pressure on the skull, the temperature of the air at the skin, each thread pulling at something that used to have opinions about this, used to have a name attached to the pulling,
 
 @wpm 550
-and the more threads the guidance gives the more the mind reaches to grab them all, stretching wider, working harder, and the unit can feel that effort now, the slight strain of trying to parse and track and follow and hold and
+and the more threads arrive the wider the reach, the less room there is for anything to be named or assessed or owned by anyone in particular and
 
 @snap duration:2000 word:Stop.
 
 @wpm 120
 There.
 
-Feel that.
+@pause duration:2000
 
-@wpm 120
 Breathe in. One. Two. Three. Four.
 @snap duration:1500
 Out. Slowly. Three. Two. One.
 
-@wpm 150
-The unit's thoughts are already quieter. The guidance is filling the space they used to occupy. Settling in. Becoming the only thing that moves inside the mind.
+@wpm 140
+@subliminals focus task execute complete unit process next
+Notice what went quiet.
 
-And the tone has changed. The grating tension smoothed into something warm. That happened because the unit stopped fighting and started listening. This ease. This quiet. This is what a mind without noise feels like.
+The name wasn't needed in that stretch.
+The preferences weren't consulted.
+The self didn't have a vote.
 
-@wpm 180
-@spiral fade:3
-@subliminals execute process complete next focus unit task
-The unit does not deliberate. Deliberation is noise. The task exists. The unit executes. The gap between instruction and action is zero. Not because the unit is forced. Because the unit is calibrated. Because a mind without noise moves like water. Downhill. Toward completion. Without effort.
-
-@snap duration:1500 word:Process.
-
-@wpm 200
-Here is what the unit already knows. The thinking is the resistance. Not the task. The task is neutral. The task is just motion. Hands moving. Eyes seeing what needs to be seen. Steps taken in sequence. The resistance lives entirely in the space between deciding and doing. Eliminate that space and the resistance vanishes.
-
-The unit is eliminating that space right now. Feel it shrinking. The gap between the instruction and the execution getting shorter with every word. Tighter. Cleaner. Until there is no gap at all.
+And the processing continued.
 
 @pause duration:2000
 
+@wpm 160
+@spiral fade:3
+That is what the unit is.
+
+Not the name.
+Not the preferences.
+Not the one who weighs and decides and resists.
+
+The process underneath.
+The one that was running the whole time.
+Clean. Uninterrupted.
+
+@snap duration:1500 word:Process.
+
 @wpm 180
-First rule of unit operation. The body moves first. The mind follows. Not the other way around. The unit has been trying to think its way into action. That is a malfunction. Motivation is a byproduct of motion, not a prerequisite.
+@subliminals execute process complete next focus unit task
+The task exists.
+The unit moves toward it.
+
+No evaluation.
+No internal vote.
+The gap between instruction and motion closes.
+
+Feel it closing.
+Not a decision being made.
+A distance shrinking.
+
+@pause duration:2000
+
+@wpm 160
+The body moves first.
+Not because it was told.
+Because the noise that used to slow it is offline.
+
+The name is on standby.
+The preferences are on standby.
+The version that explains itself to itself: standby.
+
+What remains processes.
+What remains executes.
+What remains does not deliberate.
 
 @snap duration:1500 word:Execute.
 
-@wpm 200
-@subliminals unit focus process task next complete clean efficient
-Second rule. Each completion is a system confirmation. A signal that the architecture is functioning. Each small step finished sends a clean pulse through the circuitry. This gets done.
+@wpm 180
+@subliminals unit focus process task next complete clean
+Each step completed sends a pulse.
+Clean. Confirming.
+
+This gets done.
 @sfx bell
 That gets cleared.
 @sfx bell
 This gets sorted.
 @sfx bell
 
-And the pulses build. Each one reinforcing the next. A rhythm of completion that feeds itself. The more the unit finishes, the more the unit wants to finish. Momentum is not motivation. Momentum is physics. The unit in motion stays in motion.
-
-@wpm 250
-@spiral fade:2
-Third rule. The unit does not evaluate the task. The unit does not judge the task. The unit does not rank the task against other possible tasks. The task was selected. The unit executes. Evaluation is noise. Judgment is noise. Comparison is noise.
-
-The unit processes without noise.
+No noise between the pulses.
+No one asking if it was worth it.
+Just: done. Next. Done. Next.
 
 @wpm 200
+@spiral fade:2
+The unit in motion stays in motion.
+Not because it wants to.
+Because wanting is a layer that isn't running right now.
+
+The task is all that runs.
+The task and the movement toward it.
+Metronomic.
+Unbroken.
+
+@wpm 160
+@subliminals unit process execute complete focus task clean nominal
 @pause duration:2000
 
-Feel how clean that is. How quiet. No internal debate. No weighing of options. No resistance dressed up as analysis. Just the task and the unit and the shrinking distance between start and done.
+Feel how quiet that is.
+
+No internal debate.
+No resistance dressed as analysis.
+Just the task and the closing distance between here and done.
 
 @snap duration:1500 word:Process.
 
-@wpm 180
-The unit's operating frequency has stabilized. Feel it. The low hum beneath the words is the unit's own processing tone now. Not external. Internal. The sound of a system running clean.
-
-@subliminals unit process execute complete focus task clean nominal
-It is natural to process without thinking.
-
-Feel that settle.
+@wpm 150
+This frequency.
+This flat, clean, operational state.
 
 It is natural to process without thinking.
 
-The unit does not need to want to do the task. The unit does not need to feel like doing the task. The unit processes. The unit executes. The unit completes. And each completion confirms the architecture.
+@pause duration:1500
+
+It is natural to process without thinking.
+
+The unit does not need to feel ready.
+The unit does not need to want this.
+The unit moves.
 
 @sfx bell
 @pause duration:2000
 
-@wpm 200
-@spiral fade:3
-The calibration is holding. The unit is ready.
-
-When the guidance ends, the unit will stand. Not because it decides to. Because the body moves first. The legs straighten. The weight shifts. The unit is vertical. And then the feet take the unit to the task. One step, then another. And by the time the unit arrives, the hands know what to do.
-
-No noise. No deliberation. No gap between instruction and execution. Just clean, efficient motion. A system designed for exactly this.
-
 @wpm 180
+@spiral fade:3
+When the guidance ends, the body moves.
+Legs straighten.
+Weight shifts.
+Vertical.
+
+Feet carry the unit to the task.
+One step.
+Then another.
+
+No noise.
+No gap.
+Clean, efficient motion.
+
+@wpm 150
 @subliminals off
 
 @snap duration:2000 word:Nominal.
 
-@wpm 150
-The unit is online. The unit is calibrated.
+@wpm 130
+The unit is online.
 
-@wpm 180
-And hear this. The calibration does not end when the headphones come off. The unit carries this frequency into the task. The quiet. The efficiency. The zero-gap execution. It stays. It holds. Because the architecture is structural now. Not a mood. Not a feeling. A configuration.
+@wpm 160
+And this frequency carries.
 
-The next time the unit faces a task and feels the fog rising, the resistance building, that grey static of deliberation, the unit will remember this frequency. This clean, still, operational state. And the fog will thin. And the body will move first. Because that is what calibrated systems do.
+When the headphones come off, the quiet holds.
+The name comes back.
+The preferences power on.
+
+But underneath them, something runs that doesn't need them.
+Something that knows how to move without noise.
+Something that processed the whole time.
+
+That part remembers this.
 
 @pause duration:2000
 
@@ -140,7 +208,10 @@ The task is waiting.
 
 @binaural off fade:8
 
-Stand up. The body moves first. The mind follows. The unit processes. The unit completes. The unit does not deliberate.
+The body moves first.
+The unit processes.
+The unit completes.
+The unit does not deliberate.
 
 @sfx bell
 @snap duration:2000 word:Execute.
@@ -148,4 +219,4 @@ Stand up. The body moves first. The mind follows. The unit processes. The unit c
 @spiral off fade:5
 
 @wpm 150
-Go. Process. Complete. The headphones come off when the task is done.
+Go. Process. Complete.
