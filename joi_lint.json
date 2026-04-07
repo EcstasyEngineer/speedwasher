@@ -112,6 +112,12 @@
       "severity": "error",
       "params": { "pattern": "(?:close|closed|shut|closing).{0,15}(?:eye|eyes)" }
     },
+    "JOI-052": {
+      "name": "max-red-duration",
+      "description": "RED (no-touch) phases should not exceed max_seconds — conditioning happens on GREEN",
+      "severity": "warning",
+      "params": { "max_seconds": 30 }
+    },
     "JOI-051": {
       "name": "no-long-hyphenated",
       "description": "Hyphenated compound words over max_length chars are hard to read as a single RSVP flash",
@@ -165,8 +171,8 @@
   },
   "file_categories": {
     "_sfw": { "applies": ["JOI-008", "JOI-012", "JOI-014", "JOI-017", "JOI-019", "JOI-050", "JOI-051"] },
-    "_nsfw": { "applies": ["JOI-002", "JOI-003", "JOI-004", "JOI-005", "JOI-006", "JOI-007", "JOI-009", "JOI-010", "JOI-011", "JOI-012", "JOI-013", "JOI-014", "JOI-015", "JOI-016", "JOI-017", "JOI-018", "JOI-019", "JOI-050", "JOI-051"] },
-    "_cum": { "applies": ["JOI-002", "JOI-004", "JOI-005", "JOI-006", "JOI-012", "JOI-014", "JOI-017", "JOI-018", "JOI-019", "JOI-050", "JOI-051"] },
+    "_nsfw": { "applies": ["JOI-002", "JOI-003", "JOI-004", "JOI-005", "JOI-006", "JOI-007", "JOI-009", "JOI-010", "JOI-011", "JOI-012", "JOI-013", "JOI-014", "JOI-015", "JOI-016", "JOI-017", "JOI-018", "JOI-019", "JOI-050", "JOI-051", "JOI-052"] },
+    "_cum": { "applies": ["JOI-002", "JOI-004", "JOI-005", "JOI-006", "JOI-012", "JOI-014", "JOI-017", "JOI-018", "JOI-019", "JOI-050", "JOI-051", "JOI-052"] },
     "default": { "applies": ["JOI-012", "JOI-014", "JOI-017", "JOI-019", "JOI-050", "JOI-051"] }
   },
   "deployment_variants": {

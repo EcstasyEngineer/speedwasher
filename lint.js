@@ -512,6 +512,17 @@ function lintFile(filename, text) {
         }
     }
 
+    // ─── JOI-052: Max red duration ─────────────────────────────────────
+    if (applicable.has('JOI-052') && !disabled.has('JOI-052')) {
+        const maxSec = (rules['JOI-052'] && rules['JOI-052'].params && rules['JOI-052'].params.max_seconds) || 30;
+        const redPhases = phases.filter(p => p.color === 'red');
+        for (const phase of redPhases) {
+            if (phase.durationSec > maxSec) {
+                report('JOI-052', `RED phase at line ${phase.startLine} is ${phase.durationSec.toFixed(1)}s (max: ${maxSec}s) — consider more GREEN time`);
+            }
+        }
+    }
+
     // ─── JOI-051: No long hyphenated words ────────────────────────────
     if (applicable.has('JOI-051') && !disabled.has('JOI-051')) {
         const maxLen = (rules['JOI-051'] && rules['JOI-051'].params && rules['JOI-051'].params.max_length) || 12;
