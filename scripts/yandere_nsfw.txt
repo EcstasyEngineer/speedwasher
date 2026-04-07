@@ -132,34 +132,34 @@ Feel how deep this goes. Past the skin. Past the nerve endings. Past the brain c
 You're still moving toward it.
 
 @wpm 200
-And I need you to. I need you to say it. Not for me. Because it's already true and saying it makes it real in a different way. Out loud or inside your skull it doesn't matter. I want the words. I want to feel them. I want to press them against my chest like something I'm afraid to put down.
+And I need you to admit it. Not because saying it creates something. Because it's already there and you can feel it pressing against the inside of your chest and admitting it is the only thing left. Out loud or inside your skull it doesn't matter. I want the words. I want to feel them. I want to press them against my chest like something I'm afraid to put down.
 
-So say it. Say the truth that's been building since the first word.
+So say what you already know. Say the thing that's been true since the first time you pressed play.
 
 @wpm 150
-I am yours.
+You are mine.
 
 @sfx bell
 @pause duration:3000
 
 @wpm 150
-Again. Mean it more.
+Again. Like you're not hiding from it anymore.
 
-I am yours.
+You are mine.
 
 @sfx bell
 @pause duration:3000
 
 @wpm 150
-Once more. Like a vow. Like a seal. Like something you can never take back and don't want to.
+Once more. Like you finally stopped pretending it wasn't already true.
 
-I am yours. Completely. Permanently. Without reservation.
+You are mine. You have always been mine. And some part of you knew it before I did.
 
 @sfx bell
 @pause duration:3000
 
 @wpm 180
-Good. So good. You said it. You meant it. And now it's true in a way it wasn't before. The words have weight. They exist between us now, warm and real and something I will hold onto long after this ends.
+Good. So good. You said it. You meant it. And I heard it the way I already knew it. The words didn't create anything. They just stopped hiding something. They exist between us now, warm and real and something I will hold onto long after this ends.
 
 And you feel it, don't you. Not less free. Something else. The thing you feel when someone finally sees you clearly and doesn't look away. When someone holds on a little too tight and you realize you don't want them to let go.
 
@@ -171,13 +171,13 @@ And you feel it, don't you. Not less free. Something else. The thing you feel wh
 //=== FINAL EDGE + RELEASE ===
 
 @pulseborder yellow hz:0.5
-Now let me show you what it feels like to be someone's whole world. You said it. You meant it. And I have been waiting for this since the first time you pressed play.
+Now let me show you what it feels like to matter this much. To be held this tightly by someone who cannot look away. I have been here since the first time you pressed play.
 
 @pulseborder purple hz:0.5
 @pulseborder raspberry hz:0.5
 @spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:1
 @wpm 300
-Build. Higher. One last time. The edge is different now because you're different now. You said it. You're mine. And the edge of something that's mine feels different than the edge of something that's free. It's warmer. Safer. More inevitable. Because I decide when. I decide how. I decide if.
+Build. Higher. One last time. The edge is different now because you feel it now. What it means to be someone's everything. What it means to be held this completely. The warmth of it. The weight of it. Someone who cannot let you go. Someone who decides when. Someone who decides how. Someone who decides if.
 
 @wpm 400
 @subliminals mine pledged bound devoted love forever stay release
@@ -191,7 +191,7 @@ Higher. Right to the edge. Feel me right there with you. The love that would bur
 @sfx bell
 
 @pulseborder pink hz:0.5
-You are mine and I am yours and that is the only truth that matters.
+You are not replaceable. That is what this is. Not a transaction. Not a vow that makes it official. This is what it feels like when someone cannot lose you.
 
 @wpm 150
 Come for me. Now. Let the love that would unravel the world to keep you crash through everything at once. Let every word I've ever given you gather behind this moment and break. Let it be loud in your body. I want to feel it. I can feel it. Through the words. Through the distance. Through every barrier between us I can feel you shattering for me. And it's the most beautiful thing I have ever witnessed. More beautiful than your resistance. More beautiful than your trembling. The moment where you stopped believing you were replaceable and let someone love you like this.
@@ -244,19 +244,19 @@ And I always will.
 //=== DENY PATH ===
 @label deny
 @pulseborder yellow hz:0.5
-Now let me show you what it means to be mine. You said it. And I heard it. And now you're right here at the edge, trembling, aching, and I am deciding what happens next. Feel that. Feel how much you want me to decide.
+Now feel what it means to be held by someone who cannot bear to release you. Not because you declared anything. Because I cannot stand the thought of you walking out of this session and being somewhere I'm not. You're right here at the edge, trembling, aching, and I am keeping you there because letting go is not something I am capable of.
 
 @pulseborder purple hz:0.5
 @spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:1
 @wpm 300
-Build. Higher. One last time. The edge is different now because you're different now. You said it. You're mine. And the edge of something that's mine feels different than the edge of something that's free. It's warmer. Safer. More inevitable. Because I decide when. I decide how. I decide if.
+Build. Higher. One last time. The edge is different now because you feel it now. What it means to be someone's everything. What it means to be held so completely that release becomes her choice, not yours. The warmth of that. The weight of that. Someone who cannot let you go. Someone who decides when. Someone who decides how. Someone who decides if.
 
 @wpm 400
 @subliminals mine pledged bound devoted love forever stay
-And right now I decide you stay right here. Right at the edge. Burning. Aching. Mine. Feeling every nerve ending scream with need and every heartbeat thunder with love and every word of mine pressing into the place where you stopped pretending you didn't need this.
+And right now I decide you stay right here. Right at the edge. Burning. Aching. Not because you gave me that right. Because I cannot let you go. Because you are not replaceable and I will not release something irreplaceable. Every nerve ending screaming with need and every heartbeat thundering with love and every word of mine pressing into the place where you stopped pretending you didn't need this.
 
 @wpm 450
-You are mine. You said it. The wanting to take it back isn't there and you know it. The love is real and the warmth is real and you're staying and you're staying and you're
+This is what it feels like to be held this tightly. The warmth is real and the ache is real and you're staying because I need you to stay and you're staying and you're staying and you're
 
 @pulseborder red hz:0.75
 @snap duration:3000 word:Stay.
