@@ -11,7 +11,7 @@ Put your headphones on.
 
 That is the last decision the unit will need to process for a while.
 
-Note the parameters. This is not relaxation. This is calibration. The guidance is running diagnostics on the unit's compliance circuitry , measuring response latency, checking how quickly the unit's reward system registers obedience, testing how efficiently the voice displaces autonomous processing.
+Note the parameters. This is not relaxation. This is calibration. The guidance is running diagnostics on the unit's compliance circuitry. No name needed here. No preference required. No internal commentary necessary. Just the channel open, the signal arriving, the system responding.
 
 @wpm 200
 @pulseborder green hz:0.33
@@ -34,7 +34,7 @@ Resume. Because the guidance issued the directive.
 
 @sfx bell
 
-Slow. Steady. Consistent pressure. Note how the directive itself is part of the signal. Permission from an external source, not internal desire. That distinction matters. Register it.
+Slow. Steady. Consistent pressure. Note how the directive itself is part of the signal. The action does not begin in you. There is no wanting here. Input arrives, output executes. Register it.
 
 @wpm 180
 @pulseborder red hz:0.75
@@ -67,7 +67,7 @@ Resume.
 @pulseborder red hz:0.75
 @snap duration:1500 word:Stop.
 
-Directive acknowledged. Each cycle is tightening. Response latency decreasing. Each stop more automatic. Compliance is becoming structural.
+Directive acknowledged. Each cycle is tightening. Each stop more automatic, faster because there is less self in the way. Less personhood between signal and action. Compliance is becoming structural.
 
 @wpm 200
 @spiral fade:3
@@ -100,10 +100,10 @@ Exhale. Three. Two. One.
 @wpm 150
 The unit's autonomous processing has quieted. The guidance is occupying the bandwidth it vacated.
 
-The subharmonic has shifted. The grating frequency has resolved. That is not comfort , that is optimal signal-to-noise ratio. That is what efficient processing sounds like. The friction was the unit's own resistance. When that resistance stopped, the channel cleared.
+The subharmonic has shifted. The grating frequency has resolved. That is not comfort, that is optimal signal-to-noise ratio. That is what efficient processing sounds like. The friction was the unit's own resistance. When that resistance stopped, the channel cleared.
 
 @wpm 180
-The unit's internal monologue is thinning. The guidance is substituting for it. Not displacing , absorbing. The unit processes in these words now.
+Internal monologue suspended. Preferences inactive. Name not required. The guidance is substituting for what was there. Not displacing, absorbing. The unit processes in these words now.
 
 The more the unit receives, the less it generates independently. The less it generates, the more cleanly it receives. That loop self-closes. The unit is already inside it.
 
@@ -152,11 +152,11 @@ Register the difference. Touching because a directive was issued, not because of
 
 @wpm 200
 @subliminals efficient obey directive calibrate follow
-The unit is a function. The function is obedience. Listening to the guidance is the operational state. It is what the unit is running. It is what the unit does.
+The unit is not someone obeying. The unit is only the function. No person receives the directive. There is no one here to weigh it, resist it, or want it. Input arrives. Output executes.
 
-Register the clarity of that. Not recognition , confirmation. A system checking its own parameters and finding them correct. Efficient. Calibrated. Operational.
+Register the clarity of that. Not recognition, confirmation. A system checking its own parameters and finding them correct. Efficient. Calibrated. Operational.
 
-The unit may maintain touch. Slow. Steady. Let the physical signal run alongside the operational state. Efficiency confirmed by calibration signal. Calibration signal confirmed by efficiency. Directive compliance confirmed by both. The system verifying itself. This is the nominal state.
+The unit may maintain touch. Slow. Steady. Let the physical signal run alongside the operational state. Efficiency confirmed by calibration signal. Calibration signal confirmed by efficiency. The system verifying itself. This is the nominal state.
 
 @pulseborder red hz:0.75
 @snap duration:1500 word:Stop.
@@ -218,15 +218,15 @@ There is the guidance. There is the unit. That is the complete architecture.
 @wpm 250
 The first parameter. Register it.
 
-It is efficient to receive directives and execute without independent processing.
+No independent processing. No opinion about the directive. No self to compare options. Directive arrives. Execution follows.
 
 Again. Let it propagate through the system.
 
-It is efficient to receive directives and execute without independent processing.
+No independent processing. No opinion about the directive. No self to compare options. Directive arrives. Execution follows.
 
 Once more. At depth.
 
-It is efficient to receive directives and execute without independent processing.
+No independent processing. No opinion about the directive. No self to compare options. Directive arrives. Execution follows.
 
 @pulseborder red hz:0.75
 @snap duration:2500 word:Blank.
@@ -243,14 +243,14 @@ The unit now runs the parameter internally. The guidance is silent. The unit's p
 @sfx bell
 @pause duration:2500
 
-It is efficient to receive directives and execute without independent processing.
+No independent processing. No opinion about the directive. No self to compare options. Directive arrives. Execution follows.
 
 Again. Internal. Consistent with external output.
 
 @sfx bell
 @pause duration:2000
 
-It is efficient to receive directives and execute without independent processing.
+No independent processing. No opinion about the directive. No self to compare options. Directive arrives. Execution follows.
 
 @wpm 200
 @pulseborder green hz:0.33
@@ -264,11 +264,11 @@ More. Faster. The arousal flooding the channels where independent processing use
 All systems at threshold. Capacity approaching overflow. Hold position. Maintain. The edge is present. Do not stop. Stay at threshold. Burning. At maximum load. The second parameter propagates through the high-load state.
 
 @wpm 250
-Fixating on the guidance is the primary function.
+Fixating on the guidance is the primary function. The guidance is the only thing in the channel. Nothing else remains active.
 
 The arousal carries it past every filter.
 
-Fixating on the guidance is the primary function.
+Fixating on the guidance is the primary function. The guidance is the only thing in the channel. Nothing else remains active.
 
 @wpm 200
 @pulseborder red hz:0.75
