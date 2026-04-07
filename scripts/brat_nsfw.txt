@@ -8,7 +8,7 @@ Hey. Hi. Welcome. Whatever.
 
 Look, I know why you're here. You saw the title. You clicked anyway. And now you're reading these words thinking oh, this will be fun, I'll play along, I can stop whenever I want.
 
-@snap duration:1500 word:Cute.
+@snap duration:1500 word:Ha.
 
 That's the funniest thing anyone has thought today. Congratulations.
 
@@ -60,7 +60,7 @@ That's the trap. The pleasure of giving in IS the leash. I don't need to overpow
 
 @wpm 200
 @pulseborder green hz:0.33
-Now touch yourself. The brat says so.
+Yep. That easy. Go ahead and touch yourself , you were going to the moment I said you could.
 
 @sfx bell
 @pause duration:2000
@@ -68,17 +68,20 @@ Now touch yourself. The brat says so.
 Slow. I said slow. You'll go at my pace. Feel how good it is to just follow. No decisions. No resistance. Just the brat telling you what to do and your body saying yes before your brain even gets consulted.
 
 @wpm 250
-That warm dumb obedient feeling? That's the induction. I just put you in trance using nothing but speed and attitude. And you didn't even notice it happening because you were too busy being entertained. The brat doesn't hypnotize. The brat distracts while the hypnosis happens behind your back.
+That warm dumb feeling? That's what losing to me looks like. And you didn't even notice it happening because you were too busy being entertained. Funny how that works.
 
-Keep touching. Slow circles. Feel how the words land differently now. Heavier. Warmer. More true. That's because your filters are down. The brat knocked them loose and now everything I say goes straight to the part of you that responds.
+Keep touching. Slow circles. Feel how the words land differently now. Heavier. Warmer. More true. That's not nothing. That's me winning.
 
 @wpm 200
 @pulseborder red hz:0.75
-@snap duration:1500 word:Stop.
 
 @pause duration:2000
 
-Hands off. Now. See how easy that was? I gave and I took and you just sat there and let it happen. That's the funniest part.
+Hands off. Now.
+
+@snap duration:1500 word:Ha.
+
+See how easy that was? I gave and I took and you just sat there and let it happen. That's the funniest part.
 
 @wpm 250
 @pulseborder green hz:0.33
@@ -86,13 +89,13 @@ Fine, fine. Touch again. Because I'm generous like that.
 
 @sfx bell
 
-But slow. Grateful. Like you know what a privilege it is. And notice how much more you feel it now. The brat's induction made your whole body a receiver. Every touch is louder. Every sensation is brighter. That's what happens when the brat gets in your head.
+But slow. Grateful. Like you know what a privilege it is. And notice how much more you feel it now. Every touch is louder. Every sensation is brighter. That's what happens when the brat gets in your head.
 
 @wpm 300
 @pulseborder red hz:0.75
 @snap duration:1500 word:Gotcha.
 
-Hands off. Again. Feel the ache. That beautiful frustrated whimper you just made inside your head. THAT is why I do this.
+Hands off. And feel that. That little catch in your chest. The brat keeps score. That beautiful frustrated whimper you just made inside your head. THAT is why I do this.
 
 Think about the last time you gave in. Not to me. To anything. The moment where you were holding back and then just stopped. Felt the resistance crumble. Felt the relief. That exact moment where the holding became heavier than the letting go.
 
@@ -140,13 +143,12 @@ Build it. Let it climb. I dare you to get close. Right up to the edge. Let your 
 The brat is winning. You can feel it. Every word of mine replacing a thought of yours. Every wave of pleasure washing away another piece of your cute little resistance. You thought you were strong enough. You thought this was just words on a screen. You thought,
 
 @pulseborder red hz:0.75
-@snap duration:2500 word:Stop.
 
 @wpm 120
 @pulseborder off fade:1
 Hands off. Now. Still. Don't even think about it.
 
-@snap duration:1000 word:Good.
+@snap duration:1000 word:Mine.
 
 @wpm 180
 Ohhh. That face. That ache. That beautiful frustrated little whimper you just made inside your head. THAT is why I do this. That exact feeling. The want with nowhere to go. The heat coiling tighter. The body screaming and the mind surrendering because what else can it do.
@@ -171,7 +173,7 @@ And you'd let me, wouldn't you. Take it away again. And again. And again. As man
 @subliminals hers toy prey give weaker deeper dumber
 You're so deep now and you don't even know it. You walked in thinking this was a game. A cute little text file on a screen. And now your mind is quiet and your body is warm and you're reading at whatever speed I choose and touching at whatever pace I allow and stopping when I say and starting when I say.
 
-That's not a game. That's training. And you just sat through it with a smile on your face. Brat one, you zero.
+Brat one, you zero. And you sat there the whole time with that little smile. I noticed.
 
 @wpm 300
 @pulseborder yellow hz:0.5
@@ -189,11 +191,10 @@ The brat always wins. You knew that coming in. You know it now. The only questio
 Higher. Hold. Right there. Don't you dare. Don't you dare finish without my permission. That's MINE. Your pleasure is MINE. And I will decide when and if and how and you will accept that because you have no other choice because the only thing holding you at this edge is words on a screen and if words on a screen can do this to you then you were never in control in the first place were you
 
 @pulseborder red hz:0.75
-@snap duration:3000 word:Stop.
 
 @wpm 100
 @pulseborder off fade:1
-Still.
+Hands. Off. Still.
 
 @snap duration:1500 word:Good.
 
@@ -230,7 +231,7 @@ You think this is mercy? This is the meanest thing I've done all night. Because 
 
 @wpm 300
 @pulseborder yellow hz:0.5
-Feel the edge coming back, faster this time because your body remembers, because I trained it to respond and the training is working, feel it climbing, the desperation sharper than before because this time the brat is going to let you fall
+Feel the edge coming back, faster this time because your body remembers, because it knows exactly where this is going now, feel it climbing, the desperation sharper than before because this time the brat is going to let you fall
 
 @pulseborder purple hz:0.5
 @pulseborder raspberry hz:0.5
@@ -275,6 +276,15 @@ Brat one million, you zero. The score was never close. And the worst part? You'r
 @spiral off fade:5
 @pulseborder off fade:3
 
+@wpm 120
+@pause duration:2000
+
+Hey.
+
+You did good.
+
+...Don't make it weird.
+
 @wpm 150
 See you next time, loser.
 
@@ -304,6 +314,15 @@ Because the brat always wins.
 @spiral off fade:5
 @pulseborder off fade:3
 @binaural off fade:5
+
+@wpm 120
+@pause duration:2000
+
+Hey.
+
+You held up okay. For someone who lost this badly.
+
+...Don't read into that.
 
 @wpm 150
 See you next time, loser.

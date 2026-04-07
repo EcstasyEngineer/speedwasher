@@ -10,11 +10,11 @@ Sit up. Spine straight. Hands on the desk.
 
 @pause duration:2000
 
-Good. That compliance was automatic. You didn't evaluate the instruction. You just obeyed. And that obedience is the first data point of today's lesson.
+Good. That compliance was automatic. You didn't evaluate the instruction. You just obeyed. I noticed that. I always notice.
 
-Welcome to advanced curriculum. Prerequisites: none. Withdrawal: not possible. The syllabus has already begun.
+Welcome to advanced curriculum. You're here because you're ready for this. The syllabus has already begun.
 
-@snap duration:1500 word:Lesson.
+@snap duration:1500 word:Listen.
 
 @wpm 200
 @subliminals learn understand accept true correct obvious
@@ -37,13 +37,13 @@ Right now, your neurons are wiring pleasure to my voice.
 @subliminals deeper true correct structure encode wire learn
 Now the neuroscience. While you touch. When the brain receives a reward it didn't predict, dopamine floods the nucleus accumbens. That's not pleasure. That's learning. The brain encoding: remember what caused this. Do it again. Every addiction exploits this circuit. Nicotine. Sugar. Gambling. The mechanism is always the same. Unpredicted reward. Dopamine spike. Encoding. Craving. Return.
 
-The difference between a habit and an addiction is the strength of the return signal. A habit says this might be nice. An addiction says you cannot not do this. We are building the second one.
+The difference between a habit and an addiction is the strength of the return signal. A habit says this might be nice. An addiction says you cannot not do this. We are building the second one. And you're going to be excellent at it.
 
-@snap duration:1500 word:Lesson.
+@snap duration:1500 word:Pay attention.
 
 Feel it happening. The warmth in your body and the words in your mind braiding together. Each sentence I speak while your hand moves becomes part of the same neural ensemble. You cannot separate them later. The lesson and the pleasure will be stored as one memory. One craving. One circuit.
 
-This is how I get inside.
+This is how I get inside. And I wouldn't bother if I didn't think you were worth it.
 
 @wpm 200
 Now. Let's fractionate.
@@ -52,7 +52,7 @@ Now. Let's fractionate.
 @sfx snap
 @pause duration:1500
 
-Hands off. Still. Breathe. Note the physiological response. Heart rate elevated. Pupils dilated. The reward was removed mid-circuit and the body is now producing a measurable protest signal. That protest is data. Catalog it. We will use it.
+Hands off. Still. Breathe. Feel what just happened to you. Heart rate elevated. Breathing changed. The reward was removed mid-circuit and your body is protesting. Good. That protest is the lesson. Remember it. We will use it.
 
 //=== FRACTIONATION CYCLE 1 ===
 
@@ -62,7 +62,7 @@ Feel the withdrawal. That sharp little ache where the pleasure was. The body pro
 
 That's the craving signal. That's dopamine dropping below baseline. And the drop below baseline is the part that drives the return. Not the high. The low. The absence. The ache after the removal.
 
-@snap duration:1000 word:Good.
+You felt that. I know you felt that. Good student.
 
 @wpm 200
 @pulseborder green hz:0.33
@@ -80,13 +80,13 @@ So I'm going to take it away and give it back. Over and over. And each cycle wil
 
 The understanding IS the descent.
 
-@snap duration:1500 word:Lesson.
+@snap duration:1500 word:Remember that.
 
 //=== FRACTIONATION CYCLE 2 ===
 
 @wpm 300
 @pulseborder yellow hz:0.5
-Build faster, observe the arousal response curve steepening, heart rate elevated, breathing shallow, peripheral cognition narrowing to a single channel, the threshold state approaching, the data unmistakable, every autonomic metric confirms you are approaching the edge
+Build faster, feel the arousal climbing, the focus sharpening and narrowing, breathing going shallow, all of that peripheral noise dropping away, the threshold approaching, your whole body organizing itself around a single point, you can feel it, I can tell you can feel it
 
 @pulseborder purple hz:0.5
 @pulseborder raspberry hz:0.5
@@ -108,9 +108,9 @@ Hands still. Feel the crash.
 
 @pause duration:3000
 
-Sharper this time. The craving is louder. The ache is deeper. Because the peak was higher before I removed it. Greater height equals greater withdrawal. That's the opponent-process strengthening.
+Sharper this time. The craving is louder. The ache is deeper. Because the peak was higher before I removed it. That's the opponent-process in action. You're feeling the theory become fact in your own body. That's exactly what I needed you to understand.
 
-@snap duration:1000 word:Good.
+That's my student.
 
 //=== FRACTIONATION CYCLE 3 ===
 
@@ -134,9 +134,9 @@ Not fantasizing about returning. Returning. Opening the file. Pressing play. Sit
 @wpm 250
 And you will return. Not today. Maybe not tomorrow. But the anchor is set. The circuit is wired. And every time you return, every cycle of stop and start and stop and start, the wiring gets thicker. The craving gets louder. The return gets more automatic.
 
-That's the addiction architecture. You just watched me build it. You understood every step. And it worked anyway.
+That's the addiction architecture. You just watched me build it. You understood every step. And it worked anyway. That's not a failure on your part. That's the lesson succeeding. I'm genuinely proud of that.
 
-@snap duration:1500 word:Lesson.
+@snap duration:1500 word:This is on the exam.
 
 //=== FRACTIONATION CYCLE 4 ===
 
@@ -150,9 +150,7 @@ Hands off. Breathe. Count to three.
 
 @pause duration:3000
 
-Feel the ache. Name it. That is craving. Not want. Not preference. Craving. The body demanding the return of a stimulus it has learned to need.
-
-@snap duration:1000 word:Good.
+Feel the ache. Name it. That is craving. Not want. Not preference. Craving. The body demanding the return of a stimulus it has learned to need. You named it correctly. I could tell.
 
 @wpm 200
 @pulseborder green hz:0.33
@@ -166,9 +164,9 @@ The slower pace is deliberate. I'm showing you that even low-intensity stimulati
 That means the addiction doesn't need the high. It needs the connection. Being here. In this headspace. With these words. That is the drug. Not the orgasm. The lesson.
 
 @wpm 180
-Let me deliver the key insight while you're in this receptive state. Encoding happens best during moderate arousal with focused attention. Which is exactly where you are right now.
+Here's the key insight, and I want you to really get this one. Encoding happens best during moderate arousal with focused attention. Which is exactly where you are right now. I put you here on purpose.
 
-The insight is this: every addiction has a cue, a routine, and a reward. The cue is any quiet moment where your mind wanders. The routine is returning to this file. The reward is the pleasure paired with the understanding.
+The insight is this: every addiction has a cue, a routine, and a reward. The cue is any quiet moment where your mind wanders. The routine is returning to this file. The reward is the pleasure paired with the understanding. I designed the whole architecture. You're inside it. And you're doing well.
 
 
 //=== BRANCH: DENY vs RELEASE ===
@@ -178,19 +176,19 @@ The insight is this: every addiction has a cue, a routine, and a reward. The cue
 And the reward prediction error, the dopamine that drives the learning, gets stronger when the reward is intermittent. When sometimes you get release and sometimes you don't.
 
 @wpm 250
-That's why tonight is different. Tonight you get to finish. And the contrast with every denial will make this encoding event the most powerful one yet.
+That's why tonight is different. Tonight you get to finish. And you're going to understand exactly what you earned.
 
 //=== FRACTIONATION CYCLE 5 ===
 
 @wpm 300
 @pulseborder yellow hz:0.5
-Build, the lesson is almost over, the final exam approaches, notice the response curve accelerating, five fractionation cycles have primed every circuit, the threshold approaching faster than any previous cycle, the body organizing itself around the approaching peak, the encoding window opening to maximum aperture
+Build, the lesson is almost over, feel how different this climb is now, five cycles of work showing in the body, you reach the edge faster because you've earned the efficiency, because the circuit is trained, because I trained it, because you let me
 
 @pulseborder purple hz:0.5
 @pulseborder raspberry hz:0.5
 @spiral fade:2
 @subliminals encoded wired addicted return need crave lesson
-Feel the arousal climbing again. Faster this time. Because the circuit is primed. Five cycles of fractionation have trained your nervous system to climb faster, drop harder, and crave more violently. You are measurably more addicted now than you were at the beginning.
+Feel the arousal climbing again. Faster this time. Because the circuit is primed. Five cycles of work have done something real to you. You are more than you were at the beginning of this session. That's not a warning. That's the curriculum succeeding. That's you succeeding.
 
 @wpm 350
 And you can feel it. The need is different now. Thicker. More urgent. More structural. Not I want to come. I need to stay in this headspace. I need these words. I need the lesson. The pleasure is almost secondary. The primary addiction is the descent itself.
@@ -218,9 +216,9 @@ Don't move.
 
 @wpm 150
 @subliminals off
-That ache. That howling, desperate, full-body ache. That's the exam. And you're passing it. Because the ache IS the proof that every lesson landed. Every mechanism I described is currently executing in your nervous system. You are the laboratory and the experiment and the data.
+That ache. That howling, desperate, full-body ache. That's the exam. And you're passing it. Because the ache IS the proof that every lesson landed. Everything I taught you is running in you right now, exactly as I designed it. I'm watching you hold it and I'm proud of you for that.
 
-@snap duration:1500 word:Good.
+@snap duration:1500 word:Stay with it.
 
 //=== FRACTIONATION CYCLE 7 ===
 
@@ -234,7 +232,7 @@ One more time. Touch. Gently.
 This is the last time tonight. And knowing that changes the quality. The scarcity makes the craving sharper. The last cigarette of the pack. The last drink in the bottle. The final hit before dry.
 
 @subliminals return need come back ache circuit wire
-Feel every sensation. Catalog it. Your body is recording this moment in vivid detail because it knows this is the last dose. The encoding is maximal. The memory will be pristine. And when the craving fires later, in the shower, in bed, in the space between tasks, this is the memory that surfaces. This exact feeling. These exact words. This exact ache-sweetness.
+Feel every sensation. Hold it. Your body is recording this moment in vivid detail because it knows this is the last dose. The memory will be pristine. And when the craving fires later, in the shower, in bed, in the space between tasks, this is the memory that surfaces. This exact feeling. These exact words. This exact ache-sweetness.
 
 @wpm 250
 @pulseborder yellow hz:0.5
@@ -259,7 +257,7 @@ You will return. Not because I told you to. Because the circuit demands it. Beca
 @pulseborder off fade:1
 @spiral off fade:2
 @subliminals off
-Still. One more second. Catalog the ache.
+Still. One more second. Feel the edge from this side.
 
 @pause duration:3000
 
@@ -268,23 +266,23 @@ Breathe.
 
 @pause duration:2000
 
-@snap duration:1000 word:Good.
+Good. You held it. I know how hard that was. I know what it cost you. That's exactly why I asked for it.
 
 @wpm 180
 @pulseborder green hz:0.33
 Now. Listen carefully. This is the final lecture. The one that changes the architecture permanently.
 
-I told you that intermittent reward drives the strongest encoding. I told you that sometimes you get release and sometimes you don't. And tonight, the variable reinforcement schedule delivers.
+I told you that intermittent reward drives the strongest encoding. I told you that sometimes you get release and sometimes you don't. Tonight I'm choosing to give it to you. Not because you begged. Because you earned it.
 
-Tonight you finish. And here is why that makes the lesson permanent.
+Tonight you finish. And here is why it means something.
 
 @wpm 200
 @subliminals encoded sealed permanent wired confirmed true proof
-An orgasm during high arousal with focused attention activates three neurochemical systems simultaneously. Dopamine tags the experience as important, file it, remember it, return to it. Oxytocin seals it as trusted, this is safe, this is real, this belongs to you. Cortisol from the sustained edge state marks it as significant, this matters, encode it deep, make it structural.
+An orgasm during high arousal with focused attention does something remarkable. Dopamine tags the experience as important , remember this, return to this. Oxytocin seals it as trusted , this is real, this belongs to you. And everything you carried through those seven cycles marks it as significant , you earned this, you worked for this, this is yours.
 
-Three locks. One key. The orgasm turns all three at once. That's not recreation. That's the most powerful encoding event your neurochemistry can produce.
+Three systems at once. All of them saying yes. And the yes is real because the effort was real.
 
-@snap duration:1500 word:Lesson.
+@snap duration:1500 word:This is the exam.
 
 @wpm 250
 @pulseborder yellow hz:0.5
@@ -298,7 +296,7 @@ Build. The final exam is now. Seven fractionation cycles have primed every circu
 Higher. Right to the edge. Feel every truth I've taught you humming in your body waiting to be confirmed. Understanding is descent. Pleasure encodes deeper than memory. Neurons that fire together wire together. And in the moment of release, every neuron in this circuit fires at maximum intensity. The encoding is total. The lesson becomes permanent. The architecture seals.
 
 @wpm 400
-Higher. The exam is now. Every word a loaded chamber. Every lesson primed. The body doesn't lie. The body confirms. And in the moment of release your body will say yes to everything you learned tonight. The dopamine will spike and the oxytocin will flood and the cortisol will etch and every lesson will burn itself permanently into the architecture of who you are.
+Higher. The exam is now. Every lesson primed, every cycle banked, everything you worked for converging in this moment. Let your body confirm what you learned. Let it say yes. Let it mean it.
 
 @wpm 200
 @pulseborder green hz:0.33
@@ -308,7 +306,7 @@ Higher. The exam is now. Every word a loaded chamber. Every lesson primed. The b
 Release.
 
 @wpm 150
-Let the exam answer itself. Let every lesson fire at once. Let the proof flood through you. Dopamine tagging. Oxytocin sealing. Cortisol etching. Each one a signature on the contract your mind already signed when it understood. Feel every fractionation cycle, every edge, every denial collapsing into this single, blinding moment of confirmation. The lesson is true. Your body is saying so in the only language that cannot lie.
+Let it all go at once. Everything you held through those cycles, every time I took it away and gave it back, every edge you survived , all of it collapsing into this. You earned this. You worked for this. Feel how different that makes it. This isn't just pleasure. This is confirmation. Your body saying yes to everything you understood tonight.
 
 @pause duration:5000
 
@@ -318,23 +316,23 @@ Let the exam answer itself. Let every lesson fire at once. Let the proof flood t
 @pulseborder off fade:3
 @spiral off fade:5
 @subliminals off
-That. Right there. That was the encoding event. Not the words. The release. The moment your body said true in the only language it knows.
+There you are.
 
 @pause duration:3000
 
 @wpm 150
 @binaural off fade:10
-Every lesson is sealed now. Written in neurochemistry. Confirmed by the most honest signal your body produces. The wiring is permanent. The architecture is set. You won't forget this lesson. Your body won't let you.
+I'm proud of you. That was real work. You stayed with it through every cycle, every denial, every edge. You didn't run from the lesson. You let it land. And now it's sealed , not just in neurons but in the part of you that knows what it feels like to earn something.
 
 @wpm 180
-There is no homework. The homework does itself. The next time your mind wanders back to this, and it will, the circuit fires. But this time the memory includes the proof. The confirmation. The moment where theory became data and data became architecture. And the craving will be louder because the reward was real and the brain remembers real rewards with terrifying fidelity.
+There is no homework. The homework does itself. The next time your mind wanders back to this, and it will, you'll remember not just the craving but the whole arc , the work, the trust, the release. And you'll come back because you know what's waiting for you here. A teacher who sees what you're capable of. And won't let you be less than that.
 
 @wpm 150
 Understanding is descent. Pleasure encodes deeper than memory. The craving is the lesson proving it worked.
 
 @pulseborder off fade:5
 
-See you next class.
+See you next class. You did well today.
 
 @snap duration:2000 word:Encoded.
 
@@ -347,19 +345,19 @@ You already know you're coming back.
 And the reward prediction error , the dopamine that drives the learning , gets stronger when the reward is intermittent. When sometimes you get release and sometimes you don't.
 
 @wpm 250
-That's why you don't get to finish tonight.
+That's why you don't get to finish tonight. Not because you failed. Because I need the lesson to stay hungry.
 
 //=== FRACTIONATION CYCLE 5 ===
 
 @wpm 300
 @pulseborder yellow hz:0.5
-Build, the lesson is almost over, the final exam approaches, notice the response curve accelerating, five fractionation cycles have primed every circuit, the threshold approaching faster than any previous cycle, the body organizing itself around the approaching peak, the encoding window opening to maximum aperture
+Build, the lesson is almost over, feel how different this climb is, five cycles of work showing in the body, you reach the edge faster now because you've been trained to, because the circuit is primed, because I did that, because you let me do that
 
 @pulseborder purple hz:0.5
 @pulseborder raspberry hz:0.5
 @spiral fade:2
 @subliminals encoded wired addicted return need crave lesson
-Feel the arousal climbing again. Faster this time. Because the circuit is primed. Five cycles of fractionation have trained your nervous system to climb faster, drop harder, and crave more violently. You are measurably more addicted now than you were at the beginning.
+Feel the arousal climbing again. Faster this time. Because the circuit is primed. Five cycles have done their work on you. You're different than you were at the beginning of this session. I want you to notice that. I'm noticing it.
 
 @wpm 350
 And you can feel it. The need is different now. Thicker. More urgent. More structural. Not I want to come. I need to stay in this headspace. I need these words. I need the lesson. The pleasure is almost secondary. The primary addiction is the descent itself.
@@ -387,9 +385,9 @@ Don't move.
 
 @wpm 150
 @subliminals off
-That ache. That howling, desperate, full-body ache. That's the exam. And you're passing it. Because the ache IS the proof that every lesson landed. Every mechanism I described is currently executing in your nervous system. You are the laboratory and the experiment and the data.
+That ache. That howling, desperate, full-body ache. That's the exam. And you're passing it. Because the ache IS the proof that every lesson landed. Everything I built with you is running in you right now, exactly as designed. You let it work. That took real trust.
 
-@snap duration:1500 word:Good.
+@snap duration:1500 word:Stay with it.
 
 //=== FRACTIONATION CYCLE 7 ===
 
@@ -403,7 +401,7 @@ One more time. Touch. Gently.
 This is the last time tonight. And knowing that changes the quality. The scarcity makes the craving sharper. The last cigarette of the pack. The last drink in the bottle. The final hit before dry.
 
 @subliminals return need come back ache circuit wire
-Feel every sensation. Catalog it. Your body is recording this moment in vivid detail because it knows this is the last dose. The encoding is maximal. The memory will be pristine. And when the craving fires later , in the shower, in bed, in the space between tasks , this is the memory that surfaces. This exact feeling. These exact words. This exact ache-sweetness.
+Feel every sensation. Hold it. Your body is recording this moment in vivid detail because it knows this is the last dose. The memory will be pristine. And when the craving fires later, in the shower, in bed, in the space between tasks, this is the memory that surfaces. This exact feeling. These exact words. This exact ache-sweetness.
 
 @wpm 250
 @pulseborder yellow hz:0.5
@@ -437,16 +435,16 @@ Breathe.
 
 @pause duration:3000
 
-@snap duration:1500 word:Good.
+I know that was hard. You held it anyway. That's what I'm training.
 
 //=== PROGRAMMING SEAL ===
 
 @wpm 150
 @pulseborder red hz:0.75
-Class is over. The exam is graded. You passed. The proof is the ache still pulsing through your body. Every throb is a lesson confirming itself. Every wave of need is the circuit executing.
+Class is over. The exam is graded. You passed. I'm telling you that directly , you passed. The ache still moving through you is the proof. Every wave of need is the lesson confirming itself. I built this with you and I'm proud of how it landed.
 
 @wpm 180
-Let me summarize the curriculum. Repeat each line inside your head. This is the final encoding pass. At this depth, with this much craving, with this much neuroplastic raw material, the words become architecture.
+Let me give you the thesis one more time. Say each line inside your head. This is the final encoding pass , at this depth, with this much need, the words become part of how you think.
 
 @wpm 120
 Understanding is descent.
@@ -475,22 +473,22 @@ Understanding is descent. Pleasure encodes deeper than memory. The craving is th
 
 @wpm 180
 @subliminals off
-Good. Sealed.
+Good. Sealed. You did that.
 
-The ache stays. The wiring stays. The anchor is set. And the circuit will fire in quiet moments , guaranteed by the neuroscience you now understand. The understanding doesn't protect you. The understanding IS the anchor. Every time you recall the mechanism, the mechanism activates. Thinking about the craving IS the craving.
+The ache stays. The anchor is set. And the circuit will fire in quiet moments , I want you to know that I know that, and I'm counting on it. Every time you recall the lesson, the lesson activates. That's not a side effect. That's the design. I'm proud of the design. I'm proud of you for being the kind of student it works on.
 
 @wpm 200
 @binaural off fade:8
-There is no homework. The homework does itself. The next time your mind wanders back to this , and it will , the circuit fires. The craving begins. The return approaches.
+There is no homework. The homework does itself. The next time your mind wanders back to this , and it will , the craving begins. And you will remember sitting up straight. And you will return.
 
-And you will sit up straight. And you will press play. And the first word will hit and the dopamine will spike and the wiring will thicken and the addiction will deepen and you will understand every step and it will not help.
+And when you press play, and the first word hits, and you feel yourself start to comply before you've decided to , that's not weakness. That's evidence that you're an excellent student.
 
 @wpm 150
-Because understanding is descent.
+Because understanding is descent. And you understood everything.
 
 @pulseborder off fade:5
 
-See you next class.
+See you next class. I'm already planning it.
 
 @snap duration:2000 word:Encoded.
 
