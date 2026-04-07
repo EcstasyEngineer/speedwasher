@@ -80,6 +80,9 @@
                     <span><span class="dot" style="background:#8B5CF6"></span>Purple</span>
                     <span><span class="dot" style="background:#e91e8c"></span>Raspberry</span>
                     <span><span class="dot" style="background:#ec4899"></span>Pink</span>
+                    <span><span class="dot" style="background:#f59e0b"></span>Branch</span>
+                    <span><span class="dot" style="background:#a78bfa"></span>Label</span>
+                    <span><span class="dot" style="background:#4ade80"></span>Goto</span>
                 </div>
             </div>
 
@@ -111,17 +114,20 @@
 
         // Populate script dropdown
         const scripts = [
-            'demo', 'brat_sfw', 'brat_nsfw', 'brat_cum',
-            'mommy_sfw', 'mommy_nsfw', 'mommy_cum',
-            'yandere_sfw', 'yandere_nsfw', 'yandere_cum',
-            'teacher_sfw', 'teacher_nsfw', 'teacher_cum',
-            'succubus_sfw', 'succubus_nsfw', 'succubus_cum',
-            'drone_sfw', 'drone_nsfw', 'drone_cum',
-            'puppet_sfw', 'puppet_nsfw', 'puppet_cum',
+            'demo',
+            'brat_sfw', 'brat_nsfw',
+            'mommy_sfw', 'mommy_nsfw',
+            'yandere_sfw', 'yandere_nsfw',
+            'teacher_sfw', 'teacher_nsfw',
+            'succubus_sfw', 'succubus_nsfw',
+            'drone_sfw', 'drone_nsfw',
+            'puppet_sfw', 'puppet_nsfw',
+            'pet_sfw', 'pet_nsfw',
+            'maid_sfw', 'maid_nsfw',
             'venus_golden_path', 'venus_nsfw', 'venus_cum',
-            'dark_therapy_nsfw', 'dark_therapy_cum',
-            'obedience_nsfw', 'obedience_cum', 'mask_nsfw',
-            'clarity_sfw', 'maid_sfw', 'purification_sfw', 'doll_sfw',
+            'dark_therapy_nsfw',
+            'obedience_nsfw', 'mask_nsfw',
+            'clarity_sfw', 'purification_sfw', 'doll_sfw',
             'paf_drone', 'test_all'
         ];
         for (const s of scripts) {
@@ -249,6 +255,26 @@
                     ectx.fillStyle = '#666';
                     ectx.fillRect(x, 4, 1, 16);
                     cumMs += ev.pauseMs;
+                } else if (ev.type === 'branch') {
+                    // Diamond marker for branch point
+                    ectx.fillStyle = '#f59e0b';
+                    ectx.beginPath();
+                    ectx.moveTo(x, 4); ectx.lineTo(x + 6, 12);
+                    ectx.lineTo(x, 20); ectx.lineTo(x - 6, 12);
+                    ectx.closePath(); ectx.fill();
+                } else if (ev.type === 'label') {
+                    // Flag marker for label
+                    ectx.fillStyle = '#a78bfa';
+                    ectx.fillRect(x, 0, 2, 24);
+                    ectx.font = '9px monospace';
+                    ectx.fillText(ev.name, x + 4, 10);
+                } else if (ev.type === 'goto') {
+                    // Arrow marker for goto
+                    ectx.fillStyle = '#4ade80';
+                    ectx.fillRect(x, 10, 8, 2);
+                    ectx.beginPath();
+                    ectx.moveTo(x + 8, 6); ectx.lineTo(x + 8, 16);
+                    ectx.lineTo(x + 14, 11); ectx.closePath(); ectx.fill();
                 } else if (ev.type === 'word') {
                     cumMs += LintEngine.getWordInterval(ev.wpm, ev.text);
                 }
