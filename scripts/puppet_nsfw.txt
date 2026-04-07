@@ -220,7 +220,7 @@ The strings are yours. For now.
 @label deny
 @wpm 250
 @pulseborder yellow hz:0.5
-This is the edge, systems approaching threshold, the empty vessel registering escalating input, no name to process the sensation, no identity to filter the intensity, just raw signal climbing through hollow architecture, override approaching, systems at maximum, the threshold imminent
+The edge. You feel it. Without a name to call it, without a self to brace against it. Just sensation arriving at a body with no one home. Warmth without an owner. Pressure without a subject. The edge of something with no one to fall over it.
 
 @pulseborder purple hz:0.5
 @subliminals empty hollow vessel puppet light nothing no one

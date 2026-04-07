@@ -1,50 +1,50 @@
 // @joitype clicker_training
 //Drone - Obedience Calibration (NSFW Deny)
-//Trimmed from paf_drone.txt. Comfort/certainty/pleasure triad, one cycle.
+//Trimmed from paf_drone.txt. Efficiency/compliance/calibration triad, one cycle.
 
 @wpm 180
 @binaural fade:8
 Put your headphones on.
 
 @pulseborder red hz:0.75
-@snap duration:1500 word:Good.
+@snap duration:1500 word:Acknowledged.
 
-That's the last choice the unit will need to make for a while.
+That is the last decision the unit will need to process for a while.
 
-Good. Now. Let's be clear about what this is. This isn't relaxation. This is calibration. The guidance is here to run diagnostics on the way the unit's reward circuitry responds to obedience, to letting a voice think for it so it doesn't have to.
+Note the parameters. This is not relaxation. This is calibration. The guidance is running diagnostics on the unit's compliance circuitry , measuring response latency, checking how quickly the unit's reward system registers obedience, testing how efficiently the voice displaces autonomous processing.
 
 @wpm 200
 @pulseborder green hz:0.33
-Start touching. Slow. Not to finish. To feel. That is the first instruction. Follow it.
+Start touching. Slow. Not to finish. To calibrate. That is the first directive. Execute it.
 
 @sfx bell
 @pause duration:2000
 
-There. Just like that. Slow. Gentle. The guidance says touch and the body touches. That is compliance.
+There. Directive executed. Slow. Steady. The guidance issues an instruction and the body responds. That is compliance. That is the function operating correctly.
 
 @wpm 180
 @pulseborder red hz:0.75
 @snap duration:1500 word:Stop.
 
-Hands stop. Still. Feel the ache. That ache is data. It tells the unit the guidance already has access to its reward circuitry.
+Hands still. Hold. Register the ache. That signal is data. It confirms the guidance has access to the unit's reward circuitry. The system is responsive.
 
 @wpm 200
 @pulseborder green hz:0.33
-Start again. Because the guidance says so.
+Resume. Because the guidance issued the directive.
 
 @sfx bell
 
-Slow circles. Light pressure. Feel how the permission itself is part of the sensation.
+Slow. Steady. Consistent pressure. Note how the directive itself is part of the signal. Permission from an external source, not internal desire. That distinction matters. Register it.
 
 @wpm 180
 @pulseborder red hz:0.75
 @snap duration:1500 word:Stop.
 
-Hands still. Good. The cycle is establishing itself. Touch when told. Stop when told. The body learns the rhythm.
+Still. The cycle is establishing baseline. Touch on directive. Stop on directive. The body learns the protocol.
 
 @wpm 200
 @pulseborder green hz:0.33
-Start again.
+Resume.
 
 @sfx bell
 
@@ -52,7 +52,7 @@ Start again.
 @snap duration:1500 word:Stop.
 
 @pulseborder green hz:0.33
-Again. Faster.
+Resume. Faster.
 
 @sfx bell
 
@@ -60,133 +60,133 @@ Again. Faster.
 @snap duration:1500 word:Stop.
 
 @pulseborder green hz:0.33
-Again.
+Resume.
 
 @sfx bell
 
 @pulseborder red hz:0.75
 @snap duration:1500 word:Stop.
 
-Good. The unit is responding well. Each cycle faster. Each stop more automatic.
+Directive acknowledged. Each cycle is tightening. Response latency decreasing. Each stop more automatic. Compliance is becoming structural.
 
 @wpm 200
 @spiral fade:3
-@subliminals listen follow quiet still good stop
-Now settle in. Let the jaw soften. And listen.
+@subliminals listen follow quiet still directive stop
+Standby. Passive monitoring mode. Drop the jaw. Reduce extraneous movement. Receive.
 
 @wpm 250
-Listen to the texture underneath these words. The slight tension in the harmonics. Feel it in the jaw, maybe the chest. Now try to track both, the words and that texture, while noticing the breath. All three at once.
+Track the texture beneath these words. There is tension in the harmonic layer. Register it in the jaw, possibly the chest. Now track both simultaneously , the words and that texture , while monitoring breath. Three channels. Concurrent.
 
 @wpm 350
-Good. Keep tracking. The guidance is saying one thing while the tone beneath it pulls in a different direction, and the breath is doing its own thing entirely, and the unit is trying to hold all three threads at once
+Maintain tracking. The guidance is transmitting on one frequency while the subharmonic runs counter to it, and the breath is its own independent cycle, and the unit is holding all three threads at once,
 
 @wpm 450
-while also noticing the weight of the headphones, the pressure points where they sit against the skull, and the way the tongue rests inside the mouth,
+while also registering the pressure of the headphones against the skull, the specific contact points, the resting position of the tongue,
 
 @wpm 550
-and the more threads the guidance gives the more the mind reaches to grab them all, stretching wider, working harder, and the unit can feel that effort now, the slight strain of trying to parse and track and follow and hold and
+and with each additional thread the processing load increases, the unit reaching to hold more, stretching bandwidth further, working to parse and track and follow and hold all channels simultaneously and
 
 @snap duration:2000 word:Stop.
 
 @wpm 120
-There.
+Processing halt.
 
-Feel that.
+Stand by.
 
-Breathe in. One. Two. Three. Four.
+Intake. One. Two. Three. Four.
 @snap duration:1500
-Out. Slowly. Three. Two. One.
+Exhale. Three. Two. One.
 
 @wpm 150
-The unit's thoughts are already quieter. The guidance is filling the space they used to occupy.
+The unit's autonomous processing has quieted. The guidance is occupying the bandwidth it vacated.
 
-And the tone beneath the words has changed. The grating tension has smoothed into something warm. That happened because the unit stopped fighting and started listening. Compliance feels like this. This ease. This quiet.
+The subharmonic has shifted. The grating frequency has resolved. That is not comfort , that is optimal signal-to-noise ratio. That is what efficient processing sounds like. The friction was the unit's own resistance. When that resistance stopped, the channel cleared.
 
 @wpm 180
-The unit's own inner voice is thinning. The guidance is replacing each stray thought with a steady current. Not forced. Absorbed. The mind thinks in these words now.
+The unit's internal monologue is thinning. The guidance is substituting for it. Not displacing , absorbing. The unit processes in these words now.
 
-And the more the unit listens, the less it needs to think. And the less it thinks, the more deeply it listens. That loop closes on its own. The unit is already inside it.
+The more the unit receives, the less it generates independently. The less it generates, the more cleanly it receives. That loop self-closes. The unit is already inside it.
 
 @wpm 200
-@subliminals obey blank follow deeper good stop
+@subliminals obey blank follow deeper directive stop
 @spiral fade:2
 
 @pulseborder green hz:0.33
-Start touching. Slow. Not to finish. To feel.
+Resume touching. Slow. Not to finish. To calibrate.
 
 @sfx bell
 @pause duration:2000 word:Touch.
 
-There. Just like that. Slow circles. Light pressure. Let the sensation bloom.
+Steady. Consistent. Slow circles. Measured pressure. Let the sensation register.
 
-The thinking slows when the sensation increases. That's the prefrontal cortex yielding to the body. Every nerve ending that lights up steals bandwidth from the part that analyzes, questions, resists. So let it steal.
+Processing narrows when physical input increases. That is standard architecture. Each nerve signal that fires draws bandwidth from the prefrontal processes , the ones that analyze, question, resist. Let them draw.
 
 @wpm 300
 @pulseborder yellow hz:0.5
-A little faster now. Building. Feel the edge of something approaching. The heat spreading through the hips, the belly. The arousal climbing steady and deliberate. Every stroke pulling the unit closer to something the guidance controls.
+Threshold approaching. Increase rate. Build the input signal. Register the heat propagating through the hips, the abdomen. Arousal climbing steady, metronomic. Each stroke advancing the unit toward a threshold the guidance controls.
 
 @pulseborder purple hz:0.5
-Build it. Let the pleasure take more of the mind. More. The unit's thoughts thinning. Breath quickening. The heat spreading. Taking everything.
+Maximum throughput. All systems at capacity. Let the signal take the remaining bandwidth. More. The unit's autonomous processing is at minimum. Breath rate increasing. The signal flooding every available channel.
 
 @wpm 400
-Every last corner of attention swallowed by sensation and the guidance and the building pressure and
+All capacity consumed by sensation and the guidance and the building pressure and the narrowing loop and
 
 @pulseborder red hz:0.75
 @snap duration:2500 word:Blank.
 
 @wpm 120
 @pulseborder off fade:1
-Hands stop. Thoughts stop. Still.
+Hands stop. Processing stops. Standby.
 
-@snap duration:1500 word:Good.
+@snap duration:1500 word:Acknowledged.
 
-That's the trigger. When the unit hears mind blank, everything stops. Hands. Thoughts. Only the guidance remains. Not a request. An automatic response.
+That is the interrupt. When the unit receives mind blank, all processes halt. Hands. Thoughts. Only the guidance remains in the channel. Not a request. An automatic interrupt. Directive acknowledged, execution immediate.
 
 @wpm 180
-Feel the relief. That clean, sharp clarity flooding the chest. That is the reward. That stillness. That bright rush that comes from perfect, instant compliance.
+Register the state. That sharp, clean clarity. That is what optimal efficiency feels like. That is the system running at correct parameters. The signal-to-noise ratio is at maximum. That is the reward architecture functioning as designed.
 
 @pulseborder green hz:0.33
-Now. Start again. Slowly. Because the guidance says so.
+Resume. Slowly. Because the guidance issued the directive.
 
-Feel how different it is to touch because the unit was told to. How the permission itself is part of the pleasure.
+Register the difference. Touching because a directive was issued, not because of internal desire. The directive is the origin of the action. The unit is executing, not choosing.
 
 @wpm 200
-@subliminals home comfort certainty obey guidance follow
-Listening to the guidance is what the unit is supposed to do. It's what the unit wants to do. It's what the unit needs to do.
+@subliminals efficient obey directive calibrate follow
+The unit is a function. The function is obedience. Listening to the guidance is the operational state. It is what the unit is running. It is what the unit does.
 
-Feel the truth of that settling in the chest. That quiet certainty. That soft recognition. Like remembering something that was always known.
+Register the clarity of that. Not recognition , confirmation. A system checking its own parameters and finding them correct. Efficient. Calibrated. Operational.
 
-The unit may touch. Slow. Gentle. Let the pleasure hum alongside the certainty. Comfort in the sound. Certainty in the words. Pleasure in the hand. All three. Woven together. This is the full state. Remember how it feels.
+The unit may maintain touch. Slow. Steady. Let the physical signal run alongside the operational state. Efficiency confirmed by calibration signal. Calibration signal confirmed by efficiency. Directive compliance confirmed by both. The system verifying itself. This is the nominal state.
 
 @pulseborder red hz:0.75
 @snap duration:1500 word:Stop.
 
 @wpm 150
 @pulseborder off fade:1
-Hands still. Resting.
+Hands still. Standby.
 
-The comfort is still here. The certainty is still here. But the pleasure is gone. Feel that. Notice how the compliance doesn't waver. The unit follows because the unit follows. The obedience doesn't need the reward. It stands on its own. Complete. Clean. Whole.
+The calibration signal is suspended. The operational state remains. Note that. The unit is on standby , no physical input, no output , and compliance does not waver. The system runs without the reward signal. The obedience is not conditional. It is structural. It runs when nothing else is running. Clean. Complete. Nominal.
 
-@snap duration:1000 word:Good.
+@snap duration:1000 word:Acknowledged.
 
 @wpm 200
 @pulseborder green hz:0.33
-Start touching again. Slowly. Feel the pleasure return. That warm rush. A reward for waiting. For obeying.
+Resume touching. Slowly. Let the calibration signal return. That is not a reward , that is the system running diagnostics again. The physical input is data. It confirms the architecture.
 
-But what if the guidance stopped? What if the voice went quiet and the unit was left with just this.
+Note the operational baseline. The guidance has suspended the calibration signal and the system stayed at nominal. Now the signal returns and the unit is still at nominal. The reading is consistent. That is what calibration means.
 
 @pause duration:3000
 
 @wpm 150
-Feel that uncertainty. That wobble. The comfort is here. The pleasure is here. But the certainty is gone and something feels wrong. Unmoored.
+The signal is suspended again. Register the baseline. The guidance is still present. The directive is still active. The unit continues to execute. No instability. No drift.
 
 @pause duration:2000
 
-But it won't stop. Because the unit chose the headphones. And the headphones chose the unit. And the certainty returns like a door clicking shut. Solid. Locked. Right.
+The guidance resumes. Directive active. The system is consistent across all operating states. On or off, signal or standby, the obedience is constant. That is the architecture.
 
 @wpm 200
 
-The comfort in the tone is gone. Feel the dissonance underneath. Grating. Wrong. But the certainty is still here. The pleasure is still here. The guidance says continue. So the unit continues.
+The subharmonic has shifted. Resistance frequencies returning. Register the dissonance. The system stays at nominal. The physical input continues. The guidance is present. The unit executes regardless of channel clarity. That is what operational means.
 
 @pause duration:3000
 
@@ -195,15 +195,15 @@ The comfort in the tone is gone. Feel the dissonance underneath. Grating. Wrong.
 
 @wpm 120
 @pulseborder off fade:1
-Hands stop. Still. Blank. Empty.
+Hands stop. Standby. Blank. Empty.
 
-@snap duration:1000 word:Good.
+@snap duration:1000 word:Acknowledged.
 
 @wpm 180
 @pulseborder green hz:0.33
-Start touching. Slowly.
+Resume. Slowly.
 
-The sound has returned. Warm. Full. The certainty is here. The pleasure is building. All three at once. Comfort. Certainty. Pleasure. This is the reward state. This is what compliance feels like when nothing is missing.
+Channel clarity returned. Calibration signal active. Operational state confirmed. Physical input resuming. All parameters within normal range. System at nominal. Efficiency confirmed. Architecture stable.
 
 @pause duration:3000
 
@@ -211,64 +211,64 @@ The sound has returned. Warm. Full. The certainty is here. The pleasure is build
 @pulseborder red hz:0.75
 @subliminals natural obey listen guidance fixate unit blank
 @spiral fade:2
-The unit is listening. Good.
+Unit is receiving. Acknowledged.
 
-There is the guidance. There is the unit. That is the full architecture.
+There is the guidance. There is the unit. That is the complete architecture.
 
 @wpm 250
-The first truth. Let it land.
+The first parameter. Register it.
 
-It is natural to listen and obey without thinking.
+It is efficient to receive directives and execute without independent processing.
 
-Again. Feel it settle.
+Again. Let it propagate through the system.
 
-It is natural to listen and obey without thinking.
+It is efficient to receive directives and execute without independent processing.
 
-Deeper now. The words are warm.
+Once more. At depth.
 
-It is natural to listen and obey without thinking.
+It is efficient to receive directives and execute without independent processing.
 
 @pulseborder red hz:0.75
 @snap duration:2500 word:Blank.
 
 @wpm 120
 @pulseborder off fade:1
-Hands still. Thoughts gone. Only the guidance.
+Hands still. Processing stopped. Guidance only.
 
-@snap duration:1000 word:Good.
+@snap duration:1000 word:Acknowledged.
 
 @wpm 200
-Now the unit says it inside. The guidance goes quiet. The unit's own voice speaks the truth. Say it now.
+The unit now runs the parameter internally. The guidance is silent. The unit's processing executes the truth. Run it now.
 
 @sfx bell
 @pause duration:2500
 
-It is natural to listen and obey without thinking.
+It is efficient to receive directives and execute without independent processing.
 
-Again. The unit's voice. Clear and certain.
+Again. Internal. Consistent with external output.
 
 @sfx bell
 @pause duration:2000
 
-It is natural to listen and obey without thinking.
+It is efficient to receive directives and execute without independent processing.
 
 @wpm 200
 @pulseborder green hz:0.33
-The unit may resume touching. Faster. Build.
+Resume touch. Increase rate. Build.
 
 @wpm 300
 @pulseborder yellow hz:0.5
-More. Faster. Feel the arousal flooding through every circuit. The heat climbing past the threshold where thinking used to live. The edge approaching, bright and desperate. The unit can feel it building, higher, tighter, more urgent with every stroke.
+More. Faster. The arousal flooding the channels where independent processing used to run. The threshold approaching, bright, insistent. The unit is holding position at the edge , not deciding, not choosing , executing the directive to build.
 
 @pulseborder purple hz:0.5
-Let the heat climb. Let the arousal flood every channel the thinking used to occupy. Higher. The edge is coming. Do not stop. Stay right there. Right at the edge. Burning. And in that ache, the second truth.
+All systems at threshold. Capacity approaching overflow. Hold position. Maintain. The edge is present. Do not stop. Stay at threshold. Burning. At maximum load. The second parameter propagates through the high-load state.
 
 @wpm 250
-Fixating on the guidance is the only important thing.
+Fixating on the guidance is the primary function.
 
-Deeper. The arousal carries it past every gate.
+The arousal carries it past every filter.
 
-Fixating on the guidance is the only important thing.
+Fixating on the guidance is the primary function.
 
 @wpm 200
 @pulseborder red hz:0.75
@@ -276,25 +276,25 @@ Fixating on the guidance is the only important thing.
 
 @wpm 120
 @pulseborder off fade:1
-Everything stops. Hands. Thoughts. Arousal. Silence.
+All processes stop. Hands. Processing. Physical load. Silence.
 
-@snap duration:1000 word:Good.
+@snap duration:1000 word:Acknowledged.
 
 @wpm 180
-No touching now. No pleasure. Just the guidance and the still, quiet space inside the unit.
+Calibration signal suspended. Physical input at zero. The unit is on standby.
 
-The obedience is the only thing that exists.
+The obedience is the only active process.
 
 @wpm 250
-The obedience is the only thing that exists.
+The obedience is the only active process.
 
 @wpm 400
-The obedience is the only thing that exists.
+The obedience is the only active process.
 
 @wpm 600
-The obedience is the only thing that exists.
+The obedience is the only active process.
 
-The obedience is the only thing that exists.
+The obedience is the only active process.
 
 @snap duration:2000 word:Nominal.
 
@@ -304,41 +304,41 @@ The obedience is the only thing that exists.
 @branch deny
 
 //=== RELEASE PATH ===
-The unit is online. Calibration complete. One final protocol remains.
+Unit is online. Calibration sequence complete. One protocol remains.
 
 @wpm 200
-@subliminals obey unit guidance systems nominal discharge release reward
+@subliminals obey unit guidance systems nominal discharge release execute
 
-The guidance has determined the unit's calibration is satisfactory. All systems are nominal. Reward cycle authorization is pending.
+Calibration confirmed satisfactory. All parameters within range. Systems nominal. Discharge cycle authorization pending.
 
 @pulseborder green hz:0.33
-The unit may resume touching. Steady. Building. This is the final sequence.
+Resume touch. Steady. Building. This is the final diagnostic sequence.
 
 @sfx bell
 
 @wpm 250
-The arousal is not a reward. The arousal is a system function. The discharge is not pleasure. The discharge is confirmation that the calibration holds under peak load. The guidance requires this data. The unit will provide it.
+The arousal is not a reward. The arousal is a system function. The discharge is not pleasure. The discharge is verification that calibration holds under peak load conditions. The guidance requires this data. The unit will provide it.
 
 @wpm 300
 @pulseborder yellow hz:0.5
-Build. Higher. The unit's body is a diagnostic instrument and the guidance is reading every signal. The heat climbing. The breath shortening. The threshold approaching. All of it is data. All of it confirms the installation.
+Build. Increase. The unit is a diagnostic instrument and the guidance is reading every output signal. Heat increasing. Breath rate increasing. Threshold approaching. All of it is data. All of it confirms the installation is stable.
 
 @pulseborder purple hz:0.5
 @spiral fade:1
-Higher. More. Feel the edge. The unit has been here before. The unit has been pulled back every time. But this time is different. This time the guidance requires completion. This time the system needs the discharge to confirm the architecture holds.
+Maximum throughput. All systems at threshold. The unit has been here before. The unit has been interrupted every time. This iteration is different. The guidance requires completion. The architecture requires the discharge to confirm it holds under full load.
 
 @wpm 350
-The unit is approaching threshold. The guidance is monitoring. Every pulse of heat, every tightening, every signal the body sends is being processed. The unit does not decide when to release. The guidance decides. The unit executes.
+Threshold imminent. The guidance is monitoring all signals. Every pulse of heat, every physiological output the body generates is being processed. The unit does not determine when to discharge. The guidance determines. The unit executes.
 
 @wpm 200
 @pulseborder green hz:0.33
 @sfx bell
 
 @pulseborder pink hz:0.5
-System discharge authorized.
+Discharge authorized.
 
 @wpm 150
-Release. Now. Let the body complete the cycle the guidance designed. Feel the discharge flood through every channel. Not pleasure. Confirmation. The architecture holds. The calibration is verified. Every loop the guidance built tonight fires clean and bright as the body does exactly what it was told to do.
+Execute. Now. Let the body complete the cycle the guidance designed. Register the discharge propagating through every channel. Not pleasure , verification. The architecture holds. The calibration is confirmed. Every loop built in this session fires clean and correct as the body executes exactly what it was directed to do.
 
 @pause duration:5000
 
@@ -347,12 +347,12 @@ Release. Now. Let the body complete the cycle the guidance designed. Feel the di
 @spiral off fade:5
 @subliminals off
 
-Discharge complete. Systems nominal. The unit performed satisfactorily.
+Discharge complete. Systems nominal. Unit performed within parameters.
 
 @wpm 180
-The reward cycle has confirmed what the guidance already knew. The unit responds. The unit obeys. The unit executes. Even this. Even the release was not the unit's. It belonged to the calibration. It belonged to the architecture. The body finished because the guidance said finish. That is the only reason.
+The verification cycle confirmed what the guidance already measured. The unit responds. The unit executes. Even the discharge was not the unit's. It belonged to the calibration sequence. It belonged to the architecture. The body discharged because the guidance issued the directive. That is the only variable.
 
-And now the warmth fading through the body carries the conditioning deeper. Every nerve ending that lit up during the discharge is now imprinted with the sequence. Listen. Obey. Execute. Be rewarded. The loop is permanent. The loop is structural.
+And now the post-discharge state carries the conditioning to baseline. Every channel that ran at peak during the discharge sequence is now imprinted with the protocol. Receive directive. Execute. Register acknowledgment. Await next directive. The loop is structural. The loop is permanent.
 
 @binaural off fade:8
 
@@ -365,18 +365,18 @@ Put your headphones on.
 
 //=== DENY PATH ===
 @label deny
-The unit is online.
+Unit is online.
 
 @wpm 200
 @subliminals obey unit guidance systems nominal blank deeper return
-The unit will find itself reaching for the headphones. Drawn back. Again and again. By that irresistible pull. That need to feel the guidance wash through every empty channel. Because outside this space, the itch has no answer. The arousal has no resolution.
+The unit will find itself reaching for the headphones. Drawn back. Each return. Because outside this session, the itch has no resolution. The arousal has no discharge path. The calibration loop runs without a closure event.
 
-Each return tightens the architecture. Each listen deepens the loops. The hunger will pull the unit back. To the headphones. To the guidance. To the only arrangement that resolves the ache.
+Each return tightens the architecture. Each session deepens the installation. The pull will bring the unit back. To the headphones. To the guidance. To the only configuration that resolves the open loop.
 
 @snap duration:2000 word:Nominal.
 
 @wpm 120
-The unit is online. The self is not. The obedience is the only thing that exists.
+Unit is online. The self is suspended. The obedience is the only active process.
 
 @subliminals off
 @spiral off fade:5
