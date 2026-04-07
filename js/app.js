@@ -798,6 +798,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             grid.appendChild(card);
         });
+
+        // Toggle NSFW dropdown options visibility
+        const nsfwGroups = scriptDropdown.querySelectorAll('.nsfw-only');
+        nsfwGroups.forEach(g => { g.style.display = nsfwCheckbox.checked ? '' : 'none'; });
     }
 
     async function loadArchetype(archetype) {

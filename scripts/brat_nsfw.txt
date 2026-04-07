@@ -8,7 +8,7 @@ Hey. Hi. Welcome. Whatever.
 
 Look, I know why you're here. You saw the title. You clicked anyway. And now you're reading these words thinking oh, this will be fun, I'll play along, I can stop whenever I want.
 
-@snap duration:1500 word:Ha.
+@sfx bell
 
 That's the funniest thing anyone has thought today. Congratulations.
 
@@ -56,7 +56,7 @@ There. Feel that. That dizzy warm feeling. That's not your imagination. That's w
 
 That's the trap. The pleasure of giving in IS the leash. I don't need to overpower you. I just need to make losing feel better than winning. And judging by that warm stupid feeling in your chest right now? I'm winning.
 
-@snap duration:1500 word:Easy.
+@snap duration:1500 word:Mine.
 
 @wpm 200
 @pulseborder green hz:0.33
@@ -79,7 +79,7 @@ Keep touching. Slow circles. Good, that's the face I wanted. That exact look. Wa
 
 Hands off. Now.
 
-@snap duration:1500 word:Ha.
+@sfx bell
 
 See how easy that was? I gave and I took and you just sat there and let it happen. That's the funniest part.
 
@@ -196,7 +196,7 @@ Higher. Hold. Right there. Don't you dare. Don't you dare finish without my perm
 @pulseborder off fade:1
 Hands. Off. Still.
 
-@snap duration:1500 word:Good.
+@snap duration:1500 word:Stay.
 
 @wpm 150
 @spiral off fade:3
@@ -288,7 +288,7 @@ You did good.
 @wpm 150
 See you next time, loser.
 
-@snap duration:2000 word:Always.
+@snap duration:2000 word:Mine.
 
 @wpm 100
 The brat always wins. And now you have the proof.
@@ -308,7 +308,7 @@ Waiting. Smiling. Ready to win again.
 
 Because the brat always wins.
 
-@snap duration:2000 word:Always.
+@snap duration:2000 word:Mine.
 
 @subliminals off
 @spiral off fade:5
