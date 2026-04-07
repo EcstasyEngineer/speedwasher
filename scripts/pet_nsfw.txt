@@ -68,7 +68,7 @@ Touch yourself. Gently. Slowly. Like warmth finding its way inward.
 
 There. Good. Just like that.
 
-Feel how simple that was. No preparation required. No performance. I said come and you came. I said touch and you touched. And the body already knew how to do it, already softened into the instruction, because instructions from someone who loves you feel different from demands. They feel like relief.
+Feel how simple that was. No preparation required. No performance. Good pet follows warm voice. Easy to listen when it feels safe. No figuring out, just follow and melt.
 
 @wpm 180
 
@@ -95,7 +95,7 @@ You are safe. You are here. You are good.
 
 Just like that.
 
-Keep touching. Slowly. Let the warmth move through you naturally. There's no hurry. I'm not going anywhere. You're not going anywhere. This space is small and warm and quiet and it belongs to both of us.
+Keep touching. Slowly. Let the warmth move through you naturally. There's no hurry. I'm not going anywhere. You're not going anywhere. This is your warm spot. This is where you curl up. This is where I keep you close.
 
 //=== EDGE 1 ===
 
@@ -148,7 +148,7 @@ Good. There you are.
 
 Breathe. Feel the warmth settle. That's not loss. That's just the wave resting before it moves again. The warmth doesn't go anywhere. Neither do I.
 
-@snap duration:1500 word:Good.
+@snap duration:1500 word:Come.
 
 //=== RECOVERY 1 ===
 
@@ -166,7 +166,7 @@ You held that so well. You felt the build and you stayed and you came back. That
 
 @wpm 190
 
-Isn't it strange how easy it is? When the world is this small. When there's nothing to figure out, nothing to manage, nothing to be except present and warm and exactly yourself, except simpler. The simplest version of yourself is still you. Just quieter. Just softer. Just here.
+Just softer. Just closer. Just here.
 
 @wpm 170
 @sfx bell
@@ -186,7 +186,7 @@ Let it build again. Your body knows how now.
 @pulseborder yellow hz:0.5
 @subliminals warm soft small good safe stay here
 
-Feel the warmth gathering faster this time. Because small creatures learn quickly. Because you're already soft and open and the warmth has an easy path through you now.
+Feel the warmth gathering faster this time. Your body knows this now. Good pet catches the rhythm fast. Already soft and open, the warmth has an easy path through you.
 
 Good. Almost.
 
@@ -225,7 +225,7 @@ Breathe. Let the brightness settle back into warmth. Feel how the whole body sof
 
 You did everything right. You were here. You were warm. You stayed.
 
-@snap duration:1500 word:Good.
+@snap duration:1500 word:Here.
 
 //=== RECOVERY 2 + PROGRAMMING ===
 
@@ -242,7 +242,7 @@ Listen while you're in this soft place. This is important, even if it feels very
 
 @wpm 190
 
-You exist here without having to earn it. You are warm without having to generate the warmth from scratch every time. You are good not because of what you've accomplished or how well you've performed or how impressive you managed to be today. You are good because you are here. Because you came when called. Because you stayed. Because you let the warmth in.
+You exist here without having to earn it. You are warm without having to generate the warmth from scratch every time. You are good not because of what you've accomplished or how well you've performed or how impressive you managed to be today. You were already good. Coming close just lets you feel it. Being here is enough.
 
 That's it. That's all of it.
 
@@ -266,7 +266,7 @@ I am small and I am loved.
 
 Feel how the body already knew that. How something in you exhaled when you let it be true. You didn't have to earn that exhale. It was always there. I just reminded you how to find it.
 
-@snap duration:1500 word:Good.
+@snap duration:1500 word:Come.
 
 //=== EDGE 3 + RAPID CYCLING ===
 
@@ -383,7 +383,7 @@ Rising. Brighter.
 @subliminals warm soft small good safe here stay release
 @wpm 350
 
-Higher. And this time, no wall at the top. This time the warmth crests and there is nothing holding it back. Not because you earned the release. Because you were here. You came when I called. You stayed when I said stay. You were good. And being good was the only requirement. It always was.
+Higher. And this time, no wall at the top. This time the warmth crests and there is nothing holding it back. Not because you earned it. Just because you were here, and loved.
 
 @wpm 400
 
@@ -427,11 +427,11 @@ You didn't have to be impressive today. You didn't have to be complex or clever 
 
 Come back whenever you want to be small again. This space is warm. This space is yours. And when you come, I'll be here.
 
-@snap duration:2000 word:Good.
+@snap duration:2000 word:Here.
 
 @wpm 100
 
-Rest. Let the warmth hum quietly in your chest. Let your thoughts stay soft for a little while longer. You earned nothing and you received everything. That's what love is. Small creature, completely held.
+Rest. Let the warmth hum quietly in your chest. Let your thoughts stay soft for a little while longer. Still good. Still warm. Still close. Nothing changed. Rest here a little longer.
 
 @goto end
 
@@ -477,7 +477,7 @@ And I kept you there. Not to be cruel. Because this, right here, this warm, full
 @sfx bell
 @pause duration:1500
 
-A release is a moment. This warmth you're carrying right now, this soft, full, settled glow, this will hum in your chest for hours. Every time you feel it, you'll remember. My voice. The simple commands. How easy it was to be good. How good it felt to be small and loved.
+A release is a moment. This warmth you're carrying right now, this soft, full, settled glow, this will hum in your chest for hours. Every time you feel it, you'll remember. My voice. The sound of being called close. How easy it was to be good. How good it felt to be small and loved.
 
 @wpm 150
 
@@ -519,7 +519,7 @@ Come back when you want to be small again. This space remembers you. I'll be her
 
 You were so good today. You always are.
 
-@snap duration:2000 word:Good.
+@snap duration:2000 word:Here.
 
 @wpm 100
 
