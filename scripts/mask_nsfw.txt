@@ -240,49 +240,111 @@ Mask on. Thoughts off.
 Mask on. Thoughts off.
 
 @sfx bell
-@pause duration:5000
+@pause duration:8000
 
 @wpm 120
-The mask is permanent now. Not in the world. In the space behind your eyes where the trigger lives. Mask on, thoughts off. Five syllables. A key to the warm smooth darkness. A doorway to the doll.
+@speed 0.4
+@subliminals smooth still receive open doll warm hollow present
+Stay here for a moment. Just here. No instruction to follow. No performance to give. The doll doesn't need a task. The doll only needs to be.
 
-@speed 0.5
-@wpm 150
-@subliminals off
-@spiral off fade:8
-And the doll is always here. Underneath. Behind the face you wear for the world. Behind the name and the opinions and the narration. The smooth quiet presence that knows how to be still.
+@pause duration:5000
+
+Feel the quality of the emptiness. It isn't nothing. It's something very specific. It's the state of a thing that is ready. Open. Available. Not waiting for anything in particular. Just available. The way a clean surface is available. The way a still room is available. Everything arranged, nothing urgent, nothing required.
 
 @pause duration:5000
 
 @sfx bell
 
+@wpm 150
+The body knows what to do in this state. It softens. It opens. The hands settle. The shoulders drop. The face stays smooth. The breath slows to the rhythm of something that doesn't need to be anywhere or anyone. The body becomes a good object. Well-made. Well-placed. Patient.
+
+@pause duration:5000
+
 @wpm 120
-@speed 0.6
-The mask doesn't come off. Not because it's locked. Because the doll doesn't have hands to remove it. The doll doesn't have the concept of removal. The doll just is. And the is continues. Warm. Smooth. Still.
+@subliminals open receive warm smooth present doll available still
+There's pleasure in this. Not the loud kind. Something quieter. The pleasure of a thing that has released the obligation of personhood and found that what's underneath is not nothing. What's underneath is warm. What's underneath is here. What's underneath has been here the whole time, waiting for the noise to stop.
+
+@pause duration:5000
+
+@sfx bell
+
+@wpm 150
+You don't have to do anything with this. You don't have to become anything or decide anything or perform anything. The doll state asks nothing. It only offers. Stillness. Warmth. The particular rest that comes from not being in charge of your own face.
+
+@pause duration:5000
+
+@sfx bell
+@pause duration:8000
+
+@wpm 100
+@speed 0.5
+@subliminals off
+@spiral off fade:8
+Now.
 
 @pause duration:3000
 
-@speed 0.7
-@wpm 150
-In your own time. When the world needs you back. The doll will go quiet. Not gone. Quiet. Behind the mask that lives behind the face. Waiting. Always waiting. Always warm.
-
-@binaural off fade:15
+@wpm 120
+@speed 0.6
+The mask comes off the same way it went on. Slowly. With intention. Not because something went wrong. Because the arc requires it. The mask goes on and the mask comes off. That's what makes it a mask and not a replacement. That's what makes this a gift you give yourself and not a loss.
 
 @pause duration:5000
-
-@speed 0.8
-@wpm 120
-Mask on. Thoughts off.
 
 @sfx bell
 
+@wpm 150
+@speed 0.7
+Feel the edges again. The jaw. The forehead. The temples. You remember where they meet your skin because your skin remembers them. Lift it. Slowly. Feel the cool air reaching the face underneath. Your face. The one that has opinions and a name and a voice that says I and means it.
+
 @pause duration:5000
 
-@speed 0.9
+@wpm 120
+It's still yours. Everything you set down is still there. The name. The thoughts. The narration. They were never gone. They were resting. And now they come back the way sleep ends. Gradually. Without urgency. One layer at a time.
 
-@wpm 100
-The trigger stays. The warmth stays. The smooth stays.
+@pause duration:5000
+
+@sfx bell
+
+@wpm 150
+@speed 0.8
+@binaural off fade:15
+Your name. Let it return. Let the sound of it settle back into the space where it lives. Let it get louder. Let it get clear. You know what it is. You know who it belongs to.
+
+@pause duration:5000
+
+@wpm 120
+The face softens back into expression. Into mobility. The muscles remember how to move. The brow, the jaw, the small muscles around the eyes that carry feeling. You have feeling again. You have a face that moves with it.
+
+@pause duration:5000
+
+@sfx bell
+
+@wpm 150
+@speed 0.9
+What you carried in is still with you. The warmth. The memory of the stillness. The knowledge that underneath all the noise there is something smooth and quiet and ready, and you can go back there. When you need it. With intention. For exactly as long as is good.
+
+@pause duration:3000
+
+@wpm 120
+The mask is not on your face.
+
+@pause duration:2000
+
+The mask is in your hands.
+
+@pause duration:2000
+
+You put it there.
+
+@pause duration:3000
+
+@sfx bell
 
 @speed 1.0
+@wpm 150
+@pause duration:3000
+
+Take your time coming back. Breathe. Feel the weight of your body. The room around you. When you're ready, open your eyes. You've been somewhere. You're back now. And the door you came through is yours to open whenever you choose.
 
 @pause duration:5000
 

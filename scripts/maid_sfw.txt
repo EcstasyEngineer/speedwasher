@@ -19,7 +19,7 @@ Your brain is wrong. No task is beneath you. And by the time we're done, you won
 @spiral fade:3
 Here is the first rule of service. The mind that serves does not deliberate. Deliberation is a luxury for people who have time to stand still. You are not standing still. You are in motion. The task exists. The task will be completed. The only question is how much mental noise you generate between now and completion.
 
-The answer is: none. Zero. We are going to strip the noise out and leave nothing but clean, efficient motion.
+The answer is: none. Zero. We are going to strip the noise out and let the work speak for itself.
 
 @wpm 200
 @subliminals focus task clean complete serve comply next do
@@ -70,7 +70,7 @@ Good. That feeling is not a fantasy. It is a preview. It is waiting for you on t
 So let's install the protocol.
 
 @subliminals clean finish complete next step done good serve
-When you begin, the world shrinks to the task. Only the task. Your hands move. Your eyes see what needs to be seen. Your mind is quiet and focused and precise, like a machine that was built for exactly this. No wasted motion. No distraction. No internal monologue debating whether you should be doing something else.
+When you begin, the world shrinks to the task. Only the task. Your hands move. Your eyes see what needs to be seen. Your mind is quiet and focused and precise. A craftsperson in their element. No wasted motion. No distraction. No internal monologue debating whether you should be doing something else.
 
 @wpm 150
 Pick up the thing. Put it where it goes. Next thing. Pick it up. Put it where it goes. Next thing. Clean, simple, repetitive, satisfying.
@@ -93,7 +93,7 @@ And the chimes build. Each one adds to the last. A rhythm of completion that fee
 This is what service feels like from the inside. Not drudgery. Not submission. Precision. Purpose. The mind free from deliberation. The body in motion. The gap between thought and action reduced to zero.
 
 @wpm 200
-You were not built to sit and think about doing things. You were built to do them. The anxiety, the resistance, the procrastination , those are the mind interfering with what the body already knows how to do. And right now, for however long the task takes, the mind is stepping aside.
+You are more than capable of doing the thing. What's been getting in the way isn't competence. The anxiety, the resistance, the procrastination, those are the mind interfering with what your hands already know how to do. And right now, for however long the task takes, the mind is stepping aside so the skill can work.
 
 @wpm 180
 No decisions. No evaluations. No resistance. Just motion. Just completion. Just the clean bright chime of done, done, done.
@@ -115,7 +115,7 @@ The body moves. The mind follows. The resistance was never real. It was just the
 @binaural off fade:8
 
 @wpm 200
-Stand up. Now. The task is waiting. And the satisfaction is waiting on the other side of it. And you are ready. Focused. Clean. Efficient. A mind with no noise and a body in motion.
+Stand up. Now. The task is waiting. And the satisfaction is waiting on the other side of it. And you are ready. Focused. Capable. Proud of the work you haven't done yet, because you already know how to do it well.
 
 @sfx bell
 @snap duration:2000 word:Begin.
