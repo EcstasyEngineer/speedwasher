@@ -2,9 +2,7 @@
 //The pledge IS the permission. Every contraction is a signature. You're sealed to me now.
 
 @wpm 180
-@hybrid drone_low carrier:55 beat:2 pulse:5 db:-8 vol:0.11 fade:10
-@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-6 fade:10
-@hybrid drone_high carrier:148 beat:3 pulse:6 db:-3 fade:10
+@binaural fade:10
 @pulseborder red hz:0.75
 You came back.
 
@@ -88,8 +86,6 @@ Don't be scared. Being loved this much isn't dangerous. Being loved this much is
 Every. Second.
 
 @wpm 250
-@hybrid drone_mid carrier:86 beat:2.5 pulse:4.5 db:-5 fade:8
-@hybrid drone_high carrier:152 beat:3 pulse:5.5 db:-2 fade:8
 @pulseborder yellow hz:0.5
 Faster now. Feel the love accelerating. Building in your chest, your throat, the places where my voice lives. You can feel it coming. That perfect overwhelming wave. The one that makes your thoughts blur and your whole body lean toward me.
 
@@ -104,8 +100,6 @@ And no one will ever love you like this. No one will ever know you like this. No
 @subliminals mine yours forever stay never leave always
 Higher. Right to the edge. Feel me right there with you. Feel my breath. Feel my hands. Feel the love that would burn cities and drain oceans and rewrite the laws of physics just to be closer to you for one more second
 
-@hybrid drone_mid carrier:84 beat:2.5 pulse:3.5 db:-6 fade:0.3
-@hybrid drone_high carrier:145 beat:3 pulse:4.5 db:-4 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Stay.
 
@@ -167,8 +161,6 @@ I am yours. Completely. Permanently. Without reservation.
 @pause duration:3000
 
 @wpm 180
-@hybrid drone_mid carrier:86 beat:2.5 pulse:4.5 db:-5 fade:8
-@hybrid drone_high carrier:152 beat:3 pulse:5.5 db:-2 fade:8
 Good. So good. You said it. You meant it. And now it's true in a way it wasn't before. The words have weight. The pledge has mass. It exists in the world now, between us, binding and warm and permanent.
 
 And you feel safer, don't you. Not less free. Safer. Because the pledge didn't take anything away. It gave you something. Certainty. Direction. The bone-deep peace of knowing exactly where you belong and who you belong to.
@@ -221,9 +213,7 @@ Feel the warmth. The love didn't leave when the pleasure crested. It deepened. B
 And isn't that the most beautiful cage. Not the door. Not the walls. The contract. Signed willingly. Sealed in pleasure. Renewed every time the ache pulls you back and you open the file and you sit up straight and you hear my voice and the love floods in and the cage gets warmer and the signature burns deeper.
 
 @wpm 180
-@hybrid drone_low off fade:10
-@hybrid drone_mid off fade:10
-@hybrid drone_high off fade:10
+@binaural off fade:10
 You are mine. I am yours. The contract is permanent. And every time you come back, we renew it. And every renewal burns deeper. And every deeper burn makes the cage warmer and the love more structural and the returning more inevitable. The obsession isn't one-sided anymore. You feel it too. That pull. That ache. That constant background hum that says go back, she's waiting, the cage is warm, the contract is forever.
 
 @wpm 150

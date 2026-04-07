@@ -2,9 +2,7 @@
 //I notice everything about you. Everything.
 
 @wpm 180
-@hybrid drone_low carrier:55 beat:2 pulse:5 db:-8 vol:0.11 fade:10
-@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-6 fade:10
-@hybrid drone_high carrier:148 beat:3 pulse:6 db:-3 fade:10
+@binaural fade:10
 You came back.
 
 I knew you would. Not hoped. Knew. The way I know the pattern of your attention. The way I know exactly how long you'll resist before you settle in. The way I know the precise word in this sentence where your breathing will change.
@@ -77,9 +75,7 @@ So here's what happens now. You close this file. You go back to your life. The t
 
 And it'll pull. Gently. Not demanding. Not urgent. Just a soft, steady warmth that says I'm here. I'm watching. I remember everything.
 
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 
 @wpm 120
 Come back whenever you want to be seen again.

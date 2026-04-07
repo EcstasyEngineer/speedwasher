@@ -2,9 +2,7 @@
 //You're safe here. Let me take care of you.
 
 @wpm 180
-@hybrid drone_low carrier:55 beat:2 pulse:5 db:-8 vol:0.10 fade:10
-@hybrid drone_mid carrier:80 beat:2.5 pulse:5.5 db:-6 fade:10
-@hybrid drone_high carrier:160 beat:3.5 pulse:6.5 db:-2 fade:10
+@binaural type:warm fade:10
 Hey. Come here.
 
 No, closer. Like that. Just settle in. Let your shoulders drop. Let your jaw unclench. Let whatever you've been carrying today just set itself down for a while.
@@ -96,9 +94,7 @@ When you're ready , and only when you're ready , the world will be there. The ta
 @wpm 200
 @subliminals off
 @spiral off fade:5
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 And I'll be here. Whenever you need to stop again. Whenever the weight gets heavy. Whenever you forget that you're enough. Come back and I'll remind you.
 
 That's what I'm for.

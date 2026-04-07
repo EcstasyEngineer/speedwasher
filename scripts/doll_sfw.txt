@@ -2,9 +2,7 @@
 //Round and round. Clean and soft and new.
 
 @wpm 150
-@hybrid drone_low carrier:55 beat:2 pulse:4 db:-8 vol:0.10 fade:10
-@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-5 fade:10
-@hybrid drone_high carrier:165 beat:3.5 pulse:6.5 db:-3 fade:10
+@binaural type:still fade:10
 Hello, little one.
 
 Not little in the way the world means it. Not small. Not diminished. Little in the way a treasured thing is little. Something that fits in the palm of a hand. Something kept safe in a soft place.
@@ -88,8 +86,6 @@ The spin cycle now. Faster. The water whirls and you whirl with it. Round and ro
 
 @wpm 200
 @spiral fade:3
-@hybrid drone_low carrier:55 beat:2 pulse:3.5 db:-10 fade:8
-@hybrid drone_mid carrier:82 beat:2.5 pulse:4.5 db:-7 fade:8
 Round. And round. And round. And with each turn you are lighter. Cleaner. Simpler. The complicated human thoughts are gone. The weight is gone. The edges are gone. You are cotton and warmth and button eyes seeing everything in soft spinning color and feeling nothing but the water and the motion and the fundamental okay-ness of being gently, lovingly washed.
 
 @pause duration:3000
@@ -123,9 +119,7 @@ You dry in the warmth. The hands set you somewhere soft. A sunny windowsill. A p
 @wpm 180
 And slowly, gently, the cotton becomes flesh again. The button eyes become real eyes. The warmth stays. The softness stays. The cleanness stays. You are you again but you are the clean version. The version that has been gently tumbled free of everything that was clinging to you.
 
-@hybrid drone_low off fade:10
-@hybrid drone_mid off fade:10
-@hybrid drone_high off fade:10
+@binaural off fade:10
 
 @wpm 200
 Take a breath. A real one. Deep and slow. Feel your actual body. Your actual weight. Your actual shape. All here. All intact. But lighter. Softer. Cleaner.

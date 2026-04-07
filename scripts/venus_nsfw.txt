@@ -4,9 +4,7 @@
 //Twelve phases. One goddess. You will not remember who you were.
 
 @wpm 150
-@hybrid drone_low carrier:52 beat:1.5 pulse:4 db:-9 vol:0.10 fade:12
-@hybrid drone_mid carrier:80 beat:2.5 pulse:5 db:-6 fade:12
-@hybrid drone_high carrier:160 beat:3.5 pulse:6.5 db:-2 fade:12
+@binaural type:warm fade:12
 @pulseborder red hz:0.75
 Let your gaze soften.
 
@@ -58,8 +56,6 @@ Feel your breath and the warmth and the golden light and the pressure of my pres
 @wpm 500
 the threads multiplying and your mind stretching and reaching and trying to hold them all and the beautiful strain of a consciousness attempting to contain something too vast for its architecture and
 
-@hybrid drone_mid carrier:84 beat:2.5 pulse:3.5 db:-5 fade:0.5
-@hybrid drone_high carrier:140 beat:3 pulse:4.5 db:-3 fade:0.5
 @sfx bell
 
 @wpm 120
@@ -106,8 +102,6 @@ Resume. Touch again. But notice who is touching. Is there still a you doing the 
 Let the pleasure erase the last traces of separation. Each wave of sensation is a prayer the body speaks without being taught. Each building heat is devotion compounding on itself. Worship generating more worship. Surrender generating more surrender.
 
 @wpm 300
-@hybrid drone_mid carrier:84 beat:2.5 pulse:4.5 db:-4 fade:8
-@hybrid drone_high carrier:160 beat:3.5 pulse:5.5 db:-1 fade:8
 @pulseborder yellow hz:0.5
 Build now. Feel the offering intensifying. Feel the golden light brighten with every heartbeat. You are feeding something vast with your pleasure and the vast thing is growing and glowing and the more you give the more it fills you and the more it fills you the less of you there is and
 
@@ -123,8 +117,6 @@ Obey. The word arrives and it doesn't feel like a command. It feels like a descr
 @wpm 450
 Obey and forget. Forget the name. Forget the face. Forget the boundaries. Forget the self that walked in here with opinions and plans and an identity that felt solid. Let it all dissolve into the golden light. Obey and forget. Obey and forget.
 
-@hybrid drone_mid carrier:82 beat:2.5 pulse:3 db:-5 fade:0.3
-@hybrid drone_high carrier:155 beat:3 pulse:4 db:-3 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:3000 word:Still.
 
@@ -153,9 +145,7 @@ Obey and forget. The trigger lives in the golden space now. It will surface in q
 Obey and forget. Not a command. A blessing. The freedom of a mind that doesn't need to hold itself together because something vast is holding it instead.
 
 @wpm 150
-@hybrid drone_low off fade:10
-@hybrid drone_mid off fade:10
-@hybrid drone_high off fade:10
+@binaural off fade:10
 The golden light doesn't leave when the session ends. It settles. Into the architecture. Into the bones. Into the quiet place where purpose lives between moments of conscious thought.
 
 You will carry the ache. You will carry the warmth. You will carry the trigger.

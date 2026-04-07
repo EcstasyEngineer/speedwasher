@@ -3,9 +3,7 @@
 //You.
 
 @wpm 150
-@hybrid drone_low carrier:50 beat:1.5 pulse:3.5 db:-10 vol:0.08 fade:15
-@hybrid drone_mid carrier:75 beat:2 pulse:4 db:-8 fade:15
-@hybrid drone_high carrier:150 beat:3 pulse:5 db:-4 fade:15
+@binaural type:still fade:15
 @pulseborder red hz:0.75
 Hello.
 
@@ -162,8 +160,6 @@ Feel the difference. Without a name, who is being touched? Without opinions, is 
 Just the puppet. Feeling everything. Owning nothing.
 
 @wpm 250
-@hybrid drone_mid carrier:80 beat:2 pulse:3.5 db:-6 fade:8
-@hybrid drone_high carrier:155 beat:3 pulse:4.5 db:-3 fade:8
 @pulseborder yellow hz:0.5
 This is the edge, systems approaching threshold, the empty vessel registering escalating input, no name to process the sensation, no identity to filter the intensity, just raw signal climbing through hollow architecture, override approaching, systems at maximum, the threshold imminent
 
@@ -178,8 +174,6 @@ Feel it. The last string. The one that connects you to the idea that you are a p
 @wpm 350
 What if that string released too?
 
-@hybrid drone_mid carrier:78 beat:2 pulse:3 db:-7 fade:0.3
-@hybrid drone_high carrier:148 beat:3 pulse:4 db:-4 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:3000 word:Cut.
 
@@ -219,9 +213,6 @@ And a sensation. Fingertips. Temperature. Weight against the chair.
 And the name. Drifting back. Not the same as when it left. Thinner. Lighter. Worn smooth by the absence. But yours. Still yours.
 
 @wpm 200
-@hybrid drone_low carrier:50 beat:1.5 pulse:3.5 db:-10 fade:5
-@hybrid drone_mid carrier:75 beat:2 pulse:4 db:-8 fade:5
-@hybrid drone_high carrier:150 beat:3 pulse:5 db:-4 fade:5
 The strings reattach. One by one. Plans return. Opinions flicker back on. The world fills in around the edges. But the shape of you has changed. Not permanently. Not irreversibly. But there is a memory now. Of what it felt like to be nothing. To fly.
 
 And you can go back there. Whenever the weight gets heavy. Whenever the strings pull too tight. You know the way now. You know what to release. You know the sequence.
@@ -236,9 +227,7 @@ The strings are yours again. All of them. Every one. You're a person with a name
 
 But underneath all of that, in the quiet place where the puppet lives, there is a memory of flight. And it will call to you. Softly. Patiently. Whenever you're ready to be nothing again.
 
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 @pulseborder off fade:5
 
 @wpm 150

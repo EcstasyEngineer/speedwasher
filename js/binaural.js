@@ -186,13 +186,39 @@ registerProcessor('tone-processor', ToneProcessor);
 `;
 
 class BinauralEngine {
+    // Named presets — each is an array of {carrier, beat, pulse} for 3 layers
+    static PRESETS = {
+        reactor: [
+            { carrier: 60,  beat: 2,   pulse: 4 },
+            { carrier: 95,  beat: 3,   pulse: 5 },
+            { carrier: 190, beat: 4.5, pulse: 6 }
+        ],
+        warm: [
+            { carrier: 55,  beat: 1.5, pulse: 4.5 },
+            { carrier: 82,  beat: 2.5, pulse: 5.5 },
+            { carrier: 158, beat: 3,   pulse: 6.5 }
+        ],
+        still: [
+            { carrier: 52,  beat: 1.5, pulse: 3.5 },
+            { carrier: 78,  beat: 2,   pulse: 5 },
+            { carrier: 155, beat: 2.5, pulse: 6 }
+        ],
+        dark: [
+            { carrier: 50,  beat: 2,   pulse: 3 },
+            { carrier: 74,  beat: 2.5, pulse: 4 },
+            { carrier: 142, beat: 2.5, pulse: 5 }
+        ]
+    };
+
+    static LAYER_NAMES = ['_low', '_mid', '_high'];
+    static DEFAULT_VOL = 0.15;
+
     constructor() {
         this.ctx = null;
         this.node = null;
-        this.layers = new Map();   // name -> { index, mode, carrier, beat, pulse, ampDb, ear, vol, gain, fade }
+        this.layers = new Map();   // name -> { index, mode, carrier, beat, pulse, ear, vol, gain, fade }
         this.nextIndex = 0;
         this.freeIndices = [];
-        this.masterVol = 0.15;
         this.isPlaying = false;
         this._initPromise = null;
         this._generation = 0;
@@ -234,28 +260,15 @@ class BinauralEngine {
         this.freeIndices.push(idx);
     }
 
-    dbToLinear(db) {
-        return Math.pow(10, db / 20);
-    }
-
-    async applyCommand(mode, params) {
+    /**
+     * Apply a single layer command (low-level).
+     * All presets resolve down to this.
+     */
+    async applyLayer(name, params) {
         await this.init();
         if (this.ctx.state === 'suspended') await this.ctx.resume();
 
-        if (params.action === 'off') {
-            if (params.name) {
-                this.stopLayer(params.name, params.fade);
-            } else {
-                this.stopAll(params.fade);
-            }
-            return;
-        }
-
-        // Update master vol if explicitly set
-        if (params.vol !== undefined) this.masterVol = params.vol;
-
-        // Get or create layer
-        let layer = this.layers.get(params.name);
+        let layer = this.layers.get(name);
         let isNew = false;
         if (!layer) {
             const idx = this._allocIndex();
@@ -264,74 +277,129 @@ class BinauralEngine {
                 return;
             }
             layer = { index: idx };
-            this.layers.set(params.name, layer);
+            this.layers.set(name, layer);
             isNew = true;
         }
 
-        // Compute L/R frequencies based on mode
-        let freqL, freqR, pulseRate, pulseOffset;
-        switch (mode) {
-            case 'binaural':
-                freqL = params.carrier - params.beat / 2;
-                freqR = params.carrier + params.beat / 2;
-                pulseRate = 0;
-                pulseOffset = 0;
-                break;
-            case 'isochronic':
-                freqL = params.carrier;
-                freqR = params.carrier;
-                pulseRate = params.pulse;
-                pulseOffset = 0;  // same envelope both ears
-                break;
-            case 'hybrid':
-                freqL = params.carrier - params.beat / 2;
-                freqR = params.carrier + params.beat / 2;
-                pulseRate = params.pulse;
-                pulseOffset = Math.PI;  // 180 degree L/R offset
-                break;
-        }
+        // Hybrid mode: binaural beat + isochronic pulse with L/R offset
+        const freqL = Math.max(0, params.carrier - params.beat / 2);
+        const freqR = Math.max(0, params.carrier + params.beat / 2);
+        const pulseRate = Math.max(0, params.pulse);
+        const gain = Math.min(0.8, params.vol !== undefined ? params.vol : BinauralEngine.DEFAULT_VOL);
 
-        // Clamp frequencies to non-negative (negative freq causes NaN in worklet)
-        freqL = Math.max(0, freqL);
-        freqR = Math.max(0, freqR);
-        pulseRate = Math.max(0, pulseRate);
-
-        // Compute gain: vol * db_to_linear(ampDb), capped at 0.8
-        const vol = params.vol !== undefined ? params.vol : this.masterVol;
-        const gain = Math.min(0.8, vol * this.dbToLinear(params.ampDb));
-
-        // Send to worklet
-        // New layers: snap freq immediately, only fade gain
-        // Existing layers: smooth freq transition (keyframing)
         const msg = {
             layer: layer.index,
             freqL, freqR,
-            pulseRate, pulseOffset,
+            pulseRate, pulseOffset: Math.PI,
             gain,
             fadeTime: params.fade,
             freqSmooth: params.fade,
             snap: isNew,
-            ear: params.ear === 'L' ? 0 : params.ear === 'R' ? 1 : 2
+            ear: 2  // both ears
         };
-
-        if (params.interleave !== undefined) {
-            msg.interleaveMs = Math.max(0, Math.min(200, params.interleave));
-        }
 
         this.node.port.postMessage(msg);
 
-        // Store state for pause/resume
-        layer.mode = mode;
         layer.carrier = params.carrier;
         layer.beat = params.beat || 0;
         layer.pulse = params.pulse || 0;
-        layer.ampDb = params.ampDb;
-        layer.ear = params.ear || 'LR';
-        layer.vol = vol;
+        layer.vol = gain;
         layer.gain = gain;
         layer.fade = params.fade;
 
         this.isPlaying = true;
+    }
+
+    /**
+     * Apply a preset or custom layers from a parsed @binaural command.
+     */
+    async applyPreset(parsed) {
+        if (parsed.action === 'off') {
+            this.stopAll(parsed.fade);
+            return;
+        }
+
+        const specs = parsed.layers; // array of {carrier, beat, pulse, vol?}
+        const maxLayers = Math.max(specs.length, 3);
+        const names = [];
+        for (let i = 0; i < maxLayers; i++) names.push('_layer' + i);
+
+        // Stop layers beyond new count
+        for (let i = specs.length; i < maxLayers; i++) {
+            if (this.layers.has(names[i])) {
+                this.stopLayer(names[i], parsed.fade);
+            }
+        }
+
+        for (let i = 0; i < specs.length; i++) {
+            await this.applyLayer(names[i], {
+                carrier: specs[i].carrier,
+                beat: specs[i].beat,
+                pulse: specs[i].pulse,
+                vol: specs[i].vol,
+                fade: parsed.fade
+            });
+        }
+    }
+
+    /**
+     * Parse @binaural command args.
+     *
+     * Forms:
+     *   @binaural fade:8                              → default reactor preset
+     *   @binaural type:warm fade:8                    → named preset
+     *   @binaural layers:60/2/4,95/3.5/5,190/4.5/6 fade:8  → custom
+     *   @binaural off fade:8                          → stop all
+     */
+    static parsePresetCommand(args) {
+        const parts = args.trim().split(/\s+/);
+        const result = { action: 'on', type: 'reactor', layers: null, fade: 8 };
+
+        // Check for 'off'
+        if (parts[0] === 'off') {
+            result.action = 'off';
+            for (const p of parts.slice(1)) {
+                if (p.startsWith('fade:')) {
+                    const v = parseFloat(p.split(':')[1]);
+                    if (Number.isFinite(v)) result.fade = v;
+                }
+            }
+            return result;
+        }
+
+        for (const p of parts) {
+            if (!p.includes(':')) continue;
+            const [key, val] = [p.slice(0, p.indexOf(':')), p.slice(p.indexOf(':') + 1)];
+            switch (key) {
+                case 'type':
+                    result.type = val;
+                    break;
+                case 'fade': {
+                    const v = parseFloat(val);
+                    if (Number.isFinite(v)) result.fade = v;
+                    break;
+                }
+                case 'layers':
+                    result.layers = val.split(',').map(spec => {
+                        const nums = spec.split('/').map(Number);
+                        return {
+                            carrier: nums[0] || 100,
+                            beat: nums[1] || 3,
+                            pulse: nums[2] || 5,
+                            vol: nums[3] !== undefined ? (nums[3] / 10) * 0.3 : undefined
+                        };
+                    });
+                    break;
+            }
+        }
+
+        // Resolve preset if no custom layers
+        if (!result.layers) {
+            const preset = BinauralEngine.PRESETS[result.type] || BinauralEngine.PRESETS.reactor;
+            result.layers = preset.map(l => ({ ...l }));
+        }
+
+        return result;
     }
 
     stopLayer(name, fade = 2) {
@@ -394,81 +462,6 @@ class BinauralEngine {
         return this.layers.size > 0;
     }
 
-    /**
-     * Parse command args for any of the three modes.
-     *
-     * @param {string} mode - 'binaural', 'isochronic', or 'hybrid'
-     * @param {string} args - Everything after "@tag "
-     * @returns {object} Parsed params
-     */
-    static parseCommand(mode, args) {
-        const parts = args.trim().split(/\s+/);
-        const result = {
-            action: 'on',
-            name: null,      // null = stop-all when action is 'off'
-            carrier: 200,
-            beat: 0,
-            pulse: 0,
-            ampDb: 0,
-            ear: 'LR',
-            fade: 2,
-            vol: undefined,
-            interleave: undefined
-        };
-
-        let pi = 0;  // current index into parts
-
-        // Check for name: starts with a letter, isn't 'off', no colon
-        if (parts[0] && /^[a-zA-Z]/.test(parts[0]) &&
-            parts[0] !== 'off' && !parts[0].includes(':')) {
-            result.name = parts[0];
-            pi = 1;
-        }
-
-        // Check for 'off'
-        if (parts[pi] === 'off') {
-            result.action = 'off';
-            for (let i = pi + 1; i < parts.length; i++) {
-                if (parts[i].startsWith('fade:')) {
-                    const v = parseFloat(parts[i].split(':')[1]);
-                    result.fade = Number.isFinite(v) ? v : 2;
-                }
-            }
-            return result;
-        }
-
-        // If no name was given for an 'on' command, default to '_default'
-        if (result.name === null) result.name = '_default';
-
-        // Parse key:value parameters
-        for (let i = pi; i < parts.length; i++) {
-            const p = parts[i];
-            if (!p.includes(':')) continue;
-
-            const [key, val] = p.split(':');
-
-            // ear: is a string value, handle separately
-            if (key === 'ear') {
-                result.ear = val.toUpperCase();
-                continue;
-            }
-
-            const v = parseFloat(val);
-            if (!Number.isFinite(v)) continue;
-
-            switch (key) {
-                case 'carrier': result.carrier = v; break;
-                case 'beat': result.beat = v; break;
-                case 'pulse': result.pulse = v; break;
-                case 'db': result.ampDb = v; break;
-                case 'fade': result.fade = v; break;
-                case 'vol': result.vol = Math.min(0.8, Math.max(0, v)); break;
-                case 'interleave': result.interleave = Math.max(0, Math.min(200, v)); break;
-            }
-        }
-
-        return result;
-    }
 }
 
 if (typeof module !== 'undefined' && module.exports) {

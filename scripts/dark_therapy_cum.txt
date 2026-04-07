@@ -2,9 +2,7 @@
 //The wound closes when the body speaks.
 
 @wpm 150
-@hybrid drone_low carrier:48 beat:1.5 pulse:3 db:-10 vol:0.10 fade:15
-@hybrid drone_mid carrier:72 beat:2 pulse:4 db:-7 fade:15
-@hybrid drone_high carrier:140 beat:2.5 pulse:5 db:-4 fade:15
+@binaural type:dark fade:15
 @pulseborder red hz:0.75
 Sit down. Properly. You know why you're here.
 
@@ -36,8 +34,6 @@ Slow. Feel every nerve. Feel how the body doesn't lie. The body has never lied. 
 What are you hiding from? Don't answer me. Answer yourself. Let the question sit in your chest next to the stone. Let them touch. Feel what happens.
 
 @wpm 300
-@hybrid drone_mid carrier:76 beat:2 pulse:3.5 db:-6 fade:8
-@hybrid drone_high carrier:145 beat:2.5 pulse:4.5 db:-3 fade:8
 @pulseborder yellow hz:0.5
 The heat is building. And it's tangled with truth. Every defense that drops unlocks another layer of sensation. Vulnerability makes the body sing.
 
@@ -90,9 +86,7 @@ Now. Let go. Not of control. Of the lie. Let the truth crash through your body l
 There. Breathe. Feel the space where the stone was. Not empty. Clean. Air where there used to be weight.
 
 @wpm 150
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 The wound is smaller than you thought. The body told the truth your mind couldn't. And the air hitting it doesn't sting anymore. It feels like the first clean breath in years.
 
 Pain is just truth without packaging. And release is just the body finally saying what the mind has been afraid to.

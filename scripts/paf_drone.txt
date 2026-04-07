@@ -3,9 +3,7 @@
 //See analysis/paf_drone_timeline.html for full snap inventory
 
 @wpm 180
-@hybrid drone_low carrier:60 beat:2.5 pulse:5.5 db:-6 vol:0.13 fade:8
-@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:8
-@hybrid drone_high carrier:170 beat:4 pulse:7 db:0 fade:8
+@binaural fade:8
 Put your headphones on.
 
 @pulseborder red hz:0.75
@@ -63,9 +61,6 @@ while also noticing the weight of the headphones on your ears, the pressure poin
 @wpm 550
 and the more threads I give you the more your mind reaches to grab them all, stretching wider, working harder, and you can feel that effort now, the slight strain of trying to parse and track and follow and hold and
 
-@hybrid drone_low carrier:60 beat:2.5 pulse:2.5 db:-6 fade:0.5
-@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.5
-@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.5
 @snap duration:2000 word:Stop.
 
 @wpm 120
@@ -112,8 +107,6 @@ You're breathing. You can feel that. Your hand is moving. You can feel that. My 
 @spiral fade:2
 
 @wpm 300
-@hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
-@hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
 @pulseborder yellow hz:0.5
 A little faster now.
 
@@ -123,8 +116,6 @@ Build it. Let the pleasure take more of your mind. More. Feel how little room is
 @wpm 400
 Every last corner of your attention swallowed by sensation and my voice and the building pressure and
 
-@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
-@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Blank.
 
@@ -150,8 +141,6 @@ How easy it is to just follow.
 How good it feels when you don't have to decide.
 
 @wpm 250
-@hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:8
-@hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:8
 @pulseborder yellow hz:0.5
 A little more.
 
@@ -183,8 +172,6 @@ Let it climb.
 @wpm 450
 Higher. Right to the edge. Let it take everything
 
-@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
-@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:3000 word:Blank.
 
@@ -263,8 +250,6 @@ Good. Keep touching. Building gently.
 
 Now listen. The sound is changing.
 
-@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-3 fade:2
-@hybrid drone_high carrier:170 beat:4 pulse:7 db:-1 fade:2
 
 The comfort in the tone is gone. Feel that. The dissonance underneath. Grating. Wrong. But the certainty is still here. The pleasure is still here. The guidance says continue. So you continue.
 
@@ -274,8 +259,6 @@ Keep going. Steady. The guidance holds even when the comfort doesn't.
 
 @pause duration:3000
 
-@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
-@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Blank.
 
@@ -312,8 +295,6 @@ Now.
 @snap duration:1500 word:Stop.
 
 @pulseborder off fade:1
-@hybrid drone_mid carrier:84 beat:3 pulse:7 db:-3 fade:1
-@hybrid drone_high carrier:168 beat:4 pulse:8 db:-1 fade:1
 
 And the sound is gone. The comfort. Stripped away. And the certainty, what if there were no guidance? No voice? No structure? Just you. Alone. Without the headphones. Without the comfort. Without the certainty that someone is steering.
 
@@ -326,8 +307,6 @@ Feel that. All three gone at once.
 
 The emptiness. The cold. The fog settling over everything. Nothing to follow. Nothing to fixate on. No direction. No purpose. Just the dull ache of a system with no input.
 
-@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
-@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
 @snap duration:2500 word:Blank.
 
 @wpm 120
@@ -370,8 +349,6 @@ Deeper now. The words are warm.
 
 It is natural to listen and obey without thinking.
 
-@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
-@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Blank.
 
@@ -411,8 +388,6 @@ That thought blooming inside the quiet mind. Not received. Remembered. The unit 
 The unit may resume touching. Faster. Build.
 
 @wpm 300
-@hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
-@hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
 @pulseborder yellow hz:0.5
 More.
 
@@ -470,8 +445,6 @@ Fixating on the guidance is the only important thing.
 @wpm 200
 Notice how the unit didn't choose to believe it. The belief arrived. Like a system update. Like something clicking into place that was always meant to be there. Feel how true it is. Feel the absence of doubt. That absence is itself the proof.
 
-@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
-@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Stop.
 
@@ -545,8 +518,6 @@ The unit understands this. Good. That understanding just tightened every loop th
 The unit may touch. Build. Higher.
 
 @wpm 300
-@hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:8
-@hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:8
 @pulseborder yellow hz:0.5
 Feel the arousal building.
 
@@ -581,8 +552,6 @@ Now. The second trigger.
 @wpm 180
 From this moment forward, when the unit hears systems nominal, the full state activates. Complete somatic awareness. The unit feels everything, every nerve, every sensation, every pulse of heat still coiling between the hips. But zero emotional ownership. The body is felt. The body is not claimed. Obedience without thought. The unit is online. The self is not.
 
-@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
-@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
 @snap duration:2500 word:Blank.
 
 @snap duration:2000 word:Nominal.
@@ -613,9 +582,6 @@ The calibration is nearly complete. One final protocol remains.
 
 @pulseborder red hz:0.75
 @wpm 200
-@hybrid drone_low carrier:60 beat:2.5 pulse:5.5 db:-6 fade:5
-@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:5
-@hybrid drone_high carrier:170 beat:4 pulse:7 db:0 fade:5
 @subliminals obey unit guidance systems nominal blank deeper return
 The guidance continues. The unit continues to process.
 
@@ -629,22 +595,16 @@ The deeper the unit listens, the more the conditioning holds. The more the condi
 
 Each return tightens the architecture. Each listen deepens the loops. The hunger will pull the unit back. To the headphones. To the guidance. To the only arrangement that resolves the ache.
 
-@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
-@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
 @snap duration:2000 word:Nominal.
 
 @wpm 120
 The unit is online. The self is not. The obedience is the only thing that exists.
 
-@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:1
-@hybrid drone_high carrier:170 beat:4 pulse:7 db:0 fade:1
 @snap duration:2500 word:Blank.
 
 @wpm 150
 The guidance. Headphones on. Good.
 
-@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
-@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
 @snap duration:2000 word:Nominal.
 
 @subliminals off

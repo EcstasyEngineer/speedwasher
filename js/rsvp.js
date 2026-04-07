@@ -26,7 +26,7 @@ class RSVPEngine {
         this.onSnap = options.onSnap || (() => {});
         this.onPause = options.onPause || (() => {});
         this.onSfx = options.onSfx || (() => {});
-        this.onAudio = options.onAudio || (() => {});
+        this.onBinaural = options.onBinaural || (() => {});
         this.onPulseBorder = options.onPulseBorder || (() => {});
         this.onContentWarning = options.onContentWarning || (() => {});
         this.contentWarnings = [];
@@ -187,13 +187,12 @@ class RSVPEngine {
                 continue;
             }
 
-            // Check for @binaural / @isochronic / @hybrid commands
-            const audioMatch = stripped.match(/^@(binaural|isochronic|hybrid)\s+(.+)/i);
-            if (audioMatch) {
+            // Check for @binaural command
+            const binauralMatch = stripped.match(/^@binaural\s+(.+)/i);
+            if (binauralMatch) {
                 pendingCommands.push({
-                    type: 'audio',
-                    mode: audioMatch[1].toLowerCase(),
-                    args: audioMatch[2]
+                    type: 'binaural',
+                    args: binauralMatch[1]
                 });
                 continue;
             }
@@ -298,8 +297,8 @@ class RSVPEngine {
                     this.onPause(cmd.pause, cmd.word);
                 } else if (cmd.type === 'sfx') {
                     this.onSfx(cmd.name, cmd.vol, cmd.detune);
-                } else if (cmd.type === 'audio') {
-                    this.onAudio(cmd.mode, cmd.args);
+                } else if (cmd.type === 'binaural') {
+                    this.onBinaural(cmd.args);
                 } else if (cmd.type === 'pulseborder') {
                     this.onPulseBorder(cmd.args);
                 }

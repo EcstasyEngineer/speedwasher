@@ -2,9 +2,7 @@
 //What's left when everything is removed? The lightest release you've ever felt.
 
 @wpm 150
-@hybrid drone_low carrier:50 beat:1.5 pulse:3.5 db:-10 vol:0.08 fade:15
-@hybrid drone_mid carrier:75 beat:2 pulse:4 db:-8 fade:15
-@hybrid drone_high carrier:150 beat:3 pulse:5 db:-4 fade:15
+@binaural type:still fade:15
 @pulseborder red hz:0.75
 Hello.
 
@@ -81,8 +79,6 @@ Feel the difference. Without a name, who is being touched? Without opinions, is 
 Just the puppet. Feeling everything. Owning nothing.
 
 @wpm 250
-@hybrid drone_mid carrier:80 beat:2 pulse:3.5 db:-6 fade:8
-@hybrid drone_high carrier:155 beat:3 pulse:4.5 db:-3 fade:8
 @pulseborder yellow hz:0.5
 The edge is different when you're empty. It's not desperate. It's open. A door. Not toward release but toward more emptiness. Wider spaces.
 
@@ -125,9 +121,7 @@ Something returns. A thought. A sensation. Fingertips. Temperature.
 @wpm 180
 And the name. Drifting back. Thinner now. Lighter. Worn smooth by the absence. But yours.
 
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 
 @wpm 150
 The strings reattach. One by one. The world fills in. But the shape of you has changed. There is a memory now. Of what it felt like to be nothing. To release as nothing. The lightest release you've ever felt. Because there was no one there to weigh it down.

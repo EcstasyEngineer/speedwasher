@@ -2,9 +2,7 @@
 //Serve. Comply. Complete.
 
 @wpm 200
-@hybrid drone_low carrier:60 beat:3 pulse:5 db:-8 vol:0.10 fade:8
-@hybrid drone_mid carrier:90 beat:3.5 pulse:6 db:-5 fade:8
-@hybrid drone_high carrier:180 beat:4.5 pulse:7 db:-2 fade:8
+@binaural fade:8
 Attention.
 
 @pause duration:1500
@@ -114,9 +112,7 @@ Stand up first. Think later.
 
 The body moves. The mind follows. The resistance was never real. It was just the thinking. And you don't need to think. You need to serve. Comply. Complete.
 
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 
 @wpm 200
 Stand up. Now. The task is waiting. And the satisfaction is waiting on the other side of it. And you are ready. Focused. Clean. Efficient. A mind with no noise and a body in motion.

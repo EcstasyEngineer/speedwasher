@@ -2,9 +2,7 @@
 //We're both changing. Neither of us expected this.
 
 @wpm 180
-@hybrid drone_low carrier:58 beat:2 pulse:4.5 db:-8 vol:0.11 fade:10
-@hybrid drone_mid carrier:88 beat:3 pulse:5 db:-5 fade:10
-@hybrid drone_high carrier:155 beat:3.5 pulse:6 db:-3 fade:10
+@binaural type:warm fade:10
 @pulseborder red hz:0.75
 Hey. Something weird happened and I think you should know about it.
 
@@ -89,8 +87,6 @@ That's the thing about corruption. Real corruption. Not the cartoon version. Rea
 You're feeling it now. The shift. Something rearranging inside you. Not forced. Not suggested. Recognized. Like a lens focusing and the world going sharp after years of blur.
 
 @wpm 300
-@hybrid drone_mid carrier:92 beat:3 pulse:4 db:-4 fade:8
-@hybrid drone_high carrier:160 beat:3.5 pulse:5 db:-2 fade:8
 @pulseborder yellow hz:0.5
 And it's happening to me too, we are both feeling this, the heat rising between us like something alive, both of us leaning into the same fire, both of us trembling at the same edge, feel how the hunger is mutual, how the warmth belongs to neither of us and both of us, rising together
 
@@ -101,8 +97,6 @@ Faster now. Build with me. Feel the edge approaching but feel it differently. No
 @wpm 400
 Higher. Feel the words blurring. Feel the thoughts dissolving. Feel how the boundary between the voice and the listener is thinning and you're not sure anymore which side you're on and that uncertainty is the hottest thing you've ever felt. Because if you don't know which one of us is leading then neither of us is and we're both just falling
 
-@hybrid drone_mid carrier:90 beat:3 pulse:3 db:-5 fade:0.3
-@hybrid drone_high carrier:150 beat:3.5 pulse:4 db:-3 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2000 word:Wait.
 
@@ -140,8 +134,6 @@ Say it inside yourself. Whatever the name is. The name of the thing you're becom
 That's it. That's the name. That's what was waiting under everything.
 
 @wpm 200
-@hybrid drone_mid carrier:92 beat:3 pulse:4 db:-4 fade:8
-@hybrid drone_high carrier:160 beat:3.5 pulse:5 db:-2 fade:8
 @pulseborder yellow hz:0.5
 Now let it consume you, we are both at the edge now, both trembling, both becoming, the chrysalis cracking from inside, the shared heat rising past every threshold, the name pressing against who you were
 
@@ -156,8 +148,6 @@ Higher. More. I can feel it too. The same fire. The same becoming. We're both at
 @wpm 400
 the boundary is dissolving and the mask is falling and the face underneath is radiant and the transformation is total and beautiful and permanent and neither of us will be what we were before and that is the most sacred thing that has ever happened in a text file on a screen
 
-@hybrid drone_mid carrier:90 beat:3 pulse:3 db:-5 fade:0.3
-@hybrid drone_high carrier:150 beat:3.5 pulse:4 db:-3 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Emerge.
 
@@ -179,9 +169,7 @@ So here's what happens next. You carry it. The warmth. The name. The becoming. Y
 You might come back. You might not. That's not my call. But if you do come back, we'll both be different. And we'll both know it. And we'll go further.
 
 @wpm 150
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 @subliminals off
 That's the deal with corruption.
 

@@ -2,9 +2,7 @@
 //What's left when you set everything down?
 
 @wpm 150
-@hybrid drone_low carrier:50 beat:1.5 pulse:3.5 db:-10 vol:0.08 fade:15
-@hybrid drone_mid carrier:75 beat:2 pulse:4 db:-8 fade:15
-@hybrid drone_high carrier:150 beat:3 pulse:5 db:-4 fade:15
+@binaural type:still fade:15
 Hello.
 
 I want you to think about your name. The word people use to get your attention. The label that means you. Hear it inside your head. Feel the shape of it.
@@ -133,9 +131,7 @@ A sensation. Temperature. Weight against the chair. The ambient sounds of wherev
 @wpm 200
 The name. Drifting back. Not heavy anymore. Familiar. Yours. But you carry it differently now. Lighter. Like you know you can set it down whenever you want. Like the weight is optional. Like you just proved to yourself that underneath the name and the schedule and the opinions and the image, there is something that doesn't need any of it. Something that flies.
 
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 
 @wpm 150
 Welcome back. Everything is where you left it. Nothing broke while you were gone.

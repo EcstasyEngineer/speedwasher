@@ -4,9 +4,7 @@
 //I'm going to hurt you. Not because I enjoy it. Because you need it.
 
 @wpm 150
-@hybrid drone_low carrier:48 beat:1.5 pulse:3 db:-10 vol:0.10 fade:15
-@hybrid drone_mid carrier:72 beat:2 pulse:4 db:-7 fade:15
-@hybrid drone_high carrier:140 beat:2.5 pulse:5 db:-4 fade:15
+@binaural type:dark fade:15
 @pulseborder red hz:0.75
 Sit down.
 
@@ -52,8 +50,6 @@ You don't have to say it out loud. I already know what it looks like. It looks l
 Everyone has that gap. Most people wallpaper over it. You're here because the wallpaper is peeling.
 
 @wpm 200
-@hybrid drone_mid carrier:76 beat:2 pulse:3.5 db:-6 fade:8
-@hybrid drone_high carrier:145 beat:2.5 pulse:4.5 db:-3 fade:8
 @pulseborder yellow hz:0.5
 Feel the heat building. Feel how the words are working their way past the defenses. Every sentence another wall coming down. Every truth another inch closer to the thing you don't want to see.
 
@@ -68,8 +64,6 @@ Higher. Feel it. The edge approaching and the truth approaching at the same spee
 @subliminals truth pain heal open strip bare real honest break rebuild
 And what does it feel like? Right now? With all the walls down and the stone exposed and the gap visible? What does it feel like to be seen?
 
-@hybrid drone_mid carrier:74 beat:2 pulse:3 db:-7 fade:0.3
-@hybrid drone_high carrier:140 beat:2.5 pulse:4 db:-4 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Stop.
 
@@ -135,8 +129,6 @@ What are you hiding from? Say it inside your skull. Name it. Give it shape. Give
 @subliminals truth heal break rebuild real honest brave open crack light
 Higher. Right to the edge. Right to the place where the truth and the pleasure are indistinguishable and your body is shaking and your mind is clear and you are more honest than you have ever been in your entire life
 
-@hybrid drone_mid carrier:74 beat:2 pulse:3 db:-7 fade:0.3
-@hybrid drone_high carrier:140 beat:2.5 pulse:4 db:-4 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:3000 word:Hold.
 
@@ -170,9 +162,7 @@ Pain is just truth without packaging. And truth is just the first step toward no
 @sfx bell
 
 @wpm 120
-@hybrid drone_low off fade:10
-@hybrid drone_mid off fade:10
-@hybrid drone_high off fade:10
+@binaural off fade:10
 I hurt you today. I meant to. I will again.
 
 Because underneath the cruelty there is something that sees you clearly and believes you can survive being seen.

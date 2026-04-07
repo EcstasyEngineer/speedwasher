@@ -84,18 +84,17 @@ Chimes plus snap flash plus the word Drop. Both should have fired together.
 // === SECTION 6: BINAURAL / HYBRID AUDIO ===
 Section six. Audio engine. Starting a hybrid drone.
 
-@hybrid test carrier:150 beat:4 pulse:6 db:0 vol:0.15 fade:3
+@binaural fade:3
 You should hear a pulsing tone fading in over three seconds. Binaural beat at four hertz. Isochronic pulse at six hertz.
 
 @wpm 250
 Let it play for a moment. The tone should be steady and present in both ears.
 
 Now keyframing to a lower carrier frequency.
-@hybrid test carrier:90 beat:3 pulse:4 db:-3 fade:5
 The tone should be shifting lower and getting slightly quieter over five seconds. Same layer, smooth transition.
 
 Now stopping the audio layer.
-@hybrid test off fade:2
+@binaural off fade:2
 Audio should be fading out over two seconds.
 
 @pause duration:2500
@@ -144,8 +143,6 @@ Survived. If you're still reading, error handling works.
 @wpm 180
 Section nine. Final test. A quick demonstration that everything composes together.
 
-@hybrid drone carrier:90 beat:3 pulse:3.3 db:-6 vol:0.13 fade:8
-@hybrid shimmer carrier:170 beat:4 pulse:7 db:-4 fade:8
 @spiral fade:3
 @subliminals relax breathe easy good safe
 
@@ -164,8 +161,6 @@ And the thing about focus is , it's a skill. The same skill that makes you good 
 You've been a good tester. Thorough. Patient. Attentive to every detail.
 
 @wpm 400
-@hybrid drone carrier:93 beat:3 pulse:2.5 db:-4 fade:10
-@hybrid shimmer carrier:140 beat:3.5 pulse:5.5 db:-2 fade:10
 And if your focus softened a little during that stretch , if the words started just flowing in without effort , that's fine. That's the tool working exactly as designed. You built it. You earned the right to feel it work.
 
 @sfx bell
@@ -173,8 +168,6 @@ And if your focus softened a little during that stretch , if the words started j
 
 @wpm 200
 @pulseborder off fade:2
-@hybrid drone carrier:90 beat:3 pulse:3.3 db:-6 fade:3
-@hybrid shimmer carrier:170 beat:4 pulse:7 db:-4 fade:3
 Now gently coming back up. The audio is settling. The spiral is slowing. Easy transition.
 
 @wpm 250
@@ -185,8 +178,7 @@ You are a good user. Patient and thorough. Everything you built today works. The
 
 @subliminals off fade:2
 @spiral off fade:3
-@hybrid drone off fade:4
-@hybrid shimmer off fade:4
+@binaural off fade:4
 
 @wpm 200
 Coming all the way back now. Clear. Alert. Present.

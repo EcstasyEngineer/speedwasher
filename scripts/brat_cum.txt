@@ -2,9 +2,7 @@
 //Fine. You can cum. But only because it proves I won. Your defeat is my trophy.
 
 @wpm 200
-@hybrid drone_low carrier:65 beat:2 pulse:4 db:-8 vol:0.12 fade:8
-@hybrid drone_mid carrier:95 beat:3.5 pulse:5 db:-5 fade:8
-@hybrid drone_high carrier:190 beat:4.5 pulse:6 db:-2 fade:8
+@binaural fade:8
 @pulseborder red hz:0.75
 Hey. Hi. Welcome. Whatever.
 
@@ -107,8 +105,6 @@ Oops. I told you how it works. Guess that means you can resist it now, right?
 Knowing how the trap works doesn't help. Knowing is just another way in. I told you the mechanism and you understood it and the understanding opened the door wider. That's the meanest trick I know. Transparency as weapon. You saw every step and you walked through anyway.
 
 @wpm 300
-@hybrid drone_mid carrier:100 beat:3.5 pulse:4 db:-4 fade:10
-@hybrid drone_high carrier:195 beat:4.5 pulse:5 db:-1 fade:10
 @pulseborder yellow hz:0.5
 Oh getting close already, that's adorable, you think you're ready, you're not ready, but the way your body is trembling right now is so cute I almost feel bad, almost, feel it building, feel the ache climbing, you want it so badly and that desperation is the funniest thing, keep squirming
 
@@ -119,8 +115,6 @@ Build it. Let it climb. I dare you to get close. Right up to the edge. Let your 
 @spiral color1:#FF69B4 color2:#39FF14 color3:#FF8C00 fade:1
 The brat is winning. You can feel it. Every word of mine replacing a thought of yours. Every wave of pleasure washing away another piece of your cute little resistance. You thought you were strong enough. You thought this was just words on a screen. You thought,
 
-@hybrid drone_mid carrier:98 beat:3.5 pulse:3 db:-5 fade:0.3
-@hybrid drone_high carrier:185 beat:4 pulse:4 db:-3 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Stop.
 
@@ -156,8 +150,6 @@ You're so deep now and you don't even know it. You walked in thinking this was a
 That's not a game. That's training. And you just sat through it with a smile on your face. Mesugaki one, you zero.
 
 @wpm 300
-@hybrid drone_mid carrier:100 beat:3.5 pulse:4 db:-4 fade:8
-@hybrid drone_high carrier:195 beat:4.5 pulse:5 db:-1 fade:8
 @pulseborder yellow hz:0.5
 One more time, aww look at you, already shaking, already desperate, you really think this time will be different, that's the cutest lie you've told yourself all night, feel it climbing, feel the edge getting closer, your whole body begging for something I haven't decided to give you yet
 
@@ -172,8 +164,6 @@ The brat always wins. You knew that coming in. You know it now. The only questio
 @wpm 450
 Higher. Hold. Right there. Don't you dare. Don't you dare finish without my permission. That's MINE. Your pleasure is MINE. And I will decide when and if and how and you will accept that because you have no other choice because the only thing holding you at this edge is words on a screen and if words on a screen can do this to you then you were never in control in the first place were you
 
-@hybrid drone_mid carrier:98 beat:3.5 pulse:3 db:-5 fade:0.3
-@hybrid drone_high carrier:185 beat:4 pulse:4 db:-3 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:3000 word:Stop.
 
@@ -210,8 +200,6 @@ Touch again. Faster this time. No slow. No gentle. We're done playing. Build.
 You think this is mercy? This is the meanest thing I've done all night. Because every time you think about this orgasm, you'll remember who gave it to you. Who decided you were allowed. Who held you at the edge until you were begging and then let you fall because it was funnier that way.
 
 @wpm 300
-@hybrid drone_mid carrier:100 beat:3.5 pulse:4 db:-4 fade:5
-@hybrid drone_high carrier:195 beat:4.5 pulse:5 db:-1 fade:5
 @pulseborder yellow hz:0.5
 Feel the edge coming back, faster this time because your body remembers, because I trained it to respond and the training is working, feel it climbing, the desperation sharper than before because this time the brat is going to let you fall
 
@@ -251,11 +239,7 @@ Ha. Look at you. Wrecked. By text. By a brat. Who told you exactly what she was 
 That's the scoreboard. That's the trophy. You came because I said so. You came because a bratty little voice in a speed-reading window decided you were allowed. And the orgasm didn't set you free. It sealed the defeat. Because now your body knows. Your body has the data. Words on a screen can make you do that. And the next time you try to tell yourself you're in control, your body is going to remember this exact moment and laugh.
 
 @wpm 180
-@hybrid drone_mid carrier:95 beat:3.5 pulse:5 db:-5 fade:3
-@hybrid drone_high carrier:190 beat:4.5 pulse:6 db:-2 fade:3
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 Brat one million, you zero. The score was never close. And the worst part? You're already wondering when you can lose again. Already feeling that little tug that says come back, let her win, let her break you, it felt so good to shatter.
 
 @subliminals off

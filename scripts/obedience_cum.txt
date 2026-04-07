@@ -2,9 +2,7 @@
 //Obedience = reward. The body learns what the mind already knows.
 
 @wpm 150
-@hybrid drone_low carrier:55 beat:1.5 pulse:4.5 db:-10 vol:0.09 fade:15
-@hybrid drone_mid carrier:78 beat:2 pulse:5 db:-7 fade:15
-@hybrid drone_high carrier:150 beat:3 pulse:6 db:-4 fade:15
+@binaural fade:15
 @pulseborder red hz:0.75
 Hey. Just hey. No ceremony. Just one voice and one curious person and a space between them.
 
@@ -49,8 +47,6 @@ Mindless.
 Deeper. Each repetition cuts the channel deeper. Each time the word arrives faster. Meets less resistance.
 
 @wpm 250
-@hybrid drone_mid carrier:82 beat:2 pulse:4.5 db:-5 fade:8
-@hybrid drone_high carrier:155 beat:3 pulse:5.5 db:-2 fade:8
 @pulseborder yellow hz:0.5
 @subliminals mindless obey follow deep easy flow surrender warm
 Build. Feel the warmth accelerating. The trigger word and the touch and the voice weaving together into the frequency of obedience. Not a cage. A current. Carrying you.
@@ -113,9 +109,7 @@ Come. Let the word and the release arrive together. Let obedience and pleasure f
 There. Breathe. Feel what the body just learned.
 
 @wpm 150
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 Obedience equals reward. Not as a concept. As a felt reality written in your nervous system. The word mindless will surface in quiet moments. And when it does, the warmth will return. And the warmth will remind you what following felt like. And the memory will pull you back.
 
 Welcome to obedience. The first lesson is always a reward.

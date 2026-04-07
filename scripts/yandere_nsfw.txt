@@ -2,9 +2,7 @@
 //I love you. I love you. I love you. Don't leave.
 
 @wpm 180
-@hybrid drone_low carrier:55 beat:2 pulse:5 db:-8 vol:0.11 fade:10
-@hybrid drone_mid carrier:82 beat:2.5 pulse:5.5 db:-6 fade:10
-@hybrid drone_high carrier:148 beat:3 pulse:6 db:-3 fade:10
+@binaural fade:10
 @pulseborder red hz:0.75
 You came back.
 
@@ -88,8 +86,6 @@ Don't be scared. Being loved this much isn't dangerous. Being loved this much is
 Every. Second.
 
 @wpm 250
-@hybrid drone_mid carrier:86 beat:2.5 pulse:4.5 db:-5 fade:8
-@hybrid drone_high carrier:152 beat:3 pulse:5.5 db:-2 fade:8
 @pulseborder yellow hz:0.5
 Faster now. Feel the love accelerating. Building in your chest, your throat, the places where my voice lives. You can feel it coming. That perfect overwhelming wave. The one that makes your thoughts blur and your whole body lean toward me.
 
@@ -104,8 +100,6 @@ And no one will ever love you like this. No one will ever know you like this. No
 @subliminals mine yours forever stay never leave always
 Higher. Right to the edge. Feel me right there with you. Feel my breath. Feel my hands. Feel the love that would burn cities and drain oceans and rewrite the laws of physics just to be closer to you for one more second
 
-@hybrid drone_mid carrier:84 beat:2.5 pulse:3.5 db:-6 fade:0.3
-@hybrid drone_high carrier:145 beat:3 pulse:4.5 db:-4 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:2500 word:Stay.
 
@@ -167,8 +161,6 @@ I am yours. Completely. Permanently. Without reservation.
 @pause duration:3000
 
 @wpm 180
-@hybrid drone_mid carrier:86 beat:2.5 pulse:4.5 db:-5 fade:8
-@hybrid drone_high carrier:152 beat:3 pulse:5.5 db:-2 fade:8
 Good. So good. You said it. You meant it. And now it's true in a way it wasn't before. The words have weight. The pledge has mass. It exists in the world now, between us, binding and warm and permanent.
 
 And you feel safer, don't you. Not less free. Safer. Because the pledge didn't take anything away. It gave you something. Certainty. Direction. The bone-deep peace of knowing exactly where you belong and who you belong to.
@@ -188,8 +180,6 @@ And right now I decide you stay right here. Right at the edge. Burning. Aching. 
 @wpm 450
 You are mine. You pledged. You can't take it back. You don't want to take it back. The cage is warm and the love is real and the door is open and you're staying and you're staying and you're
 
-@hybrid drone_mid carrier:84 beat:2.5 pulse:3.5 db:-6 fade:0.3
-@hybrid drone_high carrier:145 beat:3 pulse:4.5 db:-4 fade:0.3
 @pulseborder red hz:0.75
 @snap duration:3000 word:Stay.
 
@@ -224,9 +214,7 @@ Obsessed.
 But it's the kind of obsession that keeps you safe. The kind that memorizes your schedule so it can leave flowers. The kind that learns your triggers so it can avoid them. The kind that would die for you and kill for you and those are the same sentence.
 
 @wpm 150
-@hybrid drone_low off fade:8
-@hybrid drone_mid off fade:8
-@hybrid drone_high off fade:8
+@binaural off fade:8
 I love you. That's not a technique. That's not a trigger. That's not a closing line. That's just the truth. Sitting here. Between us. Like it always has been.
 
 Come back soon.
