@@ -47,7 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
         yellow: '#eab308',
         purple: '#8B5CF6',
         raspberry: '#e91e8c',
-        red: '#ef4444'
+        red: '#ef4444',
+        pink: '#ec4899'
+    };
+
+    // Spiral color palettes per JOI state — the spiral becomes the state indicator
+    const STATE_SPIRAL_COLORS = {
+        '#22c55e': ['#22c55e', '#4ade80', '#16a34a'],  // green
+        '#eab308': ['#eab308', '#fbbf24', '#ca8a04'],  // yellow
+        '#8B5CF6': ['#8B5CF6', '#a78bfa', '#7c3aed'],  // purple
+        '#e91e8c': ['#e91e8c', '#f472b6', '#be185d'],  // raspberry
+        '#ef4444': ['#ef4444', '#f87171', '#dc2626'],  // red
+        '#ec4899': ['#ec4899', '#f9a8d4', '#db2777']   // pink
     };
     const rsvpContainer = document.getElementById('rsvp-container');
 
@@ -85,7 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
             rsvpContainer.style.setProperty('--pulse-fade', params.fade + 's');
             rsvpContainer.classList.remove('pulsing');
             rsvpContainer.classList.add('pulse-fading');
-            // Clean up after fade
             setTimeout(() => {
                 rsvpContainer.classList.remove('pulse-fading');
                 rsvpContainer.style.removeProperty('--pulse-fade');
@@ -94,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
             rsvpContainer.classList.remove('pulse-fading');
             rsvpContainer.style.setProperty('--pulse-color', params.color);
             if (rsvpContainer.classList.contains('pulsing')) {
-                // Adjust playback rate to match new hz without restarting animation
                 const anim = rsvpContainer.getAnimations().find(a => a.animationName === 'pulse-border');
                 if (anim) {
                     const baseDuration = parseFloat(rsvpContainer.style.getPropertyValue('--pulse-duration'));
@@ -103,6 +112,14 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 rsvpContainer.style.setProperty('--pulse-duration', (1 / params.hz) + 's');
                 rsvpContainer.classList.add('pulsing');
+            }
+
+            // Drive spiral colors from state — spiral becomes the primary state indicator
+            if (spiral.isRunning) {
+                const palette = STATE_SPIRAL_COLORS[params.color];
+                if (palette) {
+                    spiral.start(palette, undefined, undefined, 1);
+                }
             }
         }
     }
