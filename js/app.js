@@ -734,6 +734,10 @@ document.addEventListener('DOMContentLoaded', () => {
           sfw: 'succubus_sfw', nsfw_deny: 'succubus_nsfw', nsfw_cum: 'succubus_cum', denialBump: 10 },
         { id: 'drone', emoji: '🪶', name: 'Drone', desc: 'Systems nominal',
           sfw: 'drone_sfw', nsfw_deny: 'drone_nsfw', nsfw_cum: 'drone_cum', denialBump: 20 },
+        { id: 'puppet', emoji: '🎭', name: 'Puppet', desc: 'Emptiness as relief',
+          sfw: 'puppet_sfw', nsfw_deny: 'puppet_nsfw', nsfw_cum: 'puppet_cum', denialBump: 15 },
+        { id: 'venus', emoji: '✨', name: 'Goddess', desc: 'Worship & devotion',
+          sfw: 'venus_golden_path', nsfw_deny: 'venus_nsfw', nsfw_cum: 'venus_cum', denialBump: 5 },
     ];
 
     const grid = document.getElementById('archetype-grid');
