@@ -70,6 +70,23 @@ const LintEngine = (() => {
                 continue;
             }
 
+            // Flow control
+            const labelMatch = stripped.match(/^@label\s+(\S+)/i);
+            if (labelMatch) {
+                events.push({ type: 'label', line: lineNum, name: labelMatch[1].toLowerCase(), wordIndex, wpm: currentWPM });
+                continue;
+            }
+            const gotoMatch = stripped.match(/^@goto\s+(\S+)/i);
+            if (gotoMatch) {
+                events.push({ type: 'goto', line: lineNum, target: gotoMatch[1].toLowerCase(), wordIndex, wpm: currentWPM });
+                continue;
+            }
+            const branchMatch = stripped.match(/^@branch\s+(\S+)/i);
+            if (branchMatch) {
+                events.push({ type: 'branch', line: lineNum, target: branchMatch[1].toLowerCase(), wordIndex, wpm: currentWPM });
+                continue;
+            }
+
             if (/^@(spiral|subliminals|binaural|cw)\s/i.test(stripped)) continue;
             if (/^@\w/i.test(stripped)) continue;
 
