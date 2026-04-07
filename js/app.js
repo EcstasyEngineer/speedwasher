@@ -744,6 +744,8 @@ document.addEventListener('DOMContentLoaded', () => {
           sfw: 'venus_golden_path', nsfw: 'venus_nsfw' },
         { id: 'pet', emoji: '🐾', name: 'Pet', desc: 'Small and loved',
           sfw: 'pet_sfw', nsfw: 'pet_nsfw' },
+        { id: 'maid', emoji: '🧹', name: 'Maid', desc: 'Service with pride',
+          sfw: 'maid_sfw', nsfw: 'maid_nsfw' },
     ];
 
     const grid = document.getElementById('archetype-grid');
