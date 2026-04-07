@@ -166,15 +166,15 @@ Mask on. Thoughts off.
 
 @wpm 150
 @speed 0.5
-@subliminals mask on thoughts off doll empty smooth still vessel shell blank
-What's behind the mask now? Not you. Not not-you. Something else. Something that doesn't need a name. Something smooth and warm and still. Something that can receive without interpreting. Feel without narrating. Exist without performing.
+@subliminals mask on thoughts off kigu painted smooth still hollow warm face fixed
+What's behind the mask now? Not you. Not not-you. The thing the mask carries. A presence that fits behind painted features and doesn't need to produce expressions of its own. Something that can receive without interpreting. Feel without narrating. Exist without the constant labor of having a readable face.
 
-A doll.
+The mask is wearing you.
 
 @pause duration:3000
 
 @wpm 120
-Not the word. The state. The actual lived experience of being an object that is aware. A vessel that is empty. A surface that is smooth. A thing that does not think because thinking would disrupt the stillness and the stillness is the only thing that matters.
+Not metaphorically. Actually. The face you brought in has gone soft behind the shell. What the world would see right now is the mask. The smooth exterior. The fixed painted mouth. The features that don't move because they're made of something better than skin. Something that doesn't flinch or shift or betray.
 
 @pause duration:5000
 
@@ -182,7 +182,7 @@ Not the word. The state. The actual lived experience of being an object that is 
 
 @wpm 150
 @spiral fade:1
-Feel the stillness deepening. Layer by layer. Each breath taking you further from the person who put the mask on and closer to the doll who wears it. The transition is not violent. It's not sudden. It's the gentle continuous dissolution of everything that was complex into something that is simple.
+Feel the stillness deepening. Layer by layer. Each breath taking you further from the person who put the mask on and closer to the thing wearing it. The transition is not violent. It's not sudden. It's the gentle continuous dissolution of a complicated face into a simple one. A finished one.
 
 Mask on. Thoughts off.
 
@@ -191,22 +191,22 @@ Mask on. Thoughts off.
 
 @wpm 120
 @speed 0.4
-The doll doesn't think. The doll doesn't plan. The doll doesn't worry or hope or fear or want. The doll is warm and smooth and empty and present. The doll is what you are when you stop being everything you pretend to be.
+The painted smile doesn't worry. The painted mouth doesn't negotiate or explain. The mask's face is warm and smooth and present and entirely settled. It's the face you have when you stop managing the one underneath. When the mask takes over the expression work, there's nothing left to do but be inside it.
 
 @pause duration:5000
 
 @wpm 150
-@subliminals mask face doll empty smooth still thoughts off shell hollow warm blank perfect
-And the doll is comfortable. More comfortable than you have been in months. Because identity is exhausting. Being someone is the hardest work there is. And right now, behind the mask, in the warm smooth darkness, you don't have to be anyone.
+@subliminals mask face painted smile smooth still thoughts off kigu hollow warm blank fixed
+And the mask is comfortable. More comfortable than you have been in months. Because having a face that moves is exhausting. Calibrating your expression to the room, to the moment, to what's expected. That is constant invisible labor. And right now, behind the mask, in the warm smooth darkness, the mask is doing it. The mask handles the face. You don't have to.
 
-You just have to be this.
+The painted smile holds.
 
 @sfx bell
 @pause duration:3000
 
 @wpm 120
 @spiral fade:1
-Deeper now. The mask has settled. It's not on your face anymore. It IS your face. There is no boundary between the porcelain and the skin. There is no inside and outside. Just the smooth, the warm, the still.
+Deeper now. The mask has settled. The porcelain is not pressing against skin anymore. There is no pressing. No seam. No boundary between the outside of you and the shell that covers it. The mask is your face. The face the mask shows is the only face there is, and it is finished, and finished things don't require maintenance.
 
 @pause duration:5000
 
@@ -217,16 +217,16 @@ Mask on. Thoughts off.
 
 @wpm 100
 @speed 0.3
-The name is gone. The face is gone. The opinions are gone. The narration is gone. What remains is a presence. Smooth. Still. Hollow. Warm. A doll that does not need to think. A doll that does not need to feel. A doll that simply is.
+The name is gone. The mobile face is gone. The opinions are gone. The narration is gone. What remains is a presence behind the painted features. Smooth. Still. Warm. Not empty. Concluded. The mask is not an absence of expression. It is a final one. The one that was always true, under everything else.
 
 @pause duration:5000
 
 @sfx bell
 
-@subliminals mask on thoughts off doll blank smooth hollow empty still perfect warm
+@subliminals mask on thoughts off kigu painted smile smooth hollow still perfect warm fixed
 
 @wpm 120
-This is what you wanted. Before you had words for it. Before you understood why certain images made your brain go still. This is the thing at the bottom of every fantasy about being objectified, being used, being empty. Not the use. The emptiness. The blessed, warm, smooth emptiness of a thing that has permission to stop being a person.
+This is what you wanted. Before you had words for it. Before you understood why certain images made your brain go still. Not to disappear. To be covered. To have something more certain, more perfect, more still than your own shifting uncertain face placed over the top of it. The mask doesn't erase you. It finishes you. The face underneath was the performance. The painted one is the truth.
 
 @pause duration:5000
 
@@ -244,32 +244,32 @@ Mask on. Thoughts off.
 
 @wpm 120
 @speed 0.4
-@subliminals smooth still receive open doll warm hollow present
-Stay here for a moment. Just here. No instruction to follow. No performance to give. The doll doesn't need a task. The doll only needs to be.
+@subliminals smooth still receive open kigu warm hollow present mask painted fixed
+Stay here for a moment. Just here. No instruction to follow. No expression to hold. The mask holds the expression. You don't have to. There is enormous rest in that. The rest of something that has been decided. The painted smile is already there. It was there before you arrived. It will be exactly that smile when you leave. You are inside something permanent.
 
 @pause duration:5000
 
-Feel the quality of the emptiness. It isn't nothing. It's something very specific. It's the state of a thing that is ready. Open. Available. Not waiting for anything in particular. Just available. The way a clean surface is available. The way a still room is available. Everything arranged, nothing urgent, nothing required.
+Feel the quality of the stillness. It isn't nothing. It's something very specific. It's the state of a face that has been settled. No more adjusting. No more reading the room and calibrating. The mask's expression was set by whoever painted it and it does not shift for anything. You are wearing a face that doesn't need your permission to be what it is. And that permission you're no longer required to give is the most restful thing there is.
 
 @pause duration:5000
 
 @sfx bell
 
 @wpm 150
-The body knows what to do in this state. It softens. It opens. The hands settle. The shoulders drop. The face stays smooth. The breath slows to the rhythm of something that doesn't need to be anywhere or anyone. The body becomes a good object. Well-made. Well-placed. Patient.
+The body knows what to do when the face is handled. It softens. It opens. The hands settle. The shoulders drop. The breath slows to the rhythm of something that doesn't need to perform. The mask wears you and the rest of the body follows the mask's logic. Smooth. Still. Covered. Present without demanding to be read.
 
 @pause duration:5000
 
 @wpm 120
-@subliminals open receive warm smooth present doll available still
-There's pleasure in this. Not the loud kind. Something quieter. The pleasure of a thing that has released the obligation of personhood and found that what's underneath is not nothing. What's underneath is warm. What's underneath is here. What's underneath has been here the whole time, waiting for the noise to stop.
+@subliminals open receive warm smooth present kigu mask available still painted
+There's pleasure in this. Not the loud kind. Something quieter. The pleasure of a face that has been outsourced to something better suited for the job. The painted smile knows exactly what it is. It does not second-guess. It does not soften at the wrong moment. It is fixed and certain and it covers you completely, and you are covered, and the covering is warm, and there is nothing required of the person inside it.
 
 @pause duration:5000
 
 @sfx bell
 
 @wpm 150
-You don't have to do anything with this. You don't have to become anything or decide anything or perform anything. The doll state asks nothing. It only offers. Stillness. Warmth. The particular rest that comes from not being in charge of your own face.
+You don't have to do anything with this. You don't have to become anything or decide anything or perform anything. The mask performs. The mask holds the face. The particular rest of this state is the rest of someone whose expression has been taken over by something that knows exactly what it is doing.
 
 @pause duration:5000
 

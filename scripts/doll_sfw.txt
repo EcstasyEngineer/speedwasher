@@ -3,11 +3,11 @@
 
 @wpm 150
 @binaural type:still fade:10
-Hello, little one.
+Go soft.
 
-Not little in the way the world means it. Not small. Not diminished. Little in the way a treasured thing is little. Something that fits in the palm of a hand. Something kept safe in a soft place.
+Not smaller. Not diminished. Changed. The way fabric changes when it comes free of a shape that was holding it rigid. The way something that was one thing becomes, simply, softer.
 
-You're going to be very small for a while. And very soft. And by the end, very clean.
+You're going to be made of different material for a while. Softer. Lighter. And by the end, very clean.
 
 @snap duration:1500 word:Soft.
 
@@ -36,9 +36,9 @@ And you are about to be picked up.
 
 @wpm 180
 @spiral fade:3
-Gentle hands. They lift you carefully. You feel the fingers, so much bigger than you, closing around your middle. Supportive. Not squeezing. Holding the way you hold something precious. Something you would never drop.
+Hands. They lift you carefully. You feel the fingers closing around your middle. Supportive. Not squeezing. The grip of something that understands weight and doesn't want to damage it. The grip of someone who knows what they're holding.
 
-You're being carried somewhere. The world moves past in soft blur. Colors. Light. The hands are warm and steady and you don't need to know where you're going because the hands know and the hands are kind.
+You're being carried somewhere. The world moves past in soft blur. Colors. Light. The hands are warm and steady and a doll doesn't need to know where it's going. A doll goes where it's placed. That's one of the things a doll gets to not worry about.
 
 @pause duration:2000
 
@@ -104,20 +104,18 @@ The water is clear now. All the loosened things have been spun away. What's left
 
 @wpm 180
 @spiral fade:5
-The gentle hands return. They lift you from the water. You are warm and damp and so light. They wrap you in something soft. Softer than you. A towel made of clouds. And they hold you.
-
-Just hold you.
+The hands return. They lift you from the water. You are warm and damp and so light. They wrap you in something soft. Softer than you. A towel that has no weight, that simply presses warmth into the seams and stitching of you. You are being handled. Carefully. The way a thing worth keeping gets handled.
 
 @pause duration:5000
 
 @wpm 150
-You dry in the warmth. The hands set you somewhere soft. A sunny windowsill. A pillow. Somewhere the light falls gentle and golden and the air is warm and there is no spin and no water and no motion. Just stillness. Just the after.
+You dry in the warmth. The hands set you somewhere soft. A sunny windowsill. A shelf. Somewhere the light falls gentle and golden and the air is warm and there is no spin and no water and no motion. Just the stillness of a thing placed in its right spot. That particular stillness. A doll on a shelf, facing out, button eyes open, in no hurry to be anything other than exactly this.
 
 @subliminals off
 @spiral off fade:8
 
 @wpm 180
-And slowly, gently, the cotton becomes flesh again. The button eyes become real eyes. The warmth stays. The softness stays. The cleanness stays. You are you again but you are the clean version. The version that has been gently tumbled free of everything that was clinging to you.
+And slowly, gently, the cotton begins to remember it was flesh. The button eyes blink once, twice, and behind them are your actual eyes. The warmth stays. The softness stays. The cleanness stays. The stitching loosens back into skin. But the weight that was washed out of the cotton hasn't come back. It dissolved in the spin. It is somewhere in the water, nowhere near you.
 
 @binaural off fade:10
 
@@ -127,7 +125,7 @@ Take a breath. A real one. Deep and slow. Feel your actual body. Your actual wei
 @pause duration:3000
 
 @wpm 150
-The spin cycle is always there. Whenever the world sticks to you. Whenever the thoughts get heavy and angular and too much for a soft thing to carry. Let your gaze go soft. Let yourself be cotton. Let the warm water take you around.
+The spin cycle is always there. Whenever the world sticks to you. Whenever the thoughts get heavy and angular and too sharp for cotton to hold. Let your gaze go soft. Let yourself become stuffing. Let the seams loosen. Let the button eyes open. Let the warm water take you around.
 
 Round and round. Clean and soft and new.
 
