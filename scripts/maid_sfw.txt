@@ -2,7 +2,7 @@
 //Serve. Comply. Complete.
 
 @wpm 200
-@binaural fade:8
+@binaural type:still fade:8
 Attention.
 
 @pause duration:1500
@@ -12,97 +12,143 @@ Hands at your sides. Back straight. Eyes forward.
 @snap duration:1500 word:Attend.
 
 @wpm 180
-Good. You've been called to service. That means something. It means the protocol is beginning. It means for the duration of this task, the question of what to do next has already been answered. The protocol answers it. You don't have to.
-
-That's not a small thing. Knowing what comes next, in the right order, with the right standard. That's the entire gift of service. The decision space closes. The work opens.
+Feel the uniform settle onto your shoulders. Not fabric. A shape. The shape of someone who knows what they are doing and why they are here. The posture that comes with it. Shoulders back. Chin level. Hands that want to be useful, that want to be moving toward the next correct thing. You don't choose this shape. It arrives. It has always been there, waiting to be worn.
 
 @wpm 200
 @spiral fade:3
-Here is the first rule of service. Every task has a correct way. Not a good-enough way. A correct way. The crease that sits exactly where it should. The surface that is clean enough to reflect. The task completed in the right sequence, at the right pace, without shortcuts and without excess. This precision is not fussiness. It is the shape of the work done properly. And proper work feels different from adequate work. You already know this. That's why you're here.
+Look at the room.
+
+@wpm 150
+See it clearly. The surface that has not been wiped. The thing out of place. The corner that holds three weeks of small forgettings. The pile that became permanent because no one returned it to where it belongs. Look at all of it. Not with frustration. With the clean, clear eye of someone whose job it is to see exactly this.
+
+@pause duration:2000
+
+That is the room before. Hold that image.
 
 @wpm 180
+Now hold the room after. The surface that catches light. The thing returned to its place. The corner clean down to its angle. The space that breathes again. The visible difference between a room that has been forgotten and a room that has been attended to. That delta. That specific gap between before and after. That is what you are here to make.
+
+@pause duration:2000
+
+@snap duration:1500 word:Attend.
+
+@wpm 200
 @subliminals focus task clean complete serve protocol attend correct
-Hold the task in your mind. Not the whole weight of it. Just the shape of it. The first step. What is the first correct action? Not the second. Not the fifth. The first. What does the protocol begin with?
-
-@pause duration:3000
-
-Good. You have it. Everything else can wait. There is only the first step. Then the next step will present itself, because that's what protocols do.
-
-@snap duration:1500 word:Attend.
-
-@wpm 200
-@spiral fade:2
-Second rule of service. The body moves first. The mind follows. A skilled servant does not stand in the doorway reviewing the situation. They enter. They begin. The first motion is the only one that costs anything. Every motion after is just the protocol continuing.
+The body moves first. The mind follows. You do not review the situation from the doorway. You enter. You begin.
 
 @wpm 180
-There is a version of you that knows exactly how to do this. Has always known. The hesitation is not incompetence. It is the mind interfering with what the hands already understand. The protocol does not require the mind's permission. It only requires that you begin.
+@spiral fade:2
+They enter. They begin. The first motion is the only one that costs anything. After that: protocol.
 
-So begin.
+Pick up the first thing.
+@sfx bell
+It belongs over there.
+@sfx bell
+Return it.
+@sfx bell
+Look up. What's next.
+@sfx bell
 
-@wpm 200
+@wpm 150
+Each bell is a small completion. Each completion is its own full stop. You don't carry them forward. You leave them exactly where they are. Done. Done. Done. Done.
+
+@wpm 180
 @subliminals next step attend serve protocol precision correct clean complete
-Pick up the first thing. Place it where it belongs. That is the entire scope of what is required right now. Not the task. The step. Then the next step. A skilled servant moves through a task the way water moves through a room. Without deliberating. Without detours. With the quiet efficiency of someone who knows the protocol and trusts it.
+The protocol continues. You are inside it now. The order is not something you decide. The order reveals itself. Wipe in the direction the surface runs. Return the item to the nearest correct position. Stack what is stacked. Fold what is folded. Do not improvise when the correct action exists.
 
 @pause duration:2000
 
 @snap duration:1500 word:Attend.
 
-@wpm 180
-Third rule. There is a standard for this task and you will meet it. Not because someone is watching. Because the protocol has a standard and you serve the protocol. The difference between a task half-done and a task correctly done is audible, visible, felt. You know the difference when you see it. A corner folded properly. A surface wiped in the right direction. An item returned to its exact correct position.
+@wpm 200
+@spiral fade:2
+You can hear everything in the room. Everything that needs attention. Everything that is wrong.
 
-The standard exists whether or not it is observed. You serve it anyway. That is the dignity of service.
+@pause duration:1500
+
+@snap duration:1200 word:Attend.
+
+@wpm 200
+You can hear what is in front of you. The task directly ahead. Only that.
+
+@pause duration:1500
+
+@snap duration:1200 word:Attend.
+
+@wpm 200
+You can hear only the step. One step. This one. Right here.
+
+@pause duration:2000
+
+@wpm 180
+@subliminals precision protocol correct standard serve complete attend clean
+The work continues.
+
+Surface by surface. Object by object. Each motion following from the last the way a well-ordered sequence follows its own logic. You are not deciding. You are executing.
+
+@pause duration:2000
+
+There is a moment, somewhere around here, where the mind wants to stop. Wants to sit down. Wants to check something else, be somewhere else, defer until later. That small resistance. That is the hesitation.
 
 @wpm 200
 @spiral fade:3
-@subliminals precision protocol correct standard serve complete attend clean
-Feel what correct feels like, in advance. Not the praise. Not the recognition. The specific internal quality of a task done right. The thing that sounds like:
+And here is what the protocol tells you about hesitation: the moment you want to stop is the moment you know the protocol is working. Because hesitation is a string too. And the protocol gives you permission to cut it.
 
 @wpm 180
-This goes here.
-@sfx bell
-That's level.
-@sfx bell
-Clean corner. Clean edge. Done.
+Cut it. Return to the step. The step is still there. It was always going to be there. Begin.
+
 @sfx bell
 
-@wpm 200
-Feel that. Each small chime of correct completion. The bell doesn't wait for the whole task. It sounds every time one piece is exactly as it should be. And each chime settles something. The next step comes cleaner because the last one was right. The protocol builds on itself.
-
-@wpm 180
-@subliminals flow protocol serve attend complete correct standard precision clean
-This is the state a skilled servant works in. Not drudgery. Not effort. Ritual. Each motion part of a sequence that was designed to work. Each step fitting into the next the way the pieces of a well-ordered house fit together. There is nothing improvised about it. There is nothing to improvise. The protocol knows what comes next and you are in service to the protocol.
-
-@pause duration:2000
+@pause duration:1500
 
 @snap duration:1500 word:Attend.
 
 @wpm 200
-@spiral fade:2
-Fourth rule. Completion is not the end of the ritual. Completion is the reward of the ritual. The task correctly finished produces something specific. Not relief, not exhaustion. A quality of settled rightness. The room in order. The surface clean. The protocol fulfilled. This is what service is for. Not the praise at the end, not the acknowledgment. The correct completion, witnessed by no one, because the standard exists whether or not it is observed.
+@subliminals flow protocol serve attend complete correct standard precision clean
+The work is almost done. You can feel that. The room is shifting. The before is receding. The after is assembling itself around you. You are building something real.
+
+@wpm 150
+One more corner. One more surface. One more item in its place.
+
+@sfx bell
+That edge is right.
+@sfx bell
+That surface holds the light.
+@sfx bell
+That corner is clean to the angle.
+@sfx bell
+
+@pause duration:2000
 
 @wpm 180
-You will feel it when you reach it. That small, clean, specific satisfaction. The thing you came here to earn.
+@subliminals off
+Stand up. Turn around. Look at the room.
 
 @pause duration:3000
 
-@wpm 200
-@subliminals off
 @spiral off fade:5
-Now. Here is what stays when these words end.
+
+@wpm 150
+That is the room after. That is the delta. That is what you made.
+
+@pause duration:2000
 
 @wpm 180
-The next time you face a task. The next time the resistance builds. The fog. The distance between you and starting. Remember: the protocol begins with a single motion. Not a decision. A motion. The body moves. The hands know what they're doing. The protocol unfolds.
+Not praise. Not recognition. The specific, internal quality of a task done right. The settled quiet of a room that has been attended to properly, by someone who knows what properly means. The thing that sounds like:
+
+@wpm 150
+Every piece. In its place.
+@sfx bell
+Done.
 
 @binaural off fade:8
 
+@pause duration:2000
+
 @wpm 200
-You are not being asked to want this. You are being asked to begin it. Correct completion will take care of the wanting. It always does. The satisfaction is built into the work, not into the attitude you bring to it.
-
-@wpm 180
-Stand up. Begin the first step. Let the protocol carry you from there. Each step correct. Each completion its own small bell. The whole task a sequence of correctly done things, building toward the settled quiet of a job done properly, to the right standard, without exception.
-
-@sfx bell
-@snap duration:2000 word:Begin.
+When the next task comes, it will begin the same way. With the room before. With the hands that know what to do next. With the body that moves first, and the mind that follows, and the protocol that carries both of them through to the room after.
 
 @wpm 150
+@snap duration:2000 word:Begin.
+
 Go. Attend. Complete. Come back when the work is done and the room is right.

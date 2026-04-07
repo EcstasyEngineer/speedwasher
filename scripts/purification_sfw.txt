@@ -11,7 +11,7 @@ Again. Slower.
 
 @pause duration:4000
 
-Good. You already feel it. The shift from doing to being. From moving to stillness. From carrying to setting down.
+Good. Notice, for a moment, the small resistance. The part of you that says you should be checking something. That there are messages waiting, things unfinished, reasons this could be later instead of now. That part is real. It is not wrong. It is just used to running. You are not fighting it. You are setting it down at the edge of the path. It will be here when you return. Right now you are going somewhere it cannot follow.
 
 @wpm 180
 There is a path. Stone lanterns line it, each one glowing soft amber through frosted glass. The path is gravel. Fine. White. Each step makes a sound like a whisper. The air is cool and damp and smells like cedar and rain-wet stone and something green. Something alive.
@@ -55,9 +55,7 @@ Cup the water. It's warm. Lift it.
 
 @wpm 150
 @subliminals release wash clean flow let go pure still water
-Pour it over your hands. Watch it run between your fingers. And as it runs, let it take the first thing. The urgency. The sense that you should be doing something else right now. That low electric hum of obligation that follows you into every quiet moment.
-
-The water takes it. That's what water does. It carries things away.
+Pour it over your hands. Watch it run between your fingers. And as it runs, let it take the first thing. The face you wear when you think someone might be watching. The performance of being okay, of being competent, of being on top of it. That particular surface tension. The water takes it. That's what water does. It carries things away.
 
 @pause duration:3000
 
@@ -65,7 +63,7 @@ The water takes it. That's what water does. It carries things away.
 @snap duration:1500 word:Clean.
 
 @wpm 180
-Cup the water again. Pour it over your arms. Your shoulders. And let it take the tension. Not the muscles. The tension living inside the muscles. The bracing. The readiness. The body's ancient preparation for threats that don't exist in this room.
+Cup the water again. Pour it over your arms. Your shoulders. And let it take the places where you are bracing without reason. The locked jaw. The held breath you forgot you were holding. The tightness that arrived so gradually you mistook it for your normal. The body's long preparation for a threat that is not in this room.
 
 Feel the shoulders soften as the water passes. Feel the arms grow heavy. Not with tiredness. With release. The heaviness of a body that is finally allowed to stop holding itself together.
 
@@ -75,7 +73,7 @@ Feel the shoulders soften as the water passes. Feel the arms grow heavy. Not wit
 @spiral fade:3
 Cup the water once more. This time, pour it over your head. Slowly. Feel it trace the crown of your skull. Your temples. The back of your neck where the stress lives in a knot so old you've stopped noticing it.
 
-And this water takes the thoughts. Not all of them. Just the circular ones. The loops. The replays. The rehearsals of conversations that haven't happened yet and post-mortems of conversations that happened years ago. The water touches them and they dissolve like salt. Still part of you. But no longer solid. No longer sharp.
+And this water takes the thoughts. Not all of them. Just the ones that are going nowhere. The sentence you have been rehearsing all day, the one you are shaping and reshaping for an audience that may never hear it. The version of a conversation from three days ago where you finally said the right thing. The water touches them and they dissolve like salt. Still part of you. But no longer solid. No longer sharp.
 
 @subliminals dissolve release flow pure empty still clear water peace
 @pause duration:4000
@@ -88,6 +86,18 @@ Now. The basin. Step in.
 
 @pause duration:2000
 
+Breathe in.
+
+@pause duration:3000
+
+Hold it.
+
+@pause duration:2500
+
+Breathe out. And let the threshold go with it. The edge between outside and in. Between the ordinary and this.
+
+@pause duration:2000
+
 The water receives you. Warm. Not hot. The temperature of being held. It rises to your chest and stops. And you feel it. The boundary between you and the water becoming thinner. Not disappearing. Thinning. Like the water is not outside you but continuous with you. Like you are mostly water anyway and this is just a reunion.
 
 @wpm 180
@@ -95,7 +105,13 @@ The water receives you. Warm. Not hot. The temperature of being held. It rises t
 The steam rises around you. Soft. The light through the window shifts. The world outside this room becomes quieter. Not silent. Quiet the way deep water is quiet. Present but distant. Available but not insistent.
 
 @subliminals still warm held pure clean peace flow breathe
-Your breathing slows. Your heart slows. The water holds your weight. You don't need to hold yourself. The water does that now. And in the holding, something opens. A space in the center of your chest that has been clenched so long you forgot it could open.
+Your breathing slows. Your heart slows. The water holds your weight. You don't need to hold yourself. The water does that now.
+
+And in the holding:
+
+Something in your chest.
+
+Something in your chest begins to soften. A space there. One that has been clenched so long it forgot it could do anything else. It opens. Not all at once. Just enough. Just the first edge of it.
 
 @pause duration:5000
 
@@ -123,15 +139,15 @@ Step out of the basin. Stand on the warm stone. Let the water run from you. Let 
 
 @wpm 180
 @binaural off fade:10
-The room is quiet. You are quiet. Inside and out. And there is a feeling in the center of your chest. Not warmth. Not emptiness. Gratitude. For the water. For the stillness. For the ritual. For yourself, for walking the path and stepping through the gate and trusting the process.
+The room is quiet. You are quiet. Inside and out. And there is a feeling in the center of your chest. Not warmth. Not emptiness. Gratitude. For the water. For the stillness. For yourself.
 
 @pause duration:3000
 
 @wpm 150
-Walk back along the path. Through the gate. Through the bamboo. The lanterns are still glowing. The gravel still whispers. But you walk differently now. Lighter. Each step leaves less of a print.
+Walk back along the path. The lanterns are still glowing. The gravel still whispers. The path hasn't changed. You have.
 
 @wpm 200
-The world is where you left it. But you are not where it left you. You are cleaner. Quieter. Softer in the places that were rigid and steady in the places that were shaking.
+The world is where you left it. But you are not where it left you.
 
 And the water is always there. Always warm. Always waiting. Whenever you need to set the weight down and be washed clean.
 
