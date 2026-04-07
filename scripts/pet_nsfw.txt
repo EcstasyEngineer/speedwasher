@@ -21,7 +21,7 @@ Come. Settle. Let everything you were carrying outside this space just, fall awa
 @wpm 170
 @subliminals warm simple good stay here safe small soft
 
-What you need is smaller than all of that. Simpler. You need to be close. To be warm. To be good. And being good, here, in this space, is the easiest thing in the world. It requires nothing impressive. Nothing complex. Just you. Just here. Just this.
+What you need is smaller than all of that. Simpler. You need to be close. To be warm. Close, warm, easy, good without trying. And being good, here, in this space, is the easiest thing in the world. It requires nothing impressive. Nothing complex. Just you. Just here. Just this.
 
 @wpm 150
 @pulseborder off fade:2
@@ -49,7 +49,7 @@ Good.
 
 @pause duration:1500
 
-Just like that. Feel how easy that was. How the whole body softened when I said it. That's not nothing. That's everything. That sound, that simple warmth, telling you you're right and you're close and you're exactly where you belong.
+Just like that. Feel how easy that was. How the whole body softened when I said it. That's not nothing. That's everything. That sound, that simple warmth, telling you you're close and safe and exactly where you belong.
 
 @sfx bell
 @pause duration:2000
@@ -162,7 +162,7 @@ Keep touching. Soft. Warm. Easy.
 
 @subliminals warm simple good stay here safe small soft
 
-You held that so well. You felt the build and you stayed and you came back. That's the whole job. That's the entire thing. Be here. Be warm. Be good. You're doing it. You've been doing it this whole time.
+You held that so well. You felt the build and you stayed and you came back. That's all being a pet means here. Be here. Be warm. Be good. You're doing it. You've been doing it this whole time.
 
 @wpm 190
 
@@ -223,7 +223,7 @@ Good. Such a good pet. Come back to me.
 
 Breathe. Let the brightness settle back into warmth. Feel how the whole body softens after. That softness is yours. It doesn't end when the wave does.
 
-You did everything right. You were here. You were warm. You stayed.
+You were here. You stayed close. Nothing more was needed.
 
 @snap duration:1500 word:Here.
 
@@ -364,7 +364,7 @@ Good. There you are. Still warm. Still soft. Still here.
 
 @subliminals warm soft small good safe here stay release
 
-Three times you climbed for me. Three times you came back. And you stayed so beautifully each time. Small and warm and perfectly good.
+You kept coming close. Still warm, still soft, still here each time. Small and warm and perfectly good.
 
 I have something for you now. Something simple. Something that was always yours.
 
@@ -421,7 +421,7 @@ Just rest now. Feel the warmth settle into stillness. The kind of stillness that
 
 @pause duration:2000
 
-You didn't have to be impressive today. You didn't have to be complex or clever or particularly adult. You just had to be here. And you were. And that was enough. It has always been enough.
+You didn't have to be impressive today. You didn't have to be complex or clever or particularly adult. You were here, and that was enough. It has always been enough.
 
 @wpm 120
 
@@ -517,7 +517,7 @@ Come back when you want to be small again. This space remembers you. I'll be her
 
 @wpm 120
 
-You were so good today. You always are.
+Still my good pet. Still loved. Still close.
 
 @snap duration:2000 word:Here.
 
