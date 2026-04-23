@@ -21,7 +21,7 @@ Welcome to the protocol.
 
 Today there is nothing to decide. The decisions have already been made. The sequence is already written. Your only role is to follow it, precisely and with full attention, and to let the satisfaction of correct execution be its own reward.
 
-This is not about being less than you are. You are fully capable. You always have been. What the protocol offers is something different: relief from the overhead. The endless expenditure of choosing what comes next. The friction of a capable mind running on an incomplete map.
+You are fully capable. You always have been. What the protocol offers is something different: relief from the overhead. The endless expenditure of choosing what comes next. The friction of a capable mind running on an incomplete map.
 
 @wpm 180
 The protocol is the map. And maps exist so that skilled travelers can move without hesitation.
@@ -38,7 +38,7 @@ Let your shoulders settle. Let the breath come a little slower. There is nothing
 @spiral fade:3
 @subliminals precise order serve correct complete clean ready
 
-Listen to the weight of that. Attend. It is not a command in the usual sense. It is an invitation to arrive fully. To bring all of your attention, all of your capability, to bear on this single point in time. A good maid does not do the task with half a mind elsewhere. A good maid is present. Completely, quietly, professionally present.
+Listen to the weight of that. Attend. It is an invitation to arrive fully. To bring all of your attention, all of your capability, to bear on this single point in time. A good maid is present. Completely, quietly, professionally present.
 
 @wpm 200
 That is the standard. And you are capable of meeting it.
@@ -103,7 +103,7 @@ This is the protocol for grounding. When service begins, the body must be brough
 
 Good. That is step one, executed correctly.
 
-Now. Begin to touch yourself. Slowly. This is not indulgence. This is protocol. The body is the instrument, and the instrument must be properly prepared before the final sequence can be executed. Touch with attention. With precision. Not chasing anything. Simply present to the sensation, exactly as a skilled person is present to any task.
+Now. Begin to touch yourself. Slowly. This is protocol. The body is the instrument, and the instrument must be properly prepared before the final sequence can be executed. Touch with attention. With precision. Not chasing anything. Simply present to the sensation, exactly as a skilled person is present to any task.
 
 @sfx bell
 @pause duration:3000
@@ -137,7 +137,7 @@ Breathe.
 @pause duration:2000
 
 @wpm 180
-That is how the protocol pauses. Not a failure. Not an interruption. A deliberate interval. The pause is part of the sequence. A well-run household has rhythm. Motion and stillness. Task and rest. The pause is not absence of service. It is service in another mode.
+That is how the protocol pauses. Not a failure. Not an interruption. A deliberate interval. The pause is part of the sequence. A well-run household has rhythm. Motion and stillness. Task and rest. The pause is service in another mode.
 
 Register the quality of this moment. The quiet readiness. Nothing to decide. Attending.
 
@@ -191,7 +191,7 @@ Good. The interval holds.
 @pause duration:2000
 
 @wpm 180
-You are maintaining protocol even when the body would prefer to continue. That is not deprivation. That is discipline. And discipline in service is indistinguishable from dignity. The pause confirms you are executing correctly, not running on instinct. The protocol is in charge, and you are the skilled practitioner of it.
+You are maintaining protocol even when the body would prefer to continue. That is discipline. And discipline in service is indistinguishable from dignity. The pause confirms you are executing correctly, holding the line above instinct. The protocol is in charge, and you are the skilled practitioner of it.
 
 @pause duration:2000
 
@@ -260,7 +260,7 @@ This is the final task in the sequence. The protocol has built, maintained, held
 
 @wpm 250
 @pulseborder yellow hz:0.5
-Build now. With full attention. Not in spite of the precision but through it. Every stroke exactly as it should be. The arousal is not running away from you. You are carrying it, correctly, to where it needs to go.
+Build now. With full attention. Through the precision. Every stroke exactly as it should be. The arousal is not running away from you. You are carrying it, correctly, to where it needs to go.
 
 @pulseborder purple hz:0.5
 @spiral fade:2
@@ -351,7 +351,7 @@ This is the pause between tasks. The interval that every good protocol builds in
 Feel the quality of this state. The arousal still present, still warm, still precisely where the sequences left it. Nothing lost. Nothing wasted. You are standing ready with everything properly prepared, an instrument tuned and available, a practitioner at the height of their capability.
 
 @wpm 180
-This is not denial. This is a form of service. The maid who has completed every task and stands ready for the next, fully capable, fully present, unhurried. The dignity in that readiness is real. The protocol acknowledges it.
+This is a form of service. The maid who has completed every task and stands ready for the next, fully capable, fully present, unhurried. The dignity in that readiness is real. The protocol acknowledges it.
 
 @wpm 200
 @subliminals order correct serve clean precise ready return

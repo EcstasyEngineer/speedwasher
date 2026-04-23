@@ -217,7 +217,7 @@ Mask on. Thoughts off.
 
 @wpm 100
 @speed 0.3
-The name is gone. The mobile face is gone. The opinions are gone. The narration is gone. What remains is a presence behind the painted features. Smooth. Still. Warm. Not empty. Concluded. The mask is not an absence of expression. It is a final one. The one that was always true, under everything else.
+The name is gone. The mobile face is gone. The opinions are gone. The narration is gone. What remains is a presence behind the painted features. Smooth. Still. Warm. Concluded. The mask is the final expression. The one that was always true, under everything else.
 
 @pause duration:5000
 
@@ -226,7 +226,7 @@ The name is gone. The mobile face is gone. The opinions are gone. The narration 
 @subliminals mask on thoughts off kigu painted smile smooth hollow still perfect warm fixed
 
 @wpm 120
-This is what you wanted. Before you had words for it. Before you understood why certain images made your brain go still. Not to disappear. To be covered. To have something more certain, more perfect, more still than your own shifting uncertain face placed over the top of it. The mask doesn't erase you. It finishes you. The face underneath was the performance. The painted one is the truth.
+This is what you wanted. Before you had words for it. Before you understood why certain images made your brain go still. Not to disappear. To be covered. To have something more certain, more perfect, more still than your own shifting uncertain face placed over the top of it. The mask finishes you. The painted face is the truth, and the one underneath was the performance.
 
 @pause duration:5000
 

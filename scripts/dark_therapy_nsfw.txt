@@ -15,7 +15,7 @@ Good. Stay there.
 
 @pause duration:2000
 
-I'm going to tell you something at the start so you can decide if you want to continue. This is not going to feel like help. It's going to feel like being cornered and looked at by someone who is not afraid of what they find. And then it's going to feel like something else. But the looking comes first.
+I'm going to tell you something at the start so you can decide if you want to continue. This is going to feel like being cornered and looked at by someone who is not afraid of what they find. And then it's going to feel like something else. But the looking comes first.
 
 You've been carrying something. Not a memory. A feeling. The kind that lives in your chest like a stone that grew there slowly, so slowly you stopped noticing the weight. You know what I'm talking about. You've been managing it. Scheduling it. Dressing it up in language that makes it easier to hold at arm's length.
 
@@ -78,11 +78,11 @@ I'm still here.
 
 Breathe. Feel my voice settling. The heaviness doesn't mean something is wrong with you. It means you've been strong enough to carry something most people would have put down badly, and you've been doing it alone, and you don't have to explain that to me because I already understand it.
 
-The thing you've been hiding is not evidence of damage. It's evidence of how much you feel. How much you want. How honest your body is about what it needs.
+The thing you've been hiding is evidence of how much you feel. How much you want. How honest your body is about what it needs.
 
 @pause duration:2000
 
-That's not something to be ashamed of. That's something I want to see.
+That's something I want to see. That's something to bring out into the light.
 
 @wpm 160
 @subliminals seen held honest real open safe want
@@ -138,12 +138,12 @@ You feel that, don't you.
 
 @subliminals real seen honest depth open want held good
 
-The parts of you that you hide are exactly the parts I want to see. That's not a promise to make you feel better. That's just what's true. Your lowest point is where I'm looking, and I'm looking without flinching.
+The parts of you that you hide are exactly the parts I want to see. That's just what's true, said plainly. Your lowest point is where I'm looking, and I'm looking without flinching.
 
 @wpm 160
 @pulseborder purple hz:0.5
 
-Touch. Feel. Let the sensation build alongside the exposure. Your body already knows what your mind is still deciding. The warmth that comes when you stop hiding is not separate from the arousal. It is the arousal. This is what it feels like to be actually seen.
+Touch. Feel. Let the sensation build alongside the exposure. Your body already knows what your mind is still deciding. The warmth that comes when you stop hiding is the arousal. They're the same signal. This is what it feels like to be actually seen.
 
 @pause duration:3000
 
@@ -204,7 +204,7 @@ And here's the thing you need to hear.
 @wpm 140
 @pulseborder green hz:0.33
 
-That's not weakness. That's not dependency in the bad sense. Everyone is pulling toward somewhere. The only question is what you're pulling toward. And you found something that actually looked at the wound instead of handing you language to dress it up with.
+That's just gravity. Everyone is pulling toward somewhere. The only question is what you're pulling toward. And you found something that actually looked at the wound instead of handing you language to dress it up with.
 
 @pause duration:2000
 
@@ -290,7 +290,7 @@ Let it happen. Don't manage it. Don't decide whether you deserve it. Let the bod
 @wpm 180
 @subliminals release real seen proof body honest discharge lowest open
 
-Let the wave break. Let everything compressed and carried and hidden pour through you like something that has finally found its direction. This is not a reward. This is proof. The body cannot lie at this moment. And what it is proving is that being seen felt like being wanted. That exposure felt like relief. That the lowest part of you was exactly what someone was looking for.
+Let the wave break. Let everything compressed and carried and hidden pour through you like something that has finally found its direction. This is proof. The body cannot lie at this moment. And what it is proving is that being seen felt like being wanted. That exposure felt like relief. That the lowest part of you was exactly what someone was looking for.
 
 @wpm 100
 @pulseborder off fade:3
@@ -365,7 +365,7 @@ Feel the edge without crossing it. The ache of it. The fullness. How every nerve
 @wpm 130
 @pulseborder green hz:0.33
 
-That ache is not punishment. It's the lesson. The lesson is: this is what it feels like when you stop hiding. When the walls come down and the real thing surfaces. The ache is the proof that the real thing is there. You've been managing it into nothing for so long you forgot it was actually this large.
+That ache is the lesson. The lesson is: this is what it feels like when you stop hiding. When the walls come down and the real thing surfaces. The ache is the proof that the real thing is there. You've been managing it into nothing for so long you forgot it was actually this large.
 
 @pause duration:2000
 

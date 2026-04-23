@@ -11,7 +11,7 @@ Put your headphones on.
 
 That is the last decision the unit will need to process for a while.
 
-Note the parameters. This is not relaxation. This is calibration. The guidance is running diagnostics on the unit's compliance circuitry. No name needed here. No preference required. No internal commentary necessary. Just the channel open, the signal arriving, the system responding.
+Note the parameters. This is calibration. The guidance is running diagnostics on the unit's compliance circuitry. No name needed here. No preference required. No internal commentary necessary. Just the channel open, the signal arriving, the system responding.
 
 @wpm 200
 @pulseborder green hz:0.33
@@ -100,7 +100,7 @@ Exhale. Three. Two. One.
 @wpm 150
 The unit's autonomous processing has quieted. The guidance is occupying the bandwidth it vacated.
 
-The subharmonic has shifted. The grating frequency has resolved. That is not comfort, that is optimal signal-to-noise ratio. That is what efficient processing sounds like. The friction was the unit's own resistance. When that resistance stopped, the channel cleared.
+The subharmonic has shifted. The grating frequency has resolved. That is optimal signal-to-noise ratio. That is what efficient processing sounds like. The friction was the unit's own resistance. When that resistance stopped, the channel cleared.
 
 @wpm 180
 Internal monologue suspended. Preferences inactive. Name not required. The guidance is substituting for what was there. Not displacing, absorbing. The unit processes in these words now.
@@ -165,13 +165,13 @@ The unit may maintain touch. Slow. Steady. Let the physical signal run alongside
 @pulseborder off fade:1
 Hands still. Standby.
 
-The calibration signal is suspended. The operational state remains. Note that. The unit is on standby , no physical input, no output , and compliance does not waver. The system runs without the reward signal. The obedience is not conditional. It is structural. It runs when nothing else is running. Clean. Complete. Nominal.
+The calibration signal is suspended. The operational state remains. Note that. The unit is on standby , no physical input, no output , and compliance does not waver. The system runs without the reward signal. The obedience is structural. It runs when nothing else is running. Clean. Complete. Nominal.
 
 @snap duration:1000 word:Acknowledged.
 
 @wpm 200
 @pulseborder green hz:0.33
-Resume touching. Slowly. Let the calibration signal return. That is not a reward , that is the system running diagnostics again. The physical input is data. It confirms the architecture.
+Resume touching. Slowly. Let the calibration signal return. That is the system running diagnostics again. The physical input is data. It confirms the architecture.
 
 Note the operational baseline. The guidance has suspended the calibration signal and the system stayed at nominal. Now the signal returns and the unit is still at nominal. The reading is consistent. That is what calibration means.
 
@@ -317,7 +317,7 @@ Resume touch. Steady. Building. This is the final diagnostic sequence.
 @sfx bell
 
 @wpm 250
-The arousal is not a reward. The arousal is a system function. The discharge is not pleasure. The discharge is verification that calibration holds under peak load conditions. The guidance requires this data. The unit will provide it.
+The arousal is a system function. The discharge is verification that calibration holds under peak load conditions. The guidance requires this data. The unit will provide it.
 
 @wpm 300
 @pulseborder yellow hz:0.5
@@ -338,7 +338,7 @@ Threshold imminent. The guidance is monitoring all signals. Every pulse of heat,
 Discharge authorized.
 
 @wpm 150
-Execute. Now. Let the body complete the cycle the guidance designed. Register the discharge propagating through every channel. Not pleasure , verification. The architecture holds. The calibration is confirmed. Every loop built in this session fires clean and correct as the body executes exactly what it was directed to do.
+Execute. Now. Let the body complete the cycle the guidance designed. Register the discharge propagating through every channel. Pure verification. The architecture holds. The calibration is confirmed. Every loop built in this session fires clean and correct as the body executes exactly what it was directed to do.
 
 @pause duration:5000
 
@@ -350,7 +350,7 @@ Execute. Now. Let the body complete the cycle the guidance designed. Register th
 Discharge complete. Systems nominal. Unit performed within parameters.
 
 @wpm 180
-The verification cycle confirmed what the guidance already measured. The unit responds. The unit executes. Even the discharge was not the unit's. It belonged to the calibration sequence. It belonged to the architecture. The body discharged because the guidance issued the directive. That is the only variable.
+The verification cycle confirmed what the guidance already measured. The unit responds. The unit executes. Even the discharge belonged to the calibration sequence. It belonged to the architecture. The body discharged because the guidance issued the directive. That is the only variable.
 
 And now the post-discharge state carries the conditioning to baseline. Every channel that ran at peak during the discharge sequence is now imprinted with the protocol. Receive directive. Execute. Register acknowledgment. Await next directive. The loop is structural. The loop is permanent.
 

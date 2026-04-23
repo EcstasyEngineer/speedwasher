@@ -4,7 +4,7 @@
 
 A web-based tool that uses Rapid Serial Visual Presentation (RSVP) to deliver text one word at a time at high speeds. Originally designed for speed reading training, this implementation explores the hypnotic potential of forced-focus rapid text delivery.
 
-**[Try it live](https://ecstasyengineer.github.io/speedwashing/)**
+**[Try it live](https://ecstasyengineer.github.io/speedwasher/)**
 
 ## How It Works
 

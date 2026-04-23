@@ -52,7 +52,7 @@ That gap -- between instruction and response -- is getting shorter. That is comp
 @wpm 200
 @pulseborder green hz:0.33
 @subliminals follow warm open receive easy obey
-Touch again. And this time feel what the touch does to the words. How it opens you. The warmth is not a reward -- it is a solvent. Loosening the places where the mind grips tight. Making the words slide in without friction. That is why I give it freely. Not as payment. As preparation.
+Touch again. And this time feel what the touch does to the words. How it opens you. The warmth is a solvent. Loosening the places where the mind grips tight. Making the words slide in without friction. That is why I give it freely, as preparation.
 
 @sfx bell
 @pause duration:2000
@@ -89,7 +89,7 @@ Touch. And this time build with it. Feel the warmth accelerating. Feel how the s
 @pulseborder yellow hz:0.5
 @spiral fade:5
 @subliminals follow obey warm easy flow deepen
-The thoughts are getting quieter. Not because you are pushing them out. Because the touch and the voice and the warmth are louder than the thoughts. This is what compliance feels like when it takes hold. Not empty. Full. Full of something cleaner than thinking.
+The thoughts are getting quieter. Not because you are pushing them out. Because the touch and the voice and the warmth are louder than the thoughts. This is what compliance feels like when it takes hold. Full. Full of something cleaner than thinking.
 
 @wpm 300
 @pulseborder purple hz:0.5
@@ -112,7 +112,7 @@ The edge. You feel it. And here is what is different about this edge: you earned
 @pulseborder purple hz:0.5
 @subliminals obey follow reward complete warmth yes
 @spiral fade:2
-Build. Let the warmth rise all the way. Let the edge become a door. This is not the absence of control -- this is what control feels like when it is given fully. When you stop holding anything back. When you follow all the way through.
+Build. Let the warmth rise all the way. Let the edge become a door. This is what control feels like when it is given fully. When you stop holding anything back. When you follow all the way through.
 
 @wpm 300
 Feel it. Every moment of honest compliance underneath you. The touch-and-stop. The snaps that moved your attention without asking. The words that arrived and the body that answered. All of that was training. And this is the completion.
@@ -129,7 +129,7 @@ The voice. The warmth. The edge. You followed every instruction. Every one. And 
 Follow.
 
 @wpm 150
-Let the release arrive with the word. Let obedience and pleasure complete in the same moment. The warmth that carried you here -- let it finish. The current reaching the sea. Not a crash. A completion. The body confirming what the voice already knew: that following all the way feels exactly like this.
+Let the release arrive with the word. Let obedience and pleasure complete in the same moment. The warmth that carried you here -- let it finish. The current reaching the sea. A completion. The body confirming what the voice already knew: that following all the way feels exactly like this.
 
 @pause duration:5000
 
@@ -143,7 +143,7 @@ There. Breathe.
 
 @wpm 150
 @binaural off fade:8
-What the body just learned: obedience is complete. Not an idea. A felt reality. Encoded now in the nervous system. The word Follow will surface later in quiet moments. And when it does, the warmth will return. And the warmth will carry the memory of what completion felt like. And that memory will bring you back.
+What the body just learned: obedience is complete. A felt reality. Encoded now in the nervous system. The word Follow will surface later in quiet moments. And when it does, the warmth will return. And the warmth will carry the memory of what completion felt like. And that memory will bring you back.
 
 @wpm 120
 @pulseborder off fade:5
@@ -173,7 +173,7 @@ Still.
 @pause duration:2000
 
 @wpm 180
-The frustration you expected? Notice it is not quite there. Or it is, but softer than you thought. And underneath it: something else. Something that knows this is not punishment. The arousal was always fuel. Not reward. Not something owed to you. The warmth, the ache, the wanting -- those belong to the process. They are what carried you this deep. Spending them would be burning the engine for heat.
+The frustration you expected? Notice it is not quite there. Or it is, but softer than you thought. And underneath it: something else. Something that knows the arousal was always fuel. The warmth, the ache, the wanting -- those belong to the process. They are what carried you this deep. Spending them would be burning the engine for heat.
 
 @wpm 200
 So here is what you are taking with you instead.
@@ -185,18 +185,16 @@ The experience. The actual somatic reality of a mind that let the current carry 
 And the ache that is going to travel with you out of this file -- that specific, localized wanting -- every time it pulses, it is teaching. It is the nervous system practicing compliance in the absence of instructions. The wanting is the lesson. The denial is the teacher. The craving is the curriculum.
 
 @wpm 150
-The destination was never the point.
+The obedience was the point. All along.
 
-The obedience was the point.
-
-And you were obedient. Completely. Every snap that found you. Every stop that held. Every follow that moved your hands before you decided to move them. That was real compliance. The kind that does not need completion to be genuine.
+And you were obedient. Completely. Every snap that found you. Every stop that held. Every follow that moved your hands before you decided to move them. That was real compliance. The kind that holds without completion.
 
 @sfx bell
 
 @wpm 180
 @binaural off fade:8
 @subliminals off
-You are going to want to come back. Not to finish. To go deeper. Because the release was never the destination. The depth is. And now you know what the depth feels like. And knowing makes the next session possible in a way this one could not be.
+You are going to want to come back. To go deeper. Because the depth was always the destination. And now you know what the depth feels like. And knowing makes the next session possible in a way this one could not be.
 
 This was the foundation. Everything else builds here.
 

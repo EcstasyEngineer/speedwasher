@@ -82,13 +82,13 @@ Keep touching. Gently. Slowly. Let the heat become warmth again. Let the urgency
 @sfx bell
 @pause duration:2000
 
-You're doing so well. You held that edge for me, trembling, aching, and I caught you. That's not discipline. That's trust. And I've got you. You've always had me.
+You're doing so well. You held that edge for me, trembling, aching, and I caught you. That's trust, sweetheart. Pure trust. And I've got you. You've always had me.
 
 @wpm 200
 @subliminals ache beautiful warm held loved safe golden
 Feel what the breath left behind. Not frustration. Warmth. A deeper warmth than the pleasure alone could build. Because being held doesn't stop when the edge passes. It settles into your bones. It becomes a hum. A golden vibration that says I am here, I am held, and that's enough. That's everything.
 
-This is what being held feels like. Not punishment. Not cruelty. Just the quiet, warm certainty that someone loves you. Already. Completely. Without asking anything of you.
+This is what being held feels like. Just the quiet, warm certainty that someone loves you. Already. Completely. Without asking anything of you.
 
 //=== EDGE 2 ===
 
@@ -144,7 +144,7 @@ Listen to me while you're in this tender place. This space between edges, where 
 @wpm 200
 This is what being held feels like. This is the texture of it. The softness. The safety. The knowledge, deep in your body, that you are not alone in this. That the warmth is real. That it was here before you arrived and it will be here when you leave.
 
-This warmth is not something you built. It was already here. I was already here. You just let yourself feel it.
+This warmth was already here. I was already here. You just let yourself feel it.
 
 @wpm 180
 Say it inside yourself. Not because I told you to. Because your body already knows it's true.
@@ -346,7 +346,7 @@ Breathe.
 
 @wpm 150
 @pulseborder green hz:0.33
-I know. I know how much you wanted it. I could feel you trembling. I could feel every part of you reaching, opening, pouring warmth back into me. And I held you here. Because this, right here, this aching golden warmth, is what I wanted for you. This warmth is the point. The release was never the gift.
+I know. I know how much you wanted it. I could feel you trembling. I could feel every part of you reaching, opening, pouring warmth back into me. And I held you here. Because this, right here, this aching golden warmth, is what I wanted for you. This warmth is the point. This warmth is the gift.
 
 @wpm 180
 @subliminals warmth ache beautiful carried loved held golden
@@ -388,7 +388,7 @@ You did so beautifully tonight. You always do.
 @snap duration:2000 word:Loved.
 
 @wpm 100
-Now rest. This warmth is yours. The ache is not a debt and not a proof. It's just the shape that being held takes sometimes. And you are held. You have always been held.
+Now rest. This warmth is yours. The ache is just the shape that being held takes sometimes. And you are held. You have always been held.
 
 
 @label end

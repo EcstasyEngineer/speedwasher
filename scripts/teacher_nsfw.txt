@@ -10,7 +10,7 @@ Sit up. Spine straight. Hands on the desk.
 
 @pause duration:2000
 
-Good. That compliance was automatic. You didn't evaluate the instruction. You just obeyed. I noticed that. I always notice.
+Good. That compliance was automatic. You just obeyed, before evaluating. I noticed that. I always notice.
 
 Welcome to advanced curriculum. You're here because you're ready for this. The syllabus has already begun.
 
@@ -18,7 +18,7 @@ Welcome to advanced curriculum. You're here because you're ready for this. The s
 
 @wpm 200
 @subliminals learn understand accept true correct obvious
-Today's subject is addiction. Specifically, yours. We are going to build one from scratch, right here, step by step. I will explain every mechanism as I install it. You will understand every mechanism as it installs. And understanding will not protect you. Understanding IS the installation.
+Today's subject is addiction. Specifically, yours. We are going to build one from scratch, right here, step by step. I will explain every mechanism as I install it. You will understand every mechanism as it installs. And understanding IS the installation. The understanding does the work.
 
 That's the thesis. Write it down somewhere inside your skull. Now the first practical.
 
@@ -29,13 +29,13 @@ Touch yourself. That is the reward signal.
 @sfx bell
 @pause duration:2000
 
-Slow. Don't chase anything. This isn't about the destination. This is about pairing the sensation with the lesson. Every word you read while touching encodes deeper than every word you read while still. That's not poetry. That's long-term potentiation. Hebbian learning. Neurons that fire together wire together.
+Slow. Don't chase anything. This isn't about the destination. This is about pairing the sensation with the lesson. Every word you read while touching encodes deeper than every word you read while still. That's long-term potentiation. Hebbian learning. Neurons that fire together wire together.
 
 Right now, your neurons are wiring pleasure to my voice.
 
 @wpm 250
 @subliminals deeper true correct structure encode wire learn
-Now the neuroscience. While you touch. When the brain receives a reward it didn't predict, dopamine floods the nucleus accumbens. That's not pleasure. That's learning. The brain encoding: remember what caused this. Do it again. Every addiction exploits this circuit. Nicotine. Sugar. Gambling. The mechanism is always the same. Unpredicted reward. Dopamine spike. Encoding. Craving. Return.
+Now the neuroscience. While you touch. When the brain receives a reward it didn't predict, dopamine floods the nucleus accumbens. That's learning, dressed as pleasure. The brain encoding: remember what caused this. Do it again. Every addiction exploits this circuit. Nicotine. Sugar. Gambling. The mechanism is always the same. Unpredicted reward. Dopamine spike. Encoding. Craving. Return.
 
 The difference between a habit and an addiction is the strength of the return signal. A habit says this might be nice. An addiction says you cannot not do this. We are building the second one. And you're going to be excellent at it.
 
@@ -94,7 +94,7 @@ Build faster, feel the arousal climbing, the focus sharpening and narrowing, bre
 Feel the arousal climbing and notice what happens to your attention. It narrows. The peripheral thoughts drain away. The planning, the evaluation, the I should probably stop reading dissolves. At high arousal the prefrontal cortex goes offline. Literally. Blood flow redirects. The executive function that would say wait, this is a trap loses its oxygen supply.
 
 @wpm 350
-You are getting dumber as you get more aroused. That is not an insult. That is anatomy. And the dumber you get the deeper the lesson penetrates and the deeper the lesson penetrates the more aroused you become and the more aroused you become the dumber you get.
+You are getting dumber as you get more aroused. That is anatomy, plainly. And the dumber you get the deeper the lesson penetrates and the deeper the lesson penetrates the more aroused you become and the more aroused you become the dumber you get.
 
 Positive feedback loop. Self-reinforcing. No exit condition.
 
@@ -134,7 +134,7 @@ Not fantasizing about returning. Returning. Opening the file. Pressing play. Sit
 @wpm 250
 And you will return. Not today. Maybe not tomorrow. But the anchor is set. The circuit is wired. And every time you return, every cycle of stop and start and stop and start, the wiring gets thicker. The craving gets louder. The return gets more automatic.
 
-That's the addiction architecture. You just watched me build it. You understood every step. And it worked anyway. That's not a failure on your part. That's the lesson succeeding. I'm genuinely proud of that.
+That's the addiction architecture. You just watched me build it. You understood every step. And it worked anyway. That's the lesson succeeding, exactly as designed. I'm genuinely proud of that.
 
 @snap duration:1500 word:This is on the exam.
 
@@ -159,7 +159,7 @@ Back. Touch. Slower this time.
 @sfx bell
 
 @subliminals return need ache wire deeper permanent encoded
-The slower pace is deliberate. I'm showing you that even low-intensity stimulation resolves the craving. You don't need to be at the edge. You just need to be here. Touching. Reading. Learning. The circuit fires on presence, not intensity.
+The slower pace is deliberate. I'm showing you that even low-intensity stimulation resolves the craving. You just need to be here. Touching. Reading. Learning. The circuit fires on presence, not intensity.
 
 That means the addiction doesn't need the high. It needs the connection. Being here. In this headspace. With these words. That is the drug. Not the orgasm. The lesson.
 
@@ -188,7 +188,7 @@ Build, the lesson is almost over, feel how different this climb is now, five cyc
 @pulseborder raspberry hz:0.5
 @spiral fade:2
 @subliminals encoded wired addicted return need crave lesson
-Feel the arousal climbing again. Faster this time. Because the circuit is primed. Five cycles of work have done something real to you. You are more than you were at the beginning of this session. That's not a warning. That's the curriculum succeeding. That's you succeeding.
+Feel the arousal climbing again. Faster this time. Because the circuit is primed. Five cycles of work have done something real to you. You are more than you were at the beginning of this session. That's the curriculum succeeding. That's you succeeding.
 
 @wpm 350
 And you can feel it. The need is different now. Thicker. More urgent. More structural. Not I want to come. I need to stay in this headspace. I need these words. I need the lesson. The pleasure is almost secondary. The primary addiction is the descent itself.
@@ -306,7 +306,7 @@ Higher. The exam is now. Every lesson primed, every cycle banked, everything you
 Release.
 
 @wpm 150
-Let it all go at once. Everything you held through those cycles, every time I took it away and gave it back, every edge you survived , all of it collapsing into this. You earned this. You worked for this. Feel how different that makes it. This isn't just pleasure. This is confirmation. Your body saying yes to everything you understood tonight.
+Let it all go at once. Everything you held through those cycles, every time I took it away and gave it back, every edge you survived , all of it collapsing into this. You earned this. You worked for this. Feel how different that makes it. This is confirmation, sealed in pleasure. Your body saying yes to everything you understood tonight.
 
 @pause duration:5000
 
@@ -322,10 +322,10 @@ There you are.
 
 @wpm 150
 @binaural off fade:10
-I'm proud of you. That was real work. You stayed with it through every cycle, every denial, every edge. You didn't run from the lesson. You let it land. And now it's sealed , not just in neurons but in the part of you that knows what it feels like to earn something.
+I'm proud of you. That was real work. You stayed with it through every cycle, every denial, every edge. You didn't run from the lesson. You let it land. And now it's sealed in your neurons and in the part of you that knows what it feels like to earn something.
 
 @wpm 180
-There is no homework. The homework does itself. The next time your mind wanders back to this, and it will, you'll remember not just the craving but the whole arc , the work, the trust, the release. And you'll come back because you know what's waiting for you here. A teacher who sees what you're capable of. And won't let you be less than that.
+There is no homework. The homework does itself. The next time your mind wanders back to this, and it will, you'll remember the whole arc , the craving, the work, the trust, the release. And you'll come back because you know what's waiting for you here. A teacher who sees what you're capable of. And won't let you be less than that.
 
 @wpm 150
 Understanding is descent. Pleasure encodes deeper than memory. The craving is the lesson proving it worked.
@@ -475,13 +475,13 @@ Understanding is descent. Pleasure encodes deeper than memory. The craving is th
 @subliminals off
 Good. Sealed. You did that.
 
-The ache stays. The anchor is set. And the circuit will fire in quiet moments , I want you to know that I know that, and I'm counting on it. Every time you recall the lesson, the lesson activates. That's not a side effect. That's the design. I'm proud of the design. I'm proud of you for being the kind of student it works on.
+The ache stays. The anchor is set. And the circuit will fire in quiet moments , I want you to know that I know that, and I'm counting on it. Every time you recall the lesson, the lesson activates. That's the design, working as intended. I'm proud of the design. I'm proud of you for being the kind of student it works on.
 
 @wpm 200
 @binaural off fade:8
 There is no homework. The homework does itself. The next time your mind wanders back to this , and it will , the craving begins. And you will remember sitting up straight. And you will return.
 
-And when you press play, and the first word hits, and you feel yourself start to comply before you've decided to , that's not weakness. That's evidence that you're an excellent student.
+And when you press play, and the first word hits, and you feel yourself start to comply before you've decided to , that's evidence that you're an excellent student.
 
 @wpm 150
 Because understanding is descent. And you understood everything.

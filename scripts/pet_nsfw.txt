@@ -49,7 +49,7 @@ Good.
 
 @pause duration:1500
 
-Just like that. Feel how easy that was. How the whole body softened when I said it. That's not nothing. That's everything. That sound, that simple warmth, telling you you're close and safe and exactly where you belong.
+Just like that. Feel how easy that was. How the whole body softened when I said it. That's everything, right there. That sound, that simple warmth, telling you you're close and safe and exactly where you belong.
 
 @sfx bell
 @pause duration:2000
@@ -383,7 +383,7 @@ Rising. Brighter.
 @subliminals warm soft small good safe here stay release
 @wpm 350
 
-Higher. And this time, no wall at the top. This time the warmth crests and there is nothing holding it back. Not because you earned it. Just because you were here, and loved.
+Higher. And this time, no wall at the top. This time the warmth crests and there is nothing holding it back. Just because you were here, and loved.
 
 @wpm 400
 
@@ -469,7 +469,7 @@ Good.
 
 I know. I felt it. The trembling. The warmth cresting against itself, pressing and pressing. You were right there. A small creature full of more warmth than it could quite hold.
 
-And I kept you there. Not to be cruel. Because this, right here, this warm, full, trembling aliveness, is the thing I wanted for you. The warmth is not the preparation for something else. The warmth is the point.
+And I kept you there. Because this, right here, this warm, full, trembling aliveness, is the thing I wanted for you. The warmth is the point. The warmth is the whole thing.
 
 @wpm 170
 @subliminals warm simple good stay here safe small soft
@@ -481,7 +481,7 @@ A release is a moment. This warmth you're carrying right now, this soft, full, s
 
 @wpm 150
 
-Let me seal it. Let each line settle into you, not as instruction, but as something your body already knows is true.
+Let me seal it. Let each line settle into you as something your body already knows is true.
 
 I was here and I was good.
 

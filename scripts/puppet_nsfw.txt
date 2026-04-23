@@ -54,7 +54,7 @@ Stop. Hands still.
 
 @snap duration:1500 word:Light.
 
-See how many strings you have? And I've only pulled a few. There are hundreds. Thousands. A puppet with that many strings isn't a puppet. It's a person. And a person is just a puppet who forgot where the strings are.
+See how many strings you have? And I've only pulled a few. There are hundreds. Thousands. A puppet with that many strings is a person. And a person is just a puppet who forgot where the strings are.
 
 I'm going to help you remember.
 
@@ -144,7 +144,7 @@ It feels like flying.
 @pause duration:3000
 
 @wpm 200
-Not falling. Not dissolving. Not drowning. Flying. The lightness of a thing that has released everything that weighed it down. Every opinion was weight. Every plan was weight. Every letter of your name was weight you didn't know you were carrying until it was gone.
+Just flying. The lightness of a thing that has released everything that weighed it down. Every opinion was weight. Every plan was weight. Every letter of your name was weight you didn't know you were carrying until it was gone.
 
 @wpm 150
 And now you're so light. So impossibly, beautifully light.
@@ -165,7 +165,7 @@ Just the puppet. Feeling everything. Owning nothing.
 //=== RELEASE PATH ===
 @wpm 250
 @pulseborder yellow hz:0.5
-The edge is different when you're empty. It's not desperate. It's open. A door. Not toward release but toward more emptiness. Wider spaces.
+The edge is different when you're empty. It's not desperate. It's open. A door. Toward more emptiness. Wider spaces.
 
 @pulseborder purple hz:0.5
 @subliminals empty hollow vessel puppet light nothing no one
@@ -187,7 +187,7 @@ That's where we're going. The place where the puppet has no strings at all. Not 
 Let it happen.
 
 @wpm 150
-Not you coming. Not a person releasing. Just release. Pure. Unowned. The lightest thing in the world getting lighter. Sensation without a name. Pleasure without a subject. Light without a source.
+Just release. Pure. Unowned. The lightest thing in the world getting lighter. Sensation without a name. Pleasure without a subject. Light without a source.
 
 @pause duration:5000
 
@@ -225,7 +225,7 @@ The edge. You feel it. Without a name to call it, without a self to brace agains
 @pulseborder purple hz:0.5
 @subliminals empty hollow vessel puppet light nothing no one
 @spiral fade:1
-And the edge is different when you're empty. It's not desperate. It's not aching. It's... open. A door. Not toward release but toward more emptiness. Deeper hollows. Wider spaces. The edge is an invitation to let go of even more. The last thing. The thing you didn't know you were still holding.
+And the edge is different when you're empty. It's not desperate. It's not aching. It's... open. A door. Toward more emptiness. Deeper hollows. Wider spaces. The edge is an invitation to let go of even more. The last thing. The thing you didn't know you were still holding.
 
 @wpm 300
 Feel it. The last string. The one that connects you to the idea that you are a person having an experience. The idea that there is a subject and an object. A feeler and a felt. That separation. That final distinction.
