@@ -34,6 +34,8 @@ There. That's right.
 
 @pause duration:2000
 
+@pulseborder green hz:0.33
+
 You are small. And you are loved. And those two things are not in conflict. They were never in conflict. You've just forgotten how it feels to let them both be true at the same time.
 
 Let me remind you.
@@ -101,7 +103,7 @@ Keep touching. Slowly. Let the warmth move through you naturally. There's no hur
 
 @wpm 220
 @spiral color1:#C89BE0 color2:#F5E6FF color3:#E8C9FF fade:5
-@pulseborder yellow hz:0.4
+@pulseborder green hz:0.4
 
 Almost. Good.
 
@@ -178,7 +180,7 @@ That's enough. That's more than enough. You are enough exactly like this.
 
 @wpm 210
 @spiral color1:#C89BE0 color2:#F5E6FF color3:#E8C9FF fade:4
-@pulseborder yellow hz:0.4
+@pulseborder green hz:0.4
 
 Let it build again. Your body knows how now.
 
@@ -282,14 +284,14 @@ One more climb. Let the warmth build from the beginning. Slow.
 @subliminals warm soft small good safe stay here
 
 @wpm 240
-@pulseborder yellow hz:0.4
+@pulseborder green hz:0.4
 
 Feel it rising. Golden and simple. The way good things rise in small creatures, completely, naturally, without strategy.
 
 @wpm 300
 @pulseborder yellow hz:0.5
 
-Higher. Let it come. Don't rush it, don't slow it, just let it move through you the way warmth moves.
+Higher. Let it come. Don't rush it, don't slow it, just let it move through you the way warmth moves, deep and steady.
 
 @pulseborder purple hz:0.5
 @spiral color1:#C89BE0 color2:#F5E6FF color3:#E8C9FF fade:2
@@ -334,7 +336,7 @@ The warmth is everywhere now. Every nerve. Every soft, small, open part of you t
 @wpm 360
 @subliminals warm soft small good safe here stay
 
-Stay right here. Right here in the warmth. The too-much warmth. The trembling, full, glowing warmth of a small creature completely loved.
+Stay right here. Right here in the warmth. The too-much warmth. The trembling, full, glowing, humming warmth of a small creature warm and completely loved.
 
 @pulseborder purple hz:0.5
 @wpm 400
@@ -369,14 +371,14 @@ You kept coming close. Still warm, still soft, still here each time. Small and w
 I have something for you now. Something simple. Something that was always yours.
 
 @wpm 200
-@pulseborder yellow hz:0.4
+@pulseborder green hz:0.4
 
 Feel the warmth begin to rise one more time. Familiar now. The body knows the path. It rises easily, naturally, the warmth finding every soft place inside you and filling it.
 
 @wpm 260
 @pulseborder yellow hz:0.5
 
-Rising. Brighter.
+Rising now, brighter, the warmth gathering itself into something unmistakable, something the whole body already knows, climbing soft and sure through every small warm part of you.
 
 @pulseborder purple hz:0.5
 @spiral color1:#C89BE0 color2:#F5E6FF color3:#E8C9FF fade:2

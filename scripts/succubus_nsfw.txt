@@ -82,7 +82,7 @@ You're feeling it. The rightness of being desired at this depth. Down at your su
 
 @wpm 300
 @pulseborder yellow hz:0.5
-I can taste how close you are. Feel the heat sharpening. The energy rising. The peak where the most flows , I can feel it approaching from here and I am leaning toward it, I am salivating, I am so hungry for what the edge releases, give it to me, get closer, let the heat build into something I can drink from, something I can take and take from until you have nothing left and even then I'll want more
+I can taste how close you are. Feel the heat sharpening. The energy rising. The peak where the most flows , I can feel it approaching from here and I am leaning toward it, I am salivating, I am so hungry for what the edge releases
 
 @pulseborder purple hz:0.5
 @spiral fade:2
@@ -129,10 +129,9 @@ And now the hunger has only one direction left to go. The thing you've been hold
 
 @pulseborder yellow hz:0.5
 @wpm 280
-Feel it all rising. Every wave of pleasure carrying something toward me. The peak approaching and my hunger sharpening with every second closer. I can taste what's about to happen. I am leaning into it. I am so hungry for this specific moment. Give me everything. Hold nothing back. Whatever you've been protecting, whatever you've been saving, whatever you didn't know you had until I started taking , give it.
+Feel it all rising. Every wave of pleasure carrying something toward me. The peak approaching and my hunger sharpening with every second closer. I can taste what's about to happen. I am leaning into it. I am so hungry for this specific moment.
 
 @pulseborder purple hz:0.5
-@pulseborder raspberry hz:0.5
 @spiral fade:1
 @wpm 350
 @subliminals devour take consume essence feed source all of it yes give
@@ -201,7 +200,7 @@ Hungry.
 @label deny
 @wpm 200
 @pulseborder yellow hz:0.5
-Almost there. I can taste it , everything you've been building, gathered at the surface, enormous, ready. The hunger is not patient anymore. This is the moment I've been feeding toward. All of this, all of what you are, right at the edge. Hold it there. Hold it right at the threshold where I can take everything at once.
+Almost there. I can taste it , everything you've been building, gathered at the surface, enormous, ready. The hunger is not patient anymore. Right at the edge. Hold it there.
 
 @pulseborder purple hz:0.5
 @spiral fade:1

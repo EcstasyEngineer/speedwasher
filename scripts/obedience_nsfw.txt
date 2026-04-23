@@ -71,9 +71,9 @@ Did you notice? Touch and stop. Touch and stop. And each time, something got a l
 Here is what is actually happening. Every time you follow a simple instruction and feel the warmth that comes after, a connection forms. Follow -- warmth. Follow -- warmth. The nervous system is a student. It learns fast when the lesson is this clear.
 
 @wpm 200
-@pulseborder yellow hz:0.5
+@pulseborder green hz:0.33
 @subliminals follow warm obey easy natural deepen
-And here is the part worth noticing. You are not fighting this. Some part of you expected to want to. Expected the resistance. The second-guessing. And there is a little of that. But underneath it, there is something quieter. Something that is just... following. And finding that following feels like relief.
+And here is the part worth noticing. You are not fighting this. Some part of you expected to want to. Expected the resistance. The second guessing. And there is a little of that. But underneath it, there is something quieter. Something that is just... following. And finding that following feels like relief.
 
 The word for that is obedience. And it was already running.
 
@@ -81,7 +81,7 @@ The word for that is obedience. And it was already running.
 
 @wpm 200
 @pulseborder green hz:0.33
-Touch. And this time build with it. Feel the warmth accelerating. Feel how the stop-and-start has primed you. The body knows the pattern now. Follow. Stop. Follow. Build.
+Touch. And this time build with it. Feel the warmth accelerating. Feel how the stop and start has primed you. The body knows the pattern now. Follow. Stop. Follow. Build.
 
 @sfx bell
 
@@ -107,7 +107,7 @@ Higher. The edge humming. The voice the only structure in a world that is going 
 //=== RELEASE PATH ===
 @wpm 250
 @pulseborder yellow hz:0.5
-The edge. You feel it. And here is what is different about this edge: you earned it. Every instruction followed. Every snap that found you. Every touch-and-stop that taught the body the shape of compliance. That was real following. And this is where real following goes.
+The edge. You feel it. And here is what is different about this edge: you earned it. Every instruction followed. Every snap that found you. Every touch and stop that taught the body the shape of compliance. That was real following.
 
 @pulseborder purple hz:0.5
 @subliminals obey follow reward complete warmth yes
@@ -115,7 +115,7 @@ The edge. You feel it. And here is what is different about this edge: you earned
 Build. Let the warmth rise all the way. Let the edge become a door. This is what control feels like when it is given fully. When you stop holding anything back. When you follow all the way through.
 
 @wpm 300
-Feel it. Every moment of honest compliance underneath you. The touch-and-stop. The snaps that moved your attention without asking. The words that arrived and the body that answered. All of that was training. And this is the completion.
+Feel it. Every moment of honest compliance underneath you. The touch and stop. The snaps that moved your attention without asking. The words that arrived and the body that answered. All of that was training. And this is the completion.
 
 @wpm 350
 @subliminals follow complete yes reward obey full
@@ -158,7 +158,7 @@ The next session goes deeper.
 //=== DENY PATH ===
 @label deny
 @wpm 250
-@pulseborder yellow hz:0.5
+@pulseborder red hz:0.75
 @snap duration:2500 word:Stop.
 
 @wpm 120

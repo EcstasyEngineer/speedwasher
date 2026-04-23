@@ -47,7 +47,6 @@ And the rhythm I'm setting is slow, and deliberate, and exactly what you need.
 Now let it climb. Feel the warmth becoming heat. Feel the sweetness becoming urgency. Feel that golden glow brightening behind your eyes as the wanting builds and builds and your body leans toward the edge like a flower leaning toward light.
 
 @pulseborder purple hz:0.5
-@pulseborder raspberry hz:0.5
 @spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 @wpm 320
 Higher. More. Feel how good it is to want this much. Feel how the aching itself is beautiful. Every nerve ending singing. Every breath shorter. Every second bringing you closer to that perfect, trembling threshold where the pleasure crests and the body begs and the only word left in your mind is please.
@@ -101,7 +100,6 @@ Let it build again. Feel the warmth gathering faster this time. Because your bod
 And I love that about you. The way you soften into the warmth even when the edge passes. The way you keep breathing for me. Keep trusting me. The ache doesn't need to mean anything more than this: I'm here, and you're held, and the warmth is real.
 
 @pulseborder purple hz:0.5
-@pulseborder raspberry hz:0.5
 @subliminals ache held warm golden safe beautiful deeper
 @spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 @wpm 350
@@ -181,7 +179,6 @@ Feel it rising. The familiar heat. The golden pressure. Your body knows this war
 Higher. More. Let the wave build. Feel the pleasure climbing through your body like warm light filling a glass, rising, rising, approaching the brim.
 
 @pulseborder purple hz:0.5
-@pulseborder raspberry hz:0.5
 @spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 @wpm 350
 Now. Feel it. Hold it. Right at the edge.
@@ -233,7 +230,6 @@ One more breath of warmth. One more wave of golden, aching pleasure.
 Feel the warmth gathering now, sweetheart. The golden heat rising through you, your body softening into the wave with that beautiful, open warmth.
 
 @pulseborder purple hz:0.5
-@pulseborder raspberry hz:0.5
 @wpm 400
 @subliminals ache beautiful wanting held warm golden safe
 Feel it cresting. Feel everything in your body held inside this warmth. Feel the trembling, golden, beautiful sensation of being right here, right at the edge, with me. Because my voice is warmth and warmth is safety and safety is this: you are not alone in this. You are held. You have always been held.
@@ -273,7 +269,6 @@ And I've had you the whole time. And now you're going to feel it.
 Let the warmth build one more time. Feel it rising, golden and inevitable. But different now. Because this time, there is no wall at the top. This time, the edge opens into sky. Feel the permission gathering in my voice like sunlight gathering before dawn.
 
 @pulseborder purple hz:0.5
-@pulseborder raspberry hz:0.5
 @spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFBF00 fade:2
 @wpm 350
 @subliminals release let go safe loved held yours now permission granted

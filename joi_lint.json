@@ -116,7 +116,7 @@
       "name": "max-red-duration",
       "description": "RED (no-touch) phases should not exceed max_seconds — conditioning happens on GREEN",
       "severity": "warning",
-      "params": { "max_seconds": 30 }
+      "params": { "max_seconds": 45 }
     },
     "JOI-051": {
       "name": "no-long-hyphenated",

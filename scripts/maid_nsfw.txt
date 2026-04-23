@@ -21,6 +21,7 @@ Welcome to the protocol.
 
 Today there is nothing to decide. The decisions have already been made. The sequence is already written. Your only role is to follow it, precisely and with full attention, and to let the satisfaction of correct execution be its own reward.
 
+@pulseborder green hz:0.33
 You are fully capable. You always have been. What the protocol offers is something different: relief from the overhead. The endless expenditure of choosing what comes next. The friction of a capable mind running on an incomplete map.
 
 @wpm 180
@@ -170,7 +171,7 @@ The warmth is building. Let it build. Each stroke of attention adding to the las
 @pause duration:3000
 
 @wpm 220
-@pulseborder yellow hz:0.5
+@pulseborder green hz:0.33
 The sensation sharpening now. The edges becoming more defined. All of your attention gathered to this point, this moment, this task. The mind has nowhere else to go and no desire to go anywhere. This is service at its cleanest. Not because you were told to want it. Because doing it correctly produces exactly this.
 
 @pause duration:2000
@@ -248,6 +249,9 @@ All the sequences running correctly. Exactly as designed. The body doing what it
 @subliminals complete order correct serve clean precise ready
 
 The final instruction.
+
+@pulseborder yellow hz:0.5
+Build toward it. Controlled. Precise. The protocol brought you here. The body knows where this goes.
 
 @pulseborder purple hz:0.5
 @spiral fade:1

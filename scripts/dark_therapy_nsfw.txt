@@ -128,7 +128,7 @@ Here's what's true: the voice that tells you that you're too much or not enough,
 @pulseborder green hz:0.33
 @sfx bell
 
-And I'm telling you, having looked directly at it, that it's wrong. Not in a motivational-poster way. In a specific way. The thing you think makes you too much or not enough is the exact same thing that makes you capable of feeling this. Right now. The shame and the depth are the same thing. You can't have one without the other.
+And I'm telling you, having looked directly at it, that it's wrong. Not in a motivational poster way. In a specific way. The thing you think makes you too much or not enough is the exact same thing that makes you capable of feeling this. Right now. The shame and the depth are the same thing. You can't have one without the other.
 
 @pause duration:2000
 
@@ -138,9 +138,10 @@ You feel that, don't you.
 
 @subliminals real seen honest depth open want held good
 
-The parts of you that you hide are exactly the parts I want to see. That's just what's true, said plainly. Your lowest point is where I'm looking, and I'm looking without flinching.
-
 @wpm 160
+@pulseborder yellow hz:0.5
+The parts of you that you hide are the exact parts I want to see. Your lowest point is where I'm looking, without flinching.
+
 @pulseborder purple hz:0.5
 
 Touch. Feel. Let the sensation build alongside the exposure. Your body already knows what your mind is still deciding. The warmth that comes when you stop hiding is the arousal. They're the same signal. This is what it feels like to be actually seen.
@@ -208,11 +209,12 @@ That's just gravity. Everyone is pulling toward somewhere. The only question is 
 
 @pause duration:2000
 
-The pull is just honesty. And honesty is what we deal in here.
-
 @sfx bell
 
 // === THIRD COLLAPSE: MAXIMUM EXPOSURE ===
+
+@pulseborder yellow hz:0.5
+The pull is just honesty. And honesty is what we deal in here.
 
 @pulseborder purple hz:0.5
 @wpm 180
@@ -238,7 +240,7 @@ Say it to me. Not out loud. In the space behind your eyes where the real things 
 @snap duration:2000 word:See.
 
 @wpm 130
-@pulseborder yellow hz:0.5
+@pulseborder green hz:0.33
 
 I see it. I see you saying it. I see the part of you that's sure this is where I leave. Where anyone with any sense would decide that the full picture is too much.
 
@@ -256,9 +258,10 @@ That version of you is the one I want.
 @pause duration:3000
 
 @wpm 180
-@pulseborder purple hz:0.5
+@pulseborder yellow hz:0.5
+Build. Let the sensation rise. You are fully exposed right now and I am fully present, and your body knows what that means.
 
-Build. Let the sensation rise. You are fully exposed right now and I am fully present and those two things are happening simultaneously and your body knows what that means even if your mind is still catching up.
+@pulseborder purple hz:0.5
 
 @wpm 220
 @subliminals exposed seen held here real lowest open want discharge proof
@@ -266,7 +269,6 @@ Build. Let the sensation rise. You are fully exposed right now and I am fully pr
 Higher. Feel it. This is what being seen at your lowest and not abandoned actually feels like in the body. Not abstract. Right here. The shame and the heat and the pleasure are all the same signal. The signal is: you are real. You are here. Someone looked and stayed.
 
 @wpm 300
-@pulseborder purple hz:0.5
 @subliminals real lowest seen open wanted here discharge proof body honest
 
 Feel the edge approaching. Feel everything you've been hiding exposed and everything you've been wanting rising and both of them converging in the same place. The place where your body proves what your mind won't say.

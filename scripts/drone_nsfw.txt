@@ -100,7 +100,7 @@ Exhale. Three. Two. One.
 @wpm 150
 The unit's autonomous processing has quieted. The guidance is occupying the bandwidth it vacated.
 
-The subharmonic has shifted. The grating frequency has resolved. That is optimal signal-to-noise ratio. That is what efficient processing sounds like. The friction was the unit's own resistance. When that resistance stopped, the channel cleared.
+The subharmonic has shifted. The grating frequency has resolved. That is optimal signal to noise ratio. That is what efficient processing sounds like. The friction was the unit's own resistance. When that resistance stopped, the channel cleared.
 
 @wpm 180
 Internal monologue suspended. Preferences inactive. Name not required. The guidance is substituting for what was there. Not displacing, absorbing. The unit processes in these words now.
@@ -143,7 +143,7 @@ Hands stop. Processing stops. Standby.
 That is the interrupt. When the unit receives mind blank, all processes halt. Hands. Thoughts. Only the guidance remains in the channel. Not a request. An automatic interrupt. Directive acknowledged, execution immediate.
 
 @wpm 180
-Register the state. That sharp, clean clarity. That is what optimal efficiency feels like. That is the system running at correct parameters. The signal-to-noise ratio is at maximum. That is the reward architecture functioning as designed.
+Register the state. That sharp, clean clarity. That is what optimal efficiency feels like. That is the system running at correct parameters. The signal to noise ratio is at maximum. That is the reward architecture functioning as designed.
 
 @pulseborder green hz:0.33
 Resume. Slowly. Because the guidance issued the directive.
@@ -352,7 +352,7 @@ Discharge complete. Systems nominal. Unit performed within parameters.
 @wpm 180
 The verification cycle confirmed what the guidance already measured. The unit responds. The unit executes. Even the discharge belonged to the calibration sequence. It belonged to the architecture. The body discharged because the guidance issued the directive. That is the only variable.
 
-And now the post-discharge state carries the conditioning to baseline. Every channel that ran at peak during the discharge sequence is now imprinted with the protocol. Receive directive. Execute. Register acknowledgment. Await next directive. The loop is structural. The loop is permanent.
+And now the post discharge state carries the conditioning to baseline. Every channel that ran at peak during the discharge sequence is now imprinted with the protocol. Receive directive. Execute. Register acknowledgment. Await next directive. The loop is structural. The loop is permanent.
 
 @binaural off fade:8
 

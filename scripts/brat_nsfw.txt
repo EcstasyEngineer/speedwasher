@@ -202,7 +202,7 @@ Hands. Off. Still.
 @spiral off fade:3
 Breathe. Just breathe.
 
-Look at you. Ruined. Wrecked. By text. By a bratty little voice in a speed-reading window. By a brat who told you exactly what she was going to do and then did it while you watched.
+Look at you. Ruined. Wrecked. By text. By a bratty little voice in a speed reading window. By a brat who told you exactly what she was going to do and then did it while you watched.
 
 And the worst part? The absolute worst part?
 
@@ -234,7 +234,6 @@ You think this is mercy? This is the meanest thing I've done all night. Because 
 Feel the edge coming back, faster this time because your body remembers, because it knows exactly where this is going now, feel it climbing, the desperation sharper than before because this time the brat is going to let you fall
 
 @pulseborder purple hz:0.5
-@pulseborder raspberry hz:0.5
 @spiral color1:#FF69B4 color2:#39FF14 color3:#FF8C00 fade:1
 @wpm 400
 @subliminals cum now lose give brat wins yours mine trophy defeat
@@ -266,7 +265,7 @@ Ha. Look at you. Wrecked. By text. By a brat. Who told you exactly what she was 
 @pause duration:3000
 
 @wpm 150
-That's the scoreboard. That's the trophy. You came because I said so. You came because a bratty little voice in a speed-reading window decided you were allowed. And the orgasm didn't set you free. It sealed the defeat. Because now your body knows. Your body has the data. Words on a screen can make you do that. And the next time you try to tell yourself you're in control, your body is going to remember this exact moment and laugh.
+That's the scoreboard. That's the trophy. You came because I said so. You came because a bratty little voice in a speed reading window decided you were allowed. And the orgasm didn't set you free. It sealed the defeat. Because now your body knows. Your body has the data. Words on a screen can make you do that. And the next time you try to tell yourself you're in control, your body is going to remember this exact moment and laugh.
 
 @wpm 180
 @binaural off fade:8

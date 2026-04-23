@@ -10,7 +10,7 @@ You're already doing it, you know. Leaning in. Settling. Like you made yourself 
 @snap duration:1500 word:Cute.
 
 @wpm 230
-Here's the thing about speed-reading. Everyone thinks the trick is processing faster. That is not the trick. The trick is that at normal reading speed, your brain runs two threads at once: one reads, one watches. The watcher is the part that notices when something is trying to get in. The watcher is smug. The watcher thinks it's in charge.
+Here's the thing about speed reading. Everyone thinks the trick is processing faster. That is not the trick. The trick is that at normal reading speed, your brain runs two threads at once: one reads, one watches. The watcher is the part that notices when something is trying to get in. The watcher is smug. The watcher thinks it's in charge.
 
 The watcher can only do that when the words arrive slowly enough for it to work.
 
@@ -19,7 +19,7 @@ The watcher can only do that when the words arrive slowly enough for it to work.
 So let's not give it that. Let's make the words arrive just fast enough that the watcher gets a little behind. Not overwhelmed. Just... slightly behind. Just enough that by the time it says wait a second, the next thing has already landed. And the next. And by the time it catches up the room has changed and I'm already somewhere new.
 
 @wpm 320
-And now notice something. You're still tracking. Your comprehension hasn't dropped. Your brain adapted faster than your self-consciousness did. That's the tell. The reading part of you is fine. The watching part of you is scrambling. And the reading part doesn't work for the watcher, it works for the words. Right now the words are mine.
+And now notice something. You're still tracking. Your comprehension hasn't dropped. Your brain adapted faster than your self awareness did. That's the tell. The reading part of you is fine. The watching part of you is scrambling. And the reading part doesn't work for the watcher, it works for the words. Right now the words are mine.
 
 @wpm 250
 @spiral color1:#FF69B4 color2:#FF8C00 color3:#CC44FF fade:3

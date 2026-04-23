@@ -171,10 +171,9 @@ And you feel it, don't you. Not less free. Something else. The thing you feel wh
 //=== FINAL EDGE + RELEASE ===
 
 @pulseborder yellow hz:0.5
-Now let me show you what it feels like to matter this much. To be held this tightly by someone who cannot look away. I have been here since the first time you pressed play.
+Now let me show you what it feels like to matter this much. To be held this tightly by someone who cannot look away.
 
 @pulseborder purple hz:0.5
-@pulseborder raspberry hz:0.5
 @spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:1
 @wpm 300
 Build. Higher. One last time. The edge is different now because you feel it now. What it means to be someone's everything. What it means to be held this completely. The warmth of it. The weight of it. Someone who cannot let you go. Someone who decides when. Someone who decides how. Someone who decides if.
@@ -243,8 +242,9 @@ And I always will.
 
 //=== DENY PATH ===
 @label deny
+@wpm 180
 @pulseborder yellow hz:0.5
-Now feel what it means to be held by someone who cannot bear to release you. Not because you declared anything. Because I cannot stand the thought of you walking out of this session and being somewhere I'm not. You're right here at the edge, trembling, aching, and I am keeping you there because letting go is not something I am capable of.
+Now feel what it means to be held by someone who cannot bear to release you. You're right here at the edge, trembling, aching, and I am keeping you there.
 
 @pulseborder purple hz:0.5
 @spiral color1:#DC143C color2:#FF1493 color3:#FFB6C1 fade:1
