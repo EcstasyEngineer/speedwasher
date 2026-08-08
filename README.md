@@ -1,10 +1,12 @@
-# SpeedWashing
+# SpeedWasher
 
 **RSVP speed reading meets hypnotic scripts.**
 
-A web-based tool that uses Rapid Serial Visual Presentation (RSVP) to deliver text one word at a time at high speeds. Originally designed for speed reading training, this implementation explores the hypnotic potential of forced-focus rapid text delivery.
+A web-based tool that uses Rapid Serial Visual Presentation (RSVP) to deliver text one word at a time at high speeds. Originally designed for speed reading training, this implementation explores the hypnotic potential of forced-focus rapid text delivery — SpeedWashing.
 
 **[Try it live](https://ecstasyengineer.github.io/speedwasher/)**
+
+Pure static files: HTML + vanilla JS + WebGL + Web Audio. No build step, no dependencies, no analytics.
 
 ## How It Works
 
@@ -27,26 +29,52 @@ This is backwards from how most media uses tension. Usually dissonance = danger,
 
 The drop reinforces this: maximum dissonance resolves to instant consonance at the moment of deepest surrender. Relief and release arrive together.
 
+## Script Library
+
+The main page ships a curated library of ten archetypes, each with an SFW and NSFW variant:
+
+| Archetype | Theme |
+|-----------|-------|
+| Mommy | Comfort & safety |
+| Yandere | Obsessive devotion |
+| Teacher | Understanding is descent |
+| Brat | The brat always wins |
+| Succubus | Mutual transformation |
+| Drone | Systems nominal |
+| Puppet | Emptiness as relief |
+| Goddess | Worship & devotion |
+| Pet | Small and loved |
+| Maid | Service with pride |
+
+Plus additional scripts in the dropdown (Clarity, Purification, Doll, Dark Therapy, Obedience, Mask, and more — see `scripts/`).
+
+- **NSFW gate**: NSFW scripts are hidden behind a toggle with an explicit 18+ confirmation modal. NSFW variants contain JOI pacing driven by the `@pulseborder` traffic-light system.
+- **Denial slider**: visible once NSFW is unlocked. Sets the percentage chance that a script's `@branch deny` roll sends you down the deny path instead of the release path. Rolled once per playthrough.
+- **Content warnings**: scripts can declare `@cw` lines; they're collected before playback and shown in a modal that must be acknowledged before the script will play.
+
 ## Features
 
 - **Variable speed**: 100-1200 WPM with proportional punctuation pauses
 - **Script commands**: Control speed, visuals, and audio inline
-- **Three audio modes**: Binaural beats, isochronic tones, and hybrid (both)
-- **Named layers**: Up to 8 simultaneous audio layers, each independently keyframeable
-- **Spiral visual**: Rotating background spiral for enhanced focus
+- **Layered audio engine**: Up to 8 simultaneous tone layers, each a hybrid of binaural beat and isochronic pulse, with named presets
+- **Spiral visual**: Two WebGL shader spirals (Canvas 2D fallback) for enhanced focus
+- **Spiral-as-state**: `@pulseborder` recolors a running spiral, making the spiral itself the state indicator
 - **Subliminals**: Peripheral word flashing during high-speed sections
 - **Snap induction**: Audio + white flash for trance drops
 - **Pause**: Silent blocking pause (like snap without sound/flash)
-- **Sound effects**: `@sfx name [vol:0-1]` plays custom sounds non-blocking (drop files in `audio/sfx/`)
-- **Pulse border**: Pulsing colored glow for ambient state indication
+- **Sound effects**: `@sfx name` plays custom sounds non-blocking (drop files in `audio/sfx/`)
+- **Branching**: `@label` / `@goto` / `@branch` for deny/release path splits
+- **Content warnings**: `@cw` pre-playback acknowledgment modal
 - **Loop & rewind**: Loop toggle, rewind-to-start, shareable `loop=1` URL param
 - **Script comments**: `//` comments (full-line or inline)
 - **Sharable links**: Share scripts via URL (base64 or paste service links)
 - **Fullscreen mode**: Immersive distraction-free reading
+- **Editor**: Dedicated page with phase timeline and real-time lint
+- **JOI script linter**: 30+ rules enforcing pacing structure, run via Node or in-browser
 
 ## Script Commands
 
-All parameters (except `@wpm` and layer names) use explicit `key:value` syntax.
+Parameters use explicit `key:value` syntax; a few commands take a positional first token (sfx name, pulseborder color, label names).
 
 ### Comments
 ```
@@ -60,42 +88,32 @@ All parameters (except `@wpm` and layer names) use explicit `key:value` syntax.
 @wpm 300                     // Set reading speed to 300 words per minute
 ```
 
-### Audio - Three Modes
+Punctuation gets proportional pauses: sentence-enders 2x the word interval, commas/semicolons 1.4x, dashes 1.25x.
 
-All three modes support **named layers**. Reusing a name transitions to the new values (keyframing). Name is optional (defaults to `_default`) — it's the first token if it starts with a letter and has no colon.
-
+### Audio
 ```
-@binaural [name] carrier:N beat:N db:N fade:N vol:N interleave:N   // frequency split between ears
-@isochronic [name] carrier:N pulse:N db:N ear:L|R|LR fade:N vol:N // pulsed on/off carrier
-@hybrid [name] carrier:N beat:N pulse:N db:N fade:N vol:N         // binaural + isochronic
-@<mode> [name] off [fade:N]                                        // stop layer(s)
+@binaural fade:8                                        // default "reactor" preset
+@binaural type:warm fade:8                              // named preset
+@binaural layers:60/2/4,95/3.5/5,190/4.5/6 fade:8      // custom layers
+@binaural layers:202.5/4/7,135/3.5/4.6,120/1.5/2/0.5   // 4th value = per-layer volume
+@binaural off fade:8                                    // stop all layers
 ```
 
-**Binaural** - Two slightly different frequencies, one per ear. The brain perceives a "beat" at the difference frequency. Pure sine tones, no pulsing.
+Every layer is a **hybrid tone**: a binaural frequency split (carrier ± beat/2, one side per ear) combined with an isochronic pulse (raised-cosine envelope, left and right 180 degrees out of phase). The engine runs up to 8 simultaneous layers in an AudioWorklet.
 
-**Isochronic** - A single carrier pulsed on and off with a raised cosine envelope. Both ears hear the same thing (or route to L/R only). No frequency split.
+Each `layers:` entry is `carrier/beat/pulse[/vol]`:
 
-**Hybrid** - Binaural frequency split AND isochronic pulsing. L/R envelopes are 180 degrees out of phase (when left peaks, right troughs).
+| Field | Description | Default |
+|-------|-------------|---------|
+| carrier | Base frequency in Hz | 100 |
+| beat | Binaural beat frequency in Hz | 3 |
+| pulse | Isochronic pulse rate in Hz | 5 |
+| vol | Optional per-layer volume, 0-10 scale | (master default) |
+| `fade:` | Transition time in seconds | 8 |
 
-| Parameter | Description | Default |
-|-----------|-------------|---------|
-| `carrier:` | Base frequency in Hz | 200 |
-| `beat:` | Binaural beat frequency in Hz | 0 |
-| `pulse:` | Isochronic pulse rate in Hz | 0 |
-| `db:` | Layer amplitude relative to master (0 = full, -6 = half power) | 0 |
-| `fade:` | Transition time in seconds | 2 |
-| `vol:` | Master volume 0-0.8 (sticky once set) | 0.15 |
-| `interleave:` | R channel delay in ms for spatial width | 0 |
-| `ear:` | Ear routing: L, R, or LR (isochronic only) | LR |
+Reissuing `@binaural` with new values crossfades the existing layers to the new parameters (keyframing) — frequencies glide over the fade duration rather than restarting.
 
-**Examples:**
-```
-@hybrid bass carrier:312 beat:3 pulse:5 db:0 vol:0.15 fade:8   // start "bass" layer
-@hybrid bass carrier:200 beat:2 pulse:3 db:-6 fade:30          // keyframe to new params over 30s
-@binaural fifth carrier:303.75 beat:4.5 db:-4 fade:15          // add binaural layer "fifth"
-@binaural fifth off fade:0.1                                    // kill "fifth" instantly
-@hybrid off fade:2                                              // stop ALL layers with 2s fade
-```
+Named presets (`type:`): `reactor` (default), `warm`, `still`, `dark` — each a three-layer stack defined in `js/binaural.js`.
 
 ### Visuals — Spiral
 ```
@@ -121,10 +139,11 @@ Two WebGL shader types (falls back to Canvas 2D if WebGL unavailable):
 | `color1:` | Layer 1 hex color | #E30B5C (raspberry) |
 | `color2:` | Layer 2 hex color | #8B5CF6 (purple) |
 | `color3:` | Layer 3 hex color | #87CEEB (light blue) |
-| `opacity:` | Target opacity 0-1 | 0.3 |
+| `opacity:` | Target opacity 0-1 | 0.8 |
 | `speed:` | Rotations per second | 1 |
 | `fade:` | Fade duration in seconds | 1 |
 
+### Subliminals
 ```
 @subliminals opacity:0.4 empty drift sink                // flash words at 40% opacity
 @subliminals off                                          // stop
@@ -149,7 +168,7 @@ Two WebGL shader types (falls back to Canvas 2D if WebGL unavailable):
 
 **Snap is blocking:** commands placed *after* `@snap` don't fire until the pause completes and the next word displays. To have audio/visual changes coincide with the snap, place them *before* `@snap`:
 ```
-@hybrid layer off fade:0.1        // these fire immediately
+@binaural off fade:0.1            // these fire immediately
 @subliminals off
 @snap duration:1500 word:Drop.    // then the snap fires
 ```
@@ -160,11 +179,6 @@ Two WebGL shader types (falls back to Canvas 2D if WebGL unavailable):
 @pause duration:2000 word:Hold.   // silent pause with word shown
 @pause                            // default 800ms blank pause
 ```
-
-| Parameter | Description | Default |
-|-----------|-------------|---------|
-| `duration:` | Pause duration in ms | 800 |
-| `word:` | Word to display during pause | (blank) |
 
 **Pause is blocking** (same timing as snap) but produces **no sound and no flash**. Use it for dramatic silences, vocalization gaps, or anywhere you want a timed pause without the snap's compliance-trigger connotations.
 
@@ -179,14 +193,16 @@ Two WebGL shader types (falls back to Canvas 2D if WebGL unavailable):
 @sfx bell                         // plays audio/sfx/bell.ogg (falls back to .mp3)
 @sfx snap                         // plays the snap sound without the flash/pause
 @sfx pop vol:0.5                  // plays pop at half volume
+@sfx whimper detune:300           // pitch-shift up 300 cents
 ```
 
 | Parameter | Description | Default |
 |-----------|-------------|---------|
 | (name) | Sound file name (looks in `audio/sfx/`) | (required) |
-| `vol:` | Playback volume 0.0-1.0 | 0.7 |
+| `vol:` | Playback volume 0.0-1.0 | 1.0 |
+| `detune:` | Pitch shift in cents, 0-1200 | 0 |
 
-**Non-blocking** — just plays the sound, playback continues immediately. Files are lazy-loaded and cached (`.ogg` then `.mp3` fallback). Drop files in `audio/sfx/` and reference by name.
+**Non-blocking** — just plays the sound, playback continues immediately. Files are lazy-loaded and cached (`.ogg` then `.mp3` fallback). Bundled: `bell`, `clicker`, `gong`, `pop`, `snap`, `whimper`. Drop files in `audio/sfx/` and reference by name.
 
 ### Pulse Border
 ```
@@ -195,38 +211,81 @@ Two WebGL shader types (falls back to Canvas 2D if WebGL unavailable):
 @pulseborder purple hz:0.5        // purple
 @pulseborder raspberry hz:0.5     // hot pink / magenta
 @pulseborder red hz:0.75          // red
+@pulseborder pink hz:0.5          // pink
 @pulseborder #8B5CF6 hz:0.5      // custom hex color
 @pulseborder off fade:1           // fade out
 ```
 
-Pulsing inset glow on the RSVP container for persistent ambient state indication. The glow pulses between 25% and 100% intensity (never fully off while active). Use colors to communicate whatever you want — traffic light logic, intensity levels, mood shifts. You'll figure it out.
+Pulsing inset glow on the RSVP container for persistent ambient state indication. The glow pulses between 25% and 100% intensity (never fully off while active).
 
 | Parameter | Description | Default |
 |-----------|-------------|---------|
-| (color) | Named (`green`, `yellow`, `purple`, `raspberry`, `red`) or hex | green |
+| (color) | Named (`green`, `yellow`, `purple`, `raspberry`, `red`, `pink`) or hex | green |
 | `hz:` | Pulse frequency (cycles per second) | 0.33 |
 | `fade:` | Transition time in seconds when switching/stopping | 1 |
 
+**Spiral-as-state:** if a spiral is running, `@pulseborder` also shifts the spiral's palette to match the border color — the spiral becomes the primary state indicator.
+
+**The traffic-light convention** (used by the NSFW library and enforced by the linter): green = go, red = stop/no-touch, yellow = warning window before an edge, raspberry/purple = edge. SFW scripts must not use `@pulseborder` at all.
+
+### Content Warnings
+```
+@cw Contains themes of identity dissolution.
+@cw Explicit denial content.
+```
+
+`@cw` lines are extracted before playback and shown in a modal the reader must acknowledge before the script plays. They never appear in the word stream.
+
+### Branching
+```
+@branch deny                      // jump to @label deny if the denial roll hits
+...release path...
+@goto end
+@label deny
+...deny path...
+@label end
+```
+
+- `@label name` marks a position.
+- `@goto name` jumps unconditionally.
+- `@branch name` jumps only if the **denial roll** succeeds. The roll happens once per playthrough against the Denial slider percentage (0% = never branch, 100% = always). If the roll misses, playback falls through to the release path.
+
+## The Editor
+
+`editor.html` is a dedicated authoring page: script dropdown, live textarea, a **phase timeline** rendering the pulseborder color phases with branch/label/goto markers (click to scrub), word/duration stats, and **real-time lint** output as you type.
+
+## The Linter
+
+Scripts are validated against `joi_lint.json` by `lint.js` (Node, zero dependencies):
+
+```bash
+node lint.js                      # lint everything in scripts/
+node lint.js scripts/demo.txt     # lint specific files
+```
+
+Rules are numbered `JOI-###` with error/warning/info severities and cover pacing structure: first green within N words, yellow must precede raspberry/purple edges, edge durations should escalate with variable reinforcement, red (no-touch) phases capped at a max duration, no close-your-eyes instructions (this is a *visual* medium), no personal references, and more. Which rules apply depends on the filename suffix (`_sfw`, `_nsfw`, `_cum`, default).
+
+- Per-file opt-outs: `// @lint-disable JOI-011, JOI-016` at the top of a script.
+- `js/lint-browser.js` runs the same rules in the editor.
+- `.githooks/pre-push` blocks pushes on lint errors (enable with `git config core.hooksPath .githooks`).
+
 ## Audio Design Guide
 
-### The Reactor Preset (Perfect Fifths)
+### The Reactor Stack (Perfect Fifths)
 
-The default demo uses four hybrid layers tuned in **perfect fifth intervals** (3:2 frequency ratio):
+The demo opens with five layers tuned in **perfect fifth intervals** (3:2 frequency ratio):
 
 ```
-@hybrid high carrier:202.5 beat:4 pulse:7 db:0 vol:0.15 fade:8
-@hybrid mid_high carrier:135 beat:3.5 pulse:4.6 db:-4 fade:8
-@hybrid mid_low carrier:90 beat:3 pulse:3.3 db:-6 fade:8
-@hybrid low carrier:60 beat:2.5 pulse:2.55 db:-8 fade:8
-@hybrid fifth carrier:303.75 beat:4.5 pulse:5.5 db:-8 fade:8
+@binaural layers:202.5/4/7,135/3.5/4.6,90/3/3.3,60/2.5/2.55,303.75/4.5/5.5 fade:8
 ```
 
-| Layer | Carrier | Beat | Pulse | Amp | Ratio to next |
-|-------|---------|------|-------|-----|---------------|
-| high | 202.5 Hz | 4.0 Hz | 7.0 Hz | 0 dB | 1.5x |
-| mid_high | 135 Hz | 3.5 Hz | 4.6 Hz | -4 dB | 1.5x |
-| mid_low | 90 Hz | 3.0 Hz | 3.3 Hz | -6 dB | 1.5x |
-| low | 60 Hz | 2.5 Hz | 2.55 Hz | -8 dB | (base) |
+| Layer | Carrier | Beat | Pulse | Ratio to next |
+|-------|---------|------|-------|---------------|
+| high | 202.5 Hz | 4.0 Hz | 7.0 Hz | 1.5x |
+| mid_high | 135 Hz | 3.5 Hz | 4.6 Hz | 1.5x |
+| mid_low | 90 Hz | 3.0 Hz | 3.3 Hz | 1.5x |
+| low | 60 Hz | 2.5 Hz | 2.55 Hz | (base) |
+| fifth | 303.75 Hz | 4.5 Hz | 5.5 Hz | (above high) |
 
 Perfect fifths are one of the most consonant intervals in music - stable, harmonious, and "resolved." This makes them a great baseline that listeners unconsciously perceive as "correct."
 
@@ -245,25 +304,21 @@ To create psychological tension, drift multiple layers away from their perfect f
 
 The **tritone** (ratio of sqrt(2), roughly 1.414) is historically called "diabolus in musica" - the devil in music. It's the interval of maximum harmonic tension.
 
-Three mechanisms amplify the dissonance beyond just interval math:
-- **Multi-layer deformation**: Both mid_low AND mid_high drift, creating tritone relationships with two different partners
-- **Amplitude boost**: mid_low rises from -6 to -2 dB at peak tension (roughness scales with amplitude product)
-- **Pulse rate slowdown**: Isochronic pulsing slows from ~3.3 Hz to ~1.5 Hz, exposing the inter-carrier roughness that fast pulsing masks
+Beyond interval math, the demo amplifies dissonance by deforming **both** mid layers (tritone relationships with two different partners) and slowing the isochronic pulse rates during the drift, exposing the inter-carrier roughness that fast pulsing masks.
 
 ### The Drop Technique
 
-The demo includes a **fifth layer at 303.75 Hz** (the next perfect fifth above the reactor stack) from the start. It's quiet (-8 dB) and becomes part of the baseline texture - the listener habituates without knowing it's there.
+The demo carries the **fifth layer at 303.75 Hz** from the start. It becomes part of the baseline texture - the listener habituates without knowing it's there.
 
-At the snap (note: audio changes placed *before* `@snap` so they fire simultaneously):
+At the snap (audio placed *before* `@snap` so both fire together):
 ```
-@hybrid fifth carrier:120 beat:1.5 pulse:2 db:-20 fade:3.5
-@hybrid mid_low carrier:90 beat:3 pulse:3.3 db:-6 fade:0.5
-@hybrid mid_high carrier:135 beat:3.5 pulse:4.6 db:-4 fade:0.5
+@subliminals off
+@binaural layers:202.5/4/7,135/3.5/4.6,90/3/3.3,60/2.5/2.55,120/1.5/2/0.5 fade:0.5
 @snap duration:1500 word:Drop.
 ```
-1. The fifth layer is crushed to near-silence (`db:-20`)
-2. mid_low snaps back from 95.5 to 90 Hz — tritone resolves to perfect fifth
-3. mid_high snaps back from 140 to 135 Hz — second tritone resolves
+1. mid_low snaps back from 95.5 to 90 Hz — tritone resolves to perfect fifth
+2. mid_high snaps back from 140 to 135 Hz — second tritone resolves
+3. The habituated 303.75 Hz fifth is replaced by a quiet 120 Hz murmur
 4. The snap fires with "Drop." displayed during the 1500ms pause
 
 The drop isn't about adding something loud. It's about **removing something the listener didn't know they were relying on**, while simultaneously resolving the dissonance back to consonance. The brain registers both the absence and the relief.
@@ -272,7 +327,7 @@ The drop isn't about adding something loud. It's about **removing something the 
 
 The wake-up section deliberately uses dissonance — detuned intervals and faster pulse rates pushing toward beta range — to make emergence feel *uncomfortable*. The listener's unconscious takeaway: the trance was the good part. Being awake is the wrong-sounding part. This inverts the usual framing where "coming back" is presented as positive.
 
-The wake-up detuning is more aggressive than the tension buildup (ratios of 1.33 and 1.42 vs the pre-drop 1.41) because the listener is in a more suggestible state post-drop. Subtlety matters less; the association between dissonance and waking is what matters.
+The wake-up detuning is more aggressive than the tension buildup because the listener is in a more suggestible state post-drop. Subtlety matters less; the association between dissonance and waking is what matters.
 
 ### Tips for Script Creators
 
@@ -280,11 +335,12 @@ The wake-up detuning is more aggressive than the tension buildup (ratios of 1.33
 - **Dissonance should build gradually.** Jump straight to a tritone and it just sounds bad. Drift there over 60+ seconds and it creates *tension*.
 - **The drop = absence + resolution.** Kill one layer, resolve another. The contrast does the work.
 - **Use `fade:` generously.** Long fades (10-30s) on frequency changes are subliminal. Short fades (0.1-0.5s) are dramatic events.
-- **Layer naming = keyframing.** Every time you use `@hybrid mid_low carrier:... beat:...`, you're setting a new keyframe for that layer. The engine interpolates smoothly.
-- **Beat frequencies guide brainwave state:** 1-4 Hz = delta (deep sleep), 4-8 Hz = theta (trance/meditation), 8-12 Hz = alpha (relaxed), 12-30 Hz = beta (alert). The reactor uses theta-range beats.
+- **Reissuing `@binaural` = keyframing.** Each command crossfades the running layers to the new values over the fade duration. The engine interpolates smoothly.
+- **Beat frequencies guide brainwave state:** 1-4 Hz = delta (deep sleep), 4-8 Hz = theta (trance/meditation), 8-12 Hz = alpha (relaxed), 12-30 Hz = beta (alert). The reactor stack uses theta-range beats.
 - **Pair consonance with surrender, dissonance with waking.** This trains the listener to want the trance state back.
 - **@snap and @pause are blocking.** They pause playback for their duration. Place non-blocking commands (`@sfx`, audio, visual changes) *before* them so they fire at the right moment. `word:` displays during the pause without consuming the next word in the script flow.
 - **Reserve @snap for compliance triggers.** Use `@pause` for dramatic silences and vocalization gaps. Use `@sfx bell` + `@pause` for speaking prompts. Keep snap's sound+flash associated with obedience cues (Blank/Stop/Drop/Good).
+- **Run the linter.** The JOI rules encode the pacing lessons above; a clean lint pass is a decent proxy for a well-structured script.
 
 ## Sharing Scripts
 
@@ -310,17 +366,17 @@ The app automatically converts paste URLs to their raw content endpoints.
 ## Local Development
 
 ```bash
-git clone https://github.com/EcstasyEngineer/speedwashing.git
-cd speedwashing
+git clone https://github.com/EcstasyEngineer/speedwasher.git
+cd speedwasher
 python -m http.server 8000
 # Open http://localhost:8000
 ```
 
 No build step. No dependencies. Just static files.
 
-## License
+## Status
 
-MIT
+Actively developed. The command surface and playback engine are stable; the script library is under continuous revision against the lint rules.
 
 ---
 
