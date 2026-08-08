@@ -63,6 +63,7 @@ Plus additional scripts in the dropdown (Clarity, Purification, Doll, Dark Thera
 - **Snap induction**: Audio + white flash for trance drops
 - **Pause**: Silent blocking pause (like snap without sound/flash)
 - **Sound effects**: `@sfx name` plays custom sounds non-blocking (drop files in `audio/sfx/`)
+- **Haptics**: `@haptic` drives a Bluetooth vibrator or e-stim device straight from the script, with a user-set intensity ceiling
 - **Branching**: `@label` / `@goto` / `@branch` for deny/release path splits
 - **Content warnings**: `@cw` pre-playback acknowledgment modal
 - **Loop & rewind**: Loop toggle, rewind-to-start, shareable `loop=1` URL param
@@ -228,6 +229,36 @@ Pulsing inset glow on the RSVP container for persistent ambient state indication
 
 **The traffic-light convention** (used by the NSFW library and enforced by the linter): green = go, red = stop/no-touch, yellow = warning window before an edge, raspberry/purple = edge. SFW scripts must not use `@pulseborder` at all.
 
+### Haptics
+```
+@haptic intensity:0.3              // ramp straight to 30%
+@haptic intensity:0.5 fade:4       // ease up to 50% over 4 seconds
+@haptic intensity:0.7 for:2        // pulse to 70% for 2s, then back to zero
+@haptic intensity:0.6 fade:1 for:3 // ease in over 1s, hold 3s, ease back out
+@haptic off                        // cut to zero
+@haptic off fade:5                 // ease down to zero over 5 seconds
+```
+
+Drives a Bluetooth vibrator or e-stim device directly from the script.
+
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `intensity:` | Target intensity, 0.0-1.0 (scaled to whatever range the device uses) | 0.3 |
+| `fade:` | Ramp time in seconds; 0 jumps immediately | 0 |
+| `for:` | Hold this long (seconds), then ramp back to zero | 0 (hold until changed) |
+
+**Non-blocking** — playback continues while the device runs. Intensity persists until the next `@haptic` command, so a script that ramps up must ramp back down.
+
+**Connecting.** Press *Connect Device* in the controls and pick your device from the browser's pairing dialog. Requires a Chromium browser (Chrome, Edge) over HTTPS or localhost — Web Bluetooth does not exist in Firefox or Safari, and the control hides itself when it isn't available. Scripts containing `@haptic` play normally with nothing connected; the commands are simply ignored.
+
+**The Max slider is a hard ceiling.** Every intensity a script asks for is clamped to it, it applies live (dragging it down cuts a running device immediately), and it persists across sessions. It defaults to 50%. A script written against someone else's tolerance cannot exceed your ceiling.
+
+Output is cut to zero on manual pause, rewind, script end, and page close. Scripted `@pause`/`@snap` beats do **not** interrupt haptics — they are part of the script's pacing, same as the audio layers.
+
+**Supported devices:** Lovense, We-Vibe, Satisfyer, LELO, Kiiroo, Svakom, Magic Motion, MysteryVibe, Aneros, and DG-Lab Coyote V2/V3 (e-stim). Device filters live in `js/haptic/device-config.json`, refreshable with `node scripts/update-devices.mjs`.
+
+> E-stim can cause involuntary muscle contraction. Start low, raise the ceiling deliberately, and never place electrodes across the chest.
+
 ### Content Warnings
 ```
 @cw Contains themes of identity dissolution.
@@ -373,6 +404,13 @@ python -m http.server 8000
 ```
 
 No build step. No dependencies. Just static files.
+
+Haptics need a secure context, so the device picker will not open over plain `http://` on a LAN address — use `localhost`, or serve over HTTPS to test from a phone.
+
+## Credits
+
+- BLE device filters and vibrator command formats: [buttplug.io](https://github.com/buttplugio/buttplug) (BSD-3-Clause, Nonpolynomial Labs LLC)
+- Coyote e-stim protocol: [DG-LAB-OPENSOURCE](https://github.com/DG-LAB-OPENSOURCE/DG-LAB-OPENSOURCE) (MIT)
 
 ## Status
 

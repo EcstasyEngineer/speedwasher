@@ -52,6 +52,16 @@
             </div>
 
             <button id="btn-sync" class="synced" disabled>Sync</button>
+
+            <div id="haptic-controls">
+                <button id="btn-haptic" title="Connect a Bluetooth haptic device">Connect Device</button>
+                <span id="haptic-status"></span>
+                <label id="haptic-ceiling-label" title="Hard cap on any intensity a script can request">
+                    <span class="toggle-label">Max:</span>
+                    <input type="range" id="haptic-ceiling" min="0" max="100" value="50" step="5">
+                    <span id="haptic-ceiling-value">50%</span>
+                </label>
+            </div>
         </div>
 
         <!-- Script Info Bar -->
@@ -176,6 +186,7 @@
                     <tr><td><code>@pause</code></td><td>duration: word:</td><td><code>@pause duration:2000 word:Hold.</code></td></tr>
                     <tr><td><code>@sfx</code></td><td>name [vol:]</td><td><code>@sfx bell vol:0.5</code></td></tr>
                     <tr><td><code>@pulseborder</code></td><td>color [hz:] [fade:]</td><td><code>@pulseborder green hz:0.33</code></td></tr>
+                    <tr><td><code>@haptic</code></td><td>intensity: [fade:] [for:]</td><td><code>@haptic intensity:0.4 for:3</code></td></tr>
                     <tr><td><code>@&lt;any&gt; off</code></td><td>[fade:]</td><td><code>@binaural off fade:8</code></td></tr>
                     <tr><td><code>//</code></td><td>comment</td><td><code>@wpm 300 // speed up</code></td></tr>
                 </table>
@@ -192,6 +203,8 @@
     <script src="js/spiral.js"></script>
     <script src="js/subliminals.js"></script>
     <script src="js/binaural.js"></script>
+    <script src="js/haptic/protocols.js"></script>
+    <script src="js/haptic/haptic.js"></script>
     <script src="js/rsvp.js"></script>
     <script src="js/app.js"></script>
 </body>

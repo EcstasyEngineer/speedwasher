@@ -107,8 +107,8 @@ function parseScript(text) {
             continue;
         }
 
-        // @spiral, @subliminals, @binaural, @isochronic, @hybrid — skip (not linted)
-        if (/^@(spiral|subliminals|binaural|isochronic|hybrid)\s/i.test(stripped)) {
+        // @spiral, @subliminals, @binaural, @isochronic, @hybrid, @haptic — skip (not linted)
+        if (/^@(spiral|subliminals|binaural|isochronic|hybrid|haptic)\s/i.test(stripped)) {
             continue;
         }
 

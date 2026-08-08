@@ -41,6 +41,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize audio engine (handles binaural, isochronic, hybrid)
     const binaural = new BinauralEngine();
 
+    // Initialize haptics (BLE device, driven by @haptic commands)
+    const hapticStatus = document.getElementById('haptic-status');
+    const btnHaptic = document.getElementById('btn-haptic');
+    const hapticCeiling = document.getElementById('haptic-ceiling');
+    const hapticCeilingValue = document.getElementById('haptic-ceiling-value');
+
+    const haptic = new HapticEngine({
+        onStatus: (msg) => { if (hapticStatus) hapticStatus.textContent = msg; },
+        onConnect: (name) => {
+            if (hapticStatus) hapticStatus.textContent = name;
+            if (btnHaptic) {
+                btnHaptic.textContent = 'Disconnect';
+                btnHaptic.classList.add('haptic-connected');
+            }
+        },
+        onDisconnect: () => {
+            if (hapticStatus) hapticStatus.textContent = '';
+            if (btnHaptic) {
+                btnHaptic.textContent = 'Connect Device';
+                btnHaptic.classList.remove('haptic-connected');
+            }
+        }
+    });
+
     // Pulse border color map and helpers
     const PULSE_COLORS = {
         green: '#22c55e',
@@ -241,6 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
             spiral.stop(2);
             subliminals.stop(2);
             binaural.stop(2);
+            haptic.stop(2);
             resetPulseBorder();
 
             // Track play count for completed scripts
@@ -266,6 +291,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 // Pause - fade layers to 0 but keep state
                 binaural.pauseAll(0.5);
+                // Haptics stop outright on a manual pause — nothing should
+                // keep running against the device while playback is halted.
+                haptic.panic();
             } else if (playing) {
                 // Resume - restore layers
                 if (binaural.hasActiveLayers()) {
@@ -374,6 +402,9 @@ document.addEventListener('DOMContentLoaded', () => {
         onPulseBorder: (args) => {
             const params = parsePulseBorder(args);
             applyPulseBorder(params);
+        },
+        onHaptic: (args) => {
+            haptic.apply(HapticEngine.parseCommand(args));
         },
         onContentWarning: (warnings, onAcknowledge) => {
             const cwModal = document.getElementById('cw-modal');
@@ -524,6 +555,7 @@ document.addEventListener('DOMContentLoaded', () => {
         spiral.stop(fade);
         subliminals.stop(fade);
         binaural.stop(fade);
+        haptic.panic();
         resetPulseBorder();
         audioPrimed = false;
     }
@@ -585,6 +617,56 @@ document.addEventListener('DOMContentLoaded', () => {
     btnFullscreen.addEventListener('click', () => {
         document.body.classList.toggle('fullscreen');
     });
+
+    // === Haptics ===
+
+    // Hide the whole control if the browser can't do Web Bluetooth at all
+    const hapticControls = document.getElementById('haptic-controls');
+    if (hapticControls && !HapticEngine.isSupported()) {
+        hapticControls.style.display = 'none';
+    }
+
+    // Restore stored intensity ceiling
+    if (hapticCeiling) {
+        const storedCeiling = localStorage.getItem('speedwashing-haptic-ceiling');
+        if (storedCeiling !== null) {
+            hapticCeiling.value = parseInt(storedCeiling, 10);
+        }
+        const applyCeiling = () => {
+            const pct = parseInt(hapticCeiling.value, 10);
+            hapticCeilingValue.textContent = pct + '%';
+            haptic.setCeiling(pct / 100);
+        };
+        applyCeiling();
+        hapticCeiling.addEventListener('input', () => {
+            applyCeiling();
+            localStorage.setItem('speedwashing-haptic-ceiling', hapticCeiling.value);
+        });
+    }
+
+    if (btnHaptic) {
+        btnHaptic.addEventListener('click', async () => {
+            if (haptic.isConnected) {
+                await haptic.disconnect();
+                return;
+            }
+            try {
+                btnHaptic.disabled = true;
+                hapticStatus.textContent = 'Connecting...';
+                await haptic.connect();
+            } catch (e) {
+                // A cancelled device picker is a normal outcome, not an error
+                hapticStatus.textContent = e.name === 'NotFoundError' ? '' : e.message;
+                console.warn('Haptic connect failed:', e);
+            } finally {
+                btnHaptic.disabled = false;
+            }
+        });
+    }
+
+    // Never leave a device buzzing after the page goes away
+    window.addEventListener('pagehide', () => haptic.panic());
+    window.addEventListener('beforeunload', () => haptic.panic());
 
     // Helper to update sync button state
     function updateSyncButton(synced) {

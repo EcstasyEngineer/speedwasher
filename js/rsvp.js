@@ -28,6 +28,7 @@ class RSVPEngine {
         this.onSfx = options.onSfx || (() => {});
         this.onBinaural = options.onBinaural || (() => {});
         this.onPulseBorder = options.onPulseBorder || (() => {});
+        this.onHaptic = options.onHaptic || (() => {});
         this.onContentWarning = options.onContentWarning || (() => {});
         this.getDenialChance = options.getDenialChance || (() => 0);
         this.contentWarnings = [];
@@ -101,6 +102,16 @@ class RSVPEngine {
                 pendingCommands.push({
                     type: 'pulseborder',
                     args: pulseMatch[1]
+                });
+                continue;
+            }
+
+            // Check for @haptic command
+            const hapticMatch = stripped.match(/^@haptic\s+(.+)/i);
+            if (hapticMatch) {
+                pendingCommands.push({
+                    type: 'haptic',
+                    args: hapticMatch[1]
                 });
                 continue;
             }
@@ -364,6 +375,8 @@ class RSVPEngine {
                     this.onBinaural(cmd.args);
                 } else if (cmd.type === 'pulseborder') {
                     this.onPulseBorder(cmd.args);
+                } else if (cmd.type === 'haptic') {
+                    this.onHaptic(cmd.args);
                 }
             }
         }
