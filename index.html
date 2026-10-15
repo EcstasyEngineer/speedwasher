@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedWasher</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌀</text></svg>">
+
+    <!-- OpenGraph embed for Discord/social -->
+    <meta property="og:title" content="SpeedWasher">
+    <meta property="og:description" content="RSVP hypnotic text delivery with binaural beats, subliminals, and spiral visuals. Paste a script and press play.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ecstasyengineer.github.io/speedwasher/">
+    <meta name="theme-color" content="#457b9d">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- RSVP Display -->
+        <div id="rsvp-container">
+            <div id="flash-overlay"></div>
+            <canvas id="spiral-canvas"></canvas>
+            <div id="rsvp-frame">
+                <div id="subliminal-top" class="subliminal"></div>
+                <div id="guide-top"></div>
+                <div id="word-container">
+                    <span id="word-before"></span><span id="word-orp"></span><span id="word-after"></span>
+                </div>
+                <div id="guide-bottom"></div>
+                <div id="subliminal-bottom" class="subliminal"></div>
+            </div>
+            <div id="wpm-display">300 wpm</div>
+        </div>
+
+        <!-- Controls -->
+        <div id="controls">
+            <div id="playback-controls">
+                <button id="btn-rewind" title="Rewind to start">&#x23EE;</button>
+                <button id="btn-play" title="Play/Pause">
+                    <span class="play-icon">&#9658;</span>
+                    <span class="pause-icon" style="display:none;">&#10074;&#10074;</span>
+                </button>
+                <button id="btn-loop" title="Loop">&#8634;</button>
+                <button id="btn-fullscreen" title="Fullscreen (F)">&#x26F6;</button>
+            </div>
+
+            <div id="speed-controls">
+                <label for="wpm-slider">WPM:</label>
+                <input type="range" id="wpm-slider" min="100" max="1200" value="300" step="50">
+                <span id="wpm-value">300</span>
+            </div>
+
+            <button id="btn-sync" class="synced" disabled>Sync</button>
+
+            <div id="haptic-controls">
+                <button id="btn-haptic" title="Connect a Bluetooth haptic device">Connect Device</button>
+                <span id="haptic-status"></span>
+                <label id="haptic-ceiling-label" title="Hard cap on any intensity a script can request">
+                    <span class="toggle-label">Max:</span>
+                    <input type="range" id="haptic-ceiling" min="0" max="100" value="50" step="5">
+                    <span id="haptic-ceiling-value">50%</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Script Info Bar -->
+        <div id="script-section">
+            <div id="script-header">
+                <span>Script</span>
+                <div id="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <span id="word-count"></span>
+            </div>
+            <textarea id="script-editor" style="display:none;" placeholder="Loading script..."></textarea>
+            <div id="script-buttons">
+                <button id="btn-load-script" class="loaded" disabled style="display:none;">Load</button>
+                <button id="btn-share" title="Share script via URL">Share</button>
+                <a href="editor.html" style="color: #7dd3fc; text-decoration: none; font-size: 0.9em; padding: 6px 12px;">Open Editor</a>
+            </div>
+        </div>
+
+        <!-- Script Browser -->
+        <div id="script-browser">
+            <div id="browser-header">
+                <span>Scripts</span>
+                <div id="browser-toggles">
+                    <label id="denial-toggle" style="display:none;">
+                        <span class="toggle-label">Denial:</span>
+                        <input type="range" id="denial-slider" min="0" max="100" value="0" step="5">
+                        <span id="denial-value">0%</span>
+                    </label>
+                    <label id="nsfw-toggle">
+                        <input type="checkbox" id="nsfw-checkbox">
+                        <span class="toggle-label">NSFW</span>
+                    </label>
+                </div>
+            </div>
+            <div id="archetype-grid"></div>
+            <div id="script-dropdown-container">
+                <select id="script-dropdown">
+                    <option value="">-- Or select a script --</option>
+                    <optgroup label="SFW Library">
+                        <option value="mommy_sfw">Mommy</option>
+                        <option value="yandere_sfw">Yandere</option>
+                        <option value="teacher_sfw">Teacher</option>
+                        <option value="brat_sfw">Brat</option>
+                        <option value="succubus_sfw">Succubus</option>
+                        <option value="drone_sfw">Drone</option>
+                        <option value="puppet_sfw">Puppet</option>
+                        <option value="pet_sfw">Pet</option>
+                        <option value="venus_golden_path">Goddess</option>
+                        <option value="maid_sfw">Maid</option>
+                        <option value="clarity_sfw">Clarity</option>
+                        <option value="purification_sfw">Purification</option>
+                        <option value="doll_sfw">Doll</option>
+                    </optgroup>
+                    <optgroup label="NSFW Library" class="nsfw-only">
+                        <option value="mommy_nsfw">Mommy</option>
+                        <option value="yandere_nsfw">Yandere</option>
+                        <option value="teacher_nsfw">Teacher</option>
+                        <option value="brat_nsfw">Brat</option>
+                        <option value="succubus_nsfw">Succubus</option>
+                        <option value="drone_nsfw">Drone</option>
+                        <option value="puppet_nsfw">Puppet</option>
+                        <option value="pet_nsfw">Pet</option>
+                        <option value="venus_nsfw">Goddess</option>
+                        <option value="maid_nsfw">Maid</option>
+                        <option value="dark_therapy_nsfw">Dark Therapy</option>
+                        <option value="obedience_nsfw">Obedience</option>
+                        <option value="mask_nsfw">Mask (Kigu)</option>
+                        <option value="venus_cum">Goddess (Alt)</option>
+                    </optgroup>
+                    <optgroup label="Special">
+                        <option value="demo">Demo</option>
+                        <option value="paf_drone">PAF Drone</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+
+        <!-- Content Warning Modal -->
+        <div id="cw-modal" class="modal-overlay" style="display:none;">
+            <div class="modal-content">
+                <h2>Content Warning</h2>
+                <div id="cw-text"></div>
+                <div class="modal-buttons">
+                    <button id="cw-acknowledge">I understand</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- NSFW Modal -->
+        <div id="nsfw-modal" class="modal-overlay" style="display:none;">
+            <div class="modal-content">
+                <h2>Hold on.</h2>
+                <p>You're about to unlock scripts that contain explicit sexual content, JOI (jerk off instruction) pacing, and erotic hypnosis elements.</p>
+                <p>These are designed for consenting adults who know what they're getting into.</p>
+                <p style="color: var(--accent-color); font-style: italic;">By clicking "I'm sure," you confirm you are 18+ and are choosing this voluntarily.</p>
+                <div class="modal-buttons">
+                    <button id="nsfw-confirm">I'm sure</button>
+                    <button id="nsfw-cancel">Maybe later</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info -->
+        <div id="info">
+            <details>
+                <summary>About SpeedWasher</summary>
+                <p>Words flash one at a time with a red letter marking the Optimal Recognition Point - where your eye should fixate. At high speeds, conscious analysis can't keep up. The words just go in.</p>
+                <p>Script commands use <code>key:value</code> syntax. Layer names are positional (first token). Press F for fullscreen, Space to play/pause.</p>
+                <p><a href="https://github.com/EcstasyEngineer/speedwasher">GitHub</a> · <a href="https://github.com/EcstasyEngineer/speedwasher#script-commands">Full Docs</a></p>
+            </details>
+            <details>
+                <summary>Command Reference</summary>
+                <table>
+                    <tr><th>Command</th><th>Parameters</th><th>Example</th></tr>
+                    <tr><td><code>@wpm</code></td><td>speed</td><td><code>@wpm 300</code></td></tr>
+                    <tr><td><code>@binaural</code></td><td>[type:] [fade:]</td><td><code>@binaural type:warm fade:8</code></td></tr>
+                    <tr><td><code>@binaural</code></td><td>layers:c/b/p,... [fade:]</td><td><code>@binaural layers:60/2/4,95/3/5 fade:8</code></td></tr>
+                    <tr><td><code>@spiral</code></td><td>color: opacity: speed: fade:</td><td><code>@spiral #8B5CF6 opacity:0.3</code></td></tr>
+                    <tr><td><code>@subliminals</code></td><td>opacity: word1 word2 ...</td><td><code>@subliminals opacity:0.4 obey drift</code></td></tr>
+                    <tr><td><code>@snap</code></td><td>duration: word:</td><td><code>@snap duration:1500 word:Drop.</code></td></tr>
+                    <tr><td><code>@pause</code></td><td>duration: word:</td><td><code>@pause duration:2000 word:Hold.</code></td></tr>
+                    <tr><td><code>@sfx</code></td><td>name [vol:]</td><td><code>@sfx bell vol:0.5</code></td></tr>
+                    <tr><td><code>@pulseborder</code></td><td>color [hz:] [fade:]</td><td><code>@pulseborder green hz:0.33</code></td></tr>
+                    <tr><td><code>@haptic</code></td><td>intensity: [fade:] [for:]</td><td><code>@haptic intensity:0.4 for:3</code></td></tr>
+                    <tr><td><code>@&lt;any&gt; off</code></td><td>[fade:]</td><td><code>@binaural off fade:8</code></td></tr>
+                    <tr><td><code>//</code></td><td>comment</td><td><code>@wpm 300 // speed up</code></td></tr>
+                </table>
+            </details>
+        </div>
+    </div>
+
+    <!-- Audio elements -->
+    <audio id="snap-sound" preload="auto">
+        <source src="audio/sfx/snap.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/orp.js"></script>
+    <script src="js/spiral.js"></script>
+    <script src="js/subliminals.js"></script>
+    <script src="js/binaural.js"></script>
+    <script src="js/haptic/protocols.js"></script>
+    <script src="js/haptic/haptic.js"></script>
+    <script src="js/rsvp.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

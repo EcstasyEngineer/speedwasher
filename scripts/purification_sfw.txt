@@ -1,0 +1,158 @@
+//Purification - Shrine Water Protocol (SFW)
+//The water knows what you're carrying. Let it take.
+
+@wpm 150
+@binaural type:still fade:15
+Breathe.
+
+@pause duration:3000
+
+Again. Slower.
+
+@pause duration:4000
+
+Good. Notice, for a moment, the small resistance. The part of you that says you should be checking something. That there are messages waiting, things unfinished, reasons this could be later instead of now. That part is real. It is not wrong. It is just used to running. You are not fighting it. You are setting it down at the edge of the path. It will be here when you return. Right now you are going somewhere it cannot follow.
+
+@wpm 180
+There is a path. Stone lanterns line it, each one glowing soft amber through frosted glass. The path is gravel. Fine. White. Each step makes a sound like a whisper. The air is cool and damp and smells like cedar and rain-wet stone and something green. Something alive.
+
+@spiral fade:10
+
+Walk.
+
+@pause duration:2000
+
+@wpm 200
+The path leads through bamboo. The stalks sway above you, hollow, musical. Light filters through in moving patterns. Your breathing has already matched the rhythm of your steps. You didn't tell it to. The body knows what this place is. The body remembers rituals even when the mind has forgotten them.
+
+At the end of the path: a gate. Weathered wood. A torii. The boundary between the ordinary world and the sacred space. You don't have to believe in sacred spaces for this to work. You just have to walk through.
+
+@sfx gong
+@pause duration:3000
+
+@wpm 180
+@subliminals clean pure still water flow release breathe peace
+Beyond the gate, steam rises. The bathhouse sits low and quiet among the trees. Its walls are dark wood polished by decades of moisture. The roof curves like cupped hands. Somewhere inside, water is moving. Not rushing. Flowing. Continuous and unhurried.
+
+You are expected. Not by anyone. By the water itself. The water has been warming since before you arrived. It knows you're coming the way rivers know where the ocean is. By gravity. By inevitability.
+
+@wpm 150
+Enter.
+
+@snap duration:1500 word:Pure.
+
+@wpm 200
+The room inside is simple. Stone floor, warm beneath your feet. Wooden walls dark with steam. A single window, open, admitting a column of soft light and the scent of trees. And in the center: the basin. Wide. Deep. The water perfectly still and perfectly clear and warm in a way you can feel from here. Steam curls from its surface like slow breath.
+
+@spiral fade:5
+
+@wpm 180
+Before the basin, there is a smaller vessel. A wooden ladle resting across a stone bowl. This is the washing. The preparation. You don't enter the water carrying the world. You wash the world off first. Layer by layer. This is the ritual.
+
+@pause duration:2000
+
+Cup the water. It's warm. Lift it.
+
+@wpm 150
+@subliminals release wash clean flow let go pure still water
+Pour it over your hands. Watch it run between your fingers. And as it runs, let it take the first thing. The face you wear when you think someone might be watching. The performance of being okay, of being competent, of being on top of it. That particular surface tension. The water takes it. That's what water does. It carries things away.
+
+@pause duration:3000
+
+@sfx bell
+@snap duration:1500 word:Clean.
+
+@wpm 180
+Cup the water again. Pour it over your arms. Your shoulders. And let it take the places where you are bracing without reason. The locked jaw. The held breath you forgot you were holding. The tightness that arrived so gradually you mistook it for your normal. The body's long preparation for a threat that is not in this room.
+
+Feel the shoulders soften as the water passes. Feel the arms grow heavy. Not with tiredness. With release. The heaviness of a body that is finally allowed to stop holding itself together.
+
+@pause duration:3000
+
+@wpm 200
+@spiral fade:3
+Cup the water once more. This time, pour it over your head. Slowly. Feel it trace the crown of your skull. Your temples. The back of your neck where the stress lives in a knot so old you've stopped noticing it.
+
+And this water takes the thoughts. Not all of them. Just the ones that are going nowhere. The sentence you have been rehearsing all day, the one you are shaping and reshaping for an audience that may never hear it. The version of a conversation from three days ago where you finally said the right thing. The water touches them and they dissolve like salt. Still part of you. But no longer solid. No longer sharp.
+
+@subliminals dissolve release flow pure empty still clear water peace
+@pause duration:4000
+
+@sfx bell
+@snap duration:2000 word:Clean.
+
+@wpm 150
+Now. The basin. Step in.
+
+@pause duration:2000
+
+Breathe in.
+
+@pause duration:3000
+
+Hold it.
+
+@pause duration:2500
+
+Breathe out. And let the threshold go with it. The edge between outside and in. Between the ordinary and this.
+
+@pause duration:2000
+
+The water receives you. Warm. Not hot. The temperature of being held. It rises to your chest and stops. And you feel it. The boundary between you and the water becoming thinner. Not disappearing. Thinning. Like the water is not outside you but continuous with you. Like you are mostly water anyway and this is just a reunion.
+
+@wpm 180
+@spiral fade:8
+The steam rises around you. Soft. The light through the window shifts. The world outside this room becomes quieter. Not silent. Quiet the way deep water is quiet. Present but distant. Available but not insistent.
+
+@subliminals still warm held pure clean peace flow breathe
+Your breathing slows. Your heart slows. The water holds your weight. You don't need to hold yourself. The water does that now.
+
+And in the holding:
+
+Something in your chest.
+
+Something in your chest begins to soften. A space there. One that has been clenched so long it forgot it could do anything else. It opens. Not all at once. Just enough. Just the first edge of it.
+
+@pause duration:5000
+
+@wpm 150
+Stay here. In the warmth. In the stillness. In the steam. There is nothing to do. Nothing to process. Nothing to understand or fix or improve. Just warmth. Just water. Just the ancient simplicity of being clean.
+
+@pause duration:3000
+
+@wpm 180
+@spiral fade:5
+The water has taken what it was meant to take. The urgency. The tension. The loops. What remains is you. Lighter. Clearer. Not empty. Clean. There is a difference. Empty is the absence of something needed. Clean is the absence of something carried.
+
+You are clean now.
+
+@sfx bell
+@pause duration:3000
+
+@wpm 200
+@subliminals off
+Rise. Slowly. Feel the water release you. Feel the air on your skin, cool after the warmth, like the first breath of a new morning.
+
+Step out of the basin. Stand on the warm stone. Let the water run from you. Let it take the last residue. The last clinging threads of whatever you brought here.
+
+@spiral off fade:8
+
+@wpm 180
+@binaural off fade:10
+The room is quiet. You are quiet. Inside and out. And there is a feeling in the center of your chest. Not warmth. Not emptiness. Gratitude. For the water. For the stillness. For yourself.
+
+@pause duration:3000
+
+@wpm 150
+Walk back along the path. The lanterns are still glowing. The gravel still whispers. The path hasn't changed. You have.
+
+@wpm 200
+The world is where you left it. But you are not where it left you.
+
+And the water is always there. Always warm. Always waiting. Whenever you need to set the weight down and be washed clean.
+
+@sfx gong
+@snap duration:2000 word:Pure.
+
+@wpm 150
+Welcome back. Carry only what serves you.

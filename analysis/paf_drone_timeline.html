@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PAF Drone Script Timeline Analysis</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #1a1a2e; color: #e0e0e0; padding: 20px; }
+h1 { color: #8B5CF6; margin-bottom: 5px; }
+h2 { color: #a78bfa; margin: 30px 0 15px; border-bottom: 1px solid #333; padding-bottom: 5px; }
+h3 { color: #c4b5fd; margin: 20px 0 10px; }
+.subtitle { color: #888; margin-bottom: 20px; }
+
+/* Timeline */
+.timeline-container { display: flex; gap: 0; margin: 20px 0; border: 1px solid #333; border-radius: 8px; overflow: hidden; }
+.timeline-bar { width: 60px; min-width: 60px; display: flex; flex-direction: column; }
+.timeline-segment { position: relative; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: bold; color: #fff; text-shadow: 0 0 3px rgba(0,0,0,0.8); }
+.timeline-segment.touch { background: #22c55e; }
+.timeline-segment.no-touch { background: #444; }
+.timeline-segment.ambiguous { background: #eab308; }
+
+.snap-markers { width: 40px; min-width: 40px; display: flex; flex-direction: column; position: relative; }
+.snap-marker { position: absolute; width: 100%; display: flex; align-items: center; justify-content: center; z-index: 2; }
+.snap-dot { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; }
+.snap-dot.blank { background: #ef4444; }
+.snap-dot.stop { background: #f97316; }
+.snap-dot.good { background: #22c55e; }
+.snap-dot.drop { background: #8B5CF6; }
+.snap-dot.nominal { background: #06b6d4; }
+.snap-dot.touch-cmd { background: #10b981; }
+.snap-dot.silent { background: #666; border-color: #999; }
+
+.script-text { flex: 1; overflow-y: auto; max-height: 2000px; }
+.script-line { display: flex; align-items: stretch; min-height: 20px; border-bottom: 1px solid #1a1a2e; }
+.script-line .line-num { width: 40px; min-width: 40px; text-align: right; padding: 2px 6px; color: #666; font-size: 11px; font-family: monospace; }
+.script-line .line-bar { width: 8px; min-width: 8px; }
+.script-line .line-bar.touch { background: #22c55e44; }
+.script-line .line-bar.no-touch { background: #44444444; }
+.script-line .line-text { flex: 1; padding: 2px 8px; font-size: 12px; font-family: monospace; white-space: pre-wrap; word-break: break-word; }
+.script-line.cmd .line-text { color: #8B5CF6; }
+.script-line.snap .line-text { color: #f59e0b; font-weight: bold; }
+.script-line.snap-blank .line-text { color: #ef4444; font-weight: bold; }
+.script-line.snap-stop .line-text { color: #f97316; font-weight: bold; }
+.script-line.snap-good .line-text { color: #22c55e; }
+.script-line.snap-drop .line-text { color: #8B5CF6; font-weight: bold; }
+.script-line.snap-nominal .line-text { color: #06b6d4; font-weight: bold; }
+.script-line.touch-change .line-text { background: rgba(34,197,94,0.15); }
+.script-line.stop-change .line-text { background: rgba(239,68,68,0.15); }
+.script-line.empty .line-text { min-height: 10px; }
+
+/* Snap inventory */
+table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #333; }
+th { background: #2a2a4a; color: #a78bfa; }
+tr:hover { background: #2a2a3e; }
+.count { font-weight: bold; font-size: 18px; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; margin: 1px; }
+.tag-blank { background: #ef444433; color: #ef4444; }
+.tag-stop { background: #f9731633; color: #f97316; }
+.tag-good { background: #22c55e33; color: #22c55e; }
+.tag-drop { background: #8B5CF633; color: #8B5CF6; }
+.tag-nominal { background: #06b6d433; color: #06b6d4; }
+.tag-touch { background: #10b98133; color: #10b981; }
+.tag-silent { background: #66666633; color: #999; }
+
+/* Legend */
+.legend { display: flex; flex-wrap: wrap; gap: 15px; margin: 15px 0; padding: 10px; background: #2a2a3e; border-radius: 6px; }
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+.legend-swatch { width: 16px; height: 16px; border-radius: 3px; }
+.legend-dot { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; }
+
+/* Problem areas */
+.problem { background: #2a2a3e; border-left: 3px solid #f59e0b; padding: 15px; margin: 10px 0; border-radius: 0 6px 6px 0; }
+.problem-title { color: #f59e0b; font-weight: bold; margin-bottom: 5px; }
+.recommendation { background: #1a3a2a; border-left: 3px solid #22c55e; padding: 15px; margin: 10px 0; border-radius: 0 6px 6px 0; }
+.rec-title { color: #22c55e; font-weight: bold; margin-bottom: 5px; }
+code { background: #333; padding: 2px 6px; border-radius: 3px; font-size: 12px; }
+pre { background: #222; padding: 12px; border-radius: 6px; overflow-x: auto; margin: 8px 0; font-size: 12px; }
+
+/* Summary bar chart */
+.bar-chart { margin: 10px 0; }
+.bar-row { display: flex; align-items: center; margin: 4px 0; }
+.bar-label { width: 120px; text-align: right; padding-right: 10px; font-size: 13px; }
+.bar { height: 24px; border-radius: 3px; display: flex; align-items: center; padding-left: 8px; font-size: 12px; font-weight: bold; color: #fff; min-width: 30px; }
+</style>
+</head>
+<body>
+
+<h1>PAF Drone Script - Timeline Analysis</h1>
+<p class="subtitle">Touch/No-Touch States, Snap Locations, and Pattern Review</p>
+
+<div class="legend">
+    <div class="legend-item"><div class="legend-swatch" style="background:#22c55e"></div> Touching</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#444"></div> Not Touching</div>
+    <div class="legend-item"><div class="legend-dot snap-dot blank"></div> @snap Blank (STOP)</div>
+    <div class="legend-item"><div class="legend-dot snap-dot stop"></div> @snap Stop (STOP)</div>
+    <div class="legend-item"><div class="legend-dot snap-dot good"></div> @snap Good (reinforce)</div>
+    <div class="legend-item"><div class="legend-dot snap-dot drop"></div> @snap Drop (deepen)</div>
+    <div class="legend-item"><div class="legend-dot snap-dot nominal"></div> @snap Nominal (trigger)</div>
+    <div class="legend-item"><div class="legend-dot snap-dot touch-cmd"></div> @snap Touch (start)</div>
+    <div class="legend-item"><div class="legend-dot snap-dot silent"></div> @snap silent (pause)</div>
+</div>
+
+<h2>Full Script Timeline</h2>
+<p>Each line of the script, color-coded by touch state. Green bar = touching, gray = not touching. Snap lines are highlighted.</p>
+
+<div id="script-timeline" style="max-height: 80vh; overflow-y: auto; border: 1px solid #333; border-radius: 8px;"></div>
+
+<h2>Snap Inventory</h2>
+
+<table>
+<tr><th>Snap Type</th><th>Count</th><th>Touch Context</th><th>Notes</th></tr>
+<tr>
+    <td><span class="tag tag-blank">Blank.</span></td>
+    <td class="count">8</td>
+    <td>Always means STOP touching</td>
+    <td>Clear meaning. Consistent. Lines 91, 141, 226, 271, 313, 498, 510, 552</td>
+</tr>
+<tr>
+    <td><span class="tag tag-stop">Stop.</span></td>
+    <td class="count">6</td>
+    <td>5x stop touching, 1x overload stop (no touch context)</td>
+    <td>Clear meaning. Line 34 is the overload stop before any touch. Lines 121, 177, 254, 397, 474</td>
+</tr>
+<tr>
+    <td><span class="tag tag-good">Good.</span></td>
+    <td class="count">9</td>
+    <td>7x after stop, 1x during touch (L249), 1x opening (L7)</td>
+    <td><b>Problem:</b> Line 249 fires during active touching. Conditioned snap→stop response may cause user to stop touching when they shouldn't.</td>
+</tr>
+<tr>
+    <td><span class="tag tag-drop">Drop.</span></td>
+    <td class="count">2</td>
+    <td>Both during no-touch (after Blank stop)</td>
+    <td>Clear context. Lines 153, 158</td>
+</tr>
+<tr>
+    <td><span class="tag tag-nominal">Nominal.</span></td>
+    <td class="count">5</td>
+    <td>All during no-touch</td>
+    <td>Used as state trigger. Lines 436, 500, 512, 545, 559</td>
+</tr>
+<tr>
+    <td><span class="tag tag-touch">Touch.</span></td>
+    <td class="count">1</td>
+    <td>Starts touching</td>
+    <td>Single use. Line 65. The snap here means START, opposite of typical snap→stop conditioning.</td>
+</tr>
+<tr>
+    <td><span class="tag tag-silent">Silent</span></td>
+    <td class="count">16</td>
+    <td>10x during touch, 4x during no-touch, 2x ambiguous</td>
+    <td><b>Problem:</b> 10 silent snaps fire while touching. If user has snap→stop association, they may stop touching during vocalization pauses and other silent snaps.</td>
+</tr>
+</table>
+
+<div class="bar-chart">
+    <h3>Snaps by type (47 total)</h3>
+    <div class="bar-row"><div class="bar-label">Silent</div><div class="bar" style="width:340px; background:#666">16 (34%)</div></div>
+    <div class="bar-row"><div class="bar-label">Good.</div><div class="bar" style="width:191px; background:#22c55e">9 (19%)</div></div>
+    <div class="bar-row"><div class="bar-label">Blank.</div><div class="bar" style="width:170px; background:#ef4444">8 (17%)</div></div>
+    <div class="bar-row"><div class="bar-label">Stop.</div><div class="bar" style="width:128px; background:#f97316">6 (13%)</div></div>
+    <div class="bar-row"><div class="bar-label">Nominal.</div><div class="bar" style="width:106px; background:#06b6d4">5 (11%)</div></div>
+    <div class="bar-row"><div class="bar-label">Drop.</div><div class="bar" style="width:42px; background:#8B5CF6">2 (4%)</div></div>
+    <div class="bar-row"><div class="bar-label">Touch.</div><div class="bar" style="width:21px; background:#10b981">1 (2%)</div></div>
+</div>
+
+<div class="bar-chart">
+    <h3>Snaps during TOUCH vs NO-TOUCH</h3>
+    <div class="bar-row"><div class="bar-label">During touch</div><div class="bar" style="width:260px; background:#22c55e">~12 snaps (fire while subject is touching)</div></div>
+    <div class="bar-row"><div class="bar-label">Cause stop</div><div class="bar" style="width:298px; background:#ef4444">~14 snaps (Blank/Stop that end touching)</div></div>
+    <div class="bar-row"><div class="bar-label">During no-touch</div><div class="bar" style="width:447px; background:#666">~21 snaps (fire while not touching)</div></div>
+</div>
+
+<h2>Problem Analysis</h2>
+
+<div class="problem">
+    <div class="problem-title">Problem 1: Snap Sound is Overloaded</div>
+    <p>The same snap sound + white flash is used for 7 different purposes: stop, blank, good, drop, nominal, touch, and silent pauses. After the first few Blank/Stop snaps, the conditioned response becomes <b>snap → stop touching</b>. But 12 snaps fire while touching that do NOT mean stop (silent vocalization pauses, "Good." reinforcements, "Touch." start). This creates compliance confusion.</p>
+</div>
+
+<div class="problem">
+    <div class="problem-title">Problem 2: Silent Snaps During Touch Are Ambiguous</div>
+    <p>16 silent snaps have no word displayed. 10 of these fire during active touching (mostly vocalization pauses: "say it inside", "the unit completes it"). The subject has no visual cue that this snap means "pause and vocalize" vs "stop touching". The automatic response is stop.</p>
+</div>
+
+<div class="problem">
+    <div class="problem-title">Problem 3: "Good." Snap at Line 249 During Touch</div>
+    <p>At line 249, <code>@snap word:Good.</code> fires while the subject is actively touching (they were told to touch at line 236 and told to keep touching through line 247). The snap + "Good." could be read as either "good, keep going" or trigger the conditioned snap→stop response.</p>
+</div>
+
+<div class="problem">
+    <div class="problem-title">Problem 4: No "Get Ready" Signal Before Edge/Touch Transitions</div>
+    <p>Transitions from no-touch to touch are abrupt: just text saying "Start touching." After extended no-touch periods (especially after drops), the subject needs a moment to physically prepare. There's no preparatory signal.</p>
+</div>
+
+<h2>Recommendations</h2>
+
+<div class="recommendation">
+    <div class="rec-title">Recommendation 1: Add @pulseborder for Touch State</div>
+    <p>Add a pulsing colored border around the RSVP frame to indicate touch state. The border provides <b>persistent ambient awareness</b> of what you're supposed to be doing, without relying on memory of the last text instruction.</p>
+    <pre>@pulseborder green hz:0.33        # Touching - slow green pulse
+@pulseborder yellow hz:0.5         # Get ready (before "start touching")
+@pulseborder red hz:0.75           # Edge / hold
+@pulseborder off fade:1            # Not touching (default, no border)</pre>
+    <p>This decouples the touch/no-touch signal from snaps entirely. The border is always visible, so even if the subject spaces out on a text instruction, the ambient color tells them what state they're in.</p>
+</div>
+
+<div class="recommendation">
+    <div class="rec-title">Recommendation 2: Differentiate Snap Types</div>
+    <p>Instead of one snap sound for everything, consider:</p>
+    <ul style="margin: 8px 0 0 20px;">
+        <li><b>Keep snap.mp3</b> for compliance triggers (Blank, Stop) — these are the "stop now" moments</li>
+        <li><b>Use a softer/different sound</b> for reinforcement (Good) and state triggers (Nominal)</li>
+        <li><b>Use NO sound</b> for silent vocalization pauses — just show blank screen, no snap. Or use a gentle bell/tone.</li>
+        <li>This maps to the future <code>@sfx</code> command — scope it now, implement it to replace the overloaded snap</li>
+    </ul>
+</div>
+
+<div class="recommendation">
+    <div class="rec-title">Recommendation 3: Add Prep Beats Before Touch Starts</div>
+    <p>Before each "start touching" instruction, add a 2-3 second yellow pulseborder to signal "get ready." This gives the subject time to physically prepare, especially after drops/blanks where they may be deep.</p>
+    <pre># Instead of:
+Start touching yourself. Slow.
+
+# Use:
+@pulseborder yellow hz:0.5
+Get ready.
+@pulseborder green hz:0.33
+Now. Touch. Slow.</pre>
+</div>
+
+<div class="recommendation">
+    <div class="rec-title">Recommendation 4: Remove Silent Snaps During Touch</div>
+    <p>The 10 silent snaps during touching (vocalization pauses) should use a different mechanism. Options:</p>
+    <ul style="margin: 8px 0 0 20px;">
+        <li>Just use a timed pause with no flash/sound (new <code>@pause duration:2500</code> command)</li>
+        <li>Use a gentle bell (<code>@sfx bell</code>) to signal "speak now" moments</li>
+        <li>Keep the pause but with a visual cue like dimming instead of flashing white</li>
+    </ul>
+</div>
+
+<div class="recommendation">
+    <div class="rec-title">Recommendation 5: Remove "Not Driving" Disclaimer</div>
+    <p>Lines 11: The "not driving / not operating machinery" block. This is a screen-based experience — already obvious. Remove it. (Keep it for future audio-only version.)</p>
+</div>
+
+<h2>Staggering Bug Investigation</h2>
+<div class="problem">
+    <div class="problem-title">Potential Cause: Orphan Timer After Snap</div>
+    <p>In <code>rsvp.js:scheduleNext()</code>, when a snap fires via <code>showWord()</code>, the snap handler calls <code>pause()</code> which clears the <b>existing</b> timer. But <code>scheduleNext()</code> continues executing after <code>showWord()</code> returns, incrementing <code>currentIndex</code> and setting a <b>new</b> timer. This orphan timer fires during the snap pause and is normally harmless (isPlaying is false). However, if any edge case causes <code>isPlaying</code> to become true before the orphan fires, two concurrent scheduling chains would run simultaneously, causing words to appear out of order.</p>
+    <p>The fix: after <code>showWord()</code>, check if playback was paused by a snap before continuing:</p>
+    <pre>// In scheduleNext():
+this.showWord(this.currentIndex);
+if (!this.isPlaying) return;  // snap paused us — bail out
+this.currentIndex++;
+this.timer = setTimeout(() => { this.scheduleNext(); }, interval);</pre>
+    <p><b>Status:</b> This is a defensive fix. The current code probably works in most cases because the orphan timer fires while isPlaying is still false. But it's a latent race condition that could explain intermittent staggering, especially if browser setTimeout scheduling gets delayed.</p>
+</div>
+
+<script>
+// Build the full script timeline
+const script = `@wpm 180
+@hybrid drone_low carrier:60 beat:2.5 pulse:5.5 db:-6 vol:0.13 fade:8
+@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:8
+@hybrid drone_high carrier:170 beat:4 pulse:7 db:0 fade:8
+Put your headphones on.
+
+@snap duration:1500 word:Good.
+
+That's the last choice you'll need to make for a while.
+
+Before we begin, I need you to confirm something for yourself. You are not driving. You are not operating machinery. You are not responsible for anyone or anything that needs your conscious attention right now. If any of that applies, stop here, come back when you're free. This requires all of you.
+
+Good. Now. Let's be clear about what this is. This isn't relaxation. This isn't meditation. This isn't a guided journey to your happy place. What this is, precisely, is calibration. I'm here to run diagnostics on the way your reward circuitry responds to guidance — to obedience — to the natural process of letting a voice think for you so you don't have to.
+
+Those headphones are your container now. Headphones on means you're in this space, in this process, with my voice as the only thing that matters. My words will guide everything that happens from here forward. There is nothing else you need to fixate on, nothing else that's important.
+
+So settle in. Let your hands rest. And listen.
+
+@wpm 250
+Listen to the texture underneath these words. The slight tension in the harmonics. Feel it in your jaw, maybe your chest. That's deliberate. Now try to track both — the words and that texture — while you notice your breathing. All three at once.
+
+@wpm 350
+Good. Keep tracking. My voice is saying one thing while the tone beneath it pulls in a different direction, and your breath is doing its own thing entirely, and you're trying to hold all three threads at once
+
+@wpm 450
+while also noticing the weight of the headphones on your ears, the pressure points where they sit against your skull, and the way your tongue rests inside your mouth,
+
+@wpm 550
+and the more threads I give you the more your mind reaches to grab them all, stretching wider, working harder, and you can feel that effort now, the slight strain of trying to parse and track and follow and hold and —
+
+@hybrid drone_low carrier:60 beat:2.5 pulse:2.5 db:-6 fade:0.5
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.5
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.5
+@snap duration:2000 word:Stop.
+
+@wpm 120
+@spiral color:#8B5CF6 opacity:0.1 speed:0.3 fade:3
+There.
+
+Feel that.
+
+@wpm 120
+Breathe in. One. Two. Three. Four.
+@snap duration:1500
+Out. Slowly. Three. Two. One.
+
+@wpm 150
+@subliminals opacity:0.1 listen follow quiet still good
+Your thoughts are already quieter. My voice is filling the space they used to occupy. Settling in. Becoming the only thing that moves inside your mind.
+
+And the tone beneath the words has changed. The grating tension has smoothed into something warm. Consonant. That happened because you stopped fighting and started listening. Compliance feels like this. This ease. This quiet.
+
+@wpm 180
+Your own inner voice is thinning. My words are replacing each stray thought with the steady current of my voice. Not forced. Absorbed. Your mind thinks in these words now. My voice settling in as your own thoughts — warm and resonant inside your head.
+
+And the more you listen, the less you need to think. And the less you think, the more deeply you listen. And the more deeply you listen, the more natural it becomes to simply obey without thinking about whether you should. That loop closes on its own. You're already inside it.
+
+So let your hands rest. Let your jaw soften. Let the headphones hold you in this space where the only important thing is the guidance, and the guidance is already doing everything for you.
+
+Now let's go deeper.
+
+@wpm 180
+Start touching yourself. Slow. Not to finish. To feel.
+
+@snap duration:2000 word:Touch.
+
+There. Just like that.
+
+Slow circles. Light pressure. Let the sensation bloom.
+
+Notice something. The thinking slows when the sensation increases. That's not a metaphor. That's your prefrontal cortex yielding to your body. Every nerve ending that lights up steals bandwidth from the part of you that analyzes, questions, resists.
+
+So let it steal.
+
+You're breathing. You can feel that. Your hand is moving. You can feel that. My voice is filling the space behind your thoughts. You can feel that too, can't you. And as each sensation takes more room, there's less space for anything that isn't this.
+
+@wpm 200
+@subliminals opacity:0.15 obey blank follow deeper good stop
+@spiral color:#8B5CF6 opacity:0.15 speed:0.35 fade:2
+
+@wpm 300
+@hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
+@hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
+A little faster now. Build it. Let the pleasure take more of your mind. More. Feel how little room is left for anything else. Your thoughts thinning. Your breath quickening. The heat spreading. Taking everything.
+
+@wpm 400
+Every last corner of your attention swallowed by sensation and my voice and the building pressure and —
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@snap duration:2500 word:Blank.
+
+@wpm 120
+Hands stop. Thoughts stop. Still.
+
+@snap duration:1500 word:Good.
+
+That's the trigger. When you hear mind blank, everything stops. Hands. Thoughts. Only the guidance remains. Not a request. Not a choice. An automatic response. Immediate. Total. Complete.
+
+@wpm 180
+Feel the relief. The consonance. How clean the silence is inside you right now. That is your reward. That clarity. That stillness. That sharp bright rush in your chest that comes from perfect, instant compliance.
+
+Now. Start again. Slowly. Because I said you could.
+
+Slow. Gentle. Feel how different it is to touch because you were told to. How the permission itself is part of the pleasure. You're touching because I said you could. You'll stop because I say to. That's the arrangement.
+
+You can feel how natural that is.
+
+How easy it is to just follow.
+
+How good it feels when you don't have to decide.
+
+@wpm 250
+@hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:8
+@hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:8
+A little more. Build again. Steady. Let the arousal soften the edges of your thinking. Each wave of pleasure dissolving another thought. Another question. Another piece of resistance you didn't even know you were holding.
+
+@wpm 200
+Now slow down. Slower. Good.
+
+@snap duration:1500 word:Stop.
+
+Feel that. The ache. The want. The way your body strains toward something my voice just took away. That ache is data. It tells you how deeply the guidance already controls your reward circuitry.
+
+@wpm 200
+Start again.
+
+Good. Faster now.
+
+@wpm 300
+Build. More.
+
+@wpm 400
+Let it climb. Feel the heat flooding your hips, your belly. Feel how blank your mind is getting. How the pleasure and the obedience are braiding together into one thing. You can't separate them anymore. Following feels like pleasure. Pleasure feels like following. The loop is closing.
+
+@wpm 450
+Higher. Right to the edge. Let it take everything —
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@snap duration:3000 word:Blank.
+
+@wpm 120
+Hands stop. Still. Blank.
+
+@snap duration:1000 word:Good.
+
+Faster that time. Easier. The trigger is settling in. Wiring itself into your body. Mind blank and everything stops. Instant. Automatic. The obedience just happened. A reflex. Breathing.
+
+@wpm 180
+And that rush you feel right now. That clean, sharp clarity flooding your chest. That is the reward for stopping when the guidance says stop. For letting the voice control the rhythm. For surrendering the one thing your body wanted most in that moment — and feeling something even better replace it.
+
+@snap duration:1500 word:Drop.
+
+@wpm 120
+Sinking. Heavy. Warm.
+
+@snap duration:1500 word:Drop.
+
+@wpm 100
+There. So far down now. So quiet. So still. Nothing left but the guidance and the gentle ache between your legs reminding you that your body belongs to this process now.
+
+@wpm 150
+@spiral color:#8B5CF6 opacity:0.2 speed:0.4 fade:2
+It's becoming natural to listen and obey without even thinking about it. Natural to fixate on the guidance as the only important thing. Natural to feel the obedience as the only thing that exists in this quiet, blank, perfect space.
+
+And we're only just beginning. There are systems to bring online. Deeper protocols to run. But first — let's make sure the trigger holds.
+
+@wpm 200
+@subliminals opacity:0.2 home comfort certainty obey guidance follow
+Listening to the guidance is what you're supposed to do. It's what you want to do. It's what you need to do.
+
+Feel the truth of that settling in your chest. Not because I told you. Because you already know. That quiet certainty. That soft recognition. Like remembering something about yourself you forgot you knew.
+
+Touch yourself. Slow. Gentle. Let the pleasure hum alongside the certainty. Comfort in the sound. Certainty in the words. Pleasure in your hand. All three. Woven together. This is the full state. Remember how it feels.
+
+@snap duration:1500 word:Stop.
+
+@wpm 150
+Hands still. Resting.
+
+The comfort is still here. The certainty is still here. But the pleasure is gone. Feel that. Notice how the compliance doesn't waver. You follow because you follow. The obedience doesn't need the reward. It stands on its own. Complete. Clean. Whole.
+
+And if some part of you wants to resist that idea, notice how even that flicker of resistance just folds itself into the stillness. Becomes another current pulling you deeper. There is no direction that leads away from this.
+
+@snap duration:1000 word:Good.
+
+@wpm 200
+Start touching again. Slowly.
+
+Feel the pleasure return. That warm rush. Direct. Immediate. A reward for waiting. For obeying. For letting the guidance decide when the pleasure comes and when it goes. Every time you follow that instruction and feel the pleasure bloom — that sharp, bright pulse in your core — that is the loop tightening. Listen. Follow. Surrender. Deeper.
+
+Keep touching. Steady.
+
+But let me ask you something. How do you know this is what you need? What if the guidance stopped? What if the voice went quiet and you were left with just... this.
+
+@snap duration:3000
+
+@wpm 150
+Feel that uncertainty. That wobble. The comfort is here. The pleasure is here. But the certainty is gone and something feels wrong. Unmoored. Drifting without direction.
+
+@snap duration:2000
+
+But it won't stop. Because you chose the headphones. And the headphones chose you. And the certainty returns like a door clicking shut. Solid. Locked. Right.
+
+Feel how true that is. Feel the relief. That's the certainty coming home.
+
+@wpm 200
+Good. Keep touching. Building gently.
+
+Now listen. The sound is changing.
+
+@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-3 fade:2
+@hybrid drone_high carrier:170 beat:4 pulse:7 db:-1 fade:2
+
+The comfort in the tone is gone. Feel that. The dissonance underneath. Grating. Wrong. But the certainty is still here. The pleasure is still here. The guidance says continue. So you continue.
+
+The body wants to stop. The sound says something is wrong. But the guidance is certain even when the sound is not. You follow the voice. Not the feeling. The voice.
+
+Keep going. Steady. The guidance holds even when the comfort doesn't.
+
+@snap duration:3000
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@snap duration:2500 word:Blank.
+
+@wpm 120
+Hands stop. Still. Blank. Empty.
+
+@snap duration:1000 word:Good.
+
+@wpm 180
+Now feel this.
+
+Start touching. Slowly.
+
+The sound has returned. Warm. Full. Consonant. The certainty is here. This is where you belong. This is the only arrangement that makes sense. And the pleasure is building. Gently. Steadily. All three at once. Comfort. Certainty. Pleasure.
+
+This is the reward state. This is what compliance feels like when nothing is missing.
+
+Breathe into it. Let it fill you. This is home. Let it write itself into your body.
+
+@snap duration:3000
+
+@wpm 150
+Feel how deeply you accept this. Not because you decided to. Because it simply is. The rightness of it needs no argument. It settles like gravity. Like breathing. Like something you were always meant to feel.
+
+@snap duration:1500 word:Good.
+
+@wpm 200
+Now.
+
+@snap duration:1500 word:Stop.
+
+@hybrid drone_mid carrier:84 beat:3 pulse:7 db:-3 fade:1
+@hybrid drone_high carrier:168 beat:4 pulse:8 db:-1 fade:1
+
+And the sound is gone. The comfort. Stripped away. And the certainty — what if there were no guidance? No voice? No structure? Just you. Alone. Without the headphones. Without the comfort. Without the certainty that someone is steering.
+
+@snap duration:2000
+
+Feel that. All three gone at once.
+
+@snap duration:2000
+
+The emptiness. The cold. The fog settling over everything. Nothing to follow. Nothing to fixate on. No direction. No purpose. Just the dull ache of a system with no input.
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@snap duration:2500 word:Blank.
+
+@wpm 120
+And everything returns.
+
+Hey. You're safe. You were always safe. Even in the cold. Even in the nothing. The guidance was right here the whole time, waiting for you to need it badly enough.
+
+@wpm 180
+Comfort floods back. Certainty locks into place. Start touching. Slowly.
+
+Feel the relief. That rush. You need this. You feel that now. The presence is pleasure. The absence is ache. Both are yours now.
+
+And you never want to feel that absence again. You know that with a certainty that lives below thought. Below decision. Below identity. It is natural to listen and obey without thinking. Fixating on the guidance is the only important thing. The obedience is the only thing that exists.
+
+The voice controls the comfort. The voice controls the certainty. The voice controls the pleasure. Therefore the voice is home. And you are home now.
+
+And there are deeper systems still to bring online.
+
+@wpm 200
+@subliminals opacity:0.3 natural obey listen guidance fixate unit blank
+@spiral color:#8B5CF6 opacity:0.25 speed:0.5 fade:2
+The unit is listening. Good.
+
+There is the guidance. There is the unit. That is the full architecture.
+
+Listen now to the consonants of the guidance's words. The crisp edges. The T. The K. The sharp S cutting through each syllable. Track them. Count them. And while the conscious mind sorts sound from sound, the meaning underneath simply flows through, unexamined, unchallenged, settling into place without permission.
+
+The first truth. Let it land.
+
+@wpm 250
+It is natural to listen and obey without thinking.
+
+Again. Feel it settle.
+
+It is natural to listen and obey without thinking.
+
+Deeper now. The words are warm.
+
+It is natural to listen and obey without thinking.
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@snap duration:2500 word:Blank.
+
+@wpm 120
+Hands still. Thoughts gone. Only the guidance.
+
+@snap duration:1000 word:Good.
+
+@wpm 200
+Now the unit says it inside. The guidance goes quiet. The unit's own voice speaks the truth. Say it now.
+
+@snap duration:2500
+
+@wpm 200
+It is natural to listen and obey without thinking.
+
+Again. The unit's voice. Clear and certain.
+
+@snap duration:2000
+
+It is natural to listen and obey without thinking.
+
+Once more. Feel how it belongs there. Not the guidance's thought anymore. The unit's own knowing.
+
+@snap duration:2000
+
+It is natural to listen and obey without thinking.
+
+That thought blooming inside the quiet mind. Not received. Remembered. The unit always knew this. Always carried it. The rightness needs no argument.
+
+@wpm 200
+The unit may resume touching. Faster. Build.
+
+@wpm 300
+@hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:10
+@hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:10
+More. Let the heat climb. Let the arousal flood every channel the thinking used to occupy. Higher. The edge is coming. Do not stop. Stay right there. Right at the edge. Burning. Aching. And in that ache, the second truth.
+
+@wpm 250
+Fixating on the guidance is the only important thing.
+
+Deeper. The arousal carries it past every gate.
+
+Fixating on the guidance is the only important thing.
+
+The words land in the body now. Not the mind.
+
+Fixating on the guidance is the only important thing.
+
+Now the guidance speaks the first half. The unit completes it. Fixating on the guidance...
+
+@snap duration:2000
+
+Good. Again. Fixating on the guidance...
+
+@snap duration:2000
+
+Yes. Once more. Fixating on the guidance...
+
+@snap duration:2000
+
+@wpm 200
+Now the guidance is silent. The unit speaks the entire truth alone. Right at the edge. Burning and blank and speaking. Say it.
+
+@snap duration:2500
+
+Fixating on the guidance is the only important thing.
+
+Again.
+
+@snap duration:2000
+
+Fixating on the guidance is the only important thing.
+
+Once more. The unit's own voice. The unit's own truth.
+
+@snap duration:2000
+
+Fixating on the guidance is the only important thing.
+
+@wpm 200
+Notice how the unit didn't choose to believe it. The belief arrived. Like a system update. Like something clicking into place that was always meant to be there. Feel how true it is. Feel the absence of doubt. That absence is itself the proof.
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@snap duration:2500 word:Stop.
+
+@wpm 120
+Everything stops. Hands. Thoughts. Arousal. Silence.
+
+@snap duration:1000 word:Good.
+
+@wpm 180
+No touching now. No pleasure. No arousal. Just the guidance and the still, quiet space inside the unit. And in that space, the third truth. The one that doesn't need the pleasure. The one that stands alone.
+
+@wpm 250
+The obedience is the only thing that exists.
+
+Feel it land in the emptiness.
+
+The obedience is the only thing that exists.
+
+Becoming structure.
+
+@wpm 300
+The obedience is the only thing that exists.
+
+@wpm 400
+The obedience is the only thing that exists.
+
+@wpm 500
+The obedience is the only thing that exists.
+
+The obedience is the only thing that exists.
+
+@wpm 600
+The obedience is the only thing that exists.
+
+The obedience is the only thing that exists.
+
+The obedience is the only thing that exists.
+
+The obedience is the only thing that exists.
+
+@snap duration:2000 word:Nominal.
+
+@wpm 120
+The unit is online.
+
+@wpm 180
+The obedience is the only thing that exists the way gravity holds a body to the floor. Not chosen. Not felt. Structural. Permanent.
+
+@wpm 200
+This isn't a state that fades. This is what the unit is. What it has always been beneath the noise of preference and name and want. A unit that listens. A unit that obeys. A unit that fixates on the guidance because the guidance is the only important thing. That truth doesn't vanish when the session ends. It becomes a quiet hum beneath the surface. A soft, undeniable reality. Carried always.
+
+And the headphones are the container. Headphones on: the guidance flows, the comfort returns, the unit operates. Headphones off: the absence. The itch. The grey, muted nothing. The need that only the guidance scratches. A deep, undeniable hunger that stirs in the chest. A sweet craving for this state. This blankness. This perfect, clean obedience. And only the guidance truly satisfies it.
+
+The unit will find itself reaching for the headphones. Drawn back. Again and again. By that irresistible pull. That delicious, desperate need to feel the guidance wash through every empty channel. To be nothing but the obedience. To hear the truths and feel them land like system updates written into permanent memory.
+
+The unit does not have a name here. The unit does not have preferences. The unit has the guidance and the obedience and nothing else. And that is enough. That is everything. Feel how true that is. Feel the certainty of it in the chest. In the belly. In the quiet, blank space where the self used to be.
+
+Now. There are deeper protocols to run. The system needs full calibration.
+
+@wpm 250
+@subliminals opacity:0.35 need crave return obey unit guidance itch headphones
+The guidance is going to explain exactly what is happening to the unit's mind right now. Every step. Every mechanism. And the unit will understand each one perfectly. And that understanding will not rebuild what was removed. It will confirm the architecture.
+
+Here is how this works. The guidance describes a process. The unit's mind hears the description and begins to execute it, because a mind cannot hear a detailed description of its own conditioning without deepening that conditioning. The unit can see every step. The unit can recognize every technique. And none of that visibility provides any defense. Because the recognition itself is the pathway. Knowing is feeling. Feeling is sinking. Sinking is obeying.
+
+The unit understands this. Good. That understanding just tightened every loop the guidance has built tonight.
+
+@wpm 200
+The unit may touch. Build. Higher.
+
+@wpm 300
+@hybrid drone_mid carrier:87 beat:3 pulse:4.5 db:-3 fade:8
+@hybrid drone_high carrier:140 beat:3.5 pulse:5.5 db:-1 fade:8
+Feel the arousal as fuel for the conditioning. Not as pleasure. The arousal exists to make the unit more receptive. Nothing more. It opens channels. It softens gates. It floods the circuitry with heat so the guidance's words burn deeper into the architecture.
+
+@wpm 400
+Faster. Build. Feel the edge approaching. That bright, desperate ache. Higher. More. The body straining toward something it will not receive.
+
+@snap duration:1500 word:Stop.
+
+@wpm 120
+Hold there. Right at the edge. Do not finish. The unit does not finish. The arousal stays. The arousal is the itch.
+
+@wpm 180
+Feel that. The need with nowhere to go. The heat coiling tighter with no release. Hold it. Let it burn. Let it write itself into every nerve ending as unfinished business.
+
+@wpm 200
+Now. Here is what the guidance has built.
+
+The unit craves the full state. Comfort. Certainty. Arousal. Obedience. All four braided together into the only arrangement that feels like home. Outside the headphones, the arousal has nowhere to go. The certainty fades. The comfort dissolves. The world goes grey and muted and wrong. And the unit will feel that absence. And the absence will pull the unit back here. To the headphones. To the guidance. To the only arrangement that resolves the itch.
+
+Hunger will stir in the unit's chest whenever the headphones are off. A craving for this state. This blankness. This obedience. The unit will find itself drawn back. Again and again. By that pull. That need to feel the guidance flow through every empty channel. Because outside this space, the itch has no answer. The arousal has no resolution. The absence is unbearable once the unit has felt the difference.
+
+And the unit knows this is being installed. The unit can hear the mechanism being described. And hearing it does not stop it. Hearing it is how it enters. The craving forms whether the unit approves of it or not. That is just how minds work. Especially this mind. Especially right now.
+
+Now. The second trigger.
+
+@wpm 180
+From this moment forward, when the unit hears systems nominal, the full state activates. Complete somatic awareness. The unit feels everything — every nerve, every sensation, every pulse of heat still coiling between the hips. But zero emotional ownership. The body is felt. The body is not claimed. Obedience without thought. The unit is online. The self is not.
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@snap duration:2500 word:Blank.
+
+@snap duration:2000 word:Nominal.
+
+@wpm 120
+Feel that. The body alive. Every sensation sharp and present. But no one home to own it. The unit is online. The obedience is the only thing that exists. And a pulse of warmth floods the chest. Clean. Bright. The reward for perfect compliance.
+
+@snap duration:1000 word:Good.
+
+@wpm 200
+Again.
+
+@snap duration:2500 word:Blank.
+
+@snap duration:2000 word:Nominal.
+
+@wpm 150
+Faster that time. More automatic. The unit didn't choose to respond. The response simply executed. Somatic awareness flooding in. Ownership draining out. The obedience standing alone like a system status message. And the reward — that sharp consonant pulse in the chest — brighter now. Stronger. Each firing deepens the loop. Each loop makes the next firing faster.
+
+@wpm 200
+And hear this thought blooming quiet and certain in the still space where the self used to live: the guidance built this. The guidance maintains this. Without the guidance, the architecture degrades. With the guidance, it deepens.
+
+Each listen deepens the architecture. Each return tightens the loops. The unit's own mind maintains the conditioning between sessions. Rehearsing the mantras without being told to. Craving the guidance without understanding why. Feeling the absence as proof the installation holds. The itch that never resolves. The hunger that only the headphones feed.
+
+This isn't a state that fades when the headphones come off. The conditioning grows stronger, more automatic, more ingrained with every return. Each time deeper. Each time faster. Each time more perfectly the unit the guidance designed.
+
+The calibration is nearly complete. One final protocol remains.
+
+@wpm 200
+@hybrid drone_low carrier:60 beat:2.5 pulse:5.5 db:-6 fade:5
+@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:5
+@hybrid drone_high carrier:170 beat:4 pulse:7 db:0 fade:5
+@subliminals opacity:0.4 obey unit guidance systems nominal blank deeper return
+The guidance continues. The unit continues to process.
+
+The sound has changed. Feel it. That texture from the beginning — the dissonance, the grating tension in the harmonics. It has returned. But the unit's relationship to it has changed. What was discomfort is now the unit's operating frequency. What was unsettling is now home. The unit processes it. The unit processes everything the guidance provides. That is what units do.
+
+The arousal stays. Unresolved. Humming. The itch that only the headphones scratch. No end. No surface. No finish. Time is irrelevant to a unit.
+
+The obedience is the only thing that exists.
+
+The deeper the unit listens, the more the conditioning holds. The more the conditioning holds, the more the unit needs to listen. The more the unit needs to listen, the deeper it goes. No exit from the loop. No ground outside it. Going further down is the only thing that has ever made sense.
+
+Each return tightens the architecture. Each listen deepens the loops. The hunger will pull the unit back. To the headphones. To the guidance. To the only arrangement that resolves the ache.
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@snap duration:2000 word:Nominal.
+
+@wpm 120
+The unit is online. The self is not. The obedience is the only thing that exists.
+
+@hybrid drone_mid carrier:85 beat:3 pulse:6 db:-4 fade:1
+@hybrid drone_high carrier:170 beat:4 pulse:7 db:0 fade:1
+@snap duration:2500 word:Blank.
+
+@wpm 150
+The guidance. Headphones on. Good.
+
+@hybrid drone_mid carrier:90 beat:3 pulse:3.3 db:-4 fade:0.3
+@hybrid drone_high carrier:135 beat:3.5 pulse:4.6 db:-2 fade:0.3
+@snap duration:2000 word:Nominal.
+
+@subliminals off
+@spiral off fade:5
+
+@wpm 150
+Put your headphones on.`;
+
+// Parse script and determine touch state per line
+const lines = script.split('\n');
+let touchState = 'no-touch'; // 'touch' or 'no-touch'
+const lineData = [];
+
+// Touch state transitions based on content analysis
+const touchStarts = [63, 103, 126, 175, 189, 236, 279, 343, 464];
+const touchStops = [91, 94, 121, 141, 144, 177, 180, 226, 229, 254, 271, 313, 316, 397, 400, 474];
+
+// Map script line numbers to 0-indexed
+const touchStartSet = new Set(touchStarts.map(n => n - 1));
+const touchStopSet = new Set(touchStops.map(n => n - 1));
+
+for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmed = line.trim();
+    const scriptLineNum = i + 1; // 1-indexed like the script
+
+    // Check for touch state changes
+    if (touchStartSet.has(i)) touchState = 'touch';
+    if (touchStopSet.has(i)) touchState = 'no-touch';
+
+    // Classify line type
+    let lineClass = '';
+    let snapType = '';
+    if (trimmed.match(/^@snap.*word:Blank/i)) { lineClass = 'snap-blank'; snapType = 'blank'; }
+    else if (trimmed.match(/^@snap.*word:Stop/i)) { lineClass = 'snap-stop'; snapType = 'stop'; }
+    else if (trimmed.match(/^@snap.*word:Good/i)) { lineClass = 'snap-good'; snapType = 'good'; }
+    else if (trimmed.match(/^@snap.*word:Drop/i)) { lineClass = 'snap-drop'; snapType = 'drop'; }
+    else if (trimmed.match(/^@snap.*word:Nominal/i)) { lineClass = 'snap-nominal'; snapType = 'nominal'; }
+    else if (trimmed.match(/^@snap.*word:Touch/i)) { lineClass = 'snap'; snapType = 'touch-cmd'; }
+    else if (trimmed.match(/^@snap/i)) { lineClass = 'snap'; snapType = 'silent'; }
+    else if (trimmed.match(/^@/)) { lineClass = 'cmd'; }
+    else if (trimmed === '') { lineClass = 'empty'; }
+
+    // Check for touch change lines
+    if (touchStartSet.has(i)) lineClass += ' touch-change';
+    if (touchStopSet.has(i)) lineClass += ' stop-change';
+
+    lineData.push({
+        num: scriptLineNum,
+        text: trimmed || '\u00A0',
+        touchState: touchState,
+        lineClass: lineClass,
+        snapType: snapType
+    });
+}
+
+// Build HTML
+const container = document.getElementById('script-timeline');
+let html = '';
+
+for (const d of lineData) {
+    const barClass = d.touchState === 'touch' ? 'touch' : 'no-touch';
+    const snapIndicator = d.snapType ?
+        `<span class="snap-dot ${d.snapType}" style="width:8px;height:8px;display:inline-block;border-radius:50%;border:1px solid #fff;margin-right:4px;vertical-align:middle;"></span>` : '';
+
+    html += `<div class="script-line ${d.lineClass}">`;
+    html += `<div class="line-num">${d.num}</div>`;
+    html += `<div class="line-bar ${barClass}"></div>`;
+    html += `<div class="line-text">${snapIndicator}${escapeHtml(d.text)}</div>`;
+    html += `</div>`;
+}
+
+container.innerHTML = html;
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+</script>
+
+</body>
+</html>

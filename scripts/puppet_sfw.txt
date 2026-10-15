@@ -1,0 +1,222 @@
+//Puppet - Weightlessness Protocol (SFW)
+//What's left when you set everything down?
+
+@wpm 150
+@binaural type:still fade:15
+Hello.
+
+Think of your name.
+The word people use to find you.
+Hear it.
+
+@pause duration:2000
+
+That's the heaviest thing you're carrying.
+We're going to set it down last.
+
+@wpm 160
+First, the lighter bags.
+
+Your schedule.
+The list that lives behind your eyes.
+The hum of things undone.
+
+Feel it.
+Now set it down.
+
+@pause duration:2500
+
+@snap duration:1500 word:Light.
+
+Just like that.
+It'll be there when you come back.
+Nothing breaks while you're here.
+
+@wpm 180
+@subliminals light still quiet empty open float release
+Next bag.
+
+Your opinions.
+Everything you've been sorting.
+Good. Bad. Worth it. Not worth it.
+The constant score.
+
+Let the scoring stop.
+Not the listening.
+Just the scoring.
+
+Feel what the jaw does when the judgment quiets.
+
+@pause duration:2000
+
+@snap duration:1500 word:Light.
+
+@wpm 150
+Lighter.
+
+@spiral fade:5
+Next bag.
+
+Your self-image.
+The picture of yourself you carry everywhere.
+The one that decides what you're allowed to feel.
+What reactions are acceptable.
+What version of you is showing today.
+
+There's no audience here.
+No one to show it to.
+Let the picture rest.
+
+@pause duration:3000
+
+@snap duration:1500 word:Light.
+
+@wpm 140
+@subliminals empty open nothing quiet still weightless free
+Feel the space.
+
+The schedule is down.
+The opinions are quiet.
+The image is resting.
+
+What's left is just this.
+Awareness with no cargo.
+The experience of being conscious without anything to be conscious of.
+
+That's not nothing.
+That's the lightest thing there is.
+
+@pause duration:2000
+
+@wpm 150
+One bag left.
+The heavy one.
+
+@wpm 130
+Your name.
+
+@pause duration:2000
+
+You're still holding it.
+The word from the beginning.
+The label. The container.
+The thing that makes all the other weight possible.
+
+Because without a name, who carries the schedule?
+Without a container, what holds the self-image?
+
+@wpm 120
+@spiral fade:2
+Open your hand.
+
+Let the word drift.
+Watch the letters thin.
+The sound dissolves.
+
+Just a shape now.
+An outline.
+A space where a name used to be.
+
+@pause duration:5000
+
+@snap duration:2000 word:Light.
+
+@wpm 110
+@subliminals weightless nothing no one floating light free empty vast
+There.
+
+No schedule.
+No opinions.
+No image.
+No name.
+
+@pause duration:3000
+
+Something is here.
+An awareness with no edges.
+Consciousness.
+Bare.
+Undecorated.
+
+@wpm 130
+It feels like flying.
+
+Not falling.
+Not dissolving.
+Flying.
+
+The lightness of a mind that has set down every single thing it was carrying.
+Not lost them.
+Set them down.
+
+@pause duration:2000
+
+@wpm 150
+Stay here.
+Just a moment.
+In this.
+
+Feel the silence.
+Not the absence of sound.
+The absence of noise.
+
+The mental noise.
+The planning. The sorting. The performing.
+Gone.
+
+Right now is silent.
+Right now is free.
+Right now you are simply here.
+
+@sfx bell
+
+@pause duration:3000
+
+@wpm 180
+@subliminals off
+@spiral off fade:5
+Now. Gently.
+
+Things return.
+
+A thought. Small. Quiet.
+A sensation. Temperature. Weight.
+The sounds of wherever you are.
+
+@wpm 150
+Your name.
+Drifting back.
+Not heavy now.
+Familiar.
+Yours.
+
+You carry it differently.
+
+Because you know.
+Underneath the name and the schedule and the image.
+Something that doesn't need any of it.
+Something that flies.
+
+@binaural off fade:8
+
+@wpm 130
+Everything is where you left it.
+Nothing broke while you were gone.
+
+But you're lighter now.
+You can feel it.
+That pocket of silence in the center of everything.
+
+That memory of flying.
+It's yours.
+It stays.
+
+And whenever the weight gets heavy.
+You know what to do.
+
+Set it down.
+Bag by bag.
+
+Until you fly.
+
+@snap duration:2000 word:Light.

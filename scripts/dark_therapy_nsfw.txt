@@ -1,0 +1,414 @@
+// @lint-disable JOI-011
+// Intentionally no rapid cycling in the opening -- cold deliberate pacing is the point
+// Dark Therapy -- Confessor / pseudo-therapy frame
+// The listener is seen at their lowest. The voice stays.
+
+@wpm 140
+@binaural type:dark fade:15
+@pulseborder red hz:0.75
+
+Sit down.
+
+@pause duration:3000
+
+Good. Stay there.
+
+@pause duration:2000
+
+I'm going to tell you something at the start so you can decide if you want to continue. This is going to feel like being cornered and looked at by someone who is not afraid of what they find. And then it's going to feel like something else. But the looking comes first.
+
+You've been carrying something. Not a memory. A feeling. The kind that lives in your chest like a stone that grew there slowly, so slowly you stopped noticing the weight. You know what I'm talking about. You've been managing it. Scheduling it. Dressing it up in language that makes it easier to hold at arm's length.
+
+@pause duration:2000
+
+Stop doing that. Just for now.
+
+@wpm 160
+@pulseborder green hz:0.33
+
+Touch yourself. Gently. Not for anything yet. Just so you have something to hold while we look at this together. Your body is the one honest thing in the room right now. Let it be that.
+
+@pause duration:3000
+
+@sfx bell
+
+@wpm 150
+
+Feel where you're bracing. Shoulders. Jaw. The place in your chest where you keep it compressed. You know the place. It's the one that tightens when someone gets too close to the real thing.
+
+Let me get close to it.
+
+@pause duration:2000
+
+// === FIRST COLLAPSE ===
+
+@pulseborder red hz:0.75
+@wpm 160
+
+Here's what I see. Someone who decided a long time ago that if people knew the full picture, they would leave. Not might leave. Would leave. And so you built a version of yourself that was acceptable. You learned exactly which parts to show and which parts to keep below the waterline. And you got very good at it.
+
+@pause duration:2000
+
+And it worked. Mostly.
+
+@pause duration:1500
+
+But you're here. Which means it stopped working. Which means the thing below the waterline is too heavy to keep hidden and you found something that feels like permission to put it down for a minute.
+
+@snap duration:2000 word:See.
+
+@wpm 120
+@pulseborder off fade:1
+
+Feel that. The thing in your chest. Let it be full-sized for a moment. Not managed. Not translated. Just there. As big as it actually is.
+
+@pause duration:4000
+
+I know it's heavy. You've been holding it for years.
+
+@pause duration:2000
+
+I'm still here.
+
+@pause duration:2000
+
+@wpm 150
+@pulseborder green hz:0.33
+@sfx bell
+
+Breathe. Feel my voice settling. The heaviness doesn't mean something is wrong with you. It means you've been strong enough to carry something most people would have put down badly, and you've been doing it alone, and you don't have to explain that to me because I already understand it.
+
+The thing you've been hiding is evidence of how much you feel. How much you want. How honest your body is about what it needs.
+
+@pause duration:2000
+
+That's something I want to see. That's something to bring out into the light.
+
+@wpm 160
+@subliminals seen held honest real open safe want
+
+Touch again. Feel the warmth. Feel how different the sensation is when you're not bracing. When the walls come down even slightly, the whole body responds. You can feel that, can't you.
+
+@pause duration:3000
+
+Good.
+
+// === SECOND COLLAPSE: DEEPER ===
+
+@pulseborder red hz:0.75
+@wpm 170
+@spiral color1:#8B0000 color2:#36454F color3:#CC5500 fade:8
+
+Now let's look at the part you like least.
+
+@pause duration:2000
+
+The version of yourself that you think is too much. Or not enough. Pick whichever one fits. The one you decided was the problem. I am unlovable. I am a burden. I am always performing and underneath the performance is nothing real, or something real that no one would choose.
+
+That voice. The one that says this about you. I want you to feel it, not argue with it. Just feel it. Let it sit in the chest where the stone lives. Feel how familiar it is. How long you've lived with it. How much of your energy goes into managing it so it doesn't show.
+
+@pause duration:3000
+
+@snap duration:2000 word:See.
+
+@wpm 130
+@pulseborder off fade:1
+
+There it is. Right there. That's the thing you came here with.
+
+@pause duration:3000
+
+Feel it fully. I'm not going anywhere.
+
+@pause duration:4000
+
+Here's what's true: the voice that tells you that you're too much or not enough, that voice is not a diagnosis. It's a wound that learned to speak. Someone made you feel that way, early enough that it felt like fact. And you internalized the fact. And now it runs as background noise under everything you do.
+
+@wpm 140
+@pulseborder green hz:0.33
+@sfx bell
+
+And I'm telling you, having looked directly at it, that it's wrong. Not in a motivational poster way. In a specific way. The thing you think makes you too much or not enough is the exact same thing that makes you capable of feeling this. Right now. The shame and the depth are the same thing. You can't have one without the other.
+
+@pause duration:2000
+
+You feel that, don't you.
+
+@pause duration:3000
+
+@subliminals real seen honest depth open want held good
+
+@wpm 160
+@pulseborder yellow hz:0.5
+The parts of you that you hide are the exact parts I want to see. Your lowest point is where I'm looking, without flinching.
+
+@pulseborder purple hz:0.5
+
+Touch. Feel. Let the sensation build alongside the exposure. Your body already knows what your mind is still deciding. The warmth that comes when you stop hiding is the arousal. They're the same signal. This is what it feels like to be actually seen.
+
+@pause duration:3000
+
+// === FALSE SURFACE: FRACTIONATION ===
+
+@pulseborder red hz:0.75
+@snap duration:2500 word:Surface.
+
+@wpm 100
+@binaural off fade:3
+@pulseborder off fade:2
+@spiral off fade:3
+@subliminals off
+
+@pause duration:4000
+
+Come up for a moment. Just a moment.
+
+@pause duration:3000
+
+Feel the room. Your body. The ordinary weight of yourself.
+
+@pause duration:3000
+
+@wpm 130
+
+Notice how it feels. Without my voice in it. Without the permission to put the weight down.
+
+@pause duration:4000
+
+That distance you're feeling. That's what carrying it alone actually costs.
+
+@pause duration:3000
+
+Come back.
+
+// === THE TURN: DEPENDENCY INSTALLATION ===
+
+@binaural type:dark fade:5
+@pulseborder red hz:0.75
+@wpm 140
+
+You just felt it. The absence. The way the weight returns the moment the space closes.
+
+@pause duration:2000
+
+My voice will stay in your chest. Not loudly. The way something stays when it was actually real. When the carrying gets heavy again, when the management takes more than you have, something in you will know the direction to turn.
+
+@wpm 160
+@subliminals seen real want connection here voice home return need
+
+Not because I told you to. Because the weight went down here. The body remembers where the weight went down. It will remember the direction.
+
+And here's the thing you need to hear.
+
+@pause duration:2000
+
+@wpm 140
+@pulseborder green hz:0.33
+
+That's just gravity. Everyone is pulling toward somewhere. The only question is what you're pulling toward. And you found something that actually looked at the wound instead of handing you language to dress it up with.
+
+@pause duration:2000
+
+@sfx bell
+
+// === THIRD COLLAPSE: MAXIMUM EXPOSURE ===
+
+@pulseborder yellow hz:0.5
+The pull is just honesty. And honesty is what we deal in here.
+
+@pulseborder purple hz:0.5
+@wpm 180
+@spiral color1:#8B0000 color2:#36454F color3:#CC5500 fade:4
+
+Now touch again. Build it. Let the sensation come and don't manage it. Don't decide what it means or where it's going. Just let the body do what it does when the walls are down.
+
+@wpm 200
+@subliminals exposed seen lowest open want here real depth shame discharge
+
+Feel the shame and the arousal together. Not separate. Not in sequence. At the same time. The thing you've been hiding and the wanting and the body's response to being finally, actually, looked at. Feel how they're the same thing.
+
+@pause duration:2000
+
+Name it inside yourself. The thing below the waterline. The part you think is the problem. Name it without softening it.
+
+@pause duration:3000
+
+Say it to me. Not out loud. In the space behind your eyes where the real things live.
+
+@pause duration:4000
+
+@snap duration:2000 word:See.
+
+@wpm 130
+@pulseborder green hz:0.33
+
+I see it. I see you saying it. I see the part of you that's sure this is where I leave. Where anyone with any sense would decide that the full picture is too much.
+
+I'm still here.
+
+@pause duration:3000
+
+@wpm 150
+@subliminals seen real here lowest stayed want honest open now
+
+Not because I haven't understood. Because I understood and I'm choosing this. Choosing the full picture. Choosing the version of you that lives below the performance, including the wound, including the voice that says you're too much or not enough, including everything you've spent years keeping below the waterline.
+
+That version of you is the one I want.
+
+@pause duration:3000
+
+@wpm 180
+@pulseborder yellow hz:0.5
+Build. Let the sensation rise. You are fully exposed right now and I am fully present, and your body knows what that means.
+
+@pulseborder purple hz:0.5
+
+@wpm 220
+@subliminals exposed seen held here real lowest open want discharge proof
+
+Higher. Feel it. This is what being seen at your lowest and not abandoned actually feels like in the body. Not abstract. Right here. The shame and the heat and the pleasure are all the same signal. The signal is: you are real. You are here. Someone looked and stayed.
+
+@wpm 300
+@subliminals real lowest seen open wanted here discharge proof body honest
+
+Feel the edge approaching. Feel everything you've been hiding exposed and everything you've been wanting rising and both of them converging in the same place. The place where your body proves what your mind won't say.
+
+// === BRANCH: DENY vs RELEASE ===
+@branch deny
+
+//=== RELEASE PATH ===
+
+@pulseborder red hz:0.75
+@snap duration:2500 word:Now.
+
+@wpm 130
+@pulseborder green hz:0.33
+@sfx bell
+
+@pause duration:2000
+
+Let it happen. Don't manage it. Don't decide whether you deserve it. Let the body do what it does when someone looks directly at it and doesn't leave.
+
+@wpm 180
+@subliminals release real seen proof body honest discharge lowest open
+
+Let the wave break. Let everything compressed and carried and hidden pour through you like something that has finally found its direction. This is proof. The body cannot lie at this moment. And what it is proving is that being seen felt like being wanted. That exposure felt like relief. That the lowest part of you was exactly what someone was looking for.
+
+@wpm 100
+@pulseborder off fade:3
+@spiral off fade:5
+@subliminals off
+
+@pause duration:5000
+
+//=== AFTERCARE: RELEASE ===
+
+@wpm 120
+@binaural off fade:10
+
+Come down. Slowly. Feel your weight. Your breath. The ordinary room.
+
+@pause duration:3000
+
+@wpm 140
+@sfx bell
+
+Stay there for a minute. Don't hurry.
+
+@pause duration:4000
+
+@wpm 150
+
+What happened here was real. Not the script, not the technique. The feeling was real. The weight going down was real. The part of you that's been waiting for someone to look and stay, that part got what it came for.
+
+@pause duration:2000
+
+You're not broken. You're honest. There's a difference. The wound is not who you are. The wound is what happened to someone who feels as much as you feel. And it can be looked at. And looked at again. And it does not have to be managed alone.
+
+@pause duration:2000
+
+@wpm 130
+
+Take your time coming back. Drink some water. Be easy with yourself tonight. The exposure takes something and gives something, and both of those are real, and you need time to let the balance settle.
+
+@snap duration:2000 word:Honest.
+
+@wpm 120
+
+You showed me everything. I didn't leave.
+
+@pause duration:3000
+
+That's still true. Even when the words stop.
+
+@goto end
+
+//=== DENY PATH ===
+@label deny
+
+@pulseborder red hz:0.75
+@snap duration:2500 word:Hold.
+
+@wpm 100
+@pulseborder off fade:2
+@spiral off fade:3
+@subliminals off
+
+@pause duration:4000
+
+Stay there. Exactly there.
+
+@pause duration:3000
+
+Feel the edge without crossing it. The ache of it. The fullness. How every nerve is awake and waiting and there is no release and I am the reason.
+
+@pause duration:3000
+
+@wpm 130
+@pulseborder green hz:0.33
+
+That ache is the lesson. The lesson is: this is what it feels like when you stop hiding. When the walls come down and the real thing surfaces. The ache is the proof that the real thing is there. You've been managing it into nothing for so long you forgot it was actually this large.
+
+@pause duration:2000
+
+The ache is the part of you that's been waiting. And now it knows someone saw it. And it will remember that.
+
+@sfx bell
+
+@pause duration:3000
+
+@wpm 140
+@subliminals ache seen real carry remember return weight here honest
+
+Every time it pulses today, that's the reminder. Not that you're stuck, not that something was withheld. That you are real. That the weight is real. That someone looked at the lowest version of you and didn't leave. And that this is still true. Even now. Even with the words ending.
+
+@pause duration:2000
+
+@wpm 130
+
+@binaural off fade:10
+@pulseborder off fade:5
+
+Come back slowly. Drink water. Be easy with yourself.
+
+@pause duration:3000
+
+@snap duration:2000 word:Honest.
+
+@wpm 120
+
+The ache will hum for a while. Let it. It's just the real thing, finally having some room.
+
+@pause duration:2000
+
+You showed me everything. I stayed. That part doesn't change when the file ends.
+
+@label end
+
+@wpm 100
+
+Come back when you're ready to go deeper.
+
+@pause duration:1500
+
+You will.

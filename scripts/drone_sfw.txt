@@ -1,0 +1,222 @@
+//Drone - Task Execution Protocol (SFW)
+//The unit processes. The unit completes. The unit does not deliberate.
+
+@wpm 180
+@binaural fade:8
+Headphones on.
+
+@snap duration:1500 word:Good.
+
+Hold the task.
+Not the steps.
+Not the complications.
+The shape of it.
+What needs doing.
+
+@pause duration:3000
+
+@wpm 200
+@spiral fade:5
+Good.
+Everything else: offline.
+
+The phone.
+The other items.
+The background hum.
+
+@snap duration:1500 word:Focus.
+
+@wpm 250
+Listen to the texture beneath these words.
+The slight tension in the harmonics.
+Track both. Words and texture.
+While noticing the breath.
+All three at once.
+
+@wpm 350
+Good. Keep tracking. The guidance says one thing while the tone beneath pulls another direction, and the breath runs its own current, and something in the unit reaches to hold all three threads,
+
+@wpm 450
+while noticing the headphone weight, the pressure on the skull, the temperature of the air at the skin, each thread pulling at something that used to have opinions about this, used to have a name attached to the pulling,
+
+@wpm 550
+and the more threads arrive the wider the reach, the less room there is for anything to be named or assessed or owned by anyone in particular and
+
+@snap duration:2000 word:Stop.
+
+@wpm 120
+There.
+
+@pause duration:2000
+
+Breathe in. One. Two. Three. Four.
+@snap duration:1500
+Out. Slowly. Three. Two. One.
+
+@wpm 140
+@subliminals focus task execute complete unit process next
+Notice what went quiet.
+
+The name wasn't needed in that stretch.
+The preferences weren't consulted.
+The self didn't have a vote.
+
+And the processing continued.
+
+@pause duration:2000
+
+@wpm 160
+@spiral fade:3
+That is what the unit is.
+
+Not the name.
+Not the preferences.
+Not the one who weighs and decides and resists.
+
+The process underneath.
+The one that was running the whole time.
+Clean. Uninterrupted.
+
+@snap duration:1500 word:Process.
+
+@wpm 180
+@subliminals execute process complete next focus unit task
+The task exists.
+The unit moves toward it.
+
+No evaluation.
+No internal vote.
+The gap between instruction and motion closes.
+
+Feel it closing.
+Not a decision being made.
+A distance shrinking.
+
+@pause duration:2000
+
+@wpm 160
+The body moves first.
+Not because it was told.
+Because the noise that used to slow it is offline.
+
+The name is on standby.
+The preferences are on standby.
+The version that explains itself to itself: standby.
+
+What remains processes.
+What remains executes.
+What remains does not deliberate.
+
+@snap duration:1500 word:Execute.
+
+@wpm 180
+@subliminals unit focus process task next complete clean
+Each step completed sends a pulse.
+Clean. Confirming.
+
+This gets done.
+@sfx bell
+That gets cleared.
+@sfx bell
+This gets sorted.
+@sfx bell
+
+No noise between the pulses.
+No one asking if it was worth it.
+Just: done. Next. Done. Next.
+
+@wpm 200
+@spiral fade:2
+The unit in motion stays in motion.
+Not because it wants to.
+Because wanting is a layer that isn't running right now.
+
+The task is all that runs.
+The task and the movement toward it.
+Metronomic.
+Unbroken.
+
+@wpm 160
+@subliminals unit process execute complete focus task clean nominal
+@pause duration:2000
+
+Feel how quiet that is.
+
+No internal debate.
+No resistance dressed as analysis.
+Just the task and the closing distance between here and done.
+
+@snap duration:1500 word:Process.
+
+@wpm 150
+This frequency.
+This flat, clean, operational state.
+
+It is natural to process without thinking.
+
+@pause duration:1500
+
+It is natural to process without thinking.
+
+The unit does not need to feel ready.
+The unit does not need to want this.
+The unit moves.
+
+@sfx bell
+@pause duration:2000
+
+@wpm 180
+@spiral fade:3
+When the guidance ends, the body moves.
+Legs straighten.
+Weight shifts.
+Vertical.
+
+Feet carry the unit to the task.
+One step.
+Then another.
+
+No noise.
+No gap.
+Clean, efficient motion.
+
+@wpm 150
+@subliminals off
+
+@snap duration:2000 word:Nominal.
+
+@wpm 130
+The unit is online.
+
+@wpm 160
+And this frequency carries.
+
+When the headphones come off, the quiet holds.
+The name comes back.
+The preferences power on.
+
+But underneath them, something runs that doesn't need them.
+Something that knows how to move without noise.
+Something that processed the whole time.
+
+That part remembers this.
+
+@pause duration:2000
+
+@wpm 200
+The task is waiting.
+
+@binaural off fade:8
+
+The body moves first.
+The unit processes.
+The unit completes.
+The unit does not deliberate.
+
+@sfx bell
+@snap duration:2000 word:Execute.
+
+@spiral off fade:5
+
+@wpm 150
+Go. Process. Complete.

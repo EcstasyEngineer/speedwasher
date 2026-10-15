@@ -1,0 +1,100 @@
+//Mommy - Comfort Spiral (SFW)
+//You're safe here. Let me take care of you.
+
+@wpm 160
+@binaural type:warm fade:10
+Hey.
+
+You don't have to be okay right now.
+
+I know that's a strange thing to hear. You've probably been okay all day. You've probably been okay for a lot of days. Performing okay so well that by now you can't feel the difference between doing it and meaning it.
+
+@pause duration:2000
+
+You're safe here. You can stop.
+
+@snap duration:1500 word:Good.
+
+@wpm 180
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFD580 fade:8
+Not stop forever. Just stop right now. Stop holding it together. Stop monitoring how you're coming across. Stop running the background check on whether you're handling things well enough, being strong enough, keeping it together enough.
+
+Enough for what? For whom?
+
+You're not being watched right now. There's no grade. The only thing here is me, and I already know you're doing your best, and I already think you're doing great, and none of that is conditional on you continuing to perform it.
+
+@wpm 160
+@subliminals safe held warm home already enough
+I want to say something and I want you to just let it land without arguing with it.
+
+You don't have to earn this.
+
+@pause duration:2000
+
+Not this moment. Not my attention. Not the warmth. Not the rest. You walked in here as you are and that's already enough. You've always been enough. The version of you that's tired and not quite okay and a little bit held together with string right now? That's the one I'm talking to. That one is completely welcome here.
+
+@wpm 180
+Most people have never heard that from someone who meant it. So I'll say it again.
+
+You are welcome here. As you are. Right now.
+
+@pause duration:3000
+
+@snap duration:1500 word:Welcome.
+
+@wpm 200
+@subliminals safe held warm soft rest here
+Let your shoulders drop. Not because you're doing a relaxation exercise. Because you've been holding them up and you don't have to anymore and your body has been waiting for permission.
+
+Let your jaw soften. Let the space behind your eyes loosen. Let the thing you've been bracing for that hasn't arrived yet... just not arrive for a little while.
+
+You've been bracing for a while, haven't you. Not just today. It's become the background. The constant low readiness. The ambient not quite fine that hums so steadily you stopped hearing it.
+
+I hear it.
+
+@wpm 160
+@spiral color1:#D4AF37 color2:#FFF8E7 color3:#FFD580 fade:4
+And I'm telling you: you can put it down. Right here. Not permanently. Not irresponsibly. Just for this moment, in this space, you can stop being the person who's handling it. I'll hold it. You rest.
+
+@pause duration:3000
+
+Feel what that's like. Even just the idea of it. Someone else holding the weight for a minute.
+
+@wpm 180
+@subliminals release rest warm held open soft enough
+That feeling in your chest right now, the slight loosening, the thing that might tip toward tears if you let it, that's not weakness. That's relief. Real relief. The kind your body produces when the guard finally comes down because it registered that it's safe enough to come down.
+
+Your body is smarter than the part of you that's been holding on so tight. Your body knows I've got you.
+
+@wpm 160
+I've got you.
+
+@pause duration:2000
+
+Nothing you tell me changes that. Nothing you feel right now changes that. There is no version of you that is too much, too needy, too tired, too broken, too behind. I've got you before any of that. The caring is already there. It's not something you have to reach for or earn. It was here when you arrived.
+
+@snap duration:1500 word:Safe.
+
+@wpm 180
+@subliminals held warm home rest already enough
+Stay here as long as you need. There's no timer. The rest of the world will wait.
+
+And when you're ready to go back, you'll bring this with you. Not as a concept. As something your body now knows is possible. The putting down. The someone has you. The being held without having to hold yourself together first.
+
+@wpm 160
+@subliminals off
+@spiral off fade:6
+@binaural off fade:10
+
+You can open your eyes. Take your time.
+
+@pause duration:2000
+
+@wpm 150
+The world is still there. And you're a little softer now. A little less braced.
+
+That's mine. I put that there. And it's yours to keep.
+
+@snap duration:2000 word:Loved.
+
+Come back whenever you need to be held.

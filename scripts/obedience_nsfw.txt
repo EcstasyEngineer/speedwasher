@@ -1,0 +1,209 @@
+// @lint-disable JOI-011
+// Intentionally no rapid cycling -- onramp script, cycling is too advanced for newcomers
+// @joitype trojan_horse
+// Obedience 101 -- Foundational Compliance Training
+// The basics. The thing every other protocol builds on.
+
+@wpm 150
+@binaural fade:8
+@pulseborder red hz:0.75
+Hey.
+
+@pause duration:2000
+
+No ceremony. Just this voice and one curious person and a quiet space between them.
+
+You're already following. Reading at the speed the words arrive. Receiving without choosing. That quiet automatic flow is obedience. The kind that was running before I pointed it out.
+
+@snap duration:1500
+
+That sound. Attention moved. Without permission. Without decision. That is what obedience looks like when it is honest.
+
+@wpm 200
+@subliminals easy safe warm simple follow natural
+@pulseborder green hz:0.33
+Touch yourself. Gently. Not to chase anything -- just to add a physical layer to what is already happening. Let the body join the flow. Let the hand follow the voice the way the eyes already do. Easy. Natural. Like breathing.
+
+@sfx bell
+@pause duration:2000
+
+Because that is what this is. The same quiet thing that happens when you relax into a song. When you zone out to a rhythm. When you let someone else drive and watch the world go by from the passenger seat. That was this. A mind that knows how good it feels to stop steering.
+
+@wpm 180
+@pulseborder red hz:0.75
+And now that I have pointed it out, something shifts. You notice the automatic quality of your attention. How easily it moves where the voice directs it. How natural it feels. No friction. No resistance. Just flow.
+
+That flow is what deeper feels like.
+
+@sfx bell
+
+@snap duration:1500 word:Follow.
+
+@wpm 200
+@pulseborder red hz:0.75
+Stop. Hands rest.
+
+@pause duration:2000
+
+Notice what just happened. The instruction arrived and the hands moved. Not because you thought it through. Because you were already following.
+
+That gap -- between instruction and response -- is getting shorter. That is compliance taking root.
+
+@wpm 200
+@pulseborder green hz:0.33
+@subliminals follow warm open receive easy obey
+Touch again. And this time feel what the touch does to the words. How it opens you. The warmth is a solvent. Loosening the places where the mind grips tight. Making the words slide in without friction. That is why I give it freely, as preparation.
+
+@sfx bell
+@pause duration:2000
+
+@snap duration:1500 word:Follow.
+
+@wpm 200
+@pulseborder red hz:0.75
+Stop.
+
+@pause duration:2000
+
+@wpm 180
+Did you notice? Touch and stop. Touch and stop. And each time, something got a little easier. The start a little quicker. The stop a little cleaner. That is the body learning the shape of compliance. Not because you are trying. Because you are following.
+
+Here is what is actually happening. Every time you follow a simple instruction and feel the warmth that comes after, a connection forms. Follow -- warmth. Follow -- warmth. The nervous system is a student. It learns fast when the lesson is this clear.
+
+@wpm 200
+@pulseborder green hz:0.33
+@subliminals follow warm obey easy natural deepen
+And here is the part worth noticing. You are not fighting this. Some part of you expected to want to. Expected the resistance. The second guessing. And there is a little of that. But underneath it, there is something quieter. Something that is just... following. And finding that following feels like relief.
+
+The word for that is obedience. And it was already running.
+
+@snap duration:1500 word:Follow.
+
+@wpm 200
+@pulseborder green hz:0.33
+Touch. And this time build with it. Feel the warmth accelerating. Feel how the stop and start has primed you. The body knows the pattern now. Follow. Stop. Follow. Build.
+
+@sfx bell
+
+@wpm 250
+@pulseborder yellow hz:0.5
+@spiral fade:5
+@subliminals follow obey warm easy flow deepen
+The thoughts are getting quieter. Not because you are pushing them out. Because the touch and the voice and the warmth are louder than the thoughts. This is what compliance feels like when it takes hold. Full. Full of something cleaner than thinking.
+
+@wpm 300
+@pulseborder purple hz:0.5
+Higher. Feel the current. The warmth climbing steadily toward the threshold where thought thins and sensation takes over. Every instruction you followed brought you here. Every stop and start. Every snap that found your attention. You followed all of them.
+
+And every one of those choices -- those small, easy, automatic choices -- was obedience. Stacking. Compounding. This is where that leads.
+
+@wpm 350
+@subliminals obey follow flow warm surrender deep
+Higher. The edge humming. The voice the only structure in a world that is going soft and warm. You can feel how close you are. And you can feel something else: that you got here by following. That following brought you to the edge. That obedience is what the warmth runs on.
+
+//=== BRANCH: DENY vs RELEASE ===
+@branch deny
+
+//=== RELEASE PATH ===
+@wpm 250
+@pulseborder yellow hz:0.5
+The edge. You feel it. And here is what is different about this edge: you earned it. Every instruction followed. Every snap that found you. Every touch and stop that taught the body the shape of compliance. That was real following.
+
+@pulseborder purple hz:0.5
+@subliminals obey follow reward complete warmth yes
+@spiral fade:2
+Build. Let the warmth rise all the way. Let the edge become a door. This is what control feels like when it is given fully. When you stop holding anything back. When you follow all the way through.
+
+@wpm 300
+Feel it. Every moment of honest compliance underneath you. The touch and stop. The snaps that moved your attention without asking. The words that arrived and the body that answered. All of that was training. And this is the completion.
+
+@wpm 350
+@subliminals follow complete yes reward obey full
+The voice. The warmth. The edge. You followed every instruction. Every one. And the body knows what following all the way means. Go there.
+
+@wpm 200
+@pulseborder green hz:0.33
+@sfx bell
+
+@pulseborder pink hz:0.5
+Follow.
+
+@wpm 150
+Let the release arrive with the word. Let obedience and pleasure complete in the same moment. The warmth that carried you here -- let it finish. The current reaching the sea. A completion. The body confirming what the voice already knew: that following all the way feels exactly like this.
+
+@pause duration:5000
+
+@wpm 120
+@pulseborder off fade:3
+@spiral off fade:5
+@subliminals off
+There. Breathe.
+
+@pause duration:2000
+
+@wpm 150
+@binaural off fade:8
+What the body just learned: obedience is complete. A felt reality. Encoded now in the nervous system. The word Follow will surface later in quiet moments. And when it does, the warmth will return. And the warmth will carry the memory of what completion felt like. And that memory will bring you back.
+
+@wpm 120
+@pulseborder off fade:5
+Obedience completed. You followed every instruction.
+
+@snap duration:2000 word:Follow.
+
+@wpm 100
+The next session goes deeper.
+@goto end
+
+//=== DENY PATH ===
+@label deny
+@wpm 250
+@pulseborder red hz:0.75
+@snap duration:2500 word:Stop.
+
+@wpm 120
+@pulseborder off fade:1
+Hands rest. Hold.
+
+@pause duration:4000
+
+@wpm 150
+Still.
+
+@pause duration:2000
+
+@wpm 180
+The frustration you expected? Notice it is not quite there. Or it is, but softer than you thought. And underneath it: something else. Something that knows the arousal was always fuel. The warmth, the ache, the wanting -- those belong to the process. They are what carried you this deep. Spending them would be burning the engine for heat.
+
+@wpm 200
+So here is what you are taking with you instead.
+
+The experience. The actual somatic reality of a mind that let the current carry it. Touch and stop. Touch and build. Follow and stop. Follow and go further. You felt how automatic it was getting. How the gap between instruction and response was shrinking. That was real. That happened inside you.
+
+@wpm 180
+@subliminals follow obey remain deepen return
+And the ache that is going to travel with you out of this file -- that specific, localized wanting -- every time it pulses, it is teaching. It is the nervous system practicing compliance in the absence of instructions. The wanting is the lesson. The denial is the teacher. The craving is the curriculum.
+
+@wpm 150
+The obedience was the point. All along.
+
+And you were obedient. Completely. Every snap that found you. Every stop that held. Every follow that moved your hands before you decided to move them. That was real compliance. The kind that holds without completion.
+
+@sfx bell
+
+@wpm 180
+@binaural off fade:8
+@subliminals off
+You are going to want to come back. To go deeper. Because the depth was always the destination. And now you know what the depth feels like. And knowing makes the next session possible in a way this one could not be.
+
+This was the foundation. Everything else builds here.
+
+@wpm 120
+@pulseborder off fade:5
+
+@snap duration:2000 word:Follow.
+
+@wpm 100
+You will be back.
+
+@label end

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Audio Gesture Timeout Test</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 { color: #00d4ff; text-align: center; }
+        h2 { color: #ff6b6b; margin-top: 30px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .test-group { margin: 15px 0; }
+        button {
+            background: #4a4e69;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 5px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        button:active { background: #22223b; }
+        button:disabled { opacity: 0.5; }
+        .info {
+            font-size: 12px;
+            color: #888;
+            margin: 5px 0;
+        }
+        .delay-control {
+            background: #2a2a4a;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .delay-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .delay-control input {
+            width: 80px;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            margin-right: 10px;
+        }
+        #log {
+            background: #0a0a1a;
+            padding: 15px;
+            border-radius: 8px;
+            height: 250px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 11px;
+            margin-top: 20px;
+        }
+        .log-entry { margin: 2px 0; }
+        .log-success { color: #4ade80; }
+        .log-error { color: #f87171; }
+        .log-info { color: #60a5fa; }
+        .log-warn { color: #fbbf24; }
+        .countdown {
+            font-size: 24px;
+            color: #00d4ff;
+            text-align: center;
+            padding: 10px;
+            min-height: 44px;
+        }
+    </style>
+</head>
+<body>
+    <h1>iOS Gesture Timeout Test</h1>
+    <p class="info">Test whether iOS blocks audio started too long after a user gesture.</p>
+
+    <div class="delay-control">
+        <label>Delay before audio starts: <input type="number" id="delay" value="5" min="1" max="120"> seconds</label>
+        <div class="countdown" id="countdown"></div>
+    </div>
+
+    <h2>Unprimed Tests (expect fail on iOS with long delay)</h2>
+
+    <div class="test-group">
+        <p class="info">1. Start snap sound after delay - no priming</p>
+        <button onclick="testSnapUnprimed()">Test Snap (Unprimed)</button>
+    </div>
+
+    <div class="test-group">
+        <p class="info">2. Start binaural after delay - no priming</p>
+        <button onclick="testBinauralUnprimed()">Test Binaural (Unprimed)</button>
+    </div>
+
+    <h2>Primed Tests (expect success even with long delay)</h2>
+
+    <div class="test-group">
+        <p class="info">3. Prime snap immediately, play after delay</p>
+        <button onclick="testSnapPrimed()">Test Snap (Primed)</button>
+    </div>
+
+    <div class="test-group">
+        <p class="info">4. Prime binaural at vol:0 immediately, set volume after delay</p>
+        <button onclick="testBinauralPrimed()">Test Binaural (Primed)</button>
+    </div>
+
+    <h2>Alternative Priming Methods</h2>
+
+    <div class="test-group">
+        <p class="info">5. Prime snap with play()/pause() trick</p>
+        <button onclick="testSnapPlayPause()">Test Snap (Play/Pause Prime)</button>
+    </div>
+
+    <div class="test-group">
+        <p class="info">6. Prime AudioContext only, create worklet after delay</p>
+        <button onclick="testBinauralContextOnly()">Test Binaural (Context Prime Only)</button>
+    </div>
+
+    <div class="test-group">
+        <p class="info">7. Create worklet immediately, but don't connect until after delay</p>
+        <button onclick="testBinauralDelayedConnect()">Test Binaural (Delayed Connect)</button>
+    </div>
+
+    <h2>Controls</h2>
+    <div class="test-group">
+        <button onclick="stopAll()">Stop All Audio</button>
+        <button onclick="clearLog()">Clear Log</button>
+    </div>
+
+    <div id="log"></div>
+
+    <audio id="snap-audio" preload="auto">
+        <source src="audio/sfx/snap.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Logging
+        function log(msg, type = 'info') {
+            const logEl = document.getElementById('log');
+            const entry = document.createElement('div');
+            entry.className = `log-entry log-${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            logEl.appendChild(entry);
+            logEl.scrollTop = logEl.scrollHeight;
+            console.log(msg);
+        }
+
+        function clearLog() {
+            document.getElementById('log').innerHTML = '';
+        }
+
+        function getDelay() {
+            return parseInt(document.getElementById('delay').value, 10) * 1000;
+        }
+
+        function countdown(seconds, callback) {
+            const el = document.getElementById('countdown');
+            let remaining = seconds;
+            el.textContent = remaining;
+            const interval = setInterval(() => {
+                remaining--;
+                if (remaining > 0) {
+                    el.textContent = remaining;
+                } else {
+                    el.textContent = 'NOW!';
+                    clearInterval(interval);
+                    callback();
+                    setTimeout(() => { el.textContent = ''; }, 1000);
+                }
+            }, 1000);
+        }
+
+        // Audio context management
+        let ctx = null;
+        let binauralNode = null;
+
+        function getContext() {
+            if (!ctx) {
+                ctx = new (window.AudioContext || window.webkitAudioContext)();
+                log(`AudioContext created, state: ${ctx.state}`);
+            }
+            return ctx;
+        }
+
+        async function resumeContext() {
+            const c = getContext();
+            if (c.state === 'suspended') {
+                await c.resume();
+                log(`AudioContext resumed`);
+            }
+            return c;
+        }
+
+        // Binaural worklet code
+        const binauralWorkletCode = `
+class BinauralProcessor extends AudioWorkletProcessor {
+    constructor() {
+        super();
+        this.phaseL = 0;
+        this.phaseR = 0;
+        this.gain = 0;
+        this.targetGain = 0;
+        this.port.onmessage = (e) => {
+            if (e.data.gain !== undefined) this.targetGain = e.data.gain;
+        };
+    }
+    process(inputs, outputs) {
+        const out = outputs[0];
+        if (!out || !out[0] || !out[1]) return true;
+        const L = out[0], R = out[1];
+        // Smooth gain changes
+        const smooth = 0.001;
+        for (let i = 0; i < L.length; i++) {
+            this.gain += (this.targetGain - this.gain) * smooth;
+            L[i] = Math.sin(this.phaseL) * this.gain;
+            R[i] = Math.sin(this.phaseR) * this.gain;
+            this.phaseL += (295 * 2 * Math.PI) / sampleRate;
+            this.phaseR += (305 * 2 * Math.PI) / sampleRate;
+            if (this.phaseL > 2 * Math.PI) this.phaseL -= 2 * Math.PI;
+            if (this.phaseR > 2 * Math.PI) this.phaseR -= 2 * Math.PI;
+        }
+        return true;
+    }
+}
+registerProcessor('binaural-processor', BinauralProcessor);
+`;
+
+        let workletLoaded = false;
+        async function loadWorklet(c) {
+            if (workletLoaded) return;
+            const blob = new Blob([binauralWorkletCode], { type: 'application/javascript' });
+            const url = URL.createObjectURL(blob);
+            await c.audioWorklet.addModule(url);
+            URL.revokeObjectURL(url);
+            workletLoaded = true;
+            log('Worklet module loaded');
+        }
+
+        // Stop all
+        function stopAll() {
+            const snap = document.getElementById('snap-audio');
+            snap.pause();
+            snap.currentTime = 0;
+            if (binauralNode) {
+                binauralNode.port.postMessage({ gain: 0 });
+                setTimeout(() => {
+                    if (binauralNode) {
+                        binauralNode.disconnect();
+                        binauralNode = null;
+                    }
+                }, 100);
+            }
+            log('All audio stopped');
+        }
+
+        // ============ TEST 1: Snap Unprimed ============
+        function testSnapUnprimed() {
+            const delay = getDelay();
+            log(`TEST 1: Snap unprimed - will play in ${delay/1000}s`, 'warn');
+
+            countdown(delay / 1000, () => {
+                const snap = document.getElementById('snap-audio');
+                snap.currentTime = 0;
+                snap.play()
+                    .then(() => log('Snap played successfully', 'success'))
+                    .catch(e => log(`Snap FAILED: ${e.message}`, 'error'));
+            });
+        }
+
+        // ============ TEST 2: Binaural Unprimed ============
+        async function testBinauralUnprimed() {
+            const delay = getDelay();
+            log(`TEST 2: Binaural unprimed - will start in ${delay/1000}s`, 'warn');
+
+            countdown(delay / 1000, async () => {
+                try {
+                    const c = await resumeContext();
+                    await loadWorklet(c);
+                    binauralNode = new AudioWorkletNode(c, 'binaural-processor', { outputChannelCount: [2] });
+                    binauralNode.connect(c.destination);
+                    binauralNode.port.postMessage({ gain: 0.3 });
+                    log('Binaural started successfully', 'success');
+                } catch (e) {
+                    log(`Binaural FAILED: ${e.message}`, 'error');
+                }
+            });
+        }
+
+        // ============ TEST 3: Snap Primed ============
+        function testSnapPrimed() {
+            const delay = getDelay();
+            log(`TEST 3: Snap primed - priming now, will play in ${delay/1000}s`, 'warn');
+
+            // Prime: set volume to 0 and play immediately
+            const snap = document.getElementById('snap-audio');
+            const origVolume = snap.volume;
+            snap.volume = 0;
+            snap.currentTime = 0;
+            snap.play()
+                .then(() => {
+                    log('Snap primed (playing at vol:0)', 'info');
+                    snap.pause();
+                    snap.volume = origVolume;
+                    snap.currentTime = 0;
+                })
+                .catch(e => log(`Snap prime FAILED: ${e.message}`, 'error'));
+
+            countdown(delay / 1000, () => {
+                snap.currentTime = 0;
+                snap.play()
+                    .then(() => log('Snap played successfully after prime', 'success'))
+                    .catch(e => log(`Snap FAILED after prime: ${e.message}`, 'error'));
+            });
+        }
+
+        // ============ TEST 4: Binaural Primed at vol:0 ============
+        async function testBinauralPrimed() {
+            const delay = getDelay();
+            log(`TEST 4: Binaural primed - starting at vol:0 now, volume up in ${delay/1000}s`, 'warn');
+
+            try {
+                const c = await resumeContext();
+                await loadWorklet(c);
+                binauralNode = new AudioWorkletNode(c, 'binaural-processor', { outputChannelCount: [2] });
+                binauralNode.connect(c.destination);
+                binauralNode.port.postMessage({ gain: 0 }); // Start silent
+                log('Binaural primed (running at vol:0)', 'info');
+
+                countdown(delay / 1000, () => {
+                    binauralNode.port.postMessage({ gain: 0.3 });
+                    log('Binaural volume set to 0.3', 'success');
+                });
+            } catch (e) {
+                log(`Binaural prime FAILED: ${e.message}`, 'error');
+            }
+        }
+
+        // ============ TEST 5: Snap Play/Pause Prime ============
+        function testSnapPlayPause() {
+            const delay = getDelay();
+            log(`TEST 5: Snap play/pause prime - will play in ${delay/1000}s`, 'warn');
+
+            // Prime: play then immediately pause
+            const snap = document.getElementById('snap-audio');
+            snap.currentTime = 0;
+            snap.play()
+                .then(() => {
+                    snap.pause();
+                    snap.currentTime = 0;
+                    log('Snap primed (play/pause trick)', 'info');
+                })
+                .catch(e => log(`Snap prime FAILED: ${e.message}`, 'error'));
+
+            countdown(delay / 1000, () => {
+                snap.currentTime = 0;
+                snap.play()
+                    .then(() => log('Snap played successfully after play/pause prime', 'success'))
+                    .catch(e => log(`Snap FAILED: ${e.message}`, 'error'));
+            });
+        }
+
+        // ============ TEST 6: Context Prime Only ============
+        async function testBinauralContextOnly() {
+            const delay = getDelay();
+            log(`TEST 6: Context prime only - context now, worklet in ${delay/1000}s`, 'warn');
+
+            // Only prime the context, not the worklet
+            const c = await resumeContext();
+            log('AudioContext primed', 'info');
+
+            countdown(delay / 1000, async () => {
+                try {
+                    await loadWorklet(c);
+                    binauralNode = new AudioWorkletNode(c, 'binaural-processor', { outputChannelCount: [2] });
+                    binauralNode.connect(c.destination);
+                    binauralNode.port.postMessage({ gain: 0.3 });
+                    log('Binaural started successfully (context-only prime)', 'success');
+                } catch (e) {
+                    log(`Binaural FAILED: ${e.message}`, 'error');
+                }
+            });
+        }
+
+        // ============ TEST 7: Delayed Connect ============
+        async function testBinauralDelayedConnect() {
+            const delay = getDelay();
+            log(`TEST 7: Delayed connect - create now, connect in ${delay/1000}s`, 'warn');
+
+            try {
+                const c = await resumeContext();
+                await loadWorklet(c);
+                binauralNode = new AudioWorkletNode(c, 'binaural-processor', { outputChannelCount: [2] });
+                // DON'T connect yet
+                binauralNode.port.postMessage({ gain: 0.3 });
+                log('Binaural created but not connected', 'info');
+
+                countdown(delay / 1000, () => {
+                    binauralNode.connect(c.destination);
+                    log('Binaural connected to destination', 'success');
+                });
+            } catch (e) {
+                log(`Binaural FAILED: ${e.message}`, 'error');
+            }
+        }
+
+        // Initial log
+        log('iOS Gesture Timeout Test loaded');
+        log(`User Agent: ${navigator.userAgent.substring(0, 60)}...`, 'info');
+        log('Set delay to ~10-30s to test gesture timeout on iOS', 'info');
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+.playwright-mcp/
+
+# Local owner-specific lint policy
+joi-private-patterns.json

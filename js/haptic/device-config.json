@@ -1,0 +1,2162 @@
+{
+  "_source": "https://github.com/buttplugio/buttplug",
+  "_license": "BSD-3-Clause (Nonpolynomial Labs LLC)",
+  "_version": "4.148",
+  "_updated": "2026-01-01T11:40:20.491Z",
+  "filters": [
+    {
+      "name": "116"
+    },
+    {
+      "name": "117"
+    },
+    {
+      "name": "118"
+    },
+    {
+      "name": "26-021-B"
+    },
+    {
+      "name": "4 Plus"
+    },
+    {
+      "name": "4D01"
+    },
+    {
+      "name": "4D02"
+    },
+    {
+      "name": "4D03"
+    },
+    {
+      "name": "4D04"
+    },
+    {
+      "name": "4D05"
+    },
+    {
+      "name": "4D06"
+    },
+    {
+      "name": "4D07"
+    },
+    {
+      "name": "4D08"
+    },
+    {
+      "name": "4D09"
+    },
+    {
+      "name": "4_Plus"
+    },
+    {
+      "name": "4plus"
+    },
+    {
+      "name": "6907 MV1"
+    },
+    {
+      "name": "6908 MV1"
+    },
+    {
+      "name": "6909 MV1"
+    },
+    {
+      "name": "6909 MV2"
+    },
+    {
+      "name": "6914 MV1"
+    },
+    {
+      "name": "6915 MV1"
+    },
+    {
+      "name": "A073"
+    },
+    {
+      "name": "A531"
+    },
+    {
+      "name": "AB Shutter3 [Aogu BLE Device]"
+    },
+    {
+      "name": "AC695X_1(BLE)"
+    },
+    {
+      "name": "AMN NEO"
+    },
+    {
+      "name": "ASF-001-BT-R"
+    },
+    {
+      "name": "AX05"
+    },
+    {
+      "name": "Alex NEO 2"
+    },
+    {
+      "name": "Alex NEO"
+    },
+    {
+      "name": "Aogu SCB"
+    },
+    {
+      "name": "Aogu SUV"
+    },
+    {
+      "name": "Auxfun-Box"
+    },
+    {
+      "name": "Ava Neo"
+    },
+    {
+      "name": "B2CM6"
+    },
+    {
+      "name": "BC1816"
+    },
+    {
+      "name": "BC1847"
+    },
+    {
+      "name": "BEAR 2"
+    },
+    {
+      "name": "BEAR MINI"
+    },
+    {
+      "name": "BEAR mini"
+    },
+    {
+      "name": "BEAR"
+    },
+    {
+      "name": "BEAR2"
+    },
+    {
+      "name": "BEAR2body"
+    },
+    {
+      "name": "BEAR2eyes"
+    },
+    {
+      "name": "BEAR2go"
+    },
+    {
+      "name": "BEAR_MINI"
+    },
+    {
+      "name": "BGCD"
+    },
+    {
+      "name": "BGQS"
+    },
+    {
+      "name": "BGSF"
+    },
+    {
+      "name": "BGZY"
+    },
+    {
+      "name": "BODIKANG"
+    },
+    {
+      "name": "BT05"
+    },
+    {
+      "name": "BX288A"
+    },
+    {
+      "name": "Bach smart"
+    },
+    {
+      "name": "BaiHu"
+    },
+    {
+      "name": "Bloom"
+    },
+    {
+      "name": "Blow hole"
+    },
+    {
+      "name": "Bond"
+    },
+    {
+      "name": "Boost"
+    },
+    {
+      "name": "CB-WXW03"
+    },
+    {
+      "name": "CBT001"
+    },
+    {
+      "name": "CBT002"
+    },
+    {
+      "name": "CBW02"
+    },
+    {
+      "name": "CCP322S5"
+    },
+    {
+      "name": "CCP324S2"
+    },
+    {
+      "name": "CCPA10S2"
+    },
+    {
+      "name": "CCPA18S5"
+    },
+    {
+      "name": "CCPB22S5"
+    },
+    {
+      "name": "CCTSK"
+    },
+    {
+      "name": "CCTXueGao"
+    },
+    {
+      "name": "CFG1 vibrator"
+    },
+    {
+      "name": "CG-CONE"
+    },
+    {
+      "name": "CTY222S4"
+    },
+    {
+      "name": "CTY508S5"
+    },
+    {
+      "name": "CTY823S5"
+    },
+    {
+      "name": "CTY916S4"
+    },
+    {
+      "name": "CYX2"
+    },
+    {
+      "name": "Cali"
+    },
+    {
+      "name": "Chika"
+    },
+    {
+      "name": "Chorus"
+    },
+    {
+      "name": "Cici 2"
+    },
+    {
+      "name": "Cici+ 2"
+    },
+    {
+      "name": "Classic"
+    },
+    {
+      "name": "Cliona"
+    },
+    {
+      "name": "CocoPro"
+    },
+    {
+      "name": "Cougar"
+    },
+    {
+      "name": "Curve"
+    },
+    {
+      "name": "CycSA"
+    },
+    {
+      "name": "D358"
+    },
+    {
+      "name": "D402"
+    },
+    {
+      "name": "DG239A"
+    },
+    {
+      "name": "DJ333A"
+    },
+    {
+      "name": "DSJM"
+    },
+    {
+      "name": "DT01"
+    },
+    {
+      "name": "DT250A"
+    },
+    {
+      "name": "Ditto"
+    },
+    {
+      "name": "Diver"
+    },
+    {
+      "name": "DoubleSonic"
+    },
+    {
+      "name": "ERICA"
+    },
+    {
+      "name": "Easylive NO8 Cup"
+    },
+    {
+      "name": "Echo 2"
+    },
+    {
+      "name": "Edeny"
+    },
+    {
+      "name": "Egg driver"
+    },
+    {
+      "name": "Eidolon"
+    },
+    {
+      "name": "Ella NEO"
+    },
+    {
+      "name": "Emma NEO"
+    },
+    {
+      "name": "Emma Neo 2"
+    },
+    {
+      "name": "F1SV2A"
+    },
+    {
+      "name": "F1SV2X"
+    },
+    {
+      "name": "F1SV3"
+    },
+    {
+      "name": "F1s"
+    },
+    {
+      "name": "F2"
+    },
+    {
+      "name": "F520A-LT"
+    },
+    {
+      "name": "F520B-LT"
+    },
+    {
+      "name": "F537-LT"
+    },
+    {
+      "name": "FK008A"
+    },
+    {
+      "name": "FM-LILAC-101"
+    },
+    {
+      "name": "FOFO"
+    },
+    {
+      "name": "FOX M70 Pro"
+    },
+    {
+      "name": "FOX M70-2"
+    },
+    {
+      "name": "FOX"
+    },
+    {
+      "name": "Flair Feel"
+    },
+    {
+      "name": "Flamingo T"
+    },
+    {
+      "name": "Flamingo"
+    },
+    {
+      "name": "FoxM70Pro"
+    },
+    {
+      "name": "Fugu"
+    },
+    {
+      "name": "Fugu2"
+    },
+    {
+      "name": "Fuse"
+    },
+    {
+      "name": "Fuse1.1"
+    },
+    {
+      "name": "G123"
+    },
+    {
+      "name": "G12B"
+    },
+    {
+      "name": "G12D"
+    },
+    {
+      "name": "G171"
+    },
+    {
+      "name": "G202"
+    },
+    {
+      "name": "G203"
+    },
+    {
+      "name": "G204"
+    },
+    {
+      "name": "G20B"
+    },
+    {
+      "name": "G213"
+    },
+    {
+      "name": "G228"
+    },
+    {
+      "name": "G23A"
+    },
+    {
+      "name": "G29C"
+    },
+    {
+      "name": "G29D"
+    },
+    {
+      "name": "G302"
+    },
+    {
+      "name": "G304"
+    },
+    {
+      "name": "G307"
+    },
+    {
+      "name": "G310"
+    },
+    {
+      "name": "G312"
+    },
+    {
+      "name": "G314"
+    },
+    {
+      "name": "G315"
+    },
+    {
+      "name": "G317"
+    },
+    {
+      "name": "G320"
+    },
+    {
+      "name": "G321"
+    },
+    {
+      "name": "G322"
+    },
+    {
+      "name": "G326"
+    },
+    {
+      "name": "G331"
+    },
+    {
+      "name": "G335"
+    },
+    {
+      "name": "G336"
+    },
+    {
+      "name": "G339"
+    },
+    {
+      "name": "G341"
+    },
+    {
+      "name": "G348"
+    },
+    {
+      "name": "G349"
+    },
+    {
+      "name": "G354"
+    },
+    {
+      "name": "G355"
+    },
+    {
+      "name": "G403"
+    },
+    {
+      "name": "G407"
+    },
+    {
+      "name": "G40A"
+    },
+    {
+      "name": "G43A"
+    },
+    {
+      "name": "G901"
+    },
+    {
+      "name": "G912"
+    },
+    {
+      "name": "G913"
+    },
+    {
+      "name": "GBalls3"
+    },
+    {
+      "name": "GIGI3"
+    },
+    {
+      "name": "GK03"
+    },
+    {
+      "name": "GK25"
+    },
+    {
+      "name": "GK27"
+    },
+    {
+      "name": "GKML"
+    },
+    {
+      "name": "GLMT"
+    },
+    {
+      "name": "GRASP"
+    },
+    {
+      "name": "GX07"
+    },
+    {
+      "name": "GX16"
+    },
+    {
+      "name": "GX17"
+    },
+    {
+      "name": "GX21"
+    },
+    {
+      "name": "GX22"
+    },
+    {
+      "name": "GX23"
+    },
+    {
+      "name": "GX25"
+    },
+    {
+      "name": "GX26"
+    },
+    {
+      "name": "GX27"
+    },
+    {
+      "name": "GX29"
+    },
+    {
+      "name": "GX33"
+    },
+    {
+      "name": "GX39"
+    },
+    {
+      "name": "GX85"
+    },
+    {
+      "name": "Gala"
+    },
+    {
+      "name": "Gballs2"
+    },
+    {
+      "name": "Gugudai"
+    },
+    {
+      "name": "HH010"
+    },
+    {
+      "name": "HISMITH S1"
+    },
+    {
+      "name": "HISMITH S2"
+    },
+    {
+      "name": "HISMITH S3"
+    },
+    {
+      "name": "HISMITH"
+    },
+    {
+      "name": "HJ2024N01"
+    },
+    {
+      "name": "HTK-BLE-BM001"
+    },
+    {
+      "name": "Haima"
+    },
+    {
+      "name": "Hannes NEO"
+    },
+    {
+      "name": "Hayden"
+    },
+    {
+      "name": "Hismith Piupiu"
+    },
+    {
+      "name": "Hugo2"
+    },
+    {
+      "name": "Huohu"
+    },
+    {
+      "name": "IMP 3"
+    },
+    {
+      "name": "Ida Wave"
+    },
+    {
+      "name": "IdaWave"
+    },
+    {
+      "name": "Iker Neo"
+    },
+    {
+      "name": "Iker"
+    },
+    {
+      "name": "J-BlackBull"
+    },
+    {
+      "name": "J-CHERLY2c"
+    },
+    {
+      "name": "J-Dallin"
+    },
+    {
+      "name": "J-Derik"
+    },
+    {
+      "name": "J-Dina"
+    },
+    {
+      "name": "J-Divers"
+    },
+    {
+      "name": "J-DukeDazzle2"
+    },
+    {
+      "name": "J-Dyllis"
+    },
+    {
+      "name": "J-Eclipse"
+    },
+    {
+      "name": "J-ElixirEgg"
+    },
+    {
+      "name": "J-Enam"
+    },
+    {
+      "name": "J-Euphoric"
+    },
+    {
+      "name": "J-Euphoric2"
+    },
+    {
+      "name": "J-Euphoric3"
+    },
+    {
+      "name": "J-Explorer2"
+    },
+    {
+      "name": "J-Fabledragon"
+    },
+    {
+      "name": "J-Faunus"
+    },
+    {
+      "name": "J-Firedragon"
+    },
+    {
+      "name": "J-Flamewing"
+    },
+    {
+      "name": "J-LACH"
+    },
+    {
+      "name": "J-Lagoon"
+    },
+    {
+      "name": "J-Mace"
+    },
+    {
+      "name": "J-Mace2"
+    },
+    {
+      "name": "J-Mackay"
+    },
+    {
+      "name": "J-Maelstrom"
+    },
+    {
+      "name": "J-Maiden"
+    },
+    {
+      "name": "J-Marcela"
+    },
+    {
+      "name": "J-Mariner"
+    },
+    {
+      "name": "J-Markel"
+    },
+    {
+      "name": "J-Mars"
+    },
+    {
+      "name": "J-MarsLion"
+    },
+    {
+      "name": "J-MarsLion2"
+    },
+    {
+      "name": "J-Marshal"
+    },
+    {
+      "name": "J-Martino"
+    },
+    {
+      "name": "J-Mecha"
+    },
+    {
+      "name": "J-Melody"
+    },
+    {
+      "name": "J-Mighty"
+    },
+    {
+      "name": "J-Mirage3"
+    },
+    {
+      "name": "J-MoonHorn"
+    },
+    {
+      "name": "J-Morningbuds2"
+    },
+    {
+      "name": "J-MowgliII"
+    },
+    {
+      "name": "J-Myrna"
+    },
+    {
+      "name": "J-Mysticolor"
+    },
+    {
+      "name": "J-Palmyra"
+    },
+    {
+      "name": "J-Panther"
+    },
+    {
+      "name": "J-Pathfinder"
+    },
+    {
+      "name": "J-Pathfinder2"
+    },
+    {
+      "name": "J-Pathfinder3"
+    },
+    {
+      "name": "J-Pau"
+    },
+    {
+      "name": "J-Peachy"
+    },
+    {
+      "name": "J-Peacock"
+    },
+    {
+      "name": "J-Pearlconch"
+    },
+    {
+      "name": "J-PearlconchL"
+    },
+    {
+      "name": "J-Petalwish2"
+    },
+    {
+      "name": "J-Petalwish3"
+    },
+    {
+      "name": "J-PetiteRose"
+    },
+    {
+      "name": "J-Piet2"
+    },
+    {
+      "name": "J-Pinhead"
+    },
+    {
+      "name": "J-Pipes"
+    },
+    {
+      "name": "J-Pul"
+    },
+    {
+      "name": "J-ROSEBUD"
+    },
+    {
+      "name": "J-ROSELLA3"
+    },
+    {
+      "name": "J-Rainbow"
+    },
+    {
+      "name": "J-RapidTwist2"
+    },
+    {
+      "name": "J-Rayen"
+    },
+    {
+      "name": "J-RetroGuard"
+    },
+    {
+      "name": "J-Rhythmic2"
+    },
+    {
+      "name": "J-Rhythmic3"
+    },
+    {
+      "name": "J-Rhythmic4"
+    },
+    {
+      "name": "J-Ringstar"
+    },
+    {
+      "name": "J-RoseLin"
+    },
+    {
+      "name": "J-Rowdy3"
+    },
+    {
+      "name": "J-Royaleye"
+    },
+    {
+      "name": "J-Ryden"
+    },
+    {
+      "name": "J-Scarlett"
+    },
+    {
+      "name": "J-Tanmouth"
+    },
+    {
+      "name": "J-Tarian"
+    },
+    {
+      "name": "J-Tarik"
+    },
+    {
+      "name": "J-Torin"
+    },
+    {
+      "name": "J-Torque"
+    },
+    {
+      "name": "J-Torrian"
+    },
+    {
+      "name": "J-Troi"
+    },
+    {
+      "name": "J-TrueForm"
+    },
+    {
+      "name": "J-TrueForm3"
+    },
+    {
+      "name": "J-UricaGuard2"
+    },
+    {
+      "name": "J-VBarbie2t"
+    },
+    {
+      "name": "J-VBarbiep"
+    },
+    {
+      "name": "J-Vase"
+    },
+    {
+      "name": "J-Vase2"
+    },
+    {
+      "name": "J-Vbarbie"
+    },
+    {
+      "name": "J-Vbarbie3f"
+    },
+    {
+      "name": "J-Veemy"
+    },
+    {
+      "name": "J-Vellum"
+    },
+    {
+      "name": "J-Velocity"
+    },
+    {
+      "name": "J-VelvetRabbit"
+    },
+    {
+      "name": "J-Verax"
+    },
+    {
+      "name": "J-Verax2"
+    },
+    {
+      "name": "J-Verax4"
+    },
+    {
+      "name": "J-VibRipple"
+    },
+    {
+      "name": "J-VibSiren"
+    },
+    {
+      "name": "J-VibSiren2"
+    },
+    {
+      "name": "J-VibTrefoil"
+    },
+    {
+      "name": "J-Viball"
+    },
+    {
+      "name": "J-Victor"
+    },
+    {
+      "name": "J-Viele"
+    },
+    {
+      "name": "J-Viele3"
+    },
+    {
+      "name": "J-Vigo"
+    },
+    {
+      "name": "J-Vince"
+    },
+    {
+      "name": "J-VioletGale"
+    },
+    {
+      "name": "J-VioletVine"
+    },
+    {
+      "name": "J-Virtuoso"
+    },
+    {
+      "name": "J-Virtuoso2"
+    },
+    {
+      "name": "J-Vita"
+    },
+    {
+      "name": "J-Viv"
+    },
+    {
+      "name": "J-Viva"
+    },
+    {
+      "name": "J-Vivara"
+    },
+    {
+      "name": "J-VividPulse"
+    },
+    {
+      "name": "J-VividWings"
+    },
+    {
+      "name": "J-Vortex2s"
+    },
+    {
+      "name": "J-VortexTongue"
+    },
+    {
+      "name": "J-VortexTongue2"
+    },
+    {
+      "name": "J-Xylia"
+    },
+    {
+      "name": "JOIN G"
+    },
+    {
+      "name": "JOYHUB-ROSELLA2"
+    },
+    {
+      "name": "Janna"
+    },
+    {
+      "name": "Je Joue"
+    },
+    {
+      "name": "Jive 2"
+    },
+    {
+      "name": "Jive"
+    },
+    {
+      "name": "Jordan"
+    },
+    {
+      "name": "K107"
+    },
+    {
+      "name": "K108"
+    },
+    {
+      "name": "K109"
+    },
+    {
+      "name": "K112"
+    },
+    {
+      "name": "K113"
+    },
+    {
+      "name": "K118"
+    },
+    {
+      "name": "K120"
+    },
+    {
+      "name": "K12A"
+    },
+    {
+      "name": "K12B"
+    },
+    {
+      "name": "K12C"
+    },
+    {
+      "name": "K311"
+    },
+    {
+      "name": "KEON WIFI"
+    },
+    {
+      "name": "KEON"
+    },
+    {
+      "name": "KIWI derma"
+    },
+    {
+      "name": "KIWI"
+    },
+    {
+      "name": "KNICKER VIBE"
+    },
+    {
+      "name": "KWL2"
+    },
+    {
+      "name": "Kegel Coach"
+    },
+    {
+      "name": "Keon R2"
+    },
+    {
+      "name": "Keon Wifi"
+    },
+    {
+      "name": "Krush"
+    },
+    {
+      "name": "LB-W01"
+    },
+    {
+      "name": "LG389"
+    },
+    {
+      "name": "LINK"
+    },
+    {
+      "name": "LIV3"
+    },
+    {
+      "name": "LL18"
+    },
+    {
+      "name": "LOOB"
+    },
+    {
+      "name": "LOVE EGG"
+    },
+    {
+      "name": "LUNA 3 MEN"
+    },
+    {
+      "name": "LUNA 3 PLUS"
+    },
+    {
+      "name": "LUNA 3 plus"
+    },
+    {
+      "name": "LUNA 3"
+    },
+    {
+      "name": "LUNA 4 FOR MEN"
+    },
+    {
+      "name": "LUNA 4 MEN"
+    },
+    {
+      "name": "LUNA 4 mini"
+    },
+    {
+      "name": "LUNA 4 plus"
+    },
+    {
+      "name": "LUNA 4"
+    },
+    {
+      "name": "LUNA FOFO"
+    },
+    {
+      "name": "LUNA MINI 3"
+    },
+    {
+      "name": "LUNA MINI 4"
+    },
+    {
+      "name": "LUNA MINI3"
+    },
+    {
+      "name": "LUNA MINI4"
+    },
+    {
+      "name": "LUNA PLAY SMART"
+    },
+    {
+      "name": "LUNA PLAY SMART2"
+    },
+    {
+      "name": "LUNA PLAYSMART2"
+    },
+    {
+      "name": "LUNA fofo"
+    },
+    {
+      "name": "LUNA mini 3"
+    },
+    {
+      "name": "LUNA mini 4"
+    },
+    {
+      "name": "LUNA play smart 2"
+    },
+    {
+      "name": "LUNA play smart2"
+    },
+    {
+      "name": "LUNA3 PLUS"
+    },
+    {
+      "name": "LUNA3"
+    },
+    {
+      "name": "LUNA3MEN"
+    },
+    {
+      "name": "LUNA3PLUS"
+    },
+    {
+      "name": "LUNA4 PLUS"
+    },
+    {
+      "name": "LUNA4"
+    },
+    {
+      "name": "LUNA4MEN"
+    },
+    {
+      "name": "LUNA4PLUS"
+    },
+    {
+      "name": "LXCDVP"
+    },
+    {
+      "name": "LY165A01"
+    },
+    {
+      "name": "LY199B01"
+    },
+    {
+      "name": "LY213A01"
+    },
+    {
+      "name": "LY234A01"
+    },
+    {
+      "name": "LY270A01"
+    },
+    {
+      "name": "LY271A01"
+    },
+    {
+      "name": "LY272A01"
+    },
+    {
+      "name": "Launch"
+    },
+    {
+      "name": "LiBo"
+    },
+    {
+      "name": "Life guard"
+    },
+    {
+      "name": "Lioness"
+    },
+    {
+      "name": "Lioness2"
+    },
+    {
+      "name": "Lipstick"
+    },
+    {
+      "name": "Love_Nuts"
+    },
+    {
+      "name": "LuWuShuang"
+    },
+    {
+      "name": "LuXiaoHan"
+    },
+    {
+      "name": "Luxus"
+    },
+    {
+      "name": "M2"
+    },
+    {
+      "name": "MAG"
+    },
+    {
+      "name": "MANO PRODUCT"
+    },
+    {
+      "name": "MB Controller"
+    },
+    {
+      "name": "MB LINK 201"
+    },
+    {
+      "name": "MD19"
+    },
+    {
+      "name": "MV Crescendo"
+    },
+    {
+      "name": "MV Poco     "
+    },
+    {
+      "name": "MV Tenuto   "
+    },
+    {
+      "name": "MY2607-BLE-V1.0"
+    },
+    {
+      "name": "Magic Cell"
+    },
+    {
+      "name": "Magic Lotos"
+    },
+    {
+      "name": "Magic Sundi"
+    },
+    {
+      "name": "Magic Wand"
+    },
+    {
+      "name": "Massage Demo"
+    },
+    {
+      "name": "Meese-V389"
+    },
+    {
+      "name": "Meese-cd"
+    },
+    {
+      "name": "Melt"
+    },
+    {
+      "name": "Mini Emma Neo"
+    },
+    {
+      "name": "MonsterHub"
+    },
+    {
+      "name": "MonsterPub"
+    },
+    {
+      "name": "Mora Neo"
+    },
+    {
+      "name": "Moxie"
+    },
+    {
+      "name": "NBQ-B619RX"
+    },
+    {
+      "name": "NFY008"
+    },
+    {
+      "name": "Nelson"
+    },
+    {
+      "name": "Nidalee"
+    },
+    {
+      "name": "Nova 2"
+    },
+    {
+      "name": "Nova"
+    },
+    {
+      "name": "Nova2"
+    },
+    {
+      "name": "Nova_2"
+    },
+    {
+      "name": "OMORFI"
+    },
+    {
+      "name": "ONYX"
+    },
+    {
+      "name": "ORBIT"
+    },
+    {
+      "name": "OhMiBod 4.0"
+    },
+    {
+      "name": "OhMiBod Chill Panty Vibe"
+    },
+    {
+      "name": "OhMiBod ESCA"
+    },
+    {
+      "name": "OhMiBod Foxy"
+    },
+    {
+      "name": "OhMiBod LUMEN"
+    },
+    {
+      "name": "OhMiBod NEX2"
+    },
+    {
+      "name": "OhMiBod NEX3"
+    },
+    {
+      "name": "OhMiBod Sphinx"
+    },
+    {
+      "name": "Olis"
+    },
+    {
+      "name": "Onyx+"
+    },
+    {
+      "name": "Onyx2"
+    },
+    {
+      "name": "Onyx2.1"
+    },
+    {
+      "name": "PEARL"
+    },
+    {
+      "name": "PROSTATE VIBE"
+    },
+    {
+      "name": "PTYB22S2"
+    },
+    {
+      "name": "Pearl 2+"
+    },
+    {
+      "name": "Pearl 3"
+    },
+    {
+      "name": "Pearl2"
+    },
+    {
+      "name": "Pearl2+"
+    },
+    {
+      "name": "Pearl2.1"
+    },
+    {
+      "name": "Pearl3"
+    },
+    {
+      "name": "Phoenix NEO"
+    },
+    {
+      "name": "Phoenix Neo 2"
+    },
+    {
+      "name": "PiPiJing"
+    },
+    {
+      "name": "Picobong Butt Plug"
+    },
+    {
+      "name": "Picobong Egg"
+    },
+    {
+      "name": "Picobong Male Toy"
+    },
+    {
+      "name": "Picobong Ring"
+    },
+    {
+      "name": "PinkPunch_DreamBunny"
+    },
+    {
+      "name": "PinkPunch_Peacaron"
+    },
+    {
+      "name": "PinkPunch_Peachu"
+    },
+    {
+      "name": "Pink_Punch"
+    },
+    {
+      "name": "Pivot"
+    },
+    {
+      "name": "Placeholder to avoid conflict with bad attempt to clone a Lovense Lush"
+    },
+    {
+      "name": "PleasureDrive"
+    },
+    {
+      "name": "PowerShot"
+    },
+    {
+      "name": "ProWand"
+    },
+    {
+      "name": "Pulse Galaxie"
+    },
+    {
+      "name": "Pulse Interactive"
+    },
+    {
+      "name": "Pulse Union"
+    },
+    {
+      "name": "QCPW"
+    },
+    {
+      "name": "QCSW"
+    },
+    {
+      "name": "QCVW"
+    },
+    {
+      "name": "QD48"
+    },
+    {
+      "name": "QH-HX029A-B"
+    },
+    {
+      "name": "QH-SJ007A"
+    },
+    {
+      "name": "QH-SX007E"
+    },
+    {
+      "name": "QH-SX045A-B"
+    },
+    {
+      "name": "QUXIN"
+    },
+    {
+      "name": "QingTing"
+    },
+    {
+      "name": "RANGE"
+    },
+    {
+      "name": "RC31"
+    },
+    {
+      "name": "REACH G"
+    },
+    {
+      "name": "REACH"
+    },
+    {
+      "name": "REALOV_VIBE"
+    },
+    {
+      "name": "RECEIVE"
+    },
+    {
+      "name": "ROCKET"
+    },
+    {
+      "name": "Rave"
+    },
+    {
+      "name": "Realm1.1"
+    },
+    {
+      "name": "Rex"
+    },
+    {
+      "name": "Rey"
+    },
+    {
+      "name": "S38A"
+    },
+    {
+      "name": "S6"
+    },
+    {
+      "name": "S63E Alex NEO 2"
+    },
+    {
+      "name": "S63E Alex NEO"
+    },
+    {
+      "name": "SML-2310-SZ-B"
+    },
+    {
+      "name": "SN80"
+    },
+    {
+      "name": "SPAN"
+    },
+    {
+      "name": "SPOT W1"
+    },
+    {
+      "name": "SS-TD-YDTD-001"
+    },
+    {
+      "name": "STG05A"
+    },
+    {
+      "name": "SWK-SX013A"
+    },
+    {
+      "name": "SWK-SX067-B"
+    },
+    {
+      "name": "SX033A"
+    },
+    {
+      "name": "SX033APP"
+    },
+    {
+      "name": "SX218A"
+    },
+    {
+      "name": "Sam Neo 2 Pro"
+    },
+    {
+      "name": "Sam Neo 2"
+    },
+    {
+      "name": "Sam Neo"
+    },
+    {
+      "name": "SayberX"
+    },
+    {
+      "name": "ServeU"
+    },
+    {
+      "name": "Sex Toys"
+    },
+    {
+      "name": "Sex toys"
+    },
+    {
+      "name": "ShaYu"
+    },
+    {
+      "name": "Shinkuro"
+    },
+    {
+      "name": "Shuidi"
+    },
+    {
+      "name": "Sinloli Aston"
+    },
+    {
+      "name": "Sinloli Cosima"
+    },
+    {
+      "name": "Sinloli"
+    },
+    {
+      "name": "Sinloli-Ethel"
+    },
+    {
+      "name": "Sinloli-Sherry"
+    },
+    {
+      "name": "Smart Bean"
+    },
+    {
+      "name": "Smart Bean3"
+    },
+    {
+      "name": "Solstice X"
+    },
+    {
+      "name": "SuoYinQiu"
+    },
+    {
+      "name": "Surfer"
+    },
+    {
+      "name": "Surfer_plug"
+    },
+    {
+      "name": "Sword"
+    },
+    {
+      "name": "Sync 2"
+    },
+    {
+      "name": "Sync Lite"
+    },
+    {
+      "name": "Sync O"
+    },
+    {
+      "name": "Sync"
+    },
+    {
+      "name": "T528-LT"
+    },
+    {
+      "name": "TA-S001A"
+    },
+    {
+      "name": "TAY001"
+    },
+    {
+      "name": "TAY006"
+    },
+    {
+      "name": "TAY009"
+    },
+    {
+      "name": "TF-BHPLUS"
+    },
+    {
+      "name": "TF-META2"
+    },
+    {
+      "name": "TF-SPRAY"
+    },
+    {
+      "name": "TFF1"
+    },
+    {
+      "name": "TFG1"
+    },
+    {
+      "name": "TFHL"
+    },
+    {
+      "name": "TFKL"
+    },
+    {
+      "name": "TFMM"
+    },
+    {
+      "name": "THE COWGIRL"
+    },
+    {
+      "name": "THE UNICORN"
+    },
+    {
+      "name": "TKLM-C003-BT"
+    },
+    {
+      "name": "TKLM-C004-BT"
+    },
+    {
+      "name": "TKLM-W001-BT"
+    },
+    {
+      "name": "TKLM-W003-BT-RX"
+    },
+    {
+      "name": "TOR3"
+    },
+    {
+      "name": "TRYFUN-ONE"
+    },
+    {
+      "name": "TXHL"
+    },
+    {
+      "name": "TXKL"
+    },
+    {
+      "name": "TXMM"
+    },
+    {
+      "name": "The Handy"
+    },
+    {
+      "name": "Tiani Harmony"
+    },
+    {
+      "name": "TianiHarmony"
+    },
+    {
+      "name": "Titan"
+    },
+    {
+      "name": "Titan1.1"
+    },
+    {
+      "name": "TracyDog"
+    },
+    {
+      "name": "Trysta Neo"
+    },
+    {
+      "name": "Twerking Butt"
+    },
+    {
+      "name": "TwerkingButt"
+    },
+    {
+      "name": "UFO 2"
+    },
+    {
+      "name": "UFO MIN"
+    },
+    {
+      "name": "UFO MINI"
+    },
+    {
+      "name": "UFO mini 2"
+    },
+    {
+      "name": "UFO mini"
+    },
+    {
+      "name": "UFO"
+    },
+    {
+      "name": "UFO-TW"
+    },
+    {
+      "name": "UFO2"
+    },
+    {
+      "name": "UFO3"
+    },
+    {
+      "name": "UFO3go"
+    },
+    {
+      "name": "UFO3led"
+    },
+    {
+      "name": "UFO3mini"
+    },
+    {
+      "name": "UFOMINI2"
+    },
+    {
+      "name": "UFOSA"
+    },
+    {
+      "name": "V415"
+    },
+    {
+      "name": "VA617A-3"
+    },
+    {
+      "name": "VA617A-4"
+    },
+    {
+      "name": "VV468A"
+    },
+    {
+      "name": "VX236A-BLE-V1.0"
+    },
+    {
+      "name": "VX357A-BLE-V1.0"
+    },
+    {
+      "name": "Vector"
+    },
+    {
+      "name": "Verge"
+    },
+    {
+      "name": "Vibratissimo"
+    },
+    {
+      "name": "Vick NEO"
+    },
+    {
+      "name": "Vick Neo 2"
+    },
+    {
+      "name": "Vick Neo"
+    },
+    {
+      "name": "Virtual Blowbot"
+    },
+    {
+      "name": "Virtual Rabbit"
+    },
+    {
+      "name": "Viviana"
+    },
+    {
+      "name": "VorzePiston"
+    },
+    {
+      "name": "WB-TDD"
+    },
+    {
+      "name": "WB-ZDB-WST"
+    },
+    {
+      "name": "WSXK"
+    },
+    {
+      "name": "Wand 2"
+    },
+    {
+      "name": "Wand"
+    },
+    {
+      "name": "We-Vibe Rocketman"
+    },
+    {
+      "name": "WeToy"
+    },
+    {
+      "name": "Wildolo"
+    },
+    {
+      "name": "Wish"
+    },
+    {
+      "name": "XHT"
+    },
+    {
+      "name": "XHTKJ"
+    },
+    {
+      "name": "XW-LW3"
+    },
+    {
+      "name": "XiaoLu"
+    },
+    {
+      "name": "Xone"
+    },
+    {
+      "name": "YXSJ"
+    },
+    {
+      "name": "YXlinksSPP"
+    },
+    {
+      "name": "Youcups"
+    },
+    {
+      "name": "Yuyi"
+    },
+    {
+      "name": "ZALO-Jeanne"
+    },
+    {
+      "name": "ZALO-King"
+    },
+    {
+      "name": "ZALO-Queen"
+    },
+    {
+      "name": "ZhiAi"
+    },
+    {
+      "name": "\u0007HISMITH"
+    },
+    {
+      "name": "be gentle"
+    },
+    {
+      "name": "bobi2"
+    },
+    {
+      "name": "classic"
+    },
+    {
+      "name": "fake_name_as_we_must_match_fluffer_manufacturer_data"
+    },
+    {
+      "name": "funkegel"
+    },
+    {
+      "name": "funone"
+    },
+    {
+      "name": "funwand"
+    },
+    {
+      "name": "nyx"
+    },
+    {
+      "name": "qingnan#16"
+    },
+    {
+      "name": "sakuraneko-01"
+    },
+    {
+      "name": "sakuraneko-02"
+    },
+    {
+      "name": "sakuraneko-03"
+    },
+    {
+      "name": "sakuraneko-04"
+    },
+    {
+      "name": "skeena"
+    },
+    {
+      "name": "synchro EX"
+    },
+    {
+      "name": "synchro2"
+    },
+    {
+      "name": "umi"
+    },
+    {
+      "name": "火箭X7"
+    },
+    {
+      "namePrefix": "47L"
+    },
+    {
+      "namePrefix": "Aogu BLE "
+    },
+    {
+      "namePrefix": "CCYB_"
+    },
+    {
+      "namePrefix": "Coyote"
+    },
+    {
+      "namePrefix": "D-LAB ESTIM"
+    },
+    {
+      "namePrefix": "DG-LAB"
+    },
+    {
+      "namePrefix": "Eropair "
+    },
+    {
+      "namePrefix": "FUNCODE_"
+    },
+    {
+      "namePrefix": "LOVE-"
+    },
+    {
+      "namePrefix": "LVS-"
+    },
+    {
+      "namePrefix": "M1_"
+    },
+    {
+      "namePrefix": "Nobra Control"
+    },
+    {
+      "namePrefix": "NobraControl"
+    },
+    {
+      "namePrefix": "OHD_hw0_"
+    },
+    {
+      "namePrefix": "OHD_hw1_"
+    },
+    {
+      "namePrefix": "OHD_hw2_"
+    },
+    {
+      "namePrefix": "OHD_hw3_"
+    },
+    {
+      "namePrefix": "OHD_hw4_"
+    },
+    {
+      "namePrefix": "PBT"
+    },
+    {
+      "namePrefix": "PCS"
+    },
+    {
+      "namePrefix": "PHT"
+    },
+    {
+      "namePrefix": "PTVEA"
+    },
+    {
+      "namePrefix": "SF "
+    },
+    {
+      "namePrefix": "Smart Mini Vibe"
+    },
+    {
+      "namePrefix": "VX001_"
+    },
+    {
+      "namePrefix": "X-Ring "
+    },
+    {
+      "namePrefix": "XXD-Lush"
+    }
+  ],
+  "services": [
+    "00000a60-0000-1000-8000-00805f9b34fb",
+    "00001000-0000-1000-8000-00805f9b34fb",
+    "00001400-0000-1000-8000-00805f9b34fb",
+    "00001523-1212-efde-1523-785feabcd123",
+    "00001802-0000-1000-8000-00805f9b34fb",
+    "0000180a-0000-1000-8000-00805f9b34fb",
+    "0000180c-0000-1000-8000-00805f9b34fb",
+    "0000180f-0000-1000-8000-00805f9b34fb",
+    "00001900-0000-1000-8000-00805f9b34fb",
+    "00006000-0000-1000-8000-00805f9b34fb",
+    "00006010-0000-1000-8000-00805f9b34fb",
+    "00006050-0000-1000-8000-00805f9b34fb",
+    "00008000-0000-1000-8000-00805f9b34fb",
+    "0000aaa0-0000-1000-8000-00805f9b34fb",
+    "0000abf0-0000-1000-8000-00805f9b34fb",
+    "0000ae00-0000-1000-8000-00805f9b34fb",
+    "0000ae10-0000-1000-8000-00805f9b34fb",
+    "0000bae0-0000-1000-8000-00805f9b34fb",
+    "0000bca2-0000-1000-8000-00805f9b34fb",
+    "0000c570-0000-1000-8000-00805f9b34fb",
+    "0000cfa2-0000-1000-8000-00805f9b34fb",
+    "0000dba2-0000-1000-8000-00805f9b34fb",
+    "0000eea0-0000-1000-8000-00805f9b34fb",
+    "0000f0b0-0000-1000-8000-00805f9b34fb",
+    "0000fe00-0000-1000-8000-00805f9b34fb",
+    "0000fee9-0000-1000-8000-00805f9b34fb",
+    "0000ff00-0000-1000-8000-00805f9b34fb",
+    "0000ff10-0000-1000-8000-00805f9b34fb",
+    "0000ff90-0000-1000-8000-00805f9b34fb",
+    "0000ffa0-0000-1000-8000-00805f9b34fb",
+    "0000ffac-0000-1000-8000-00805f9b34fb",
+    "0000ffb0-0000-1000-8000-00805f9b34fb",
+    "0000ffcb-0000-1000-8000-00805f9b34fb",
+    "0000ffe0-0000-1000-8000-00805f9b34fb",
+    "0000ffe3-0000-1000-8000-00805f9b34fb",
+    "0000ffe5-0000-1000-8000-00805f9b34fb",
+    "0000fff0-0000-1000-8000-00805f9b34fb",
+    "0000fffe-0000-1000-8000-00805f9b34fb",
+    "1775244d-6b43-439b-877c-060f2d9bed07",
+    "31bb1111-33e3-4f3c-a7fb-104288e7cb77",
+    "40ee1111-63ec-4b7f-8ce7-712efd55b90e",
+    "42300001-0023-4bd4-bbd5-a6920e4c5653",
+    "42410001-0000-0101-0000-736278637a72",
+    "42410001-0023-4bd4-bbd5-a6920e4c5653",
+    "43300001-0023-4bd4-bbd5-a6920e4c5653",
+    "43410001-0023-4bd4-bbd5-a6920e4c5653",
+    "45410001-0023-4bd4-bbd5-a6920e4c5653",
+    "45420001-0023-4bd4-bbd5-a6920e4c5653",
+    "45440001-0023-4bd4-bbd5-a6920e4c5653",
+    "45460001-0023-4bd4-bbd5-a6920e4c5653",
+    "45490001-0023-4bd4-bbd5-a6920e4c5653",
+    "454c0001-0023-4bd4-bbd5-a6920e4c5653",
+    "455a0001-0023-4bd4-bbd5-a6920e4c5653",
+    "46300001-0023-4bd4-bbd5-a6920e4c5653",
+    "46530001-0023-4bd4-bbd5-a6920e4c5653",
+    "48300001-0023-4bd4-bbd5-a6920e4c5653",
+    "49535343-fe7d-4ae5-8fa9-9fafd205e455",
+    "4a300001-0023-4bd4-bbd5-a6920e4c5653",
+    "4c300001-0023-4bd4-bbd5-a6920e4c5653",
+    "4c410001-0023-4bd4-bbd5-a6920e4c5653",
+    "4e300001-0023-4bd4-bbd5-a6920e4c5653",
+    "4f300001-0023-4bd4-bbd5-a6920e4c5653",
+    "4f430001-0023-4bd4-bbd5-a6920e4c5653",
+    "50300001-0023-4bd4-bbd5-a6920e4c5653",
+    "50300001-0024-4bd4-bbd5-a6920e4c5653",
+    "50300011-0023-4bd4-bbd5-a6920e4c5653",
+    "51300001-0023-4bd4-bbd5-a6920e4c5653",
+    "51361500-c5e7-47c7-8a6e-47ebc99d80e8",
+    "52300001-0023-4bd4-bbd5-a6920e4c5653",
+    "53300001-0023-4bd4-bbd5-a6920e4c5653",
+    "53300031-0060-4bd4-bbe5-a6920e4c5663",
+    "53300051-0060-4bd4-bbe5-a6920e4c5663",
+    "53440001-0023-4bd4-bbd5-a6920e4c5653",
+    "54300001-0023-4bd4-bbd5-a6920e4c5653",
+    "55300001-0023-4bd4-bbd5-a6920e4c5653",
+    "56300001-0023-4bd4-bbd5-a6920e4c5653",
+    "57300001-0023-4bd4-bbd5-a6920e4c5653",
+    "57440001-0023-4bd4-bbd5-a6920e4c5653",
+    "58300001-0023-4bd4-bbd5-a6920e4c5653",
+    "5a300001-0023-4bd4-bbd5-a6920e4c5653",
+    "5a300001-0024-4bd4-bbd5-a6920e4c5653",
+    "6e400001-b5a3-f393-e0a9-e50e24dcca9e",
+    "77834d26-40f7-11ee-be56-0242ac120002",
+    "78667579-7b48-43db-b8c5-7928a6b0a335",
+    "88f80580-0000-01e6-aace-0002a5d5c51b",
+    "88f82580-0000-01e6-aace-0002a5d5c51b",
+    "8e7c6065-7656-17ad-1b41-b53d1a548e0d",
+    "955a180a-0fe2-f5aa-a094-84b8d4f3e8ad",
+    "955a180b-0fe2-f5aa-a094-84b8d4f3e8ad",
+    "a0d70001-4c16-4ba7-977a-d394920e13a3",
+    "b75c49d2-04a3-4071-a0b5-35853eb08307",
+    "d973f2e5-b19e-11e2-9e96-0800200c9a66",
+    "d973f2ed-b19e-11e2-9e96-0800200c9a66",
+    "f0006900-110c-478b-b74b-6f403b364a9c",
+    "f000aa64-0451-4000-b000-000000000000",
+    "f000bb03-0451-4000-b000-000000000000",
+    "f60402a6-0293-4bdb-9f20-6758133f7090"
+  ]
+}
